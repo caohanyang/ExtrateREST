@@ -1,0 +1,18 @@
+version: '2'
+services:
+   mongo:
+      image: "mongo:3"
+      ports:
+        - "27017:27017"
+      expose:
+        - "27017"
+   front:
+      image: "caohanyang/autorest_front"
+      ports:
+        - "4200:4200"   
+   app:
+      image: "caohanyang/autorest_app"
+      ports:
+        - "3000:3000"
+      depends_on:
+        - "mongo"
