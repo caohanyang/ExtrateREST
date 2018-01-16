@@ -20,6 +20,7 @@ exports.getConfigs = async function(query, page, limit) {
     }
 }
 
+    
 exports.createConfig = async function (config) {
     
     var newConfig = new Config({

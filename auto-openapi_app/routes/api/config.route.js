@@ -6,7 +6,7 @@ var ConfigController = require("../../controllers/config.controller")
 
 
 //map each api to the controller functions
-router.get("/", ConfigController.getConfigs)
+router.get("/", ConfigController.getOpenapis)
 
 router.post("/", ConfigController.createConfig)
 

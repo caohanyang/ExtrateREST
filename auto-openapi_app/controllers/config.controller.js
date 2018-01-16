@@ -22,6 +22,36 @@ exports.getConfigs = async function (req, res, next) {
 
 }
 
+exports.getOpenapis = async function (req, res, next) {
+
+    console.log("server to handle the request");
+    try {
+
+        // config.apiName = "instagram";
+
+        let openapiPath = './auto-openapi_core/CompareSet/' + "instagram" + '/OpenAPI.json';
+
+        let openapi;
+        if (fs.existsSync(openapiPath)) {
+            console.log("Success to generate " + "instagram");
+            openapi = JSON.parse(fs.readFileSync(openapiPath));
+            console.log(openapi);
+            
+        } else {
+            console.log("fail to generate " + "instagram");
+            openapi = {"wait": "wait for the openapi"}
+            console.log("Wait to generate " + "instagram");
+
+        }
+
+        return res.status(200).json({ status: 200, data: openapi, message: "generate openapi" })
+        
+    } catch (e) {
+        return res.status(400).json({ status: 400, message: e.message })
+    }
+
+}
+
 exports.createConfig = async function (req, res, next) {
 
     var config = {
@@ -65,6 +95,7 @@ exports.createConfig = async function (req, res, next) {
 
         res.status(200).json({ status: 200, data: JSON.stringify(createdConfig), message: "successfully create config" })
 
+        callCoreApi(config);
     } catch (e) {
         console.log(e.message)
         res.status(400).json({ status: 400, message: e.message })
@@ -86,7 +117,7 @@ exports.createConfig = async function (req, res, next) {
 
             console.log("finish call core api 2");
 
-            let openapiPath = './auto-openapi_core/CompareSet/'+ config.apiName +'/OpenAPI.json';
+            let openapiPath = './auto-openapi_core/CompareSet/' + config.apiName + '/OpenAPI.json';
 
             if (fs.existsSync(openapiPath)) {
                 console.log("Success to generate " + config.apiName);
@@ -96,11 +127,12 @@ exports.createConfig = async function (req, res, next) {
                 console.log("Fail to generate " + config.apiName);
             }
             console.log("finish call core api 3");
-            
+
 
         })
     console.log("finish call core api 1");
     console.log("=======================");
+
 }
 
 
@@ -175,7 +207,8 @@ exports.removeConfig = async function (req, res, next) {
 
 exports.callCoreApi = async function (config) {
     console.log("start to call the core generation api 1: " + __dirname);
-
+    // var openapi = callCoreApi(config);
+    // console.log(openapi);
     var runscript = exec('sh ./auto-openapi_core/openapi.sh ' + config.docUrl + ' ' + config.filterUrl,
         (error, stdout, stderr) => {
 
@@ -189,6 +222,19 @@ exports.callCoreApi = async function (config) {
 
             console.log("finish call core api 2");
 
+            let openapiPath = './auto-openapi_core/CompareSet/' + config.apiName + '/OpenAPI.json';
+
+            if (fs.existsSync(openapiPath)) {
+                console.log("Success to generate " + config.apiName);
+                let openapi = JSON.parse(fs.readFileSync(openapiPath));
+                console.log(openapi);
+            } else {
+                console.log("Fail to generate " + config.apiName);
+            }
+            console.log("finish call core api 3");
+
+
         })
     console.log("finish call core api 1");
+    console.log("=======================");
 }

@@ -13,6 +13,7 @@ export class ConfigService {
 
     api_url = 'http://localhost:3000';
     configUrl = `${this.api_url}/api/configs`;
+    openapiUrl = `${this.api_url}/api/configs`;
 
     constructor(
         private http: HttpClient
@@ -24,6 +25,10 @@ export class ConfigService {
         return this.http.post(`${this.configUrl}`, config);
     }
 
+    getOpenapi(): Observable<any> {
+        console.log("sending request for openapi");
+        return this.http.get(`${this.openapiUrl}`);
+    }
     //Default Error handling method.
   private handleError(error: any): Promise<any> {
     console.error('An error occurred', error); // for demo purposes only
