@@ -17,12 +17,12 @@ var app = express();
 
 //mongodb
 mongoose.Promise = bluebird;
-mongoose.connect(`mongodb://${argv.mongo}:27017/autorest`, {useMongoClient: true})
+mongoose.connect(`mongodb://${argv.mongo}:27017/auto-openapi`, {useMongoClient: true})
 .then(()=>{
-  console.log(`Succesfully Connected to the Mongodb Database  at URL : mongodb://${argv.mongo}:27017/autorest`)
+  console.log(`Succesfully Connected to the Mongodb Database  at URL : mongodb://${argv.mongo}:27017/auto-openapi`)
 })
 .catch(()=>{
-  console.log(`Error Connecting to the Mongodb Database at URL : mongodb://${argv.mongo}:27017/autorest`)
+  console.log(`Error Connecting to the Mongodb Database at URL : mongodb://${argv.mongo}:27017/auto-openapi`)
 })
 
 //It should be used before the app use

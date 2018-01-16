@@ -7,11 +7,11 @@ services:
       expose:
         - "27017"
    front:
-      image: "caohanyang/autorest_front"
+      image: "caohanyang/auto-openapi_front"
       ports:
         - "4200:4200"   
    app:
-      image: "caohanyang/autorest_app"
+      image: "caohanyang/auto-openapi_app"
       ports:
         - "3000:3000"
       depends_on:

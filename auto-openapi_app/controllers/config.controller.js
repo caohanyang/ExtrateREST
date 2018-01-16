@@ -1,6 +1,8 @@
 var ConfigService = require("../services/config.service");
 const exec = require('child_process').exec;
-
+const fs = require('fs');
+// const util = require('util');
+// const exec = util.promisify(require('child_process').exec);
 _this = this
 
 
@@ -68,14 +70,13 @@ exports.createConfig = async function (req, res, next) {
         res.status(400).json({ status: 400, message: e.message })
     }
 
-    console.log("start to execute 1: " + __dirname);
-    
-    
-
-    var runscript = exec('sh ./autorest_core/openapi.sh ' + config.docUrl + ' ' + config.filterUrl ,
+    console.log("start to call the core generation api 1: " + __dirname);
+    // var openapi = callCoreApi(config);
+    // console.log(openapi);
+    var runscript = exec('sh ./auto-openapi_core/openapi.sh ' + config.docUrl + ' ' + config.filterUrl,
         (error, stdout, stderr) => {
 
-            console.log("start to execute 2");
+            console.log("start to call the core generation api 2: ");
             // callback
             console.log(`${stdout}`);
             console.log(`${stderr}`);
@@ -83,11 +84,25 @@ exports.createConfig = async function (req, res, next) {
                 console.log(`exec error: ${error}`);
             }
 
-            console.log("finish execute 2");
+            console.log("finish call core api 2");
+
+            let openapiPath = './auto-openapi_core/CompareSet/'+ config.apiName +'/OpenAPI.json';
+
+            if (fs.existsSync(openapiPath)) {
+                console.log("Success to generate " + config.apiName);
+                let openapi = JSON.parse(fs.readFileSync(openapiPath));
+                console.log(openapi);
+            } else {
+                console.log("Fail to generate " + config.apiName);
+            }
+            console.log("finish call core api 3");
+            
 
         })
-    console.log("finish execute 1");
+    console.log("finish call core api 1");
+    console.log("=======================");
 }
+
 
 exports.updateConfig = async function (req, res, next) {
 
@@ -156,4 +171,24 @@ exports.removeConfig = async function (req, res, next) {
     } catch (e) {
         return res.status(400).json({ status: 400, message: e.message })
     }
+}
+
+exports.callCoreApi = async function (config) {
+    console.log("start to call the core generation api 1: " + __dirname);
+
+    var runscript = exec('sh ./auto-openapi_core/openapi.sh ' + config.docUrl + ' ' + config.filterUrl,
+        (error, stdout, stderr) => {
+
+            console.log("start to call the core generation api 2: ");
+            // callback
+            console.log(`${stdout}`);
+            console.log(`${stderr}`);
+            if (error !== null) {
+                console.log(`exec error: ${error}`);
+            }
+
+            console.log("finish call core api 2");
+
+        })
+    console.log("finish call core api 1");
 }

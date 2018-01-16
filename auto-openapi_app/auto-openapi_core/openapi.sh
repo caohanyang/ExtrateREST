@@ -2,7 +2,7 @@
 
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 
-# 1.1 crawl html page
+
 # https://www.instagram.com/developer https://www.instagram.com/developer/endpoints
 # https://developer.twitter.com/en/docs/api-reference-index https://developer.twitter.com/en/docs
 # https://www.flickr.com/services/api
@@ -70,12 +70,13 @@ export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 # https://rms.api.bbc.co.uk/docs/
 echo $PWD
 
-cd autorest_core
+cd auto-openapi_core
 
-python rest_crawler/crawlAllPages.py $1 $2
+# 1.1 crawl html page
+# python rest_crawler/crawlAllPages.py $1 $2
 
 # 2. predict html page
-python predict_page/predictExternal.py $1
+# python predict_page/predictExternal.py $1
 
 
 # 3. run java to build the OPENAPI documentation
