@@ -1,0 +1,27 @@
+{
+  "basePath": "/maps/api",
+  "paths": {
+    "/timezone/json": {
+      "GET": {}
+    },
+    "/directions/json": {
+      "GET": {}
+    },
+    "/directions/output": {
+      "GET": {}
+    },
+    "/geocode/json": {
+      "POST": {}
+    },
+    "/timezone/json'": {
+      "GET": {}
+    }
+  },
+  "produces": "application/json",
+  "host": "maps.googleapis.com",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

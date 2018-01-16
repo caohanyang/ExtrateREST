@@ -1,0 +1,38 @@
+{
+  "basePath": "/maps/api",
+  "paths": {
+    "/timezone/json": {
+      "DEL": {}
+    },
+    "/geocode/json'": {
+      "GET": {}
+    },
+    "https://developers.google.com/maps/documentation/timezone/get-api-key": {
+      "GET": {}
+    },
+    "/directions/json": {
+      "GET": {},
+      "DEL": {},
+      "PUT": {}
+    },
+    "/directions/outputFormat": {
+      "PUT": {}
+    },
+    "/directions/output": {
+      "PUT": {}
+    },
+    "/geocode/json": {
+      "PUT": {}
+    },
+    "/service/output": {
+      "PUT": {}
+    }
+  },
+  "produces": "application/json",
+  "host": "maps.googleapis.com",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

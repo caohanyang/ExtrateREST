@@ -1,0 +1,74 @@
+{
+  "basePath": "/api/v2",
+  "paths": {
+    "http://YOUR_REGISTERED_REDIRECT_URI/#access_token=ACCESS_TOKEN": {
+      "GET": {}
+    },
+    "/picplz.com/api/v2/feed": {
+      "GET": {}
+    },
+    "/collection/pic": {
+      "POST": {}
+    },
+    "http://picplz.com/nPhc": {
+      "GET": {}
+    },
+    "/api/v2/feed": {
+      "GET": {}
+    },
+    "/api/v2/following": {
+      "GET": {}
+    },
+    "//picplz.com/oauth2/authenticate": {
+      "GET": {}
+    },
+    "/user/follow": {
+      "DELETE": {}
+    },
+    "/api/v2/pic": {
+      "GET": {
+        "request": "curl -H 'X-Pretty-JSON: 1' 'http://api.picplz.com/api/v2/pic.json?id=153982'"
+      }
+    },
+    "/api/v2/followers": {
+      "GET": {}
+    },
+    "/pic/like": {
+      "DELETE": {},
+      "POST": {}
+    },
+    "/api/v2/user/follow": {
+      "POST": {}
+    },
+    "/api/v2/filters": {
+      "POST": {},
+      "GET": {}
+    },
+    "/pic/comment": {
+      "DELETE": {},
+      "POST": {}
+    },
+    "/api/v2/user": {
+      "GET": {}
+    },
+    "/api/v2/place": {
+      "GET": {}
+    },
+    "/api/v2/upload_basic": {
+      "POST": {}
+    },
+    "/api/v2/collection": {
+      "GET": {}
+    },
+    "/api/v2/city": {
+      "GET": {}
+    }
+  },
+  "produces": "application/json",
+  "host": "api.picplz.com",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

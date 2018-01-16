@@ -1,0 +1,114 @@
+
+                           /-/docs
+                          |
+                          |         /-/endpoints
+                          |        |
+                          |        |--/getting-started
+                          |        |
+                          |        |--/libraries
+                          |        |
+                          |        |         /-/add
+                          |        |        |
+                          |        |        |--/addpost
+                          |        |        |
+                          |        |        |--/details
+                          |        |-/checkins
+                          |        |        |--/like
+                          |        |        |
+                          |        |        |--/recent
+                          |        |        |
+                          |        |         \-/resolve
+                          |        |
+                          |        |              /-/authentication
+                          |        |             |
+-- /developer.foursquare.com       |-/configuration-/internationalization
+                          |        |             |
+                          |        |              \-/versioning
+                          |        |
+                          |        |      /-/add
+                          |        |     |
+                          |        |     |--/additem
+                          |        |-/lists
+                          |        |     |--/details
+                          |        |     |
+                          |        |      \-/share
+                          |        |
+                          |        |       /-/add
+                          |        |-/photos
+                          |        |       \-/details
+                          |        |
+                          |        |     /-/add
+                          |        |-/tips
+                          |        |     \-/details
+                          |        |
+                          |        |                /-/errors
+                          |        |-/troubleshooting
+                          |        |                \-/rate-limits
+                           \/docs/api
+                                   |      /-/checkins
+                                   |     |
+                                   |     |--/details
+                                   |     |
+                                   |     |--/friends
+                                   |     |
+                                   |     |--/lists
+                                   |     |
+                                   |-/users-/photos
+                                   |     |
+                                   |     |--/search
+                                   |     |
+                                   |     |--/tastes
+                                   |     |
+                                   |     |--/venuehistory
+                                   |     |
+                                   |      \-/venuelikes
+                                   |
+                                   |       /-/add
+                                   |      |
+                                   |      |--/categories
+                                   |      |
+                                   |      |--/claim
+                                   |      |
+                                   |      |--/details
+                                   |      |
+                                   |      |--/events
+                                   |      |
+                                   |      |--/explore
+                                   |      |
+                                   |      |--/flag
+                                   |      |
+                                   |      |--/herenow
+                                   |      |
+                                   |      |--/hours
+                                   |      |
+                                   |      |--/like
+                                   |      |
+                                   |      |--/likes
+                                   |      |
+                                   |      |--/links
+                                   |      |
+                                    \/venues-/listed
+                                          |
+                                          |--/managed
+                                          |
+                                          |--/menu
+                                          |
+                                          |--/nextvenues
+                                          |
+                                          |--/photos
+                                          |
+                                          |--/proposededit
+                                          |
+                                          |--/search
+                                          |
+                                          |--/similar
+                                          |
+                                          |--/stats
+                                          |
+                                          |--/suggestcompletion
+                                          |
+                                          |--/timeseries
+                                          |
+                                          |--/tips
+                                          |
+                                           \-/trending

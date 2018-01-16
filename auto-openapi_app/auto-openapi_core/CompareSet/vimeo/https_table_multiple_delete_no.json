@@ -1,0 +1,667 @@
+{
+  "paths": {
+    "/videos/{video_id}/categoriesPlayground": {
+      "PUT": {}
+    },
+    "/me/channels/{channel_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/channels/{channel_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/likesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}/picturesPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/channelsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}/credits/{credit_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/albums/{album_id}/videos/{video_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/ondemand/regionsPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/creditsPlaygroundNameTypeRequiredDescription": {
+      "POST": {},
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/pictures/{poster_id}Playground": {
+      "POST": {}
+    },
+    "/me/watchlater/{video_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/watchlater/{video_id}Playground": {
+      "DELETE": {}
+    },
+    "/tags/{word}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/ondemand/genresPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/watchlater/{video_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/watchlater/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/presets/{preset_id}/videosPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/tagsPlayground": {
+      "PUT": {}
+    },
+    "/users/{user_id}/presets/{preset_id}PlaygroundNameTypeRequiredDescription": {
+      "PATCH": {}
+    },
+    "/mePlaygroundGEThttps://api.vimeo.com/users/{user_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/categories/{category}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/categories/{category}Playground": {
+      "PUT": {}
+    },
+    "/users/{user_id}/following/{follow_user_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/videos/{video_id}/comments/{comment_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/users/{user_id}/following/{follow_user_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/picturesPlayground": {
+      "POST": {}
+    },
+    "/channelsPlayground": {
+      "POST": {}
+    },
+    "/ondemand/pages/{ondemand_id}/promotions/{promotion_id}/codesPlayground": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/backgroundsPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/feedPlaygroundGEThttps://api.vimeo.com/users/{user_id}/feedPlayground": {
+      "GET": {}
+    },
+    "/me/followersPlaygroundGEThttps://api.vimeo.com/users/{user_id}/followersPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/albums/{album_id}/videosPlayground": {
+      "PUT": {}
+    },
+    "/me/channelsPlaygroundGEThttps://api.vimeo.com/users/{user_id}/channelsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/pictures/{picture_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/videos/{video_id}/privacy/usersPlayground": {
+      "PUT": {}
+    },
+    "/users/{user_id}/channels/{channel_id}Playground": {
+      "PUT": {}
+    },
+    "/me/channels/{channel_id}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/channels/{channel_id}Playground": {
+      "PUT": {}
+    },
+    "/users/{user_id}/likes/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/watchlater/{video_id}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/watchlater/{video_id}Playground": {
+      "PUT": {}
+    },
+    "/me/albums/{album_id}/videos/{video_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/albums/{album_id}/videos/{video_id}Playground": {
+      "DELETE": {}
+    },
+    "/users/{user_id}/watchlater/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/likes/{video_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/likes/{video_id}Playground": {
+      "DELETE": {}
+    },
+    "/me/portfolios/{portfolio_id}/videos/{video_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/portfolios/{portfolio_id}/videos/{video_id}": {
+      "GET": {}
+    },
+    "/users/{user_id}/portfolios/{portfolio_id}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/followingPlaygroundPOSThttps://api.vimeo.com/users/{user_id}/followingPlayground": {
+      "POST": {}
+    },
+    "/me/albumsPlaygroundGEThttps://api.vimeo.com/users/{user_id}/albumsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/followingPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/albums/{album_id}/videos/{video_id}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/albums/{album_id}/videos/{video_id}Playground": {
+      "PUT": {}
+    },
+    "/users/{user_id}/albums/{album_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/channels/{channel_id}/usersPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/ondemand/pagesPlaygroundGEThttps://api.vimeo.com/users/{user_id}/ondemand/pagesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/categories/{category}/groupsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/albums/{album_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/portfolios/{portfolio_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/oauth/authorize/vimeo_oauth1PlaygroundNameTypeRequiredDescription": {
+      "POST": {}
+    },
+    "/groups/{group_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/likes/{video_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/likes/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/groups/{group_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/groups/{group_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/comments/{comment_id}/repliesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/categoriesPlaygroundGEThttps://api.vimeo.com/users/{user_id}/categoriesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/categories/{category}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/privacy/usersPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/regionsPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/groupsPlaygroundGEThttps://api.vimeo.com/users/{user_id}/groupsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/promotions/{promotion_id}Playground": {
+      "DELETE": {},
+      "GET": {}
+    },
+    "/me/portfolios/{portfolio_id}/videos/{video_id}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/portfolios/{portfolio_id}/videos/{video_id}": {
+      "PUT": {}
+    },
+    "/me/portfoliosPlaygroundGEThttps://api.vimeo.com/users/{user_id}/portfoliosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/portfolios/{portfolio_id}/videosPlaygroundGEThttps://api.vimeo.com/users/{user_id}/portfolios/{portfolio_id}/videosPlaygroundNameTypeR": {
+      "GET": {}
+    },
+    "/videos/{video_id}/tags/{word}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/categories/{category}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/categories/{category}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/categoriesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/videosPlaygroundPOSThttps://api.vimeo.com/users/{user_id}/videosPlayground": {
+      "POST": {}
+    },
+    "/me/presetsPlaygroundGEThttps://api.vimeo.com/users/{user_id}/presetsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/groups/{group_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/me/watched/videos/{video_id}Playground": {
+      "DELETE": {}
+    },
+    "/me/portfolios/{portfolio_id}/videos/{video_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/portfolios/{portfolio_id}/videos/{video_i": {
+      "DELETE": {}
+    },
+    "/users/{user_id}/albums/{album_id}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/channels/{channel_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/presets/{preset_id}PlaygroundPATCHhttps://api.vimeo.com/users/{user_id}/presets/{preset_id}PlaygroundNameTypeRequiredDescription": {
+      "PATCH": {}
+    },
+    "/categories/{category}/channelsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/categories/{category}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/categories/{category}Playground": {
+      "DELETE": {}
+    },
+    "/ondemand/genres/{genre_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/channels/{channel_id}/videos/{video_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/oauth/access_tokenPlaygroundNameTypeRequiredDescription": {
+      "POST": {}
+    },
+    "/ondemand/pages/{ondemand_id}/seasonsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/regionsPlayground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/categories/{category}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/albumsPlaygroundPOSThttps://api.vimeo.com/users/{user_id}/albumsPlayground": {
+      "POST": {}
+    },
+    "/groups/{group_id}/usersPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/groups/{group_id}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/groups/{group_id}Playground": {
+      "PUT": {}
+    },
+    "/users/{user_id}/appearancesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}/comments/{comment_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/portfolios/{portfolio_id}/videos/{video_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/me/channels/{channel_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/channels/{channel_id}PlaygroundHTTPStatusCodeExplanation": {
+      "DELETE": {}
+    },
+    "/videos/{video_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/portfolios/{portfolio_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/portfolios/{portfolio_id}PlaygroundHTTPStatusCodeExplanat": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/seasons/{season_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/videosPlayground": {
+      "POST": {}
+    },
+    "/ondemand/pages/{ondemand_id}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/following/{follow_user_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/following/{follow_user_id}Playground": {
+      "DELETE": {}
+    },
+    "/users/{user_id}/albumsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}/presets/{preset_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/videos/{video_id}/privacy/domainsPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/ondemand/pagesPlaygroundNameTypeRequiredDescription": {
+      "POST": {},
+      "GET": {}
+    },
+    "/videos/{video_id}/privacy/users/{user_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/categoriesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/promotionsPlayground": {
+      "POST": {},
+      "GET": {}
+    },
+    "/users/{user_id}/pictures/{portraitset_id}Playground": {
+      "DELETE": {}
+    },
+    "/users/{user_id}/albums/{album_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}/tagsPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/texttracks/{texttrack_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/picturesPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/feedPlayground": {
+      "GET": {}
+    },
+    "/me/pictures/{portraitset_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/pictures/{portraitset_id}Playground": {
+      "DELETE": {}
+    },
+    "/me/albums/{album_id}/videosPlaygroundPUThttps://api.vimeo.com/users/{user_id}/albums/{album_id}/videosPlayground": {
+      "PUT": {}
+    },
+    "/me/watched/videosPlayground": {
+      "DELETE": {}
+    },
+    "/ondemand/regions/{country}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/categories/{category}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/credits/{credit_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/me/videos/{video_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/following/{follow_user_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/following/{follow_user_id}PlaygroundHTTPStatusCodeExplan": {
+      "GET": {}
+    },
+    "/me/ondemand/pagesPlaygroundPOSThttps://api.vimeo.com/users/{user_id}/ondemand/pagesPlaygroundNameTypeRequiredDescription": {
+      "POST": {}
+    },
+    "/ondemand/pages/{ondemand_id}/backgrounds/{background_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/oauth/authorize/clientPlaygroundNameTypeRequiredDescription": {
+      "POST": {}
+    },
+    "/ondemand/pages/{ondemand_id}/seasons/{season_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/mePlaygroundPATCHhttps://api.vimeo.com/users/{user_id}PlaygroundNameTypeRequiredDescription": {
+      "PATCH": {}
+    },
+    "/me/ondemand/purchases/{ondemand_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/ondemand/purchasesPlayground": {
+      "GET": {}
+    },
+    "/groups/{group_id}/videos/{video_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/videos/{video_id}/tags/{word}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/ondemand/pages/{ondemand_id}/genres/{genre_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/videosPlaygroundGEThttps://api.vimeo.com/users/{user_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}/comments/{comment_id}/repliesPlayground": {
+      "POST": {}
+    },
+    "/ondemand/genres/{genre_id}/pages/{ondemand_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/albums/{album_id}PlaygroundPATCHhttps://api.vimeo.com/users/{user_id}/albums/{album_id}Playground": {
+      "PATCH": {}
+    },
+    "/users/{user_id}/followingPlayground": {
+      "POST": {}
+    },
+    "/tokensPlaygroundHTTPStatusCodeExplanation": {
+      "DELETE": {}
+    },
+    "/videos/{video_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/videos/{video_id}/privacy/domains/{domain}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/users/{user_id}/presetsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/channels/{channel_id}PlaygroundHTTPStatusCodeExplanation": {
+      "DELETE": {},
+      "GET": {}
+    },
+    "/users/{user_id}/ondemand/purchasesPlayground": {
+      "GET": {}
+    },
+    "/me/watched/videosPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/genresPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/pictures/{poster_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/following/{follow_user_id}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/following/{follow_user_id}Playground": {
+      "PUT": {}
+    },
+    "/tags/{word}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/videos/{video_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/users/{user_id}/categories/{category}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/presets/{preset_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/albums/{album_id}/videosPlaygroundGEThttps://api.vimeo.com/users/{user_id}/albums/{album_id}/videosPlaygroundNameTypeRequiredDescript": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/picturesPlayground": {
+      "POST": {}
+    },
+    "/ondemand/pages/{ondemand_id}/backgroundsPlayground": {
+      "POST": {}
+    },
+    "/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/portfoliosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/channels/{channel_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/followingPlaygroundGEThttps://api.vimeo.com/users/{user_id}/followingPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/albums/{album_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/albums/{album_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/usersPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/regions/{country}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/videos/{video_id}/commentsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/ondemand/genres/{genre_id}/pagesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/presets/{preset_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/channels/{channel_id}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/channelsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/groups/{group_id}/videos/{video_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/oauth/verifyPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/videos/{video_id}/filesPlayground": {
+      "PUT": {}
+    },
+    "/videos/{video_id}/pictures/{picture_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/watchlaterPlaygroundGEThttps://api.vimeo.com/users/{user_id}/watchlaterPlayground": {
+      "GET": {}
+    },
+    "/users/{user_id}/portfolios/{portfolio_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/albumsPlayground": {
+      "POST": {}
+    },
+    "/users/{user_id}/tickets/{ticket}Playground": {
+      "DELETE": {},
+      "GET": {}
+    },
+    "/groups/{group_id}/videosPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/videos/{video_id}/texttracksPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/groupsPlayground": {
+      "POST": {}
+    },
+    "/me/albums/{album_id}/videos/{video_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/albums/{album_id}/videos/{video_id}PlaygroundHTTP": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/regions/{country}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/likesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/videos/{video_id}/texttracksPlayground": {
+      "POST": {}
+    },
+    "/users/{user_id}/watchlaterPlayground": {
+      "GET": {}
+    },
+    "/users/{user_id}/groupsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/likes/{video_id}PlaygroundPUThttps://api.vimeo.com/users/{user_id}/likes/{video_id}Playground": {
+      "PUT": {}
+    },
+    "/users/{user_id}/groups/{group_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/me/ondemand/purchasesPlayground": {
+      "GET": {}
+    },
+    "/ondemand/pages/{ondemand_id}/genres/{genre_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/users/{user_id}PlaygroundNameTypeRequiredDescription": {
+      "PATCH": {}
+    },
+    "/me/likesPlaygroundGEThttps://api.vimeo.com/users/{user_id}/likesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/presets/{preset_id}/videosPlaygroundGEThttps://api.vimeo.com/users/{user_id}/presets/{preset_id}/videosPlaygroundHTTPStatusCodeExplan": {
+      "GET": {}
+    },
+    "/videos/{video_id}/categoriesPlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/followersPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/users/{user_id}/categories/{category}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/users/{user_id}/watchlater/{video_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/me/albums/{album_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/albums/{album_id}Playground": {
+      "DELETE": {}
+    },
+    "/videos/{video_id}/texttracks/{texttrack_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/videos/{video_id}/commentsPlayground": {
+      "POST": {}
+    },
+    "/groups/{group_id}Playground": {
+      "DELETE": {}
+    },
+    "/users/{user_id}/likesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/me/presets/{preset_id}PlaygroundGEThttps://api.vimeo.com/users/{user_id}/presets/{preset_id}PlaygroundHTTPStatusCodeExplanation": {
+      "GET": {}
+    },
+    "/users/{user_id}/likes/{video_id}Playground": {
+      "DELETE": {},
+      "PUT": {}
+    },
+    "/ondemand/pages/{ondemand_id}/backgrounds/{background_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    },
+    "/me/groups/{group_id}PlaygroundDELETEhttps://api.vimeo.com/users/{user_id}/groups/{group_id}Playground": {
+      "DELETE": {}
+    },
+    "/me/appearancesPlaygroundGEThttps://api.vimeo.com/users/{user_id}/appearancesPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/groupsPlaygroundNameTypeRequiredDescription": {
+      "GET": {}
+    },
+    "/channels/{channel_id}Playground": {
+      "DELETE": {},
+      "PATCH": {}
+    }
+  },
+  "produces": "application/json",
+  "host": "api.vimeo.com",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}
