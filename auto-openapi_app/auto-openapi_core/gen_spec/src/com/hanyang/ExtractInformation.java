@@ -45,8 +45,8 @@ public class ExtractInformation {
 	// www.flickr.com
 	private static String API_NAME = "google";
 	private static String API_FOLDER = "developers.google.com";
-	private static String FilteredSet_PATH = "./FilteredSet/" + API_FOLDER;
-	private static String CompareSet_PATH = "./CompareSet/" + API_NAME;
+	private static String FilteredSet_PATH = "../FilteredSet/" + API_FOLDER;
+	private static String CompareSet_PATH = "../CompareSet/" + API_NAME;
 	
 	public static void main(String[] args) throws GateException, JSONException, IOException {
 		// System.out.close();
@@ -72,13 +72,13 @@ public class ExtractInformation {
 				}
 					
 			}
-			FilteredSet_PATH = "./FilteredSet/" + API_FOLDER;
-			CompareSet_PATH = "./CompareSet/" + API_NAME;
+			FilteredSet_PATH = "../FilteredSet/" + API_FOLDER;
+			CompareSet_PATH = "../CompareSet/" + API_NAME;
 		}
 
 		
 		// 0. get properties
-//		Settings.getPropertiesReader(CompareSet_PATH + "/"+ API_NAME);
+		Settings.getPropertiesReader(CompareSet_PATH + "/"+ API_NAME);
 		
 		// init gate
 		Gate.init();
@@ -123,7 +123,7 @@ public class ExtractInformation {
 		selectOpenAPI(compareSet);
 
 		// 4. write properties
-		Settings.writeProperties(CompareSet_PATH + "/"+ API_NAME);
+//		Settings.writeProperties(CompareSet_PATH + "/"+ API_NAME);
 		
 	}
 

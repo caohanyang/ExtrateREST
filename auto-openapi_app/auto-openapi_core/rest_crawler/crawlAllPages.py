@@ -59,6 +59,13 @@ class Crawler(object):
     # False: https://www.flickr.com/services/api
     self.withSlash = False
 
+    # extract prefix for web archive
+    # https://web.archive.org/web/20160101054459/https://www.instagram.com/developer/endpoints/relationships
+    self.prefix = 'http' + self.doc_page.split('http')[1];
+    print "-----prefix-------"
+    print self.prefix
+
+
  def open(self):
 
     # Define filter
@@ -192,13 +199,19 @@ class Crawler(object):
         # Open url
         print "===========Downloading==============="
         try:
+
+            # page = self.prefix + "https://" + '/'.join(html_page)
             page = "http://" + '/'.join(html_page)
+
+            print html_page
+            print page
 
             res = urllib2.urlopen(page)
             # request = urllib2.Request(page, headers={"Accept-Language": "en-US,en;q=0.5"})
             # res = urllib2.urlopen(request)
 
             print "Downloading: " + res.geturl()
+            # print "Downloading: " + res
 
             html_code = res.read()
         except Exception, ex:

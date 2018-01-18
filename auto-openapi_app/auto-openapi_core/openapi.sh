@@ -73,7 +73,7 @@ echo $PWD
 cd auto-openapi_core
 
 # 1.1 crawl html page
-# python rest_crawler/crawlAllPages.py $1 $2
+python rest_crawler/crawlAllPages.py $1 $2
 
 # 2. predict html page
 # python predict_page/predictExternal.py $1
@@ -86,4 +86,13 @@ cd auto-openapi_core
 
 # java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/bin/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
 
-java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
+# java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
+
+# https://web.archive.org/web/20170605190839/https://www.instagram.com/developer/endpoints/
+# https://web.archive.org/web/20170109154018/https://www.instagram.com/developer/endpoints/
+# https://web.archive.org/web/20160708101703/https://www.instagram.com/developer/endpoints/
+# https://web.archive.org/web/20160101054459/https://www.instagram.com/developer/endpoints/
+# https://web.archive.org/web/20150708162652/https://www.instagram.com/developer/endpoints/
+# https://web.archive.org/web/20150107054829/https://www.instagram.com/developer/endpoints/
+
+# https://web.archive.org/web/20110712011347/https://www.instagram.com/developer/endpoints/
