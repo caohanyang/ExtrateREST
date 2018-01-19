@@ -54,7 +54,8 @@
             <input matInput placeholder="https://www.instagram.com/developer/endpoints" formControlName="filterUrl">
           </mat-form-field>
           <p align="left">
-            This is a optional parameter. If the developer can conclude the common URL for pages that describe the endpoints.
+            This is an optional parameter.
+            <br> If the developer can conclude the common URL for pages that describe the endpoints.
             <br> As an example, if the Instagram endpoints Urls are:
             <br>
             <i>https://www.instagram.com/developer/endpoints/users/</i>
@@ -91,35 +92,42 @@
         <h5 align="left">
           <strong>Choose the endpoint Url and Http Verb pattern</strong>
         </h5>
+        <p align="left">
+          Take 2 minutes to look at the endpoint pages which describe the Url and Http Verb information.
+          <br>
+          <br> Choose the one of following patterns that match the target documentation:
+          <br>
+        </p>
+
         <mat-radio-group formControlName="mode" [(ngModel)]="modeType">
 
           <div class="example-margin" align="left">
             <mat-radio-button class="example-radio" value="https://">Both URL and Verb exist, Url begins with https</mat-radio-button>
-            <img src="../assets/img/https.png" alt="documentation details" align="center" width=100%>
+            <img src="../assets/img/https.png" alt="https mode" align="center" width=100%>
           </div>
           <br>
 
           <div class="example-margin">
             <mat-radio-button class="example-radio" value="http://">Both URL and Verb exist, Url begins with http</mat-radio-button>
-            <img src="../assets/img/http.png" alt="documentation details" align="center" width=100%>
+            <img src="../assets/img/http.png" alt="http mode" align="center" width=100%>
           </div>
           <br>
 
           <div class="example-margin">
             <mat-radio-button class="example-radio" value="/">Both URL and Verb exist, Url begins with /</mat-radio-button>
-            <img src="../assets/img/relative.png" alt="documentation details" align="center" width=100%>
+            <img src="../assets/img/relative.png" alt="relative mode" align="center" width=100%>
           </div>
           <br>
 
           <div class="example-margin">
-            <mat-radio-button class="example-radio" value="key">Verb doesn't exist, common keyword exist before Url</mat-radio-button>
-            <img src="../assets/img/noverbkey.png" alt="documentation details" align="center" width=100%>
+            <mat-radio-button class="example-radio" value="key">Verb doesn't exist, common keyword exists before Url</mat-radio-button>
+            <img src="../assets/img/noverbkey.png" alt="noverbkey mode" align="center" width=100%>
           </div>
           <br>
 
           <div class="example-margin">
             <mat-radio-button class="example-radio" value="null">Verb doesn't exist, can't find common keyword before Url</mat-radio-button>
-            <img src="../assets/img/noverbnull.png" alt="documentation details" align="center" width=100%>
+            <img src="../assets/img/noverbnull.png" alt="noverbnull mode" align="center" width=100%>
           </div>
           <br>
 
@@ -131,9 +139,22 @@
           <strong>URL details</strong>
         </h5>
         <div class="example-container" *ngIf="!(modeType=='key' || modeType=='null')">
-
-          <p> Stuffing between Verb and Url: {{stuffing}} </p>
+          <strong>Check the order of appearance for Url and Verb: </strong>
           <mat-form-field>
+            <mat-select placeholder="order of url and verb" [(value)]="reverse" formControlName="reverse" required>
+              <mat-option value="yes">Verb first</mat-option>
+              <mat-option value="no">Url first</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <h6 align="left">Verb first:</h6>
+          <img src="../assets/img/https.png" alt="https mode" align="center" width=100%>
+          <br>
+          <h6 align="left">Url first:</h6>
+          <img src="../assets/img/http.png" alt="http mode" align="center" width=100%>
+
+          <br>
+          <strong> Check stuffing between Verb and Url: </strong>
+          <mat-form-field hintLabel="The stuffing can be whitespace or multiply words">
             <mat-select placeholder="stuffing" formControlName="stuffing" required>
               <mat-option>None</mat-option>
               <mat-option value="\\s">Whitespace</mat-option>
@@ -142,26 +163,26 @@
               <mat-option value="(.*?)">more than 10 words</mat-option>
             </mat-select>
           </mat-form-field>
-
-          <p>Check the location order of Url and Verb: </p>
-          <mat-form-field>
-            <mat-select placeholder="order of url and verb" [(value)]="reverse" formControlName="reverse" required>
-              <mat-option value="no">Url first</mat-option>
-              <mat-option value="yes">Verb first</mat-option>
-            </mat-select>
-          </mat-form-field>
+          <br>
+          <h6 align="left">Whitespace:</h6>
+          <img src="../assets/img/https.png" alt="https mode" align="center" width=100%>
+          <br>
+          <h6 align="left">multiply words:</h6>
+          <img src="../assets/img/multiplywords.png" alt="multiply words" align="center" width=100%>
         </div>
 
+        <br>
         <div class="example-container" *ngIf="modeType=='key'">
-          <p>The common keyword before Url</p>
+          <strong>The common keyword before Url</strong>
           <mat-form-field>
             <mat-label>Keyword before Url</mat-label>
             <input matInput placeholder="Url :" formControlName="urlKey">
           </mat-form-field>
         </div>
 
+        <br>
         <div class="example-container">
-          <p> Check if the Url contains whitespace: {{urlMiddle}} </p>
+          <strong> Check if the Url contains whitespace: </strong>
           <mat-form-field>
             <mat-select placeholder="urlMiddle" formControlName="urlMiddle" required>
               <mat-option>None</mat-option>
@@ -170,7 +191,7 @@
             </mat-select>
           </mat-form-field>
 
-          <p> Character after the Url: {{urlAfter}} </p>
+          <strong> Character after the Url: {{urlAfter}} </strong>
           <mat-form-field>
             <mat-select placeholder="urlAfter" [(value)]="urlAfter" formControlName="urlAfter" required>
               <mat-option>None</mat-option>
@@ -443,18 +464,18 @@
 
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
-    
-   
+
+
 
 
     <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Generation</mat-card-title>
-          <mat-card-subtitle>You are now done. Ready to have the OpenAPI? </mat-card-subtitle>
-        </mat-card-header>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Generation</mat-card-title>
+        <mat-card-subtitle>You are now done. Ready to have the OpenAPI? </mat-card-subtitle>
+      </mat-card-header>
 
-      </mat-card>
+    </mat-card>
 
     <div style="text-align:center">
       <button mat-button matStepperPrevious>Back</button>
