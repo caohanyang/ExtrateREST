@@ -65,6 +65,7 @@ import { FooterComponent } from './footer/footer.component';
 import { EditorComponent } from './editor/editor.component';
 
 import { Ng4JsonEditorModule } from './component/ng4-jsoneditor/ng4-jsoneditor.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { Ng4JsonEditorModule } from './component/ng4-jsoneditor/ng4-jsoneditor.m
     StepComponent,
     NavComponent,
     FooterComponent,
-    EditorComponent
+    EditorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
