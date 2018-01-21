@@ -120,7 +120,7 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    NgbModule,
+    NgbModule.forRoot(),
     ModalModule.forRoot(),
     RouterRoutingModule,
     Ng4JsonEditorModule

@@ -77,6 +77,16 @@
   </mat-step>
 
   <!--Second form -->
+  <ng-template #httpsMode><img src="../assets/img/https.png" alt="https mode" align="center"></ng-template>
+  <ng-template #httpMode><img src="../assets/img/http.png" alt="http mode" align="center"></ng-template>
+  <ng-template #relativeMode><img src="../assets/img/relative.png" alt="relative mode" align="center"></ng-template>
+  <ng-template #noverbkeyMode><img src="../assets/img/noverbkey.png" alt="noverbkey mode" align="center"></ng-template>
+  <ng-template #nullMode><img src="../assets/img/noverbnull.png" alt="null mode" align="center"></ng-template>
+  <ng-template #multiplywords><img src="../assets/img/multiplywords.png" alt="multiply words" align="center"></ng-template>
+  <ng-template #urlMiddle><img src="../assets/img/urlmiddle.png" alt="url middle" align="center"></ng-template>
+  <ng-template #pathTemplate><img src="../assets/img/pathtemplate.png" alt="paht template" align="center"></ng-template>
+  
+  
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>URL & Verb</ng-template>
@@ -102,32 +112,27 @@
         <mat-radio-group formControlName="mode" [(ngModel)]="modeType">
 
           <div class="example-margin" align="left">
-            <mat-radio-button class="example-radio" value="https://">Both URL and Verb exist, Url begins with https</mat-radio-button>
-            <img src="../assets/img/https.png" alt="https mode" align="center" width=100%>
+            <mat-radio-button class="example-radio" value="https://" [ngbTooltip]="httpsMode">Both URL and Verb exist, Url begins with https</mat-radio-button>
           </div>
           <br>
 
           <div class="example-margin">
-            <mat-radio-button class="example-radio" value="http://">Both URL and Verb exist, Url begins with http</mat-radio-button>
-            <img src="../assets/img/http.png" alt="http mode" align="center" width=100%>
+            <mat-radio-button class="example-radio" value="http://" [ngbTooltip]="httpMode">Both URL and Verb exist, Url begins with http</mat-radio-button>
           </div>
           <br>
 
           <div class="example-margin">
-            <mat-radio-button class="example-radio" value="/">Both URL and Verb exist, Url begins with /</mat-radio-button>
-            <img src="../assets/img/relative.png" alt="relative mode" align="center" width=100%>
+            <mat-radio-button class="example-radio" value="/" [ngbTooltip]="relativeMode">Both URL and Verb exist, Url begins with /</mat-radio-button>
           </div>
           <br>
 
           <div class="example-margin">
-            <mat-radio-button class="example-radio" value="key">Verb doesn't exist, common keyword exists before Url</mat-radio-button>
-            <img src="../assets/img/noverbkey.png" alt="noverbkey mode" align="center" width=100%>
+            <mat-radio-button class="example-radio" value="key" [ngbTooltip]="noverbkeyMode">Verb doesn't exist, common keyword exists before Url</mat-radio-button>
           </div>
           <br>
 
           <div class="example-margin">
-            <mat-radio-button class="example-radio" value="null">Verb doesn't exist, can't find common keyword before Url</mat-radio-button>
-            <img src="../assets/img/noverbnull.png" alt="noverbnull mode" align="center" width=100%>
+            <mat-radio-button class="example-radio" value="null" [ngbTooltip]="nullMode">Verb doesn't exist, can't find common keyword before Url</mat-radio-button>
           </div>
           <br>
 
@@ -139,21 +144,22 @@
           <strong>URL details</strong>
         </h5>
         <div class="example-container" *ngIf="!(modeType=='key' || modeType=='null')">
-          <strong>Check the order of appearance for Url and Verb: </strong>
+          <strong>Check order of appearance: 
+          <i align="left" [ngbTooltip]="httpsMode">Verb first</i> or 
+          <i align="left" [ngbTooltip]="httpMode">Url first</i>
+        </strong>
           <mat-form-field>
             <mat-select placeholder="order of url and verb" [(value)]="reverse" formControlName="reverse" required>
               <mat-option value="yes">Verb first</mat-option>
               <mat-option value="no">Url first</mat-option>
             </mat-select>
           </mat-form-field>
-          <h6 align="left">Verb first:</h6>
-          <img src="../assets/img/https.png" alt="https mode" align="center" width=100%>
-          <br>
-          <h6 align="left">Url first:</h6>
-          <img src="../assets/img/http.png" alt="http mode" align="center" width=100%>
 
           <br>
-          <strong> Check stuffing between Verb and Url: </strong>
+          <strong>Check stuffing between Verb and Url: 
+            <i align="left" [ngbTooltip]="relativeMode">Whitespace</i> or 
+            <i align="left" [ngbTooltip]="multiplywords">Multiply words</i>
+          </strong>
           <mat-form-field hintLabel="The stuffing can be whitespace or multiply words">
             <mat-select placeholder="stuffing" formControlName="stuffing" required>
               <mat-option>None</mat-option>
@@ -163,12 +169,6 @@
               <mat-option value="(.*?)">more than 10 words</mat-option>
             </mat-select>
           </mat-form-field>
-          <br>
-          <h6 align="left">Whitespace:</h6>
-          <img src="../assets/img/https.png" alt="https mode" align="center" width=100%>
-          <br>
-          <h6 align="left">multiply words:</h6>
-          <img src="../assets/img/multiplywords.png" alt="multiply words" align="center" width=100%>
         </div>
 
         <br>
@@ -182,7 +182,13 @@
 
         <br>
         <div class="example-container">
-          <strong> Check if the Url contains whitespace: </strong>
+          <strong>Check if the Url wrapped in different tags: 
+          <i align="left" [ngbTooltip]="httpsMode">No</i> or
+          <i align="left" [ngbTooltip]="urlMiddle">Yes</i>
+        </strong>
+         Normally, if the Url itself (ignores query parameters) wrapped in different tags, it shows in different color or it may contian whitespace.
+         <br>
+         Inspect the HTML to check this property. 
           <mat-form-field>
             <mat-select placeholder="urlMiddle" formControlName="urlMiddle" required>
               <mat-option>None</mat-option>
@@ -191,17 +197,20 @@
             </mat-select>
           </mat-form-field>
 
-          <strong> Character after the Url: {{urlAfter}} </strong>
+          <!-- <strong> Character after the Url: {{urlAfter}} </strong>
           <mat-form-field>
             <mat-select placeholder="urlAfter" [(value)]="urlAfter" formControlName="urlAfter" required>
               <mat-option>None</mat-option>
               <mat-option value=" ">Space Bar</mat-option>
               <mat-option value="\n">New Line</mat-option>
             </mat-select>
-          </mat-form-field>
+          </mat-form-field> -->
 
+          <strong>Check if the Url support Path templating: 
+              <i align="left" [ngbTooltip]="pathTemplate">example</i>
+          </strong>
           <p> Path templating refers to the usage of curly braces (&#123;&#125;) to mark a section of a URL path as replaceable
-            using path parameters: {{urlTemplate}} </p>
+            using path parameters</p>
           <mat-form-field>
             <mat-select placeholder="urlTemplate" [(value)]="urlTemplate" formControlName="urlTemplate" required>
               <mat-option value="no">No</mat-option>
