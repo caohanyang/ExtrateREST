@@ -173,7 +173,19 @@
 
         <br>
         <div class="example-container" *ngIf="modeType=='key'">
-          <strong>The common keyword before Url</strong>
+          <strong>The common keyword before Url:</strong>
+          <p align="left">
+          Look at each endpoint, and summarize the common keyword before url.
+          <br> As an example, if the endpoints Urls are presented:
+          <br>
+          <i>Url : api.geonames.org/postalCodeLookupJSON?</i> 
+          <br>     
+          <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
+          <br>
+          <i>Url : api.geonames.org/findNearbyPlaceName?</i>
+          <br>
+          The common keyword could be: <i>Url :</i>
+          </p>
           <mat-form-field>
             <mat-label>Keyword before Url</mat-label>
             <input matInput placeholder="Url :" formControlName="urlKey">
@@ -207,7 +219,7 @@
           </mat-form-field> -->
 
           <strong>Check if the Url support Path templating: 
-              <i align="left" [ngbTooltip]="pathTemplate">example</i>
+              <i align="left" [ngbTooltip]="pathTemplate">Example</i>
           </strong>
           <p> Path templating refers to the usage of curly braces (&#123;&#125;) to mark a section of a URL path as replaceable
             using path parameters</p>
@@ -228,7 +240,9 @@
           <strong>Http Verb details</strong>
         </h5>
         <div class="example-container">
-          <p>The abbreviation for the Http Verb Delete: {{delete}}</p>
+          <strong>The abbreviation for the Http Verb Delete: 
+            <i >Del</i> or <i >Delete</i> 
+          </strong>
           <mat-form-field>
             <mat-select placeholder="abbreviation for delete" [(value)]="delete" formControlName="abbrevDelete" required>
               <mat-option value="del">Del</mat-option>
