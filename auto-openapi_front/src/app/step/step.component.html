@@ -262,6 +262,11 @@
   </mat-step>
 
   <!-- Three form -->
+  <ng-template #reqHttp><img src="../assets/img/reqhttp.png" alt="reqHttp mode" align="center"></ng-template>
+  <ng-template #reqCurl><img src="../assets/img/reqcurl.png" alt="reqCurl mode" align="center"></ng-template>
+  <ng-template #reqJson><img src="../assets/img/reqjson.png" alt="reqJson mode" align="center"></ng-template>
+  
+  
   <mat-step [stepControl]="threeFormGroup">
     <form [formGroup]="threeFormGroup">
       <ng-template matStepLabel>Request & Response Example</ng-template>
@@ -278,8 +283,16 @@
         <h5 align="left">
           <strong>Request details</strong>
         </h5>
+        
         <div class="example-container">
-          <p>Check if the API contain request examples</p>
+          <strong>Check if the API contain request examples</strong>
+          <p>Request example could be </p>
+          <p>
+          <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
+          <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
+          <i align="left" [ngbTooltip]="reqJson">POST body </i>
+          </p>
+
           <mat-form-field>
             <mat-select placeholder="exist request example?" [(value)]="request" required>
               <mat-option value="yes">Yes</mat-option>
@@ -290,26 +303,36 @@
 
         <div class="example-container" *ngIf="request=='yes'">
 
-          <p>Type of request example</p>
-          <!-- <img src="../assets/img/noverbnull.png" alt="documentation details" align="center" width=100%> -->
+          <strong>Type of request example</strong>
+          <p>3 types of request example: </p>
+          <p>
+          <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
+          <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
+          <i align="left" [ngbTooltip]="reqJson">POST body </i>
+          </p>
           <mat-form-field>
             <mat-select placeholder="the type of the request example" formControlName="reqExample" required>
               <mat-option value="http">HTTP</mat-option>
               <mat-option value="curl">CURL</mat-option>
-              <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">JSON</mat-option>
+              <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">POST body</mat-option>
               <!-- <mat-option value="xml">XML</mat-option> -->
             </mat-select>
           </mat-form-field>
 
-
-          <p>The key word before the request</p>
+          <br>
+          <strong>Common Keyword before the request</strong>
+          <p align="left">
+            Look at each endpoint, and summarize the common keyword before request example.
+            <br> 
+            The common keyword could be: <i>example request</i>, <i>request example</i>
+            </p>
           <mat-form-field>
             <mat-label>keyword before request example</mat-label>
             <input matInput placeholder="example request, request example" formControlName="reqKey" required>
           </mat-form-field>
 
-
-          <p> Filling between keyword and request example: {{reqmiddle}} </p>
+          <br>
+          <strong> Filling between keyword and request example: {{reqmiddle}} </strong>
           <mat-form-field>
             <mat-select placeholder="filling between keyword and example" formControlName="reqMiddle" required>
               <mat-option>None</mat-option>
@@ -320,7 +343,8 @@
             </mat-select>
           </mat-form-field>
 
-          <p>HTML tags for the request example: {{reqtemplate}} </p>
+          <br>
+          <strong>HTML tags for the request example: {{reqtemplate}} </strong>
           <mat-form-field>
             <mat-select placeholder="html tag for the request example" formControlName="reqTemplate" required>
               <mat-option>None</mat-option>
@@ -330,7 +354,8 @@
             </mat-select>
           </mat-form-field>
 
-          <p>Check the location order of Url and request example: </p>
+          <br>
+          <strong>Check the location order of Url and request example: </strong>
           <mat-form-field>
             <mat-select placeholder="order of url and request example" formControlName="url1req2" required>
               <mat-option value="yes">Url first</mat-option>

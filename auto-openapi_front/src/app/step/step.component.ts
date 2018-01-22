@@ -153,11 +153,6 @@ export class StepComponent implements OnInit {
     this.newConfig.paraIn= "query"
     this.newConfig.number= "multiple"
 
-  //   $('[data-toggle="tooltip"]').tooltip({
-  //     animated: 'fade',
-  //     placement: 'bottom',
-  //     html: true
-  // });
 
   }
 
