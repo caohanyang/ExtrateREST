@@ -200,7 +200,7 @@
         </strong>
          Normally, if the Url itself (ignores query parameters) wrapped in different tags, it shows in different color or it may contian whitespace.
          <br>
-         Inspect the HTML to check this property. 
+         Inspect the HTML sources to check this property. 
           <mat-form-field>
             <mat-select placeholder="urlMiddle" formControlName="urlMiddle" required>
               <mat-option>None</mat-option>
@@ -265,7 +265,7 @@
   <ng-template #reqHttp><img src="../assets/img/reqhttp.png" alt="reqHttp mode" align="center"></ng-template>
   <ng-template #reqCurl><img src="../assets/img/reqcurl.png" alt="reqCurl mode" align="center"></ng-template>
   <ng-template #reqJson><img src="../assets/img/reqjson.png" alt="reqJson mode" align="center"></ng-template>
-  
+  <ng-template #reqExample><img src="../assets/img/reqexample.png" alt="reqJson mode" align="center"></ng-template>
   
   <mat-step [stepControl]="threeFormGroup">
     <form [formGroup]="threeFormGroup">
@@ -324,15 +324,19 @@
           <p align="left">
             Look at each endpoint, and summarize the common keyword before request example.
             <br> 
-            The common keyword could be: <i>example request</i>, <i>request example</i>
+            The common keyword could be: 
+            <i [ngbTooltip]="reqExample">example request</i>, <i [ngbTooltip]="reqHttp">sample request</i>
             </p>
           <mat-form-field>
             <mat-label>keyword before request example</mat-label>
-            <input matInput placeholder="example request, request example" formControlName="reqKey" required>
+            <input matInput placeholder="example request, sample request" formControlName="reqKey" required>
           </mat-form-field>
 
           <br>
-          <strong> Filling between keyword and request example: {{reqmiddle}} </strong>
+          <strong>Filling between keyword and request example: 
+            <i align="left" [ngbTooltip]="reqExample">Whitespace</i> or 
+            <i align="left" [ngbTooltip]="reqHttp">Multiply words</i>
+          </strong>
           <mat-form-field>
             <mat-select placeholder="filling between keyword and example" formControlName="reqMiddle" required>
               <mat-option>None</mat-option>
@@ -344,7 +348,8 @@
           </mat-form-field>
 
           <br>
-          <strong>HTML tags for the request example: {{reqtemplate}} </strong>
+          <strong>HTML tags for the request example: </strong>
+          <p>Inspect the HTML sources to check this property. </p>
           <mat-form-field>
             <mat-select placeholder="html tag for the request example" formControlName="reqTemplate" required>
               <mat-option>None</mat-option>
@@ -354,14 +359,14 @@
             </mat-select>
           </mat-form-field>
 
-          <br>
+          <!-- <br>
           <strong>Check the location order of Url and request example: </strong>
           <mat-form-field>
             <mat-select placeholder="order of url and request example" formControlName="url1req2" required>
               <mat-option value="yes">Url first</mat-option>
               <mat-option value="no">Request example first</mat-option>
             </mat-select>
-          </mat-form-field>
+          </mat-form-field> -->
 
         </div>
         <br>

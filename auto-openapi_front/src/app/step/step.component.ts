@@ -128,7 +128,7 @@ export class StepComponent implements OnInit {
     }
     this.newConfig.reqExample= this.threeFormGroup.value.reqExample;
     this.newConfig.reqMiddle =  this.threeFormGroup.value.reqMiddle;
-    this.newConfig.url1req2 = (this.threeFormGroup.value.url1req2==="yes")? true: false;
+    // this.newConfig.url1req2 = (this.threeFormGroup.value.url1req2==="yes")? true: false;
     this.newConfig.reqTemplate= this.threeFormGroup.value.reqTemplate;
 
     // third form   response
@@ -152,7 +152,7 @@ export class StepComponent implements OnInit {
     // default
     this.newConfig.paraIn= "query"
     this.newConfig.number= "multiple"
-
+    this.newConfig.url1req2= true
 
   }
 
