@@ -85,8 +85,8 @@
   <ng-template #multiplywords><img src="../assets/img/multiplywords.png" alt="multiply words" align="center"></ng-template>
   <ng-template #urlMiddle><img src="../assets/img/urlmiddle.png" alt="url middle" align="center"></ng-template>
   <ng-template #pathTemplate><img src="../assets/img/pathtemplate.png" alt="paht template" align="center"></ng-template>
-  
-  
+
+
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>URL & Verb</ng-template>
@@ -175,16 +175,15 @@
         <div class="example-container" *ngIf="modeType=='key'">
           <strong>The common keyword before Url:</strong>
           <p align="left">
-          Look at each endpoint, and summarize the common keyword before url.
-          <br> As an example, if the endpoints Urls are presented:
-          <br>
-          <i>Url : api.geonames.org/postalCodeLookupJSON?</i> 
-          <br>     
-          <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
-          <br>
-          <i>Url : api.geonames.org/findNearbyPlaceName?</i>
-          <br>
-          The common keyword could be: <i>Url :</i>
+            Look at each endpoint, and summarize the common keyword before url.
+            <br> As an example, if the endpoints Urls are presented:
+            <br>
+            <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
+            <br>
+            <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
+            <br>
+            <i>Url : api.geonames.org/findNearbyPlaceName?</i>
+            <br> The common keyword could be: <i>Url :</i>
           </p>
           <mat-form-field>
             <mat-label>Keyword before Url</mat-label>
@@ -197,10 +196,9 @@
           <strong>Check if the Url wrapped in different tags: 
           <i align="left" [ngbTooltip]="httpsMode">No</i> or
           <i align="left" [ngbTooltip]="urlMiddle">Yes</i>
-        </strong>
-         Normally, if the Url itself (ignores query parameters) wrapped in different tags, it shows in different color or it may contian whitespace.
-         <br>
-         Inspect the HTML sources to check this property. 
+        </strong> Normally, if the Url itself (ignores query parameters) wrapped in different tags, it shows in
+          different color or it may contian whitespace.
+          <br> Inspect the HTML sources to check this property.
           <mat-form-field>
             <mat-select placeholder="urlMiddle" formControlName="urlMiddle" required>
               <mat-option>None</mat-option>
@@ -266,7 +264,7 @@
   <ng-template #reqCurl><img src="../assets/img/reqcurl.png" alt="reqCurl mode" align="center"></ng-template>
   <ng-template #reqJson><img src="../assets/img/reqjson.png" alt="reqJson mode" align="center"></ng-template>
   <ng-template #reqExample><img src="../assets/img/reqexample.png" alt="reqJson mode" align="center"></ng-template>
-  
+
   <mat-step [stepControl]="threeFormGroup">
     <form [formGroup]="threeFormGroup">
       <ng-template matStepLabel>Request & Response Example</ng-template>
@@ -283,14 +281,14 @@
         <h5 align="left">
           <strong>Request details</strong>
         </h5>
-        
+
         <div class="example-container">
           <strong>Check if the API contain request examples</strong>
           <p>Request example could be </p>
           <p>
-          <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
-          <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
-          <i align="left" [ngbTooltip]="reqJson">POST body </i>
+            <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
+            <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
+            <i align="left" [ngbTooltip]="reqJson">POST body </i>
           </p>
 
           <mat-form-field>
@@ -306,9 +304,9 @@
           <strong>Type of request example</strong>
           <p>3 types of request example: </p>
           <p>
-          <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
-          <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
-          <i align="left" [ngbTooltip]="reqJson">POST body </i>
+            <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
+            <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
+            <i align="left" [ngbTooltip]="reqJson">POST body </i>
           </p>
           <mat-form-field>
             <mat-select placeholder="the type of the request example" formControlName="reqExample" required>
@@ -323,10 +321,9 @@
           <strong>Common Keyword before the request</strong>
           <p align="left">
             Look at each endpoint, and summarize the common keyword before request example.
-            <br> 
-            The common keyword could be: 
+            <br> The common keyword could be:
             <i [ngbTooltip]="reqExample">example request</i>, <i [ngbTooltip]="reqHttp">sample request</i>
-            </p>
+          </p>
           <mat-form-field>
             <mat-label>keyword before request example</mat-label>
             <input matInput placeholder="example request, sample request" formControlName="reqKey" required>
@@ -372,11 +369,19 @@
         <br>
 
         <!-- response details-->
+        <ng-template #resExample><img src="../assets/img/resexample.png" alt="reqJson mode" align="center"></ng-template>
+        <ng-template #resMultiply><img src="../assets/img/resmultiply.png" alt="reqJson mode" align="center"></ng-template>
+
+
         <h5 align="left">
           <strong>Response details</strong>
         </h5>
         <div class="example-container">
-          <p>Check if the API contain response examples</p>
+          <strong>Check if the API contain response examples</strong>
+          <p>Response example could be </p>
+          <p>
+            <i align="left" [ngbTooltip]="resExample">Twitter Response example</i>
+          </p>
           <mat-form-field>
             <mat-select placeholder="exist response example?" [(value)]="response" required>
               <mat-option value="yes">Yes</mat-option>
@@ -386,21 +391,32 @@
         </div>
 
         <div class="example-container" *ngIf="response=='yes'">
-          <p>The key word before the response</p>
+          <br>
+          <strong>Common Keyword before the response</strong>
+          <p align="left">
+            Look at each endpoint, and summarize the common keyword before response example.
+            <br> The common keyword could be:
+            <i [ngbTooltip]="resExample">Example Response</i>, <i [ngbTooltip]="resMultiply">Response Body</i>
+          </p>
           <mat-form-field>
             <mat-label>keyword before response example</mat-label>
             <input matInput placeholder="example, response, JSON representation..." formControlName="resKey" required>
           </mat-form-field>
 
-          <p>Type of response example</p>
+          <!-- <br>
+          <strong>Type of response example</strong>
           <mat-form-field>
             <mat-select placeholder="the type of the response example" formControlName="resExample" required>
-              <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">JSON</mat-option>
-              <!-- <mat-option value="xml">XML</mat-option> -->
-            </mat-select>
-          </mat-form-field>
+              <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">JSON</mat-option> -->
+          <!-- <mat-option value="xml">XML</mat-option> -->
+          <!-- </mat-select>
+          </mat-form-field> -->
 
-          <p> Stuffing between keyword and response example: {{reqmiddle}} </p>
+          <br>
+          <strong> Filling between keyword and response example: 
+              <i align="left" [ngbTooltip]="resExample">Whitespace</i> or 
+              <i align="left" [ngbTooltip]="resMultiply">Multiply words</i>
+          </strong>
           <mat-form-field>
             <mat-select placeholder="stuffing between keyword and example" formControlName="resMiddle" required>
               <mat-option>None</mat-option>
@@ -411,7 +427,9 @@
             </mat-select>
           </mat-form-field>
 
-          <p>HTML tags for the response example: {{restemplate}} </p>
+          <br>
+          <strong>HTML tags for the response example: </strong>
+          <p>Inspect the HTML sources to check this property. </p>
           <mat-form-field>
             <mat-select placeholder="html tag for the response example" formControlName="resTemplate" required>
               <mat-option>None</mat-option>
@@ -421,13 +439,13 @@
             </mat-select>
           </mat-form-field>
 
-          <p>Check the location order of Url and response example: </p>
+          <!-- <p>Check the location order of Url and response example: </p>
           <mat-form-field>
             <mat-select placeholder="order of url and response example" formControlName="url1res2" required>
               <mat-option value="yes">Url first</mat-option>
               <mat-option value="no">Response example first</mat-option>
             </mat-select>
-          </mat-form-field>
+          </mat-form-field> -->
 
         </div>
 
@@ -440,6 +458,7 @@
     </form>
   </mat-step>
 
+  
   <!-- Four form -->
   <mat-step [stepControl]="fourFormGroup">
     <form [formGroup]="fourFormGroup">

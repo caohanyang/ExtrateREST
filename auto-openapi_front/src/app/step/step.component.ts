@@ -140,7 +140,7 @@ export class StepComponent implements OnInit {
     this.newConfig.resMiddle= this.threeFormGroup.value.resMiddle;
     this.newConfig.url1res2 = (this.threeFormGroup.value.url1res2==="yes")? true: false;
     this.newConfig.resTemplate= this.threeFormGroup.value.resTemplate;
-    this.newConfig.resExample= this.threeFormGroup.value.resExample;
+    // this.newConfig.resExample= this.threeFormGroup.value.resExample;
 
     // four form  
     this.newConfig.existPara= (this.existpara==="yes")? true: false;
@@ -153,6 +153,7 @@ export class StepComponent implements OnInit {
     this.newConfig.paraIn= "query"
     this.newConfig.number= "multiple"
     this.newConfig.url1req2= true
+    this.newConfig.resExample = "((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}"
 
   }
 
