@@ -458,8 +458,11 @@
     </form>
   </mat-step>
 
-  
+
   <!-- Four form -->
+  <ng-template #table><img src="../assets/img/table.png" alt="table" align="center"></ng-template>
+  <ng-template #list><img src="../assets/img/list.png" alt="list" align="center"></ng-template>
+  
   <mat-step [stepControl]="fourFormGroup">
     <form [formGroup]="fourFormGroup">
       <ng-template matStepLabel>Parameter</ng-template>
@@ -479,7 +482,12 @@
         </h5>
 
         <div class="example-container">
-          <p>Check if the API contain parameter details</p>
+          <strong>Check if the API contain parameter details</strong>
+          <p>parameter could be presented in a </p>
+          <p>
+            <i align="left" [ngbTooltip]="table">HTML Table</i> or
+            <i align="left" [ngbTooltip]="list">HTML List</i>
+          </p>
           <mat-form-field>
             <mat-select placeholder="exist parameter information?" [(value)]="existpara" required>
               <mat-option value="yes">Yes</mat-option>
@@ -488,23 +496,37 @@
           </mat-form-field>
         </div>
 
+        <br>
         <div class="example-container" *ngIf="existpara=='yes'">
-          <p>Type of parameter template: {{template}} </p>
+          <strong>Type of HTML template: </strong>
+          <p>
+              <i align="left" [ngbTooltip]="table">HTML Table</i> or
+              <i align="left" [ngbTooltip]="list">HTML List</i>
+          </p>
           <mat-form-field>
             <mat-select placeholder="the type of the parameter template" formControlName="template" required>
-
-              <mat-option value="table">table</mat-option>
-              <mat-option value="list">list</mat-option>
+              <mat-option value="table">Table</mat-option>
+              <mat-option value="list">List</mat-option>
             </mat-select>
           </mat-form-field>
 
-          <p>The key word before the parameter template</p>
+          <br>
+          <strong>The key word before the parameter template</strong>
+          <p align="left">
+              Look at each endpoint, and summarize the common keyword before parameter information.
+              <br> The common keyword could be:
+              <i [ngbTooltip]="table">Parameters</i>, <i [ngbTooltip]="list">Arguments</i>
+          </p>
           <mat-form-field>
             <mat-label>keyword before parameter template</mat-label>
             <input matInput placeholder="parameter, argument, field, parameters..." formControlName="paraKey" required>
           </mat-form-field>
 
-          <p> Stuffing between keyword and parameter template: {{paramiddle}} </p>
+          <br>
+          <strong> Stuffing between keyword and parameter template: 
+              <i align="left" [ngbTooltip]="list">Whitespace</i> or 
+              <i align="left" >Multiply words</i>
+          </strong>
           <mat-form-field>
             <mat-select placeholder="stuffing between keyword and parameter template" formControlName="paraMiddle" required>
               <mat-option value="whitespace">Whitespace</mat-option>
@@ -513,13 +535,13 @@
             </mat-select>
           </mat-form-field>
 
-          <p>Check the location order of Url and parameter template: </p>
+          <!-- <p>Check the location order of Url and parameter template: </p>
           <mat-form-field>
             <mat-select placeholder="order of url and parameter template" formControlName="url1para2" required>
               <mat-option value="yes">Url first</mat-option>
               <mat-option value="no">Parameter template first</mat-option>
             </mat-select>
-          </mat-form-field>
+          </mat-form-field> -->
 
         </div>
 
