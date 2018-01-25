@@ -53,15 +53,14 @@ class Config {
         this.reqKey= "no"
         this.reqMiddle = ".{0,10}"
         this.reqExample= "((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}"
-        this.url1req2 = true
         this.reqTemplate= "pre"
-        this.resKey= "JSON representation"
+        this.resKey= "response"
         this.resMiddle= "\\s.{0,120}"
         this.url1res2 = true
         this.resTemplate= "pre"
         this.resExample= "((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}"
         this.existPara= true
-        this.paraKey= "parameters"
+        this.paraKey= "(parameter)|(argument)|(field)|(parameters)|(arguments)|(fields)"
         this.url1para2= true
         this.paraMiddle= "13"
         this.paraIn= "query"

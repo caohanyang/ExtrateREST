@@ -82,8 +82,6 @@ export class StepComponent implements OnInit {
   }
 
   create(): void {
-    console.log(this.firstFormGroup);
-    console.log(this.firstFormGroup.value.apiName);
 
     this.receiveForm();
 
@@ -99,7 +97,7 @@ export class StepComponent implements OnInit {
   
   receiveForm(): void {
     // first form
-    this.newConfig.apiName = this.firstFormGroup.value.apiName;
+    // this.newConfig.apiName = this.firstFormGroup.value.apiName;
     this.newConfig.docUrl = this.firstFormGroup.value.docUrl;
     this.newConfig.filterUrl = this.firstFormGroup.value.filterUrl;
 
@@ -133,7 +131,9 @@ export class StepComponent implements OnInit {
 
     // third form   response
     if (this.response === "yes" ) {
+      console.log(this.threeFormGroup.value.resKey)
       this.newConfig.reqKey = this.threeFormGroup.value.resKey;
+      console.log(this.newConfig.reqKey)
     } else {
       this.newConfig.resKey= "no"
     }
@@ -146,15 +146,16 @@ export class StepComponent implements OnInit {
     this.newConfig.existPara= (this.existpara==="yes")? true: false;
     this.newConfig.paraKey= this.fourFormGroup.value.paraKey;
     this.newConfig.url1para2= (this.fourFormGroup.value.url1para2==="yes")? true: false;
-    this.newConfig.paraMiddle= this.fourFormGroup.value.paraMiddle;
+    // this.newConfig.paraMiddle= this.fourFormGroup.value.paraMiddle;
     this.newConfig.template= this.fourFormGroup.value.template;
 
     // default
+    this.newConfig.apiName = "fakeName"
     this.newConfig.paraIn= "query"
     this.newConfig.number= "multiple"
     this.newConfig.url1req2= true
     this.newConfig.resExample = "((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}"
-
+    this.newConfig.paraMiddle= "13"
   }
 
 

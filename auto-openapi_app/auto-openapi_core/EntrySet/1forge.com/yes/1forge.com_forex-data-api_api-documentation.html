@@ -8,12 +8,12 @@
   <title>
    Forex Quote API Documentation - 1Forge
   </title>
-  <link href="https://ja.1forge.com" hreflang="ja" rel="alternate"/>
-  <link href="https://zh.1forge.com" hreflang="zh" rel="alternate"/>
-  <link href="https://de.1forge.com" hreflang="de" rel="alternate"/>
-  <link href="https://es.1forge.com" hreflang="es" rel="alternate"/>
-  <link href="https://ko.1forge.com" hreflang="ko" rel="alternate"/>
-  <link href="https://1forge.com" hreflang="en" rel="alternate"/>
+  <link href="https://ja.1forge.com/forex-data-api/api-documentation" hreflang="ja" rel="alternate"/>
+  <link href="https://zh.1forge.com/forex-data-api/api-documentation" hreflang="zh" rel="alternate"/>
+  <link href="https://de.1forge.com/forex-data-api/api-documentation" hreflang="de" rel="alternate"/>
+  <link href="https://es.1forge.com/forex-data-api/api-documentation" hreflang="es" rel="alternate"/>
+  <link href="https://ko.1forge.com/forex-data-api/api-documentation" hreflang="ko" rel="alternate"/>
+  <link href="https://1forge.com/forex-data-api/api-documentation" hreflang="en" rel="alternate"/>
   <link href="/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
   <link href="/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
   <link href="/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
@@ -31,7 +31,7 @@
   <meta content="/ms-icon-144x144.png" name="msapplication-TileImage"/>
   <meta content="#ffffff" name="theme-color"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css" rel=" stylesheet "/>
-  <link href="https://1forge.com/css/style.css?v=2" rel="stylesheet"/>
+  <link href="https://1forge.com/css/style.css?v=4" rel="stylesheet"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
   <script src="https://1forge.com/js/app.js">
@@ -102,7 +102,7 @@
       <span class="top-bar-text">
        Server Load:
        <span style="font-weight: 400;">
-        10/100
+        20/100
        </span>
       </span>
       <span class="green server-status-icon">
@@ -110,7 +110,7 @@
       <span class="top-bar-text">
        Response Time:
        <span style="font-weight: 400;">
-        11.52 ms
+        10.09 ms
        </span>
       </span>
       <span class="green server-status-icon">
@@ -147,6 +147,16 @@
      <span class=" sub-navigation-item">
       <a href="https://1forge.com/forex-data-api/libraries">
        Libraries
+      </a>
+     </span>
+     <span class=" sub-navigation-item">
+      <a href="https://1forge.com/forex-data-api/widgets">
+       Widgets
+      </a>
+     </span>
+     <span class=" sub-navigation-item">
+      <a href="https://1forge.com/forex-data-api/currency-pair-list">
+       Currency Pair List
       </a>
      </span>
      <span class=" sub-navigation-item">
@@ -241,8 +251,8 @@
        <span class="green request-method">
         GET
        </span>
-       <a href="https://forex.1forge.com/1.0.2/quotes?pairs=EURUSD,GBPJPY,AUDUSD&amp;api_key=YOUR_API_KEY" target="_BLANK" title="Get quotes for specific currency pair(s)">
-        https://forex.1forge.com/1.0.2/quotes?pairs=
+       <a href="https://forex.1forge.com/1.0.3/quotes?pairs=EURUSD,GBPJPY,AUDUSD&amp;api_key=YOUR_API_KEY" target="_BLANK" title="Get quotes for specific currency pair(s)">
+        https://forex.1forge.com/1.0.3/quotes?pairs=
         <strong>
          EURUSD,GBPJPY,AUDUSD
         </strong>
@@ -274,8 +284,8 @@
        <span class="green request-method">
         GET
        </span>
-       <a href="https://forex.1forge.com/1.0.2/symbols?api_key=YOUR_API_KEY" target="_BLANK" title="Get a list of symbols for which we provide real-time quotes">
-        https://forex.1forge.com/1.0.2/symbols?api_key=
+       <a href="https://forex.1forge.com/1.0.3/symbols?api_key=YOUR_API_KEY" target="_BLANK" title="Get a list of symbols for which we provide real-time quotes">
+        https://forex.1forge.com/1.0.3/symbols?api_key=
         <strong>
          YOUR_API_KEY
         </strong>
@@ -303,8 +313,8 @@
        <span class="green request-method">
         GET
        </span>
-       <a href="https://forex.1forge.com/1.0.2/convert?from=USD&amp;to=EUR&amp;quantity=100&amp;api_key=YOUR_API_KEY" target="_BLANK" title="Get a list of symbols for which we provide real-time quotes">
-        https://forex.1forge.com/1.0.2/convert?from=
+       <a href="https://forex.1forge.com/1.0.3/convert?from=USD&amp;to=EUR&amp;quantity=100&amp;api_key=YOUR_API_KEY" target="_BLANK" title="Get a list of symbols for which we provide real-time quotes">
+        https://forex.1forge.com/1.0.3/convert?from=
         <strong>
          USD
         </strong>
@@ -344,8 +354,8 @@
        <span class="green request-method">
         GET
        </span>
-       <a href="https://forex.1forge.com/1.0.2/market_status?api_key=YOUR_API_KEY" target="_BLANK" title="Check if the market is open">
-        https://forex.1forge.com/1.0.2/market_status?api_key=
+       <a href="https://forex.1forge.com/1.0.3/market_status?api_key=YOUR_API_KEY" target="_BLANK" title="Check if the market is open">
+        https://forex.1forge.com/1.0.3/market_status?api_key=
         <strong>
          YOUR_API_KEY
         </strong>
@@ -373,8 +383,8 @@
        <span class="green request-method">
         GET
        </span>
-       <a href="https://forex.1forge.com/1.0.2/quota?api_key=YOUR_API_KEY" target="_BLANK" title="Check if the market is open">
-        https://forex.1forge.com/1.0.2/quota?api_key=
+       <a href="https://forex.1forge.com/1.0.3/quota?api_key=YOUR_API_KEY" target="_BLANK" title="Check if the market is open">
+        https://forex.1forge.com/1.0.3/quota?api_key=
         <strong>
          YOUR_API_KEY
         </strong>
@@ -406,6 +416,7 @@
      <a class="float-left" href="https://www.mcafeesecure.com/verify?host=1forge.com" target="_BLANK">
       <img class="company-logo" src="https://1forge.com/images/logos/mcafee.png" style="background:#fff;padding:5px;border-radius:5px;border:1px solid #999;"/>
      </a>
+     <img class="hide-for-small-only company-logo" src="https://1forge.com/images/logos/google-cloud.svg"/>
      <img class="hide-for-small-only company-logo" src="https://1forge.com/images/logos/stripe.png"/>
      <img class="hide-for-small-only company-logo" src="https://1forge.com/images/logos/comodo.png"/>
     </div>
@@ -413,7 +424,7 @@
   </div>
   <div class="footer" style="background:#24292e;color:#fff;">
    <div class="row">
-    <div class="large-3 columns">
+    <div class="large-2 columns">
      <strong>
       Forex Quote API
      </strong>
@@ -434,8 +445,8 @@
        </a>
       </li>
       <li>
-       <a href="https://1forge.com/account">
-        Customer Support
+       <a href="https://1forge.com/forex-data-api/widgets">
+        Widgets
        </a>
       </li>
       <li>
@@ -443,11 +454,21 @@
         Currency Pair List
        </a>
       </li>
+      <li>
+       <a href="mailto:contact@1forge.com">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="https://1forge.com/forex-data-api/faq">
+        FAQ
+       </a>
+      </li>
      </ul>
     </div>
-    <div class="large-3 columns end">
+    <div class="large-2 columns end">
      <strong>
-      1Forge
+      Account
      </strong>
      <ul>
       <li>
@@ -461,13 +482,13 @@
        </a>
       </li>
       <li>
-       <a href="mailto:contact@1forge.com">
-        Contact
+       <a href="https://1forge.com/account">
+        Customer Support
        </a>
       </li>
      </ul>
     </div>
-    <div class="large-3 end columns">
+    <div class="large-2 end columns">
      <strong>
       Language
      </strong>
@@ -504,7 +525,7 @@
       </li>
      </ul>
     </div>
-    <div class="large-3 end columns">
+    <div class="large-2 end columns">
      <strong>
       Legal
      </strong>

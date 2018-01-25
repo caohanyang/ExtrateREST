@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7 not-logged-in "> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8 not-logged-in "> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 not-logged-in "> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js not-logged-in " lang="en">
+ <!--<![endif]-->
+ <head>
+  <script charset="utf-8" src="/static/js/analytics.js?v=1516052760.0" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   archive_analytics.values.service='wb';archive_analytics.values.server_name='wwwb-app40.us.archive.org';archive_analytics.values.server_ms=575;
+  </script>
+  <script charset="utf-8" src="/static/js/wbhack.js?v=1516052760.0" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   __wbhack.init('https://web.archive.org/web');
+  </script>
+  <link href="/static/css/banner-styles.css?v=1516052760.0" rel="stylesheet" type="text/css"/>
+  <link href="/static/css/iconochive.css?v=1516052760.0" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <script type="text/javascript">
+   window._timings = {"domLoading": Date.now()}
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Like Endpoints • Instagram Developer Documentation
+  </title>
+  <script type="text/javascript">
+   WebFontConfig = {
+    custom: {
+      families: ['proxima-nova:n3,n4,n6,n7'],
+    }
+  };
+  </script>
+  <script async="" src="//web.archive.org/web/20160101145503js_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/scripts/webfont.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   /* @license
+   * MyFonts Webfont Build ID 2164953, 2012-03-23T23:06:30-0400
+   *
+   * The fonts listed in this notice are subject to the End User License
+   * Agreement(s) entered into by the website owner. All other parties are
+   * explicitly restricted from using the Licensed Webfonts(s).
+   *
+   * You may obtain a valid license at the URLs below.
+   *
+   *
+   * Webfont: Proxima Nova Light by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Regular by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Semibold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+   * Licensed pageviews: unlimited
+   *
+   *
+   * License: http://www.myfonts.com/viewlicense?type=web&buildid=2164953
+   * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+   *
+   * (c) 2012 Bitstream Inc
+   */
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.eot');
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.eot#iefix') format("embedded-opentype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.woff') format("woff"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.ttf') format("truetype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.svg#ProximaNovaBold') format("svg");
+    font-weight: bold;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.eot');
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.eot#iefix') format("embedded-opentype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.woff') format("woff"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.ttf') format("truetype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.svg#ProximaNovaBoldItalic') format("svg");
+    font-weight: bold;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.eot');
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.eot#iefix') format("embedded-opentype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.woff') format("woff"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.ttf') format("truetype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.svg#ProximaNovaRegular') format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.eot');
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.eot#iefix') format("embedded-opentype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.woff') format("woff"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.ttf') format("truetype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.svg#ProximaNovaRegularItalic') format("svg");
+    font-weight: normal;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.eot');
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.eot#iefix') format("embedded-opentype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.woff') format("woff"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.ttf') format("truetype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.svg#ProximaNovaSemibold') format("svg");
+    font-weight: 600;
+    font-style: normal; }
+  </style>
+  <style type="text/css">
+   @font-face {
+    font-family: 'proxima-nova';
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.eot');
+    src: url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.eot#iefix') format("embedded-opentype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.woff') format("woff"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.ttf') format("truetype"),
+      url('/web/20160101145503im_/https://www.instagram.com/developer/endpoints/likes/ //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.svg#ProximaNovaLight') format("svg");
+    font-weight: 300;
+    font-style: normal; }
+  </style>
+  <meta content="noimageindex" name="robots"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1" id="viewport" name="viewport"/>
+  <script type="text/javascript">
+   (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+  </script>
+  <link href="//web.archive.org/web/20160101145503im_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>
+  <link color="#125688" href="//web.archive.org/web/20160101145503im_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/favicon.svg" rel="mask-icon"/>
+  <link href="//web.archive.org/web/20160101145503im_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"/>
+  <link href="//web.archive.org/web/20160101145503im_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="//web.archive.org/web/20160101145503im_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="//web.archive.org/web/20160101145503im_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="//web.archive.org/web/20160101145503cs_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/styles/developer/developer-main.css" rel="stylesheet" type="text/css"/>
+  <script src="//web.archive.org/web/20160101145503js_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/scripts/jquery.js" type="text/javascript">
+  </script>
+  <script src="//web.archive.org/web/20160101145503js_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/scripts/bluebar.js" type="text/javascript">
+  </script>
+  <script src="//web.archive.org/web/20160101145503js_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/scripts/navigation.js" type="text/javascript">
+  </script>
+  <script>
+   $(document).ready(function() {
+    $('#top_bar_right .top-bar-actions').prepend("<li class='manage-clients link-settings'><a class='' href='/developer/clients/manage/'>Manage Clients<i></i></a></li>");
+    
+    $('#top_bar_right .top-bar-actions').prepend("<li class='testing-clients link-settings'><a class='' href='/developer/clients/sandbox_invites/'>Sandbox Invites<i></i></a></li>");
+    
+  });
+  </script>
+ </head>
+ <body class="sidebar-page">
+  <!-- BEGIN WAYBACK TOOLBAR INSERT -->
+  <script charset="utf-8" src="/static/js/timestamp.js?v=1516052760.0" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/static/js/graph-calc.js?v=1516052760.0" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/static/js/auto-complete.js?v=1516052760.0" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/static/js/toolbar.js?v=1516052760.0" type="text/javascript">
+  </script>
+  <style type="text/css">
+   body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+  </style>
+  <div id="wm-ipp" lang="en" style="display:none;direction:ltr;">
+   <div style="position:fixed;left:0;top:0;right:0;">
+    <div id="wm-ipp-inside">
+     <div style="position:relative;">
+      <div id="wm-logo" style="float:left;width:130px;padding-top:10px;">
+       <a href="/web/" title="Wayback Machine home page">
+        <img alt="Wayback Machine" border="0" height="39" src="/static/images/toolbar/wayback-toolbar-logo.png" width="110"/>
+       </a>
+      </div>
+      <div class="r" style="float:right;">
+       <div id="wm-btns" style="text-align:right;height:25px;">
+        <div id="wm-save-snapshot-success">
+         success
+        </div>
+        <div id="wm-save-snapshot-fail">
+         fail
+        </div>
+        <a href="#" id="wm-save-snapshot-open" onclick="__wm.saveSnapshot('https://www.instagram.com/developer/endpoints/likes/', '20160101145503')" title="Save to My Web Archive">
+         <span class="iconochive-web">
+         </span>
+        </a>
+        <a href="https://archive.org/account/login.php" id="wm-sign-in" title="Sign In">
+         <span class="iconochive-person">
+         </span>
+        </a>
+        <span class="iconochive-web" id="wm-save-snapshot-in-progress">
+        </span>
+        <a href="http://faq.web.archive.org/" style="top:-6px;" title="Get some help using the Wayback Machine">
+         <span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;">
+         </span>
+        </a>
+        <a href="#close" id="wm-tb-close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar">
+         <span class="iconochive-remove-circle" style="color:#888888;font-size:240%;">
+         </span>
+        </a>
+       </div>
+       <div id="wm-share" style="text-align:right;">
+        <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://web.archive.org/web/20160101145503/https://www.instagram.com/developer/endpoints/likes/', '', 'height=400,width=600'); return false;" style="margin-right:5px;" target="_blank" title="Share on Facebook">
+         <span class="iconochive-facebook" style="color:#3b5998;font-size:160%;">
+         </span>
+        </a>
+        <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=https://web.archive.org/web/20160101145503/https://www.instagram.com/developer/endpoints/likes/&amp;via=internetarchive', '', 'height=400,width=600'); return false;" style="margin-right:5px;" target="_blank" title="Share on Twitter">
+         <span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;">
+         </span>
+        </a>
+       </div>
+      </div>
+      <table class="c" style="">
+       <tbody>
+        <tr>
+         <td class="u" colspan="2">
+          <form action="/web/submit" id="wmtb" method="get" name="wmtb" target="_top">
+           <input id="wmtbURL" name="url" onfocus="this.focus();this.select();" type="text" value="https://www.instagram.com/developer/endpoints/likes/"/>
+           <input name="type" type="hidden" value="replay"/>
+           <input name="date" type="hidden" value="20160101145503"/>
+           <input type="submit" value="Go"/>
+          </form>
+         </td>
+         <td class="n" rowspan="2" style="width:110px;">
+          <table>
+           <tbody>
+            <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+            <tr class="m">
+             <td class="b" nowrap="nowrap">
+              <a href="https://web.archive.org/web/20151201071256/https://instagram.com/developer/endpoints/likes/" title="01 Dec 2015">
+               <strong>
+                Dec
+               </strong>
+              </a>
+             </td>
+             <td class="c" id="displayMonthEl" title="You are here: 14:55:03 Jan 01, 2016">
+              JAN
+             </td>
+             <td class="f" nowrap="nowrap">
+              <a href="https://web.archive.org/web/20160202045623/https://www.instagram.com/developer/endpoints/likes/" title="02 Feb 2016">
+               <strong>
+                Feb
+               </strong>
+              </a>
+             </td>
+            </tr>
+            <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+            <tr class="d">
+             <td class="b" nowrap="nowrap">
+              <a href="https://web.archive.org/web/20151230175233/https://www.instagram.com/developer/endpoints/likes/" title="17:52:33 Dec 30, 2015">
+               <img alt="Previous capture" border="0" height="16" src="/static/images/toolbar/wm_tb_prv_on.png" width="14"/>
+              </a>
+             </td>
+             <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 14:55:03 Jan 01, 2016">
+              01
+             </td>
+             <td class="f" nowrap="nowrap">
+              <a href="https://web.archive.org/web/20160102150706/https://www.instagram.com/developer/endpoints/likes/" title="15:07:06 Jan 02, 2016">
+               <img alt="Next capture" border="0" height="16" src="/static/images/toolbar/wm_tb_nxt_on.png" width="14"/>
+              </a>
+             </td>
+            </tr>
+            <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+            <tr class="y">
+             <td class="b" nowrap="nowrap">
+              <a href="https://web.archive.org/web/20141230212814/https://instagram.com/developer/endpoints/likes/" title="30 Dec 2014">
+               <strong>
+                2014
+               </strong>
+              </a>
+             </td>
+             <td class="c" id="displayYearEl" title="You are here: 14:55:03 Jan 01, 2016">
+              2016
+             </td>
+             <td class="f" nowrap="nowrap">
+              <a href="https://web.archive.org/web/20170102074738/https://www.instagram.com/developer/endpoints/likes/" title="02 Jan 2017">
+               <strong>
+                2017
+               </strong>
+              </a>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td class="s">
+          <div id="wm-nav-captures">
+           <a class="t" href="/web/20160101145503*/https://www.instagram.com/developer/endpoints/likes/" title="See a list of every capture for this URL">
+            1,257 captures
+           </a>
+           <div class="r" title="Timespan for captures of this URL">
+            27 Feb 2011 - 11 Jan 2018
+           </div>
+          </div>
+         </td>
+         <td class="k">
+          <a href="" id="wm-graph-anchor">
+           <div id="wm-ipp-sparkline" style="position: relative" title="Explore captures for this URL">
+            <canvas border="0" height="27" id="wm-sparkline-canvas" width="575">
+            </canvas>
+           </div>
+          </a>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+       <a class="wm-btn wm-closed" href="#expand" id="wm-expand" onclick="__wm.ex(event);return false;">
+        <span class="iconochive-down-solid" id="wm-expand-icon">
+        </span>
+        <span style="font-size:80%">
+         About this capture
+        </span>
+       </a>
+      </div>
+     </div>
+     <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+      <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">
+       COLLECTED BY
+      </div>
+      <div id="wm-collected-by-content" style="padding:3px;position:relative">
+       <div style="display:inline-block;vertical-align:top;width:50%;">
+        <span class="c-logo" style="background-image:url(https://archive.org/services/img/focused_crawls);">
+        </span>
+        Organization:
+        <a href="https://archive.org/details/focused_crawls" style="color:#33f;" target="_new">
+         <span class="wm-title">
+          Internet Archive
+         </span>
+        </a>
+        <div style="max-height:75px;overflow:hidden;position:relative;">
+         <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);">
+         </div>
+         Focused crawls are collections of frequently-updated webcrawl data from narrow (as opposed to broad or wide) web crawls, often focused on a single domain or subdomain.
+         <br/>
+        </div>
+       </div>
+       <div style="display:inline-block;vertical-align:top;width:49%;">
+        <span class="c-logo" style="background-image:url(https://archive.org/services/img/instagram.com)">
+        </span>
+        <div>
+         Collection:
+         <a href="https://archive.org/details/instagram.com" style="color:#33f;" target="_new">
+          <span class="wm-title">
+           instagram.com
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">
+       TIMESTAMPS
+      </div>
+      <div>
+       <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important">
+       </div>
+       <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none">
+        <img alt="loading" src="/static/images/loading.gif"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   __wm.bt(575,27,25,2,"web","https://www.instagram.com/developer/endpoints/likes/","2016-01-01",1996);
+  </script>
+  <!-- END WAYBACK TOOLBAR INSERT -->
+  <div class="root">
+   <div class="page">
+    <header class="top-bar">
+     <div class="wrapper">
+      <hgroup>
+       <div class="logo">
+        <a href="/web/20160101145503/https://www.instagram.com/">
+         Instagram
+        </a>
+       </div>
+      </hgroup>
+      <div class="top-bar-right account-state" id="top_bar_right">
+       <ul class="top-bar-actions" id="top_bar_actions">
+        <li class="link-signin" id="link_profile">
+         <a href="/web/20160101145503/https://www.instagram.com/accounts/login/?next=/developer/endpoints/likes/">
+          <i>
+          </i>
+          <strong>
+           Log in
+          </strong>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </header>
+    <!-- .top-bar -->
+    <div class="sidebar">
+     <div class="wrapper">
+      <nav class="sidebar-nav">
+       <div class="sidebar-content">
+        <form action="/web/20160101145503/https://www.instagram.com/developer/search/" class="quick-search" method="GET">
+         <a class="disclosure-down" href="#">
+         </a>
+         <input name="q" placeholder="Search Documentation" type="text"/>
+         <input type="submit"/>
+        </form>
+        <ul>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/">
+           Overview
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/authentication/">
+           Authentication
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/authorization/">
+           Login Permissions
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/review/">
+           Permissions Review
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/sandbox/">
+           Sandbox Mode
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/secure-api-requests/">
+           Secure Requests
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li class="active">
+          <a href="/web/20160101145503/https://www.instagram.com/developer/endpoints/">
+           Endpoints
+           <i class="disclosure">
+           </i>
+          </a>
+          <ul>
+           <li>
+            <a href="/web/20160101145503/https://www.instagram.com/developer/endpoints/users/">
+             Users
+            </a>
+           </li>
+           <li>
+            <a href="/web/20160101145503/https://www.instagram.com/developer/endpoints/relationships/">
+             Relationships
+            </a>
+           </li>
+           <li>
+            <a href="/web/20160101145503/https://www.instagram.com/developer/endpoints/media/">
+             Media
+            </a>
+           </li>
+           <li>
+            <a href="/web/20160101145503/https://www.instagram.com/developer/endpoints/comments/">
+             Comments
+            </a>
+           </li>
+           <li class="active">
+            <a class="active" href="/web/20160101145503/https://www.instagram.com/developer/endpoints/likes/">
+             Likes
+            </a>
+           </li>
+           <li>
+            <a href="/web/20160101145503/https://www.instagram.com/developer/endpoints/tags/">
+             Tags
+            </a>
+           </li>
+           <li>
+            <a href="/web/20160101145503/https://www.instagram.com/developer/endpoints/locations/">
+             Locations
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/limits/">
+           Rate Limits
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/subscriptions/">
+           Subscriptions
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/embedding/">
+           Embedding
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/mobile-sharing/">
+           Mobile Sharing
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/libraries/">
+           Libraries
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/support/">
+           Support
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/developer/changelog/">
+           Changelog
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="/web/20160101145503/https://www.instagram.com/about/legal/terms/api/">
+           Platform Policy
+           <i class="disclosure">
+           </i>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="main">
+     <div class="wrapper">
+      <section class="nav-page-content" role="main">
+       <div class="alerts" id="alerts">
+        <p class="alert-blue">
+         <b>
+          Instagram Platform and documentation update.
+         </b>
+         Apps created on or after Nov 17, 2015 will start in Sandbox Mode and function on newly updated API rate-limits and behaviors.  Prior to going Live, and being able to be used by people other than the developers of the app, these apps will have to go through a new review process. Please read the
+         <a href="/web/20160101145503/https://www.instagram.com/developer/">
+          API documentation
+         </a>
+         or the
+         <a href="/web/20160101145503/https://www.instagram.com/developer/changelog/">
+          Change Log
+         </a>
+         for more details.
+         <br/>
+         <br/>
+         Any app created before Nov 17, 2015 will continue to function
+         <b>
+          until June 2016
+         </b>
+         . After June 2016, the app will automatically be moved to Sandbox Mode if it wasn't approved through the review process. The previous version of our documentation is stil available
+         <a href="/web/20160101145503/https://www.instagram.com/developer/deprecated/">
+          here
+         </a>
+         .
+        </p>
+       </div>
+       <header>
+        <h1>
+         Like Endpoints
+        </h1>
+       </header>
+       <div class="index-nav index-endpoints">
+        <ul>
+         <li>
+          <a href="#get_media_likes">
+           <span class="type">
+            GET
+           </span>
+           <b>
+            <code>
+             /media/
+            </code>
+            <span class="token">
+             media-id
+            </span>
+            <code>
+             /likes
+            </code>
+           </b>
+           <span class="description">
+            Get a list of users who have liked this media.
+           </span>
+           <i>
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="#post_likes">
+           <span class="type">
+            POST
+           </span>
+           <b>
+            <code>
+             /media/
+            </code>
+            <span class="token">
+             media-id
+            </span>
+            <code>
+             /likes
+            </code>
+           </b>
+           <span class="description">
+            Set a like on this media by the current user.
+           </span>
+           <i>
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="#delete_likes">
+           <span class="type">
+            DEL
+           </span>
+           <b>
+            <code>
+             /media/
+            </code>
+            <span class="token">
+             media-id
+            </span>
+            <code>
+             /likes
+            </code>
+           </b>
+           <span class="description">
+            Remove a like on this media by the current user.
+           </span>
+           <i>
+           </i>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <section class="card endpoint" id="get_media_likes">
+        <header>
+         <h2>
+          <span class="ep-type">
+           GET
+          </span>
+          <code>
+           /media/
+          </code>
+          <span class="token">
+           media-id
+          </span>
+          <code>
+           /likes
+          </code>
+         </h2>
+        </header>
+        <div class="card-info">
+         <ul class="actions">
+          <li>
+           <a class="endpoint button" onclick="$('#get_media_likes_response').slideToggle()">
+            <b>
+             Response
+            </b>
+           </a>
+          </li>
+         </ul>
+         <code>
+          https://api.instagram.com/v1/media/{media-id}/likes?access_token=ACCESS-TOKEN
+         </code>
+        </div>
+        <div class="card-info-more ep-response" id="get_media_likes_response">
+         <div class="codehilite">
+          <pre><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"jack"</span><span class="p">,</span>
+        <span class="nt">"first_name"</span><span class="p">:</span> <span class="s2">"Jack"</span><span class="p">,</span>
+        <span class="nt">"last_name"</span><span class="p">:</span> <span class="s2">"Dorsey"</span><span class="p">,</span>
+        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
+        <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"66"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"sammyjack"</span><span class="p">,</span>
+        <span class="nt">"first_name"</span><span class="p">:</span> <span class="s2">"Sammy"</span><span class="p">,</span>
+        <span class="nt">"last_name"</span><span class="p">:</span> <span class="s2">"Jack"</span><span class="p">,</span>
+        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
+        <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"29648"</span>
+    <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre>
+         </div>
+        </div>
+        <div class="card-description ep-description">
+         <p>
+          Get a list of users who have liked this media.
+         </p>
+         <table>
+          <caption>
+           <strong>
+            Requirements
+           </strong>
+           <i>
+           </i>
+          </caption>
+          <tbody>
+           <tr>
+            <td>
+             Scope:
+             <a href="/web/20160101145503/https://www.instagram.com/developer/authorization/">
+              basic, public_content
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table>
+          <caption>
+           <strong>
+            Parameters
+           </strong>
+           <i>
+           </i>
+          </caption>
+          <tbody>
+           <tr>
+            <th>
+             access_token
+            </th>
+            <td>
+             A valid access token.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </section>
+       <section class="card endpoint" id="post_likes">
+        <header>
+         <h2>
+          <span class="ep-type">
+           POST
+          </span>
+          <code>
+           /media/
+          </code>
+          <span class="token">
+           media-id
+          </span>
+          <code>
+           /likes
+          </code>
+         </h2>
+        </header>
+        <div class="card-info">
+         <ul class="actions">
+          <li>
+           <a class="endpoint button" onclick="$('#post_likes_response').slideToggle()">
+            <b>
+             Response
+            </b>
+           </a>
+          </li>
+         </ul>
+         <code>
+          curl -F 'access_token=ACCESS-TOKEN' \
+    https://api.instagram.com/v1/media/{media-id}/likes
+         </code>
+        </div>
+        <div class="card-info-more ep-response" id="post_likes_response">
+         <div class="codehilite">
+          <pre><code><span class="p">{</span>
+    <span class="nt">"meta"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"code"</span><span class="p">:</span> <span class="mi">200</span>
+    <span class="p">},</span> 
+    <span class="nt">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre>
+         </div>
+        </div>
+        <div class="card-description ep-description">
+         <p>
+          Set a like on this media by the currently authenticated user.             The
+          <code>
+           public_content
+          </code>
+          permission scope is required to create likes on a media that does not belong to the owner of the
+          <code>
+           access_token
+          </code>
+          .
+         </p>
+         <table>
+          <caption>
+           <strong>
+            Requirements
+           </strong>
+           <i>
+           </i>
+          </caption>
+          <tbody>
+           <tr>
+            <td>
+             Scope:
+             <a href="/web/20160101145503/https://www.instagram.com/developer/authorization/">
+              likes
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table>
+          <caption>
+           <strong>
+            Parameters
+           </strong>
+           <i>
+           </i>
+          </caption>
+          <tbody>
+           <tr>
+            <th>
+             access_token
+            </th>
+            <td>
+             A valid access token.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </section>
+       <section class="card endpoint" id="delete_likes">
+        <header>
+         <h2>
+          <span class="ep-type">
+           DEL
+          </span>
+          <code>
+           /media/
+          </code>
+          <span class="token">
+           media-id
+          </span>
+          <code>
+           /likes
+          </code>
+         </h2>
+        </header>
+        <div class="card-info">
+         <ul class="actions">
+          <li>
+           <a class="endpoint button" onclick="$('#delete_likes_response').slideToggle()">
+            <b>
+             Response
+            </b>
+           </a>
+          </li>
+         </ul>
+         <code>
+          curl -X DELETE https://api.instagram.com/v1/media/{media-id}/likes?access_token=ACCESS-TOKEN
+         </code>
+        </div>
+        <div class="card-info-more ep-response" id="delete_likes_response">
+         <div class="codehilite">
+          <pre><code><span class="p">{</span>
+    <span class="nt">"meta"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"code"</span><span class="p">:</span> <span class="mi">200</span>
+    <span class="p">},</span> 
+    <span class="nt">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre>
+         </div>
+        </div>
+        <div class="card-description ep-description">
+         <p>
+          Remove a like on this media by the currently authenticated user.             The
+          <code>
+           public_content
+          </code>
+          permission scope is required to delete likes on a media that does not belong to the owner of the
+          <code>
+           access_token
+          </code>
+          .
+         </p>
+         <table>
+          <caption>
+           <strong>
+            Requirements
+           </strong>
+           <i>
+           </i>
+          </caption>
+          <tbody>
+           <tr>
+            <td>
+             Scope:
+             <a href="/web/20160101145503/https://www.instagram.com/developer/authorization/">
+              likes
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table>
+          <caption>
+           <strong>
+            Parameters
+           </strong>
+           <i>
+           </i>
+          </caption>
+          <tbody>
+           <tr>
+            <th>
+             access_token
+            </th>
+            <td>
+             A valid access token.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </section>
+      </section>
+     </div>
+     <!-- .main -->
+    </div>
+    <!-- .main -->
+   </div>
+   <!-- .page -->
+   <footer class="page-footer" role="contentinfo">
+    <div class="wrapper">
+     <nav>
+      <ul>
+       <li>
+        <a href="/web/20160101145503/https://www.instagram.com/about/us/">
+         About us
+        </a>
+       </li>
+       <li>
+        <a href="https://web.archive.org/web/20160101145503/http://help.instagram.com/">
+         Support
+        </a>
+       </li>
+       <li>
+        <a href="https://web.archive.org/web/20160101145503/http://blog.instagram.com/">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a href="https://web.archive.org/web/20160101145503/http://instagram.com/press/">
+         Press
+        </a>
+       </li>
+       <li>
+        <a href="/web/20160101145503/https://www.instagram.com/developer/">
+         API
+        </a>
+       </li>
+       <li>
+        <a href="/web/20160101145503/https://www.instagram.com/about/jobs/">
+         Jobs
+        </a>
+       </li>
+       <li>
+        <a href="/web/20160101145503/https://www.instagram.com/legal/privacy/">
+         Privacy
+        </a>
+       </li>
+       <li>
+        <a href="/web/20160101145503/https://www.instagram.com/legal/terms/">
+         Terms
+        </a>
+       </li>
+      </ul>
+     </nav>
+     <p class="copyright">
+      © 2016 Instagram
+     </p>
+    </div>
+   </footer>
+   <div id="reactModalMountPoint">
+   </div>
+  </div>
+  <!-- .root -->
+  <script src="//web.archive.org/web/20160101145503js_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/scripts/polyfills/es5-shim.min.js">
+  </script>
+  <script src="//web.archive.org/web/20160101145503js_/https://instagramstatic-a.akamaihd.net/bluebar/07a863f/scripts/polyfills/es5-sham.min.js">
+  </script>
+  <script type="text/javascript">
+   window._sharedData = {"country_code":"US","language_code":"en","gatekeepers":{"rhp":true},"qs":"{\"shift\":10,\"header\":\"FwtoJGlHbk9IAht47LBdi7Ybc8rifZAK\",\"edges\":100,\"blob\":\"AQAY7pcdIzz58BP2xuYeUDoCGNqdAMxPjPpn4q1o5-gfh7w05nRpiczHXYww6CCNjrdQu18Q0LCN7uezPNH6dnO9sARGwIa87y3r5jMS1ixOLuLpBA32BXk7c8QOUA41fLlZv4cVM3MaKpOeFymOZFj4Msu_XXTZZ1HNa5NjOHCANZb36V6nbkfwgZh_XQoH0vNJ-RZGvjqGHGlXXREYyWSmcAD_dfpWVQCmCYmwp0XI2Q\",\"iterations\":7,\"size\":42}","static_root":"\/\/web.archive.org\/web\/20160101145503\/https:\/\/instagramstatic-a.akamaihd.net\/bluebar\/07a863f","platform":"web","hostname":"www.instagram.com","entry_data":{},"qe":{"su":{"p":{},"g":""}},"display_properties_server_guess":{"viewport_width":360,"pixel_ratio":1.5},"config":{"viewer":null,"csrf_token":"bed497536fdc3f53489d556ed82c7925"},"environment_switcher_visible_server_guess":true};
+  </script>
+  <script>
+   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//web.archive.org/web/20160101145503/https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1425767024389221');
+fbq('track', 'PageView');
+  </script>
+  <noscript>
+  </noscript>
+  <script type="text/javascript">
+   window._timings.domInteractive = Date.now()
+  </script>
+ </body>
+</html>

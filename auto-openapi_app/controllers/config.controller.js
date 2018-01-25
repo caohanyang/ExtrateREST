@@ -89,21 +89,76 @@ exports.createConfig = async function (req, res, next) {
         number: req.body.number,
     }
 
+    var configStr = 
+        "SEARCHBASE="+req.body.searchBase+"\n"+
+        "URLBASE="+req.body.urlBase+"\n"+
+        "STUFFING="+req.body.stuffing+"\n"+
+        "URLMIDDLE="+req.body.urlMiddle+"\n"+
+        "URLAFTER="+req.body.urlAfter+"\n"+
+        "URLTEMPLATE="+req.body.urlTemplate+"\n"+
+        "REVERSE="+req.body.reverse+"\n"+
+        "EXISTVERB="+req.body.existVerb+"\n"+
+        "URLKEY="+req.body.urlKey+"\n"+
+        "URLKEY="+req.body.verbKey+"\n"+
+        "MODE="+req.body.mode+"\n"+
+        "ABBREV_DELETE="+req.body.abbrevDelete+"\n"+
+        "REQKEY="+req.body.reqKey+"\n"+
+        "REQMIDDLE="+req.body.reqMiddle+"\n"+
+        "REQEXAMPLE="+req.body.reqExample+"\n"+
+        "URL1REQ2="+req.body.url1req2+"\n"+
+        "REQTEMPLATE="+req.body.reqTemplate+"\n"+
+        "RESKEY="+req.body.resKey+"\n"+
+        "RESMIDDLE="+req.body.resMiddle+"\n"+
+        "URL1RES2="+req.body.url1res2+"\n"+
+        "RESTEMPLATE="+req.body.resTemplate+"\n"+
+        "RESEXAMPLE="+req.body.resExample+"\n"+
+        "EXISTPARA="+req.body.existPara+"\n"+
+        "PARAKEY="+req.body.paraKey+"\n"+
+        "URL1PARA2="+req.body.url1para2+"\n"+
+        "PARAMIDDLE="+req.body.paraMiddle+"\n"+
+        "PARAIN="+req.body.paraIn+"\n"+
+        "TEMPLATE="+req.body.template+"\n"+
+        "NUMBER="+req.body.number+"\n"+
+    
 
     try {
         var createdConfig = await ConfigService.createConfig(config)
 
+        console.log(req.body.resExample);
+
         res.status(200).json({ status: 200, data: JSON.stringify(createdConfig), message: "successfully create config" })
 
-        callCoreApi(config);
     } catch (e) {
         console.log(e.message)
         res.status(400).json({ status: 400, message: e.message })
     }
 
     console.log("start to call the core generation api 1: " + __dirname);
-    // var openapi = callCoreApi(config);
-    // console.log(openapi);
+    console.log("---------create local config----start-----------")
+    console.log("start to call the core generation api 1: " + config.docUrl);
+
+    let str = config.docUrl ;
+    let API_NAME = str.split("//")[1].split(".")[1];
+    console.log(API_NAME)
+    // google have several APIs
+    if (API_NAME.indexOf("google")!== -1) {
+        
+        API_NAME = str.split("//")[1].split("/")[1];
+    } else if (API_NAME.indexOf("/")!== -1) {
+        if (!str.split("//")[1].startsWith("www") && !str.split("//")[1].startsWith("api") ) {
+            API_NAME = str.split("//")[1].split(".")[0];
+        }
+            
+    }
+
+    var dir = "./auto-openapi_core/CompareSet/" + API_NAME;
+    var fileName = API_NAME + ".config"
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, 0744);
+    }
+    fs.writeFileSync(dir+"/" +fileName, configStr);
+    console.log("---------create local config----finish-----------")
+
     var runscript = exec('sh ./auto-openapi_core/openapi.sh ' + config.docUrl + ' ' + config.filterUrl,
         (error, stdout, stderr) => {
 
@@ -117,14 +172,14 @@ exports.createConfig = async function (req, res, next) {
 
             console.log("finish call core api 2");
 
-            let openapiPath = './auto-openapi_core/CompareSet/' + config.apiName + '/OpenAPI.json';
+            let openapiPath = './auto-openapi_core/CompareSet/' + API_NAME + '/OpenAPI.json';
 
             if (fs.existsSync(openapiPath)) {
-                console.log("Success to generate " + config.apiName);
+                console.log("Success to generate " + API_NAME);
                 let openapi = JSON.parse(fs.readFileSync(openapiPath));
                 console.log(openapi);
             } else {
-                console.log("Fail to generate " + config.apiName);
+                console.log("Fail to generate " + API_NAME);
             }
             console.log("finish call core api 3");
 

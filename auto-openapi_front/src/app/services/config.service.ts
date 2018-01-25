@@ -24,6 +24,7 @@ export class ConfigService {
     //Create config, takes a Config Object
     createConfig(config: Config): Observable<any> {
 
+        console.log(config);
         return this.http.post(`${this.configUrl}`, config);
     }
 

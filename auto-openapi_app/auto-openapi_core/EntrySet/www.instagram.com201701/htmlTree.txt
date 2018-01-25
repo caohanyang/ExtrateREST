@@ -1,0 +1,16 @@
+
+                                        /-/
+                                       |
+                                       |--/comments
+                                       |
+                                       |--/likes
+                                       |
+                                       |--/locations
+-- /www.instagram.com/developer/endpoints
+                                       |--/media
+                                       |
+                                       |--/relationships
+                                       |
+                                       |--/tags
+                                       |
+                                        \-/users
