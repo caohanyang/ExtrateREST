@@ -61,7 +61,7 @@ if (openAPI.host && openAPI.schemes && openAPI.paths) {
 			  discover.request['method'] = verb;
 			  if (verbObject.hasOwnProperty('request')) {
 				 if (isJSON(verbObject.request)) {
-					discover.request['body'] = JSON.parse(verbObject.request);
+					discover.request['body'] = JSON.stringify(JSON.parse(verbObject.request));
 				 } else {
 					discover.request['url'] = verbObject.request;
 				 }
@@ -69,7 +69,7 @@ if (openAPI.host && openAPI.schemes && openAPI.paths) {
 			  }
 
 			  if (verbObject.hasOwnProperty('responses')) {
-				discover.response['body'] = verbObject.responses[200].example;
+				discover.response['body'] = JSON.stringify(verbObject.responses[200].example);
 			  }
 
 			  console.log(discover);

@@ -32,6 +32,9 @@ export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 # https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/
 # https://developers.google.com/adsense/management/v1.4/reference/
 
+# https://developer.paypal.com/docs/api/overview/ https://developer.paypal.com/docs/api/
+# https://developers.google.com/google-apps/calendar/v3/reference/
+
 # python ./predict_page/predictExternalTest.py $1
 
 
@@ -84,10 +87,16 @@ python predict_page/predictExternal.py $1
 
 # /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin/java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
 
-# java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/bin/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
+
 
 java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
 
+
+
+
+
+
+# 4. history
 # https://web.archive.org/web/20170605190839/https://www.instagram.com/developer/endpoints/
 # https://web.archive.org/web/20170109154018/https://www.instagram.com/developer/endpoints/
 # https://web.archive.org/web/20160708101703/https://www.instagram.com/developer/endpoints/

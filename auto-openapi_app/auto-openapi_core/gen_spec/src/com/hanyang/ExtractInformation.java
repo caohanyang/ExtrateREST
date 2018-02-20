@@ -84,9 +84,9 @@ public class ExtractInformation {
 		Gate.init();
 
 		Out.prln(System.getProperty("user.dir"));
-		Out.prln("dsafsadfasdf");
+	
 		Out.prln(FilteredSet_PATH);
-		Out.prln("dsafsadfasdf");
+		
 		// 1. create corpus
 		File folder = new File(FilteredSet_PATH);
 		File[] listFiles = folder.listFiles();

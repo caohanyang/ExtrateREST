@@ -22,35 +22,35 @@ exports.getConfigs = async function (req, res, next) {
 
 }
 
-exports.getOpenapis = async function (req, res, next) {
+// exports.getOpenapis = async function (req, res, next) {
 
-    console.log("server to handle the request");
-    try {
+//     console.log("server to handle the request");
+//     try {
 
-        // config.apiName = "instagram";
+//         // config.apiName = "instagram";
 
-        let openapiPath = './auto-openapi_core/CompareSet/' + "instagram" + '/OpenAPI.json';
+//         let openapiPath = './auto-openapi_core/CompareSet/' + "instagram" + '/OpenAPI.json';
 
-        let openapi;
-        if (fs.existsSync(openapiPath)) {
-            console.log("Success to generate " + "instagram");
-            openapi = JSON.parse(fs.readFileSync(openapiPath));
-            console.log(openapi);
+//         let openapi;
+//         if (fs.existsSync(openapiPath)) {
+//             console.log("Success to generate " + "instagram");
+//             openapi = JSON.parse(fs.readFileSync(openapiPath));
+//             console.log(openapi);
             
-        } else {
-            console.log("fail to generate " + "instagram");
-            openapi = {"wait": "wait for the openapi"}
-            console.log("Wait to generate " + "instagram");
+//         } else {
+//             console.log("fail to generate " + "instagram");
+//             openapi = {"wait": "wait for the openapi"}
+//             console.log("Wait to generate " + "instagram");
 
-        }
+//         }
 
-        return res.status(200).json({ status: 200, data: openapi, message: "generate openapi" })
+//         return res.status(200).json({ status: 200, data: openapi, message: "generate openapi" })
         
-    } catch (e) {
-        return res.status(400).json({ status: 400, message: e.message })
-    }
+//     } catch (e) {
+//         return res.status(400).json({ status: 400, message: e.message })
+//     }
 
-}
+// }
 
 exports.createConfig = async function (req, res, next) {
 
@@ -90,35 +90,35 @@ exports.createConfig = async function (req, res, next) {
     }
 
     var configStr = 
-        "SEARCHBASE="+req.body.searchBase+"\n"+
-        "URLBASE="+req.body.urlBase+"\n"+
-        "STUFFING="+req.body.stuffing+"\n"+
-        "URLMIDDLE="+req.body.urlMiddle+"\n"+
-        "URLAFTER="+req.body.urlAfter+"\n"+
-        "URLTEMPLATE="+req.body.urlTemplate+"\n"+
-        "REVERSE="+req.body.reverse+"\n"+
-        "EXISTVERB="+req.body.existVerb+"\n"+
-        "URLKEY="+req.body.urlKey+"\n"+
-        "URLKEY="+req.body.verbKey+"\n"+
-        "MODE="+req.body.mode+"\n"+
-        "ABBREV_DELETE="+req.body.abbrevDelete+"\n"+
-        "REQKEY="+req.body.reqKey+"\n"+
-        "REQMIDDLE="+req.body.reqMiddle+"\n"+
-        "REQEXAMPLE="+req.body.reqExample+"\n"+
-        "URL1REQ2="+req.body.url1req2+"\n"+
-        "REQTEMPLATE="+req.body.reqTemplate+"\n"+
-        "RESKEY="+req.body.resKey+"\n"+
-        "RESMIDDLE="+req.body.resMiddle+"\n"+
-        "URL1RES2="+req.body.url1res2+"\n"+
+        "SEARCHBASE="+req.body.searchBase+'\n'+
+        "URLBASE="+req.body.urlBase+'\n'+
+        "STUFFING="+req.body.stuffing+'\n'+
+        "URLMIDDLE="+req.body.urlMiddle+'\n'+
+        "URLAFTER="+req.body.urlAfter+'\n'+
+        "URLTEMPLATE="+req.body.urlTemplate+'\n'+
+        "REVERSE="+req.body.reverse+'\n'+
+        "EXISTVERB="+req.body.existVerb+'\n'+
+        "URLKEY="+req.body.urlKey+'\n'+
+        "URLKEY="+req.body.verbKey+'\n'+
+        "MODE="+req.body.mode+'\n'+
+        "ABBREV_DELETE="+req.body.abbrevDelete+'\n'+
+        "REQKEY="+req.body.reqKey+'\n'+
+        "REQMIDDLE="+req.body.reqMiddle+'\n'+
+        "REQEXAMPLE="+req.body.reqExample+'\n'+
+        "URL1REQ2="+req.body.url1req2+'\n'+
+        "REQTEMPLATE="+req.body.reqTemplate+'\n'+
+        "RESKEY="+req.body.resKey+'\n'+
+        "RESMIDDLE="+req.body.resMiddle+'\n'+
+        "URL1RES2="+req.body.url1res2+'\n'+
         "RESTEMPLATE="+req.body.resTemplate+"\n"+
-        "RESEXAMPLE="+req.body.resExample+"\n"+
-        "EXISTPARA="+req.body.existPara+"\n"+
-        "PARAKEY="+req.body.paraKey+"\n"+
-        "URL1PARA2="+req.body.url1para2+"\n"+
-        "PARAMIDDLE="+req.body.paraMiddle+"\n"+
-        "PARAIN="+req.body.paraIn+"\n"+
-        "TEMPLATE="+req.body.template+"\n"+
-        "NUMBER="+req.body.number+"\n"+
+        "RESEXAMPLE=((\\\\{)|(\\\\[)){1}(.*?)((\\\\})|(\\\\])){1}\n"+
+        "EXISTPARA="+req.body.existPara+'\n'+
+        "PARAKEY="+req.body.paraKey+'\n'+
+        "URL1PARA2="+req.body.url1para2+'\n'+
+        "PARAMIDDLE="+req.body.paraMiddle+'\n'+
+        "PARAIN="+req.body.paraIn+'\n'+
+        "TEMPLATE="+req.body.template+'\n'+
+        "NUMBER="+req.body.number+'\n'
     
 
     try {
@@ -159,7 +159,7 @@ exports.createConfig = async function (req, res, next) {
     fs.writeFileSync(dir+"/" +fileName, configStr);
     console.log("---------create local config----finish-----------")
 
-    var runscript = exec('sh ./auto-openapi_core/openapi.sh ' + config.docUrl + ' ' + config.filterUrl,
+    var runscript = exec('sh ./auto-openapi_core/openapi.sh ' + config.docUrl + ' ' + config.filterUrl, {maxBuffer: 1024 * 1000}, 
         (error, stdout, stderr) => {
 
             console.log("start to call the core generation api 2: ");
