@@ -51,10 +51,13 @@ public class ExtractInformation {
 	public static void main(String[] args) throws GateException, JSONException, IOException {
 		// System.out.close();
 
-		System.setProperty("gate.home", "${project_loc}");
-		System.setProperty("gate.plugins.home", "${project_loc}/plugins");
-		System.setProperty("gate.site.config", "${project_loc}/gate.xml");
+//		System.setProperty("gate.home", "${project_loc}");
+//		System.setProperty("gate.plugins.home", "${project_loc}/plugins");
+//		System.setProperty("gate.site.config", "${project_loc}/gate.xml");
 
+		System.out.println(System.getProperty("gate.home"));
+		System.out.println(System.getProperty("gate.plugins.home"));
+		System.out.println(System.getProperty("gate.site.config"));
 		
 		if (args.length > 0) {
 			
