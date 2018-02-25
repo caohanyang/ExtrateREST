@@ -79,7 +79,7 @@ cd auto-openapi_core/gen_spec
 # python rest_crawler/crawlAllPages.py $1 $2
 
 # 2. predict html page
-# python predict_page/predictExternal.py $1
+python predict_page/predictExternal.py $1
 
 
 # 3. run java to build the OPENAPI documentation
@@ -89,7 +89,7 @@ cd auto-openapi_core/gen_spec
 
 
 
-java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
+# java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 -classpath ./gen_spec/target/classes:./gen_spec/lib/* com.hanyang.ExtractInformation $1
 
 # java -Xms1024m -Xmx8192m -Dfile.encoding=UTF-8 core.jar $1
 
