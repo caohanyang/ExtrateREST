@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated openAPI -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="core.presentation.OpenAPIModelWizardID"
+            name="%_UI_OpenAPIModelWizard_label"
+            class="core.presentation.OpenAPIModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/OpenAPIModelFile.gif">
+         <description>%_UI_OpenAPIModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated openAPI -->
+      <editor
+            id="core.presentation.OpenAPIEditorID"
+            name="%_UI_OpenAPIEditor_label"
+            icon="icons/full/obj16/OpenAPIModelFile.gif"
+            extensions="oas"
+            class="core.presentation.OpenAPIEditor"
+            contributorClass="core.presentation.OpenAPIActionBarContributor">
+      </editor>
+   </extension>
+</plugin>

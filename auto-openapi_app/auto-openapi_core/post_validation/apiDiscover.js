@@ -46,18 +46,20 @@ if (openAPI.host && openAPI.schemes && openAPI.paths) {
 			console.log("--------");
 			var discover = {
 				"request": {
+				  "ourl": null,
 				  "url": null,
 				  "method": null,
 				  "body": ""
 				},
 				"response": {
 				  "status": "200",
-				  "body": ""
+				  "body": "",
+				  "ebody": ""
 				}
 			  };
 			
 			  let urlString = handleUrl(url);
-			  discover.request['url'] = urlString;
+			  discover.request['ourl'] = urlString;
 			  discover.request['method'] = verb;
 			  if (verbObject.hasOwnProperty('request')) {
 				 if (isJSON(verbObject.request)) {
@@ -69,7 +71,7 @@ if (openAPI.host && openAPI.schemes && openAPI.paths) {
 			  }
 
 			  if (verbObject.hasOwnProperty('responses')) {
-				discover.response['body'] = JSON.stringify(verbObject.responses[200].example);
+				discover.response['ebody'] = JSON.stringify(verbObject.responses[200].example);
 			  }
 
 			  console.log(discover);
