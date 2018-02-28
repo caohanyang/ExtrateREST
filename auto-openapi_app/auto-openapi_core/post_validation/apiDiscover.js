@@ -30,54 +30,59 @@ if (openAPI.host && openAPI.schemes && openAPI.paths) {
 	// 2. delete path with begins with https
 
 	var urlKeys = Object.keys(openAPI.paths);
-	for (let i = 0; i < urlKeys.length; i ++) {
-		
+	for (let i = 0; i < urlKeys.length; i++) {
+
 		var url = urlKeys[i];
 
 		var verbKeys = Object.keys(openAPI.paths[url]);
-		
+
 		for (let j = 0; j < verbKeys.length; j++) {
 			var verb = verbKeys[j];
 			console.log("========");
 			console.log(url + "   " + verb);
-			
+
 			var verbObject = openAPI.paths[url][verb];
 			console.log(verbObject);
 			console.log("--------");
 			var discover = {
 				"request": {
-				  "ourl": null,
-				  "url": null,
-				  "method": null,
-				  "body": ""
+					"ourl": null,
+					"url": null,
+					"method": null,
+					"body": ""
 				},
 				"response": {
-				  "status": "200",
-				  "body": "",
-				  "ebody": ""
+					"status": "200",
+					"body": "",
+					"ebody": ""
 				}
-			  };
-			
-			  let urlString = handleUrl(url);
-			  discover.request['ourl'] = urlString;
-			  discover.request['method'] = verb;
-			  if (verbObject.hasOwnProperty('request')) {
-				 if (isJSON(verbObject.request)) {
+			};
+
+			discover.request['ourl'] = handleUrl(url);
+			discover.request['method'] = verb;
+			if (verbObject.hasOwnProperty('request')) {
+				if (isJSON(verbObject.request)) {
 					discover.request['body'] = JSON.stringify(JSON.parse(verbObject.request));
-				 } else {
-					discover.request['url'] = verbObject.request;
-				 }
-                 
-			  }
+				} else {
 
-			  if (verbObject.hasOwnProperty('responses')) {
+					if (verbObject.request.startsWith("/")) {
+						discover.request['url'] = openAPI.schemes + "://" + openAPI.host + verbObject.request
+					} else {
+						discover.request['url'] = verbObject.request;
+					}
+
+				}
+
+			}
+
+			if (verbObject.hasOwnProperty('responses')) {
 				discover.response['ebody'] = JSON.stringify(verbObject.responses[200].example);
-			  }
+			}
 
-			  console.log(discover);
-			  discoverAll.push(discover);
+			console.log(discover);
+			discoverAll.push(discover);
 		}
-		
+
 	}
 
 
@@ -85,20 +90,21 @@ if (openAPI.host && openAPI.schemes && openAPI.paths) {
 	console.log(discoverAll);
 	if (!fs.existsSync(FinalSet_PATH)) {
 		fs.mkdirSync(FinalSet_PATH);
-		
+
 	}
 
-	if(!fs.existsSync(API_PATH)) {
+	if (!fs.existsSync(API_PATH)) {
 		fs.mkdirSync(API_PATH);
 	}
-	
+
 	fs.writeFileSync(API_PATH + "/discover.json", JSON.stringify(discoverAll, null, 2), 'utf8');
 }
 
-function handleUrl (url) {
-	if(url.startsWith("/")) {
-       return openAPI.schemes + "://" + openAPI.host + url
-	} else if (url.startsWith("http")){
-	   return url;
+function handleUrl(url) {
+	if (url.startsWith("/")) {
+		return openAPI.schemes + "://" + openAPI.host + url
+	} else if (url.startsWith("http")) {
+		return url;
 	}
+	return url;
 }

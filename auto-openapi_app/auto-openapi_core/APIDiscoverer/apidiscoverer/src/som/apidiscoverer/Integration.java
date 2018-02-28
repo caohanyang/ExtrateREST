@@ -146,6 +146,9 @@ public class Integration {
 			//should be equal "="
 			if (toBeReplace.startsWith("=")) {
 				toBeReplace = toBeReplace.substring(1).trim().split("\"")[0];
+				if (toBeReplace.contains("&")) {
+					toBeReplace = toBeReplace.trim().split("&")[0];
+				}
 			    //replace api-key
 				singleCall=singleCall.replace(toBeReplace, APIKEY_VALUE);
 			}

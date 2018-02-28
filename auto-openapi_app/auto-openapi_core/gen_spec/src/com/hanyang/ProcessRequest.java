@@ -85,6 +85,12 @@ public class ProcessRequest {
 					// remove all the whitespace
 					matchStr = matchStr.replaceAll(" ", "");
 
+				} else if (Settings.REQEXAMPLE.equals("/")) {
+					matchStr = strAll.substring(requestMatcher.start(), requestMatcher.end() + 100).trim();
+					matchStr = matchStr.substring(matchStr.indexOf(Settings.REQEXAMPLE)).split("\n")[0];
+					// remove all the whitespace
+					matchStr = matchStr.replaceAll(" ", "");
+					
 				} else if (Settings.REQEXAMPLE.equals("((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}")) {
 
 					AnnotationSet annoPre = annoOrigin.get(Settings.REQTEMPLATE, new Long(requestMatcher.start()),

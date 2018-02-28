@@ -36,6 +36,8 @@ WORKDIR /tmp/app
 # Add existing contens
 COPY . .
 
+# docker run -it -v /Users/sflkjf:
+
 # COPY autorest_core autorest_core/
 # COPY bin ./bin/
 # COPY controllers ./controllers/

@@ -1,0 +1,532 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "api.linkedin.com",
+    "version": "0.0"
+  },
+  "host": "api.linkedin.com",
+  "basePath": "/companies",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/~/shares": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Shares"
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Companies"
+            }
+          }
+        }
+      }
+    },
+    "/{id}/updates/key={update-key}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Updates"
+            }
+          }
+        }
+      }
+    },
+    "/~:(id,num-connections,picture-url)": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/People"
+            }
+          }
+        }
+      }
+    },
+    "/{companiesId}/updates": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "companiesId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Updates"
+            }
+          }
+        }
+      }
+    },
+    "/{id}:(id,name,ticker,description)": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Companies"
+            }
+          }
+        }
+      }
+    },
+    "/{id}/{{id}}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "{id}",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Companies"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "{id}",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Shares"
+            }
+          }
+        }
+      }
+    },
+    "/{id}/updates/key={update-key}/likes": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Likes"
+            }
+          }
+        }
+      }
+    },
+    "/~": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/People"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Companies": {
+      "type": "object"
+    },
+    "Companie": {
+      "type": "object",
+      "properties": {
+        "_total": {
+          "type": "integer"
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Value"
+          }
+        }
+      }
+    },
+    "Value": {
+      "type": "object",
+      "properties": {
+        "total-follower-count": {
+          "type": "integer"
+        },
+        "paid-follower-count": {
+          "type": "integer"
+        },
+        "time": {
+          "type": "integer"
+        },
+        "organic-follower-count": {
+          "type": "integer"
+        },
+        "sequenceNumber": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "timestamp": {
+          "type": "integer"
+        },
+        "Person": {
+          "$ref": "#/definitions/Person"
+        }
+      }
+    },
+    "Shares": {
+      "type": "object"
+    },
+    "ShareTargetReach": {
+      "type": "object",
+      "properties": {
+        "ShareTarget": {
+          "$ref": "#/definitions/ShareTarget"
+        }
+      }
+    },
+    "Content": {
+      "type": "object",
+      "properties": {
+        "submitted-url": {
+          "type": "string"
+        },
+        "submitted‐image-­url": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "eyebrowUrl": {
+          "type": "string"
+        },
+        "shortenedUrl": {
+          "type": "string"
+        },
+        "submittedUrl": {
+          "type": "string"
+        },
+        "submittedImageUrl": {
+          "type": "string"
+        },
+        "thumbnailUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "ShareTarget": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "Tvalue": {
+          "$ref": "#/definitions/Tvalue"
+        },
+        "ShareTarget": {
+          "$ref": "#/definitions/ShareTarget"
+        }
+      }
+    },
+    "Visibility": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Share": {
+      "type": "object",
+      "properties": {
+        "comment": {
+          "type": "string"
+        },
+        "Visibility": {
+          "$ref": "#/definitions/Visibility"
+        },
+        "Content": {
+          "$ref": "#/definitions/Content"
+        },
+        "ShareTargetReach": {
+          "$ref": "#/definitions/ShareTargetReach"
+        },
+        "id": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        },
+        "Source": {
+          "$ref": "#/definitions/Source"
+        }
+      }
+    },
+    "Tvalue": {
+      "type": "object",
+      "properties": {
+        "tvalue": {
+          "type": "string"
+        }
+      }
+    },
+    "Updates": {
+      "type": "object"
+    },
+    "Company": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "SiteStandardProfileRequest": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "Update": {
+      "type": "object",
+      "properties": {
+        "isCommentable": {
+          "type": "string"
+        },
+        "updateKey": {
+          "type": "string"
+        },
+        "isLiked": {
+          "type": "string"
+        },
+        "numLikes": {
+          "type": "integer"
+        },
+        "isLikable": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        },
+        "updateType": {
+          "type": "string"
+        },
+        "UpdateComment": {
+          "$ref": "#/definitions/UpdateComment"
+        },
+        "UpdateContent": {
+          "$ref": "#/definitions/UpdateContent"
+        },
+        "Like": {
+          "$ref": "#/definitions/Like"
+        }
+      }
+    },
+    "UpdateComment": {
+      "type": "object",
+      "properties": {
+        "_total": {
+          "type": "integer"
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Value"
+          }
+        }
+      }
+    },
+    "Source": {
+      "type": "object",
+      "properties": {
+        "serviceProviderShareId": {
+          "type": "string"
+        },
+        "ServiceProvider": {
+          "$ref": "#/definitions/ServiceProvider"
+        }
+      }
+    },
+    "Like": {
+      "type": "object",
+      "properties": {
+        "_total": {
+          "type": "integer"
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Value"
+          }
+        }
+      }
+    },
+    "Header": {
+      "type": "object",
+      "properties": {
+        "_total": {
+          "type": "integer"
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Value"
+          }
+        }
+      }
+    },
+    "ApiStandardProfileRequest": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "Header": {
+          "$ref": "#/definitions/Header"
+        }
+      }
+    },
+    "ServiceProvider": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateContent": {
+      "type": "object",
+      "properties": {
+        "Company": {
+          "$ref": "#/definitions/Company"
+        },
+        "CompanyStatusUpdate": {
+          "$ref": "#/definitions/CompanyStatusUpdate"
+        }
+      }
+    },
+    "Person": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "pictureUrl": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "ApiStandardProfileRequest": {
+          "$ref": "#/definitions/ApiStandardProfileRequest"
+        },
+        "SiteStandardProfileRequest": {
+          "$ref": "#/definitions/SiteStandardProfileRequest"
+        }
+      }
+    },
+    "CompanyStatusUpdate": {
+      "type": "object",
+      "properties": {
+        "Share": {
+          "$ref": "#/definitions/Share"
+        }
+      }
+    },
+    "People": {
+      "type": "object",
+      "properties": {
+        "pictureUrl": {
+          "type": "string"
+        },
+        "numConnections": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "Likes": {
+      "type": "object"
+    }
+  }
+}

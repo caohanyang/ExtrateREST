@@ -1,0 +1,717 @@
+[
+  {
+    "request": {
+      "ourl": "?method=user.getWeeklyChartList",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getweeklychartlist&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.removeTag",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=auth.getMobileSession",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=tag.getWeeklyChartList",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=tag.getweeklychartlist&tag=disco&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.getInfo",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=YOUR_API_KEY&artist=cher&track=believe&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.getSimilar",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=cher&track=believe&api_key=YOUR_API_KEY&forma...",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getRecentTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=album.getInfo",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=YOUR_API_KEY&artist=Cher&album=Believe&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=tag.getTopAlbums",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=disco&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=chart.getTopTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=album.addTags",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.getCorrection",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=tag.getTopTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=tag.getTopTags&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.getCorrection",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.search",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=cher&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getInfo",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.addTags",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.addTags",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=tag.getSimilar",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=tag.getsimilar&tag=disco&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.search",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=track.search&track=Believe&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=tag.getInfo",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=tag.getinfo&tag=disco&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.removeTag",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=auth.getSession",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getWeeklyTrackChart",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getweeklytrackchart&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=album.getTopTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=album.gettoptags&artist=radiohead&album=the%20bends&api_key=YOUR_API_...",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=chart.getTopTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=chart.gettoptags&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getTopTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettoptags&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=album.removeTag",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=geo.getTopArtists",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=spain&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=album.getTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=album.gettags&artist=cher&album=believe&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getWeeklyAlbumChart",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getweeklyalbumchart&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getArtistTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getartisttracks&user=rj&artist=metallica&api_key=YOUR_API_KEY&fo...",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=geo.getTopTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=spain&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.getTopAlbums",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=cher&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getWeeklyArtistChart",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=chart.getTopArtists",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getFriends",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getfriends&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=tag.getTopArtists",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=tag.gettopartists&tag=disco&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getTopArtists",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getTopAlbums",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.getTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=track.getTags&api_key=YOUR_API_KEY&artist=AC/DC&track=Hells+Bells&use...",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.getTopTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=cher&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.getTopTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=track.gettoptags&artist=radiohead&track=paranoid+android&api_key=YOUR...",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.getSimilar",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=cher&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=album.search",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=album.search&album=believe&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.getTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=artist.getTags&artist=Red%20Hot%20Chili%20Peppers&user=RJ&api_key=YOU...",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getLovedTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getlovedtracks&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.getInfo",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Cher&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=auth.getToken",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=auth.gettoken&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getPersonalTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.getpersonaltags&user=rj&tag=rock&taggingtype=artist&api_key=YOUR...",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=library.getArtists",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=library.getartists&api_key=YOUR_API_KEY&user=joanofarctan&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=tag.getTopTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=tag.gettoptracks&tag=disco&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=user.getTopTracks",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=rj&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=track.updateNowPlaying",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "?method=artist.getTopTags",
+      "url": "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&artist=cher&api_key=YOUR_API_KEY&format=json",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  }
+]

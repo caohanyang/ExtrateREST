@@ -1,0 +1,314 @@
+[
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/historical-follow-statistics",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"_total\":4,\"values\":[{\"total-follower-count\":63911,\"paid-follower-count\":3911,\"time\":1399334400000,\"organic-follower-count\":6000},{\"total-follower-count\":64023,\"paid-follower-count\":4023,\"time\":1399420800000,\"organic-follower-count\":6000},{\"total-follower-count\":64023,\"paid-follower-count\":4023,\"time\":1399507200000,\"organic-follower-count\":6000},{\"total-follower-count\":64048,\"paid-follower-count\":4048,\"time\":1399593600000,\"organic-follower-count\":6000}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/is-company-share-enabled",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/shares",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"visibility\":{\"code\":\"anyone\"},\"comment\":\"Testingafullcompanyshare!\",\"content\":{\"submitted-url\":\"https://www.example.com/content.html\",\"submitted‐image-­url\":\"https://www.example.com/img.jpg\",\"description\":\"contentdescription\",\"title\":\"TestSharewithContent\"},\"shareTargetReach\":{\"shareTargets\":{\"shareTarget\":{\"code\":\"geos\",\"tvalues\":{\"tvalue\":\"na\"}}}}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/updates/key={update-key}/update-comments-as-company",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com//www.linkedin.com/uas/oauth2/accessToken",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com//www.linkedin.com/oauth/v2/accessToken",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/num-followers",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/people/~/shares",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"updateKey\":\"UPDATE-3346389-595113200…\",\"updateUrl\":\"https://www.linkedin.com/updates?discuss=…&scope=…\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/relation-to-viewer/is-company-share-enabled",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"name\":\"LinkedIn\",\"id\":1337}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/updates/key={update-key}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"isCommentable\":true,\"updateKey\":\"UPDATE-c1337-998877665544332211\",\"isLiked\":false,\"updateComments\":{\"_total\":1,\"values\":[{\"sequenceNumber\":0,\"person\":{\"firstName\":\"Samwise\",\"lastName\":\"Gamgee\",\"pictureUrl\":\"https://media.licdn.com/mpr/mprx/…\",\"apiStandardProfileRequest\":{\"headers\":{\"_total\":1,\"values\":[{\"name\":\"x-li-auth-token\",\"value\":\"name:Ff1A\"}]},\"url\":\"https://api.linkedin.com/v1/people/12345678\"},\"id\":\"23456789\",\"headline\":\"Journeyman\",\"siteStandardProfileRequest\":{\"url\":\"https://www.linkedin.com/profile/view?id=…\"}},\"comment\":\"Greatcomment!\",\"id\":987654321,\"timestamp\":1423281179569}]},\"numLikes\":1,\"updateContent\":{\"company\":{\"name\":\"LinkedIn\",\"id\":1337},\"companyStatusUpdate\":{\"share\":{\"visibility\":{\"code\":\"anyone\"},\"comment\":\"Thisisatestcomment.\",\"id\":\"s132435465768\",\"source\":{\"serviceProvider\":{\"name\":\"LINKEDIN\"},\"serviceProviderShareId\":\"s97867564534231\"},\"content\":{\"eyebrowUrl\":\"http://linkd.in/…\",\"shortenedUrl\":\"http://linkd.in/…\",\"submittedUrl\":\"http://linkd.in/…\",\"submittedImageUrl\":\"http://m.c.lnkd.licdn.com/…\",\"description\":\"Testdescription\",\"title\":\"BestAdvice:TakeJobsOthersDon'tWant\",\"thumbnailUrl\":\"https://media.licdn.com/…\"},\"timestamp\":1423270834567}}},\"isLikable\":true,\"likes\":{\"_total\":1,\"values\":[{\"person\":{\"firstName\":\"Frodo\",\"lastName\":\"Baggins\",\"pictureUrl\":\"https://media.licdn.com/mpr/mprx/…\",\"id\":\"12345678\",\"headline\":\"2ndGenerationAdventurer\"}}]},\"timestamp\":1423270834567,\"updateType\":\"CMPY\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/people/~:(id,num-connections,picture-url)",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"pictureUrl\":\"https://media.licdn.com/mpr/mprx/…\",\"numConnections\":42,\"id\":\"1R2RtA\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/1337/updates",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"_count\":10,\"_start\":20,\"_total\":613,\"values\":[\"…\"]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com//www.linkedin.com/shareArticle",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}:(id,name,ticker,description)",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"ticker\":\"LNKD\",\"name\":\"LinkedIn\",\"description\":\"Foundedin2003,LinkedInconnectstheworld'sprofessionalsto...\",\"id\":1337}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/updates/key={update-key}/update-comments",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/historical-status-update-statistics",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"_total\":3,\"values\":[{\"time\":1378080000000,\"impressionCount\":496111},{\"time\":1378166400000,\"impressionCount\":857282},{\"time\":1378252800000,\"impressionCount\":1539285}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/company-statistics",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"followStatistics\":{\"countsByMonth\":{\"_total\":1,\"values\":[{\"date\":{\"month\":1,\"year\":2015},\"newCount\":44868,\"totalCount\":1111157}]},\"regions\":{\"_total\":1,\"values\":[{\"entryKey\":\"us-84\",\"entryValue\":\"107253\"}]},\"functions\":{\"_total\":2,\"values\":[{\"entryKey\":\"25\",\"entryValue\":\"100\"},{\"entryKey\":\"15\",\"entryValue\":\"3892\"}]},\"count\":386420,\"companySizes\":{\"_total\":2,\"values\":[{\"entryKey\":\"C\",\"entryValue\":\"79027\"},{\"entryKey\":\"E\",\"entryValue\":\"59788\"}]},\"countries\":{\"_total\":1,\"values\":[{\"entryKey\":\"us\",\"entryValue\":\"386420\"}]},\"nonEmployeeCount\":107253,\"employeeCount\":3992,\"seniorities\":{\"_total\":2,\"values\":[{\"entryKey\":\"4\",\"entryValue\":\"326866\"},{\"entryKey\":\"3\",\"entryValue\":\"319703\"}]}},\"statusUpdateStatistics\":{\"viewsByMonth\":{\"_total\":1,\"values\":[{\"date\":{\"month\":1,\"year\":2015},\"shares\":2145,\"comments\":1203,\"engagement\":0.003203537929382338,\"clicks\":81333,\"impressions\":32797489,\"likes\":20387}]}}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com//www.linkedin.com/oauth/v2/authorization",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/updates/key={update-key}/likes",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"_total\":1,\"values\":[{\"person\":{\"firstName\":\"Frodo\",\"lastName\":\"Baggins\",\"pictureUrl\":\"https://media.licdn.com/mpr/mprx/…\",\"id\":\"12345678\",\"headline\":\"2ndGenerationAdventurer\"},\"timestamp\":1423415040071}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/companies/{id}/updates",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"_total\":1,\"values\":[{\"sequenceNumber\":0,\"person\":{\"firstName\":\"Samwise\",\"lastName\":\"Gamgee\",\"pictureUrl\":\"https://media.licdn.com/mpr/mprx/…\",\"apiStandardProfileRequest\":{\"headers\":{\"_total\":1,\"values\":[{\"name\":\"x-li-auth-token\",\"value\":\"name:Ff1A\"}]},\"url\":\"https://api.linkedin.com/v1/people/12345678\"},\"id\":\"23456789\",\"headline\":\"Journeyman\",\"siteStandardProfileRequest\":{\"url\":\"https://www.linkedin.com/profile/view?id=…\"}},\"comment\":\"Greatcomment!\",\"id\":987654321,\"timestamp\":1423281179569}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com//www.linkedin.com/uas/oauth2/authorization",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.linkedin.com/people/~",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"firstName\":\"Frodo\",\"lastName\":\"Baggins\",\"id\":\"1R2RtA\",\"headline\":\"2ndGenerationAdventurer\",\"siteStandardProfileRequest\":{\"url\":\"https://www.linkedin.com/profile/view?id=…\"}}"
+    }
+  }
+]

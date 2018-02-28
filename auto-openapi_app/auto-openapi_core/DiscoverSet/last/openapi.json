@@ -1,0 +1,137 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "ws.audioscrobbler.com",
+    "version": "0.0"
+  },
+  "host": "ws.audioscrobbler.com",
+  "basePath": "/2.0",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "method",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "user",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "api_key",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "tag",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "artist",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "track",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "forma...",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "album",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "fo...",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "taggingtype",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Unkown": {
+      "type": "object",
+      "properties": {
+        "Weeklychartlist": {
+          "$ref": "#/definitions/Weeklychartlist"
+        }
+      }
+    },
+    "@attr": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "string"
+        }
+      }
+    },
+    "Weeklychartlist": {
+      "type": "object",
+      "properties": {
+        "chart": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Chart"
+          }
+        },
+        "@attr": {
+          "$ref": "#/definitions/@attr"
+        }
+      }
+    },
+    "Chart": {
+      "type": "object",
+      "properties": {
+        "#text": {
+          "type": "string"
+        },
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

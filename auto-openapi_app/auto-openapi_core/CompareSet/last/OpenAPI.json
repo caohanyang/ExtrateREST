@@ -2,7 +2,9 @@
   "basePath": "/2.0/",
   "paths": {
     "?method=user.getWeeklyChartList": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getweeklychartlist&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=artist.removeTag": {
       "GET": {}
@@ -11,25 +13,39 @@
       "GET": {}
     },
     "?method=tag.getWeeklyChartList": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=tag.getweeklychartlist&tag=disco&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=track.getInfo": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=track.getInfo&api_key=YOUR_API_KEY&artist=cher&track=believe&format=json"
+      }
     },
     "?method=track.getSimilar": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=track.getsimilar&artist=cher&track=believe&api_key=YOUR_API_KEY&forma..."
+      }
     },
     "?method=user.getRecentTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getrecenttracks&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=album.getInfo": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=album.getinfo&api_key=YOUR_API_KEY&artist=Cher&album=Believe&format=json"
+      }
     },
     "?method=tag.getTopAlbums": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=tag.gettopalbums&tag=disco&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=chart.getTopTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=chart.gettoptracks&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=album.addTags": {
       "POST": {}
@@ -38,16 +54,22 @@
       "GET": {}
     },
     "?method=tag.getTopTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=tag.getTopTags&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=track.getCorrection": {
       "GET": {}
     },
     "?method=artist.search": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=artist.search&artist=cher&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getInfo": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getinfo&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=artist.addTags": {
       "POST": {}
@@ -56,13 +78,19 @@
       "POST": {}
     },
     "?method=tag.getSimilar": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=tag.getsimilar&tag=disco&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=track.search": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=track.search&track=Believe&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=tag.getInfo": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=tag.getinfo&tag=disco&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=track.removeTag": {
       "GET": {}
@@ -71,100 +99,160 @@
       "GET": {}
     },
     "?method=user.getWeeklyTrackChart": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getweeklytrackchart&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=album.getTopTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=album.gettoptags&artist=radiohead&album=the%20bends&api_key=YOUR_API_..."
+      }
     },
     "?method=chart.getTopTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=chart.gettoptags&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getTopTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.gettoptags&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=album.removeTag": {
       "GET": {}
     },
     "?method=geo.getTopArtists": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=geo.gettopartists&country=spain&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=album.getTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=album.gettags&artist=cher&album=believe&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getWeeklyAlbumChart": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getweeklyalbumchart&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getArtistTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getartisttracks&user=rj&artist=metallica&api_key=YOUR_API_KEY&fo..."
+      }
     },
     "?method=geo.getTopTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=geo.gettoptracks&country=spain&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=artist.getTopAlbums": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=artist.gettopalbums&artist=cher&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getWeeklyArtistChart": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getweeklyartistchart&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=chart.getTopArtists": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=chart.gettopartists&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getFriends": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getfriends&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=tag.getTopArtists": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=tag.gettopartists&tag=disco&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getTopArtists": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.gettopartists&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getTopAlbums": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.gettopalbums&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=track.getTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=track.getTags&api_key=YOUR_API_KEY&artist=AC/DC&track=Hells+Bells&use..."
+      }
     },
     "?method=artist.getTopTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=artist.gettoptracks&artist=cher&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=track.getTopTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=track.gettoptags&artist=radiohead&track=paranoid+android&api_key=YOUR..."
+      }
     },
     "?method=artist.getSimilar": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=artist.getsimilar&artist=cher&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=album.search": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=album.search&album=believe&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=artist.getTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=artist.getTags&artist=Red%20Hot%20Chili%20Peppers&user=RJ&api_key=YOU..."
+      }
     },
     "?method=user.getLovedTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getlovedtracks&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=artist.getInfo": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=artist.getinfo&artist=Cher&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=auth.getToken": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=auth.gettoken&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getPersonalTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.getpersonaltags&user=rj&tag=rock&taggingtype=artist&api_key=YOUR..."
+      }
     },
     "?method=library.getArtists": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=library.getartists&api_key=YOUR_API_KEY&user=joanofarctan&format=json"
+      }
     },
     "?method=tag.getTopTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=tag.gettoptracks&tag=disco&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=user.getTopTracks": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=user.gettoptracks&user=rj&api_key=YOUR_API_KEY&format=json"
+      }
     },
     "?method=track.updateNowPlaying": {
       "GET": {}
     },
     "?method=artist.getTopTags": {
-      "GET": {}
+      "GET": {
+        "request": "/2.0/?method=artist.gettoptags&artist=cher&api_key=YOUR_API_KEY&format=json"
+      }
     }
   },
   "produces": "application/json",

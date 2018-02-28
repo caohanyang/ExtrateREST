@@ -1,0 +1,499 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "api.instagram.com",
+    "version": "0.0"
+  },
+  "host": "api.instagram.com",
+  "basePath": "/users",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/self/follows": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Follows"
+            }
+          }
+        }
+      }
+    },
+    "/self/media/recent": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Recent"
+            }
+          }
+        }
+      }
+    },
+    "/search": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        }
+      }
+    },
+    "/self/media/liked": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Liked"
+            }
+          }
+        }
+      }
+    },
+    "/{location-id}/media/recent": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Recent"
+            }
+          }
+        }
+      }
+    },
+    "/{tag-name}/media/recent": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Recent"
+            }
+          }
+        }
+      }
+    },
+    "/{media-id}/comments": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Comments"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Comments"
+            }
+          }
+        }
+      }
+    },
+    "/self/requested-by": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Self"
+            }
+          }
+        }
+      }
+    },
+    "/{media-id}/likes": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Likes"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Likes"
+            }
+          }
+        }
+      }
+    },
+    "/{user-id}/relationship": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Relationship"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Relationship"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Users": {
+      "type": "object"
+    },
+    "Follows": {
+      "type": "object"
+    },
+    "Follow": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Data"
+          }
+        }
+      }
+    },
+    "Data": {
+      "type": "object",
+      "properties": {
+        "full_name": {
+          "type": "string"
+        },
+        "profile_picture": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "created_time": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "filter": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        },
+        "Comment": {
+          "$ref": "#/definitions/Comment"
+        },
+        "users_in_photo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Users_in_photo"
+          }
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "Like": {
+          "$ref": "#/definitions/Like"
+        },
+        "media_count": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "is_business": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "bio": {
+          "type": "string"
+        },
+        "Count": {
+          "$ref": "#/definitions/Count"
+        },
+        "outgoing_status": {
+          "type": "string"
+        }
+      }
+    },
+    "Recent": {
+      "type": "object"
+    },
+    "Search": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Data"
+          }
+        }
+      }
+    },
+    "Liked": {
+      "type": "object"
+    },
+    "Media": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Standard_resolution": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    },
+    "Comment": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "full_name": {
+          "type": "string"
+        },
+        "profile_picture": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
+    },
+    "Like": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        }
+      }
+    },
+    "Position": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "integer"
+        }
+      }
+    },
+    "Image": {
+      "type": "object",
+      "properties": {
+        "Thumbnail": {
+          "$ref": "#/definitions/Thumbnail"
+        },
+        "Low_resolution": {
+          "$ref": "#/definitions/Low_resolution"
+        },
+        "Standard_resolution": {
+          "$ref": "#/definitions/Standard_resolution"
+        }
+      }
+    },
+    "Thumbnail": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    },
+    "Low_resolution": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    },
+    "Users_in_photo": {
+      "type": "object",
+      "properties": {
+        "Position": {
+          "$ref": "#/definitions/Position"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Tags": {
+      "type": "object"
+    },
+    "Tag": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Comments": {
+      "type": "object"
+    },
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        }
+      }
+    },
+    "Self": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Count": {
+      "type": "object",
+      "properties": {
+        "followed_by": {
+          "type": "integer"
+        },
+        "follows": {
+          "type": "integer"
+        },
+        "media": {
+          "type": "integer"
+        }
+      }
+    },
+    "Likes": {
+      "type": "object"
+    },
+    "Relationship": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    }
+  }
+}

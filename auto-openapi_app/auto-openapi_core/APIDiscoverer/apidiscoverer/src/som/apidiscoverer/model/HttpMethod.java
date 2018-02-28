@@ -2,7 +2,7 @@ package som.apidiscoverer.model;
 
 public enum HttpMethod {
 
-	GET("Get"), POST("Post"), PUT("Put"), DELETE("Delete");
+	GET("Get"), POST("Post"), PUT("Put"), DELETE("Delete"), PATCH("Patch");
 	private String label;
 
 	private HttpMethod(String label) {
