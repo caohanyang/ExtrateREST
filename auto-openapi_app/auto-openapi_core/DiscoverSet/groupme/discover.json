@@ -1,0 +1,470 @@
+[
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups",
+      "url": null,
+      "method": "POST",
+      "body": "{\"name\":\"Family\",\"share\":true,\"image_url\":\"https://i.groupme.com/123456789\"}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"creator_user_id\":\"1234567890\",\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"members\":[{\"user_id\":\"1234567890\",\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"muted\":false}],\"name\":\"Family\",\"description\":\"CoolestFamilyEver\",\"created_at\":1302623328,\"messages\":{\"preview\":{\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"text\":\"Helloworld\"},\"last_message_id\":\"1234567890\",\"count\":100,\"last_message_created_at\":1302623328},\"id\":\"1234567890\",\"type\":\"private\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups",
+      "url": null,
+      "method": "GET",
+      "body": "[{\"id\":\"1234567890\",\"name\":\"Family\",\"type\":\"private\",\"description\":\"Coolest Family Ever\",\"image_url\":\"https://i.groupme.com/123456789\",\"creator_user_id\":\"1234567890\",\"created_at\":1302623328,\"updated_at\":1302623328,\"members\":[{\"user_id\":\"1234567890\",\"nickname\":\"Jane\",\"muted\":false,\"image_url\":\"https://i.groupme.com/123456789\"}],\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"messages\":{\"count\":100,\"last_message_id\":\"1234567890\",\"last_message_created_at\":1302623328,\"preview\":{\"nickname\":\"Jane\",\"text\":\"Hello world\",\"image_url\":\"https://i.groupme.com/123456789\",\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"location\",\"lat\":\"40.738206\",\"lng\":\"-73.993285\",\"name\":\"GroupMe HQ\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"type\":\"emoji\",\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]]}]}}}]"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[{\"creator_user_id\":\"1234567890\",\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"members\":[{\"user_id\":\"1234567890\",\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"muted\":false}],\"name\":\"Family\",\"description\":\"CoolestFamilyEver\",\"created_at\":1302623328,\"messages\":{\"preview\":{\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"text\":\"Helloworld\"},\"last_message_id\":\"1234567890\",\"count\":100,\"last_message_created_at\":1302623328},\"id\":\"1234567890\",\"type\":\"private\"}]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/messages/:conversation_id/:message_id/unlike",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/users/update",
+      "url": null,
+      "method": "POST",
+      "body": "{\"avatar_url\":\"http://4.bp.blogspot.com/-GAeMYT8SZoI/TtBTK209xMI/AAAAAAAAWts/5nmvpmmvoWo/s1600/TopGun_059Pyxurz.jpg\",\"name\":\"Tom Skerritt\",\"email\":\"viper@topgun.usaf.mil\",\"zip_code\":\"92145\"}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"name\":\"RonaldSwanson\",\"sms\":false,\"created_at\":1302623328,\"phone_number\":\"+12123001234\",\"id\":\"1234567890\",\"email\":\"me@example.com\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/users/sms_mode",
+      "url": null,
+      "method": "POST",
+      "body": "{\"duration\":4,\"registration_id\":\"TOKEN\"}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:id/destroy",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/blocks/delete",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/likes",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"messages\":[{\"source_guid\":\"GUID\",\"system\":true,\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"101\",\"66\",\"1234567890\"],\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\"},{\"source_guid\":\"GUID\",\"system\":true,\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"1\",\"2\"],\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/bots/destroy",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/blocks",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/blocks",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"block\":{\"blocked_user_id\":\"1234567890\",\"user_id\":\"1234567890\",\"created_at\":1302623328}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/blocks",
+      "url": null,
+      "method": "GET",
+      "body": "{\"blocks\":[{\"user_id\":\"1234567890\",\"blocked_user_id\":\"1234567890\",\"created_at\":1302623328}]}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"blocks\":[{\"blocked_user_id\":\"1234567890\",\"user_id\":\"1234567890\",\"created_at\":1302623328}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:id/join/:share_token",
+      "url": null,
+      "method": "POST",
+      "body": "{\"group\":{\"id\":\"1234567890\",\"name\":\"Family\",\"type\":\"private\",\"description\":\"Coolest Family Ever\",\"image_url\":\"https://i.groupme.com/123456789\",\"creator_user_id\":\"1234567890\",\"created_at\":1302623328,\"updated_at\":1302623328,\"members\":[{\"user_id\":\"1234567890\",\"nickname\":\"Jane\",\"muted\":false,\"image_url\":\"https://i.groupme.com/123456789\"}],\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"messages\":{\"count\":100,\"last_message_id\":\"1234567890\",\"last_message_created_at\":1302623328,\"preview\":{\"nickname\":\"Jane\",\"text\":\"Hello world\",\"image_url\":\"https://i.groupme.com/123456789\",\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"location\",\"lat\":\"40.738206\",\"lng\":\"-73.993285\",\"name\":\"GroupMe HQ\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"type\":\"emoji\",\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]]}]}}}}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"group\":{\"creator_user_id\":\"1234567890\",\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"members\":[{\"user_id\":\"1234567890\",\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"muted\":false}],\"name\":\"Family\",\"description\":\"CoolestFamilyEver\",\"created_at\":1302623328,\"messages\":{\"preview\":{\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"text\":\"Helloworld\"},\"last_message_id\":\"1234567890\",\"count\":100,\"last_message_created_at\":1302623328},\"id\":\"1234567890\",\"type\":\"private\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/users/me",
+      "url": null,
+      "method": "GET",
+      "body": "{\"id\":\"1234567890\",\"phone_number\":\"+1 2123001234\",\"image_url\":\"https://i.groupme.com/123456789\",\"name\":\"Ronald Swanson\",\"created_at\":1302623328,\"updated_at\":1302623328,\"email\":\"me@example.com\",\"sms\":false}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"name\":\"RonaldSwanson\",\"sms\":false,\"created_at\":1302623328,\"phone_number\":\"+12123001234\",\"id\":\"1234567890\",\"email\":\"me@example.com\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/change_owners",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"results\":[{\"group_id\":\"1234567890\",\"owner_id\":\"1234567890\",\"status\":\"200\"},{\"group_id\":\"1234567890\",\"owner_id\":\"1234567890\",\"status\":\"400\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/members/add",
+      "url": null,
+      "method": "POST",
+      "body": "{\"members\":[{\"nickname\":\"Mom\",\"user_id\":\"1234567890\",\"guid\":\"GUID-1\"},{\"nickname\":\"Dad\",\"phone_number\":\"+1 2123001234\",\"guid\":\"GUID-2\"},{\"nickname\":\"Jane\",\"email\":\"jane@example.com\",\"guid\":\"GUID-3\"}]}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"results_id\":\"GUID\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/members/results/:results_id",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"members\":[{\"app_installed\":true,\"user_id\":\"10000\",\"image_url\":\"http://i.groupme.com/AVATAR\",\"autokicked\":false,\"nickname\":\"John\",\"guid\":\"GUID-1\",\"id\":\"1000\",\"muted\":false},{\"app_installed\":true,\"user_id\":\"20000\",\"image_url\":\"http://i.groupme.com/AVATAR\",\"autokicked\":false,\"nickname\":\"Anne\",\"guid\":\"GUID-2\",\"id\":\"2000\",\"muted\":false}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/chats",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[{\"messages_count\":10,\"updated_at\":1352299338,\"created_at\":1352299338,\"last_message\":{\"attachments\":[],\"source_guid\":\"GUID\",\"sender_type\":\"user\",\"created_at\":1352299338,\"sender_id\":\"12345\",\"avatar_url\":\"http://i.groupme.com/200x200.jpeg.abcdef\",\"favorited_by\":[],\"user_id\":\"12345\",\"conversation_id\":\"12345+67890\",\"name\":\"JohnDoe\",\"id\":\"1234567890\",\"text\":\"Helloworld\",\"recipient_id\":\"67890\"},\"other_user\":{\"avatar_url\":\"http://i.groupme.com/200x200.jpeg.abcdef\",\"name\":\"JohnDoe\",\"id\":12345}}]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/join",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"creator_user_id\":\"1234567890\",\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"members\":[{\"user_id\":\"1234567890\",\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"muted\":false}],\"name\":\"Family\",\"description\":\"CoolestFamilyEver\",\"created_at\":1302623328,\"messages\":{\"preview\":{\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"text\":\"Helloworld\"},\"last_message_id\":\"1234567890\",\"count\":100,\"last_message_created_at\":1302623328},\"id\":\"1234567890\",\"type\":\"private\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/bots/post",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/memberships/update",
+      "url": null,
+      "method": "POST",
+      "body": "{\"membership\":{\"nickname\":\"NEW NICKNAME\"}}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"app_installed\":true,\"user_id\":\"USERID\",\"image_url\":\"AVATARURL\",\"autokicked\":false,\"nickname\":\"NEWNICKNAME\",\"id\":\"MEMBERSHIPID\",\"muted\":false}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/blocks/between",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"between\":true}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/direct_messages",
+      "url": null,
+      "method": "POST",
+      "body": "{\"direct_message\":{\"source_guid\":\"GUID\",\"recipient_id\":\"20\",\"text\":\"Hello world ☃☃\",\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"location\",\"lat\":\"40.738206\",\"lng\":\"-73.993285\",\"name\":\"GroupMe HQ\"},{\"type\":\"emoji\",\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]]}]}}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"message\":{\"source_guid\":\"GUID\",\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"101\"],\"user_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\",\"recipient_id\":\"20\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/direct_messages",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"count\":123,\"direct_messages\":[{\"source_guid\":\"GUID\",\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"101\"],\"user_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\",\"recipient_id\":\"20\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/likes/for_me",
+      "url": null,
+      "method": "GET",
+      "body": "{\"messages\":[{\"id\":\"1234567890\",\"source_guid\":\"GUID\",\"created_at\":1302623328,\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"avatar_url\":\"https://i.groupme.com/123456789\",\"text\":\"Hello world ☃☃\",\"system\":true,\"favorited_by\":[\"101\",\"66\",\"1234567890\"],\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"location\",\"lat\":\"40.738206\",\"lng\":\"-73.993285\",\"name\":\"GroupMe HQ\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"type\":\"emoji\",\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]]}]}]}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"messages\":[{\"source_guid\":\"GUID\",\"system\":true,\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"101\",\"66\",\"1234567890\"],\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:id/update",
+      "url": null,
+      "method": "POST",
+      "body": "{\"name\":\"Family\",\"share\":true,\"image_url\":\"https://i.groupme.com/123456789\",\"office_mode\":true}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"creator_user_id\":\"1234567890\",\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"members\":[{\"user_id\":\"1234567890\",\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"muted\":false}],\"name\":\"Family\",\"description\":\"CoolestFamilyEver\",\"created_at\":1302623328,\"messages\":{\"preview\":{\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"text\":\"Helloworld\"},\"last_message_id\":\"1234567890\",\"count\":100,\"last_message_created_at\":1302623328},\"id\":\"1234567890\",\"type\":\"private\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/members/:membership_id/remove",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:id",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"creator_user_id\":\"1234567890\",\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"members\":[{\"user_id\":\"1234567890\",\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"muted\":false}],\"name\":\"Family\",\"description\":\"CoolestFamilyEver\",\"created_at\":1302623328,\"messages\":{\"preview\":{\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"text\":\"Helloworld\"},\"last_message_id\":\"1234567890\",\"count\":100,\"last_message_created_at\":1302623328},\"id\":\"1234567890\",\"type\":\"private\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/users/sms_mode/delete",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/messages/:conversation_id/:message_id/like",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/likes/mine",
+      "url": null,
+      "method": "GET",
+      "body": "{\"messages\":[{\"id\":\"1234567890\",\"source_guid\":\"GUID\",\"created_at\":1302623328,\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"avatar_url\":\"https://i.groupme.com/123456789\",\"text\":\"Hello world ☃☃\",\"system\":true,\"favorited_by\":[\"101\",\"66\",\"1234567890\"],\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"location\",\"lat\":\"40.738206\",\"lng\":\"-73.993285\",\"name\":\"GroupMe HQ\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"type\":\"emoji\",\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]]}],\"liked_at\":\"2014-05-08T18:30:31.6617Z\"}]}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"messages\":[{\"source_guid\":\"GUID\",\"system\":true,\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"101\",\"66\",\"1234567890\"],\"liked_at\":\"2014-05-08T18:30:31.6617Z\",\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/messages",
+      "url": null,
+      "method": "POST",
+      "body": "{\"message\":{\"source_guid\":\"GUID\",\"text\":\"Hello world ☃☃\",\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"location\",\"lat\":\"40.738206\",\"lng\":\"-73.993285\",\"name\":\"GroupMe HQ\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"type\":\"emoji\",\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]]}]}}"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"message\":{\"source_guid\":\"GUID\",\"system\":true,\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"101\",\"66\",\"1234567890\"],\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/:group_id/messages",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"count\":123,\"messages\":[{\"source_guid\":\"GUID\",\"system\":true,\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"avatar_url\":\"https://i.groupme.com/123456789\",\"favorited_by\":[\"101\",\"66\",\"1234567890\"],\"user_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"John\",\"created_at\":1302623328,\"id\":\"1234567890\",\"text\":\"Helloworld☃☃\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/groups/former",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[{\"creator_user_id\":\"1234567890\",\"updated_at\":1302623328,\"image_url\":\"https://i.groupme.com/123456789\",\"share_url\":\"https://groupme.com/join_group/1234567890/SHARE_TOKEN\",\"members\":[{\"user_id\":\"1234567890\",\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"muted\":false}],\"name\":\"Family\",\"description\":\"CoolestFamilyEver\",\"created_at\":1302623328,\"messages\":{\"preview\":{\"attachments\":[{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"type\":\"image\",\"url\":\"https://i.groupme.com/123456789\"},{\"lng\":\"-73.993285\",\"name\":\"GroupMeHQ\",\"type\":\"location\",\"lat\":\"40.738206\"},{\"type\":\"split\",\"token\":\"SPLIT_TOKEN\"},{\"placeholder\":\"☃\",\"charmap\":[[1,42],[2,34]],\"type\":\"emoji\"}],\"image_url\":\"https://i.groupme.com/123456789\",\"nickname\":\"Jane\",\"text\":\"Helloworld\"},\"last_message_id\":\"1234567890\",\"count\":100,\"last_message_created_at\":1302623328},\"id\":\"1234567890\",\"type\":\"private\"}]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/bots",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"callback_url\":\"http://example.com/bots/callback\",\"avatar_url\":\"https://i.groupme.com/123456789\",\"group_id\":\"1234567890\",\"name\":\"hal9000\",\"bot_id\":\"1234567890\",\"dm_notification\":false}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.groupme.com/bots",
+      "url": null,
+      "method": "GET",
+      "body": "[{\"bot_id\":\"1234567890\",\"group_id\":\"1234567890\",\"name\":\"hal9000\",\"avatar_url\":\"https://i.groupme.com/123456789\",\"callback_url\":\"http://example.com/bots/callback\",\"dm_notification\":false}]"
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[{\"callback_url\":\"http://example.com/bots/callback\",\"avatar_url\":\"https://i.groupme.com/123456789\",\"group_id\":\"1234567890\",\"name\":\"hal9000\",\"bot_id\":\"1234567890\",\"dm_notification\":false}]"
+    }
+  }
+]

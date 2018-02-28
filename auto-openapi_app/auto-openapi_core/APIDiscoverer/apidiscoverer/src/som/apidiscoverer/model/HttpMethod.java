@@ -6,7 +6,7 @@ public enum HttpMethod {
 	private String label;
 
 	private HttpMethod(String label) {
-		this.label = label;
+		this.label = label.toLowerCase();
 	}
 
 	public String getLabel() {

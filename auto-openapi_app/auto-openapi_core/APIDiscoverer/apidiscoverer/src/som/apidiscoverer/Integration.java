@@ -26,7 +26,9 @@ import com.google.gson.stream.JsonReader;
 
 import som.apidiscoverer.bean.DiscovererBean;
 import som.apidiscoverer.model.APIRequest;
+import som.apidiscoverer.model.HttpMethod;
 import som.apidiscoverer.model.JSONAPICallExample;
+import som.apidiscoverer.model.UppercaseEnumAdapter;
 
 public class Integration {
 	private static String API_NAME = "behance";
@@ -74,6 +76,7 @@ public class Integration {
 
 		// 2. init apidiscover
 		GsonBuilder builder = new GsonBuilder().setPrettyPrinting();
+		builder.registerTypeAdapter(HttpMethod.class, new UppercaseEnumAdapter());
 		gson = builder.create();
 		DiscovererBean apidiscover = new DiscovererBean();
 		apidiscover.init();
@@ -94,13 +97,36 @@ public class Integration {
 			apidiscover.setJsonCallExample(jsonCallExample);
 			
 			// 5. Sending request
-			apidiscover.sendRequest();
+			if (jsonCallExample.getJsonRequest().getUrl()!= null) {
+				// request example exist: send request
+				apidiscover.sendRequest();
+				// Wait 1 seconds
+				TimeUnit.SECONDS.sleep(1);
+				// refresh to get newest state 
+				jsonCallExample = apidiscover.getJsonCallExample();
+				
+			} else {
+				// request example miss: 
+				// use origin url
+				jsonCallExample.getJsonRequest().setUrl(jsonCallExample.getJsonRequest().getOurl());
+			}
+			
+			
 			
 			// 6. Get Schema
-			apidiscover.discover();
-
-			// Wait 1 seconds
-			TimeUnit.SECONDS.sleep(2);
+			if (jsonCallExample.getJsonResponse().getBody().length()==0) {
+				// use extracted response
+				jsonCallExample.getJsonResponse().setBody(jsonCallExample.getJsonResponse().getEbody());
+				
+    		}
+			
+			
+			if (jsonCallExample.getJsonResponse().getBody().length()!=0) {
+				apidiscover.setJsonCallExample(jsonCallExample);
+				apidiscover.discover();
+			}
+			
+			
 		}
 
 		// prepare for the final openapi

@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
@@ -271,12 +272,13 @@ public class DiscovererBean implements Serializable {
 			System.out.println(response.getStatus());
 			
 			//TODO need to judge the status
-			if (String.valueOf(response.getStatus()) == "200") {
+			if (response.getStatus() == 200) {
 				jsonCallExample.getJsonResponse().setStatus(String.valueOf(response.getStatus()));
 				jsonCallExample.getJsonResponse().setBody(response.getBody());
 			}
 			
-//			System.out.println(jsonCallExample.getJsonResponse().getBody());
+			// resolve conflicts on request && response
+			solveConflit();
 
 		} catch (UnirestException e) {
 			e.printStackTrace();
@@ -286,8 +288,7 @@ public class DiscovererBean implements Serializable {
 
 	public void discover() throws MalformedURLException, URISyntaxException, UnsupportedEncodingException {
 //		jsonCallExample = gson.fromJson(rowJsonCallExample, JSONAPICallExample.class);
-		// resolve conflicts on response
-		conflictRes();
+		
 		newAPIRequest = getAPIRequestFromAPICallExample(jsonCallExample);
 		newAPIRequest.decode();
 		discoverer.discover(newAPIRequest,schemaName,bodySchema);
@@ -304,7 +305,19 @@ public class DiscovererBean implements Serializable {
 
 	}
 
+	private void solveConflit(){
+		conflictReq();
+		conflictRes();
+	}
+	
+	private void conflictReq() {
+		// solve request conflict
+		// decide to solve the URL conflict and Parameter conflict in next step
+	}
+
 	private void conflictRes() {
+		// solve response conflict
+		// rule: real response > extracted response
 		if (jsonCallExample.getJsonResponse().getBody().length() == 0) {
 			System.out.println("Fail to return response");
 			if (jsonCallExample.getJsonResponse().getEbody().length()!=0){

@@ -1,0 +1,962 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "api.behance.net",
+    "version": "0.0"
+  },
+  "host": "api.behance.net",
+  "basePath": "/v2",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/users/michaelklein548a/following": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Following"
+            }
+          }
+        }
+      }
+    },
+    "/users/dtraytel/appreciations": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Appreciations"
+            }
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectsId}/comments": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "projectsId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Comments"
+            }
+          }
+        }
+      }
+    },
+    "/users/michaelklein548a/followers": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Followers"
+            }
+          }
+        }
+      }
+    },
+    "/collections/{collectionsId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "api_key",
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "collectionsId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Collections"
+            }
+          }
+        }
+      }
+    },
+    "/users/cfaydi/stats": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/users/matiascorea/wips": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/users/matiascorea/work_experience": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/users/matiascorea/projects": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Projects"
+            }
+          }
+        }
+      }
+    },
+    "/collections/{collectionsId}/projects": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "api_key",
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "collectionsId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Projects"
+            }
+          }
+        }
+      }
+    },
+    "/users/matiascorea": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/users/matiascorea/collections": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "api_key",
+            "in": "query",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Collections"
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectsId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "api_key",
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "projectsId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Projects"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Projects": {
+      "type": "object"
+    },
+    "Project": {
+      "type": "object",
+      "properties": {
+        "modified_on": {
+          "type": "integer"
+        },
+        "mature_content": {
+          "type": "integer"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "published_on": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "url": {
+          "type": "string"
+        },
+        "Stat": {
+          "$ref": "#/definitions/Stat"
+        },
+        "Owner": {
+          "$ref": "#/definitions/Owner"
+        },
+        "Cover": {
+          "$ref": "#/definitions/Cover"
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Project"
+          }
+        }
+      }
+    },
+    "Owner": {
+      "type": "object",
+      "properties": {
+        "129052": {
+          "$ref": "#/definitions/129052"
+        },
+        "168816": {
+          "$ref": "#/definitions/168816"
+        },
+        "country": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "company": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        }
+      }
+    },
+    "Stat": {
+      "type": "object",
+      "properties": {
+        "comments": {
+          "type": "integer"
+        },
+        "appreciations": {
+          "type": "integer"
+        },
+        "views": {
+          "type": "integer"
+        },
+        "followers": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "integer"
+        }
+      }
+    },
+    "Cover": {
+      "type": "object",
+      "properties": {
+        "115": {
+          "type": "string"
+        },
+        "202": {
+          "type": "string"
+        },
+        "230": {
+          "type": "string"
+        },
+        "404": {
+          "type": "string"
+        }
+      }
+    },
+    "Image": {
+      "type": "object",
+      "properties": {
+        "32": {
+          "type": "string"
+        },
+        "50": {
+          "type": "string"
+        },
+        "78": {
+          "type": "string"
+        },
+        "115": {
+          "type": "string"
+        },
+        "129": {
+          "type": "string"
+        },
+        "138": {
+          "type": "string"
+        }
+      }
+    },
+    "129052": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "company": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        }
+      }
+    },
+    "Fields": {
+      "type": "object"
+    },
+    "Field": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Field"
+          }
+        },
+        "popular": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Popular"
+          }
+        }
+      }
+    },
+    "Popular": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "Following": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "company": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        },
+        "following": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Following"
+          }
+        }
+      }
+    },
+    "Appreciations": {
+      "type": "object"
+    },
+    "Appreciation": {
+      "type": "object",
+      "properties": {
+        "timestamp": {
+          "type": "integer"
+        },
+        "Project": {
+          "$ref": "#/definitions/Project"
+        },
+        "appreciations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Appreciation"
+          }
+        }
+      }
+    },
+    "168816": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "company": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        }
+      }
+    },
+    "Users": {
+      "type": "object"
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "company": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Comments": {
+      "type": "object"
+    },
+    "Comment": {
+      "type": "object",
+      "properties": {
+        "created_on": {
+          "type": "integer"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "comments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Comment"
+          }
+        }
+      }
+    },
+    "Followers": {
+      "type": "object"
+    },
+    "Follower": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "company": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        },
+        "followers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Follower"
+          }
+        }
+      }
+    },
+    "Collections": {
+      "type": "object"
+    },
+    "Collection": {
+      "type": "object",
+      "properties": {
+        "modified_on": {
+          "type": "integer"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "Stat": {
+          "$ref": "#/definitions/Stat"
+        },
+        "owners": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Owner"
+          }
+        },
+        "Collection": {
+          "$ref": "#/definitions/Collection"
+        }
+      }
+    },
+    "Unkown": {
+      "type": "object",
+      "properties": {
+        "creatives_to_follow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Creatives_to_follow"
+          }
+        }
+      }
+    },
+    "Creatives_to_follow": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "integer"
+        },
+        "company": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        }
+      }
+    }
+  }
+}

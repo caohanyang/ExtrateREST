@@ -188,8 +188,14 @@ public class Parameter {
 
 	public static JSONDataType getGeneralType(JSONDataType type1, JSONDataType type2) {
 		
+		if (type1 != null && type2!= null) {	
+			return (type1.getValue() >= type2.getValue())? type1:type2;		
+		}
 		
-		return (type1.getValue() >= type2.getValue())? type1:type2;
+		if (type1!= null && type2==null) return type1;
+		if (type1 == null && type2!=null) return type2;
+		
+		return null;
 	}
 
 }
