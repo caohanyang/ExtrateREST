@@ -2,28 +2,31 @@
 
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 
-
-# https://www.instagram.com/developer https://www.instagram.com/developer/endpoints
+# TOP 15
+# https://developers.facebook.com/docs/graph-api https://developers.facebook.com/docs/graph-api/reference
 # https://developer.twitter.com/en/docs/api-reference-index https://developer.twitter.com/en/docs
-# https://www.flickr.com/services/api
 # https://developers.google.com/youtube/v3 https://developers.google.com/youtube/v3/docs
-# https://www.twilio.com/docs/api/rest
 # https://developer.linkedin.com/docs
+# http://docs.aws.amazon.com/AWSECommerceService/latest/DG/Welcome.html   http://docs.aws.amazon.com/AWSECommerceService/latest/DG
+# https://www.instagram.com/developer https://www.instagram.com/developer/endpoints
+# https://www.flickr.com/services/api
+# http://www.last.fm/api
+# https://en.wikipedia.org/api/rest_v1/
+# https://developer.foursquare.com/docs https://developer.foursquare.com/docs/api
+# https://www.twilio.com/docs/api/rest
+# https://developers.google.com/google-apps/calendar/v3/reference/
+
+# https://go.developer.ebay.com/api-documentation   http://developer.ebay.com/devzone/rest
+# http://www.geonames.org/export/ws-overview.html   http://www.geonames.org/export
+
+
 # http://api.eventful.com/docs
 # https://cloud.google.com/translate  https://cloud.google.com/translate/docs/reference
 # https://www.yelp.com/developers/documentation/v3
 # https://docs.docusign.com/esign      https://docs.docusign.com/esign/restapi
-
-# https://developers.facebook.com/docs/graph-api https://developers.facebook.com/docs/graph-api/reference
-# http://docs.aws.amazon.com/AWSECommerceService/latest/DG/Welcome.html   http://docs.aws.amazon.com/AWSECommerceService/latest/DG
-# https://en.wikipedia.org/api/rest_v1/
 # https://developers.google.com/maps/documentation/
-# http://www.last.fm/api
-# https://developer.foursquare.com/docs https://developer.foursquare.com/docs/api
 # https://www.mediawiki.org/wiki/REST_API https://en.wikipedia.org/api/rest_v1/
-# http://www.geonames.org/export/ws-overview.html   http://www.geonames.org/export
 # https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-web-api-v5-reference
-# https://go.developer.ebay.com/api-documentation   http://developer.ebay.com/devzone/rest
 # https://msdn.microsoft.com/en-us/library/ff701713.aspx  https://msdn.microsoft.com/en-us/library/ff
 # https://developer.box.com/reference
 # https://github.com/domainersuitedev/delicious-api https://github.com/domainersuitedev/delicious-api/blob/master/api
@@ -33,7 +36,7 @@ export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 # https://developers.google.com/adsense/management/v1.4/reference/
 
 # https://developer.paypal.com/docs/api/overview/ https://developer.paypal.com/docs/api/
-# https://developers.google.com/google-apps/calendar/v3/reference/
+
 
 # python ./predict_page/predictExternalTest.py $1
 

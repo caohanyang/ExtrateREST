@@ -61,13 +61,14 @@ public class APIRequest {
 		if (path != null && !path.equals(""))
 			discoverPaths();
 		discoverPathParameters();
-		basePath = "/" + (paths.isEmpty()?"":paths.get(0));
+//		basePath = "/" + (paths.isEmpty()?"":paths.get(0));
+		basePath = "/";
 		discoverOpenAPIPath();
 	}
 
 	private void discoverOpenAPIPath() {
 		openAPIPath = "/";
-		for (int i = 1; i < paths.size(); i++) {
+		for (int i = 0; i < paths.size(); i++) {
 			if (!WordsUtils.isPathParameter(paths.get(i))) {
 //				openAPIPath += "/";
 //				openAPIPath += paths.get(i);

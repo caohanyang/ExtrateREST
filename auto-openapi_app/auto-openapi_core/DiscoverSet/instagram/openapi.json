@@ -5,12 +5,45 @@
     "version": "0.0"
   },
   "host": "api.instagram.com",
-  "basePath": "/users",
+  "basePath": "/",
   "schemes": [
     "https"
   ],
   "paths": {
-    "/self/follows": {
+    "/users/{user-id}/media/recent": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/{user-id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/media/{media-id}/comments/{comment-id}": {
+      "delete": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/self/follows": {
       "get": {
         "produces": [
           "application/json"
@@ -25,7 +58,7 @@
         }
       }
     },
-    "/self/media/recent": {
+    "/users/self/media/recent": {
       "get": {
         "produces": [
           "application/json"
@@ -40,7 +73,7 @@
         }
       }
     },
-    "/search": {
+    "/users/search": {
       "get": {
         "produces": [
           "application/json"
@@ -55,7 +88,7 @@
         }
       }
     },
-    "/self/media/liked": {
+    "/users/self/media/liked": {
       "get": {
         "produces": [
           "application/json"
@@ -70,7 +103,7 @@
         }
       }
     },
-    "/{location-id}/media/recent": {
+    "/locations/{location-id}/media/recent": {
       "get": {
         "produces": [
           "application/json"
@@ -85,7 +118,22 @@
         }
       }
     },
-    "/{tag-name}/media/recent": {
+    "/media/{media-id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Media"
+            }
+          }
+        }
+      }
+    },
+    "/tags/{tag-name}/media/recent": {
       "get": {
         "produces": [
           "application/json"
@@ -100,7 +148,70 @@
         }
       }
     },
-    "/{media-id}/comments": {
+    "/media/shortcode/D": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/tags/search": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        }
+      }
+    },
+    "/tags/{tag-name}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Tags"
+            }
+          }
+        }
+      }
+    },
+    "/tags/puppy/media/recent": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/locations/search": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        }
+      }
+    },
+    "/media/{media-id}/comments": {
       "get": {
         "produces": [
           "application/json"
@@ -128,7 +239,7 @@
         }
       }
     },
-    "/self/requested-by": {
+    "/users/self": {
       "get": {
         "produces": [
           "application/json"
@@ -143,7 +254,7 @@
         }
       }
     },
-    "/{media-id}/likes": {
+    "/users/self/requested-by": {
       "get": {
         "produces": [
           "application/json"
@@ -152,26 +263,57 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Likes"
-            }
-          }
-        }
-      },
-      "post": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Likes"
+              "$ref": "#/definitions/Self"
             }
           }
         }
       }
     },
-    "/{user-id}/relationship": {
+    "/users/self/followed-by": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/media/{media-id}/likes": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Likes"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Likes"
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/{user-id}/relationship": {
       "get": {
         "produces": [
           "application/json"
@@ -198,7 +340,23 @@
           }
         }
       }
-    }
+    },
+    "/media/search": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        }
+      }
+    },
+    "/locations/{location-id}": {}
   },
   "definitions": {
     "Users": {

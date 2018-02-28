@@ -1,0 +1,629 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "api.twilio.com",
+    "version": "0.0"
+  },
+  "host": "api.twilio.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/RE557ce644e5ab84fa": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Recordings"
+            }
+          }
+        }
+      }
+    },
+    "/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Calls\\/CAe1644a7eed5088b159577c5802d8be38.": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Addresses/AD2a0747eba6abf96b7": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Addresses"
+            }
+          }
+        }
+      }
+    },
+    "/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Triggers": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Triggers"
+            }
+          }
+        }
+      }
+    },
+    "/hold'": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Unkown"
+              }
+            }
+          }
+        }
+      }
+    },
+    "//www.example.com/monthly-usage-trigger": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/\\/www.twilio.com\\/docs\\/errors\\/{errors\\Id}": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "errors\\Id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/OutgoingCallerIds\\/PNe905d7e6b410746a0fb08": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/SIP/Domains/SD098e7b11c00d0ba152b1d3f084c4b77": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Domains"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/AC228b9.../SMS/Messages/SM1f0e8ae6ade43cb3c0ce4525424e404f": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Messages"
+            }
+          }
+        }
+      }
+    },
+    "/Accounts/AC25e16e9a716a4a1786a7c83f58e30482/Conferences/CF1446ceacaefdc0e": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Conferences"
+            }
+          }
+        }
+      }
+    },
+    "/user/account": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Account"
+            }
+          }
+        }
+      }
+    },
+    "/Status>": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/SIP/Domains/SD32a3c49700934481addd5ce1659f04d": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Domains"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages/MM800f449d0399ed014a": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Messages"
+            }
+          }
+        }
+      }
+    },
+    "//handler.twilio.com/twiml/EH8ccdbd7f0b8fe34357da8ce87ebe5a16'": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Unkown"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SIP/IpAccessControlLists/AL0c37d0be69a6a6fe1e": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SIP"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Calls/CA8dfedb55c129dd4d6bd1f": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Calls"
+            }
+          }
+        }
+      }
+    },
+    "/AC5ef87.../Queues": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Queues"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SIP/CredentialLists/CL32a3c49700934481addd5ce": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SIP"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Recordings": {
+      "type": "object"
+    },
+    "Recording": {
+      "type": "object",
+      "properties": {
+        "date_updated": {
+          "type": "string"
+        },
+        "date_created": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "api_version": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "sid": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
+        "price_unit": {
+          "type": "string"
+        },
+        "channels": {
+          "type": "integer"
+        },
+        "call_sid": {
+          "type": "string"
+        },
+        "price": {
+          "type": "string"
+        },
+        "account_sid": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "Unkown": {
+      "type": "object",
+      "properties": {
+        "first_page_uri": {
+          "type": "string"
+        },
+        "next_page_uri": {
+          "type": "string"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "page_size": {
+          "type": "integer"
+        },
+        "calls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Call"
+          }
+        }
+      }
+    },
+    "Call": {
+      "type": "object",
+      "properties": {
+        "date_updated": {
+          "type": "string"
+        },
+        "date_created": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phone_number_sid": {
+          "type": "string"
+        },
+        "api_version": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "sid": {
+          "type": "string"
+        },
+        "account_sid": {
+          "type": "string"
+        },
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "Subresource_uri": {
+          "$ref": "#/definitions/Subresource_uri"
+        },
+        "first_page_uri": {
+          "type": "string"
+        },
+        "next_page_uri": {
+          "type": "string"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "page_size": {
+          "type": "integer"
+        },
+        "recordings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Recording"
+          }
+        }
+      }
+    },
+    "Subresource_uri": {
+      "type": "object",
+      "properties": {
+        "recordings": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "participants": {
+          "type": "string"
+        }
+      }
+    },
+    "Addresses": {
+      "type": "object"
+    },
+    "Addresse": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "customerName": {
+          "type": "string"
+        }
+      }
+    },
+    "Triggers": {
+      "type": "object"
+    },
+    "Trigger": {
+      "type": "object",
+      "properties": {
+        "recurring": {
+          "type": "string"
+        },
+        "usageCategory": {
+          "type": "string"
+        }
+      }
+    },
+    "Domains": {
+      "type": "object"
+    },
+    "Messages": {
+      "type": "object"
+    },
+    "Message": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer"
+        }
+      }
+    },
+    "Conferences": {
+      "type": "object"
+    },
+    "Conference": {
+      "type": "object",
+      "properties": {
+        "friendly_name": {
+          "type": "string"
+        },
+        "date_updated": {
+          "type": "string"
+        },
+        "date_created": {
+          "type": "string"
+        },
+        "account_sid": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "api_version": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "sid": {
+          "type": "string"
+        },
+        "Subresource_uri": {
+          "$ref": "#/definitions/Subresource_uri"
+        }
+      }
+    },
+    "Account": {
+      "type": "object",
+      "properties": {
+        "friendly_name": {
+          "type": "string"
+        },
+        "date_updated": {
+          "type": "string"
+        },
+        "date_created": {
+          "type": "string"
+        },
+        "trigger_value": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "sid": {
+          "type": "string"
+        },
+        "current_value": {
+          "type": "string"
+        },
+        "callback_url": {
+          "type": "string"
+        },
+        "usage_category": {
+          "type": "string"
+        },
+        "account_sid": {
+          "type": "string"
+        },
+        "trigger_by": {
+          "type": "string"
+        },
+        "callback_method": {
+          "type": "string"
+        },
+        "usage_record_uri": {
+          "type": "string"
+        }
+      }
+    },
+    "SIP": {
+      "type": "object"
+    },
+    "Calls": {
+      "type": "object"
+    },
+    "Queues": {
+      "type": "object"
+    }
+  }
+}

@@ -5,113 +5,22 @@
     "version": "0.0"
   },
   "host": "api.linkedin.com",
-  "basePath": "/companies",
+  "basePath": "/",
   "schemes": [
     "https"
   ],
   "paths": {
-    "/~/shares": {
-      "post": {
-        "produces": [
-          "application/json"
-        ],
+    "/companies/{id}": {
+      "get": {
         "responses": {
           "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Shares"
-            }
+            "description": ""
           }
         }
       }
     },
-    "/": {
+    "/companies/{id}/{{id}}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Companies"
-            }
-          }
-        }
-      }
-    },
-    "/{id}/updates/key={update-key}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Updates"
-            }
-          }
-        }
-      }
-    },
-    "/~:(id,num-connections,picture-url)": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/People"
-            }
-          }
-        }
-      }
-    },
-    "/{companiesId}/updates": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "companiesId",
-            "in": "path",
-            "required": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Updates"
-            }
-          }
-        }
-      }
-    },
-    "/{id}:(id,name,ticker,description)": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Companies"
-            }
-          }
-        }
-      }
-    },
-    "/{id}/{{id}}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "{id}",
@@ -122,10 +31,7 @@
         ],
         "responses": {
           "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Companies"
-            }
+            "description": ""
           }
         }
       },
@@ -151,7 +57,167 @@
         }
       }
     },
-    "/{id}/updates/key={update-key}/likes": {
+    "/companies/{id}/updates/key={update-key}/update-comments-as-company": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "//www.linkedin.com/uas/oauth2/accessToken": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "//www.linkedin.com/oauth/v2/accessToken": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/people/~/shares": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Shares"
+            }
+          }
+        }
+      }
+    },
+    "/companies/{id}/relation-to-viewer/is-company-share-enabled": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/companies": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Companies"
+            }
+          }
+        }
+      }
+    },
+    "/companies/{id}/updates/key={update-key}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Updates"
+            }
+          }
+        }
+      }
+    },
+    "/people/~:(id,num-connections,picture-url)": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/People"
+            }
+          }
+        }
+      }
+    },
+    "/companies/{companiesId}/updates": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "companiesId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Updates"
+            }
+          }
+        }
+      }
+    },
+    "//www.linkedin.com/shareArticle": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/companies/{id}:(id,name,ticker,description)": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Companies"
+            }
+          }
+        }
+      }
+    },
+    "/companies/{id}/updates/key={update-key}/update-comments": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "//www.linkedin.com/oauth/v2/authorization": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/companies/{id}/updates/key={update-key}/likes": {
       "get": {
         "produces": [
           "application/json"
@@ -166,7 +232,16 @@
         }
       }
     },
-    "/~": {
+    "//www.linkedin.com/uas/oauth2/authorization": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/people/~": {
       "get": {
         "produces": [
           "application/json"

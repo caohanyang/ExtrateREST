@@ -58,12 +58,11 @@ public class Integration {
 					API_NAME = args[0].split("//")[1].split("\\.")[0];
 				}
 			}
-
 			Discoverset_PATH = "../../DiscoverSet/" + API_NAME;
 			CompareSet_PATH = "../../CompareSet/" + API_NAME;
 			pre_PATH = Discoverset_PATH + "/discover.json";
 			after_PATH = Discoverset_PATH + "/openapi.json";
-		}	
+		}
 		getPropertiesReader(CompareSet_PATH + "/" + API_NAME);
 
 		// 1. read request/response examples
@@ -95,38 +94,41 @@ public class Integration {
 			JSONAPICallExample jsonCallExample = gson.fromJson(apidiscover.getRowJsonCallExample(),
 					JSONAPICallExample.class);
 			apidiscover.setJsonCallExample(jsonCallExample);
-			
+
 			// 5. Sending request
-			if (jsonCallExample.getJsonRequest().getUrl()!= null) {
+			if (jsonCallExample.getJsonRequest().getUrl() != null) {
 				// request example exist: send request
 				apidiscover.sendRequest();
 				// Wait 1 seconds
 				TimeUnit.SECONDS.sleep(1);
-				// refresh to get newest state 
+				// refresh to get newest state
 				jsonCallExample = apidiscover.getJsonCallExample();
-				
+
 			} else {
-				// request example miss: 
+				// request example miss:
 				// use origin url
 				jsonCallExample.getJsonRequest().setUrl(jsonCallExample.getJsonRequest().getOurl());
 			}
-			
-			
-			
+
 			// 6. Get Schema
-			if (jsonCallExample.getJsonResponse().getBody().length()==0) {
+			if (jsonCallExample.getJsonResponse().getBody().length() == 0) {
 				// use extracted response
 				jsonCallExample.getJsonResponse().setBody(jsonCallExample.getJsonResponse().getEbody());
-				
-    		}
-			
-			
-			if (jsonCallExample.getJsonResponse().getBody().length()!=0) {
-				apidiscover.setJsonCallExample(jsonCallExample);
-				apidiscover.discover();
+
 			}
+
 			
+			apidiscover.setJsonCallExample(jsonCallExample);
 			
+			if (discoverJson.length() < 40) {
+				apidiscover.discover();
+			} else {
+				// too long, check only when getbody!=0
+				if (jsonCallExample.getJsonResponse().getBody().length()>2  | jsonCallExample.getJsonRequest().getBody().length()>2) {
+					apidiscover.discover();
+				}
+			}
+
 		}
 
 		// prepare for the final openapi
@@ -141,19 +143,19 @@ public class Integration {
 		// Authentication for the call
 		// method 1: replace client_id/api_key
 		String toBeReplace = null;
-		if (APIKEY_NAME!=null && singleCall.contains(APIKEY_NAME)) {
+		if (APIKEY_NAME != null && singleCall.contains(APIKEY_NAME)) {
 			toBeReplace = singleCall.substring(singleCall.lastIndexOf(APIKEY_NAME) + APIKEY_NAME.length());
-			//should be equal "="
+			// should be equal "="
 			if (toBeReplace.startsWith("=")) {
 				toBeReplace = toBeReplace.substring(1).trim().split("\"")[0];
 				if (toBeReplace.contains("&")) {
 					toBeReplace = toBeReplace.trim().split("&")[0];
 				}
-			    //replace api-key
-				singleCall=singleCall.replace(toBeReplace, APIKEY_VALUE);
+				// replace api-key
+				singleCall = singleCall.replace(toBeReplace, APIKEY_VALUE);
 			}
 		}
-		
+
 		return singleCall;
 	}
 

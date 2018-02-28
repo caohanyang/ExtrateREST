@@ -1,0 +1,289 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "www.googleapis.com",
+    "version": "0.0"
+  },
+  "host": "www.googleapis.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/calendars/calendarId/acl": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/acl/ruleId": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/channels/stopRequestbody": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/freeBusyRequestbody": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/colorsRequestbody": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendarsAuthorization": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/events/eventId/instances": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/me/settings": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/me/calendarList/watch": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/events/eventId/move": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/acl/watch": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/events": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/events/import": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/clear": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/events/eventId": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/me/settings/setting": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/events/quickAdd": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/calendars/calendarId/events/watch": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/me/calendarList": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/me/settings/watch": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/me/calendarList/calendarId": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

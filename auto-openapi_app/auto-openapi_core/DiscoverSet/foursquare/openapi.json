@@ -1,0 +1,1404 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "api.foursquare.com",
+    "version": "0.0"
+  },
+  "host": "api.foursquare.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/venues/{venues}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "venues",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Explore"
+            }
+          }
+        }
+      }
+    },
+    "/venues/VENUE_ID/{VENUE_ID}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "VENUE_ID",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Venues"
+            }
+          }
+        }
+      }
+    },
+    "/tips/TIP_ID": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Tips"
+            }
+          }
+        }
+      }
+    },
+    "/photos/PHOTO_ID": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Photos"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Explore": {
+      "type": "object",
+      "properties": {
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        }
+      }
+    },
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "requestId": {
+          "type": "string"
+        }
+      }
+    },
+    "Group": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    },
+    "Todo": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "Photo": {
+          "$ref": "#/definitions/Photo"
+        },
+        "type": {
+          "type": "string"
+        },
+        "homeCity": {
+          "type": "string"
+        },
+        "bio": {
+          "type": "string"
+        },
+        "List": {
+          "$ref": "#/definitions/List"
+        },
+        "Contact": {
+          "$ref": "#/definitions/Contact"
+        },
+        "Tip": {
+          "$ref": "#/definitions/Tip"
+        }
+      }
+    },
+    "Venue": {
+      "type": "object",
+      "properties": {
+        "verified": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "ratingSignals": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "ratingColor": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "allowMenuUrlEdit": {
+          "type": "string"
+        },
+        "hasMenu": {
+          "type": "string"
+        },
+        "Hour": {
+          "$ref": "#/definitions/Hour"
+        },
+        "Menu": {
+          "$ref": "#/definitions/Menu"
+        },
+        "Photo": {
+          "$ref": "#/definitions/Photo"
+        },
+        "BeenHere": {
+          "$ref": "#/definitions/BeenHere"
+        },
+        "HereNow": {
+          "$ref": "#/definitions/HereNow"
+        },
+        "Stat": {
+          "$ref": "#/definitions/Stat"
+        },
+        "Price": {
+          "$ref": "#/definitions/Price"
+        },
+        "Contact": {
+          "$ref": "#/definitions/Contact"
+        },
+        "Location": {
+          "$ref": "#/definitions/Location"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Categorie"
+          }
+        },
+        "storeId": {
+          "type": "string"
+        },
+        "shortUrl": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "integer"
+        },
+        "canonicalUrl": {
+          "type": "string"
+        },
+        "venueChains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "timeZone": {
+          "type": "string"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "Tip": {
+          "$ref": "#/definitions/Tip"
+        },
+        "Popular": {
+          "$ref": "#/definitions/Popular"
+        },
+        "Like": {
+          "$ref": "#/definitions/Like"
+        },
+        "BestPhoto": {
+          "$ref": "#/definitions/BestPhoto"
+        },
+        "Listed": {
+          "$ref": "#/definitions/Listed"
+        },
+        "Attribute": {
+          "$ref": "#/definitions/Attribute"
+        },
+        "Page": {
+          "$ref": "#/definitions/Page"
+        },
+        "PageUpdate": {
+          "$ref": "#/definitions/PageUpdate"
+        },
+        "phrases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Phrase"
+          }
+        },
+        "Inbox": {
+          "$ref": "#/definitions/Inbox"
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        }
+      }
+    },
+    "Sw": {
+      "type": "object",
+      "properties": {
+        "lng": {
+          "type": "integer"
+        },
+        "lat": {
+          "type": "integer"
+        }
+      }
+    },
+    "Hour": {
+      "type": "object",
+      "properties": {
+        "isOpen": {
+          "type": "string"
+        },
+        "isLocalHoliday": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "timeframes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Timeframe"
+          }
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        }
+      }
+    },
+    "HereNow": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        }
+      }
+    },
+    "Photo": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        },
+        "createdAt": {
+          "type": "integer"
+        },
+        "visibility": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "Source": {
+          "$ref": "#/definitions/Source"
+        },
+        "dupesRemoved": {
+          "type": "integer"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        }
+      }
+    },
+    "SuggestedBound": {
+      "type": "object",
+      "properties": {
+        "Sw": {
+          "$ref": "#/definitions/Sw"
+        },
+        "Ne": {
+          "$ref": "#/definitions/Ne"
+        }
+      }
+    },
+    "Reason": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      }
+    },
+    "Contact": {
+      "type": "object",
+      "properties": {
+        "phone": {
+          "type": "string"
+        },
+        "formattedPhone": {
+          "type": "string"
+        },
+        "twitter": {
+          "type": "string"
+        },
+        "facebookUsername": {
+          "type": "string"
+        },
+        "facebook": {
+          "type": "string"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "facebookName": {
+          "type": "string"
+        }
+      }
+    },
+    "Response": {
+      "type": "object",
+      "properties": {
+        "totalResults": {
+          "type": "integer"
+        },
+        "suggestedRadius": {
+          "type": "integer"
+        },
+        "query": {
+          "type": "string"
+        },
+        "headerFullLocation": {
+          "type": "string"
+        },
+        "headerLocationGranularity": {
+          "type": "string"
+        },
+        "headerLocation": {
+          "type": "string"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        },
+        "SuggestedBound": {
+          "$ref": "#/definitions/SuggestedBound"
+        },
+        "Tip": {
+          "$ref": "#/definitions/Tip"
+        },
+        "Geocode": {
+          "$ref": "#/definitions/Geocode"
+        },
+        "Venue": {
+          "$ref": "#/definitions/Venue"
+        },
+        "like": {
+          "type": "string"
+        },
+        "Like": {
+          "$ref": "#/definitions/Like"
+        },
+        "Photo": {
+          "$ref": "#/definitions/Photo"
+        },
+        "SimilarVenue": {
+          "$ref": "#/definitions/SimilarVenue"
+        },
+        "Hour": {
+          "$ref": "#/definitions/Hour"
+        },
+        "Popular": {
+          "$ref": "#/definitions/Popular"
+        },
+        "venues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Venue"
+          }
+        }
+      }
+    },
+    "BeenHere": {
+      "type": "object",
+      "properties": {
+        "marked": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "lastCheckinExpiredAt": {
+          "type": "integer"
+        },
+        "unconfirmedCount": {
+          "type": "integer"
+        }
+      }
+    },
+    "Categorie": {
+      "type": "object",
+      "properties": {
+        "pluralName": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "shortName": {
+          "type": "string"
+        },
+        "primary": {
+          "type": "string"
+        },
+        "Icon": {
+          "$ref": "#/definitions/Icon"
+        }
+      }
+    },
+    "Item": {
+      "type": "object",
+      "properties": {
+        "createdAt": {
+          "type": "integer"
+        },
+        "visibility": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "reasonName": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "referralId": {
+          "type": "string"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "Venue": {
+          "$ref": "#/definitions/Venue"
+        },
+        "Reason": {
+          "$ref": "#/definitions/Reason"
+        },
+        "tips": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tip"
+          }
+        },
+        "canonicalUrl": {
+          "type": "string"
+        },
+        "disagreeCount": {
+          "type": "integer"
+        },
+        "photourl": {
+          "type": "string"
+        },
+        "logView": {
+          "type": "string"
+        },
+        "agreeCount": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "Photo": {
+          "$ref": "#/definitions/Photo"
+        },
+        "Todo": {
+          "$ref": "#/definitions/Todo"
+        },
+        "Like": {
+          "$ref": "#/definitions/Like"
+        },
+        "url": {
+          "type": "string"
+        },
+        "Source": {
+          "$ref": "#/definitions/Source"
+        },
+        "unreadCount": {
+          "type": "integer"
+        },
+        "Checkin": {
+          "$ref": "#/definitions/Checkin"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "allowMenuUrlEdit": {
+          "type": "string"
+        },
+        "hasMenu": {
+          "type": "string"
+        },
+        "Menu": {
+          "$ref": "#/definitions/Menu"
+        },
+        "BeenHere": {
+          "$ref": "#/definitions/BeenHere"
+        },
+        "Stat": {
+          "$ref": "#/definitions/Stat"
+        },
+        "VenuePage": {
+          "$ref": "#/definitions/VenuePage"
+        },
+        "Contact": {
+          "$ref": "#/definitions/Contact"
+        },
+        "Location": {
+          "$ref": "#/definitions/Location"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Categorie"
+          }
+        },
+        "Delivery": {
+          "$ref": "#/definitions/Delivery"
+        }
+      }
+    },
+    "Stat": {
+      "type": "object",
+      "properties": {
+        "checkinsCount": {
+          "type": "integer"
+        },
+        "usersCount": {
+          "type": "integer"
+        },
+        "tipCount": {
+          "type": "integer"
+        },
+        "visitsCount": {
+          "type": "integer"
+        }
+      }
+    },
+    "Price": {
+      "type": "object",
+      "properties": {
+        "tier": {
+          "type": "integer"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "Ne": {
+      "type": "object",
+      "properties": {
+        "lng": {
+          "type": "integer"
+        },
+        "lat": {
+          "type": "integer"
+        }
+      }
+    },
+    "Tip": {
+      "type": "object",
+      "properties": {
+        "createdAt": {
+          "type": "integer"
+        },
+        "logView": {
+          "type": "string"
+        },
+        "agreeCount": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "disagreeCount": {
+          "type": "integer"
+        },
+        "Todo": {
+          "$ref": "#/definitions/Todo"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        },
+        "canonicalUrl": {
+          "type": "string"
+        },
+        "photourl": {
+          "type": "string"
+        },
+        "Photo": {
+          "$ref": "#/definitions/Photo"
+        },
+        "Like": {
+          "$ref": "#/definitions/Like"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        }
+      }
+    },
+    "Menu": {
+      "type": "object",
+      "properties": {
+        "anchor": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "mobileUrl": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "externalUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "Icon": {
+      "type": "object",
+      "properties": {
+        "prefix": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        }
+      }
+    },
+    "Location": {
+      "type": "object",
+      "properties": {
+        "cc": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "lng": {
+          "type": "integer"
+        },
+        "distance": {
+          "type": "integer"
+        },
+        "formattedAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "city": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "crossStreet": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "integer"
+        },
+        "labeledLatLngs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LabeledLatLng"
+          }
+        }
+      }
+    },
+    "Tips": {
+      "type": "object"
+    },
+    "Like": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        },
+        "summary": {
+          "type": "string"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        },
+        "notifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Notification"
+          }
+        }
+      }
+    },
+    "Source": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "Search": {
+      "type": "object",
+      "properties": {
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        }
+      }
+    },
+    "Geocode": {
+      "type": "object",
+      "properties": {
+        "cc": {
+          "type": "string"
+        },
+        "what": {
+          "type": "string"
+        },
+        "displayString": {
+          "type": "string"
+        },
+        "where": {
+          "type": "string"
+        },
+        "Center": {
+          "$ref": "#/definitions/Center"
+        },
+        "parents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Feature": {
+          "$ref": "#/definitions/Feature"
+        }
+      }
+    },
+    "Center": {
+      "type": "object",
+      "properties": {
+        "lng": {
+          "type": "integer"
+        },
+        "lat": {
+          "type": "integer"
+        }
+      }
+    },
+    "LabeledLatLng": {
+      "type": "object",
+      "properties": {
+        "lng": {
+          "type": "integer"
+        },
+        "label": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "integer"
+        }
+      }
+    },
+    "Venues": {
+      "type": "object"
+    },
+    "Popular": {
+      "type": "object",
+      "properties": {
+        "isOpen": {
+          "type": "string"
+        },
+        "isLocalHoliday": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "timeframes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Timeframe"
+          }
+        }
+      }
+    },
+    "Attribute": {
+      "type": "object",
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        }
+      }
+    },
+    "Entitie": {
+      "type": "object",
+      "properties": {
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "Page": {
+      "type": "object",
+      "properties": {
+        "PageInfo": {
+          "$ref": "#/definitions/PageInfo"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Open": {
+      "type": "object",
+      "properties": {
+        "renderedTime": {
+          "type": "string"
+        },
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      }
+    },
+    "List": {
+      "type": "object",
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        }
+      }
+    },
+    "Inbox": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Timeframe": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "includesToday": {
+          "type": "string"
+        },
+        "open": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Open"
+          }
+        }
+      }
+    },
+    "Sample": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Entitie"
+          }
+        }
+      }
+    },
+    "Phrase": {
+      "type": "object",
+      "properties": {
+        "phrase": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "Sample": {
+          "$ref": "#/definitions/Sample"
+        }
+      }
+    },
+    "PageUpdate": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Listed": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        }
+      }
+    },
+    "PageInfo": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "banner": {
+          "type": "string"
+        },
+        "Link": {
+          "$ref": "#/definitions/Link"
+        }
+      }
+    },
+    "BestPhoto": {
+      "type": "object",
+      "properties": {
+        "createdAt": {
+          "type": "integer"
+        },
+        "visibility": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "Source": {
+          "$ref": "#/definitions/Source"
+        }
+      }
+    },
+    "Link": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      }
+    },
+    "Likes": {
+      "type": "object"
+    },
+    "Notification": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "Item": {
+          "$ref": "#/definitions/Item"
+        }
+      }
+    },
+    "Photos": {
+      "type": "object"
+    },
+    "Checkin": {
+      "type": "object",
+      "properties": {
+        "createdAt": {
+          "type": "integer"
+        },
+        "timeZoneOffset": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "Similar": {
+      "type": "object",
+      "properties": {
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        },
+        "notifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Notification"
+          }
+        }
+      }
+    },
+    "VenuePage": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "SimilarVenue": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      }
+    },
+    "Provider": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Delivery": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "Provider": {
+          "$ref": "#/definitions/Provider"
+        }
+      }
+    },
+    "Hours": {
+      "type": "object"
+    },
+    "Trending": {
+      "type": "object",
+      "properties": {
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        },
+        "Response": {
+          "$ref": "#/definitions/Response"
+        }
+      }
+    },
+    "Bound": {
+      "type": "object",
+      "properties": {
+        "Sw": {
+          "$ref": "#/definitions/Sw"
+        },
+        "Ne": {
+          "$ref": "#/definitions/Ne"
+        }
+      }
+    },
+    "Feature": {
+      "type": "object",
+      "properties": {
+        "cc": {
+          "type": "string"
+        },
+        "woeType": {
+          "type": "integer"
+        },
+        "highlightedName": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "longId": {
+          "type": "string"
+        },
+        "matchedName": {
+          "type": "string"
+        },
+        "Geometry": {
+          "$ref": "#/definitions/Geometry"
+        }
+      }
+    },
+    "Geometry": {
+      "type": "object",
+      "properties": {
+        "Center": {
+          "$ref": "#/definitions/Center"
+        },
+        "Bound": {
+          "$ref": "#/definitions/Bound"
+        }
+      }
+    }
+  }
+}

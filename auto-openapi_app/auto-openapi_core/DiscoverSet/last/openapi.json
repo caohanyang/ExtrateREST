@@ -5,12 +5,12 @@
     "version": "0.0"
   },
   "host": "ws.audioscrobbler.com",
-  "basePath": "/2.0",
+  "basePath": "/",
   "schemes": [
     "http"
   ],
   "paths": {
-    "/": {
+    "/2.0": {
       "get": {
         "produces": [
           "application/json"

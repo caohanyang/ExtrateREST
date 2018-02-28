@@ -16,9 +16,12 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
+import com.google.gson.Gson;
 //import com.gargoylesoftware.htmlunit.javascript.host.Console;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.stream.MalformedJsonException;
 
 import core.Root;
 import core.API;
@@ -59,39 +62,39 @@ public class Discoverer {
 		// Retrieve the default factory singleton
 		factory = OpenAPIFactory.eINSTANCE;
 		apiRoot = factory.createRoot();
-		
+
 		api = factory.createAPI();
 		apiRoot.setApi(api);
-		
-		
-		
-		
-		
+
 	}
 
-	public void discover(APIRequest apiResquest, String schemaName, String bodySchema) throws MalformedURLException, URISyntaxException, UnsupportedEncodingException {
+	public void discover(APIRequest apiResquest, String schemaName, String bodySchema)
+			throws MalformedURLException, URISyntaxException, UnsupportedEncodingException {
 		discoverBasicInfo(apiResquest);
-		discoverPaths(apiResquest,schemaName,bodySchema);
-	
+		discoverPaths(apiResquest, schemaName, bodySchema);
+
 	}
-public void mergePaths() throws UnsupportedEncodingException {
-	List<List<Path>> duplicatedPaths = DiscoveryUtil.discoverPathParameters(apiRoot);
-	if(!duplicatedPaths.isEmpty()) {
-		for(List<Path> cluster: duplicatedPaths) {
-		List<Boolean> segmentCompare = DiscoveryUtil.discoverCommonSergments(cluster, cluster.get(0).getPattern().substring(1).split("/").length);
-		Path path = OpenAPIUtils.mergePaths(cluster);
-		for(Path p: cluster) {
-			if(p != path)
-				EcoreUtil.remove(p);
+
+	public void mergePaths() throws UnsupportedEncodingException {
+		List<List<Path>> duplicatedPaths = DiscoveryUtil.discoverPathParameters(apiRoot);
+		if (!duplicatedPaths.isEmpty()) {
+			for (List<Path> cluster : duplicatedPaths) {
+				List<Boolean> segmentCompare = DiscoveryUtil.discoverCommonSergments(cluster,
+						cluster.get(0).getPattern().substring(1).split("/").length);
+				Path path = OpenAPIUtils.mergePaths(cluster);
+				for (Path p : cluster) {
+					if (p != path)
+						EcoreUtil.remove(p);
+				}
+
+				// I remove it since it contains bugs
+				// maybe we don't need path parameters
+				OpenAPIUtils.replaceSegementByPathParameter(path, segmentCompare.lastIndexOf(false), factory, apiRoot);
+
+			}
 		}
-		
-		// I remove it since it contains bugs
-		// maybe we don't need path parameters
-		OpenAPIUtils.replaceSegementByPathParameter(path, segmentCompare.lastIndexOf(false), factory, apiRoot);
-		
 	}
-	}
-}
+
 	private void discoverBasicInfo(APIRequest apiResquest) throws URISyntaxException {
 		if (api.getHost() == null)
 			api.setHost(apiResquest.getHost());
@@ -114,7 +117,7 @@ public void mergePaths() throws UnsupportedEncodingException {
 			info.setVersion("0.0");
 			api.setInfo(info);
 		}
-	
+
 	}
 
 	private void discoverPaths(APIRequest apiResquest, String schemaName, String bodySchema) throws URISyntaxException {
@@ -129,15 +132,16 @@ public void mergePaths() throws UnsupportedEncodingException {
 
 	}
 
-	private void discoverOperations(Path path, APIRequest apiResquest, String schemaName, String bodySchema) throws URISyntaxException {
+	private void discoverOperations(Path path, APIRequest apiResquest, String schemaName, String bodySchema)
+			throws URISyntaxException {
 		switch (apiResquest.getHttpMethod()) {
 		case GET:
 			Operation getOperation = path.getGet();
 			if (getOperation == null) {
 				getOperation = factory.createOperation();
-				if(!(apiResquest.getResponse().getBody().equals("")))
-				getOperation.getProduces().add("application/json");
-				if(!apiResquest.getBody().equals(""))
+				if (!(apiResquest.getResponse().getBody().equals("")))
+					getOperation.getProduces().add("application/json");
+				if (!apiResquest.getBody().equals(""))
 					getOperation.getConsumes().add("application/json");
 				path.setGet(getOperation);
 			}
@@ -149,10 +153,10 @@ public void mergePaths() throws UnsupportedEncodingException {
 			Operation postOperation = path.getPost();
 			if (postOperation == null) {
 				postOperation = factory.createOperation();
-				if(!apiResquest.getBody().equals(""))
-				postOperation.getConsumes().add("application/json");
-				if(!(apiResquest.getResponse().getBody().equals("")))
-				postOperation.getProduces().add("application/json");
+				if (!apiResquest.getBody().equals(""))
+					postOperation.getConsumes().add("application/json");
+				if (!(apiResquest.getResponse().getBody().equals("")))
+					postOperation.getProduces().add("application/json");
 				path.setPost(postOperation);
 			}
 			discoverPrameters(postOperation, apiResquest, bodySchema);
@@ -163,23 +167,23 @@ public void mergePaths() throws UnsupportedEncodingException {
 			Operation putOperation = path.getPut();
 			if (putOperation == null) {
 				putOperation = factory.createOperation();
-				if(!apiResquest.getBody().equals(""))
-				putOperation.getConsumes().add("application/json");
-				if(!(apiResquest.getResponse().getBody().equals("")))
-				putOperation.getProduces().add("application/json");
+				if (!apiResquest.getBody().equals(""))
+					putOperation.getConsumes().add("application/json");
+				if (!(apiResquest.getResponse().getBody().equals("")))
+					putOperation.getProduces().add("application/json");
 				path.setPut(putOperation);
 			}
-			discoverPrameters(putOperation, apiResquest,bodySchema);
-			discoverResponses(putOperation, apiResquest,schemaName);
+			discoverPrameters(putOperation, apiResquest, bodySchema);
+			discoverResponses(putOperation, apiResquest, schemaName);
 
 			break;
 		case DELETE:
 			Operation deleteOperation = path.getDelete();
 			if (deleteOperation == null) {
 				deleteOperation = factory.createOperation();
-				if(!(apiResquest.getResponse().getBody().equals("")))
-				deleteOperation.getProduces().add("application/json");
-				if(!apiResquest.getBody().equals(""))
+				if (!(apiResquest.getResponse().getBody().equals("")))
+					deleteOperation.getProduces().add("application/json");
+				if (!apiResquest.getBody().equals(""))
 					deleteOperation.getConsumes().add("application/json");
 				path.setDelete(deleteOperation);
 			}
@@ -193,7 +197,8 @@ public void mergePaths() throws UnsupportedEncodingException {
 
 	}
 
-	private void discoverPrameters(Operation apiOperation, APIRequest apiResquest, String bodySchema) throws URISyntaxException {
+	private void discoverPrameters(Operation apiOperation, APIRequest apiResquest, String bodySchema)
+			throws URISyntaxException {
 		for (Parameter parameter : apiResquest.getQueryParameters()) {
 			String parameterKey = apiResquest.getOpenAPIPath() + apiResquest.getHttpMethod() + parameter.getName()
 					+ ParameterLocation.QUERY;
@@ -202,37 +207,35 @@ public void mergePaths() throws UnsupportedEncodingException {
 				apiParameter = factory.createParameter();
 				apiParameter.setLocation(ParameterLocation.QUERY);
 				apiParameter.setName(parameter.getName());
-				if(parameter.isArray()){
+				if (parameter.isArray()) {
 					apiParameter.setType(JSONDataType.ARRAY);
 					apiParameter.setCollectionFormat(parameter.getCollectionFormat());
 					ItemsDefinition items = factory.createItemsDefinition();
 					items.setType(parameter.getType());
 					apiParameter.setItems(items);
-				}
-				else {
-				apiParameter.setType(parameter.getType());
+				} else {
+					apiParameter.setType(parameter.getType());
 				}
 				apiParameter.setDeclaringContext(apiOperation);
 				apiRoot.getParamters().add(apiParameter);
 				apiOperation.getParameters().add(apiParameter);
 				parametersMap.put(parameterKey, apiParameter);
-			}
-			else {
-				if(apiParameter.getType().equals(JSONDataType.ARRAY)){
-					
-					apiParameter.getItems().setType(Parameter.getGeneralType(apiParameter.getType(),parameter.getType()));
+			} else {
+				if (apiParameter.getType().equals(JSONDataType.ARRAY)) {
+
+					apiParameter.getItems()
+							.setType(Parameter.getGeneralType(apiParameter.getType(), parameter.getType()));
+				} else {
+					apiParameter.setType(Parameter.getGeneralType(apiParameter.getType(), parameter.getType()));
 				}
-				else {
-					apiParameter.setType(Parameter.getGeneralType(apiParameter.getType(),parameter.getType()));
-				}
 			}
-//			else {
-//				apiParameter.setType(JSONDataType.ARRAY);
-//				ItemsDefinition items = factory.createItemsDefinition();
-//				items.setType(parameter.getType());
-//				apiParameter.setItems(items);
-//				apiParameter.setCollectionFormat(CollectionFormat.MULTI);
-//			}
+			// else {
+			// apiParameter.setType(JSONDataType.ARRAY);
+			// ItemsDefinition items = factory.createItemsDefinition();
+			// items.setType(parameter.getType());
+			// apiParameter.setItems(items);
+			// apiParameter.setCollectionFormat(CollectionFormat.MULTI);
+			// }
 
 		}
 		for (Parameter parameter : apiResquest.getPathParameters()) {
@@ -249,11 +252,10 @@ public void mergePaths() throws UnsupportedEncodingException {
 				apiParameter.setDeclaringContext(apiOperation);
 				apiRoot.getParamters().add(apiParameter);
 				parametersMap.put(parameterKey, apiParameter);
-			}
-			else {
-				
-						apiParameter.setType(Parameter.getGeneralType(apiParameter.getType(),parameter.getType()));
-				
+			} else {
+
+				apiParameter.setType(Parameter.getGeneralType(apiParameter.getType(), parameter.getType()));
+
 			}
 
 		}
@@ -261,7 +263,7 @@ public void mergePaths() throws UnsupportedEncodingException {
 			String parameterKey = apiResquest.getOpenAPIPath() + apiResquest.getHttpMethod() + "body"
 					+ ParameterLocation.BODY;
 			core.Parameter apiParameter = parametersMap.get(parameterKey);
-			String newSchemaName = (!bodySchema.equals(""))?bodySchema:apiResquest.getSchemaName();
+			String newSchemaName = (!bodySchema.equals("")) ? bodySchema : apiResquest.getSchemaName();
 			if (apiParameter == null) {
 				apiParameter = factory.createParameter();
 				apiParameter.setLocation(ParameterLocation.BODY);
@@ -274,23 +276,22 @@ public void mergePaths() throws UnsupportedEncodingException {
 				JsonParser parser = new JsonParser();
 				JsonElement jsonSchemaInstance = parser.parse(body);
 				if (jsonSchemaInstance.isJsonArray()) {
-					Schema schemaArray = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase()
-							+ newSchemaName.substring(1) + "List");
-					Schema schema = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase()
-							+ newSchemaName.substring(1));
+					Schema schemaArray = schemaMap
+							.get(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1) + "List");
+					Schema schema = schemaMap
+							.get(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
 
 					if (schemaArray == null) {
 
 						schemaArray = factory.createSchema();
 						schemaArray.setType(JSONDataType.ARRAY);
-						schemaArray.setName(newSchemaName.substring(0, 1).toUpperCase()
-								+ newSchemaName.substring(1) + "List");
-						schemaMap.put(newSchemaName.substring(0, 1).toUpperCase()
-								+ newSchemaName.substring(1) + "List", schemaArray);
+						schemaArray.setName(
+								newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1) + "List");
+						schemaMap.put(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1) + "List",
+								schemaArray);
 						if (schema == null) {
 							schema = factory.createSchema();
-							schema.setName(newSchemaName.substring(0, 1).toUpperCase()
-									+ newSchemaName.substring(1));
+							schema.setName(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
 							schema.setType(JSONDataType.OBJECT);
 							schemaMap.put(schema.getName(), schema);
 							schema.setDeclaringContext(api);
@@ -298,8 +299,8 @@ public void mergePaths() throws UnsupportedEncodingException {
 							api.getDefinitions().add(schema);
 							discoverSchema(schemaArray.getName(),
 									jsonSchemaInstance.getAsJsonArray().get(0).getAsString());
-							schemaMap.put(newSchemaName.substring(0, 1).toUpperCase()
-									+ newSchemaName.substring(1), schema);
+							schemaMap.put(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1),
+									schema);
 
 						}
 						schemaArray.setItems(schema);
@@ -312,12 +313,11 @@ public void mergePaths() throws UnsupportedEncodingException {
 					}
 
 				} else {
-					Schema schema = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase()
-							+ newSchemaName.substring(1));
+					Schema schema = schemaMap
+							.get(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
 					if (schema == null) {
 						schema = factory.createSchema();
-						schema.setName(newSchemaName.substring(0, 1).toUpperCase()
-								+ newSchemaName.substring(1));
+						schema.setName(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
 						schema.setType(JSONDataType.OBJECT);
 						schemaMap.put(schema.getName(), schema);
 						apiRoot.getSchemas().add(schema);
@@ -335,10 +335,12 @@ public void mergePaths() throws UnsupportedEncodingException {
 
 	}
 
-	private void discoverResponses(Operation operation, APIRequest apiResquest, String schemaName) throws URISyntaxException {
-		String responseKey = (!schemaName.equals(""))?schemaName:apiResquest.getOpenAPIPath() + apiResquest.getHttpMethod()
-				+ apiResquest.getResponse().getStatus() + ParameterLocation.BODY;
-		String newSchemaName = (!schemaName.equals(""))?schemaName:apiResquest.getSchemaName();
+	private void discoverResponses(Operation operation, APIRequest apiResquest, String schemaName)
+			throws URISyntaxException {
+		String responseKey = (!schemaName.equals("")) ? schemaName
+				: apiResquest.getOpenAPIPath() + apiResquest.getHttpMethod() + apiResquest.getResponse().getStatus()
+						+ ParameterLocation.BODY;
+		String newSchemaName = (!schemaName.equals("")) ? schemaName : apiResquest.getSchemaName();
 		Response response = responsesMap.get(responseKey);
 		if (response == null) {
 			response = factory.createResponse();
@@ -348,74 +350,79 @@ public void mergePaths() throws UnsupportedEncodingException {
 			response.setDescription("");
 			apiRoot.getResponses().add(response);
 			responsesMap.put(responseKey, response);
-		
+
 			if (apiResquest.getResponse().getStatus() == 200) {
 				if (apiResquest.getResponse().getBody() != null && !apiResquest.getResponse().getBody().equals("")) {
 					JsonParser parser = new JsonParser();
-					JsonElement jsonSchemaInstance = parser.parse(apiResquest.getResponse().getBody());
-					if (jsonSchemaInstance.isJsonArray()) {
-						
-						Schema schemaArray = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase()
-								+ newSchemaName.substring(1) + "List");
-						Schema schema = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase()
-								+ newSchemaName.substring(1));
+					if (isJSONValid(apiResquest.getResponse().getBody())) {
+						JsonElement jsonSchemaInstance = parser.parse(apiResquest.getResponse().getBody());
 
-						if (schemaArray == null) {
+						if (jsonSchemaInstance.isJsonArray()) {
 
-							schemaArray = factory.createSchema();
-							schemaArray.setType(JSONDataType.ARRAY);
-							schemaArray.setName(newSchemaName.substring(0, 1).toUpperCase()
-									+ newSchemaName.substring(1) + "List");
-							schemaMap.put(newSchemaName.substring(0, 1).toUpperCase()
-									+ newSchemaName.substring(1) + "List", schemaArray);
-							if (schema == null) {
-								schema = factory.createSchema();
-								schema.setName(newSchemaName.substring(0, 1).toUpperCase()
-										+ newSchemaName.substring(1));
-								schema.setType(JSONDataType.OBJECT);
-								schemaMap.put(schema.getName(), schema);
-								apiRoot.getSchemas().add(schema);
-								schema.setDeclaringContext(api);
-								api.getDefinitions().add(schema);
-								discoverSchema(schema.getName(), jsonSchemaInstance.getAsJsonArray().get(0).toString());
-								schemaMap.put(newSchemaName.substring(0, 1).toUpperCase()
-										+ newSchemaName.substring(1), schema);
+							Schema schemaArray = schemaMap.get(
+									newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1) + "List");
+							Schema schema = schemaMap
+									.get(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
+
+							if (schemaArray == null) {
+
+								schemaArray = factory.createSchema();
+								schemaArray.setType(JSONDataType.ARRAY);
+								schemaArray.setName(newSchemaName.substring(0, 1).toUpperCase()
+										+ newSchemaName.substring(1) + "List");
+								schemaMap.put(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1)
+										+ "List", schemaArray);
+								if (schema == null) {
+									schema = factory.createSchema();
+									schema.setName(
+											newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
+									schema.setType(JSONDataType.OBJECT);
+									schemaMap.put(schema.getName(), schema);
+									apiRoot.getSchemas().add(schema);
+									schema.setDeclaringContext(api);
+									api.getDefinitions().add(schema);
+									discoverSchema(schema.getName(),
+											jsonSchemaInstance.getAsJsonArray().get(0).toString());
+									schemaMap.put(
+											newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1),
+											schema);
+
+								}
+								schemaArray.setItems(schema);
+								apiRoot.getSchemas().add(schemaArray);
+								schemaMap.put(schemaArray.getName(), schemaArray);
+								response.setSchema(schemaArray);
+							} else {
+								response.setSchema(schemaArray);
 
 							}
-							schemaArray.setItems(schema);
-							apiRoot.getSchemas().add(schemaArray);
-							schemaMap.put(schemaArray.getName(), schemaArray);
-							response.setSchema(schemaArray);
+
 						} else {
-							response.setSchema(schemaArray);
+							Schema schema = schemaMap
+									.get(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
+							if (schema == null) {
+								schema = factory.createSchema();
+								schema.setName(
+										newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1));
+								schema.setType(JSONDataType.OBJECT);
+								schemaMap.put(schema.getName(), schema);
+								api.getDefinitions().add(schema);
+								apiRoot.getSchemas().add(schema);
+								schema.setDeclaringContext(api);
+								discoverSchema(schema.getName(), apiResquest.getResponse().getBody());
 
+							}
+							response.setSchema(schema);
 						}
-
-					} else {
-						Schema schema = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase()
-								+ newSchemaName.substring(1));
-						if (schema == null) {
-							schema = factory.createSchema();
-							schema.setName(newSchemaName.substring(0, 1).toUpperCase()
-									+ newSchemaName.substring(1));
-							schema.setType(JSONDataType.OBJECT);
-							schemaMap.put(schema.getName(), schema);
-							api.getDefinitions().add(schema);
-							apiRoot.getSchemas().add(schema);
-							schema.setDeclaringContext(api);
-							discoverSchema(schema.getName(), apiResquest.getResponse().getBody());
-
-						}
-						response.setSchema(schema);
 					}
 				}
 			} else {
-				Schema schema = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase()
-						+ newSchemaName.substring(1) + "_" + apiResquest.getResponse().getStatus());
+				Schema schema = schemaMap.get(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1)
+						+ "_" + apiResquest.getResponse().getStatus());
 				if (schema == null) {
 					schema = factory.createSchema();
-					schema.setName(newSchemaName.substring(0, 1).toUpperCase()
-							+ newSchemaName.substring(1) + "_" + apiResquest.getResponse().getStatus());
+					schema.setName(newSchemaName.substring(0, 1).toUpperCase() + newSchemaName.substring(1) + "_"
+							+ apiResquest.getResponse().getStatus());
 					schema.setType(JSONDataType.OBJECT);
 					schemaMap.put(schema.getName(), schema);
 
@@ -556,4 +563,13 @@ public void mergePaths() throws UnsupportedEncodingException {
 		this.apiRoot = apiRoot;
 	}
 
+	public boolean isJSONValid(String jsonInString) {
+		try {
+			Gson gson = new Gson();
+			gson.fromJson(jsonInString, Object.class);
+			return true;
+		} catch (com.google.gson.JsonSyntaxException ex) {
+			return false;
+		}
+	}
 }

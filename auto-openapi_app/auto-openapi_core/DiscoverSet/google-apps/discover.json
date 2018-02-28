@@ -1,0 +1,483 @@
+[
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/acl",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/acl",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/acl/ruleId",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/acl/ruleId",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/acl/ruleId",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/acl/ruleId",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/channels/stopRequestbody",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/freeBusyRequestbody",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/colorsRequestbody",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendarsAuthorization",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/eventId/instances",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/settings",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/calendarList/watch",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/eventId/move",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/acl/watch",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/import",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/clear",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/eventId",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/eventId",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/eventId",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/eventId",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/settings/setting",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/quickAdd",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/calendars/calendarId/events/watch",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/calendarList",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/calendarList",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/settings/watch",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/calendarList/calendarId",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/calendarList/calendarId",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/calendarList/calendarId",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://www.googleapis.com/users/me/calendarList/calendarId",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  }
+]

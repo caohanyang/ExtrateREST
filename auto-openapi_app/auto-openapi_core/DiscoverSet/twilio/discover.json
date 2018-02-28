@@ -1,0 +1,4838 @@
+[
+  {
+    "request": {
+      "ourl": "",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Conferences",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/RE557ce644e5ab84fa",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/RE557ce644e5ab84fa",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"date_updated\":\"Tue,18Oct201621:56:34+0000\",\"date_created\":\"Tue,18Oct201621:55:38+0000\",\"source\":\"DialVerb\",\"api_version\":\"2010-04-01\",\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/RE557ce644e5ab84fa21cc21112e22c485.json\",\"sid\":\"RE557ce644e5ab84fa21cc21112e22c485\",\"duration\":\"53\",\"price_unit\":\"USD\",\"channels\":2,\"call_sid\":\"CA8dfedb55c129dd4d6bd1f59af9d11080\",\"price\":\"-0.00250\",\"account_sid\":\"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\"status\":\"completed\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//myapp.com/awesome'",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Triggers/UT33c6aeeba34e",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Triggers/UT33c6aeeba34e",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{YourAccountSid}/Conferences/{ConferenceSid}/Participants",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/IncomingPhoneNumbers\\/PNbc8e66614955250fc3",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/\\/www.twilio.com\\/user\\/account\\/international",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/sms.xml",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/sms.xml",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Calls\\/CAe1644a7eed5088b159577c5802d8be38.",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"first_page_uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls.json?Page=0&PageSize=50\",\"calls\":[{\"subresource_uris\":{\"recordings\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CA92d4405c9237c4ea04b56cbda88e128c/Recordings.json\",\"notifications\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CA92d4405c9237c4ea04b56cbda88e128c/Notifications.json\"},\"date_updated\":\"Fri,13Aug201001:16:22+0000\",\"date_created\":\"Fri,13Aug201001:16:22+0000\",\"flags\":[\"outbound-api\"],\"phone_number_sid\":\"PNe2d8e63b37f46f2adb16f228afdb9058\",\"api_version\":\"2010-04-01\",\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CA92d4405c9237c4ea04b56cbda88e128c.json\",\"sid\":\"CA92d4405c9237c4ea04b56cbda88e128c\",\"account_sid\":\"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\"from\":\"+15145623443\",\"to\":\"+15305431221\",\"status\":\"queued\"}],\"next_page_uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls.json?Page=1&PageSize=50&AfterSid=CA228399228abecca920de212121\",\"page\":0,\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls.json\",\"page_size\":50}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/TwilioResponse>",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/TwilioResponse>",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/welcome'",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Messages/{MessageSid}/Feedback",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//messaging.twilio.com/v1/Services/MG2172dd2db502e20dd981ef0d67850e1a/ShortCodes/SC3f94c94562ac88dccf",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{TestAccountSid}/Calls",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/IpAccessControlLists/AL32",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/IpAccessControlLists/AL32",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/IpAccessControlLists/AL32",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/IpAccessControlLists/AL32",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/StatusCallbackMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/ACa9b8c7d6e5f43120a9b8c7d6e5f43120/Messages/SM1f2e3d4c5b6a70891f",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Messages/{MessageSid}/Media/{MediaSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SmsMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SmsMethod>",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/CredentialLists/CL1e9949149f055138a8c215f",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/CredentialLists/CL1e9949149f055138a8c215f",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{SipDomainSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{SipDomainSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{SipDomainSid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Transcriptions",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Permission>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC5ef8732a3c49700934481addd5ce1659/Calls",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/CredentialLists",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/CredentialLists",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/docs/php/install",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Addresses/AD2a0747eba6abf96b7",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"street\":\"2HasselhoffLane\",\"customerName\":\"Customer456\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Addresses/AD2a0747eba6abf96b7",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Tokens",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Applications",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Applications",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialsLists/{CLSid}/Credentials/{CredentialSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialsLists/{CLSid}/Credentials/{CredentialSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialsLists/{CLSid}/Credentials/{CredentialSid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/value",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/31/2015.",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Messages",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}/Credentials/{CredentialSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}/Credentials/{CredentialSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}/Credentials/{CredentialSid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{YourAccountSid}/Recordings/{RecordingSid}/Transcriptions",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Usage/Triggers/",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}/IpAddresses/{IpAd",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{YourAccountSid}/IncomingPhoneNumbers/Mobile",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Triggers",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Triggers",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"recurring\":\"daily\",\"usageCategory\":\"calls\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{AclSid}/IpAddresses/{IpAddressSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{AclSid}/IpAddresses/{IpAddressSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{AclSid}/IpAddresses/{IpAddressSid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//preview.twilio.com/porting/Loas/PX800f449d0399ed014aae2bcc0cc2f2ec",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//preview.twilio.com/porting/Loas/PX800f449d0399ed014aae2bcc0cc2f2ec",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC5ef87.../Queues/QUxxxxxxxxxxxx",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/ConnectApps",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/or",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/x-wav\".",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/AuthorizedConnectApps",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//messaging.twilio.com/v1/Services/MG2172dd2db502e20dd981ef0d67850e1a'",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Conferences/CFbbe4632a3c49700",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Conferences/CFbbe4632a3c49700",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Conferences/CFbbe4632a3c49700",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/hold'",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[\"AuthToken\"]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/people",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Keys",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/docs/ruby/install",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Usage,",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/{TestAccountSid}/Messages",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Addresses/{AddressSid}/DependentPhoneNumbers",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/FeedbackSummary",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AvailablePhoneNumbers/GB/Mobile",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Province).",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/IsoCountry>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/PUT",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC.../Message/MM.../Media/ME557ce644e5ab84fa21cc21112e22c485",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/IncomingPhoneNumbers/PN2a0747",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/IncomingPhoneNumbers/PN2a0747",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.tommypi.com",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.myapp.com/events'",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//smsapp.com/fallback",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/{CallSid}/Recordings",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/AvailablePhoneNumbers\\/US\\/Local",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/{CallSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/AuthorizedConnectApps",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/DeauthorizeCallbackMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/ConnectApps\\/",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds/PNe905d7e6b",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds/PNe905d7e6b",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Applications",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Applications\\/AP2a0747eba6abf96b7e3c3ff0b4",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//requestb.in/1234abcd'",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//requestb.in/1234abcd'",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Usage/Triggers",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC30947.../IncomingPhoneNumbers/PN12345567789AFE4433",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Usage/Records",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC5ef87.../Calls.csv",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/\\/www.twilio.com\\/docs\\/errors\\/21421",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/\\/www.twilio.com\\/docs\\/errors\\/21422",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/IncomingPhoneNumbers\\/PN3f94c94562ac88dccf",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC5ef87.../Queues/QUxxxxxxxxx",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Secret>",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SMS/ShortCodes",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//m.twil.io",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds/PNe536d32a3",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds/PNe536d32a3",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SMS/ShortCodes/{ShortCodeSid}",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{AclSid}/IpAddresses",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{AclSid}/IpAddresses",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/VoiceFallbackMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/OutgoingCallerIds",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/IncomingPhoneNumbers/{IncomingPhoneNumberSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/AvailablePhoneNumbers\\/GB\\/Local",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Calls",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Keys/SK2a0747eba6abf96b7e3c3f",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Conferences",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/CredentialLists/CL32a3c49",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/CredentialLists/CL32a3c49",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/CredentialLists/CL32a3c49",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/CredentialLists/CL32a3c49",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC5ef87.../Queues/QUxxxxxxxxx/Members/CA386025c9bf5d6052a1d1ea42b4d16662",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg'",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com/monthly-usage-trigger",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com/monthly-usage-trigger",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com/monthly-usage-trigger",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"friendly_name\":\"MonthlyMaximumCallUsage\",\"date_updated\":\"Sat,13Oct201221:24:35+0000\",\"date_created\":\"Sat,29Sep201219:45:43+0000\",\"trigger_value\":\"500.000000\",\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Triggers/UT33c6aeeba34e48f38d6899ea5b765ad4.json\",\"sid\":\"UT33c6aeeba34e48f38d6899ea5b765ad4\",\"current_value\":\"21\",\"callback_url\":\"https://www.example.com/monthly-usage-trigger\",\"usage_category\":\"calls\",\"account_sid\":\"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\"trigger_by\":\"usage\",\"callback_method\":\"POST\",\"usage_record_uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Records.json?Category=calls\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/VoiceMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/VoiceMethod>",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SMS/ShortCodes/SC6b20cb705c1e8f00210049b20b70",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SMS/Messages",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Conferences/CFbbe46ff1274e283f7e3ac1df0072ab3",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/ACyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/IncomingPhoneNumbers/PNyyyyyy",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/CA",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SMS/Messages/SM800f449d0399ed",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SMS/ShortCodes",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/AC25e16e9a716a4a1786a7c83f58e30482/Conferences/CF203597f9bc241da",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC.../Message/MM.../Media/ME557ce644e5ab84fa21cc21112e22c485.xml",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Messages",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/\\/www.twilio.com\\/docs\\/errors\\/21201",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"friendly_name\":\"(510)555-5555\",\"date_updated\":\"Tue,27Jul201020:21:11+0000\",\"date_created\":\"Tue,27Jul201020:21:11+0000\",\"account_sid\":\"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\"phone_number\":\"+15105555555\",\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OutgoingCallerIds/PNe905d7e6b410746a0fb08c57e5a186f3.json\",\"sid\":\"PNe905d7e6b410746a0fb08c57e5a186f3\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC22ef5e6f64bf40a6ac84123ae4fb9fa7/Calls",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SmsFallbackMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SmsFallbackMethod>",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Calls\\/CAa346467ca321c71dbd5e12f627deb854.",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Messages/{MessageSid}/Media",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Messages/{MessageSid}/Media",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP//IpAccessControlLists/{IpAccessControlListSid}/IpAddresses/{IpA",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/OutgoingCallerIds\\/PNe905d7e6b410746a0fb08",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"subresource_uris\":{\"recordings\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CAe1644a7eed5088b159577c5802d8be38/Recordings.json\",\"notifications\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CAe1644a7eed5088b159577c5802d8be38/Notifications.json\"},\"date_updated\":\"Tue,10Aug201008:02:47+0000\",\"date_created\":\"Tue,10Aug201008:02:17+0000\",\"end_time\":\"Tue,10Aug201008:02:47+0000\",\"flags\":[\"outbound-api\"],\"api_version\":\"2008-08-01\",\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CAe1644a7eed5088b159577c5802d8be38.json\",\"sid\":\"CAe1644a7eed5088b159577c5802d8be38\",\"duration\":\"16\",\"start_time\":\"Tue,10Aug201008:02:31+0000\",\"price\":\"-0.03000\",\"account_sid\":\"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\"from\":\"+14158141819\",\"to\":\"+14153855708\",\"status\":\"completed\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/{AccountSid}/Keys",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//example.com/fallback",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Transcriptions",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SMS/Messages",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Applications\\/AP3f94c94562ac88dccf16f8859a",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/SMS\\/Messages\\/SM711c87aba9a3ed02554c91a7d",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/Domains",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/Domains",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/api.twilio.com",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/api.twilio.com",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/api.twilio.com",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/AvailablePhoneNumbers/{IsoCountryCode}/Mobile",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/Domains/SD098e7b11c00d0ba152b1d3f084c4b77",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[\"pagingattributes\"]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC228b9.../SMS/Messages/SM1f0e8ae6ade43cb3c0ce4525424e404f",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"message\":\"Therequestedresourcewasnotfound\",\"status\":404}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Issue>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/AC25e16e9a716a4a1786a7c83f58e30482/Conferences/CF1446ceacaefdc0e",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"subresource_uris\":{\"participants\":\"/2010-04-01/Accounts/AC25e16e9a716a4a1786a7c83f58e30482/Conferences/CF1446ceacaefdc0eb24976146269a0a73/Participants.json\"},\"friendly_name\":\"WarmTransfer\",\"date_updated\":\"Fri,02Dec201623:18:12+0000\",\"date_created\":\"Fri,02Dec201623:13:49+0000\",\"account_sid\":\"AC25e16e9a176a4a1786a7c83f58e30482\",\"region\":\"us1\",\"api_version\":\"2010-04-01\",\"uri\":\"/2010-04-01/Accounts/AC25e16e9a176a4a1786a7c83f58e30482/Conferences/CF1446ceacaefdc0eb24976146269a0a73.json\",\"status\":\"completed\",\"sid\":\"CF1446ceacaefdc0eb24976146269a0a73\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialsLists/{CLSid}/Credentials",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialsLists/{CLSid}/Credentials",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialsLists/{CLSid}/Credentials",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com/",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com/",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Addresses/{AddressSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{YourAccountSid}/IncomingPhoneNumbers/Local",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com'",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/user/account",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"friendly_name\":\"Triggerforsmsatusageof1000\",\"date_updated\":\"Sat,13Oct201221:32:30+0000\",\"date_created\":\"Sat,13Oct201221:32:30+0000\",\"trigger_value\":\"1000.000000\",\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Triggers/UTc142bed7b38c4f8186ef41a309814fd2.json\",\"sid\":\"UTc142bed7b38c4f8186ef41a309814fd2\",\"current_value\":\"57\",\"callback_url\":\"http://www.example.com\",\"usage_category\":\"sms\",\"account_sid\":\"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\"trigger_by\":\"usage\",\"callback_method\":\"POST\",\"usage_record_uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Records.json?Category=sms\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//portingworld.com/porting",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/\\/www.twilio.com\\/docs\\/errors\\/21614",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/IncomingPhoneNumbers\\/PN2a0747eba6abf96b7e",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/sms.xml'",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SMS/Messages",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/ConnectApps/CNb989fdd207b04d1",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Queues",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Queues",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Transcriptions",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Transcriptions",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com/feedback",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/CAe03b7cd806070d1f32bdb",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/CAe03b7cd806070d1f32bdb",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AvailablePhoneNumbers/US/Local",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Usage/Triggers",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Applications",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Status>",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"code\":21201,\"more_info\":\"http://www.twilio.com/docs/errors/21201\",\"message\":\"Notonumberisspecified\",\"status\":400}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/\\/www.twilio.com\\/docs\\/errors\\/21602",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/PostalCode>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/FeedbackSummary/{FeedbackSummarySid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/ACa9b8c7d6e5f43120a9b8c7d6e5f43120/Messages",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Records/Daily",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Services",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Usage/Records/Today",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SMS/Messages/SM800f449d0399ed014aae2bcc0cc2f2",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/porting/PortOrders",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/Domains/SD32a3c49700934481addd5ce1659f04d",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[\"pagingdata\"]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Records/Today",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Addresses",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Addresses",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Services/{ServiceSid}/ShortCodes/{Short",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/AvailablePhoneNumbers/{IsoCountryCode}/TollFree",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/CA42ed11f93dc08b952027f",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Sid>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Sid>",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Sid>",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACda6f1.../Recordings/RE557ce644e5ab84fa21cc21112e22c485.mp3",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/AvailablePhoneNumbers\\/GB\\/Mobile",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/console",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//myapp.com/answer,",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.example.com/sipdial.xml'",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/IncomingPhoneNumbers",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/IncomingPhoneNumbers",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Username>",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages/MM800f449d0399ed014a",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages/MM800f449d0399ed014a",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"body\":\"\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages/MM800f449d0399ed014a",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages/MM800f449d0399ed014a",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Domain",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Accounts/{TestAccountSid}/IncomingPhoneNumbers",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Transcriptions/TR8c61027b709ffb038236612dc5af",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Calls\\/CA074e4ce7f21c4d6bc889bb96480d42ff.",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/gif,",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Conferences/CFbbe46ff1274e283",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Usage/Records/Daily",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/Domains/SD27f0288630a668bdfbf177f8e22f5cc",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/VoiceStatusCallbackMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/CAe1644a7eed5088b159577",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{YourAccountSid}/IncomingPhoneNumbers/TollFree",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.mycompany.com",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.mycompany.com",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Addresses/AP2a0747eba6abf96b7",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/Calls\\/CAc7a1fe47b14637f42fd94274d1907a1d.",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//messaging.twilio.com/v1/Services/MG2172dd2db502e20dd981ef0d67850e1a/PhoneNumbers/PN557ce644e5ab84fa",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Records",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AvailablePhoneNumbers",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/AvailablePhoneNumbers",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}/Credentials",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}/Credentials",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists/{CLSid}/Credentials",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings/{ALSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/OutgoingCallerIds",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/carrier)",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/carrier)",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Usage/Records/{Subresource}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/docs/python/install",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/docs/python/install",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/docs/python/install",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/docs/python/install",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//handler.twilio.com/twiml/EH8ccdbd7f0b8fe34357da8ce87ebe5a16'",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[\"AuthToken\"]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Queues/{QueueSid}/Members",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Queues/{QueueSid}/Members",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//preview.twilio.com/porting/PortOrders",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//preview.twilio.com/porting/PortOrders",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACda6f1.../Recordings/RE557ce644e5ab84fa21cc21112e22c485",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/IpAccessControlLists/AL0c37d0be69a6a6fe1e",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/IpAccessControlLists/AL0c37d0be69a6a6fe1e",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[\"pagingdata\"]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/UsageTriggers>",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/voice.xml'",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/voice.xml'",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Messages/SM18c9444687c240caa8b54dc9a22e14d8.j",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Messages/SM18c9444687c240caa8b54dc9a22e14d8.j",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/IpAccessControlLists/AL95a47094615fe05b7c",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/IpAccessControlLists/AL95a47094615fe05b7c",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/voice.xml",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/voice.xml",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//demo.twilio.com/docs/voice.xml",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/AuthorizedConnectApps/CN47260",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/FeedbackSummary/FSa3464",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/FeedbackSummary/FSa3464",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{TestAccountSid}/Messages",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SMS/ShortCodes/SC6b20cb705c1e",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SMS/ShortCodes/SC6b20cb705c1e",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Transcriptions/TR8c61027b709f",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Transcriptions/TR8c61027b709f",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Calls/CA8dfedb55c129dd4d6bd1f",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"first_page_uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CA8dfedb55c129dd4d6bd1f59af9d11080/Recordings.json?Page=0&PageSize=50\",\"recordings\":[{\"date_updated\":\"Tue,18Oct201621:56:34+0000\",\"date_created\":\"Tue,18Oct201621:55:38+0000\",\"source\":\"DialVerb\",\"api_version\":\"2010-04-01\",\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/RE557ce644e5ab84fa21cc21112e22c485.json\",\"sid\":\"RE557ce644e5ab84fa21cc21112e22c485\",\"duration\":\"53\",\"price_unit\":\"USD\",\"channels\":2,\"call_sid\":\"CA8dfedb55c129dd4d6bd1f59af9d11080\",\"price\":\"-0.00250\",\"account_sid\":\"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\"status\":\"completed\"}],\"next_page_uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CA8dfedb55c129dd4d6bd1f59af9d11080/Recordings.json?Page=1&PageSize=50\",\"page\":0,\"uri\":\"/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls/CA8dfedb55c129dd4d6bd1f59af9d11080/Recordings.json?Page=0&PageSize=50\",\"page_size\":50}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Queues/QU32a3c49700934481addd",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//messaging.twilio.com/v1/Services/MG2172dd2db502e20dd981ef0d67850e1a/AlphaSenders/AIc781610ec0b3400c",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/ConnectApps",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/IncomingPhoneNumbers",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Keys",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/porting/Loas/{PortLOASid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{SipDomainSid}/CredentialListMappings",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{SipDomainSid}/CredentialListMappings",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{SipDomainSid}/CredentialListMappings",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.google.com",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/longitude",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Addresses",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AC5ef87.../Queues",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[\"pagingattributes\"]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/Conferences/{ConferenceSid}/Participants",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/CallbackMethod>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/are",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Usage/Records/LastMonth",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/AvailablePhoneNumbers/{IsoCountryCode}/Local",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/Domains/{SipDomainSid}/CredentialListMappings/{CLSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/x-www-form-urlencoded",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//requestb.in/1234abcd",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/CredentialLists",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Applications/AP2a0747eba6abf9",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Applications/AP2a0747eba6abf9",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Services/{Service",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Services/{Service",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Services/{Service",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/porting/PortOrders/{PortOrderSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/Domains/SD32a3c4970093448",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/Domains/SD32a3c4970093448",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/Domains/SD32a3c4970093448",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/Domains/SD32a3c4970093448",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/2010-04-01\\/Accounts\\/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\\/AvailablePhoneNumbers\\/US\\/TollFree",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/SIP/CredentialLists/CL32a3c49700934481addd5ce",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[\"pagingdata\"]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{TestAccountSid}/IncomingPhoneNumbers",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/AccountSid>",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Usage/Records/LastMonth",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Queues/QU5ef8732a3c4970093448",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Queues/QU5ef8732a3c4970093448",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Queues/QU5ef8732a3c4970093448",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/SIP/IpAccessControlLists",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/>",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Messages/MM800f449d0399ed014aae2bcc0cc2f2ec.j",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Addresses/AD2a0747eba6abf96b7e3c3ff0b4530f6e",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/Addresses/AD2a0747eba6abf96b7e3c3ff0b4530f6e",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlList/{AclSid}/IpAddresses/{IpAddressSid}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlList/{AclSid}/IpAddresses/{IpAddressSid}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlList/{AclSid}/IpAddresses/{IpAddressSid}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.myapp.com/events",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//www.myapp.com/events",
+      "url": null,
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}/IpAddresses",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//preview.twilio.com/porting/PortOrders/PO800f449d0399ed014aae2bcc0cc2f2ec",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com//messaging.twilio.com/v1/Services/MG2172dd2db502e20dd981ef0d67850e1a/PhoneNumbers'",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Addresses",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlList/{AclSid}/IpAddresses",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.twilio.com/{AccountSid}/SIP/IpAccessControlList/{AclSid}/IpAddresses",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  }
+]
