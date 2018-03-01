@@ -1,8 +1,6 @@
 const fs = require('fs');
 var path = require('path');
 const args = process.argv;
-
-// get open api file
 var API_NAME, CompareSet_PATH, DiscoverSet_PATH, FinalSet_PATH;
 
 if (args.length > 0) {
@@ -21,14 +19,30 @@ var API_PATH = FinalSet_PATH + API_NAME;
 const openapi1 = require(CompareSet_PATH + "/OpenAPI.json");
 const openapi2 = require(DiscoverSet_PATH + "/openapi.json");
 
-// 1. make sure it contains host && schema
 
 if (openapi1.host && openapi1.schemes && openapi1.paths) {
 	console.log("=========Validate host and schemes=============");
-	// 2. delete path with begins with https
+	
+	Object.keys(openapi1.paths).forEach(function(url) {
+		if (hasOwnPropertyCaseInsensitive(openapi2.paths, url)) {
 
-	console.log(openapi2);
+           Object.keys(openapi1.paths[url]).forEach(function(verb) {
+			   console.log(url + "  " + verb);
+			   if (hasOwnPropertyCaseInsensitive(openapi2.paths[url], verb)) {
 
+				 let verbLower = verb.toLocaleLowerCase();
+                 openapi1.paths[url][verb]['responses'] = openapi2.paths[url][verbLower]['responses'];
+			   } else {
+				   console.log("Can't find same Verb");
+			   }
+		   })
+		} else {
+			console.log("Can't find same URL");
+		}
+	})
+
+	openapi1.definitions = openapi2.definitions;
+	
 	writeFinalFile();
 }
 
@@ -43,4 +57,28 @@ function writeFinalFile() {
 	}
 
 	fs.writeFileSync(API_PATH + "/OpenAPI.json", JSON.stringify(openapi1, null, 2), 'utf8');
+}
+
+// Object.prototype.hasOwnPropertyCI = function(prop) {
+// 	return Object.keys(this)
+// 		   .filter(function (v) {
+// 			  return v.toLowerCase() === prop.toLowerCase();
+// 			}).length > 0;
+//  };
+
+//  Object.defineProperty("hasOwnPropertyCI", {
+//     "enumerable": false,
+//     "value": function(keyName) {
+//         return (Object.keys(this).map(function(v){
+//             return v.toUpperCase()
+//         }).indexOf(keyName.toUpperCase()) > -1)
+//     }
+// });
+
+function hasOwnPropertyCaseInsensitive(obj, property) {
+    var props = [];
+    for (var i in obj) if (obj.hasOwnProperty(i)) props.push(i);
+    var prop;
+    while (prop = props.pop()) if (prop.toLowerCase() === property.toLowerCase()) return true;
+    return false;
 }

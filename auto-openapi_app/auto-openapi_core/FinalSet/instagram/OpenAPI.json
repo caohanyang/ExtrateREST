@@ -1,0 +1,1020 @@
+{
+  "basePath": "/v1",
+  "paths": {
+    "/users/{user-id}/media/recent": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "max_id",
+            "description": "Return media earlier than this max_id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "min_id",
+            "description": "Return media later than this min_id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "description": "Count of media to return.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/{user-id}": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/media/{media-id}/comments/{comment-id}": {
+      "DELETE": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/self/follows": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Follows"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/users/self/media/recent": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Recent"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "max_id",
+            "description": "Return media earlier than this max_id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "min_id",
+            "description": "Return media later than this min_id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "description": "Count of media to return.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/users/search": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "q",
+            "description": "A query string.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "description": "Number of users to return.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/users/self/media/liked": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Liked"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "max_like_id",
+            "description": "Return media liked before this id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "description": "Count of media to return.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/locations/{location-id}/media/recent": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Recent"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "max_id",
+            "description": "Return media after this max_id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "min_id",
+            "description": "Return media before this min_id.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/media/{media-id}": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Media"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/tags/{tag-name}/media/recent": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Recent"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "max_tag_id",
+            "description": "Return media after this max_tag_id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "min_tag_id",
+            "description": "Return media before this min_tag_id.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "description": "Count of tagged media to return.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/media/shortcode/D": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/tags/search": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "q",
+            "description": "A valid tag name without a leading #. (eg. snowy, nofilter)",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/tags/{tag-name}": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Tags"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/tags/puppy/media/recent": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/locations/search": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "lat",
+            "description": "Latitude of the center search coordinate. If used, lng is required.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "lng",
+            "description": "Longitude of the center search coordinate. If used, lat is required.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "distance",
+            "description": "Default is 500m (distance=500), max distance is 750.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "facebook_places_id",
+            "description": "Returns a location mapped off of a Facebook places id. If used, lat and lng are not required.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/media/{media-id}/comments": {
+      "POST": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Comments"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "text",
+            "description": "Text to post as a comment on the media object as specified in media-id.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      },
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Comments"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/users/self": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Self"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/users/self/requested-by": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Self"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/users/self/followed-by": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/media/{media-id}/likes": {
+      "DELETE": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "POST": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Likes"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      },
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Likes"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/users/{user-id}/relationship": {
+      "POST": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Relationship"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "action",
+            "description": "follow | unfollow | approve | ignore",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      },
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Relationship"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/media/search": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "lat",
+            "description": "Latitude of the center search coordinate. If used, lng is required.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "lng",
+            "description": "Longitude of the center search coordinate. If used, lat is required.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "distance",
+            "description": "Default is 1km (distance=1000), max distance is 5km.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/locations/{location-id}": {
+      "PATCH": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "data": {
+                "latitude": 37.782,
+                "name": "DogpatchLabs",
+                "id": "1",
+                "longitude": -122.387
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "access_token",
+            "description": "A valid access token.",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    }
+  },
+  "produces": "application/json",
+  "host": "api.instagram.com",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API",
+  "definitions": {
+    "Users": {
+      "type": "object"
+    },
+    "Follows": {
+      "type": "object"
+    },
+    "Follow": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Data"
+          }
+        }
+      }
+    },
+    "Data": {
+      "type": "object",
+      "properties": {
+        "full_name": {
+          "type": "string"
+        },
+        "profile_picture": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "created_time": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "filter": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        },
+        "Comment": {
+          "$ref": "#/definitions/Comment"
+        },
+        "users_in_photo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Users_in_photo"
+          }
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "Like": {
+          "$ref": "#/definitions/Like"
+        },
+        "media_count": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "is_business": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "bio": {
+          "type": "string"
+        },
+        "Count": {
+          "$ref": "#/definitions/Count"
+        },
+        "outgoing_status": {
+          "type": "string"
+        }
+      }
+    },
+    "Recent": {
+      "type": "object"
+    },
+    "Search": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Data"
+          }
+        }
+      }
+    },
+    "Liked": {
+      "type": "object"
+    },
+    "Media": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Standard_resolution": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    },
+    "Comment": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "full_name": {
+          "type": "string"
+        },
+        "profile_picture": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
+    },
+    "Like": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Meta"
+        }
+      }
+    },
+    "Position": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "integer"
+        }
+      }
+    },
+    "Image": {
+      "type": "object",
+      "properties": {
+        "Thumbnail": {
+          "$ref": "#/definitions/Thumbnail"
+        },
+        "Low_resolution": {
+          "$ref": "#/definitions/Low_resolution"
+        },
+        "Standard_resolution": {
+          "$ref": "#/definitions/Standard_resolution"
+        }
+      }
+    },
+    "Thumbnail": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    },
+    "Low_resolution": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    },
+    "Users_in_photo": {
+      "type": "object",
+      "properties": {
+        "Position": {
+          "$ref": "#/definitions/Position"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Tags": {
+      "type": "object"
+    },
+    "Tag": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Comments": {
+      "type": "object"
+    },
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        }
+      }
+    },
+    "Self": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Count": {
+      "type": "object",
+      "properties": {
+        "followed_by": {
+          "type": "integer"
+        },
+        "follows": {
+          "type": "integer"
+        },
+        "media": {
+          "type": "integer"
+        }
+      }
+    },
+    "Likes": {
+      "type": "object"
+    },
+    "Relationship": {
+      "type": "object",
+      "properties": {
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    }
+  }
+}
