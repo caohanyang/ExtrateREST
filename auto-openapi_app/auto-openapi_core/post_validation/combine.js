@@ -20,31 +20,52 @@ const openapi1 = require(CompareSet_PATH + "/OpenAPI.json");
 const openapi2 = require(DiscoverSet_PATH + "/openapi.json");
 
 
-if (openapi1.host && openapi1.schemes && openapi1.paths) {
+if (openapi1.host && openapi1.schemes && openapi1.paths && openapi2.paths) {
 	console.log("=========Validate host and schemes=============");
-	
+	console.log("path number openapi1 "+ Object.keys(openapi1.paths).length);
+	console.log("path number openapi2 "+ Object.keys(openapi2.paths).length);
 	Object.keys(openapi1.paths).forEach(function(url) {
-		if (hasOwnPropertyCaseInsensitive(openapi2.paths, url)) {
+		console.log(url);
 
+		// combine responses
+		if (hasOwnPropertyCaseInsensitive(openapi2.paths, url)) {
            Object.keys(openapi1.paths[url]).forEach(function(verb) {
 			   console.log(url + "  " + verb);
+              
 			   if (hasOwnPropertyCaseInsensitive(openapi2.paths[url], verb)) {
-
 				 let verbLower = verb.toLocaleLowerCase();
-                 openapi1.paths[url][verb]['responses'] = openapi2.paths[url][verbLower]['responses'];
+
+				 if (hasOwnPropertyCaseInsensitive(openapi1.paths[url][verb], 'responses')) {
+					openapi1.paths[url][verb]['responses']['200']['schema'] = openapi2.paths[url][verbLower]['responses']['200']['schema'];
+				 } else {
+                    openapi1.paths[url][verb]['responses'] = openapi2.paths[url][verbLower]['responses'];
+				 }
 			   } else {
 				   console.log("Can't find same Verb");
 			   }
+
 		   })
 		} else {
 			console.log("Can't find same URL");
 		}
+
+		
+		Object.keys(openapi1.paths[url]).forEach(function(verb) {
+			// remove request example
+			if (hasOwnPropertyCaseInsensitive(openapi1.paths[url][verb], "request")) {
+				delete openapi1.paths[url][verb].request;
+			 } 
+
+		})
+
 	})
 
 	openapi1.definitions = openapi2.definitions;
 	
-	writeFinalFile();
 }
+
+writeFinalFile();
+
 
 function writeFinalFile() {
 
