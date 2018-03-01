@@ -4,37 +4,25 @@
       "GET": {}
     },
     "/countryCode": {
-      "GET": {
-        "request": "http://api.geonames.org/countryCode?lat=47.03&lng=10.2&username=demo"
-      }
+      "GET": {}
     },
     "/neighbourhood": {
-      "GET": {
-        "request": "http://api.geonames.org/neighbourhood?lat=40.78343&lng=-73.96625&username=demo"
-      }
+      "GET": {}
     },
     "/findNearByWeatherJSON": {
-      "GET": {
-        "request": "http://api.geonames.org/findNearByWeatherXML?lat=43&lng=-2&username=demo"
-      }
+      "GET": {}
     },
     "/astergdem": {
-      "GET": {
-        "request": "http://api.geonames.org/astergdem?lat=50.01&lng=10.2&username=demo"
-      }
+      "GET": {}
     },
     "/get": {
       "GET": {}
     },
     "/ocean": {
-      "GET": {
-        "request": "http://api.geonames.org/ocean?lat=40.78343&lng=-43.96625&username=demo"
-      }
+      "GET": {}
     },
     "/gtopo30": {
-      "GET": {
-        "request": "http://api.geonames.org/gtopo30?lat=47.01&lng=10.2&username=demo"
-      }
+      "GET": {}
     },
     "/extendedFindNearby": {
       "GET": {}
@@ -55,61 +43,43 @@
       "GET": {}
     },
     "/wikipediaBoundingBox": {
-      "GET": {
-        "request": "http://api.geonames.org/wikipediaBoundingBox?north=44.1&south=-9.9&east=-22.4&west=55.2&username=demo"
-      }
+      "GET": {}
     },
     "/timezone": {
-      "GET": {
-        "request": "http://api.geonames.org/timezone?lat=47.01&lng=10.2&username=demo"
-      }
+      "GET": {}
     },
     "/countrySubdivision": {
-      "GET": {
-        "request": "http://api.geonames.org/countrySubdivision?lat=47.03&lng=10.2&username=demo"
-      }
+      "GET": {}
     },
     "/hierarchy": {
       "GET": {}
     },
     "/wikipediaSearch": {
-      "GET": {
-        "request": "http://api.geonames.org/wikipediaSearch?q=london&maxRows=10&username=demo"
-      }
+      "GET": {}
     },
     "/postalCodeLookupJSON": {
       "POST": {}
     },
     "/weatherJSON": {
-      "GET": {
-        "request": "http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=demo"
-      }
+      "GET": {}
     },
     "/earthquakesJSON": {
-      "GET": {
-        "request": "http://api.geonames.org/earthquakesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=demo"
-      }
+      "GET": {}
     },
     "/postalCodeCountryInfo": {
       "POST": {}
     },
     "/srtm3": {
-      "GET": {
-        "request": "http://api.geonames.org/srtm3?lat=50.01&lng=10.2&username=demo"
-      }
+      "GET": {}
     },
     "/postalCodeSearch": {
-      "POST": {
-        "request": "http://api.geonames.org/postalCodeSearch?postalcode=9011&maxRows=10&username=demo"
-      }
+      "POST": {}
     },
     "/contains": {
       "GET": {}
     },
     "/srtm1": {
-      "GET": {
-        "request": "http://api.geonames.org/srtm1?lat=50.01&lng=10.2&username=demo"
-      }
+      "GET": {}
     },
     "/neighbours": {
       "GET": {}
@@ -118,9 +88,7 @@
       "GET": {}
     },
     "/weatherIcaoJSON": {
-      "GET": {
-        "request": "http://api.geonames.org/weatherIcaoJSON?ICAO=LSZH&username=demo"
-      }
+      "GET": {}
     }
   },
   "produces": "application/json",
