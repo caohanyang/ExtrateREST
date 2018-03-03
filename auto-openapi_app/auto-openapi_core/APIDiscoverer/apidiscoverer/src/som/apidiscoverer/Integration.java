@@ -97,12 +97,21 @@ public class Integration {
 
 			// 5. Sending request
 			if (jsonCallExample.getJsonRequest().getUrl() != null) {
-				// request example exist: send request
-				apidiscover.sendRequest();
-				// Wait 1 seconds
-				TimeUnit.SECONDS.sleep(1);
-				// refresh to get newest state
-				jsonCallExample = apidiscover.getJsonCallExample();
+				
+                if (jsonCallExample.getJsonRequest().getUrl().startsWith("curl") | API_NAME.contains("twitter")) {
+                	// curl mode
+    				//TODO use origin url now
+    				jsonCallExample.getJsonRequest().setUrl(jsonCallExample.getJsonRequest().getOurl());
+                } else {
+          
+            		// nomal http request
+    				apidiscover.sendRequest();
+    				// Wait 1 seconds
+    				TimeUnit.SECONDS.sleep(1);
+    				// refresh to get newest state
+    				jsonCallExample = apidiscover.getJsonCallExample();
+                }
+				
 
 			} else {
 				// request example miss:

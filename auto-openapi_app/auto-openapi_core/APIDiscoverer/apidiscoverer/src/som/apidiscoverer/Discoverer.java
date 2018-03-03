@@ -76,6 +76,10 @@ public class Discoverer {
 	}
 
 	public void mergePaths() throws UnsupportedEncodingException {
+		// cost too much time
+		if (apiRoot.getApi().getPaths().size() > 40) {
+			return;
+		}
 		List<List<Path>> duplicatedPaths = DiscoveryUtil.discoverPathParameters(apiRoot);
 		if (!duplicatedPaths.isEmpty()) {
 			for (List<Path> cluster : duplicatedPaths) {

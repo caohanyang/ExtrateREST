@@ -79,10 +79,10 @@ echo $PWD
 cd auto-openapi_core/gen_spec
 
 # 1.1 crawl html page
-# python rest_crawler/crawlAllPages.py $1 $2
+python rest_crawler/crawlAllPages.py $1 $2
 
 # 2. predict html page
-python predict_page/predictExternal.py $1
+# python predict_page/predictExternal.py $1
 
 
 # 3. run java to build the OPENAPI documentation

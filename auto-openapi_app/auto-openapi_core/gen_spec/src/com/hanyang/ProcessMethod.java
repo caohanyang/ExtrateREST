@@ -80,6 +80,12 @@ public class ProcessMethod {
 			}
 
 			if (Settings.MODE.startsWith("http")) {
+				
+				// for twitter, don't consider ads api
+				if (url.contains("twitter") & url.contains("ads")) {
+					return false;
+				}
+				
 				// url minimum length
 				if (url.length() > "http://".length()) {
 					return true;

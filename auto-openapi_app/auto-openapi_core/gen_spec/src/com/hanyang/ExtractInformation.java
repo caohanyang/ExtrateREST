@@ -50,10 +50,10 @@ public class ExtractInformation {
 	
 	public static void main(String[] args) throws GateException, JSONException, IOException {
 		// System.out.close();
-
-		System.out.println(System.getProperty("gate.home"));
-		System.out.println(System.getProperty("gate.plugins.home"));
-		System.out.println(System.getProperty("gate.site.config"));
+//
+//		System.out.println(System.getProperty("gate.home"));
+//		System.out.println(System.getProperty("gate.plugins.home"));
+//		System.out.println(System.getProperty("gate.site.config"));
 		
 		if (args.length > 0) {
 			
@@ -92,30 +92,7 @@ public class ExtractInformation {
 		new File(CompareSet_PATH).mkdirs();
 		File compareSet = new File(CompareSet_PATH);
 
-//		// 2. generate openAPI according to pattern
-//		for (Iterator<String> sIterator = Settings.MODE.iterator(); sIterator.hasNext();) {
-//			String mode = sIterator.next();
-//
-//			for (Iterator<String> rIterator = Settings.REVERSE.iterator(); rIterator.hasNext();) {
-//				String reverse = rIterator.next();
-//
-//				for (Iterator<String> tIterator = Settings.TEMPLATE.iterator(); tIterator.hasNext();) {
-//					String template = tIterator.next();
-//
-//					for (Iterator<String> nIterator = Settings.NUMBER.iterator(); nIterator.hasNext();) {
-//						String number = nIterator.next();
-//
-//						for (Iterator<String> dIterator = Settings.ABBREV_DELETE.iterator(); dIterator.hasNext();) {
-//							String abbrev = dIterator.next();
-//							// generate different openAPI
-//							generateOpenAPI(listFiles, mode, reverse, template, number, abbrev);
-//							System.gc();
-//						}
-//					}
-//				}
-//			}
-//		}
-
+		// 2. generate openAPI according to pattern
 		generateOpenAPI(listFiles);
 		
 		// 3. compare the json files and select the final one.
@@ -319,8 +296,8 @@ public class ExtractInformation {
 						// Fix 2: suppose the URL length < 160
 						matchStr = strAll.substring(matcher.start(), matcher.end() + 160);
 					} else if (Settings.MODE.equals("/")){
-						// partial URL length < 20
-						matchStr = strAll.substring(matcher.start(), matcher.end() + 20);
+						// partial URL length < 100
+						matchStr = strAll.substring(matcher.start(), matcher.end() + 100);
 					} else if (Settings.MODE.equals("key")){
 						// key url
 						matchStr = strAll.substring(matcher.start(), matcher.end() + 160);

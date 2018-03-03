@@ -2,7 +2,6 @@
   "paths": {
     "/1.1/collections/entries/move": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/collections/entries/move.json?id=custom-388061495298244609&tweet_id=39083988",
         "parameters": [
           {
             "in": "query",
@@ -89,7 +88,6 @@
     },
     "/1.1/statuses/retweets/:id": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/statuses/retweets/509457288717819904.json",
         "parameters": [
           {
             "in": "path",
@@ -165,6 +163,9 @@
                 "video_owner_id": "756201191646691328",
                 "video_content_id": "13_860318603387600896"
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Unkown"
             }
           }
         }
@@ -192,6 +193,9 @@
                 "id": "4h053",
                 "card_type": "VIDEO_WEBSITE"
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Unkown"
             }
           }
         }
@@ -199,7 +203,6 @@
     },
     "/1.1/users/report_spam": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/users/report_spam.json?screen_name=themattharris&perform_block=false",
         "responses": {
           "200": {
             "description": "correct response",
@@ -260,7 +263,7 @@
               "notifications": false,
               "status": {
                 "in_reply_to_status_id_str": "240226590703898624",
-                "in_reply_to_status_id": 240226590703898624,
+                "in_reply_to_status_id": 240226590703898620,
                 "possibly_sensitive": false,
                 "created_at": "TueAug2800:11:59+00002012",
                 "truncated": false,
@@ -338,9 +341,12 @@
                 "id_str": "240240276298420224",
                 "in_reply_to_user_id": 11656,
                 "text": ".@Heilemann,@luxuryluke-@rsarverhasbeenclarifyingwith@adactio:https://t.co/DdTXEtcdandhttps://t.co/Pq8Sj0sl",
-                "id": 240240276298420224,
+                "id": 240240276298420220,
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Users"
             }
           }
         },
@@ -392,7 +398,7 @@
             "description": "correct response",
             "example": {
               "previous_cursor": 0,
-              "next_cursor": 1489467234237774933,
+              "next_cursor": 1489467234237774800,
               "previous_cursor_str": "0",
               "next_cursor_str": "1489467234237774933",
               "users": [
@@ -1177,6 +1183,9 @@
                   "notifications": false
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/List"
             }
           }
         }
@@ -1208,7 +1217,6 @@
     },
     "/1.1/lists/update": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/lists/update.json?list_id=1234&mode=public&name=Party%20Time",
         "parameters": [
           {
             "in": "query",
@@ -1315,7 +1323,7 @@
                 "id_str": "242613977966850048",
                 "in_reply_to_user_id": 14927800,
                 "text": "@jasoncosta@themattharrisHey!GoingtobeinFriscoinOctober.Washopingtohaveameetingtotalkabout@thinkwallifyou'rearound?",
-                "id": 242613977966850048,
+                "id": 242613977966850050,
                 "user": {
                   "utc_offset": 0,
                   "friends_count": 770,
@@ -1418,7 +1426,7 @@
                 },
                 "id_str": "242534402280783873",
                 "text": "Gottheshirt@jasoncostathanksman!Lovingthe#twitterbirdontheshirt:-)",
-                "id": 242534402280783873,
+                "id": 242534402280783870,
                 "user": {
                   "utc_offset": 28800,
                   "friends_count": 138,
@@ -1475,7 +1483,13 @@
                 },
                 "favorited": false
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Statuses"
+              }
+            }
           }
         }
       }
@@ -1510,7 +1524,6 @@
     },
     "/1.1/account/settings": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/account/settings.json?lang=en",
         "responses": {
           "200": {
             "description": "correct response",
@@ -1540,6 +1553,9 @@
                   "parentid": 23424977
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/Settings"
             }
           }
         },
@@ -1624,6 +1640,9 @@
                   "url": "http://where.yahooapis.com/v1/place/2357024"
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/Settings"
             }
           }
         }
@@ -1647,7 +1666,6 @@
     },
     "/1.1/favorites/list": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/favorites/list.json?count=2&screen_name=episod",
         "responses": {
           "200": {
             "description": "correct response",
@@ -1665,7 +1683,7 @@
                 },
                 "id_str": "243014525132091393",
                 "text": "Notetoself:don'tdieduringoff-peakhoursonaholidayweekend.",
-                "id": 243014525132091393,
+                "id": 243014525132091400,
                 "place": {
                   "country_code": "US",
                   "country": "UnitedStates",
@@ -1805,7 +1823,13 @@
                 },
                 "favorited": true
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/List"
+              }
+            }
           }
         },
         "parameters": [
@@ -1856,7 +1880,6 @@
     },
     "/1.1/saved_searches/show/:id": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/saved_searches/show/9569704.json",
         "parameters": [
           {
             "in": "path",
@@ -1873,7 +1896,10 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "{\"welcome_message\":{\"id\":\"844385345234\",\"created_timestamp\":\"1470182274821\",\"message_data\":{\"text\":\"Welcome!\",\"attachment\":{\"type\":\"media\",\"media\":{...}}}}}"
+            "example": "{\"welcome_message\":{\"id\":\"844385345234\",\"created_timestamp\":\"1470182274821\",\"message_data\":{\"text\":\"Welcome!\",\"attachment\":{\"type\":\"media\",\"media\":{...}}}}}",
+            "schema": {
+              "$ref": "#/definitions/New"
+            }
           }
         }
       }
@@ -1900,7 +1926,6 @@
     },
     "/1.1/lists/ownerships": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/ownerships.json?screen_name=twitter&count=2",
         "responses": {
           "200": {
             "description": "correct response",
@@ -2051,6 +2076,9 @@
                 }
               ],
               "next_cursor_str": "46541288"
+            },
+            "schema": {
+              "$ref": "#/definitions/Ownerships"
             }
           }
         },
@@ -2091,7 +2119,6 @@
     },
     "/1.1/lists/members": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/members.json?slug=team&owner_screen_name=twitterapi&cursor=-1",
         "responses": {
           "200": {
             "description": "correct response",
@@ -2143,7 +2170,7 @@
                   "location": "",
                   "status": {
                     "in_reply_to_status_id_str": "87979906226597888",
-                    "in_reply_to_status_id": 87979906226597888,
+                    "in_reply_to_status_id": 87979906226597890,
                     "truncated": false,
                     "created_at": "TueJul0503:46:03+00002011",
                     "in_reply_to_user_id_str": "748353",
@@ -2154,11 +2181,14 @@
                     "id_str": "88091240503058432",
                     "in_reply_to_user_id": 748353,
                     "text": "@kmonkeyjamOhno...Idon'tknowwherethatboneisbutthatsoundsterriblypainful.Howareyoustilltweeting?Getbetter!",
-                    "id": 88091240503058432,
+                    "id": 88091240503058430,
                     "favorited": false
                   }
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/Members"
             }
           }
         },
@@ -2224,7 +2254,6 @@
     },
     "/1.1/users/suggestions/:slug/members": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/users/suggestions/funny/members.json",
         "parameters": [
           {
             "in": "path",
@@ -2241,11 +2270,13 @@
     },
     "/1.1/statuses/user_timeline": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2",
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "[{\"created_at\":\"ThuApr0615:28:43+00002017\",\"id\":850007368138018817,\"id_str\":\"850007368138018817\",\"text\":\"RT@TwitterDev:1/Todaywe’resharingourvisionforthefutureoftheTwitterAPIplatform!nhttps://t.co/XweGngmxlP\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"TwitterDev\",\"name\":\"TwitterDev\",\"id\":2244994945,\"id_str\":\"2244994945\",\"indices\":[3,14]}],\"urls\":[{\"url\":\"https://t.co/XweGngmxlP\",\"expanded_url\":\"https://cards.twitter.com/cards/18ce53wgo4h/3xo1c\",\"display_url\":\"cards.twitter.com/cards/18ce53wg…\",\"indices\":[94,117]}]},\"source\":\"<ahref=\"http://twitter.com\"rel=\"nofollow\">TwitterWebClient</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":6253282,\"id_str\":\"6253282\",\"name\":\"TwitterAPI\",\"screen_name\":\"twitterapi\",\"location\":\"SanFrancisco,CA\",\"description\":\"TheRealTwitterAPI.ItweetaboutAPIchanges,serviceissuesandhappilyanswerquestionsaboutTwitterandourAPI.Don'tgetananswer?It'sonmywebsite.\",\"url\":\"http://t.co/78pYTvWfJd\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"http://t.co/78pYTvWfJd\",\"expanded_url\":\"https://dev.twitter.com\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,22]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":6172353,\"friends_count\":46,\"listed_count\":13091,\"created_at\":\"WedMay2306:01:13+00002007\",\"favourites_count\":26,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":3583,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_image_url_https\":\"https://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_tile\":true,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/6253282/1431474710\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"ThuApr0615:24:15+00002017\",\"id\":850006245121695744,\"id_str\":\"850006245121695744\",\"text\":\"1/Todaywe’resharingourvisionforthefutureoftheTwitterAPIplatform!nhttps://t.co/XweGngmxlP\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[{\"url\":\"https://t.co/XweGngmxlP\",\"expanded_url\":\"https://cards.twitter.com/cards/18ce53wgo4h/3xo1c\",\"display_url\":\"cards.twitter.com/cards/18ce53wg…\",\"indices\":[78,101]}]},\"source\":\"<ahref=\"http://twitter.com\"rel=\"nofollow\">TwitterWebClient</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":2244994945,\"id_str\":\"2244994945\",\"name\":\"TwitterDev\",\"screen_name\":\"TwitterDev\",\"location\":\"Internet\",\"description\":\"YourofficialsourceforTwitterPlatformnews,updates&events.Needtechnicalhelp?Visithttps://t.co/mGHnxZCxkt⌨️#TapIntoTwitter\",\"url\":\"https://t.co/66w26cua1O\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"https://t.co/66w26cua1O\",\"expanded_url\":\"https://dev.twitter.com/\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,23]}]},\"description\":{\"urls\":[{\"url\":\"https://t.co/mGHnxZCxkt\",\"expanded_url\":\"https://twittercommunity.com/\",\"display_url\":\"twittercommunity.com\",\"indices\":[93,116]}]}},\"protected\":false,\"followers_count\":465425,\"friends_count\":1523,\"listed_count\":1168,\"created_at\":\"SatDec1404:35:55+00002013\",\"favourites_count\":2098,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":3031,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"FFFFFF\",\"profile_background_image_url\":\"http://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_image_url_https\":\"https://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_tile\":false,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2244994945/1396995246\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"FFFFFF\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":false,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":284,\"favorite_count\":399,\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":284,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false,\"lang\":\"en\"},{\"created_at\":\"MonApr0316:09:50+00002017\",\"id\":848930551989915648,\"id_str\":\"848930551989915648\",\"text\":\"RT@TwitterMktg:Startingtoday,businessescanrequestandsharelocationswhenengagingwithpeopleinDirectMessages.https://t.co/rpYn…\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"TwitterMktg\",\"name\":\"TwitterMarketing\",\"id\":357750891,\"id_str\":\"357750891\",\"indices\":[3,15]}],\"urls\":[]},\"source\":\"<ahref=\"http://twitter.com\"rel=\"nofollow\">TwitterWebClient</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":6253282,\"id_str\":\"6253282\",\"name\":\"TwitterAPI\",\"screen_name\":\"twitterapi\",\"location\":\"SanFrancisco,CA\",\"description\":\"TheRealTwitterAPI.ItweetaboutAPIchanges,serviceissuesandhappilyanswerquestionsaboutTwitterandourAPI.Don'tgetananswer?It'sonmywebsite.\",\"url\":\"http://t.co/78pYTvWfJd\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"http://t.co/78pYTvWfJd\",\"expanded_url\":\"https://dev.twitter.com\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,22]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":6172353,\"friends_count\":46,\"listed_count\":13091,\"created_at\":\"WedMay2306:01:13+00002007\",\"favourites_count\":26,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":3583,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_image_url_https\":\"https://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_tile\":true,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/6253282/1431474710\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"MonApr0316:05:05+00002017\",\"id\":848929357519241216,\"id_str\":\"848929357519241216\",\"text\":\"Startingtoday,businessescanrequestandsharelocationswhenengagingwithpeopleinDirectMessages.https://t.co/rpYndqWfQw\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[{\"url\":\"https://t.co/rpYndqWfQw\",\"expanded_url\":\"https://cards.twitter.com/cards/5wzucr/3x700\",\"display_url\":\"cards.twitter.com/cards/5wzucr/3…\",\"indices\":[105,128]}]},\"source\":\"<ahref=\"https://ads.twitter.com\"rel=\"nofollow\">TwitterAds</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":357750891,\"id_str\":\"357750891\",\"name\":\"TwitterMarketing\",\"screen_name\":\"TwitterMktg\",\"location\":\"TwitterHQ\",\"description\":\"Twitter’splaceformarketers,agencies,andcreativethinkers⭐Bringingyouinsights,news,updates,andinspiration.Visit@TwitterAdsHelpforAdssupport.\",\"url\":\"https://t.co/Tfo4moo92y\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"https://t.co/Tfo4moo92y\",\"expanded_url\":\"https://marketing.twitter.com\",\"display_url\":\"marketing.twitter.com\",\"indices\":[0,23]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":924546,\"friends_count\":661,\"listed_count\":3893,\"created_at\":\"ThuAug1821:08:15+00002011\",\"favourites_count\":1934,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":6329,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http://pbs.twimg.com/profile_background_images/662767273/jvmxdpdrplhxcw8yvkv2.png\",\"profile_background_image_url_https\":\"https://pbs.twimg.com/profile_background_images/662767273/jvmxdpdrplhxcw8yvkv2.png\",\"profile_background_tile\":true,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/800953549697888256/UlXXL5h5_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/800953549697888256/UlXXL5h5_normal.jpg\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/357750891/1487188210\",\"profile_link_color\":\"19CF86\",\"profile_sidebar_border_color\":\"FFFFFF\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":111,\"favorite_count\":162,\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":111,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"}]"
+            "example": "[{\"created_at\":\"ThuApr0615:28:43+00002017\",\"id\":850007368138018817,\"id_str\":\"850007368138018817\",\"text\":\"RT@TwitterDev:1/Todaywe’resharingourvisionforthefutureoftheTwitterAPIplatform!nhttps://t.co/XweGngmxlP\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"TwitterDev\",\"name\":\"TwitterDev\",\"id\":2244994945,\"id_str\":\"2244994945\",\"indices\":[3,14]}],\"urls\":[{\"url\":\"https://t.co/XweGngmxlP\",\"expanded_url\":\"https://cards.twitter.com/cards/18ce53wgo4h/3xo1c\",\"display_url\":\"cards.twitter.com/cards/18ce53wg…\",\"indices\":[94,117]}]},\"source\":\"<ahref=\"http://twitter.com\"rel=\"nofollow\">TwitterWebClient</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":6253282,\"id_str\":\"6253282\",\"name\":\"TwitterAPI\",\"screen_name\":\"twitterapi\",\"location\":\"SanFrancisco,CA\",\"description\":\"TheRealTwitterAPI.ItweetaboutAPIchanges,serviceissuesandhappilyanswerquestionsaboutTwitterandourAPI.Don'tgetananswer?It'sonmywebsite.\",\"url\":\"http://t.co/78pYTvWfJd\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"http://t.co/78pYTvWfJd\",\"expanded_url\":\"https://dev.twitter.com\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,22]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":6172353,\"friends_count\":46,\"listed_count\":13091,\"created_at\":\"WedMay2306:01:13+00002007\",\"favourites_count\":26,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":3583,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_image_url_https\":\"https://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_tile\":true,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/6253282/1431474710\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"ThuApr0615:24:15+00002017\",\"id\":850006245121695744,\"id_str\":\"850006245121695744\",\"text\":\"1/Todaywe’resharingourvisionforthefutureoftheTwitterAPIplatform!nhttps://t.co/XweGngmxlP\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[{\"url\":\"https://t.co/XweGngmxlP\",\"expanded_url\":\"https://cards.twitter.com/cards/18ce53wgo4h/3xo1c\",\"display_url\":\"cards.twitter.com/cards/18ce53wg…\",\"indices\":[78,101]}]},\"source\":\"<ahref=\"http://twitter.com\"rel=\"nofollow\">TwitterWebClient</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":2244994945,\"id_str\":\"2244994945\",\"name\":\"TwitterDev\",\"screen_name\":\"TwitterDev\",\"location\":\"Internet\",\"description\":\"YourofficialsourceforTwitterPlatformnews,updates&events.Needtechnicalhelp?Visithttps://t.co/mGHnxZCxkt⌨️#TapIntoTwitter\",\"url\":\"https://t.co/66w26cua1O\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"https://t.co/66w26cua1O\",\"expanded_url\":\"https://dev.twitter.com/\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,23]}]},\"description\":{\"urls\":[{\"url\":\"https://t.co/mGHnxZCxkt\",\"expanded_url\":\"https://twittercommunity.com/\",\"display_url\":\"twittercommunity.com\",\"indices\":[93,116]}]}},\"protected\":false,\"followers_count\":465425,\"friends_count\":1523,\"listed_count\":1168,\"created_at\":\"SatDec1404:35:55+00002013\",\"favourites_count\":2098,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":3031,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"FFFFFF\",\"profile_background_image_url\":\"http://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_image_url_https\":\"https://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_tile\":false,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2244994945/1396995246\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"FFFFFF\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":false,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":284,\"favorite_count\":399,\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":284,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false,\"lang\":\"en\"},{\"created_at\":\"MonApr0316:09:50+00002017\",\"id\":848930551989915648,\"id_str\":\"848930551989915648\",\"text\":\"RT@TwitterMktg:Startingtoday,businessescanrequestandsharelocationswhenengagingwithpeopleinDirectMessages.https://t.co/rpYn…\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"TwitterMktg\",\"name\":\"TwitterMarketing\",\"id\":357750891,\"id_str\":\"357750891\",\"indices\":[3,15]}],\"urls\":[]},\"source\":\"<ahref=\"http://twitter.com\"rel=\"nofollow\">TwitterWebClient</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":6253282,\"id_str\":\"6253282\",\"name\":\"TwitterAPI\",\"screen_name\":\"twitterapi\",\"location\":\"SanFrancisco,CA\",\"description\":\"TheRealTwitterAPI.ItweetaboutAPIchanges,serviceissuesandhappilyanswerquestionsaboutTwitterandourAPI.Don'tgetananswer?It'sonmywebsite.\",\"url\":\"http://t.co/78pYTvWfJd\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"http://t.co/78pYTvWfJd\",\"expanded_url\":\"https://dev.twitter.com\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,22]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":6172353,\"friends_count\":46,\"listed_count\":13091,\"created_at\":\"WedMay2306:01:13+00002007\",\"favourites_count\":26,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":3583,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_image_url_https\":\"https://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png\",\"profile_background_tile\":true,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/6253282/1431474710\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"MonApr0316:05:05+00002017\",\"id\":848929357519241216,\"id_str\":\"848929357519241216\",\"text\":\"Startingtoday,businessescanrequestandsharelocationswhenengagingwithpeopleinDirectMessages.https://t.co/rpYndqWfQw\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[{\"url\":\"https://t.co/rpYndqWfQw\",\"expanded_url\":\"https://cards.twitter.com/cards/5wzucr/3x700\",\"display_url\":\"cards.twitter.com/cards/5wzucr/3…\",\"indices\":[105,128]}]},\"source\":\"<ahref=\"https://ads.twitter.com\"rel=\"nofollow\">TwitterAds</a>\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":357750891,\"id_str\":\"357750891\",\"name\":\"TwitterMarketing\",\"screen_name\":\"TwitterMktg\",\"location\":\"TwitterHQ\",\"description\":\"Twitter’splaceformarketers,agencies,andcreativethinkers⭐Bringingyouinsights,news,updates,andinspiration.Visit@TwitterAdsHelpforAdssupport.\",\"url\":\"https://t.co/Tfo4moo92y\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"https://t.co/Tfo4moo92y\",\"expanded_url\":\"https://marketing.twitter.com\",\"display_url\":\"marketing.twitter.com\",\"indices\":[0,23]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":924546,\"friends_count\":661,\"listed_count\":3893,\"created_at\":\"ThuAug1821:08:15+00002011\",\"favourites_count\":1934,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":6329,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http://pbs.twimg.com/profile_background_images/662767273/jvmxdpdrplhxcw8yvkv2.png\",\"profile_background_image_url_https\":\"https://pbs.twimg.com/profile_background_images/662767273/jvmxdpdrplhxcw8yvkv2.png\",\"profile_background_tile\":true,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/800953549697888256/UlXXL5h5_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/800953549697888256/UlXXL5h5_normal.jpg\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/357750891/1487188210\",\"profile_link_color\":\"19CF86\",\"profile_sidebar_border_color\":\"FFFFFF\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":111,\"favorite_count\":162,\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":111,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"}]",
+            "schema": {
+              "$ref": "#/definitions/Statuses"
+            }
           }
         },
         "parameters": [
@@ -2321,6 +2352,9 @@
                 "123"
               ],
               "next_cursor_str": "0"
+            },
+            "schema": {
+              "$ref": "#/definitions/Ids"
             }
           }
         }
@@ -2331,7 +2365,10 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "{\"id\":2244994945,\"id_str\":\"2244994945\",\"name\":\"TwitterDev\",\"screen_name\":\"TwitterDev\",\"location\":\"Internet\",\"profile_location\":null,\"description\":\"DeveloperandPlatformRelations@Twitter.Wearedeveloperadvocates.Wecan'tanswerallyourquestions,butwelistentoallofthem!\",\"url\":\"https://t.co/66w26cua1O\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"https://t.co/66w26cua1O\",\"expanded_url\":\"https://dev.twitter.com/\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,23]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":429831,\"friends_count\":1535,\"listed_count\":999,\"created_at\":\"SatDec1404:35:55+00002013\",\"favourites_count\":1713,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":2588,\"lang\":\"en\",\"status\":{\"created_at\":\"TueAug3010:52:20+00002016\",\"id\":770574870841331700,\"id_str\":\"770574870841331712\",\"text\":\"@lesterhanoops!Thanksforpointingthatout,looksliketheimageisnolongeravailable!wewillfixinafuturedocversion!^AP\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"lesterhan\",\"name\":\"LesterHan\",\"id\":126025266,\"id_str\":\"126025266\",\"indices\":[0,10]}],\"urls\":[]},\"source\":\"<ahref=\"https://about.twitter.com/products/tweetdeck\"rel=\"nofollow\">TweetDeck</a>\",\"in_reply_to_status_id\":770332467626672100,\"in_reply_to_status_id_str\":\"770332467626672129\",\"in_reply_to_user_id\":126025266,\"in_reply_to_user_id_str\":\"126025266\",\"in_reply_to_screen_name\":\"lesterhan\",\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"FFFFFF\",\"profile_background_image_url\":\"http://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_image_url_https\":\"https://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_tile\":false,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2244994945/1396995246\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"FFFFFF\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":false,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"}"
+            "example": "{\"id\":2244994945,\"id_str\":\"2244994945\",\"name\":\"TwitterDev\",\"screen_name\":\"TwitterDev\",\"location\":\"Internet\",\"profile_location\":null,\"description\":\"DeveloperandPlatformRelations@Twitter.Wearedeveloperadvocates.Wecan'tanswerallyourquestions,butwelistentoallofthem!\",\"url\":\"https://t.co/66w26cua1O\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"https://t.co/66w26cua1O\",\"expanded_url\":\"https://dev.twitter.com/\",\"display_url\":\"dev.twitter.com\",\"indices\":[0,23]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":429831,\"friends_count\":1535,\"listed_count\":999,\"created_at\":\"SatDec1404:35:55+00002013\",\"favourites_count\":1713,\"utc_offset\":-25200,\"time_zone\":\"PacificTime(US&Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":2588,\"lang\":\"en\",\"status\":{\"created_at\":\"TueAug3010:52:20+00002016\",\"id\":770574870841331700,\"id_str\":\"770574870841331712\",\"text\":\"@lesterhanoops!Thanksforpointingthatout,looksliketheimageisnolongeravailable!wewillfixinafuturedocversion!^AP\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"lesterhan\",\"name\":\"LesterHan\",\"id\":126025266,\"id_str\":\"126025266\",\"indices\":[0,10]}],\"urls\":[]},\"source\":\"<ahref=\"https://about.twitter.com/products/tweetdeck\"rel=\"nofollow\">TweetDeck</a>\",\"in_reply_to_status_id\":770332467626672100,\"in_reply_to_status_id_str\":\"770332467626672129\",\"in_reply_to_user_id\":126025266,\"in_reply_to_user_id_str\":\"126025266\",\"in_reply_to_screen_name\":\"lesterhan\",\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"FFFFFF\",\"profile_background_image_url\":\"http://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_image_url_https\":\"https://abs.twimg.com/images/themes/theme1/bg.png\",\"profile_background_tile\":false,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/530814764687949824/npQQVkq8_normal.png\",\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2244994945/1396995246\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"FFFFFF\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":false,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"regular\"}",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
           }
         }
       }
@@ -2414,11 +2451,14 @@
                 },
                 "id_str": "455860653731753984",
                 "favorite_count": 0,
-                "id": 455860653731753984,
+                "id": 455860653731754000,
                 "text": "Supercoolapptoinstallhttp://t.co/ZiH6VOqLB3",
                 "lang": "en",
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Create"
             }
           }
         }
@@ -2497,6 +2537,9 @@
                   "notifications": false
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/List"
             }
           }
         }
@@ -2504,23 +2547,25 @@
     },
     "//data-api.twitter.com/insights/engagement/totals": {
       "POST": {
-        "request": "https://data-api.twitter.com/insights/engagement/totals\"",
         "responses": {
           "200": {
             "description": "correct response",
             "example": {
               "group1": {
-                "223456789": {
-                  "favorites": "0",
-                  "replies": "2",
-                  "retweets": "0"
-                },
                 "123456789": {
                   "favorites": "109",
                   "replies": "41",
                   "retweets": "88"
+                },
+                "223456789": {
+                  "favorites": "0",
+                  "replies": "2",
+                  "retweets": "0"
                 }
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Totals"
             }
           }
         }
@@ -2660,6 +2705,9 @@
                   "notifications": false
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/Twitter"
             }
           }
         }
@@ -2682,7 +2730,7 @@
                 "user_mentions": []
               },
               "id_str": "243138128959913986",
-              "id": 243138128959913986,
+              "id": 243138128959914000,
               "text": "ThatfeelwhenyouaccidentallytypeBashcommandsintoCampfire,andyoualsomakeatypointhem.",
               "user": {
                 "utc_offset": -18000,
@@ -2741,6 +2789,9 @@
                 "notifications": false
               },
               "favorited": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Create"
             }
           }
         }
@@ -2751,7 +2802,10 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "{\"welcome_message\":{\"id\":\"844385345234\",\"created_timestamp\":\"1470182274821\",\"message_data\":{\"text\":\"Welcome!\",\"attachment\":{\"type\":\"media\",\"media\":{...}}}}}"
+            "example": "{\"welcome_message\":{\"id\":\"844385345234\",\"created_timestamp\":\"1470182274821\",\"message_data\":{\"text\":\"Welcome!\",\"attachment\":{\"type\":\"media\",\"media\":{...}}}}}",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
           }
         },
         "parameters": [
@@ -2771,7 +2825,6 @@
     },
     "/1.1/saved_searches/create": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/saved_searches/create.json?query=sandwiches",
         "responses": {
           "200": {
             "description": "correct response",
@@ -2781,6 +2834,9 @@
               "name": "sandwiches",
               "created_at": "FriAug2422:08:58+00002012",
               "id": 158598597
+            },
+            "schema": {
+              "$ref": "#/definitions/Create"
             }
           }
         },
@@ -2890,12 +2946,18 @@
                   "notifications": false
                 },
                 "created_at": "MonAug2717:21:03+00002012",
-                "id": 240136858829479936,
+                "id": 240136858829479940,
                 "text": "booyakasha",
                 "sender_id": 38895958,
                 "recipient_id": 776627022
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Show"
+              }
+            }
           }
         }
       }
@@ -2912,7 +2974,6 @@
     },
     "/1.1/lists/subscribers/destroy": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/lists/subscribers/destroy.json?slug=team&owner_screen_name=twitterapi",
         "parameters": [
           {
             "in": "query",
@@ -2950,7 +3011,6 @@
     },
     "/1.1/lists/statuses": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/statuses.json?slug=teams&owner_screen_name=MLS&count=1",
         "responses": {
           "200": {
             "description": "correct response",
@@ -3005,7 +3065,7 @@
                 },
                 "id_str": "245160944223793152",
                 "text": "CreateyourownTFCESQbyMovadoWatch:http://t.co/W2tON3OKinsupportof@TeamUpFdn#TorontoFC#MLS",
-                "id": 245160944223793152,
+                "id": 245160944223793150,
                 "user": {
                   "utc_offset": -18000,
                   "friends_count": 13947,
@@ -3064,7 +3124,13 @@
                 },
                 "favorited": false
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Statuses"
+              }
+            }
           }
         },
         "parameters": [
@@ -3160,7 +3226,7 @@
               },
               "id_str": "243145735212777472",
               "text": "Maybehe'llfinallyfindhiskeys.#peterfalk",
-              "id": 243145735212777472,
+              "id": 243145735212777470,
               "user": {
                 "utc_offset": -28800,
                 "friends_count": 166,
@@ -3220,6 +3286,9 @@
                 "notifications": false
               },
               "favorited": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Update"
             }
           }
         }
@@ -3231,7 +3300,6 @@
     },
     "/1.1/friends/ids": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/friends/ids.json?cursor=-1&screen_name=twitterapi&count=5000",
         "responses": {
           "200": {
             "description": "correct response",
@@ -3273,6 +3341,9 @@
                 783214
               ],
               "next_cursor_str": "0"
+            },
+            "schema": {
+              "$ref": "#/definitions/Ids"
             }
           }
         },
@@ -3320,14 +3391,16 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "[{\"country\":\"Sweden\",\"countryCode\":\"SE\",\"name\":\"Sweden\",\"parentid\":1,\"placeType\":{\"code\":12,\"name\":\"Country\"},\"url\":\"http://where.yahooapis.com/v1/place/23424954\",\"woeid\":23424954},{\"country\":\"UnitedStates\",\"countryCode\":\"US\",\"name\":\"NewHaven\",\"parentid\":23424977,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/2458410\",\"woeid\":2458410},{\"country\":\"Japan\",\"countryCode\":\"JP\",\"name\":\"Sapporo\",\"parentid\":23424856,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/1118108\",\"woeid\":1118108},...{\"country\":\"UnitedStates\",\"countryCode\":\"US\",\"name\":\"Providence\",\"parentid\":23424977,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/2477058\",\"woeid\":2477058},{\"country\":\"UnitedStates\",\"countryCode\":\"US\",\"name\":\"Cincinnati\",\"parentid\":23424977,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/2380358\",\"woeid\":2380358}]"
+            "example": "[{\"country\":\"Sweden\",\"countryCode\":\"SE\",\"name\":\"Sweden\",\"parentid\":1,\"placeType\":{\"code\":12,\"name\":\"Country\"},\"url\":\"http://where.yahooapis.com/v1/place/23424954\",\"woeid\":23424954},{\"country\":\"UnitedStates\",\"countryCode\":\"US\",\"name\":\"NewHaven\",\"parentid\":23424977,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/2458410\",\"woeid\":2458410},{\"country\":\"Japan\",\"countryCode\":\"JP\",\"name\":\"Sapporo\",\"parentid\":23424856,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/1118108\",\"woeid\":1118108},...{\"country\":\"UnitedStates\",\"countryCode\":\"US\",\"name\":\"Providence\",\"parentid\":23424977,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/2477058\",\"woeid\":2477058},{\"country\":\"UnitedStates\",\"countryCode\":\"US\",\"name\":\"Cincinnati\",\"parentid\":23424977,\"placeType\":{\"code\":7,\"name\":\"Town\"},\"url\":\"http://where.yahooapis.com/v1/place/2380358\",\"woeid\":2380358}]",
+            "schema": {
+              "$ref": "#/definitions/Available"
+            }
           }
         }
       }
     },
     "/1.1/followers/ids": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/followers/ids.json?cursor=-1&screen_name=andypiper&count=5000",
         "parameters": [
           {
             "in": "query",
@@ -3385,7 +3458,13 @@
                 "parentid": 1,
                 "url": "http://where.yahooapis.com/v1/place/23424748"
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Closest"
+              }
+            }
           }
         }
       }
@@ -3395,7 +3474,10 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "{\"url\":\"https://twitter.com/Interior/status/507185938620219395\",\"author_name\":\"USDeptofInterior\",\"author_url\":\"https://twitter.com/Interior\",\"html\":\"<blockquoteclass=\"twitter-tweet\"><plang=\"en\"dir=\"ltr\">Happy50thanniversarytotheWildernessAct!Here&#39;sagreatwildernessphotofrom<ahref=\"https://twitter.com/YosemiteNPS\">@YosemiteNPS</a>.<ahref=\"https://twitter.com/hashtag/Wilderness50?src=hash\">#Wilderness50</a><ahref=\"http://t.co/HMhbyTg18X\">pic.twitter.com/HMhbyTg18X</a></p>&mdash;USDeptofInterior(@Interior)<ahref=\"https://twitter.com/Interior/status/507185938620219395\">September3,2014</a></blockquote>n<scriptasyncsrc=\"//platform.twitter.com/widgets.js\"charset=\"utf-8\"></script>\",\"width\":550,\"height\":null,\"type\":\"rich\",\"cache_age\":\"3153600000\",\"provider_name\":\"Twitter\",\"provider_url\":\"https://twitter.com\",\"version\":\"1.0\"}"
+            "example": "{\"url\":\"https://twitter.com/Interior/status/507185938620219395\",\"author_name\":\"USDeptofInterior\",\"author_url\":\"https://twitter.com/Interior\",\"html\":\"<blockquoteclass=\"twitter-tweet\"><plang=\"en\"dir=\"ltr\">Happy50thanniversarytotheWildernessAct!Here&#39;sagreatwildernessphotofrom<ahref=\"https://twitter.com/YosemiteNPS\">@YosemiteNPS</a>.<ahref=\"https://twitter.com/hashtag/Wilderness50?src=hash\">#Wilderness50</a><ahref=\"http://t.co/HMhbyTg18X\">pic.twitter.com/HMhbyTg18X</a></p>&mdash;USDeptofInterior(@Interior)<ahref=\"https://twitter.com/Interior/status/507185938620219395\">September3,2014</a></blockquote>n<scriptasyncsrc=\"//platform.twitter.com/widgets.js\"charset=\"utf-8\"></script>\",\"width\":550,\"height\":null,\"type\":\"rich\",\"cache_age\":\"3153600000\",\"provider_name\":\"Twitter\",\"provider_url\":\"https://twitter.com\",\"version\":\"1.0\"}",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
           }
         }
       }
@@ -3464,18 +3546,24 @@
                     "retweeted": false,
                     "id_str": "239075883053367297",
                     "text": "Youdon'twanttomissthisweek'sFailFriday.ItincludesapictureofaPikeinaporno:http://t.co/TypZqAe6",
-                    "id": 239075883053367297,
+                    "id": 239075883053367300,
                     "favorited": false
                   },
                   "retweet_count": 15,
                   "retweeted": false,
                   "id_str": "239075966431932418",
                   "text": "RT@TFMintern:Youdon'twanttomissthisweek'sFailFriday.ItincludesapictureofaPikeinaporno:http://t.co/TypZqAe6",
-                  "id": 239075966431932418,
+                  "id": 239075966431932400,
                   "favorited": false
                 }
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Members"
+              }
+            }
           }
         }
       }
@@ -3774,7 +3862,13 @@
                   }
                 ]
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Place"
+              }
+            }
           }
         }
       }
@@ -3853,11 +3947,14 @@
                 },
                 "id_str": "455860653731753984",
                 "favorite_count": 0,
-                "id": 455860653731753984,
+                "id": 455860653731754000,
                 "text": "Supercoolapptoinstallhttp://t.co/ZiH6VOqLB3",
                 "lang": "en",
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Destroy"
             }
           }
         }
@@ -3920,6 +4017,9 @@
                   }
                 }
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Update"
             }
           }
         }
@@ -3927,7 +4027,6 @@
     },
     "/1.1/mutes/users/ids": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/mutes/users/ids.json?cursor=-1",
         "responses": {
           "200": {
             "description": "correct response",
@@ -3940,6 +4039,9 @@
                 54931584
               ],
               "next_cursor_str": "0"
+            },
+            "schema": {
+              "$ref": "#/definitions/Ids"
             }
           }
         },
@@ -3972,6 +4074,9 @@
               "previous_cursor_str": "0",
               "ids": [],
               "next_cursor_str": "0"
+            },
+            "schema": {
+              "$ref": "#/definitions/Incoming"
             }
           }
         },
@@ -4041,6 +4146,9 @@
               "location": "SanFrancisco",
               "profile_sidebar_fill_color": "252429",
               "notifications": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Create"
             }
           }
         }
@@ -4048,7 +4156,6 @@
     },
     "//data-api.twitter.com/insights/engagement/historical": {
       "POST": {
-        "request": "https://data-api.twitter.com/insights/engagement/historical\"",
         "responses": {
           "200": {
             "description": "correct response",
@@ -4056,17 +4163,17 @@
               "start": "2015-08-01T00:00:00Z",
               "end": "2015-08-15T00:00:00Z",
               "types-by-tweet-id": {
-                "223456789": {
-                  "url_clicks": "30",
-                  "detail_expands": "1323",
-                  "engagements": "134",
-                  "impressions": "788"
-                },
                 "123456789": {
                   "url_clicks": "0",
                   "detail_expands": "0",
                   "engagements": "0",
                   "impressions": "0"
+                },
+                "223456789": {
+                  "url_clicks": "30",
+                  "detail_expands": "1323",
+                  "engagements": "134",
+                  "impressions": "788"
                 },
                 "323456789": {
                   "url_clicks": "2",
@@ -4075,6 +4182,9 @@
                   "impressions": "4"
                 }
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Historical"
             }
           }
         }
@@ -4082,7 +4192,6 @@
     },
     "/1.1/users/lookup": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/users/lookup.json?screen_name=twitterapi,twitter",
         "parameters": [
           {
             "in": "query",
@@ -4153,7 +4262,7 @@
                 "notifications": false,
                 "status": {
                   "in_reply_to_status_id_str": "238933943146131456",
-                  "in_reply_to_status_id": 238933943146131456,
+                  "in_reply_to_status_id": 238933943146131460,
                   "created_at": "FriAug2416:15:49+00002012",
                   "truncated": false,
                   "in_reply_to_user_id_str": "134727529",
@@ -4164,7 +4273,7 @@
                   "id_str": "239033279343382529",
                   "in_reply_to_user_id": 134727529,
                   "text": "@gregclermontno,thereisnot.^TS",
-                  "id": 239033279343382529,
+                  "id": 239033279343382530,
                   "favorited": false
                 }
               },
@@ -4236,14 +4345,19 @@
                   "favorited": false
                 }
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Lookup"
+              }
+            }
           }
         }
       }
     },
     "/1.1/account/update_profile": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/account/update_profile.json?name=Sean%20Cook&description=Keep%20calm%20and%2",
         "responses": {
           "200": {
             "description": "correct response",
@@ -4286,6 +4400,9 @@
               "location": "SanFrancisco,CA",
               "profile_sidebar_fill_color": "DDFFCC",
               "notifications": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Account"
             }
           }
         },
@@ -4344,7 +4461,6 @@
     },
     "/1.1/statuses/retweeters/ids": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/statuses/retweeters/ids.json?id=327473909412814850&count=100&stringify_ids=t",
         "responses": {
           "200": {
             "description": "correct response",
@@ -4443,6 +4559,9 @@
                 "1387875991"
               ],
               "next_cursor_str": "0"
+            },
+            "schema": {
+              "$ref": "#/definitions/Ids"
             }
           }
         },
@@ -4573,19 +4692,24 @@
                   "notifications": false
                 },
                 "created_at": "MonAug2717:21:03+00002012",
-                "id": 240136858829479936,
+                "id": 240136858829479940,
                 "text": "booyakasha",
                 "sender_id": 38895958,
                 "recipient_id": 776627022
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Unkown"
+              }
+            }
           }
         }
       }
     },
     "/1.1/mutes/users/list": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/mutes/users/list.json?include_entities=false&skip_status=true",
         "responses": {
           "200": {
             "description": "correct response",
@@ -4745,6 +4869,9 @@
                   "notifications": false
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/List"
             }
           }
         },
@@ -4867,7 +4994,7 @@
                       "id_str": "239844310986653696",
                       "expanded_url": "http://twitter.com/dougw/status/239844310982459392/photo/1",
                       "media_url_https": "https://p.twimg.com/A1QZIU3CAAAnCkS.jpg",
-                      "id": 239844310986653696,
+                      "id": 239844310986653700,
                       "type": "photo",
                       "media_url": "http://p.twimg.com/A1QZIU3CAAAnCkS.jpg",
                       "url": "http://t.co/1uG4mhaB"
@@ -4877,9 +5004,12 @@
                 },
                 "id_str": "239844310982459392",
                 "text": "WarmdaybytheBay.Watchingboatssailby.http://t.co/1uG4mhaB",
-                "id": 239844310982459392,
+                "id": 239844310982459400,
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Destroy"
             }
           }
         }
@@ -4907,7 +5037,6 @@
     },
     "/1.1/friendships/lookup": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/friendships/lookup.json?screen_name=episod,twitterapi,whiteleaf,andypiper",
         "responses": {
           "200": {
             "description": "correct response",
@@ -4951,7 +5080,13 @@
                   "none"
                 ]
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Lookup"
+              }
+            }
           }
         },
         "parameters": [
@@ -4974,7 +5109,6 @@
     },
     "/1.1/geo/id/:place_id": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/geo/id/df51dec6f4ee2b2c.json",
         "parameters": [
           {
             "in": "path",
@@ -4991,7 +5125,10 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "[{\"created_at\":\"TueJun1509:37:24+00002010\",\"id\":9569704,\"id_str\":\"9569704\",\"name\":\"@twitterapi\",\"position\":null,\"query\":\"@twitterapi\"},{\"created_at\":\"TueJun1509:38:04+00002010\",\"id\":9569730,\"id_str\":\"9569730\",\"name\":\"@twitterORtwitterapiOR\"twitterapi\"OR\"@anywhere\"\",\"position\":null,\"query\":\"@twitterORtwitterapiOR\"twitterapi\"OR\"@anywhere\"\"}]"
+            "example": "[{\"created_at\":\"TueJun1509:37:24+00002010\",\"id\":9569704,\"id_str\":\"9569704\",\"name\":\"@twitterapi\",\"position\":null,\"query\":\"@twitterapi\"},{\"created_at\":\"TueJun1509:38:04+00002010\",\"id\":9569730,\"id_str\":\"9569730\",\"name\":\"@twitterORtwitterapiOR\"twitterapi\"OR\"@anywhere\"\",\"position\":null,\"query\":\"@twitterORtwitterapiOR\"twitterapi\"OR\"@anywhere\"\"}]",
+            "schema": {
+              "$ref": "#/definitions/List"
+            }
           }
         }
       }
@@ -5033,14 +5170,16 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "{\"objects\":{\"timelines\":{\"custom-539487832448843776\":{\"collection_type\":\"user\",\"collection_url\":\"https://twitter.com/TwitterDev/timelines/539487832448843776\",\"description\":\"AcollectionofTweetsaboutNationalParksintheUnitedStates.\",\"name\":\"NationalParkTweets\",\"timeline_order\":\"curation_reverse_chron\",\"url\":\"\",\"user_id\":\"2244994945\",\"visibility\":\"public\"}},\"tweets\":{\"504032379045179393\":{\"contributors\":null,\"coordinates\":null,\"created_at\":\"MonAug2522:27:38+00002014\",\"entities\":{\"hashtags\":[],\"media\":[{\"display_url\":\"pic.twitter.com/HtdvV0bPEu\",\"expanded_url\":\"http://twitter.com/Interior/status/504032379045179393/photo/1\",\"id\":504032378411446273,\"id_str\":\"504032378411446273\",\"indices\":[99,121],\"media_url\":\"http://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"media_url_https\":\"https://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"sizes\":{\"large\":{\"h\":695,\"resize\":\"fit\",\"w\":1024},\"medium\":{\"h\":407,\"resize\":\"fit\",\"w\":600},\"small\":{\"h\":230,\"resize\":\"fit\",\"w\":340},\"thumb\":{\"h\":150,\"resize\":\"crop\",\"w\":150}},\"type\":\"photo\",\"url\":\"http://t.co/HtdvV0bPEu\"}],\"symbols\":[],\"urls\":[],\"user_mentions\":[{\"id\":66453289,\"id_str\":\"66453289\",\"indices\":[47,60],\"name\":\"LakeClarkNP&P\",\"screen_name\":\"LakeClarkNPS\"}]},\"extended_entities\":{\"media\":[{\"display_url\":\"pic.twitter.com/HtdvV0bPEu\",\"expanded_url\":\"http://twitter.com/Interior/status/504032379045179393/photo/1\",\"id\":504032378411446273,\"id_str\":\"504032378411446273\",\"indices\":[99,121],\"media_url\":\"http://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"media_url_https\":\"https://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"sizes\":{\"large\":{\"h\":695,\"resize\":\"fit\",\"w\":1024},\"medium\":{\"h\":407,\"resize\":\"fit\",\"w\":600},\"small\":{\"h\":230,\"resize\":\"fit\",\"w\":340},\"thumb\":{\"h\":150,\"resize\":\"crop\",\"w\":150}},\"type\":\"photo\",\"url\":\"http://t.co/HtdvV0bPEu\"}]},\"favorite_count\":639,\"favorited\":false,\"geo\":null,\"id\":504032379045179393,\"id_str\":\"504032379045179393\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"is_quote_status\":false,\"lang\":\"en\",\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":606,\"retweeted\":false,\"source\":\"TwitterforiPhone\",\"text\":\"Howaboutagrizzlybearwavingforthecamera@LakeClarkNPStoendtheday?Photo:KevinDietrichhttp://t.co/HtdvV0bPEu\",\"truncated\":false,\"user\":{\"id\":76348185,\"id_str\":\"76348185\"}}},\"response\":{\"position\":{\"max_position\":\"371578415352947200\",\"min_position\":\"371578380871797248\",\"was_truncated\":false},\"timeline\":[{\"feature_context\":\"HBgGY3VzdG9tFoCAktzo1NL8DgAA\",\"tweet\":{\"id\":\"504032379045179393\",\"sort_index\":\"371578415352947200\"}},{\"feature_context\":\"HBgGY3VzdG9tFoCAktzo1NL8DgAA\",\"tweet\":{\"id\":\"532654992071852032\",\"sort_index\":\"371578393139797760\"}},{\"feature_context\":\"HBgGY3VzdG9tFoCAktzo1NL8DgAA\",\"tweet\":{\"id\":\"524573263163572224\",\"sort_index\":\"371578380871797248\"}}],\"timeline_id\":\"custom-539487832448843776\"}}"
+            "example": "{\"objects\":{\"timelines\":{\"custom-539487832448843776\":{\"collection_type\":\"user\",\"collection_url\":\"https://twitter.com/TwitterDev/timelines/539487832448843776\",\"description\":\"AcollectionofTweetsaboutNationalParksintheUnitedStates.\",\"name\":\"NationalParkTweets\",\"timeline_order\":\"curation_reverse_chron\",\"url\":\"\",\"user_id\":\"2244994945\",\"visibility\":\"public\"}},\"tweets\":{\"504032379045179393\":{\"contributors\":null,\"coordinates\":null,\"created_at\":\"MonAug2522:27:38+00002014\",\"entities\":{\"hashtags\":[],\"media\":[{\"display_url\":\"pic.twitter.com/HtdvV0bPEu\",\"expanded_url\":\"http://twitter.com/Interior/status/504032379045179393/photo/1\",\"id\":504032378411446273,\"id_str\":\"504032378411446273\",\"indices\":[99,121],\"media_url\":\"http://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"media_url_https\":\"https://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"sizes\":{\"large\":{\"h\":695,\"resize\":\"fit\",\"w\":1024},\"medium\":{\"h\":407,\"resize\":\"fit\",\"w\":600},\"small\":{\"h\":230,\"resize\":\"fit\",\"w\":340},\"thumb\":{\"h\":150,\"resize\":\"crop\",\"w\":150}},\"type\":\"photo\",\"url\":\"http://t.co/HtdvV0bPEu\"}],\"symbols\":[],\"urls\":[],\"user_mentions\":[{\"id\":66453289,\"id_str\":\"66453289\",\"indices\":[47,60],\"name\":\"LakeClarkNP&P\",\"screen_name\":\"LakeClarkNPS\"}]},\"extended_entities\":{\"media\":[{\"display_url\":\"pic.twitter.com/HtdvV0bPEu\",\"expanded_url\":\"http://twitter.com/Interior/status/504032379045179393/photo/1\",\"id\":504032378411446273,\"id_str\":\"504032378411446273\",\"indices\":[99,121],\"media_url\":\"http://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"media_url_https\":\"https://pbs.twimg.com/media/Bv6uxxaCcAEjWHD.jpg\",\"sizes\":{\"large\":{\"h\":695,\"resize\":\"fit\",\"w\":1024},\"medium\":{\"h\":407,\"resize\":\"fit\",\"w\":600},\"small\":{\"h\":230,\"resize\":\"fit\",\"w\":340},\"thumb\":{\"h\":150,\"resize\":\"crop\",\"w\":150}},\"type\":\"photo\",\"url\":\"http://t.co/HtdvV0bPEu\"}]},\"favorite_count\":639,\"favorited\":false,\"geo\":null,\"id\":504032379045179393,\"id_str\":\"504032379045179393\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"is_quote_status\":false,\"lang\":\"en\",\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":606,\"retweeted\":false,\"source\":\"TwitterforiPhone\",\"text\":\"Howaboutagrizzlybearwavingforthecamera@LakeClarkNPStoendtheday?Photo:KevinDietrichhttp://t.co/HtdvV0bPEu\",\"truncated\":false,\"user\":{\"id\":76348185,\"id_str\":\"76348185\"}}},\"response\":{\"position\":{\"max_position\":\"371578415352947200\",\"min_position\":\"371578380871797248\",\"was_truncated\":false},\"timeline\":[{\"feature_context\":\"HBgGY3VzdG9tFoCAktzo1NL8DgAA\",\"tweet\":{\"id\":\"504032379045179393\",\"sort_index\":\"371578415352947200\"}},{\"feature_context\":\"HBgGY3VzdG9tFoCAktzo1NL8DgAA\",\"tweet\":{\"id\":\"532654992071852032\",\"sort_index\":\"371578393139797760\"}},{\"feature_context\":\"HBgGY3VzdG9tFoCAktzo1NL8DgAA\",\"tweet\":{\"id\":\"524573263163572224\",\"sort_index\":\"371578380871797248\"}}],\"timeline_id\":\"custom-539487832448843776\"}}",
+            "schema": {
+              "$ref": "#/definitions/Entries"
+            }
           }
         }
       }
     },
     "/1.1/saved_searches/destroy/:id": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/saved_searches/destroy/62353170.json",
         "parameters": [
           {
             "in": "path",
@@ -5054,13 +5193,12 @@
     },
     "/1.1/lists/memberships": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/memberships.json?screen_name=twitter&cursor=-1",
         "responses": {
           "200": {
             "description": "correct response",
             "example": {
               "previous_cursor": 0,
-              "next_cursor": 1373407125131783107,
+              "next_cursor": 1373407125131783200,
               "lists": [
                 {
                   "mode": "public",
@@ -5162,6 +5300,9 @@
               ],
               "previous_cursor_str": "0",
               "next_cursor_str": "1373407125131783107"
+            },
+            "schema": {
+              "$ref": "#/definitions/Memberships"
             }
           }
         },
@@ -5236,7 +5377,7 @@
                   },
                   "id_str": "250075927172759552",
                   "text": "AggressivePonytail#freebandnames",
-                  "id": 250075927172759552,
+                  "id": 250075927172759550,
                   "user": {
                     "utc_offset": -28800,
                     "friends_count": 110,
@@ -5397,7 +5538,7 @@
                   },
                   "id_str": "249289491129438208",
                   "text": "MexicanHeaven,MexicanHell#freebandnames",
-                  "id": 249289491129438208,
+                  "id": 249289491129438200,
                   "user": {
                     "utc_offset": -18000,
                     "friends_count": 63,
@@ -5477,7 +5618,7 @@
                   },
                   "id_str": "249279667666817024",
                   "text": "TheFoolishMortals#freebandnames",
-                  "id": 249279667666817024,
+                  "id": 249279667666817020,
                   "user": {
                     "utc_offset": -21600,
                     "friends_count": 249,
@@ -5540,11 +5681,14 @@
                 "max_id_str": "250126199840518145",
                 "query": "%23freebandnames",
                 "count": 4,
-                "max_id": 250126199840518145,
+                "max_id": 250126199840518140,
                 "since_id": 24012619984051000,
                 "refresh_url": "?since_id=250126199840518145&q=%23freebandnames&result_type=mixed&include_entities=1",
                 "completed_in": 0.035
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Tweets"
             }
           }
         }
@@ -5562,7 +5706,6 @@
     },
     "/1.1/lists/subscribers/create": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/lists/subscribers/create.json?slug=team&owner_screen_name=twitter",
         "responses": {
           "200": {
             "description": "correct response",
@@ -5626,6 +5769,9 @@
                 "notifications": false
               },
               "slug": "team"
+            },
+            "schema": {
+              "$ref": "#/definitions/Create"
             }
           }
         },
@@ -5663,7 +5809,6 @@
     },
     "/1.1/statuses/destroy/:id": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/statuses/destroy/240854986559455234.json",
         "parameters": [
           {
             "in": "path",
@@ -5693,6 +5838,9 @@
                 "welcome_message_id": "844385345234",
                 "id": "9910934913490319"
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Show"
             }
           }
         },
@@ -5715,14 +5863,16 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "[{\"coordinates\":null,\"truncated\":false,\"created_at\":\"TueAug2821:16:23+00002012\",\"favorited\":false,\"id_str\":\"240558470661799936\",\"in_reply_to_user_id_str\":null,\"entities\":{\"urls\":[],\"hashtags\":[],\"user_mentions\":[]},\"text\":\"justanothertest\",\"contributors\":null,\"id\":240558470661799936,\"retweet_count\":0,\"in_reply_to_status_id_str\":null,\"geo\":null,\"retweeted\":false,\"in_reply_to_user_id\":null,\"place\":null,\"source\":\"OAuthDancerReborn\",\"user\":{\"name\":\"OAuthDancer\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_background_tile\":true,\"profile_sidebar_border_color\":\"C0DEED\",\"profile_image_url\":\"http://a0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg\",\"created_at\":\"WedMar0319:37:35+00002010\",\"location\":\"SanFrancisco,CA\",\"follow_request_sent\":false,\"id_str\":\"119476949\",\"is_translator\":false,\"profile_link_color\":\"0084B4\",\"entities\":{\"url\":{\"urls\":[{\"expanded_url\":null,\"url\":\"http://bit.ly/oauth-dancer\",\"indices\":[0,26],\"display_url\":null}]},\"description\":null},\"default_profile\":false,\"url\":\"http://bit.ly/oauth-dancer\",\"contributors_enabled\":false,\"favourites_count\":7,\"utc_offset\":null,\"profile_image_url_https\":\"https://si0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg\",\"id\":119476949,\"listed_count\":1,\"profile_use_background_image\":true,\"profile_text_color\":\"333333\",\"followers_count\":28,\"lang\":\"en\",\"protected\":false,\"geo_enabled\":true,\"notifications\":false,\"description\":\"\",\"profile_background_color\":\"C0DEED\",\"verified\":false,\"time_zone\":null,\"profile_background_image_url_https\":\"https://si0.twimg.com/profile_background_images/80151733/oauth-dance.png\",\"statuses_count\":166,\"profile_background_image_url\":\"http://a0.twimg.com/profile_background_images/80151733/oauth-dance.png\",\"default_profile_image\":false,\"friends_count\":14,\"following\":false,\"show_all_inline_media\":false,\"screen_name\":\"oauth_dancer\"},\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null},{\"coordinates\":{\"coordinates\":[-122.25831,37.871609],\"type\":\"Point\"},\"truncated\":false,\"created_at\":\"TueAug2821:08:15+00002012\",\"favorited\":false,\"id_str\":\"240556426106372096\",\"in_reply_to_user_id_str\":null,\"entities\":{\"urls\":[{\"expanded_url\":\"http://blogs.ischool.berkeley.edu/i290-abdt-s12/\",\"url\":\"http://t.co/bfj7zkDJ\",\"indices\":[79,99],\"display_url\":\"blogs.ischool.berkeley.edu/i290-abdt-s12/\"}],\"hashtags\":[],\"user_mentions\":[{\"name\":\"Cal\",\"id_str\":\"17445752\",\"id\":17445752,\"indices\":[60,64],\"screen_name\":\"Cal\"},{\"name\":\"OthmanLaraki\",\"id_str\":\"20495814\",\"id\":20495814,\"indices\":[70,77],\"screen_name\":\"othman\"}]},\"text\":\"lecturingatthe\"analyzingbigdatawithtwitter\"classat@calwith@othmanhttp://t.co/bfj7zkDJ\",\"contributors\":null,\"id\":240556426106372096,\"retweet_count\":3,\"in_reply_to_status_id_str\":null,\"geo\":{\"coordinates\":[37.871609,-122.25831],\"type\":\"Point\"},\"retweeted\":false,\"possibly_sensitive\":false,\"in_reply_to_user_id\":null,\"place\":{\"name\":\"Berkeley\",\"country_code\":\"US\",\"country\":\"UnitedStates\",\"attributes\":{},\"url\":\"http://api.twitter.com/1/geo/id/5ef5b7f391e30aff.json\",\"id\":\"5ef5b7f391e30aff\",\"bounding_box\":{\"coordinates\":[[[-122.367781,37.835727],[-122.234185,37.835727],[-122.234185,37.905824],[-122.367781,37.905824]]],\"type\":\"Polygon\"},\"full_name\":\"Berkeley,CA\",\"place_type\":\"city\"},\"source\":\"SafarioniOS\",\"user\":{\"name\":\"RaffiKrikorian\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_background_tile\":false,\"profile_sidebar_border_color\":\"C0DEED\",\"profile_image_url\":\"http://a0.twimg.com/profile_images/1270234259/raffi-headshot-casual_normal.png\",\"created_at\":\"SunAug1914:24:06+00002007\",\"location\":\"SanFrancisco,California\",\"follow_request_sent\":false,\"id_str\":\"8285392\",\"is_translator\":false,\"profile_link_color\":\"0084B4\",\"entities\":{\"url\":{\"urls\":[{\"expanded_url\":\"http://about.me/raffi.krikorian\",\"url\":\"http://t.co/eNmnM6q\",\"indices\":[0,19],\"display_url\":\"about.me/raffi.krikorian\"}]},\"description\":{\"urls\":[]}},\"default_profile\":true,\"url\":\"http://t.co/eNmnM6q\",\"contributors_enabled\":false,\"favourites_count\":724,\"utc_offset\":-28800,\"profile_image_url_https\":\"https://si0.twimg.com/profile_images/1270234259/raffi-headshot-casual_normal.png\",\"id\":8285392,\"listed_count\":619,\"profile_use_background_image\":true,\"profile_text_color\":\"333333\",\"followers_count\":18752,\"lang\":\"en\",\"protected\":false,\"geo_enabled\":true,\"notifications\":false,\"description\":\"Directorof@twittereng'sPlatformServices.Ibreakthings.\",\"profile_background_color\":\"C0DEED\",\"verified\":false,\"time_zone\":\"PacificTime(US&Canada)\",\"profile_background_image_url_https\":\"https://si0.twimg.com/images/themes/theme1/bg.png\",\"statuses_count\":5007,\"profile_background_image_url\":\"http://a0.twimg.com/images/themes/theme1/bg.png\",\"default_profile_image\":false,\"friends_count\":701,\"following\":true,\"show_all_inline_media\":true,\"screen_name\":\"raffi\"},\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null},{\"coordinates\":null,\"truncated\":false,\"created_at\":\"TueAug2819:59:34+00002012\",\"favorited\":false,\"id_str\":\"240539141056638977\",\"in_reply_to_user_id_str\":null,\"entities\":{\"urls\":[],\"hashtags\":[],\"user_mentions\":[]},\"text\":\"You'dberightmoreoftenifyouthoughtyouwerewrong.\",\"contributors\":null,\"id\":240539141056638977,\"retweet_count\":1,\"in_reply_to_status_id_str\":null,\"geo\":null,\"retweeted\":false,\"in_reply_to_user_id\":null,\"place\":null,\"source\":\"web\",\"user\":{\"name\":\"TaylorSingletary\",\"profile_sidebar_fill_color\":\"FBFBFB\",\"profile_background_tile\":true,\"profile_sidebar_border_color\":\"000000\",\"profile_image_url\":\"http://a0.twimg.com/profile_images/2546730059/f6a8zq58mg1hn0ha8vie_normal.jpeg\",\"created_at\":\"WedMar0722:23:19+00002007\",\"location\":\"SanFrancisco,CA\",\"follow_request_sent\":false,\"id_str\":\"819797\",\"is_translator\":false,\"profile_link_color\":\"c71818\",\"entities\":{\"url\":{\"urls\":[{\"expanded_url\":\"http://www.rebelmouse.com/episod/\",\"url\":\"http://t.co/Lxw7upbN\",\"indices\":[0,20],\"display_url\":\"rebelmouse.com/episod/\"}]},\"description\":{\"urls\":[]}},\"default_profile\":false,\"url\":\"http://t.co/Lxw7upbN\",\"contributors_enabled\":false,\"favourites_count\":15990,\"utc_offset\":-28800,\"profile_image_url_https\":\"https://si0.twimg.com/profile_images/2546730059/f6a8zq58mg1hn0ha8vie_normal.jpeg\",\"id\":819797,\"listed_count\":340,\"profile_use_background_image\":true,\"profile_text_color\":\"D20909\",\"followers_count\":7126,\"lang\":\"en\",\"protected\":false,\"geo_enabled\":true,\"notifications\":false,\"description\":\"RealityTechnician,TwitterAPIteam,synthesizerenthusiast;amostexcellentadventureintimelines.Iknowit'shardtobelieveinsomethingyoucan'tsee.\",\"profile_background_color\":\"000000\",\"verified\":false,\"time_zone\":\"PacificTime(US&Canada)\",\"profile_background_image_url_https\":\"https://si0.twimg.com/profile_background_images/643655842/hzfv12wini4q60zzrthg.png\",\"statuses_count\":18076,\"profile_background_image_url\":\"http://a0.twimg.com/profile_background_images/643655842/hzfv12wini4q60zzrthg.png\",\"default_profile_image\":false,\"friends_count\":5444,\"following\":true,\"show_all_inline_media\":true,\"screen_name\":\"episod\"},\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null}]"
+            "example": "[{\"coordinates\":null,\"truncated\":false,\"created_at\":\"TueAug2821:16:23+00002012\",\"favorited\":false,\"id_str\":\"240558470661799936\",\"in_reply_to_user_id_str\":null,\"entities\":{\"urls\":[],\"hashtags\":[],\"user_mentions\":[]},\"text\":\"justanothertest\",\"contributors\":null,\"id\":240558470661799936,\"retweet_count\":0,\"in_reply_to_status_id_str\":null,\"geo\":null,\"retweeted\":false,\"in_reply_to_user_id\":null,\"place\":null,\"source\":\"OAuthDancerReborn\",\"user\":{\"name\":\"OAuthDancer\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_background_tile\":true,\"profile_sidebar_border_color\":\"C0DEED\",\"profile_image_url\":\"http://a0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg\",\"created_at\":\"WedMar0319:37:35+00002010\",\"location\":\"SanFrancisco,CA\",\"follow_request_sent\":false,\"id_str\":\"119476949\",\"is_translator\":false,\"profile_link_color\":\"0084B4\",\"entities\":{\"url\":{\"urls\":[{\"expanded_url\":null,\"url\":\"http://bit.ly/oauth-dancer\",\"indices\":[0,26],\"display_url\":null}]},\"description\":null},\"default_profile\":false,\"url\":\"http://bit.ly/oauth-dancer\",\"contributors_enabled\":false,\"favourites_count\":7,\"utc_offset\":null,\"profile_image_url_https\":\"https://si0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg\",\"id\":119476949,\"listed_count\":1,\"profile_use_background_image\":true,\"profile_text_color\":\"333333\",\"followers_count\":28,\"lang\":\"en\",\"protected\":false,\"geo_enabled\":true,\"notifications\":false,\"description\":\"\",\"profile_background_color\":\"C0DEED\",\"verified\":false,\"time_zone\":null,\"profile_background_image_url_https\":\"https://si0.twimg.com/profile_background_images/80151733/oauth-dance.png\",\"statuses_count\":166,\"profile_background_image_url\":\"http://a0.twimg.com/profile_background_images/80151733/oauth-dance.png\",\"default_profile_image\":false,\"friends_count\":14,\"following\":false,\"show_all_inline_media\":false,\"screen_name\":\"oauth_dancer\"},\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null},{\"coordinates\":{\"coordinates\":[-122.25831,37.871609],\"type\":\"Point\"},\"truncated\":false,\"created_at\":\"TueAug2821:08:15+00002012\",\"favorited\":false,\"id_str\":\"240556426106372096\",\"in_reply_to_user_id_str\":null,\"entities\":{\"urls\":[{\"expanded_url\":\"http://blogs.ischool.berkeley.edu/i290-abdt-s12/\",\"url\":\"http://t.co/bfj7zkDJ\",\"indices\":[79,99],\"display_url\":\"blogs.ischool.berkeley.edu/i290-abdt-s12/\"}],\"hashtags\":[],\"user_mentions\":[{\"name\":\"Cal\",\"id_str\":\"17445752\",\"id\":17445752,\"indices\":[60,64],\"screen_name\":\"Cal\"},{\"name\":\"OthmanLaraki\",\"id_str\":\"20495814\",\"id\":20495814,\"indices\":[70,77],\"screen_name\":\"othman\"}]},\"text\":\"lecturingatthe\"analyzingbigdatawithtwitter\"classat@calwith@othmanhttp://t.co/bfj7zkDJ\",\"contributors\":null,\"id\":240556426106372096,\"retweet_count\":3,\"in_reply_to_status_id_str\":null,\"geo\":{\"coordinates\":[37.871609,-122.25831],\"type\":\"Point\"},\"retweeted\":false,\"possibly_sensitive\":false,\"in_reply_to_user_id\":null,\"place\":{\"name\":\"Berkeley\",\"country_code\":\"US\",\"country\":\"UnitedStates\",\"attributes\":{},\"url\":\"http://api.twitter.com/1/geo/id/5ef5b7f391e30aff.json\",\"id\":\"5ef5b7f391e30aff\",\"bounding_box\":{\"coordinates\":[[[-122.367781,37.835727],[-122.234185,37.835727],[-122.234185,37.905824],[-122.367781,37.905824]]],\"type\":\"Polygon\"},\"full_name\":\"Berkeley,CA\",\"place_type\":\"city\"},\"source\":\"SafarioniOS\",\"user\":{\"name\":\"RaffiKrikorian\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_background_tile\":false,\"profile_sidebar_border_color\":\"C0DEED\",\"profile_image_url\":\"http://a0.twimg.com/profile_images/1270234259/raffi-headshot-casual_normal.png\",\"created_at\":\"SunAug1914:24:06+00002007\",\"location\":\"SanFrancisco,California\",\"follow_request_sent\":false,\"id_str\":\"8285392\",\"is_translator\":false,\"profile_link_color\":\"0084B4\",\"entities\":{\"url\":{\"urls\":[{\"expanded_url\":\"http://about.me/raffi.krikorian\",\"url\":\"http://t.co/eNmnM6q\",\"indices\":[0,19],\"display_url\":\"about.me/raffi.krikorian\"}]},\"description\":{\"urls\":[]}},\"default_profile\":true,\"url\":\"http://t.co/eNmnM6q\",\"contributors_enabled\":false,\"favourites_count\":724,\"utc_offset\":-28800,\"profile_image_url_https\":\"https://si0.twimg.com/profile_images/1270234259/raffi-headshot-casual_normal.png\",\"id\":8285392,\"listed_count\":619,\"profile_use_background_image\":true,\"profile_text_color\":\"333333\",\"followers_count\":18752,\"lang\":\"en\",\"protected\":false,\"geo_enabled\":true,\"notifications\":false,\"description\":\"Directorof@twittereng'sPlatformServices.Ibreakthings.\",\"profile_background_color\":\"C0DEED\",\"verified\":false,\"time_zone\":\"PacificTime(US&Canada)\",\"profile_background_image_url_https\":\"https://si0.twimg.com/images/themes/theme1/bg.png\",\"statuses_count\":5007,\"profile_background_image_url\":\"http://a0.twimg.com/images/themes/theme1/bg.png\",\"default_profile_image\":false,\"friends_count\":701,\"following\":true,\"show_all_inline_media\":true,\"screen_name\":\"raffi\"},\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null},{\"coordinates\":null,\"truncated\":false,\"created_at\":\"TueAug2819:59:34+00002012\",\"favorited\":false,\"id_str\":\"240539141056638977\",\"in_reply_to_user_id_str\":null,\"entities\":{\"urls\":[],\"hashtags\":[],\"user_mentions\":[]},\"text\":\"You'dberightmoreoftenifyouthoughtyouwerewrong.\",\"contributors\":null,\"id\":240539141056638977,\"retweet_count\":1,\"in_reply_to_status_id_str\":null,\"geo\":null,\"retweeted\":false,\"in_reply_to_user_id\":null,\"place\":null,\"source\":\"web\",\"user\":{\"name\":\"TaylorSingletary\",\"profile_sidebar_fill_color\":\"FBFBFB\",\"profile_background_tile\":true,\"profile_sidebar_border_color\":\"000000\",\"profile_image_url\":\"http://a0.twimg.com/profile_images/2546730059/f6a8zq58mg1hn0ha8vie_normal.jpeg\",\"created_at\":\"WedMar0722:23:19+00002007\",\"location\":\"SanFrancisco,CA\",\"follow_request_sent\":false,\"id_str\":\"819797\",\"is_translator\":false,\"profile_link_color\":\"c71818\",\"entities\":{\"url\":{\"urls\":[{\"expanded_url\":\"http://www.rebelmouse.com/episod/\",\"url\":\"http://t.co/Lxw7upbN\",\"indices\":[0,20],\"display_url\":\"rebelmouse.com/episod/\"}]},\"description\":{\"urls\":[]}},\"default_profile\":false,\"url\":\"http://t.co/Lxw7upbN\",\"contributors_enabled\":false,\"favourites_count\":15990,\"utc_offset\":-28800,\"profile_image_url_https\":\"https://si0.twimg.com/profile_images/2546730059/f6a8zq58mg1hn0ha8vie_normal.jpeg\",\"id\":819797,\"listed_count\":340,\"profile_use_background_image\":true,\"profile_text_color\":\"D20909\",\"followers_count\":7126,\"lang\":\"en\",\"protected\":false,\"geo_enabled\":true,\"notifications\":false,\"description\":\"RealityTechnician,TwitterAPIteam,synthesizerenthusiast;amostexcellentadventureintimelines.Iknowit'shardtobelieveinsomethingyoucan'tsee.\",\"profile_background_color\":\"000000\",\"verified\":false,\"time_zone\":\"PacificTime(US&Canada)\",\"profile_background_image_url_https\":\"https://si0.twimg.com/profile_background_images/643655842/hzfv12wini4q60zzrthg.png\",\"statuses_count\":18076,\"profile_background_image_url\":\"http://a0.twimg.com/profile_background_images/643655842/hzfv12wini4q60zzrthg.png\",\"default_profile_image\":false,\"friends_count\":5444,\"following\":true,\"show_all_inline_media\":true,\"screen_name\":\"episod\"},\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null}]",
+            "schema": {
+              "$ref": "#/definitions/Statuses"
+            }
           }
         }
       }
     },
     "/1.1/lists/members/show": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/members/show.json?slug=team&owner_screen_name=twitter&screen_name=frog",
         "responses": {
           "200": {
             "description": "correct response",
@@ -5835,6 +5985,9 @@
                 "text": "@MyVO5makesureyouconfigureyourdomaincorrectly,http://t.co/GtBxX0IWisnotthesameashttp://t.co/2E5hDjME(also,refreshcache).",
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Show"
             }
           }
         },
@@ -5915,7 +6068,7 @@
                 "user_mentions": []
               },
               "id_str": "243138128959913986",
-              "id": 243138128959913986,
+              "id": 243138128959914000,
               "text": "ThatfeelwhenyouaccidentallytypeBashcommandsintoCampfire,andyoualsomakeatypointhem.",
               "user": {
                 "utc_offset": -18000,
@@ -5974,6 +6127,9 @@
                 "notifications": false
               },
               "favorited": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Destroy"
             }
           }
         }
@@ -5981,7 +6137,6 @@
     },
     "/1.1/friendships/update": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/friendships/update.json?user_id=1401881&device=true",
         "parameters": [
           {
             "in": "query",
@@ -6040,6 +6195,9 @@
                   "id": 1401881
                 }
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Update"
             }
           }
         }
@@ -6139,10 +6297,13 @@
                 "notifications": false
               },
               "created_at": "TueAug2800:59:49+00002012",
-              "id": 240252311455277056,
+              "id": 240252311455277060,
               "text": "hello,tworld.welcometo1.1.",
               "sender_id": 776627022,
               "recipient_id": 38895958
+            },
+            "schema": {
+              "$ref": "#/definitions/New"
             }
           }
         }
@@ -6150,13 +6311,12 @@
     },
     "/1.1/lists/subscribers": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/subscribers.json?include_entities=true&cursor=-1&skip_status=true&slug",
         "responses": {
           "200": {
             "description": "correct response",
             "example": {
               "previous_cursor": 0,
-              "next_cursor": 1357643166637635702,
+              "next_cursor": 1357643166637635600,
               "previous_cursor_str": "0",
               "next_cursor_str": "1357643166637635702",
               "users": [
@@ -6236,6 +6396,9 @@
                   "notifications": false
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/Subscribers"
             }
           }
         },
@@ -6307,14 +6470,16 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "{\"event\":{\"type\":\"message_create\",\"id\":\"1234858585\",\"created_timestamp\":\"1392078023507\",\"message_create\":{\"target\":{\"recipient_id\":\"844385345234\"},\"sender_id\":\"1241124\",\"message_data\":{\"text\":\"HelloWorld!\",\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[],\"user_mentions\":[]},\"quick_reply\":{...},\"attachment\":{\"type\":\"media\",\"media\":{...}}}}}}"
+            "example": "{\"event\":{\"type\":\"message_create\",\"id\":\"1234858585\",\"created_timestamp\":\"1392078023507\",\"message_create\":{\"target\":{\"recipient_id\":\"844385345234\"},\"sender_id\":\"1241124\",\"message_data\":{\"text\":\"HelloWorld!\",\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[],\"user_mentions\":[]},\"quick_reply\":{...},\"attachment\":{\"type\":\"media\",\"media\":{...}}}}}}",
+            "schema": {
+              "$ref": "#/definitions/New"
+            }
           }
         }
       }
     },
     "/1.1/friendships/no_retweets/ids": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/friendships/no_retweets/ids.json?stringify_ids=true",
         "parameters": [
           {
             "in": "query",
@@ -6332,14 +6497,19 @@
             "example": [
               "777925",
               "732321"
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Ids"
+              }
+            }
           }
         }
       }
     },
     "/1.1/users/suggestions/:slug": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/users/suggestions/twitter.json",
         "parameters": [
           {
             "in": "path",
@@ -6549,7 +6719,7 @@
                       "id_str": "239844310986653696",
                       "expanded_url": "http://twitter.com/dougw/status/239844310982459392/photo/1",
                       "media_url_https": "https://p.twimg.com/A1QZIU3CAAAnCkS.jpg",
-                      "id": 239844310986653696,
+                      "id": 239844310986653700,
                       "type": "photo",
                       "media_url": "http://p.twimg.com/A1QZIU3CAAAnCkS.jpg",
                       "url": "http://t.co/1uG4mhaB"
@@ -6559,9 +6729,12 @@
                 },
                 "id_str": "239844310982459392",
                 "text": "WarmdaybytheBay.Watchingboatssailby.http://t.co/1uG4mhaB",
-                "id": 239844310982459392,
+                "id": 239844310982459400,
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Create"
             }
           }
         }
@@ -6569,7 +6742,6 @@
     },
     "/1.1/lists/show": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/show.json?slug=team&owner_screen_name=twitter",
         "responses": {
           "200": {
             "description": "correct response",
@@ -6633,6 +6805,9 @@
                 "notifications": false
               },
               "slug": "team"
+            },
+            "schema": {
+              "$ref": "#/definitions/Show"
             }
           }
         },
@@ -6670,7 +6845,6 @@
     },
     "/1.1/blocks/destroy": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/blocks/destroy.json?screen_name=theSeanCook&skip_status=1",
         "responses": {
           "200": {
             "description": "correct response",
@@ -6717,6 +6891,9 @@
               "location": "SanFrancisco",
               "profile_sidebar_fill_color": "252429",
               "notifications": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Destroy"
             }
           }
         },
@@ -6847,12 +7024,18 @@
                   "notifications": false
                 },
                 "created_at": "TueAug2800:40:56+00002012",
-                "id": 240247560269340673,
+                "id": 240247560269340670,
                 "text": "Meetmebehindthecafeteriaafterschool.",
                 "sender_id": 776627022,
                 "recipient_id": 38895958
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Sent"
+              }
+            }
           }
         }
       }
@@ -6870,8 +7053,11 @@
               },
               "size": 11065,
               "media_id_string": "710511363345354753",
-              "media_id": 710511363345354753,
+              "media_id": 710511363345354800,
               "expires_after_secs": 86400
+            },
+            "schema": {
+              "$ref": "#/definitions/Upload"
             }
           }
         },
@@ -6903,13 +7089,12 @@
     },
     "/1.1/lists/subscriptions": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/subscriptions.json?cursor=-1&screen_name=episod&count=5",
         "responses": {
           "200": {
             "description": "correct response",
             "example": {
               "previous_cursor": 0,
-              "next_cursor": 1364811190668631091,
+              "next_cursor": 1364811190668631000,
               "lists": [
                 {
                   "created_at": "MonOct0302:48:07+00002011",
@@ -7190,6 +7375,9 @@
               ],
               "previous_cursor_str": "0",
               "next_cursor_str": "1364811190668631091"
+            },
+            "schema": {
+              "$ref": "#/definitions/Subscriptions"
             }
           }
         },
@@ -7230,7 +7418,6 @@
     },
     "/1.1/statuses/retweets_of_me": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/statuses/retweets_of_me.json?count=50&since_id=259320959964680190&max_id=259",
         "responses": {
           "200": {
             "description": "correct response",
@@ -7248,7 +7435,7 @@
                 },
                 "id_str": "259320959964680192",
                 "text": "It'sbringyourmigrainetoworkdaytoday!",
-                "id": 259320959964680192,
+                "id": 259320959964680200,
                 "user": {
                   "utc_offset": -28800,
                   "friends_count": 5549,
@@ -7309,7 +7496,13 @@
                 },
                 "favorited": false
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Statuses"
+              }
+            }
           }
         },
         "parameters": [
@@ -7411,6 +7604,9 @@
                   "url": "https://pbs.twimg.com/profile_banners/6253282/1347394302/300x100"
                 }
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Users"
             }
           }
         }
@@ -7418,7 +7614,6 @@
     },
     "/1.1/friendships/show": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/friendships/show.json?source_screen_name=bert&target_screen_name=ernie",
         "responses": {
           "200": {
             "description": "correct response",
@@ -7440,6 +7635,9 @@
                   "id": 12148
                 }
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Show"
             }
           }
         },
@@ -7480,7 +7678,6 @@
     },
     "/1.1/lists/subscribers/show": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/subscribers/show.json?slug=team&owner_screen_name=twitter&screen_name=",
         "responses": {
           "200": {
             "description": "correct response",
@@ -7569,6 +7766,9 @@
                 "text": "Currentstatushttp://t.co/4mdAn0tF",
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Show"
             }
           }
         },
@@ -7675,7 +7875,7 @@
               "profile_sidebar_fill_color": "252429",
               "status": {
                 "in_reply_to_status_id_str": "240316959173009410",
-                "in_reply_to_status_id": 240316959173009410,
+                "in_reply_to_status_id": 240316959173009400,
                 "coordinates": {
                   "coordinates": [
                     -122.45037293,
@@ -7699,7 +7899,7 @@
                 "in_reply_to_screen_name": "messl",
                 "id_str": "240323931419062272",
                 "in_reply_to_user_id": 18707866,
-                "id": 240323931419062272,
+                "id": 240323931419062270,
                 "place": {
                   "country": "UnitedStates",
                   "country_code": "US",
@@ -7736,6 +7936,9 @@
                 "text": "@messlcongrats!Sohappyforall3ofyou.",
                 "favorited": false
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Account"
             }
           }
         }
@@ -7743,7 +7946,6 @@
     },
     "/1.1/statuses/lookup": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/statuses/lookup.json?id=20,432656548536401920",
         "parameters": [
           {
             "in": "query",
@@ -7876,7 +8078,7 @@
                 },
                 "id_str": "432656548536401920",
                 "favorite_count": 5,
-                "id": 432656548536401920,
+                "id": 432656548536401900,
                 "text": "POSTstatuses/update.Greatwaytostart.https://t.co/9S8YO69xzf(disclaimer,thiswasnotpostedviatheAPI).",
                 "lang": "en",
                 "user": {
@@ -7940,7 +8142,13 @@
                 },
                 "favorited": false
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Lookup"
+              }
+            }
           }
         }
       }
@@ -8010,12 +8218,14 @@
               "location": "SanFrancisco,CA",
               "profile_sidebar_fill_color": "000000",
               "notifications": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Account"
             }
           }
         }
       },
       "GET": {
-        "request": "https://api.twitter.com/1.1/account/update_profile_image.json?image=ABCDEFGH...",
         "parameters": [
           {
             "in": "path",
@@ -8043,7 +8253,6 @@
     },
     "/1.1/lists/list": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/lists/list.json?screen_name=twitterapi",
         "responses": {
           "200": {
             "description": "correct response",
@@ -8156,7 +8365,13 @@
                 },
                 "slug": "team"
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/List"
+              }
+            }
           }
         },
         "parameters": [
@@ -8186,7 +8401,6 @@
     },
     "/1.1/friendships/outgoing": {
       "GET": {
-        "request": "https://api.twitter.com/1.1/friendships/outgoing.json",
         "responses": {
           "200": {
             "description": "correct response",
@@ -8210,6 +8424,9 @@
                 81269257
               ],
               "next_cursor_str": "0"
+            },
+            "schema": {
+              "$ref": "#/definitions/Outgoing"
             }
           }
         },
@@ -8252,7 +8469,10 @@
         "responses": {
           "200": {
             "description": "correct response",
-            "example": "{\"event\":\"id\":\"110\",\"created_timestamp\":\"5300\",\"type\":\"message_create\",\"message_create\":{...}}}"
+            "example": "{\"event\":\"id\":\"110\",\"created_timestamp\":\"5300\",\"type\":\"message_create\",\"message_create\":{...}}}",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
           }
         },
         "parameters": [
@@ -8268,7 +8488,6 @@
     },
     "/1.1/lists/members/create": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/lists/members/create.json?slug=team&owner_screen_name=twitter&screen_name=ku",
         "parameters": [
           {
             "in": "query",
@@ -8320,7 +8539,6 @@
     },
     "//data-api.twitter.com/insights/engagement/28hr": {
       "POST": {
-        "request": "https://data-api.twitter.com/insights/engagement/28hr\"",
         "responses": {
           "200": {
             "description": "correct response",
@@ -8329,78 +8547,81 @@
                 "123456789": {
                   "engagements": {
                     "2015-09-15": {
-                      "00": "0",
-                      "11": "0",
-                      "01": "0",
-                      "12": "0",
-                      "02": "0",
-                      "13": "0",
-                      "03": "0",
-                      "14": "0",
-                      "04": "0",
-                      "15": "0",
-                      "05": "0",
-                      "16": "0",
-                      "06": "0",
-                      "17": "0",
-                      "07": "0",
-                      "18": "0",
-                      "08": "0",
-                      "19": "0",
-                      "09": "0",
-                      "20": "0",
                       "10": "0",
-                      "21": "0"
+                      "11": "0",
+                      "12": "0",
+                      "13": "0",
+                      "14": "0",
+                      "15": "0",
+                      "16": "0",
+                      "17": "0",
+                      "18": "0",
+                      "19": "0",
+                      "20": "0",
+                      "21": "0",
+                      "00": "0",
+                      "01": "0",
+                      "02": "0",
+                      "03": "0",
+                      "04": "0",
+                      "05": "0",
+                      "06": "0",
+                      "07": "0",
+                      "08": "0",
+                      "09": "0"
                     },
                     "2015-09-14": {
-                      "22": "0",
-                      "23": "0",
                       "17": "0",
                       "18": "0",
                       "19": "0",
                       "20": "0",
-                      "21": "0"
+                      "21": "0",
+                      "22": "0",
+                      "23": "0"
                     }
                   },
                   "impressions": {
                     "2015-09-15": {
-                      "00": "5",
-                      "11": "0",
-                      "01": "2",
-                      "12": "0",
-                      "02": "7",
-                      "13": "0",
-                      "03": "3",
-                      "14": "0",
-                      "04": "1",
-                      "15": "0",
-                      "05": "0",
-                      "16": "0",
-                      "06": "0",
-                      "17": "0",
-                      "07": "0",
-                      "18": "0",
-                      "08": "0",
-                      "19": "0",
-                      "09": "0",
-                      "20": "0",
                       "10": "0",
-                      "21": "0"
+                      "11": "0",
+                      "12": "0",
+                      "13": "0",
+                      "14": "0",
+                      "15": "0",
+                      "16": "0",
+                      "17": "0",
+                      "18": "0",
+                      "19": "0",
+                      "20": "0",
+                      "21": "0",
+                      "00": "5",
+                      "01": "2",
+                      "02": "7",
+                      "03": "3",
+                      "04": "1",
+                      "05": "0",
+                      "06": "0",
+                      "07": "0",
+                      "08": "0",
+                      "09": "0"
                     },
                     "2015-09-14": {
-                      "22": "19",
-                      "23": "6",
                       "17": "551",
                       "18": "412",
                       "19": "371",
                       "20": "280",
-                      "21": "100"
+                      "21": "100",
+                      "22": "19",
+                      "23": "6"
                     }
                   }
                 }
               },
               "start": "2015-09-14T17:00:00Z",
               "end": "2015-09-15T22:00:00Z"
+            },
+            "schema": {
+              "$ref": "#/definitions/Engagement"
             }
           }
         }
@@ -8777,6 +8998,9 @@
                 "type": "search",
                 "url": "https://api.twitter.com/1.1/geo/search.json?accuracy=0&query=Toronto&granularity=neighborhood&autocomplete=false&trim_place=false"
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Search"
             }
           }
         }
@@ -8883,7 +9107,7 @@
                   },
                   "id_str": "316721175038406658",
                   "text": "Incaseyoudidn'tknow,wehaveanofficialaccounttweetingaboutTwitterdevelopertopicsinJapanese:@TwitterDevJP",
-                  "id": 316721175038406658,
+                  "id": 316721175038406660,
                   "favorited": false
                 }
               },
@@ -8954,7 +9178,7 @@
                   },
                   "id_str": "314359633311588355",
                   "text": "BeelinesubscribersinArmeniacannowsendandreceiveTweetsviaSMS.BeginbysendingSTARTto40404.WelcometoTwitter!",
-                  "id": 314359633311588355,
+                  "id": 314359633311588350,
                   "favorited": false
                 }
               },
@@ -9041,7 +9265,7 @@
                     },
                     "id_str": "312155480858431488",
                     "text": "OuruseoftheFlightJavaScriptframeworkinTweetDeckhttp://t.co/G9sRrGHgJY",
-                    "id": 312155480858431488,
+                    "id": 312155480858431500,
                     "favorited": false
                   },
                   "retweet_count": 100,
@@ -9074,11 +9298,17 @@
                   },
                   "id_str": "313708997167419393",
                   "text": "RT@TweetDeck:OuruseoftheFlightJavaScriptframeworkinTweetDeckhttp://t.co/G9sRrGHgJY",
-                  "id": 313708997167419393,
+                  "id": 313708997167419400,
                   "favorited": false
                 }
               }
-            ]
+            ],
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Search"
+              }
+            }
           }
         }
       }
@@ -9123,7 +9353,7 @@
                 14927800
               ],
               "text": "Alongwithournew#Twitterbird,we'vealsoupdatedourDisplayGuidelines:https://t.co/Ed4omjYs^JC",
-              "id": 210462857140252672,
+              "id": 210462857140252670,
               "user": {
                 "utc_offset": -28800,
                 "friends_count": 31,
@@ -9180,6 +9410,9 @@
                 "location": "SanFrancisco,CA"
               },
               "favorited": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Show"
             }
           }
         }
@@ -9300,7 +9533,6 @@
     },
     "/1.1/direct_messages/destroy": {
       "POST": {
-        "request": "https://api.twitter.com/1.1/direct_messages/destroy.json?id=240251665733795841",
         "responses": {
           "200": {
             "description": "correct response",
@@ -9393,10 +9625,13 @@
                 "notifications": false
               },
               "created_at": "TueAug2800:57:15+00002012",
-              "id": 240251665733795841,
+              "id": 240251665733795840,
               "text": "hello,tworld.",
               "sender_id": 776627022,
               "recipient_id": 38895958
+            },
+            "schema": {
+              "$ref": "#/definitions/Destroy"
             }
           }
         },
@@ -9517,6 +9752,9 @@
               "location": "SanFrancisco,CA",
               "profile_sidebar_fill_color": "DDFFCC",
               "notifications": false
+            },
+            "schema": {
+              "$ref": "#/definitions/Account"
             }
           }
         }
@@ -9577,7 +9815,7 @@
             "description": "correct response",
             "example": {
               "previous_cursor": 0,
-              "next_cursor": 1333504313713126852,
+              "next_cursor": 1333504313713127000,
               "previous_cursor_str": "0",
               "next_cursor_str": "1333504313713126852",
               "users": [
@@ -10296,6 +10534,9 @@
                   "notifications": false
                 }
               ]
+            },
+            "schema": {
+              "$ref": "#/definitions/List"
             }
           }
         }
@@ -10435,6 +10676,9 @@
               "rate_limit_context": {
                 "access_token": "786491-24zE39NUezJ8UTmOGOtLhgyLgCkPyY4dAcx6NA6sDKw"
               }
+            },
+            "schema": {
+              "$ref": "#/definitions/Application"
             }
           }
         }
@@ -10447,5 +10691,2709 @@
     "https"
   ],
   "swagger": "2.0",
-  "info": "This is the information of the API"
+  "info": "This is the information of the API",
+  "definitions": {
+    "123456789": {
+      "type": "object",
+      "properties": {
+        "favorites": {
+          "type": "string"
+        },
+        "replies": {
+          "type": "string"
+        },
+        "retweets": {
+          "type": "string"
+        },
+        "url_clicks": {
+          "type": "string"
+        },
+        "detail_expands": {
+          "type": "string"
+        },
+        "engagements": {
+          "type": "string"
+        },
+        "impressions": {
+          "type": "string"
+        },
+        "Engagement": {
+          "$ref": "#/definitions/Engagement"
+        },
+        "Impression": {
+          "$ref": "#/definitions/Impression"
+        }
+      }
+    },
+    "223456789": {
+      "type": "object",
+      "properties": {
+        "favorites": {
+          "type": "string"
+        },
+        "replies": {
+          "type": "string"
+        },
+        "retweets": {
+          "type": "string"
+        },
+        "url_clicks": {
+          "type": "string"
+        },
+        "detail_expands": {
+          "type": "string"
+        },
+        "engagements": {
+          "type": "string"
+        },
+        "impressions": {
+          "type": "string"
+        }
+      }
+    },
+    "323456789": {
+      "type": "object",
+      "properties": {
+        "url_clicks": {
+          "type": "string"
+        },
+        "detail_expands": {
+          "type": "string"
+        },
+        "engagements": {
+          "type": "string"
+        },
+        "impressions": {
+          "type": "string"
+        }
+      }
+    },
+    "Unkown": {
+      "type": "object",
+      "properties": {
+        "Request": {
+          "$ref": "#/definitions/Request"
+        },
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Request": {
+      "type": "object",
+      "properties": {
+        "Param": {
+          "$ref": "#/definitions/Param"
+        }
+      }
+    },
+    "Param": {
+      "type": "object",
+      "properties": {
+        "website_dest_url": {
+          "type": "string"
+        },
+        "video_height": {
+          "type": "string"
+        },
+        "video_poster_width": {
+          "type": "string"
+        },
+        "video_width": {
+          "type": "string"
+        },
+        "video_poster_url": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "card_type": {
+          "type": "string"
+        },
+        "website_display_url": {
+          "type": "string"
+        },
+        "content_duration_seconds": {
+          "type": "string"
+        },
+        "video_url": {
+          "type": "string"
+        },
+        "account_id": {
+          "type": "string"
+        },
+        "website_url": {
+          "type": "string"
+        },
+        "video_poster_height": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "video_hls_url": {
+          "type": "string"
+        },
+        "video_owner_id": {
+          "type": "string"
+        },
+        "video_content_id": {
+          "type": "string"
+        },
+        "autocomplete": {
+          "type": "string"
+        },
+        "granularity": {
+          "type": "string"
+        },
+        "trim_place": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "accuracy": {
+          "type": "integer"
+        }
+      }
+    },
+    "Data": {
+      "type": "object",
+      "properties": {
+        "website_dest_url": {
+          "type": "string"
+        },
+        "video_height": {
+          "type": "string"
+        },
+        "video_poster_width": {
+          "type": "string"
+        },
+        "video_width": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "video_poster_url": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "card_type": {
+          "type": "string"
+        },
+        "website_display_url": {
+          "type": "string"
+        },
+        "video_url": {
+          "type": "string"
+        },
+        "account_id": {
+          "type": "string"
+        },
+        "deleted": {
+          "type": "string"
+        },
+        "website_url": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "video_poster_height": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "video_hls_url": {
+          "type": "string"
+        },
+        "card_uri": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "video_owner_id": {
+          "type": "string"
+        },
+        "video_content_id": {
+          "type": "string"
+        }
+      }
+    },
+    "Users": {
+      "type": "object"
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        },
+        "is_translation_enabled": {
+          "type": "string"
+        },
+        "muting": {
+          "type": "string"
+        },
+        "profile_banner_url": {
+          "type": "string"
+        },
+        "/users/show/:id": {
+          "$ref": "#/definitions//users/show/:id"
+        },
+        "/users/profile_banner": {
+          "$ref": "#/definitions//users/profile_banner"
+        },
+        "/users/lookup": {
+          "$ref": "#/definitions//users/lookup"
+        },
+        "/users/contributor": {
+          "$ref": "#/definitions//users/contributor"
+        },
+        "/users/contributee": {
+          "$ref": "#/definitions//users/contributee"
+        },
+        "/users/search": {
+          "$ref": "#/definitions//users/search"
+        },
+        "/users/suggestions/:slug": {
+          "$ref": "#/definitions//users/suggestions/:slug"
+        },
+        "/users/suggestions/:slug/member": {
+          "$ref": "#/definitions//users/suggestions/:slug/member"
+        },
+        "/users/suggestion": {
+          "$ref": "#/definitions//users/suggestion"
+        }
+      }
+    },
+    "Description": {
+      "type": "object",
+      "properties": {
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Entitie": {
+      "type": "object",
+      "properties": {
+        "hashtags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Description": {
+          "$ref": "#/definitions/Description"
+        },
+        "Url": {
+          "$ref": "#/definitions/Url"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "user_mentions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "symbols": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Statu": {
+      "type": "object",
+      "properties": {
+        "in_reply_to_status_id_str": {
+          "type": "string"
+        },
+        "in_reply_to_status_id": {
+          "type": "integer"
+        },
+        "possibly_sensitive": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "truncated": {
+          "type": "string"
+        },
+        "in_reply_to_user_id_str": {
+          "type": "string"
+        },
+        "possibly_sensitive_editable": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "retweet_count": {
+          "type": "integer"
+        },
+        "retweeted": {
+          "type": "string"
+        },
+        "in_reply_to_screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "in_reply_to_user_id": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "favorited": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "favorite_count": {
+          "type": "integer"
+        },
+        "lang": {
+          "type": "string"
+        }
+      }
+    },
+    "User_mention": {
+      "type": "object",
+      "properties": {
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "Url": {
+      "type": "object",
+      "properties": {
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "url": {
+          "type": "string"
+        },
+        "display_url": {
+          "type": "string"
+        },
+        "expanded_url": {
+          "type": "string"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Url"
+          }
+        }
+      }
+    },
+    "List": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "subscriber_count": {
+          "type": "integer"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "member_count": {
+          "type": "integer"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Statuses": {
+      "type": "object"
+    },
+    "Statuse": {
+      "type": "object",
+      "properties": {
+        "truncated": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "in_reply_to_user_id_str": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "retweet_count": {
+          "type": "integer"
+        },
+        "retweeted": {
+          "type": "string"
+        },
+        "in_reply_to_screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "in_reply_to_user_id": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "favorited": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "Metadata": {
+          "$ref": "#/definitions/Metadata"
+        },
+        "/statuses/mentions_timeline": {
+          "$ref": "#/definitions//statuses/mentions_timeline"
+        },
+        "/statuses/show/:id": {
+          "$ref": "#/definitions//statuses/show/:id"
+        },
+        "/statuses/user_timeline": {
+          "$ref": "#/definitions//statuses/user_timeline"
+        },
+        "/statuses/retweets/:id": {
+          "$ref": "#/definitions//statuses/retweets/:id"
+        },
+        "/statuses/retweeters/id": {
+          "$ref": "#/definitions//statuses/retweeters/id"
+        },
+        "/statuses/home_timeline": {
+          "$ref": "#/definitions//statuses/home_timeline"
+        },
+        "/statuses/lookup": {
+          "$ref": "#/definitions//statuses/lookup"
+        },
+        "/statuses/oembed": {
+          "$ref": "#/definitions//statuses/oembed"
+        },
+        "/statuses/retweets_of_me": {
+          "$ref": "#/definitions//statuses/retweets_of_me"
+        }
+      }
+    },
+    "Settings": {
+      "type": "object"
+    },
+    "PlaceType": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Setting": {
+      "type": "object",
+      "properties": {
+        "discoverable_by_email": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "use_cookie_personalization": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "always_use_https": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "Sleep_time": {
+          "$ref": "#/definitions/Sleep_time"
+        },
+        "trend_location": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Trend_location"
+          }
+        }
+      }
+    },
+    "Trend_location": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "woeid": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "parentid": {
+          "type": "integer"
+        },
+        "PlaceType": {
+          "$ref": "#/definitions/PlaceType"
+        }
+      }
+    },
+    "Sleep_time": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "string"
+        }
+      }
+    },
+    "Show": {
+      "type": "object",
+      "properties": {
+        "id_str": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "New": {
+      "type": "object"
+    },
+    "Ownerships": {
+      "type": "object"
+    },
+    "Ownership": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "lists": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/List"
+          }
+        }
+      }
+    },
+    "Members": {
+      "type": "object"
+    },
+    "Member": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Ids": {
+      "type": "object"
+    },
+    "Id": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_cursor_str": {
+          "type": "string"
+        }
+      }
+    },
+    "Create": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "is_translation_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "muting": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        }
+      }
+    },
+    "Totals": {
+      "type": "object"
+    },
+    "Group1": {
+      "type": "object",
+      "properties": {
+        "123456789": {
+          "$ref": "#/definitions/123456789"
+        },
+        "223456789": {
+          "$ref": "#/definitions/223456789"
+        }
+      }
+    },
+    "Total": {
+      "type": "object",
+      "properties": {
+        "Group1": {
+          "$ref": "#/definitions/Group1"
+        }
+      }
+    },
+    "Twitter": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Update": {
+      "type": "object",
+      "properties": {
+        "created_at": {
+          "type": "string"
+        },
+        "truncated": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "retweet_count": {
+          "type": "integer"
+        },
+        "retweeted": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "favorited": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Hashtag": {
+      "type": "object",
+      "properties": {
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "Available": {
+      "type": "object"
+    },
+    "Closest": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "woeid": {
+          "type": "integer"
+        },
+        "parentid": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "PlaceType": {
+          "$ref": "#/definitions/PlaceType"
+        }
+      }
+    },
+    "Place": {
+      "type": "object",
+      "properties": {
+        "as_of": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Location"
+          }
+        },
+        "trends": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Trend"
+          }
+        },
+        "country": {
+          "type": "string"
+        },
+        "country_code": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "place_type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "contained_within": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Contained_within"
+          }
+        },
+        "Bounding_box": {
+          "$ref": "#/definitions/Bounding_box"
+        },
+        "Attribute": {
+          "$ref": "#/definitions/Attribute"
+        }
+      }
+    },
+    "Trend": {
+      "type": "object",
+      "properties": {
+        "tweet_volume": {
+          "type": "integer"
+        },
+        "query": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "Location": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "woeid": {
+          "type": "integer"
+        }
+      }
+    },
+    "Destroy": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "is_translation_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "muting": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        }
+      }
+    },
+    "Incoming": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_cursor_str": {
+          "type": "string"
+        }
+      }
+    },
+    "Historical": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        },
+        "Types-by-tweet-id": {
+          "$ref": "#/definitions/Types-by-tweet-id"
+        }
+      }
+    },
+    "Types-by-tweet-id": {
+      "type": "object",
+      "properties": {
+        "123456789": {
+          "$ref": "#/definitions/123456789"
+        },
+        "223456789": {
+          "$ref": "#/definitions/223456789"
+        },
+        "323456789": {
+          "$ref": "#/definitions/323456789"
+        }
+      }
+    },
+    "Lookup": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        }
+      }
+    },
+    "Account": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        }
+      }
+    },
+    "Entries": {
+      "type": "object"
+    },
+    "Memberships": {
+      "type": "object"
+    },
+    "Membership": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "lists": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/List"
+          }
+        }
+      }
+    },
+    "Tweets": {
+      "type": "object"
+    },
+    "Tweet": {
+      "type": "object",
+      "properties": {
+        "statuses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Statuse"
+          }
+        },
+        "Search_metadata": {
+          "$ref": "#/definitions/Search_metadata"
+        }
+      }
+    },
+    "Metadata": {
+      "type": "object",
+      "properties": {
+        "result_type": {
+          "type": "string"
+        },
+        "iso_language_code": {
+          "type": "string"
+        }
+      }
+    },
+    "Search_metadata": {
+      "type": "object",
+      "properties": {
+        "next_results": {
+          "type": "string"
+        },
+        "since_id_str": {
+          "type": "string"
+        },
+        "max_id_str": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "max_id": {
+          "type": "integer"
+        },
+        "since_id": {
+          "type": "integer"
+        },
+        "refresh_url": {
+          "type": "string"
+        },
+        "completed_in": {
+          "type": "integer"
+        }
+      }
+    },
+    "Subscribers": {
+      "type": "object"
+    },
+    "Subscriber": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Sent": {
+      "type": "object",
+      "properties": {
+        "recipient_screen_name": {
+          "type": "string"
+        },
+        "sender_screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "sender_id": {
+          "type": "integer"
+        },
+        "recipient_id": {
+          "type": "integer"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Sender": {
+          "$ref": "#/definitions/Sender"
+        },
+        "Recipient": {
+          "$ref": "#/definitions/Recipient"
+        }
+      }
+    },
+    "Sender": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        }
+      }
+    },
+    "Recipient": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        }
+      }
+    },
+    "Upload": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer"
+        },
+        "media_id_string": {
+          "type": "string"
+        },
+        "media_id": {
+          "type": "integer"
+        },
+        "expires_after_secs": {
+          "type": "integer"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        }
+      }
+    },
+    "Image": {
+      "type": "object",
+      "properties": {
+        "w": {
+          "type": "integer"
+        },
+        "h": {
+          "type": "integer"
+        },
+        "image_type": {
+          "type": "string"
+        }
+      }
+    },
+    "Subscriptions": {
+      "type": "object"
+    },
+    "Subscription": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "lists": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/List"
+          }
+        }
+      }
+    },
+    "Outgoing": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "next_cursor_str": {
+          "type": "string"
+        }
+      }
+    },
+    "Engagement": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        },
+        "2015-09-15": {
+          "$ref": "#/definitions/2015-09-15"
+        },
+        "2015-09-14": {
+          "$ref": "#/definitions/2015-09-14"
+        },
+        "Hourly-time-serie": {
+          "$ref": "#/definitions/Hourly-time-serie"
+        }
+      }
+    },
+    "2015-09-15": {
+      "type": "object",
+      "properties": {
+        "10": {
+          "type": "string"
+        },
+        "11": {
+          "type": "string"
+        },
+        "12": {
+          "type": "string"
+        },
+        "13": {
+          "type": "string"
+        },
+        "14": {
+          "type": "string"
+        },
+        "15": {
+          "type": "string"
+        },
+        "16": {
+          "type": "string"
+        },
+        "17": {
+          "type": "string"
+        },
+        "18": {
+          "type": "string"
+        },
+        "19": {
+          "type": "string"
+        },
+        "20": {
+          "type": "string"
+        },
+        "21": {
+          "type": "string"
+        },
+        "00": {
+          "type": "string"
+        },
+        "01": {
+          "type": "string"
+        },
+        "02": {
+          "type": "string"
+        },
+        "03": {
+          "type": "string"
+        },
+        "04": {
+          "type": "string"
+        },
+        "05": {
+          "type": "string"
+        },
+        "06": {
+          "type": "string"
+        },
+        "07": {
+          "type": "string"
+        },
+        "08": {
+          "type": "string"
+        },
+        "09": {
+          "type": "string"
+        }
+      }
+    },
+    "2015-09-14": {
+      "type": "object",
+      "properties": {
+        "17": {
+          "type": "string"
+        },
+        "18": {
+          "type": "string"
+        },
+        "19": {
+          "type": "string"
+        },
+        "20": {
+          "type": "string"
+        },
+        "21": {
+          "type": "string"
+        },
+        "22": {
+          "type": "string"
+        },
+        "23": {
+          "type": "string"
+        }
+      }
+    },
+    "Hourly-time-serie": {
+      "type": "object",
+      "properties": {
+        "123456789": {
+          "$ref": "#/definitions/123456789"
+        }
+      }
+    },
+    "Impression": {
+      "type": "object",
+      "properties": {
+        "2015-09-15": {
+          "$ref": "#/definitions/2015-09-15"
+        },
+        "2015-09-14": {
+          "$ref": "#/definitions/2015-09-14"
+        }
+      }
+    },
+    "Search": {
+      "type": "object",
+      "properties": {
+        "Result": {
+          "$ref": "#/definitions/Result"
+        },
+        "Query": {
+          "$ref": "#/definitions/Query"
+        },
+        "/search/tweet": {
+          "$ref": "#/definitions//search/tweet"
+        }
+      }
+    },
+    "Query": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "Param": {
+          "$ref": "#/definitions/Param"
+        }
+      }
+    },
+    "Attribute": {
+      "type": "object"
+    },
+    "Contained_within": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "country_code": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "place_type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "Bounding_box": {
+          "$ref": "#/definitions/Bounding_box"
+        },
+        "Attribute": {
+          "$ref": "#/definitions/Attribute"
+        }
+      }
+    },
+    "Result": {
+      "type": "object",
+      "properties": {
+        "places": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Place"
+          }
+        }
+      }
+    },
+    "Bounding_box": {
+      "type": "object",
+      "properties": {
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "Application": {
+      "type": "object",
+      "properties": {
+        "Resource": {
+          "$ref": "#/definitions/Resource"
+        },
+        "Rate_limit_context": {
+          "$ref": "#/definitions/Rate_limit_context"
+        }
+      }
+    },
+    "Help": {
+      "type": "object",
+      "properties": {
+        "/help/privacy": {
+          "$ref": "#/definitions//help/privacy"
+        },
+        "/help/language": {
+          "$ref": "#/definitions//help/language"
+        },
+        "/help/configuration": {
+          "$ref": "#/definitions//help/configuration"
+        },
+        "/help/to": {
+          "$ref": "#/definitions//help/to"
+        }
+      }
+    },
+    "/statuses/retweeters/id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/show/:id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/contributee": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/contributor": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/privacy": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/configuration": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "Rate_limit_context": {
+      "type": "object",
+      "properties": {
+        "access_token": {
+          "type": "string"
+        }
+      }
+    },
+    "/users/suggestions/:slug": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/oembed": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/retweets_of_me": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/language": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/show/:id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/to": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/user_timeline": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/lookup": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "Resource": {
+      "type": "object",
+      "properties": {
+        "Help": {
+          "$ref": "#/definitions/Help"
+        },
+        "Search": {
+          "$ref": "#/definitions/Search"
+        },
+        "Statuse": {
+          "$ref": "#/definitions/Statuse"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "/users/suggestion": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/search": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/suggestions/:slug/member": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/home_timeline": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/profile_banner": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/search/tweet": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/mentions_timeline": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/retweets/:id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/lookup": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    }
+  }
 }
