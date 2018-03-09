@@ -12,10 +12,9 @@ In this examples we will use a movie review dataset.
 # License: Simplified BSD
 
 import sys
+import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
-from sklearn.svm import SVC
-from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV
 from sklearn.datasets import load_files
@@ -24,6 +23,7 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_predict
+from shutil import copyfile
 
 
 if __name__ == "__main__":
@@ -34,36 +34,33 @@ if __name__ == "__main__":
     # that is used when n_jobs != 1 in GridSearchCV
 
     # the training data folder must be passed as first argument
-    name = "bal_dataset_1600"
-    unbalence_data_folder = "dataset/"+name
-    dataset = load_files(unbalence_data_folder, shuffle=True)
-    print("n_samples: %d" % len(dataset.data))
-    # split the dataset in training and test set:
-    docs_train, docs_test, y_train, y_test = train_test_split(
-        dataset.data, dataset.target, test_size=0.25, random_state=None)
+    # all the files in this folder is the training data
 
-    # TASK: Build a vectorizer / classifier pipeline that filters out tokens
-    # that are too rare or too frequent
-    # --------- encode issue ----------------
+
+    external_name = "bal_external_200"
+    balence_data_folder = "dataset/bal_dataset_1600"
+    external_data_folder = "dataset/" + external_name
+
+
+    # set shuffle = True
+    dataset = load_files(balence_data_folder, shuffle=True)
+    print("train_samples: %d" % len(dataset.data))
+
+    # test external folder
+    test_set = load_files(external_data_folder, shuffle=True)
+    print("external_test_samples: %d" % len(test_set.data))
 
     # Use Random forest max_depth=5, n_estimators=10, max_features=1
     pipeline = Pipeline([('vect', TfidfVectorizer(min_df=3, max_df=0.95, decode_error='ignore')),
                          ('clf', RandomForestClassifier()), ])
-    # pipeline = Pipeline([('vect', lTfidfVectorizer(min_df=3, max_df=0.95, decode_error='ignore')),
-    #                      ('clf', LinearSVC()), ])
-    # pipeline = Pipeine([('vect', TfidfVectorizer(min_df=3, max_df=0.95, decode_error='ignore')),
-    #                      ('clf', MultinomialNB()), ])
-
-    # # Cross validation
-    # predicted = cross_val_predict(pipeline, dataset.data, dataset.target, cv=10)
-    # print metrics.accuracy_score(dataset.target, predicted)
 
     # TASK: Build a grid search to find out whether unigrams or bigrams are
     # more useful.
     # Fit the pipeline on the training set using grid search for the parameters
-    parameters = {'vect__ngram_range': [(1,1)],}
-    grid_search = GridSearchCV(pipeline, parameters, n_jobs=-1)
-    grid_search.fit(docs_train, y_train)
+    # parameters = {'vect__ngram_range': [(1,1),(1,2)],}
+    parameters = {'vect__ngram_range': [(1,1),(1,2)],}
+    grid_search = GridSearchCV(pipeline, parameters, n_jobs=-1, cv=10)
+    grid_search.fit(dataset.data, dataset.target)
     # TASK: print the cross-validated scores for the each parameters set
     # explored by the grid search
     n_candidates = len(grid_search.cv_results_['params'])
@@ -72,21 +69,16 @@ if __name__ == "__main__":
                 % (grid_search.cv_results_['params'][i],
                    grid_search.cv_results_['mean_test_score'][i],
                    grid_search.cv_results_['std_test_score'][i]))
-    # TASK: Predict the outcome on the testing set and store it in a variable
-    # named y_predicted
-    y_predicted = grid_search.predict(docs_test)
+
+    # TASK: Predict the outcome on the testing set and store it in a variable named y_predicted
+    y_predicted = grid_search.predict(test_set.data)
     # Print the classification report
-    report = metrics.classification_report(y_test, y_predicted,
+    report = metrics.classification_report(test_set.target, y_predicted,
                                         target_names=dataset.target_names)
     print report
+
     # Write report to the file
-    report_name = name + ".txt"
-    f = open(report_name, 'w+');
+    report_name = external_data_folder+ ".txt"
+    f = open(report_name, 'w+')
     f.write(report)
-    # # Show the details results for each file
-    # for i in range(0, len(docs_test) - 1):
-    #     print('File "%s" is "%d": predicted "%d"' % (docs_test.filenames[i], y_test[i], y_predicted[i]))
-    #     if (test_set.target[i] != y_predicted[i] ):
-    #         file_name = str(i) + '.html'
-    #         f = open(file_name, 'w+')
-    #         f.write(test_set.data[i])
+
