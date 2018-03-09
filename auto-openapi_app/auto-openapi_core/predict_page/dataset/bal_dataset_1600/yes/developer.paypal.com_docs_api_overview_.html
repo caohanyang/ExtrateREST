@@ -1,0 +1,3342 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA" name="google-site-verification"/>
+  <title>
+   Get Started - PayPal Developer
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" name="msapplication-TileImage"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png" rel="apple-touch-icon-precomposed"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png" rel="icon" sizes="32x32"/>
+  <link href="/css/docs.css" rel="stylesheet" type="text/css"/>
+  <script data-main="/js/master" src="/components/requirejs/require.js">
+  </script>
+ </head>
+ <body class="dx-docs dx-apis">
+  <header class="header" id="header">
+   <a aria-label="PayPal Developer" class="header__block header__brand" href="/">
+   </a>
+   <a aria-label="Toggle top-level navigation" class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0">
+   </a>
+   <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2">
+   </div>
+   <div class="header__nav">
+    <div class="header__nav--left">
+     <ul class="dx-nav-0 dx-nav-0-docs">
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/docs/">
+        Docs
+       </a>
+      </li>
+      <li class="dx-nav-0-item dx-nav-active">
+       <a class="dx-nav-0-link" href="/reference/">
+        APIs
+       </a>
+      </li>
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/support/">
+        Support
+       </a>
+      </li>
+     </ul>
+     <form action="/search" class="header__search dx-form-search" id="siteSearch" method="get" name="search">
+      <label class="sr-only" for="siteQ">
+       Enter search term
+      </label>
+      <input class="dx-search-input" id="siteQ" name="q" placeholder="Search" type="search" value=""/>
+     </form>
+    </div>
+    <div class="header__nav--right">
+     <div class="dx-auth-block profile__container">
+      <div class="dx-auth-logged-out">
+       <a class="dx-auth-login dx-btn dx-btn-primary" data-dxa="login,nav-click,nav-login" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications">
+        Log into Dashboard
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="dx-main">
+   <div class="dx-flex">
+    <div class="dx-main-nav-slug">
+    </div>
+    <nav class="dx-main-nav dx-mobile-nav">
+     <div class="dx-nav-back">
+      <a href="/docs/api/payments/">
+       View All Reference
+      </a>
+     </div>
+     <ul class="dx-nav dx-nav-1">
+      <li class="dx-nav-1-item dx-nav-active-parent">
+       <a class="dx-nav-heading" href="/docs/api/">
+        REST APIs
+       </a>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Get Started
+         </h5>
+        </li>
+        <li class="dx-nav-2-item dx-nav-active-parent dx-nav-active">
+         <a href="/docs/api/overview/">
+          Get Started
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#authentication-and-authorization">
+            Authentication and Authorization
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-requests">
+            API Requests
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#query-parameters">
+              Query Parameters
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#http-request-headers">
+              HTTP Request Headers
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#accept">
+                Accept
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#authorization">
+                Authorization
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#content-type">
+                Content-Type
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-auth-assertion">
+                PayPal-Auth-Assertion
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-client-metadata-id">
+                PayPal-Client-Metadata-Id
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-partner-attribution-id">
+                PayPal-Partner-Attribution-Id
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-request-id">
+                PayPal-Request-Id
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-responses">
+            API Responses
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#http-status-codes">
+              HTTP Status Codes
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS Links
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#make-your-first-call">
+            Make Your First Call
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          API Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/balance-accounts">
+          Balance Accounts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.billing-agreements">
+          Billing Agreements API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.billing-plans">
+          Billing Plans API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/customer-disputes">
+          Customer Disputes API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/identity">
+          Identity API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/invoicing">
+          Invoicing API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/managed-accounts/">
+          Managed Accounts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/orders">
+          Orders API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/partner-referrals/">
+          Partner Referrals API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payment-experience">
+          Payment Experience API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments">
+          Payments API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.payouts-batch">
+          Payouts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/referenced-payouts/">
+          Referenced Payouts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/vault">
+          Vault API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/webhooks">
+          Webhooks API
+         </a>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/currency-codes/">
+          Currency Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/currency-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/country-codes/">
+          Country Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/country-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/state-codes/">
+          State &amp; Province Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#argentina">
+            Argentina
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#brazil">
+            Brazil
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#canada">
+            Canada
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#india">
+            India
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#indonesia">
+            Indonesia
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#italy">
+            Italy
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#japan">
+            Japan
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#mexico">
+            Mexico
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#thailand">
+            Thailand
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#usa">
+            United States
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/locale-codes/">
+          Locale Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#localize-the-checkout-experience">
+            Localize the Checkout Experience
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#supported-locale-codes">
+            Supported Locale Codes
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Release Notes
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2017/">
+          2017
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-november-2017">
+            09 November 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-november-2017">
+            02 November 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-october-2017">
+            25 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#20-october-2017">
+            20 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-october-2017">
+            19 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-october-2017">
+            11 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-october-2017">
+            05 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-september-2017">
+            22 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#21-september-2017">
+            21 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#14-september-2017">
+            14 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#07-september-2017">
+            07 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#31-august-2017">
+            31 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#24-august-2017">
+            24 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-august-2017">
+            16 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-august-2017">
+            11 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-august-2017">
+            09 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-august-2017">
+            04 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-july-2017">
+            27 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-july-2017">
+            19 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-july-2017">
+            13 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#06-july-2017">
+            06 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#28-june-2017">
+            28 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-june-2017">
+            22 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#15-june-2017">
+            15 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-june-2017">
+            09 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-may-2017">
+            25 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-may-2017">
+            11 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-may-2017">
+            04 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-april-2017">
+            25 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-april-2017">
+            13 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#30-march-2017">
+            30 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#23-march-2017">
+            23 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-march-2017">
+            16 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-february-2017">
+            27 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-february-2017">
+            16 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-february-2017">
+            02 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-january-2017">
+            25 January 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-january-2017">
+            05 January 2017
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2016/">
+          2016
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#22-december-2016">
+            22 December 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#17-november-2016">
+            17 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-november-2016">
+            10 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-november-2016">
+            04 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-october-2016">
+            27 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-october-2016">
+            06 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#29-september-2016">
+            29 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#08-september-2016">
+            08 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#01-september-2016">
+            01 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-august-2016">
+            11 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-august-2016">
+            04 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-july-2016">
+            27 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#20-july-2016">
+            20 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#07-july-2016">
+            07 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#16-june-2016">
+            16 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-june-2016">
+            02 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-may-2016">
+            11 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-may-2016">
+            02 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-april-2016">
+            06 April 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-march-2016">
+            10 March 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#26-february-2016">
+            26 February 2016
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2015/">
+          2015
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#16-december-2015">
+            16 December 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-november-2015">
+            13 November 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-october-2015">
+            25 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#21-october-2015">
+            21 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-august-2015">
+            12 August 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-july-2015">
+            19 July 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#18-june-2015">
+            18 June 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-may-2015">
+            19 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-may-2015">
+            05 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#23-april-2015">
+            23 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-april-2015">
+            05 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-march-2015">
+            25 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-march-2015">
+            12 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#26-february-2015">
+            26 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-february-2015">
+            13 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#22-january-2015">
+            22 January 2015
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2014/">
+          2014
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-december-2014">
+            17 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#10-december-2014">
+            10 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#03-december-2014">
+            03 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#05-november-2014">
+            05 November 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-october-2014">
+            23 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#15-october-2014">
+            15 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#01-october-2014">
+            01 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-september-2014">
+            17 September 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#13-august-2014">
+            13 August 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-july-2014">
+            23 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-july-2014">
+            07 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-march-2014">
+            07 March 2014
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2013/">
+          2013
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#30-july-2013">
+            30 July 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#28-may-2013">
+            28 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#22-may-2013">
+            22 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#15-may-2013">
+            15 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#24-april-2013">
+            24 April 2013
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          SDKs
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/rest-sdks/">
+          SDKs
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/quickstart/">
+          SDK Quickstart
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/install">
+            Install the SDK
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/environment">
+            Configure Environment
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/payments">
+            Process PayPal Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-plan">
+            Create Billing Plans
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-agreement">
+            Create Billing Agreements
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/capture-payment">
+            Capture Payments Later
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-process-order/">
+            Create and Process Orders
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/refund-payment">
+            Refund Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-webhook">
+            Create Notification Webhooks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/service-integrations/">
+          Service Integrations
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/service-integrations/slack-bot/">
+            Slack
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/simple_pay">
+              Add Person-to-Bot Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/direct_pay">
+              Add Person-to-Person Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/subscribe">
+              Add Agreement for Recurring Payment
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          GLOSSARY
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/glossary/">
+          Glossary
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <article class="content dx-content ">
+     <span class="label u-mobile-hide" data-js="product-section-label">
+     </span>
+     <h1 class="dx-content-title">
+      Get Started
+     </h1>
+     <p>
+      The PayPal APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.
+     </p>
+     <blockquote>
+      <p>
+       <strong>
+        Important:
+       </strong>
+       You cannot run the sample requests in this guide as-is. Replace call-specific parameters such as tokens and IDs with your own values.
+      </p>
+     </blockquote>
+     <p>
+      If you are a non-US developer, see
+      <a href="/docs/faq/#international-developer-questions">
+       International Developer Questions
+      </a>
+      .
+     </p>
+     <p>
+      For definitions of common REST API terms, see the
+      <a href="/docs/api/glossary/">
+       Glossary
+      </a>
+      .
+     </p>
+     <h2 id="authentication-and-authorization">
+      Authentication and authorization
+     </h2>
+     <p>
+      The PayPal REST API uses the OAuth 2.0 protocol to authorize calls. OAuth is an open standard that many companies use to provide secure access to protected resources.
+     </p>
+     <p>
+     </p>
+     <p>
+      When you create an app, PayPal generates a set of OAuth client ID and secret credentials for your app for both the sandbox and live environments. You pass these credentials in the
+      <code>
+       Authorization
+      </code>
+      header in a
+      <a href="/docs/api/overview/#get-an-access-token">
+       get access token
+      </a>
+      request.
+     </p>
+     <p>
+     </p>
+     <p>
+      <a id="bearer-tokens">
+      </a>
+     </p>
+     <p>
+     </p>
+     <p>
+      In exchange for these credentials, the PayPal authorization server issues access tokens called
+      <em>
+       bearer tokens
+      </em>
+      that you use for authorization when you make REST API requests. A bearer token enables you to complete actions on behalf of, and with the approval of, the resource owner.
+     </p>
+     <p>
+     </p>
+     <p>
+      The
+      <code>
+       access_token
+      </code>
+      field in the get access token response contains a bearer token, indicated by the
+      <code>
+       token_type
+      </code>
+      of
+      <code>
+       Bearer
+      </code>
+      :
+     </p>
+     <pre><code>{
+  "scope": "<var>scope</var>",
+  "nonce": "<var>nonce</var>",
+  "access_token": "<var>Access-Token</var>",
+  "token_type": "Bearer",
+  "app_id": "APP-80W284485P519543T",
+  "expires_in": 32398
+}
+</code></pre>
+     <p>
+      Include this bearer token in API requests in the
+      <code>
+       Authorization
+      </code>
+      header with the
+      <code>
+       Bearer
+      </code>
+      authentication scheme.
+     </p>
+     <blockquote>
+      <p>
+       <strong>
+        Note:
+       </strong>
+       To get a bearer token, contact your PayPal account manager.
+      </p>
+     </blockquote>
+     <p>
+      This sample request uses a bearer token to list invoices for a merchant:
+     </p>
+     <pre><code>curl -v -X GET https://api.sandbox.paypal.com/v1/invoicing/invoices?page=3&amp;page_size=4&amp;total_count_required=true \
+  -H "Content-Type:application/json" \
+  -H "Authorization: Bearer <var>Access-Token</var>"
+</code></pre>
+     <p>
+      Access tokens have a finite lifetime. The
+      <code>
+       expires_in
+      </code>
+      field in the
+      <a href="#get-an-access-token">
+       get access token
+      </a>
+      response indicates the lifetime, in seconds, of the access token. For example, an expiry value of
+      <code>
+       3600
+      </code>
+      indicates that the access token expires in one hour from the time the response was generated.
+     </p>
+     <p>
+      To detect when an access token expires, write code to either:
+     </p>
+     <ul>
+      <li>
+       <p>
+        Keep track of the
+        <code>
+         expires_in
+        </code>
+        value in the token response. The value is expressed in seconds.
+       </p>
+      </li>
+      <li>
+       <p>
+        Handle the HTTP
+        <code>
+         401 Unauthorized
+        </code>
+        status code. The API endpoint issues this status code when it detects an expired token.
+       </p>
+      </li>
+     </ul>
+     <p>
+      Before you create another token, re-use the access token until it expires. See the
+      <a href="/docs/policiesAndGuidelines/">
+       rate limiting guidelines
+      </a>
+      .
+     </p>
+     <h2 id="api-requests">
+      API requests
+     </h2>
+     <p>
+      To construct a REST API request, combine these components:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         Component
+        </th>
+        <th>
+         Description
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <p>
+          The HTTP method
+         </p>
+        </td>
+        <td>
+         <ul>
+          <li>
+           <code>
+            GET
+           </code>
+           . Requests data from a resource.
+          </li>
+          <li>
+           <code>
+            POST
+           </code>
+           . Submits data to a resource to process.
+          </li>
+          <li>
+           <code>
+            PUT
+           </code>
+           . Updates a resource.
+          </li>
+          <li>
+           <code>
+            PATCH
+           </code>
+           . Partially updates a resource.
+          </li>
+          <li>
+           <code>
+            DELETE
+           </code>
+           . Deletes a resource.
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          The URL to the API service
+         </p>
+        </td>
+        <td>
+         <ul>
+          <li>
+           Sandbox.
+           <code>
+            https://api.sandbox.paypal.com
+           </code>
+          </li>
+          <li>
+           Live.
+           <code>
+            https://api.paypal.com
+           </code>
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          The URI to the resource
+         </p>
+        </td>
+        <td>
+         The resource to query, submit data to, update, or delete. For example,
+         <code>
+          v1/invoicing/invoices
+         </code>
+         .
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          <a href="#query-parameters">
+           Query parameters
+          </a>
+         </p>
+        </td>
+        <td>
+         Optional. Controls which data appears in the response. Use to filter, limit the size of, and sort the data in an API response.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          <a href="#http-request-headers">
+           HTTP request headers
+          </a>
+         </p>
+        </td>
+        <td>
+         Includes the
+         <code>
+          Authorization
+         </code>
+         header with the access token.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          A JSON request body
+         </p>
+        </td>
+        <td>
+         Required for most
+         <code>
+          GET
+         </code>
+         ,
+         <code>
+          POST
+         </code>
+         ,
+         <code>
+          PUT
+         </code>
+         , and
+         <code>
+          PATCH
+         </code>
+         calls.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <p>
+      This sample request cancels a billing agreement:
+     </p>
+     <pre><code>curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/cancel \
+  -H "Content-Type:application/json" \
+  -H "Authorization: Bearer <var>Access-Token</var>" \
+  -d '{
+    "note": "Canceling the profile."
+    }'
+</code></pre>
+     <h3 id="query-parameters">
+      Query parameters
+     </h3>
+     <p>
+      For most REST
+      <code>
+       GET
+      </code>
+      calls, you can specify one or more optional query parameters on the request URI to
+      <a href="/docs/api/glossary/#filtering">
+       filter
+      </a>
+      ,
+      <a href="/docs/api/glossary/#pagination">
+       limit the size of
+      </a>
+      , and sort the data in an API response. For filter parameters, see the individual
+      <code>
+       GET
+      </code>
+      calls.
+     </p>
+     <p>
+      To limit, or
+      <em>
+       page
+      </em>
+      , and sort the data that is returned in some API responses, use these, or similar, query parameters:
+     </p>
+     <blockquote>
+      <p>
+       <strong>
+        Note:
+       </strong>
+       Not all pagination parameters are available for all APIs.
+      </p>
+     </blockquote>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         Parameter
+        </th>
+        <th>
+         Type
+        </th>
+        <th>
+         Description
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <code>
+          count
+         </code>
+        </td>
+        <td>
+         integer
+        </td>
+        <td>
+         The number of items to list in the response.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          end_time
+         </code>
+        </td>
+        <td>
+         integer
+        </td>
+        <td>
+         The end date and time for the range to show in the response, in
+         <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+          Internet date and time format
+         </a>
+         . For example,
+         <code>
+          end_time=2016-03-06T11:00:00Z
+         </code>
+         .
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          page
+         </code>
+        </td>
+        <td>
+         integer
+        </td>
+        <td>
+         The zero-relative start index of the entire list of items that are returned in the response. So, the combination of
+         <code>
+          page=0
+         </code>
+         and
+         <code>
+          page_size=20
+         </code>
+         returns the first 20 items. The combination of
+         <code>
+          page=20
+         </code>
+         and
+         <code>
+          page_size=20
+         </code>
+         returns the next 20 items.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          page_size
+         </code>
+        </td>
+        <td>
+         integer
+        </td>
+        <td>
+         The number of items to return in the response.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          total_count_required
+         </code>
+        </td>
+        <td>
+         boolean
+        </td>
+        <td>
+         Indicates whether to show the total count in the response.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          sort_by
+         </code>
+        </td>
+        <td>
+         string
+        </td>
+        <td>
+         Sorts the payments in the response by a specified value, such as the create time or update time.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          sort_order
+         </code>
+        </td>
+        <td>
+         string
+        </td>
+        <td>
+         Sorts the items in the response in ascending or descending order.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          start_id
+         </code>
+        </td>
+        <td>
+         string
+        </td>
+        <td>
+         The ID of the starting resource in the response. When results are paged, you can use the
+         <code>
+          next_id
+         </code>
+         value as the
+         <code>
+          start_id
+         </code>
+         to continue with the next set of results.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          start_index
+         </code>
+        </td>
+        <td>
+         integer
+        </td>
+        <td>
+         The start index of the payments to list. Typically, you use the
+         <code>
+          start_index
+         </code>
+         to jump to a specific position in the resource history based on its cart. For example, to start at the second item in a list of results, specify
+         <code>
+          ?start_index=2
+         </code>
+         .
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          start_time
+         </code>
+        </td>
+        <td>
+         string
+        </td>
+        <td>
+         The start date and time for the range to show in the response, in
+         <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+          Internet date and time format
+         </a>
+         . For example,
+         <code>
+          start_time=2016-03-06T11:00:00Z
+         </code>
+         .
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <p>
+      For example, the Invoicing API returns details for four invoices beginning with the third invoice and includes the total count of invoices in the response:
+     </p>
+     <pre><code class="language-bash">curl -v -X GET https://api.sandbox.paypal.com/v1/invoicing/invoices?page=3&amp;page_size=4&amp;total_count_required=true \
+  -H "Content-Type:application/json" \
+  -H "Authorization: Bearer <var>Access-Token</var>"
+</code></pre>
+     <h3 id="http-request-headers">
+      HTTP request headers
+     </h3>
+     <p>
+      The commonly used HTTP request headers are:
+     </p>
+     <dl>
+      <dt id="accept">
+       Accept
+      </dt>
+      <dd>
+       <p>
+        Specifies the response format. Required for operations with a response body. The syntax is:
+       </p>
+       <pre>Accept: application/<var>format</var></pre>
+       <p>
+        Where
+        <code>
+         <var>
+          format
+         </var>
+        </code>
+        is
+        <code>
+         json
+        </code>
+        .
+       </p>
+      </dd>
+      <dt id="authorization">
+       Authorization
+      </dt>
+      <dd>
+       <p>
+        Required to get an access token or make API calls.
+       </p>
+       <p>
+        To
+        <a href="/docs/api/overview/#get-an-access-token">
+         get an access token
+        </a>
+        , set this header to your
+        <code>
+         client_id
+        </code>
+        and
+        <code>
+         secret
+        </code>
+        credential values.
+       </p>
+       <blockquote>
+        <strong>
+         Note:
+        </strong>
+        If you use cURL, specify
+        <code>
+         -u "client_id:secret"
+        </code>
+        .
+       </blockquote>
+       <p>
+        To make REST API calls, include the bearer token in the
+        <code>
+         Authorization
+        </code>
+        header with the
+        <code>
+         Bearer
+        </code>
+        authentication scheme:
+       </p>
+       <pre>Authorization: Bearer <var>Access-Token</var></pre>
+      </dd>
+      <dt id="content-type">
+       Content-Type
+      </dt>
+      <dd>
+       <p>
+        Specifies the request format. Required for operations with a request body. The syntax is:
+       </p>
+       <pre>Content-Type: application/<var>format</var></pre>
+       <p>
+        Where
+        <code>
+         <var>
+          format
+         </var>
+        </code>
+        is
+        <code>
+         json
+        </code>
+        .
+       </p>
+      </dd>
+      <dt id="paypal-auth-assertion">
+       PayPal-Auth-Assertion
+      </dt>
+      <dd>
+       <p>
+        Specifies an API client-provided
+        <a href="https://tools.ietf.org/html/rfc7519">
+         JSON Web Token (JWT)
+        </a>
+        assertion that identifies the merchant.
+       </p>
+       <p>
+        When an API client acts on behalf of multiple merchants at the same time, it becomes difficult and expensive to generate and manage multiple access tokens. Instead, API clients can use this header to provide a JWT assertion that identifies the merchant when the API is called.
+       </p>
+       <blockquote>
+        <strong>
+         Prerequisite:
+        </strong>
+        To use this header, you must establish the consent to act on behalf of a merchant.
+       </blockquote>
+       <p>
+        In the header, specify one of these JSON Web Token sub-forms:
+       </p>
+       <ul>
+        <li>
+         <a href="https://tools.ietf.org/html/rfc7516">
+          JSON Web Encryption (JWE)
+         </a>
+         , in
+         <a href="https://tools.ietf.org/html/rfc7515#section-3.1">
+          JWS Compact Serialization
+         </a>
+         format.
+        </li>
+        <li>
+         <a href="https://tools.ietf.org/html/rfc7515">
+          JSON Web Signature (JWS)
+         </a>
+         , in
+         <a href="https://tools.ietf.org/html/rfc7516#section-3.1">
+          JWE Compact Serialization
+         </a>
+         format. Supports both secure and unsecured JWT. An unsecured JWT specifies an
+         <code>
+          alg
+         </code>
+         of
+         <code>
+          none
+         </code>
+         in the
+         <code>
+          JOSE
+         </code>
+         header and an empty string for the signature.
+        </li>
+       </ul>
+       <p>
+        Unsecured JWT example:
+       </p>
+       <ul>
+        <li>
+         <p>
+          JOSE header
+         </p>
+         <pre>{"alg": "none"}</pre>
+        </li>
+        <li>
+         <p>
+          Payload can contain
+          <code>
+           email
+          </code>
+          ,
+          <code>
+           client_id
+          </code>
+          , and
+          <code>
+           payer_id
+          </code>
+          . Example payload:
+         </p>
+         <pre>{"iss": "client_id","email":"my@email.com"}</pre>
+        </li>
+        <li>
+         <p>
+          Signature. Use
+          <code>
+           ""
+          </code>
+          for the unsigned case.
+         </p>
+        </li>
+        <li>
+         <p>
+          Resulting unsecured JWT after Base64 and simple concatenation:
+         </p>
+         <pre>eyJhbGciOiJub25lIn0.eyJlbWFpbCI6Im15QGVtYWlsLmNvbSJ9</pre>
+        </li>
+       </ul>
+       <p>
+        The API reference will specify whether or not an API accepts this header.
+       </p>
+      </dd>
+      <dt id="paypal-client-metadata-id">
+       PayPal-Client-Metadata-Id
+      </dt>
+      <dd>
+       <p>
+        Optional. Verifies that the payment originates from a valid, user-consented device and application. Reduces fraud and decreases declines. Transactions that do not include a client metadata ID are not eligible for PayPal Seller Protection. To initiate a pre-consented payment from a mobile device, see
+        <a href="/docs/integration/mobile/make-future-payment/">
+         future payments
+        </a>
+        .
+       </p>
+      </dd>
+      <dt id="paypal-partner-attribution-id">
+       PayPal-Partner-Attribution-Id
+      </dt>
+      <dd>
+       <p>
+        Optional. Indicates that you are a PayPal partner. To receive revenue attribution, specify a unique build notation (BN) code. BN codes provide tracking on all transactions that originate or are associated with a particular partner. To learn more or to request a BN code, contact your partner manager or visit the
+        <a href="https://www.paypal.com/partnerprogram/">
+         PayPal Partner Portal
+        </a>
+        .
+       </p>
+      </dd>
+      <dt id="paypal-request-id">
+       PayPal-Request-Id
+      </dt>
+      <dd>
+       <p>
+        Optional. Contains a unique user-generated ID that you can use to enforce idempotency.
+       </p>
+       <blockquote>
+        <strong>
+         Note:
+        </strong>
+        If you omit this header, the risk of duplicate transactions increases.
+       </blockquote>
+      </dd>
+     </dl>
+     <h2 id="api-responses">
+      API responses
+     </h2>
+     <p>
+      PayPal API calls return HTTP status codes. Some API calls also return JSON response bodies  that include information about the resource including one or more contextual HATEOAS links. Use these links to request more information about and construct an API flow that is relative to a specific request.
+     </p>
+     <h3 id="http-status-codes">
+      HTTP status codes
+     </h3>
+     <p>
+      Each REST API request returns a
+      <a href="#success">
+       success
+      </a>
+      or
+      <a href="#error">
+       error
+      </a>
+      HTTP status code.
+     </p>
+     <h4 id="success">
+      Success
+     </h4>
+     <p>
+      In the responses, PayPal returns these HTTP status codes for successful requests:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th style="text-align:left">
+         Status code
+        </th>
+        <th style="text-align:left">
+         Description
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          200 OK
+         </code>
+        </td>
+        <td style="text-align:left">
+         The request succeeded.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          201 Created
+         </code>
+        </td>
+        <td style="text-align:left">
+         A
+         <code>
+          POST
+         </code>
+         method successfully created a resource. If the resource was already created by a previous execution of the same method, for example, the server returns the HTTP
+         <code>
+          200 OK
+         </code>
+         status code.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          202 Accepted
+         </code>
+        </td>
+        <td style="text-align:left">
+         The server accepted the request and will execute it later.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          204 No Content
+         </code>
+        </td>
+        <td style="text-align:left">
+         The server successfully executed the method but returns no response body.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <h4 id="error">
+      Error
+     </h4>
+     <p>
+      In the responses for failed requests, PayPal returns HTTP
+      <code>
+       4XX
+      </code>
+      or
+      <code>
+       5XX
+      </code>
+      status codes.
+     </p>
+     <p>
+      For all errors except Identity errors, PayPal returns an error response body that includes additional error details in this format:
+     </p>
+     <pre><code>{  
+    "name": "ERROR_NAME",
+    "message": "ERROR_DESCRIPTION",
+    "information_link": "ERROR_DOCUMENTATION_LINK",
+    "details": "ERROR_DETAILS"
+}
+</code></pre>
+     <p>
+      The response body for Identity errors includes additional error details in this format:
+     </p>
+     <pre><code>{  
+    "error": "ERROR_NAME",
+    "error_description": "ERROR_DESCRIPTION"
+}
+</code></pre>
+     <p>
+      <a id="error-status-codes">
+      </a>
+     </p>
+     <p>
+      In the responses, PayPal returns these HTTP status codes for failed requests:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th style="text-align:left">
+         HTTP status code
+        </th>
+        <th style="text-align:left">
+         Typical error code and error message
+        </th>
+        <th style="text-align:left">
+         Cause
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          400 Bad Request
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          INVALID_REQUEST
+         </code>
+         . Request is not well-formed, syntactically incorrect, or violates schema.
+        </td>
+        <td style="text-align:left">
+         See
+         <a href="#validation-errors">
+          Validation errors
+         </a>
+         . The server could not understand the request. Indicates one of these conditions:
+         <ul>
+          <li>
+           The API cannot convert the payload data to the underlying data type.
+          </li>
+          <li>
+           The data is not in the expected data format.
+          </li>
+          <li>
+           A required field is not available.
+          </li>
+          <li>
+           A simple data validation error occurred.
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          401 Unauthorized
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          AUTHENTICATION_FAILURE
+         </code>
+         . Authentication failed due to invalid authentication credentials.
+        </td>
+        <td style="text-align:left">
+         See
+         <a href="#authentication-errors">
+          Authentication errors
+         </a>
+         . The request requires authentication and the caller did not provide valid credentials.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          403 Forbidden
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          NOT_AUTHORIZED
+         </code>
+         . Authorization failed due to insufficient permissions.
+        </td>
+        <td style="text-align:left">
+         The client is not authorized to access this resource although it might have valid credentials. For example, the client does not have the correct OAuth 2 scope. Additionally, a business-level authorization error might have occurred. For example, the account holder does not have sufficient funds.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          404 Not Found
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          RESOURCE_NOT_FOUND
+         </code>
+         . The specified resource does not exist.
+        </td>
+        <td style="text-align:left">
+         The server did not find anything that matches the request URI. Either the URI is incorrect or the resource is not available. For example, no data exists in the database at that key.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          405 Method Not Allowed
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          METHOD_NOT_SUPPORTED
+         </code>
+         . The server does not implement the requested HTTP method.
+        </td>
+        <td style="text-align:left">
+         The service does not support the requested HTTP method. For example,
+         <code>
+          PATCH
+         </code>
+         .
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          406 Not Acceptable
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          MEDIA_TYPE_NOT_ACCEPTABLE
+         </code>
+         . The server does not implement the media type that would be acceptable to the client.
+        </td>
+        <td style="text-align:left">
+         The server cannot use the client-request media type to return the response payload. For example, this error occurs if the client sends an
+         <code>
+          Accept: application/xml
+         </code>
+         request header but the API can generate only an
+         <code>
+          application/json
+         </code>
+         response.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          415
+         </code>
+         <code>
+          Unsupported
+         </code>
+         <code>
+          Media
+         </code>
+         <code>
+          Type
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          UNSUPPORTED_MEDIA_TYPE
+         </code>
+         . The server does not support the request payload’s media type.
+        </td>
+        <td style="text-align:left">
+         The API cannot process the media type of the request payload. For example, this error occurs if the client sends a
+         <code>
+          Content-Type: application/xml
+         </code>
+         request header but the API can only accept
+         <code>
+          application/json
+         </code>
+         request payloads.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          422 Unprocessable Entity
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          UNPROCCESSABLE_ENTITY
+         </code>
+         . The API cannot complete the requested action, or the request action is semantically incorrect or fails business validation.
+        </td>
+        <td style="text-align:left">
+         The API cannot complete the requested action and might require interaction with APIs or processes outside of the current request. No systemic problems limit the API from completing the request. For example, this error occurs for any business validation errors, including errors that are not usually of the
+         <code>
+          400
+         </code>
+         type.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          429 Unprocessable Entity
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          RATE_LIMIT_REACHED
+         </code>
+         . Too many requests. Blocked due to rate limiting.
+        </td>
+        <td style="text-align:left">
+         The rate limit for the user, application, or token exceeds a predefined value. See
+         <a href="https://tools.ietf.org/html/rfc6585">
+          RFC 6585
+         </a>
+         .
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          500 Internal Server Error
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          INTERNAL_SERVER_ERROR
+         </code>
+         . An internal server error has occurred.
+        </td>
+        <td style="text-align:left">
+         A system or application error occurred. Although the client appears to provide a correct request, something unexpected occurred on the server.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         <code>
+          503 Service Unavailable
+         </code>
+        </td>
+        <td style="text-align:left">
+         <code>
+          SERVICE_UNAVAILABLE
+         </code>
+         . Service Unavailable.
+        </td>
+        <td style="text-align:left">
+         The server cannot handle the request for a service due to temporary maintenance.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <h4 id="validation-errors">
+      Validation errors
+     </h4>
+     <p>
+      For validation errors, PayPal returns the HTTP
+      <code>
+       400 Bad Request
+      </code>
+      status code.
+     </p>
+     <p>
+      To prevent validation errors, ensure that parameters are of the right type and conform to these constraints:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th style="text-align:left">
+         Parameter type
+        </th>
+        <th>
+         Description
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td style="text-align:left">
+         Character
+        </td>
+        <td>
+         Names, addresses, phone numbers, and so on have maximum character limits.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         Numeric
+        </td>
+        <td>
+         Credit cards, amounts, card verification value (CVV), and so on must use non-negative numeric values and have required formats. For example, a CVV must be three or four numbers while a credit card number must contain only numbers.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         Required
+        </td>
+        <td>
+         Must be included in the request. For example, when you provide credit card information, you must include a postal code for most countries.
+        </td>
+       </tr>
+       <tr>
+        <td style="text-align:left">
+         Monetary
+        </td>
+        <td>
+         Must use the right currency.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <p>
+      For information about parameter types and constraints, see the
+      <a href="/docs/api/">
+       REST API reference
+      </a>
+      .
+     </p>
+     <h4 id="authentication-errors">
+      Authentication errors
+     </h4>
+     <p>
+      For authentication errors, PayPal returns the HTTP
+      <code>
+       401 Unauthorized
+      </code>
+      status code. See
+      <a href="#authentication-and-authorization">
+       authentication and authorization
+      </a>
+      .
+     </p>
+     <p>
+      Access token-related issues often cause authentication errors.
+     </p>
+     <p>
+      Ensure that the access token is valid and present and not expired.
+     </p>
+     <h3 id="hateoas-links">
+      HATEOAS links
+     </h3>
+     <p>
+      Hypermedia as the Engine of Application State (HATEOAS) is a constraint of the REST application architecture that distinguishes it from other network application architectures.
+     </p>
+     <p>
+      This excerpt from a sample response shows an array of HATEOAS links:
+     </p>
+     <pre><code>{  
+  "links": [{
+    "href": "https://api.paypal.com/v1/payments/sale/36C38912MN9658832",
+    "rel": "self",
+    "method": "GET"
+  }, {
+    "href": "https://api.paypal.com/v1/payments/sale/36C38912MN9658832/refund",
+    "rel": "refund",
+    "method": "POST"
+  }, {
+    "href": "https://api.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI",
+    "rel": "parent_payment",
+    "method": "GET"
+  }]
+}
+</code></pre>
+     <p>
+      You can use the links in this example, as follows:
+     </p>
+     <ul>
+      <li>
+       Use the
+       <code>
+        self
+       </code>
+       link to get more information about the request. Combine the method and the target URL to make the call:
+       <pre><code>GET https://api.paypal.com/v1/payments/sale/36C38912MN9658832
+</code></pre>
+      </li>
+      <li>
+       Use the
+       <code>
+        refund
+       </code>
+       link to request a refund:
+       <pre><code>POST https://api.paypal.com/v1/payments/sale/36C38912MN9658832/refund
+</code></pre>
+      </li>
+      <li>
+       Use the
+       <code>
+        parent_payment
+       </code>
+       link to get information about the parent payment:
+       <pre><code>GET https://api.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI
+</code></pre>
+      </li>
+     </ul>
+     <p>
+      The elements in the
+      <code>
+       link
+      </code>
+      object are:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         Element
+        </th>
+        <th>
+         Required
+        </th>
+        <th>
+         Description
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <a href="#the-href-element">
+          <code>
+           href
+          </code>
+         </a>
+        </td>
+        <td>
+         Required
+        </td>
+        <td>
+         The target URL.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <a href="#the-rel-element">
+          <code>
+           rel
+          </code>
+         </a>
+        </td>
+        <td>
+         Required
+        </td>
+        <td>
+         The link relationship type.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <a href="#the-method-element">
+          <code>
+           method
+          </code>
+         </a>
+        </td>
+        <td>
+         Optional
+        </td>
+        <td>
+         The HTTP method. Default is
+         <code>
+          GET
+         </code>
+         .
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <h4 id="the-href-element">
+      The href element
+     </h4>
+     <p>
+      The
+      <code>
+       href
+      </code>
+      element contains the complete target URL, or link, to use in combination with the HTTP
+      <a href="#the-method-element">
+       <code>
+        method
+       </code>
+      </a>
+      to make the related call.
+      <code>
+       href
+      </code>
+      is the key HATEOAS component that links a completed call with a subsequent call.
+     </p>
+     <h4 id="the-rel-element">
+      The rel element
+     </h4>
+     <p>
+      The
+      <code>
+       rel
+      </code>
+      element contains the link relationship type, or how the
+      <code>
+       href
+      </code>
+      link relates to the previous call.
+     </p>
+     <p>
+     </p>
+     <p>
+      For a complete list of the link relationship types, see
+      <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1">
+       Link Relationship Types
+      </a>
+      .
+     </p>
+     <p>
+     </p>
+     <h4 id="the-method-element">
+      The method element
+     </h4>
+     <p>
+      Optional. The
+      <code>
+       method
+      </code>
+      element contains an HTTP method. If present, use this method to make a request to the target URL. If absent, the default method is
+      <code>
+       GET
+      </code>
+      .
+     </p>
+     <p>
+      The HTTP methods are:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         Method
+        </th>
+        <th>
+         Description
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <code>
+          DELETE
+         </code>
+        </td>
+        <td>
+         Deletes a resource.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          GET
+         </code>
+        </td>
+        <td>
+         Shows details for a resource or lists resources.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          PATCH
+         </code>
+        </td>
+        <td>
+         Partially updates a resource.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          POST
+         </code>
+        </td>
+        <td>
+         Creates or manages a resource.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          PUT
+         </code>
+        </td>
+        <td>
+         Updates a resource.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          REDIRECT
+         </code>
+        </td>
+        <td>
+         Not an HTTP method but specifies that the target URL is a redirect URL to which to redirect payers to approve a PayPal account payment.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <h2 id="make-your-first-call">
+      Make your first call
+     </h2>
+     <p>
+      To make REST API calls, create a PayPal REST app and get an access token:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         1.
+        </td>
+        <td>
+         <a href="#create-a-paypal-app">
+          Create a PayPal app
+         </a>
+         .
+         <br/>
+         When you create an app, PayPal generates a set of OAuth credentials.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2.
+        </td>
+        <td>
+         <a href="#get-an-access-token">
+          Get an access token
+         </a>
+         .
+         <br/>
+         Pass the OAuth credentials in a get access token call.
+         <br/>
+         In response, the PayPal authorization server issues an access token.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3.
+        </td>
+        <td>
+         <a href="#make-rest-api-calls">
+          Make REST API calls
+         </a>
+         .
+         <br/>
+         Use the access token for authentication when you make REST API calls.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <h3 id="create-a-paypal-app">
+      Create a PayPal app
+     </h3>
+     <p>
+     </p>
+     <p>
+      On the
+      <a href="/developer/applications">
+       My Apps &amp; Credentials
+      </a>
+      page, click
+      <strong>
+       Log into Dashboard
+      </strong>
+      .
+     </p>
+     <p>
+      In the
+      <strong>
+       REST API apps
+      </strong>
+      section, click
+      <strong>
+       Create App
+      </strong>
+      .
+     </p>
+     <p>
+      PayPal generates a set of OAuth 2.0
+      <code>
+       client_id
+      </code>
+      and
+      <code>
+       secret
+      </code>
+      credentials for your app for both the sandbox and live environments.
+     </p>
+     <p>
+     </p>
+     <h3 id="get-an-access-token">
+      Get an access token
+     </h3>
+     <p>
+     </p>
+     <p>
+      The get access token endpoint is
+      <code>
+       /v1/oauth2/token
+      </code>
+      .
+     </p>
+     <p>
+      To get an access token, you pass your OAuth credentials in a get access token call. To make this call, you can use either
+      <a href="#curl-example">
+       cURL
+      </a>
+      on the command line or the
+      <a href="#postman-example">
+       Postman
+      </a>
+      app.
+     </p>
+     <p>
+      In response, the PayPal authorization server issues an access token.
+     </p>
+     <p>
+      Re-use the access token until it expires. See our
+      <a href="/docs/classic/lifecycle/rate-limiting/">
+       rate limiting guidelines
+      </a>
+      . When it expires, you can get a new token.
+     </p>
+     <h4 id="curl-example">
+      <a class="heading-anchor" href="#curl-example">
+       <span>
+       </span>
+      </a>
+      cURL example
+     </h4>
+     <blockquote>
+      <p>
+       <strong>
+        Tips:
+       </strong>
+      </p>
+      <ul>
+       <li>
+        If you use Windows, use a Bash shell to make cURL calls.
+       </li>
+       <li>
+        If you use a command-line tool other than cURL, set
+        <code>
+         content-type
+        </code>
+        to
+        <code>
+         application/x-www-form-urlencoded
+        </code>
+        .
+       </li>
+      </ul>
+     </blockquote>
+     <ol>
+      <li>
+       <p>
+        Download
+        <a href="https://curl.haxx.se/download.html">
+         cURL
+        </a>
+        for your environment.
+       </p>
+      </li>
+      <li>
+       <p>
+        From the command line, run this command:
+       </p>
+       <pre>curl -v https://api.sandbox.paypal.com/v1/oauth2/token \
+   -H "Accept: application/json" \
+   -H "Accept-Language: en_US" \
+   -u "<var>client_id</var>:<var>secret</var>" \
+   -d "grant_type=client_credentials"</pre>
+       <p>
+        Where:
+       </p>
+       <table>
+        <colgroup>
+         <col width="25%">
+         </col>
+         <col width="75%">
+         </col>
+        </colgroup>
+        <tbody>
+         <tr>
+          <td>
+           <code>
+            /v1/oauth2/token
+           </code>
+          </td>
+          <td>
+           The get access token endpoint.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <code>
+            <var>
+             client_id
+            </var>
+           </code>
+          </td>
+          <td>
+           Your client ID.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <code>
+            <var>
+             secret
+            </var>
+           </code>
+          </td>
+          <td>
+           Your secret.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <code>
+            grant_type
+           </code>
+          </td>
+          <td>
+           The grant type. Set to
+           <code>
+            client_credentials
+           </code>
+           .
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </li>
+      <li>
+       <p>
+        View the
+        <a href="#sample-response">
+         sample response
+        </a>
+        .
+       </p>
+      </li>
+     </ol>
+     <h4 id="postman-example">
+      <a class="heading-anchor" href="#postman-example">
+       <span>
+       </span>
+      </a>
+      Postman example
+     </h4>
+     <ol>
+      <li>
+       <p>
+        Download
+        <a href="https://www.getpostman.com/">
+         Postman
+        </a>
+        for your environment, and open Postman.
+       </p>
+      </li>
+      <li>
+       <p>
+        On the
+        <strong>
+         Authorization
+        </strong>
+        tab, select or enter this information:
+       </p>
+       <table>
+        <colgroup>
+         <col width="25%">
+         </col>
+         <col width="75%">
+         </col>
+        </colgroup>
+        <tbody>
+         <tr>
+          <td>
+           <strong>
+            Method
+           </strong>
+          </td>
+          <td>
+           <strong>
+            <code>
+             POST
+            </code>
+           </strong>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <strong>
+            Endpoint
+           </strong>
+          </td>
+          <td>
+           <p>
+            <code>
+             https://api.sandbox.paypal.com/v1/oauth2/token
+            </code>
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <strong>
+            Username
+           </strong>
+          </td>
+          <td>
+           Your client ID.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <strong>
+            Password
+           </strong>
+          </td>
+          <td>
+           Your secret.
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </li>
+      <li>
+       <p>
+        On the
+        <strong>
+         Body
+        </strong>
+        tab, select or enter this information:
+       </p>
+       <table>
+        <colgroup>
+         <col width="25%">
+         </col>
+         <col width="75%">
+         </col>
+        </colgroup>
+        <tbody>
+         <tr>
+          <td>
+           <strong>
+            Content type
+           </strong>
+          </td>
+          <td>
+           <strong>
+            <code>
+             x-www-form-urlencoded
+            </code>
+           </strong>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <strong>
+            <strong>
+             key
+            </strong>
+           </strong>
+          </td>
+          <td>
+           <code>
+            grant_type
+           </code>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <strong>
+            <strong>
+             value
+            </strong>
+           </strong>
+          </td>
+          <td>
+           <code>
+            client_credentials
+           </code>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </li>
+      <li>
+       <p>
+        Click
+        <strong>
+         Send
+        </strong>
+        .
+       </p>
+      </li>
+      <li>
+       View the
+       <a href="#sample-response">
+        sample response
+       </a>
+       .
+      </li>
+     </ol>
+     <h4 id="sample-response">
+      <a class="heading-anchor" href="#sample-response">
+       <span>
+       </span>
+      </a>
+      Sample response
+     </h4>
+     <pre lang="javascript">{
+  "scope": "https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*",
+  "nonce": "2017-06-08T18:30:28ZCl54Q_OlDqP6-4D03sDT8wRiHjKrYlb5EH7Di0gRrds",
+  "access_token": "<var>Access-Token</var>",
+  "token_type": "Bearer",
+  "app_id": "APP-80W284485P519543T",
+  "expires_in": 32398
+}</pre>
+     <p>
+      Where:
+     </p>
+     <table>
+      <colgroup>
+       <col width="25%">
+       </col>
+       <col width="75%">
+       </col>
+      </colgroup>
+      <tbody>
+       <tr>
+        <td>
+         <code>
+          <var>
+           access_token
+          </var>
+         </code>
+        </td>
+        <td>
+         Your access token.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <code>
+          expires_in
+         </code>
+        </td>
+        <td>
+         The number of seconds after which the token expires. Request another token when the current one expires.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <p>
+     </p>
+     <h3 id="make-rest-api-calls">
+      Make REST API calls
+     </h3>
+     <p>
+     </p>
+     <p>
+      With a valid access token, you can make REST API calls.
+     </p>
+     <p>
+      This sample call creates a PayPal account payment and uses only the required input parameters. The access token in the call is an OAuth
+      <em>
+       bearer
+      </em>
+      token.
+     </p>
+     <blockquote>
+      <p>
+       <strong>
+        Note:
+       </strong>
+       Payments API calls are always made by an
+       <em>
+        actor
+       </em>
+       , such as email, on behalf of a
+       <em>
+        subject
+       </em>
+       , or the payer. The actor specifies a bearer token in the
+       <code>
+        Authorization: Bearer
+       </code>
+       request header. A bearer token is an access token that is issued to the actor by an authorization server with the approval of the resource owner, or payer. In this case, the actor uses the bearer token to make a payments request on behalf of the subject.
+      </p>
+     </blockquote>
+     <pre lang="javascript">curl -v https://api.sandbox.paypal.com/v1/payments/payment \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <var>Access-Token</var>" \
+  -d '{
+  "intent": "sale",
+  "redirect_urls": {
+    "return_url": "https://example.com/your_redirect_url.html",
+    "cancel_url": "https://example.com/your_cancel_url.html"
+  },
+  "payer": {
+    "payment_method": "paypal"
+  },
+  "transactions": [{
+    "amount": {
+      "total": "7.47",
+      "currency": "USD"
+    }
+  }]
+}'</pre>
+     <p>
+      A successful call returns a JSON-formatted response body with payment details.
+     </p>
+     <p>
+     </p>
+     <h2 id="additional-information">
+      Additional information
+     </h2>
+     <table>
+      <thead>
+       <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         Authentication and authorization
+        </td>
+        <td>
+         <ul>
+          <li>
+           <a href="https://www.oauth.com/">
+            OAuth
+           </a>
+          </li>
+          <li>
+           <a href="https://tools.ietf.org/html/rfc6749">
+            The OAuth 2.0 Authorization Framework
+           </a>
+          </li>
+          <li>
+           <a href="http://tools.ietf.org/html/rfc6750">
+            The OAuth 2.0 Authorization Framework: Bearer Token Usage
+           </a>
+          </li>
+          <li>
+           <a href="/docs/integration/direct/identity/get-user-consent/">
+            Make Identity Calls on Behalf of a User
+           </a>
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         HTTP request headers
+        </td>
+        <td>
+         <ul>
+          <li>
+           <a href="https://www.iana.org/assignments/message-headers/message-headers.xhtml#perm-headers">
+            Permanent Message Header Field Names
+           </a>
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         HATEOAS links
+        </td>
+        <td>
+         <ul>
+          <li>
+           <a href="http://www.iana.org/assignments/link-relations/link-relations.xhtml">
+            Link Relations
+           </a>
+          </li>
+          <li>
+           <a href="https://en.wikipedia.org/wiki/HATEOAS">
+            Hypermedia as the Engine of Application State
+           </a>
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Internet date and time format
+        </td>
+        <td>
+         <ul>
+          <li>
+           <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+            Internet Date/Time Format
+           </a>
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Support
+        </td>
+        <td>
+         <ul>
+          <li>
+           <a href="https://stackoverflow.com/questions/tagged/paypal">
+            PayPal Stack Overflow
+           </a>
+          </li>
+          <li>
+           <a href="https://www.paypal.com/us/cgi-bin/helpweb?cmd=_help">
+            PayPal Customer Support
+           </a>
+          </li>
+          <li>
+           <a href="https://www.paypal-techsupport.com/">
+            Merchant Technical Support
+           </a>
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         API reference
+        </td>
+        <td>
+         <ul>
+          <li>
+           <a href="/docs/api/">
+            REST API reference
+           </a>
+          </li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         SDKs
+        </td>
+        <td>
+         <ul>
+          <li>
+           <a href="/docs/api/rest-sdks/">
+            PayPal REST SDKs
+           </a>
+          </li>
+          <li>
+           <a href="/docs/api/quickstart">
+            REST SDK Quickstart
+           </a>
+          </li>
+         </ul>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <span class="dxf-insert-rating">
+     </span>
+    </article>
+   </div>
+   <footer class="footer">
+    <section class="section">
+     <div class="section__content">
+      <div class="grid">
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Docs
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/integration/direct/express-checkout/integration-jsv4/" rel="nofollow">
+           Express Checkout
+          </a>
+         </li>
+         <li>
+          <a href="/docs/integration/web" rel="nofollow">
+           Payment Buttons
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.braintreepayments.com/start/overview/" rel="nofollow">
+           Braintree SDK
+          </a>
+         </li>
+         <li>
+          <a href="/docs/directory/" rel="nofollow">
+           All Docs
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Support
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/faq/" rel="nofollow">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-techsupport.com/" rel="nofollow">
+           Merchant Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">
+           Account Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Resources
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://github.com/paypal/" rel="nofollow">
+           GitHub
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/partnerprogram" rel="nofollow">
+           Partners
+          </a>
+         </li>
+         <li>
+          <a href="https://demo.paypal.com" rel="nofollow">
+           PayPal Demo
+          </a>
+         </li>
+         <li>
+          <a href="https://devblog.paypal.com/" rel="nofollow">
+           Blog
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Family
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://paypal.com/" rel="nofollow">
+           PayPal
+          </a>
+         </li>
+         <li>
+          <a href="https://braintreepayments.com/" rel="nofollow">
+           Braintree
+          </a>
+         </li>
+         <li>
+          <a href="https://venmo.com/" rel="nofollow">
+           Venmo
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paydiant.com/" rel="nofollow">
+           Paydiant
+          </a>
+         </li>
+         <li>
+          <a href="https://xoom.com/" rel="nofollow">
+           Xoom
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="grid">
+       <div class="grid__item grid__item--6">
+        <ul class="footer__legal">
+         <li>
+          <a class="scTrack:privacy-policy" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">
+           Privacy
+          </a>
+         </li>
+         <li>
+          <a class="scTrack:legal-agreements" href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">
+           Legal
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--6">
+        <p class="footer__copyright">
+         ©2018 PayPal
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+  </main>
+ </body>
+</html>

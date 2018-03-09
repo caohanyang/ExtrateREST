@@ -1,0 +1,5559 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA" name="google-site-verification"/>
+  <title>
+   PayPal Developer
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" name="msapplication-TileImage"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png" rel="apple-touch-icon-precomposed"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png" rel="icon" sizes="32x32"/>
+  <link href="/css/docs.css" rel="stylesheet" type="text/css"/>
+  <script data-main="/js/master" src="/components/requirejs/require.js">
+  </script>
+ </head>
+ <body class="dx-apiref dx-apis">
+  <header class="header" id="header">
+   <a aria-label="PayPal Developer" class="header__block header__brand" href="/">
+   </a>
+   <a aria-label="Toggle top-level navigation" class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0">
+   </a>
+   <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2">
+   </div>
+   <div class="header__nav">
+    <div class="header__nav--left">
+     <ul class="dx-nav-0 dx-nav-0-docs">
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/docs/">
+        Docs
+       </a>
+      </li>
+      <li class="dx-nav-0-item dx-nav-active">
+       <a class="dx-nav-0-link" href="/reference/">
+        APIs
+       </a>
+      </li>
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/support/">
+        Support
+       </a>
+      </li>
+     </ul>
+     <form action="/search" class="header__search dx-form-search" id="siteSearch" method="get" name="search">
+      <label class="sr-only" for="siteQ">
+       Enter search term
+      </label>
+      <input class="dx-search-input" id="siteQ" name="q" placeholder="Search" type="search" value=""/>
+     </form>
+    </div>
+    <div class="header__nav--right">
+     <div class="dx-auth-block profile__container">
+      <div class="dx-auth-logged-out">
+       <a class="dx-auth-login dx-btn dx-btn-primary" data-dxa="login,nav-click,nav-login" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications">
+        Log into Dashboard
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="dx-main">
+   <div class="dx-flex">
+    <div class="dx-main-nav-slug">
+    </div>
+    <nav class="dx-main-nav dx-mobile-nav">
+     <div class="dx-nav-back">
+      <a href="/reference/">
+       View All Reference
+      </a>
+     </div>
+     <ul class="dx-nav dx-nav-1">
+      <li class="dx-nav-1-item">
+       <a class="dx-nav-heading" href="/docs/api/">
+        REST APIs
+       </a>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Get Started
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/overview/">
+          Get Started
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#authentication-and-authorization">
+            Authentication and Authorization
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-requests">
+            API Requests
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-responses">
+            API Responses
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#make-your-first-call">
+            Make Your First Call
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          References
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/">
+          API Reference
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/balance-accounts">
+            Balance Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-agreements">
+            Billing Agreements API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-plans">
+            Billing Plans API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/customer-disputes">
+            Customer Disputes API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/identity">
+            Identity API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/invoicing">
+            Invoicing API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/managed-accounts">
+            Managed Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/orders">
+            Orders API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/partner-referrals">
+            Partner Referrals API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payment-experience">
+            Payment Experience API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments">
+            Payments API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.payouts-batch">
+            Payouts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/sync">
+            PayPal Sync API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/referenced-payouts">
+            Referenced Payouts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/vault">
+            Vault API
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="#credit-cards" title="resource group">
+              Credit cards
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#credit-cards_create" title="operation">
+                Store credit card
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#credit-cards_list" title="operation">
+                List vaulted credit cards
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#credit-cards_update" title="operation">
+                Update vaulted credit card
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#credit-cards_delete" title="operation">
+                Delete vaulted credit card
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#credit-cards_get" title="operation">
+                Show vaulted credit card details
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#definitions">
+              Common Object Definitions
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#definition-address">
+                address
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-country_code">
+                country_code
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-credit_card">
+                credit_card
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-creditcardlist">
+                creditcardlist
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-error">
+                error
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-error_details">
+                error_details
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-link_description">
+                link_description
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch">
+                patch
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch_request">
+                patch_request
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#errors">
+              Error Messages
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/webhooks">
+            Webhooks API
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/currency-codes/">
+          Currency Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/currency-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/country-codes/">
+          Country Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/country-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/state-codes/">
+          State &amp; Province Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#argentina">
+            Argentina
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#brazil">
+            Brazil
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#canada">
+            Canada
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#india">
+            India
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#italy">
+            Italy
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#japan">
+            Japan
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#mexico">
+            Mexico
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#thailand">
+            Thailand
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#usa">
+            United States
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/locale-codes/">
+          Locale Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#localize-the-checkout-experience">
+            Localize the Checkout Experience
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#supported-locale-codes">
+            Supported Locale Codes
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Release Notes
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2017/">
+          2017
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#07-september-2017">
+            07 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#31-august-2017">
+            31 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#24-august-2017">
+            24 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-august-2017">
+            16 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-august-2017">
+            11 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-august-2017">
+            09 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-august-2017">
+            04 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-july-2017">
+            27 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-july-2017">
+            19 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-july-2017">
+            13 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#06-july-2017">
+            06 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#28-june-2017">
+            28 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-june-2017">
+            22 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#15-june-2017">
+            15 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-june-2017">
+            09 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-may-2017">
+            25 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-may-2017">
+            11 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-may-2017">
+            04 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-april-2017">
+            25 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-april-2017">
+            13 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#30-march-2017">
+            30 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#23-march-2017">
+            23 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-march-2017">
+            16 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-february-2017">
+            27 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-february-2017">
+            16 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-february-2017">
+            02 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-january-2017">
+            25 January 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-january-2017">
+            05 January 2017
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2016/">
+          2016
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#22-december-2016">
+            22 December 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#17-november-2016">
+            17 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-november-2016">
+            10 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-november-2016">
+            04 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-october-2016">
+            27 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-october-2016">
+            06 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#29-september-2016">
+            29 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#08-september-2016">
+            08 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#01-september-2016">
+            01 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-august-2016">
+            11 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-august-2016">
+            04 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-july-2016">
+            27 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#20-july-2016">
+            20 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#07-july-2016">
+            07 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#16-june-2016">
+            16 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-june-2016">
+            02 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-may-2016">
+            11 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-may-2016">
+            02 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-april-2016">
+            06 April 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-march-2016">
+            10 March 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#26-february-2016">
+            26 February 2016
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2015/">
+          2015
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#16-december-2015">
+            16 December 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-november-2015">
+            13 November 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-october-2015">
+            25 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#21-october-2015">
+            21 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-august-2015">
+            12 August 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-july-2015">
+            19 July 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#18-june-2015">
+            18 June 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-may-2015">
+            19 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-may-2015">
+            05 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#23-april-2015">
+            23 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-april-2015">
+            05 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-march-2015">
+            25 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-march-2015">
+            12 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#26-february-2015">
+            26 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-february-2015">
+            13 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#22-january-2015">
+            22 January 2015
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2014/">
+          2014
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-december-2014">
+            17 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#10-december-2014">
+            10 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#03-december-2014">
+            03 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#05-november-2014">
+            05 November 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-october-2014">
+            23 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#15-october-2014">
+            15 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#01-october-2014">
+            01 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-september-2014">
+            17 September 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#13-august-2014">
+            13 August 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-july-2014">
+            23 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-july-2014">
+            07 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-march-2014">
+            07 March 2014
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2013/">
+          2013
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#30-july-2013">
+            30 July 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#28-may-2013">
+            28 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#22-may-2013">
+            22 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#15-may-2013">
+            15 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#24-april-2013">
+            24 April 2013
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          SDKs
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/rest-sdks/">
+          SDKs
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/quickstart/">
+          SDK Quickstart
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/install">
+            Install the SDK
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/environment">
+            Configure Environment
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/payments">
+            Process PayPal Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-plan">
+            Create Billing Plans
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-agreement">
+            Create Billing Agreements
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/capture-payment">
+            Capture Payments Later
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-process-order/">
+            Create and Process Orders
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/refund-payment">
+            Refund Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-webhook">
+            Create Notification Webhooks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/service-integrations/">
+          Service Integrations
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/service-integrations/slack-bot/">
+            Slack
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/simple_pay">
+              Add Person-to-Bot Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/direct_pay">
+              Add Person-to-Person Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/subscribe">
+              Add Agreement for Recurring Payment
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          GLOSSARY
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/glossary/">
+          Glossary
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <article class="content dx-content ">
+     <div class="dax-api" id="">
+      <header class="dax-topic">
+       <h1 class="dx-content-title">
+        Vault API
+       </h1>
+       <div class="dax-preamble">
+        As a merchant, you can use the Vault API to securely store customer credit cards in the PayPal vault rather than on your server. When you use the API to store a customer credit card, the API returns the ID of the vaulted card. To make a payment with the vaulted card, you specify the ID of the vaulted card instead of credit card details. For information, see the
+        <a href="/docs/integration/direct/vault/">
+         Vault overview
+        </a>
+        .
+        <blockquote>
+         <strong>
+          Note:
+         </strong>
+         PayPal does not validate credit card information that you store in the vault.
+        </blockquote>
+       </div>
+      </header>
+      <div class="dax-resource" id="credit-cards">
+       <header class="dax-topic-resource">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" class="dx-anchor__icon" href="#credit-cards">
+         </a>
+         Credit cards
+         <small>
+          (resource group)
+         </small>
+        </h2>
+        <div class="dax-preamble">
+         Use the
+         <code>
+          /credit-cards
+         </code>
+         resource to store a credit card in the vault, delete, show details for, list, and update vaulted cards.
+        </div>
+       </header>
+       <div class="dax-operation" id="credit-cards_create">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#credit-cards_create">
+          </a>
+          Store credit card
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-post">
+           POST
+          </span>
+          <span class="dax-operation-path">
+           /v1/vault/credit-cards
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Stores credit card details in the PayPal vault. To use the vaulted card to make a payment, specify this ID as the
+          <code>
+           credit_card_id
+          </code>
+          in a
+          <a href="/docs/api/payments/#definition-credit_card_token">
+           <code>
+            credit_card_token
+           </code>
+          </a>
+          object. If you include a
+          <code>
+           payer_id
+          </code>
+          when you store the credit card, you must also include that ID as the
+          <code>
+           external_customer_id
+          </code>
+          in the
+          <code>
+           credit_card_token
+          </code>
+          object.
+          <br/>
+          You can also use the ID of the vaulted credit card to show details for, update, or delete the vaulted card.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="credit-cards-create-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#credit-cards-create-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                number
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The credit card number. Value is a string of numeric characters with no spaces or punctuation. Must conform to modulo and the length required by its credit card type.
+               <em>
+                Redacted in responses.
+               </em>
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Pattern:
+                <code>
+                 ^[0-9]{12,19}$
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                type
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               enum
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The credit card type.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Allowed values:
+                <code>
+                 visa
+                </code>
+                ,
+                <code>
+                 mastercard
+                </code>
+                ,
+                <code>
+                 amex
+                </code>
+                ,
+                <code>
+                 discover
+                </code>
+                ,
+                <code>
+                 maestro
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="integer">
+              <h5 class="dax-def-term">
+               <code>
+                expire_month
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               integer
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The one- to two-digit month when the card expires, with no leading zero. For example,
+               <code>
+                1
+               </code>
+               or
+               <code>
+                12
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Pattern:
+                <code>
+                 ^[0-9]{2}$
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="integer">
+              <h5 class="dax-def-term">
+               <code>
+                expire_year
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               integer
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The four-digit year when the card expires. For example,
+               <code>
+                2017
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Pattern:
+                <code>
+                 ^[0-9]{4}$
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                first_name
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The first name of the credit card holder. Maximum length is 25 characters.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                last_name
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The last name of the credit card holder.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                billing_address
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-address">
+                object
+               </a>
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The billing address for this credit card.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                external_customer_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The externally-provided ID of the customer for whom to list credit cards.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Maximum length: 256.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                merchant_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the merchant for whom to list credit cards.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Maximum length: 256.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                payer_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               A unique ID that you can assign and track when you vault a credit card or use a vaulted credit card to make a payment. This ID can help to avoid unintentional use or misuse of credit cards. Can be any value, such as a UUID, user name, or email address.
+               <strong>
+                This is being deprecated in favor of the
+                <code>
+                 external_customer_id
+                </code>
+                property.
+               </strong>
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Maximum length: 256.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                external_card_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The externally-provided ID of the credit card.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Maximum length: 256.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="array">
+              <h5 class="dax-def-term">
+               <code>
+                links
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               array
+
+                
+                    (contains the
+               <a href="#definition-link_description">
+                link_description
+               </a>
+               object)
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               An array of request-related
+               <a href="/docs/api/overview/#hateoas-links">
+                HATEOAS links
+               </a>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-Java-SDK/blob/master/rest-api-sample/src/main/java/com/paypal/api/payments/servlet/CreateCreditCardServlet.java" target="_blank">
+            JAVA
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/credit_card/create.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X POST https://api.sandbox.paypal.com/v1/vault/credit-cards/ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '{
+  "number": "4417119669820331",
+  "type": "visa",
+  "expire_month": 11,
+  "expire_year": 2015,
+  "first_name": "Joe",
+  "last_name": "Shopper",
+  "billing_address": {
+  "line1": "52 N Main St.",
+  "city": "Johnstown",
+  "country_code": "US",
+  "postal_code": "43210",
+  "state": "OH",
+  "phone": "408-334-8890"
+  }
+}'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="credit-cards-create-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#credit-cards-create-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             201 Created
+            </code>
+            status code and a JSON response body that shows credit card details, including the ID of the vaulted card.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the vaulted credit card, which you can use to fund a payment.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               number
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The credit card number. Value is a string of numeric characters with no spaces or punctuation. Must conform to modulo and the length required by its credit card type.
+              <em>
+               Redacted in responses.
+              </em>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{12,19}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               type
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The credit card type.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Possible values:
+               <code>
+                visa
+               </code>
+               ,
+               <code>
+                mastercard
+               </code>
+               ,
+               <code>
+                amex
+               </code>
+               ,
+               <code>
+                discover
+               </code>
+               ,
+               <code>
+                maestro
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               expire_month
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The one- to two-digit month when the card expires, with no leading zero. For example,
+              <code>
+               1
+              </code>
+              or
+              <code>
+               12
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{2}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               expire_year
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The four-digit year when the card expires. For example,
+              <code>
+               2017
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{4}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               first_name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The first name of the credit card holder. Maximum length is 25 characters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               last_name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The last name of the credit card holder.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               billing_address
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-address">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The billing address for this credit card.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_customer_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The externally-provided ID of the customer for whom to list credit cards.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               merchant_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the merchant for whom to list credit cards.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               payer_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              A unique ID that you can assign and track when you vault a credit card or use a vaulted credit card to make a payment. This ID can help to avoid unintentional use or misuse of credit cards. Can be any value, such as a UUID, user name, or email address.
+              <strong>
+               This is being deprecated in favor of the
+               <code>
+                external_customer_id
+               </code>
+               property.
+              </strong>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_card_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The externally-provided ID of the credit card.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               state
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The state of the credit card funding instrument.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+              <p>
+               Possible values:
+               <code>
+                expired
+               </code>
+               ,
+               <code>
+                ok
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               create_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the vaulted credit card was created, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . For example,
+              <code>
+               2017-11-05T13:15:30Z
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               update_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the vaulted credit card was updated, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . For example,
+              <code>
+               2017-11-05T13:15:30Z
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               valid_until
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the credit card becomes unusable from the vault, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . The
+              <code>
+               valid_until
+              </code>
+              parameter is not the same as the expiration month and year. The expiration month and year might be later than the
+              <code>
+               valid_until
+              </code>
+              date. For example, the card expires in November 2019 but the
+              <code>
+               valid_until
+              </code>
+              date is October 17th, 2019.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "id": "CARD-1SW33690TH184423CKM2ZMVY",
+  "state": "ok",
+  "number": "0000000000000000",
+  "type": "visa",
+  "expire_month": 11,
+  "expire_year": 2015,
+  "first_name": "Joe",
+  "last_name": "Shopper",
+  "billing_address": {
+    "line1": "52 N Main St.",
+    "city": "Johnstown",
+    "state": "OH",
+    "postal_code": "43210",
+    "country_code": "US",
+    "phone": "408-334-8890"
+  },
+  "valid_until": "2017-03-27T00:00:00Z",
+  "create_time": "2014-03-28T15:33:43Z",
+  "update_time": "2014-03-28T15:33:43Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY",
+      "rel": "delete",
+      "method": "DELETE"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY",
+      "rel": "patch",
+      "method": "PATCH"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="credit-cards_list">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#credit-cards_list">
+          </a>
+          List vaulted credit cards
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-get">
+           GET
+          </span>
+          <span class="dax-operation-path">
+           /v1/vault/credit-cards
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Lists vaulted credit cards. To filter the cards in the response, specify one or more optional query parameters.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="credit-cards-list-query-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#credit-cards-list-query-parameters">
+             </a>
+             Query parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="integer">
+              <h5 class="dax-def-term">
+               <code>
+                page_size
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               integer
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The number of vaulted credit cards to list in the response beginning with the specified
+               <code>
+                page
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Default:
+                <code>
+                 10
+                </code>
+                .
+               </p>
+               <p>
+                Minimum value: 1.
+               </p>
+               <p>
+                Maximum value: 20.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="integer">
+              <h5 class="dax-def-term">
+               <code>
+                page
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               integer
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               A
+               <em>
+                zero-relative
+               </em>
+               index of the list of vaulted credit cards.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Default:
+                <code>
+                 1
+                </code>
+                .
+               </p>
+               <p>
+                Minimum value: 1.
+               </p>
+               <p>
+                Maximum value: 2147483647.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                start_time
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Filters the vaulted credit cards in the response to those created on or after this date and time and on or before the
+               <code>
+                end_time
+               </code>
+               value. Both values are in
+               <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+                Internet date and time format
+               </a>
+               . For example,
+               <code>
+                2017-11-05T13:15:30Z
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                end_time
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Filters the vaulted credit cards in the response to those created on or after the
+               <code>
+                start_time
+               </code>
+               date and time and on or before this value. Both values are in
+               <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+                Internet date and time format
+               </a>
+               . For example,
+               <code>
+                2017-11-05T13:15:30Z
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                sort_order
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Sorts the vaulted credit cards in the response in ascending or descending order. Value is
+               <code>
+                asc
+               </code>
+               for ascending order or
+               <code>
+                desc
+               </code>
+               for descending order.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Default:
+                <code>
+                 desc
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                sort_by
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Sorts the vaulted credit cards in the response by  either
+               <code>
+                create_time
+               </code>
+               or
+               <code>
+                update_time
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Default:
+                <code>
+                 create_time
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                merchant_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Filters the vaulted credit cards in the response to those associated with this merchant ID. This value is a user-provided unique ID for the merchant who holds the card.
+               <blockquote>
+                <strong>
+                 Note:
+                </strong>
+                This parameter is not related to the PayPal merchant ID.
+               </blockquote>
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                external_card_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Filters the vaulted credit cards in the response to those associated with this facilitator-provided ID of the bank account.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                external_customer_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Filters the vaulted credit cards in the response to those associated with this externally-provided customer ID.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="boolean">
+              <h5 class="dax-def-term">
+               <code>
+                total_required
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               boolean
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Indicates whether the response returns the
+               <code>
+                total_items
+               </code>
+               and
+               <code>
+                total_pages
+               </code>
+               values.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X GET https://api.sandbox.paypal.com/v1/vault/credit-cards?external_card_id=card-1 \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="credit-cards-list-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#credit-cards-list-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body that includes an array of vaulted cards. Each item in the array shows card details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               items
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-credit_card">
+               credit_card
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of credit card objects.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-specific
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               total_items
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The total number of items.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Minimum value: 0.
+              </p>
+              <p>
+               Maximum value: 2147483647.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               total_pages
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The total number of pages.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Minimum value: 1.
+              </p>
+              <p>
+               Maximum value: 2147483647.
+              </p>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "items": [
+    {
+      "id": "CARD-56X15128W3493241XKQ37IFY",
+      "state": "ok",
+      "payer_id": "rajesh",
+      "external_card_id": "card-1",
+      "number": "0000000000000000",
+      "type": "visa",
+      "expire_month": 11,
+      "expire_year": 2018,
+      "first_name": "Mary",
+      "last_name": "Shopper",
+      "billing_address": {
+        "line1": "52 N. Main St.",
+        "city": "Johnstown",
+        "state": "CA",
+        "postal_code": "43210",
+        "country_code": "GB"
+      },
+      "valid_until": "2017-10-09T00:00:00Z",
+      "create_time": "2014-10-10T14:58:31Z",
+      "update_time": "2014-10-10T14:58:31Z",
+      "links": [
+        {
+          "href": "https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-56X15128W3493241XKQ37IFY",
+          "rel": "self",
+          "method": "GET"
+        },
+        {
+          "href": "https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-56X15128W3493241XKQ37IFY",
+          "rel": "delete",
+          "method": "DELETE"
+        },
+        {
+          "href": "https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-56X15128W3493241XKQ37IFY",
+          "rel": "patch",
+          "method": "PATCH"
+        }
+      ]
+    }
+  ],
+  "total_items": 1,
+  "total_pages": 1,
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-cards/?page_size=10&amp;sort_by=create_time&amp;external_card_id=card-1&amp;sort_order=asc",
+      "rel": "first",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-cards/?page_size=10&amp;sort_by=create_time&amp;external_card_id=card-1&amp;sort_order=asc&amp;page=1",
+      "rel": "last",
+      "method": "GET"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="credit-cards_update">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#credit-cards_update">
+          </a>
+          Update vaulted credit card
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-patch">
+           PATCH
+          </span>
+          <span class="dax-operation-path">
+           /v1/vault/credit-cards/{credit_card_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Updates information for a vaulted credit card, by ID. In the JSON request body, specify the values to update.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="credit-cards-update-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#credit-cards-update-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                credit_card_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the vaulted credit card to update.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <header class="dax-topic-reference" id="credit-cards-update-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#credit-cards-update-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="array">
+              <h5 class="dax-def-term">
+               <code>
+                patch_request
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               array
+
+                
+                    (contains the
+               <a href="#definition-patch">
+                patch
+               </a>
+               object)
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               An array of JSON patch objects to apply partial updates to resources.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/credit_card/replace.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X PATCH https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-1SW33690TH184423CKM2ZMVY \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '[
+  {
+  "op": "replace",
+  "path": "/billing_address/line1",
+  "value": "53 N Main St."
+  }
+]'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="credit-cards-update-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#credit-cards-update-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body that shows card details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the vaulted credit card, which you can use to fund a payment.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               number
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The credit card number. Value is a string of numeric characters with no spaces or punctuation. Must conform to modulo and the length required by its credit card type.
+              <em>
+               Redacted in responses.
+              </em>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{12,19}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               type
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The credit card type.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Possible values:
+               <code>
+                visa
+               </code>
+               ,
+               <code>
+                mastercard
+               </code>
+               ,
+               <code>
+                amex
+               </code>
+               ,
+               <code>
+                discover
+               </code>
+               ,
+               <code>
+                maestro
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               expire_month
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The one- to two-digit month when the card expires, with no leading zero. For example,
+              <code>
+               1
+              </code>
+              or
+              <code>
+               12
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{2}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               expire_year
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The four-digit year when the card expires. For example,
+              <code>
+               2017
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{4}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               first_name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The first name of the credit card holder. Maximum length is 25 characters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               last_name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The last name of the credit card holder.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               billing_address
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-address">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The billing address for this credit card.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_customer_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The externally-provided ID of the customer for whom to list credit cards.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               merchant_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the merchant for whom to list credit cards.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               payer_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              A unique ID that you can assign and track when you vault a credit card or use a vaulted credit card to make a payment. This ID can help to avoid unintentional use or misuse of credit cards. Can be any value, such as a UUID, user name, or email address.
+              <strong>
+               This is being deprecated in favor of the
+               <code>
+                external_customer_id
+               </code>
+               property.
+              </strong>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_card_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The externally-provided ID of the credit card.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               state
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The state of the credit card funding instrument.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+              <p>
+               Possible values:
+               <code>
+                expired
+               </code>
+               ,
+               <code>
+                ok
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               create_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the vaulted credit card was created, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . For example,
+              <code>
+               2017-11-05T13:15:30Z
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               update_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the vaulted credit card was updated, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . For example,
+              <code>
+               2017-11-05T13:15:30Z
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               valid_until
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the credit card becomes unusable from the vault, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . The
+              <code>
+               valid_until
+              </code>
+              parameter is not the same as the expiration month and year. The expiration month and year might be later than the
+              <code>
+               valid_until
+              </code>
+              date. For example, the card expires in November 2019 but the
+              <code>
+               valid_until
+              </code>
+              date is October 17th, 2019.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "id": "CARD-1SW33690TH184423CKM2ZMVY",
+  "state": "ok",
+  "number": "0000000000000000",
+  "type": "visa",
+  "expire_month": 11,
+  "expire_year": 2015,
+  "first_name": "Joe",
+  "last_name": "Shopper",
+  "billing_address": {
+    "line1": "53 N Main St.",
+    "city": "Johnstown",
+    "state": "OH",
+    "postal_code": "43210",
+    "country_code": "US",
+    "phone": "408-334-8890"
+  },
+  "valid_until": "2017-03-27T00:00:00Z",
+  "create_time": "2014-03-28T15:33:43Z",
+  "update_time": "2014-03-28T15:33:43Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY",
+      "rel": "delete",
+      "method": "DELETE"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY",
+      "rel": "patch",
+      "method": "PATCH"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="credit-cards_delete">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#credit-cards_delete">
+          </a>
+          Delete vaulted credit card
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-delete">
+           DELETE
+          </span>
+          <span class="dax-operation-path">
+           /v1/vault/credit-cards/{credit_card_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Deletes a vaulted credit card, by ID.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="credit-cards-delete-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#credit-cards-delete-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                credit_card_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the vaulted credit card to delete.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/credit_card/delete.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X DELETE https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-54E6956910402550WKGRL6EA \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="credit-cards-delete-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#credit-cards-delete-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             204 No Content
+            </code>
+            status code with no JSON response body.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>204 No Content</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="credit-cards_get">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#credit-cards_get">
+          </a>
+          Show vaulted credit card details
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-get">
+           GET
+          </span>
+          <span class="dax-operation-path">
+           /v1/vault/credit-cards/{credit_card_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Shows details for a vaulted credit card, by ID.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="credit-cards-get-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#credit-cards-get-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                credit_card_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the vaulted credit card for which to show details. This ID is returned when you store the credit card in the PayPal vault.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-Java-SDK/blob/master/rest-api-sample/src/main/java/com/paypal/api/payments/servlet/GetCreditCardServlet.java" target="_blank">
+            JAVA
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/credit_card/find.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X GET https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-54E6956910402550WKGRL6EA \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="credit-cards-get-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#credit-cards-get-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body with card details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the vaulted credit card, which you can use to fund a payment.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               number
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The credit card number. Value is a string of numeric characters with no spaces or punctuation. Must conform to modulo and the length required by its credit card type.
+              <em>
+               Redacted in responses.
+              </em>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{12,19}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               type
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The credit card type.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Possible values:
+               <code>
+                visa
+               </code>
+               ,
+               <code>
+                mastercard
+               </code>
+               ,
+               <code>
+                amex
+               </code>
+               ,
+               <code>
+                discover
+               </code>
+               ,
+               <code>
+                maestro
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               expire_month
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The one- to two-digit month when the card expires, with no leading zero. For example,
+              <code>
+               1
+              </code>
+              or
+              <code>
+               12
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{2}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="integer">
+             <h5 class="dax-def-term">
+              <code>
+               expire_year
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              integer
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The four-digit year when the card expires. For example,
+              <code>
+               2017
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Pattern:
+               <code>
+                ^[0-9]{4}$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               first_name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The first name of the credit card holder. Maximum length is 25 characters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               last_name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The last name of the credit card holder.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               billing_address
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-address">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The billing address for this credit card.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_customer_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The externally-provided ID of the customer for whom to list credit cards.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               merchant_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the merchant for whom to list credit cards.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               payer_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              A unique ID that you can assign and track when you vault a credit card or use a vaulted credit card to make a payment. This ID can help to avoid unintentional use or misuse of credit cards. Can be any value, such as a UUID, user name, or email address.
+              <strong>
+               This is being deprecated in favor of the
+               <code>
+                external_customer_id
+               </code>
+               property.
+              </strong>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_card_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The externally-provided ID of the credit card.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 256.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               state
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The state of the credit card funding instrument.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+              <p>
+               Possible values:
+               <code>
+                expired
+               </code>
+               ,
+               <code>
+                ok
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               create_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the vaulted credit card was created, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . For example,
+              <code>
+               2017-11-05T13:15:30Z
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               update_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the vaulted credit card was updated, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . For example,
+              <code>
+               2017-11-05T13:15:30Z
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               valid_until
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the credit card becomes unusable from the vault, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              . The
+              <code>
+               valid_until
+              </code>
+              parameter is not the same as the expiration month and year. The expiration month and year might be later than the
+              <code>
+               valid_until
+              </code>
+              date. For example, the card expires in November 2019 but the
+              <code>
+               valid_until
+              </code>
+              date is October 17th, 2019.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "valid_until": "2016-05-26T00:00:00Z",
+  "first_name": "Joe",
+  "last_name": "Shopper",
+  "expire_month": 11,
+  "state": "ok",
+  "billing_address": {
+    "city": "Johnstown",
+    "state": "OH",
+    "postal_code": "43210",
+    "country_code": "US",
+    "line1": "52 N. Main St."
+  },
+  "expire_year": 2018,
+  "number": "0000000000000000",
+  "type": "visa",
+  "id": "CARD-54E6956910402550WKGRL6EA",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA",
+      "method": "GET",
+      "rel": "self"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA",
+      "method": "DELETE",
+      "rel": "delete"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA",
+      "method": "PATCH",
+      "rel": "patch"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="dax-definitions" id="definitions">
+       <header class="dax-topic-definition">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" href="#definitions">
+         </a>
+         Common object definitions
+        </h2>
+       </header>
+       <div class="dax-reference-set dx-flex" id="definition-address">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-address">
+           </a>
+           address
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              line1
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The first line of the address. For example, number, street, and so on.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              line2
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             Optional. The second line of the address. For example, suite, apartment number, and so on.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              city
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The city name.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              state
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The
+             <a href="/docs/integration/direct/rest/state-codes/">
+              code
+             </a>
+             for a US state or the equivalent for other countries. Required for transactions if the address is in one of these countries:
+             <a href="/docs/integration/direct/rest/state-codes/#argentina">
+              Argentina
+             </a>
+             ,
+             <a href="/docs/integration/direct/rest/state-codes/#brazil">
+              Brazil
+             </a>
+             ,
+             <a href="/docs/integration/direct/rest/state-codes/#canada">
+              Canada
+             </a>
+             ,
+             <a href="/docs/integration/direct/rest/state-codes/#india">
+              India
+             </a>
+             ,
+             <a href="/docs/integration/direct/rest/state-codes/#italy">
+              Italy
+             </a>
+             ,
+             <a href="/docs/integration/direct/rest/state-codes/#japan">
+              Japan
+             </a>
+             ,
+             <a href="/docs/integration/direct/rest/state-codes/#mexico">
+              Mexico
+             </a>
+             ,
+             <a href="/docs/integration/direct/rest/state-codes/#thailand">
+              Thailand
+             </a>
+             , or
+             <a href="/docs/integration/direct/rest/state-codes/#usa">
+              United States
+             </a>
+             . Maximum length is 40 single-byte characters.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              country_code
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-country_code">
+              string
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A
+             <a href="/docs/integration/direct/rest/country-codes/">
+              two-character ISO 3166-1 code
+             </a>
+             that identifies the country or region.
+             <blockquote>
+              <strong>
+               Note:
+              </strong>
+              The country code for Great Britain is
+              <code>
+               GB
+              </code>
+              and not
+              <code>
+               UK
+              </code>
+              as used in the top-level domain names for that country. Use the
+              <code>
+               C2
+              </code>
+              country code for China worldwide for comparable uncontrolled price (CUP) method, bank card, and cross-border transactions.
+             </blockquote>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum length: 2.
+             </p>
+             <p>
+              Maximum length: 2.
+             </p>
+             <p>
+              Pattern:
+              <code>
+               ^([A-Z]{2}|C2)$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              postal_code
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The postal code, which is the zip code or equivalent. Typically required for countries with a postal code or an equivalent. See
+             <a href="https://en.wikipedia.org/wiki/Postal_code">
+              Postal code
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-country_code">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-country_code">
+           </a>
+           country_code
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              country_code
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A
+             <a href="/docs/integration/direct/rest/country-codes/">
+              two-character ISO 3166-1 code
+             </a>
+             that identifies the country or region.
+             <blockquote>
+              <strong>
+               Note:
+              </strong>
+              The country code for Great Britain is
+              <code>
+               GB
+              </code>
+              and not
+              <code>
+               UK
+              </code>
+              as used in the top-level domain names for that country. Use the
+              <code>
+               C2
+              </code>
+              country code for China worldwide for comparable uncontrolled price (CUP) method, bank card, and cross-border transactions.
+             </blockquote>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum length: 2.
+             </p>
+             <p>
+              Maximum length: 2.
+             </p>
+             <p>
+              Pattern:
+              <code>
+               ^([A-Z]{2}|C2)$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-credit_card">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-credit_card">
+           </a>
+           credit_card
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the vaulted credit card, which you can use to fund a payment.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              number
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The credit card number. Value is a string of numeric characters with no spaces or punctuation. Must conform to modulo and the length required by its credit card type.
+             <em>
+              Redacted in responses.
+             </em>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Pattern:
+              <code>
+               ^[0-9]{12,19}$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The credit card type.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               visa
+              </code>
+              ,
+              <code>
+               mastercard
+              </code>
+              ,
+              <code>
+               amex
+              </code>
+              ,
+              <code>
+               discover
+              </code>
+              ,
+              <code>
+               maestro
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="integer">
+            <h5 class="dax-def-term">
+             <code>
+              expire_month
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             integer
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The one- to two-digit month when the card expires, with no leading zero. For example,
+             <code>
+              1
+             </code>
+             or
+             <code>
+              12
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Pattern:
+              <code>
+               ^[0-9]{2}$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="integer">
+            <h5 class="dax-def-term">
+             <code>
+              expire_year
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             integer
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The four-digit year when the card expires. For example,
+             <code>
+              2017
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Pattern:
+              <code>
+               ^[0-9]{4}$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              first_name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The first name of the credit card holder. Maximum length is 25 characters.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              last_name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The last name of the credit card holder.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              billing_address
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-address">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The billing address for this credit card.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              external_customer_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The externally-provided ID of the customer for whom to list credit cards.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 256.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              merchant_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the merchant for whom to list credit cards.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 256.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              payer_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A unique ID that you can assign and track when you vault a credit card or use a vaulted credit card to make a payment. This ID can help to avoid unintentional use or misuse of credit cards. Can be any value, such as a UUID, user name, or email address.
+             <strong>
+              This is being deprecated in favor of the
+              <code>
+               external_customer_id
+              </code>
+              property.
+             </strong>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 256.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              external_card_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The externally-provided ID of the credit card.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 256.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              state
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The state of the credit card funding instrument.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+             <p>
+              Possible values:
+              <code>
+               expired
+              </code>
+              ,
+              <code>
+               ok
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              create_time
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The date and time when the vaulted credit card was created, in
+             <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+              Internet date and time format
+             </a>
+             . For example,
+             <code>
+              2017-11-05T13:15:30Z
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              update_time
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The date and time when the vaulted credit card was updated, in
+             <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+              Internet date and time format
+             </a>
+             . For example,
+             <code>
+              2017-11-05T13:15:30Z
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              valid_until
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The date and time when the credit card becomes unusable from the vault, in
+             <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+              Internet date and time format
+             </a>
+             . The
+             <code>
+              valid_until
+             </code>
+             parameter is not the same as the expiration month and year. The expiration month and year might be later than the
+             <code>
+              valid_until
+             </code>
+             date. For example, the card expires in November 2019 but the
+             <code>
+              valid_until
+             </code>
+             date is October 17th, 2019.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              links
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-link_description">
+              link_description
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of request-related
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS links
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-creditcardlist">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-creditcardlist">
+           </a>
+           creditcardlist
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              items
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-credit_card">
+              credit_card
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of credit card objects.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              links
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-link_description">
+              link_description
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of request-specific
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS links
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="integer">
+            <h5 class="dax-def-term">
+             <code>
+              total_items
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             integer
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The total number of items.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum value: 0.
+             </p>
+             <p>
+              Maximum value: 2147483647.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="integer">
+            <h5 class="dax-def-term">
+             <code>
+              total_pages
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             integer
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The total number of pages.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum value: 1.
+             </p>
+             <p>
+              Maximum value: 2147483647.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-error">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error">
+           </a>
+           error
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The human-readable, unique name of the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              debug_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The PayPal internal ID. Used for correlation purposes.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              message
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The message that describes the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              information_link
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The URI to detailed information related to this error for the developer.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              details
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-error_details">
+              error_details
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of additional details for the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-error_details">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error_details">
+           </a>
+           error_details
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              field
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The name of the field that caused the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              issue
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The reason for the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-link_description">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-link_description">
+           </a>
+           link_description
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              href
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The complete target URL. To make the related call, combine the method with this link, in
+             <a href="https://tools.ietf.org/html/rfc6570">
+              URI template format
+             </a>
+             . Include the
+             <code>
+              $
+             </code>
+             ,
+             <code>
+              (
+             </code>
+             , and
+             <code>
+              )
+             </code>
+             characters for pre-processing. The
+             <code>
+              href
+             </code>
+             is the key HATEOAS component that links a completed call with a subsequent call.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              rel
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The
+             <a href="https://tools.ietf.org/html/rfc5988#section-4">
+              link relation type
+             </a>
+             , which serves as an ID for a link that unambiguously describes the semantics of the link. See
+             <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">
+              Link Relations
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              method
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The HTTP method required to make the related call.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               GET
+              </code>
+              ,
+              <code>
+               POST
+              </code>
+              ,
+              <code>
+               PUT
+              </code>
+              ,
+              <code>
+               DELETE
+              </code>
+              ,
+              <code>
+               HEAD
+              </code>
+              ,
+              <code>
+               CONNECT
+              </code>
+              ,
+              <code>
+               OPTIONS
+              </code>
+              ,
+              <code>
+               PATCH
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch">
+           </a>
+           patch
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              op
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The operation to complete.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               add
+              </code>
+              ,
+              <code>
+               remove
+              </code>
+              ,
+              <code>
+               replace
+              </code>
+              ,
+              <code>
+               move
+              </code>
+              ,
+              <code>
+               copy
+              </code>
+              ,
+              <code>
+               test
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              path
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The JSON pointer to the target document location at which to complete the operation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="number,integer,string,boolean,null,array,object">
+            <h5 class="dax-def-term">
+             <code>
+              value
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             number,integer,string,boolean,null,array,object
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The value to apply. The
+             <code>
+              remove
+             </code>
+             operation does not require a value.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              from
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The JSON pointer to the target document location from which to move the value. Required for the
+             <code>
+              move
+             </code>
+             operation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch_request">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch_request">
+           </a>
+           patch_request
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              patch_request
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-patch">
+              patch
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of JSON patch objects to apply partial updates to resources.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="dax-more">
+       <h2 class="sr-only">
+        Additional API information
+       </h2>
+       <div class="dax-more-error" id="errors">
+        <h3 class="dx-anchor">
+         <a aria-hidden="true" href="#errors">
+         </a>
+         Error messages
+        </h3>
+        <p>
+         In addition to
+         <a href="/docs/api/overview/#error-status-codes">
+          common HTTP status codes
+         </a>
+         that the REST APIs return, the Vault API can return the following errors.
+        </p>
+        <ul class="dax-messages">
+         <li>
+          <h4>
+           <code>
+            CC_TYPE_NOT_SUPPORTED
+           </code>
+          </h4>
+          <p>
+           Card type is not supported for zero dollar authorization.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            CREDIT_CARD_CVV_CHECK_FAILED
+           </code>
+          </h4>
+          <p>
+           The credit card CVV check failed.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            DATA_RETRIEVAL
+           </code>
+          </h4>
+          <p>
+           Error retrieving data.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            DUPLICATE_EXTERNAL_CARD_ID
+           </code>
+          </h4>
+          <p>
+           This external card ID for a credit card resource already exists.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            DUPLICATE_MERCHANT_ID_EXTERNAL_CARD_
+            <wbr>
+            </wbr>
+            ID
+           </code>
+          </h4>
+          <p>
+           This merchant ID and external card ID combination for a credit card resource already exists.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            DUPLICATE_REQUEST_ID
+           </code>
+          </h4>
+          <p>
+           The value of
+           <code>
+            PayPal-Request-Id
+           </code>
+           header has already been used.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            EXPIRED_CREDIT_CARD
+           </code>
+          </h4>
+          <p>
+           Credit card is expired.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            INTERNAL_SERVICE_ERROR
+           </code>
+          </h4>
+          <p>
+           An internal service error has occurred.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            INVALID_RESOURCE_ID
+           </code>
+          </h4>
+          <p>
+           The requested resource ID was not found.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            PERMISSION_DENIED
+           </code>
+          </h4>
+          <p>
+           No permission for the requested operation.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            VALIDATION_ERROR
+           </code>
+          </h4>
+          <p>
+           Invalid request - see details.
+          </p>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <span class="dxf-insert-rating">
+     </span>
+    </article>
+   </div>
+   <footer class="footer">
+    <section class="section">
+     <div class="section__content">
+      <div class="grid">
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Docs
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/integration/direct/express-checkout/integration-jsv4/" rel="nofollow">
+           Express Checkout
+          </a>
+         </li>
+         <li>
+          <a href="/docs/integration/web" rel="nofollow">
+           Payment Buttons
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.braintreepayments.com/start/overview/" rel="nofollow">
+           Braintree SDK
+          </a>
+         </li>
+         <li>
+          <a href="/docs/directory/" rel="nofollow">
+           All Docs
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Support
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/faq/" rel="nofollow">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-techsupport.com/" rel="nofollow">
+           Merchant Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">
+           Account Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Resources
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://github.com/paypal/" rel="nofollow">
+           GitHub
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/partnerprogram" rel="nofollow">
+           Partners
+          </a>
+         </li>
+         <li>
+          <a href="https://demo.paypal.com" rel="nofollow">
+           PayPal Demo
+          </a>
+         </li>
+         <li>
+          <a href="https://devblog.paypal.com/" rel="nofollow">
+           Blog
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Family
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://paypal.com/" rel="nofollow">
+           PayPal
+          </a>
+         </li>
+         <li>
+          <a href="https://braintreepayments.com/" rel="nofollow">
+           Braintree
+          </a>
+         </li>
+         <li>
+          <a href="https://venmo.com/" rel="nofollow">
+           Venmo
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paydiant.com/" rel="nofollow">
+           Paydiant
+          </a>
+         </li>
+         <li>
+          <a href="https://xoom.com/" rel="nofollow">
+           Xoom
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="grid">
+       <div class="grid__item grid__item--6">
+        <ul class="footer__legal">
+         <li>
+          <a class="scTrack:privacy-policy" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">
+           Privacy
+          </a>
+         </li>
+         <li>
+          <a class="scTrack:legal-agreements" href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">
+           Legal
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--6">
+        <p class="footer__copyright">
+         ©2018 PayPal
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+  </main>
+ </body>
+</html>

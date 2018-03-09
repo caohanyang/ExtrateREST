@@ -1,0 +1,4929 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA" name="google-site-verification"/>
+  <title>
+   PayPal Developer
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" name="msapplication-TileImage"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png" rel="apple-touch-icon-precomposed"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png" rel="icon" sizes="32x32"/>
+  <link href="/css/docs.css" rel="stylesheet" type="text/css"/>
+  <script data-main="/js/master" src="/components/requirejs/require.js">
+  </script>
+ </head>
+ <body class="dx-apiref dx-apis">
+  <header class="header" id="header">
+   <a aria-label="PayPal Developer" class="header__block header__brand" href="/">
+   </a>
+   <a aria-label="Toggle top-level navigation" class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0">
+   </a>
+   <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2">
+   </div>
+   <div class="header__nav">
+    <div class="header__nav--left">
+     <ul class="dx-nav-0 dx-nav-0-docs">
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/docs/">
+        Docs
+       </a>
+      </li>
+      <li class="dx-nav-0-item dx-nav-active">
+       <a class="dx-nav-0-link" href="/reference/">
+        APIs
+       </a>
+      </li>
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/support/">
+        Support
+       </a>
+      </li>
+     </ul>
+     <form action="/search" class="header__search dx-form-search" id="siteSearch" method="get" name="search">
+      <label class="sr-only" for="siteQ">
+       Enter search term
+      </label>
+      <input class="dx-search-input" id="siteQ" name="q" placeholder="Search" type="search" value=""/>
+     </form>
+    </div>
+    <div class="header__nav--right">
+     <div class="dx-auth-block profile__container">
+      <div class="dx-auth-logged-out">
+       <a class="dx-auth-login dx-btn dx-btn-primary" data-dxa="login,nav-click,nav-login" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications">
+        Log into Dashboard
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="dx-main">
+   <div class="dx-flex">
+    <div class="dx-main-nav-slug">
+    </div>
+    <nav class="dx-main-nav dx-mobile-nav">
+     <div class="dx-nav-back">
+      <a href="/reference/">
+       View All Reference
+      </a>
+     </div>
+     <ul class="dx-nav dx-nav-1">
+      <li class="dx-nav-1-item">
+       <a class="dx-nav-heading" href="/docs/api/">
+        REST APIs
+       </a>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Get Started
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/overview/">
+          Get Started
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#authentication-and-authorization">
+            Authentication and Authorization
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-requests">
+            API Requests
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-responses">
+            API Responses
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#make-your-first-call">
+            Make Your First Call
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          References
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/">
+          API Reference
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/balance-accounts">
+            Balance Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-agreements">
+            Billing Agreements API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-plans">
+            Billing Plans API
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="#billing-plans" title="resource group">
+              Billing plans
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#billing-plans_create" title="operation">
+                Create billing plan
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#billing-plans_list" title="operation">
+                List billing plans
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#billing-plans_update" title="operation">
+                Update billing plan
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#billing-plans_get" title="operation">
+                Show billing plan details
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#definitions">
+              Common Object Definitions
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#definition-charge_models">
+                charge_models
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-currency">
+                currency
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-error">
+                error
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-error_details">
+                error_details
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-link_description">
+                link_description
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-merchant_preferences">
+                merchant_preferences
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch">
+                patch
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch_request">
+                patch_request
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-payment_definition">
+                payment_definition
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-plan">
+                plan
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-plan_list">
+                plan_list
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-terms">
+                terms
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#errors">
+              Error Messages
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/customer-disputes">
+            Customer Disputes API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/identity">
+            Identity API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/invoicing">
+            Invoicing API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/managed-accounts">
+            Managed Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/orders">
+            Orders API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/partner-referrals">
+            Partner Referrals API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payment-experience">
+            Payment Experience API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments">
+            Payments API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.payouts-batch">
+            Payouts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/sync">
+            PayPal Sync API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/referenced-payouts">
+            Referenced Payouts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/vault">
+            Vault API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/webhooks">
+            Webhooks API
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/currency-codes/">
+          Currency Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/currency-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/country-codes/">
+          Country Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/country-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/state-codes/">
+          State &amp; Province Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#argentina">
+            Argentina
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#brazil">
+            Brazil
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#canada">
+            Canada
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#india">
+            India
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#italy">
+            Italy
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#japan">
+            Japan
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#mexico">
+            Mexico
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#thailand">
+            Thailand
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#usa">
+            United States
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/locale-codes/">
+          Locale Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#localize-the-checkout-experience">
+            Localize the Checkout Experience
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#supported-locale-codes">
+            Supported Locale Codes
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Release Notes
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2017/">
+          2017
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#07-september-2017">
+            07 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#31-august-2017">
+            31 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#24-august-2017">
+            24 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-august-2017">
+            16 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-august-2017">
+            11 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-august-2017">
+            09 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-august-2017">
+            04 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-july-2017">
+            27 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-july-2017">
+            19 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-july-2017">
+            13 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#06-july-2017">
+            06 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#28-june-2017">
+            28 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-june-2017">
+            22 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#15-june-2017">
+            15 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-june-2017">
+            09 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-may-2017">
+            25 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-may-2017">
+            11 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-may-2017">
+            04 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-april-2017">
+            25 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-april-2017">
+            13 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#30-march-2017">
+            30 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#23-march-2017">
+            23 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-march-2017">
+            16 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-february-2017">
+            27 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-february-2017">
+            16 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-february-2017">
+            02 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-january-2017">
+            25 January 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-january-2017">
+            05 January 2017
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2016/">
+          2016
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#22-december-2016">
+            22 December 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#17-november-2016">
+            17 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-november-2016">
+            10 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-november-2016">
+            04 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-october-2016">
+            27 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-october-2016">
+            06 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#29-september-2016">
+            29 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#08-september-2016">
+            08 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#01-september-2016">
+            01 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-august-2016">
+            11 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-august-2016">
+            04 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-july-2016">
+            27 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#20-july-2016">
+            20 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#07-july-2016">
+            07 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#16-june-2016">
+            16 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-june-2016">
+            02 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-may-2016">
+            11 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-may-2016">
+            02 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-april-2016">
+            06 April 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-march-2016">
+            10 March 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#26-february-2016">
+            26 February 2016
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2015/">
+          2015
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#16-december-2015">
+            16 December 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-november-2015">
+            13 November 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-october-2015">
+            25 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#21-october-2015">
+            21 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-august-2015">
+            12 August 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-july-2015">
+            19 July 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#18-june-2015">
+            18 June 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-may-2015">
+            19 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-may-2015">
+            05 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#23-april-2015">
+            23 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-april-2015">
+            05 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-march-2015">
+            25 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-march-2015">
+            12 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#26-february-2015">
+            26 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-february-2015">
+            13 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#22-january-2015">
+            22 January 2015
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2014/">
+          2014
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-december-2014">
+            17 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#10-december-2014">
+            10 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#03-december-2014">
+            03 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#05-november-2014">
+            05 November 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-october-2014">
+            23 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#15-october-2014">
+            15 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#01-october-2014">
+            01 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-september-2014">
+            17 September 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#13-august-2014">
+            13 August 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-july-2014">
+            23 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-july-2014">
+            07 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-march-2014">
+            07 March 2014
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2013/">
+          2013
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#30-july-2013">
+            30 July 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#28-may-2013">
+            28 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#22-may-2013">
+            22 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#15-may-2013">
+            15 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#24-april-2013">
+            24 April 2013
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          SDKs
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/rest-sdks/">
+          SDKs
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/quickstart/">
+          SDK Quickstart
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/install">
+            Install the SDK
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/environment">
+            Configure Environment
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/payments">
+            Process PayPal Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-plan">
+            Create Billing Plans
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-agreement">
+            Create Billing Agreements
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/capture-payment">
+            Capture Payments Later
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-process-order/">
+            Create and Process Orders
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/refund-payment">
+            Refund Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-webhook">
+            Create Notification Webhooks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/service-integrations/">
+          Service Integrations
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/service-integrations/slack-bot/">
+            Slack
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/simple_pay">
+              Add Person-to-Bot Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/direct_pay">
+              Add Person-to-Person Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/subscribe">
+              Add Agreement for Recurring Payment
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          GLOSSARY
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/glossary/">
+          Glossary
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <article class="content dx-content ">
+     <div class="dax-api" id="">
+      <header class="dax-topic">
+       <h1 class="dx-content-title">
+        Billing Plans API
+       </h1>
+       <div class="dax-preamble">
+        You use billing plans and billing agreements to create an agreement for a recurring PayPal or debit card payment for goods or services.
+        <br/>
+        <br/>
+        A billing plan includes payment definitions and other details. A plan must include at least one regular payment definition and, optionally, a trial payment definition. Each definition determines how often and for how long a customer is charged.
+        <br/>
+        <br/>
+        A plan can specify a type, which indicates whether the payment definitions in the plan have a fixed or infinite number of payment cycles. The plan also defines merchant preferences including how much it costs to set up the agreement, the links where a customer can approve or can cancel the agreement, and the action if the customer's initial payment fails.
+        <br/>
+        <br/>
+        By default, a plan is not active when you create it. To activate it, you update its
+        <code>
+         state
+        </code>
+        to
+        <code>
+         ACTIVE
+        </code>
+        .
+        <br/>
+        <br/>
+        For more information, see
+        <a href="/docs/integration/direct/billing-plans-and-agreements/">
+         Billing Plans and Agreements
+        </a>
+        .
+        <blockquote>
+         <strong>
+          Important:
+         </strong>
+         The use of the PayPal REST
+         <code>
+          /payments
+         </code>
+         APIs to accept credit card payments is restricted. Instead, you can accept credit card payments with
+         <a href="https://www.braintreepayments.com/products/braintree-direct">
+          Braintree Direct
+         </a>
+         .
+        </blockquote>
+       </div>
+      </header>
+      <div class="dax-resource" id="billing-plans">
+       <header class="dax-topic-resource">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" class="dx-anchor__icon" href="#billing-plans">
+         </a>
+         Billing plans
+         <small>
+          (resource group)
+         </small>
+        </h2>
+        <div class="dax-preamble">
+         Use the
+         <code>
+          /billing-plans
+         </code>
+         resource to create, update, show details for, and list plans.
+        </div>
+       </header>
+       <div class="dax-operation" id="billing-plans_create">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#billing-plans_create">
+          </a>
+          Create billing plan
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-post">
+           POST
+          </span>
+          <span class="dax-operation-path">
+           /v1/payments/billing-plans/
+           <wbr>
+           </wbr>
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Creates a billing plan. In the JSON request body, include the plan details. A plan must include at least one regular payment definition and, optionally, a trial payment definition. Each payment definition specifies a billing period, which determines how often and for how long the customer is charged. A plan can specify a fixed or infinite number of payment cycles. A payment definition can optionally specify shipping fee and tax amounts. The default state of a new plan is
+          <code>
+           CREATED
+          </code>
+          . Before you can create an agreement from a plan, you must activate the plan by updating its
+          <code>
+           state
+          </code>
+          to
+          <code>
+           ACTIVE
+          </code>
+          .
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="billing-plans-create-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#billing-plans-create-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                name
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The plan name.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Maximum length: 128.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                description
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The plan description. Maximum length is 127 single-byte alphanumeric characters.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Maximum length: 127.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                type
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               enum
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The plan type. Indicates whether the payment definitions in the plan have a fixed number of or infinite payment cycles. Value is:
+               <ul>
+                <li>
+                 <code>
+                  FIXED
+                 </code>
+                 . The plan has a fixed number of payment cycles.
+                </li>
+                <li>
+                 <code>
+                  INFINITE
+                 </code>
+                 . The plan has infinite, or
+                 <code>
+                  0
+                 </code>
+                 , payment cycles.
+                </li>
+               </ul>
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Allowed values:
+                <code>
+                 FIXED
+                </code>
+                ,
+                <code>
+                 INFINITE
+                </code>
+                .
+               </p>
+               <p>
+                Maximum length: 20.
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="array">
+              <h5 class="dax-def-term">
+               <code>
+                payment_definitions
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               array
+
+                
+                    (contains the
+               <a href="#definition-payment_definition">
+                payment_definition
+               </a>
+               object)
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               A payment definition, which determines how often and for how long the customer is charged. Includes the interval at which the customer is charged, the charge amount, and optional shipping fees and taxes.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                merchant_preferences
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-merchant_preferences">
+                object
+               </a>
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The merchant preferences for a plan. Includes how much it costs to set up the agreement, the URLs where the customer can approve or cancel the agreement, the maximum number of allowed failed payment attempts, whether PayPal automatically bills the outstanding balance in the next billing cycle, and the action if the customer's initial payment fails.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/BillingPlanCreate.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Java-SDK/blob/master/rest-api-sample/src/main/java/com/paypal/api/sample/SubscriptionSample.java#L35" target="_blank">
+            JAVA
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/subscription/billing_plans/create.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/billing/CreatePlan.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/subscription/billing_plans/create.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-plans/ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '{
+  "name": "Plan with Regular and Trial Payment Definitions",
+  "description": "Plan with regular and trial payment definitions.",
+  "type": "FIXED",
+  "payment_definitions": [
+  {
+    "name": "Regular payment definition",
+    "type": "REGULAR",
+    "frequency": "MONTH",
+    "frequency_interval": "2",
+    "amount": {
+    "value": "100",
+    "currency": "USD"
+    },
+    "cycles": "12",
+    "charge_models": [
+    {
+      "type": "SHIPPING",
+      "amount": {
+      "value": "10",
+      "currency": "USD"
+      }
+    },
+    {
+      "type": "TAX",
+      "amount": {
+      "value": "12",
+      "currency": "USD"
+      }
+    }
+    ]
+  },
+  {
+    "name": "Trial payment definition",
+    "type": "TRIAL",
+    "frequency": "WEEK",
+    "frequency_interval": "5",
+    "amount": {
+    "value": "9.19",
+    "currency": "USD"
+    },
+    "cycles": "2",
+    "charge_models": [
+    {
+      "type": "SHIPPING",
+      "amount": {
+      "value": "1",
+      "currency": "USD"
+      }
+    },
+    {
+      "type": "TAX",
+      "amount": {
+      "value": "2",
+      "currency": "USD"
+      }
+    }
+    ]
+  }
+  ],
+  "merchant_preferences": {
+  "setup_fee": {
+    "value": "1",
+    "currency": "USD"
+  },
+  "return_url": "https://example.com",
+  "cancel_url": "https://example.com/cancel",
+  "auto_bill_amount": "YES",
+  "initial_fail_amount_action": "CONTINUE",
+  "max_fail_attempts": "0"
+  }
+}'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="billing-plans-create-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#billing-plans-create-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             201 Created
+            </code>
+            status code and a JSON response body that shows plan details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the plan.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+              <p>
+               Maximum length: 128.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan name.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 128.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               description
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan description. Maximum length is 127 single-byte alphanumeric characters.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 127.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               type
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan type. Indicates whether the payment definitions in the plan have a fixed number of or infinite payment cycles. Value is:
+              <ul>
+               <li>
+                <code>
+                 FIXED
+                </code>
+                . The plan has a fixed number of payment cycles.
+               </li>
+               <li>
+                <code>
+                 INFINITE
+                </code>
+                . The plan has infinite, or
+                <code>
+                 0
+                </code>
+                , payment cycles.
+               </li>
+              </ul>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Possible values:
+               <code>
+                FIXED
+               </code>
+               ,
+               <code>
+                INFINITE
+               </code>
+               .
+              </p>
+              <p>
+               Maximum length: 20.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               state
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan status.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+              <p>
+               Possible values:
+               <code>
+                CREATED
+               </code>
+               ,
+               <code>
+                ACTIVE
+               </code>
+               ,
+               <code>
+                INACTIVE
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               create_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the plan was created, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               update_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the plan was updated, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               payment_definitions
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-payment_definition">
+               payment_definition
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              A payment definition, which determines how often and for how long the customer is charged. Includes the interval at which the customer is charged, the charge amount, and optional shipping fees and taxes.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               terms
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-terms">
+               terms
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of terms for this plan. Read-only and reserved for future use.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               merchant_preferences
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-merchant_preferences">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The merchant preferences for a plan. Includes how much it costs to set up the agreement, the URLs where the customer can approve or cancel the agreement, the maximum number of allowed failed payment attempts, whether PayPal automatically bills the outstanding balance in the next billing cycle, and the action if the customer's initial payment fails.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "id": "P-7DC96732KA7763723UOPKETA",
+  "state": "CREATED",
+  "name": "Plan with Regular and Trial Payment Definitions",
+  "description": "Plan with regular and trial payment definitions.",
+  "type": "FIXED",
+  "payment_definitions": [
+    {
+      "id": "PD-0MF87809KK310750TUOPKETA",
+      "name": "Regular payment definition",
+      "type": "REGULAR",
+      "frequency": "MONTH",
+      "amount": {
+        "currency": "USD",
+        "value": "100"
+      },
+      "charge_models": [
+        {
+          "id": "CHM-89H01708244053321UOPKETA",
+          "type": "SHIPPING",
+          "amount": {
+            "currency": "USD",
+            "value": "10"
+          }
+        },
+        {
+          "id": "CHM-1V202179WT9709019UOPKETA",
+          "type": "TAX",
+          "amount": {
+            "currency": "USD",
+            "value": "12"
+          }
+        }
+      ],
+      "cycles": "12",
+      "frequency_interval": "2"
+    },
+    {
+      "id": "PD-03223056L66578712UOPKETA",
+      "name": "Trial payment definition",
+      "type": "TRIAL",
+      "frequency": "WEEK",
+      "amount": {
+        "currency": "USD",
+        "value": "9.19"
+      },
+      "charge_models": [
+        {
+          "id": "CHM-7XN63093LF858372XUOPKETA",
+          "type": "SHIPPING",
+          "amount": {
+            "currency": "USD",
+            "value": "1"
+          }
+        },
+        {
+          "id": "CHM-6JY06508UT8026625UOPKETA",
+          "type": "TAX",
+          "amount": {
+            "currency": "USD",
+            "value": "2"
+          }
+        }
+      ],
+      "cycles": "2",
+      "frequency_interval": "5"
+    }
+  ],
+  "merchant_preferences": {
+    "setup_fee": {
+      "currency": "USD",
+      "value": "1"
+    },
+    "max_fail_attempts": "0",
+    "return_url": "https://example.com",
+    "cancel_url": "https://example.com/cancel",
+    "auto_bill_amount": "YES",
+    "initial_fail_amount_action": "CONTINUE"
+  },
+  "create_time": "2017-06-16T07:40:20.940Z",
+  "update_time": "2017-06-16T07:40:20.940Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="billing-plans_list">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#billing-plans_list">
+          </a>
+          List billing plans
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-get">
+           GET
+          </span>
+          <span class="dax-operation-path">
+           /v1/payments/billing-plans/
+           <wbr>
+           </wbr>
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Lists billing plans. To filter the plans that appear in the response, specify one or more optional query and pagination parameters.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="billing-plans-list-query-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#billing-plans-list-query-parameters">
+             </a>
+             Query parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                page
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The zero-indexed number of the first page that begins the set of pages that are returned in the response. Default is
+               <code>
+                0
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                status
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               enum
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Filters the plans in the response by a plan status.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Allowed values:
+                <code>
+                 CREATED
+                </code>
+                ,
+                <code>
+                 ACTIVE
+                </code>
+                ,
+                <code>
+                 INACTIVE
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                page_size
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The number of plans to list on a single page. For example, if
+               <code>
+                page_size
+               </code>
+               is
+               <code>
+                10
+               </code>
+               , each page shows ten plans. A valid value is a non-negative, non-zero integer. Default is
+               <code>
+                10
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                total_required
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Indicates whether the response includes the
+               <code>
+                total_items
+               </code>
+               and
+               <code>
+                total_pages
+               </code>
+               fields. Value is
+               <code>
+                yes
+               </code>
+               or
+               <code>
+                no
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/BillingPlanGetList.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/subscription/billing_plans/list.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/billing/ListPlans.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/subscription/billing_plans/get_all.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X GET https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=3&amp;status=ACTIVE&amp;page_size=2&amp;page=1&amp;total_required=yes \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="billing-plans-list-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#billing-plans-list-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body that lists plans with details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               plans
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-plan">
+               plan
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of plans.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               total_items
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The total number of plans in the list.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               total_pages
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The total number of pages in the response. The
+              <code>
+               page_size
+              </code>
+              request value determines how many plans appear on each page. The
+              <code>
+               total_items
+              </code>
+              and
+              <code>
+               page_size
+              </code>
+              request values are used to calculate the total number of pages in the response.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "total_items": "166",
+  "total_pages": "83",
+  "plans": [
+    {
+      "id": "P-7DC96732KA7763723UOPKETA",
+      "state": "ACTIVE",
+      "name": "Plan with Regular and Trial Payment Definitions",
+      "description": "Plan with regular and trial billing payment definitions.",
+      "type": "FIXED",
+      "create_time": "2017-08-22T04:41:52.836Z",
+      "update_time": "2017-08-22T04:41:53.169Z",
+      "links": [
+        {
+          "href": "https://api.sandbox.paypal.com//v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA",
+          "rel": "self",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "id": "P-1TV69435N82273154UPWDU4I",
+      "state": "ACTIVE",
+      "name": "Plan with Regular Payment Definition",
+      "description": "Plan with one regular payment definition, minimal merchant preferences, and no shipping fees or tax.",
+      "type": "INFINITE",
+      "create_time": "2017-08-22T04:41:55.623Z",
+      "update_time": "2017-08-22T04:41:56.055Z",
+      "links": [
+        {
+          "href": "https://api.sandbox.paypal.com//v1/payments/billing-plans/P-1TV69435N82273154UPWDU4I",
+          "rel": "self",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&amp;page=1&amp;start=3&amp;status=active",
+      "rel": "start",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&amp;page=0&amp;status=active",
+      "rel": "previous_page",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&amp;page=2&amp;status=active",
+      "rel": "next_page",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&amp;page=82&amp;status=active",
+      "rel": "last",
+      "method": "GET"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="billing-plans_update">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#billing-plans_update">
+          </a>
+          Update billing plan
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-patch">
+           PATCH
+          </span>
+          <span class="dax-operation-path">
+           /v1/payments/billing-plans/
+           <wbr>
+           </wbr>
+           {plan_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Updates fields in a billing plan, by ID. In the JSON request body, include a patch object that specifies the operation to perform, one or more fields to update, and a new value for each updated field.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="billing-plans-update-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#billing-plans-update-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                plan_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the billing plan to update.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <header class="dax-topic-reference" id="billing-plans-update-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#billing-plans-update-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="array">
+              <h5 class="dax-def-term">
+               <code>
+                patch_request
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               array
+
+                
+                    (contains the
+               <a href="#definition-patch">
+                patch
+               </a>
+               object)
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               An array of JSON patch objects to apply partial updates to resources.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/BillingPlanUpdate.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Java-SDK/blob/master/rest-api-sample/src/main/java/com/paypal/api/sample/SubscriptionSample.java#L51" target="_blank">
+            JAVA
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/subscription/billing_plans/update.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/billing/UpdatePlan.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/subscription/billing_plans/replace.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X PATCH https://api.sandbox.paypal.com/v1/payments/billing-plans/P-6EM196669U062173D7QCVDRA/ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '[
+  {
+  "op": "replace",
+  "path": "/merchant-preferences",
+  "value": {
+    "cancel_url": "https://example.com/cancel",
+    "setup_fee": {
+    "value": "5",
+    "currency": "USD"
+    }
+  }
+  }
+]'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="billing-plans-update-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#billing-plans-update-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code with no JSON response body.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>200 OK</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="billing-plans_get">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#billing-plans_get">
+          </a>
+          Show billing plan details
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-get">
+           GET
+          </span>
+          <span class="dax-operation-path">
+           /v1/payments/billing-plans/
+           <wbr>
+           </wbr>
+           {plan_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Shows details for a billing plan, by ID.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="billing-plans-get-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#billing-plans-get-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                plan_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the billing plan for which to show details.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/BillingPlanGet.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Java-SDK/blob/master/rest-api-sample/src/main/java/com/paypal/api/sample/SubscriptionSample.java#L74" target="_blank">
+            JAVA
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/subscription/billing_plans/get.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/billing/GetPlan.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/subscription/billing_plans/get.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X GET https://api.sandbox.paypal.com/v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="billing-plans-get-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#billing-plans-get-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body that shows plan details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the plan.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+              <p>
+               Maximum length: 128.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan name.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 128.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               description
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan description. Maximum length is 127 single-byte alphanumeric characters.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Maximum length: 127.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               type
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan type. Indicates whether the payment definitions in the plan have a fixed number of or infinite payment cycles. Value is:
+              <ul>
+               <li>
+                <code>
+                 FIXED
+                </code>
+                . The plan has a fixed number of payment cycles.
+               </li>
+               <li>
+                <code>
+                 INFINITE
+                </code>
+                . The plan has infinite, or
+                <code>
+                 0
+                </code>
+                , payment cycles.
+               </li>
+              </ul>
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Possible values:
+               <code>
+                FIXED
+               </code>
+               ,
+               <code>
+                INFINITE
+               </code>
+               .
+              </p>
+              <p>
+               Maximum length: 20.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               state
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The plan status.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+              <p>
+               Possible values:
+               <code>
+                CREATED
+               </code>
+               ,
+               <code>
+                ACTIVE
+               </code>
+               ,
+               <code>
+                INACTIVE
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               create_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the plan was created, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               update_time
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The date and time when the plan was updated, in
+              <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+               Internet date and time format
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               payment_definitions
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-payment_definition">
+               payment_definition
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              A payment definition, which determines how often and for how long the customer is charged. Includes the interval at which the customer is charged, the charge amount, and optional shipping fees and taxes.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               terms
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-terms">
+               terms
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of terms for this plan. Read-only and reserved for future use.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               merchant_preferences
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-merchant_preferences">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The merchant preferences for a plan. Includes how much it costs to set up the agreement, the URLs where the customer can approve or cancel the agreement, the maximum number of allowed failed payment attempts, whether PayPal automatically bills the outstanding balance in the next billing cycle, and the action if the customer's initial payment fails.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "id": "P-7DC96732KA7763723UOPKETA",
+  "state": "CREATED",
+  "name": "Plan with Regular and Trial Payment Definitions",
+  "description": "Plan with regular and trial payment definitions.",
+  "type": "FIXED",
+  "payment_definitions": [
+    {
+      "id": "PD-03223056L66578712UOPKETA",
+      "name": "Trial payment definition",
+      "type": "TRIAL",
+      "frequency": "WEEK",
+      "amount": {
+        "currency": "USD",
+        "value": "9.19"
+      },
+      "charge_models": [
+        {
+          "id": "CHM-6JY06508UT8026625UOPKETA",
+          "type": "TAX",
+          "amount": {
+            "currency": "USD",
+            "value": "2"
+          }
+        },
+        {
+          "id": "CHM-7XN63093LF858372XUOPKETA",
+          "type": "SHIPPING",
+          "amount": {
+            "currency": "USD",
+            "value": "1"
+          }
+        }
+      ],
+      "cycles": "2",
+      "frequency_interval": "5"
+    },
+    {
+      "id": "PD-0MF87809KK310750TUOPKETA",
+      "name": "Regular payment definition",
+      "type": "REGULAR",
+      "frequency": "MONTH",
+      "amount": {
+        "currency": "USD",
+        "value": "100"
+      },
+      "charge_models": [
+        {
+          "id": "CHM-1V202179WT9709019UOPKETA",
+          "type": "TAX",
+          "amount": {
+            "currency": "USD",
+            "value": "12"
+          }
+        },
+        {
+          "id": "CHM-89H01708244053321UOPKETA",
+          "type": "SHIPPING",
+          "amount": {
+            "currency": "USD",
+            "value": "10"
+          }
+        }
+      ],
+      "cycles": "12",
+      "frequency_interval": "2"
+    }
+  ],
+  "merchant_preferences": {
+    "setup_fee": {
+      "currency": "USD",
+      "value": "1"
+    },
+    "max_fail_attempts": "0",
+    "return_url": "https://example.com",
+    "cancel_url": "https://example.com/cancel",
+    "auto_bill_amount": "YES",
+    "initial_fail_amount_action": "CONTINUE"
+  },
+  "create_time": "2017-06-16T07:40:20.940Z",
+  "update_time": "2017-06-16T07:40:20.940Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="dax-definitions" id="definitions">
+       <header class="dax-topic-definition">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" href="#definitions">
+         </a>
+         Common object definitions
+        </h2>
+       </header>
+       <div class="dax-reference-set dx-flex" id="definition-charge_models">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-charge_models">
+           </a>
+           charge_models
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the charge model.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+             <p>
+              Maximum length: 128.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The charge model type, which is tax or shipping.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               TAX
+              </code>
+              ,
+              <code>
+               SHIPPING
+              </code>
+              .
+             </p>
+             <p>
+              Maximum length: 20.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              amount
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-currency">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The shipping fee or tax amount.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-currency">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-currency">
+           </a>
+           currency
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              currency
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The
+             <a href="https://developer.paypal.com/docs/integration/direct/rest/currency-codes/">
+              three-character ISO-4217 currency code
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              value
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The currency value. Might be an integer for currencies like JPY that are not typically fractional or a decimal fraction for currencies like TND that are subdivided into thousandths. For the required number of decimal places for a currency code, see
+             <a href="https://www.iso.org/iso/home/standards/currency_codes.htm">
+              ISO 4217
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-error">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error">
+           </a>
+           error
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A human readable, unique name of the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              debug_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The PayPal internal ID. Used for correlation purposes.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              message
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A message that describes the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              information_link
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The URI to detailed information related to this error for the developer.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              details
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-error_details">
+              error_details
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of additional details for the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-error_details">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error_details">
+           </a>
+           error_details
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              field
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The name of the field that caused the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              issue
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The reason for the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-link_description">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-link_description">
+           </a>
+           link_description
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              href
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The complete target URL. To make the related call, combine the method with this link, in
+             <a href="https://tools.ietf.org/html/rfc6570">
+              URI template format
+             </a>
+             . Include the
+             <code>
+              $
+             </code>
+             ,
+             <code>
+              (
+             </code>
+             , and
+             <code>
+              )
+             </code>
+             characters for pre-processing. The
+             <code>
+              href
+             </code>
+             is the key HATEOAS component that links a completed call with a subsequent call.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              rel
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The
+             <a href="https://tools.ietf.org/html/rfc5988#section-4">
+              link relation type
+             </a>
+             , which serves as an ID for a link that unambiguously describes the semantics of the link. See
+             <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">
+              Link Relations
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              method
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The HTTP method required to make the related call.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               GET
+              </code>
+              ,
+              <code>
+               POST
+              </code>
+              ,
+              <code>
+               PUT
+              </code>
+              ,
+              <code>
+               DELETE
+              </code>
+              ,
+              <code>
+               HEAD
+              </code>
+              ,
+              <code>
+               CONNECT
+              </code>
+              ,
+              <code>
+               OPTIONS
+              </code>
+              ,
+              <code>
+               PATCH
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-merchant_preferences">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-merchant_preferences">
+           </a>
+           merchant_preferences
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              setup_fee
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-currency">
+              object
+             </a>
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The fee to set up the agreement. This fee is the initial, non-recurring payment amount due immediately upon billing agreement creation. Can be used as the initial amount to trigger the
+             <code>
+              initial_fail_amount_action
+             </code>
+             . Default is
+             <code>
+              0
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              cancel_url
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The URL where the customer can cancel the agreement.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 1000.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              return_url
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The URL where the customer can approve the agreement.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 1000.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              notify_url
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The URL where the customer is notified that the agreement was created. Read-only and reserved for future use.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+             <p>
+              Maximum length: 1000.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              max_fail_attempts
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The maximum number of allowed failed payment attempts. Default is
+             <code>
+              0
+             </code>
+             , which allows infinite failed payment attempts.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              auto_bill_amount
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             Indicates whether PayPal automatically bills the outstanding balance in the next billing cycle. The outstanding balance is the total amount of any previously failed scheduled payments. Value is:
+             <ul>
+              <li>
+               <code>
+                NO
+               </code>
+               . PayPal does not automatically bill the customer the outstanding balance. Default is
+               <code>
+                NO
+               </code>
+               .
+              </li>
+              <li>
+               <code>
+                YES
+               </code>
+               . PayPal automatically bills the customer the outstanding balance.
+              </li>
+              <ul>
+              </ul>
+             </ul>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               YES
+              </code>
+              ,
+              <code>
+               NO
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              initial_fail_amount_action
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The action if the customer's initial payment fails. Value is:
+             <ul>
+              <li>
+               <code>
+                CONTINUE
+               </code>
+               . The agreement remains active and the failed payment amount is added to the outstanding balance. If auto-billing is enabled, PayPal automatically bills the outstanding balance in the next billing cycle. Default is
+               <code>
+                CONTINUE
+               </code>
+               .
+              </li>
+              <li>
+               <code>
+                CANCEL
+               </code>
+               PayPal creates the agreement but sets its state to pending until the initial payment clears. If the initial payment clears, the pending agreement becomes active. If the initial payment fails, the pending agreement is canceled.
+              </li>
+             </ul>
+             <blockquote>
+              <strong>
+               Note:
+              </strong>
+              You can use the
+              <code>
+               setup_fee
+              </code>
+              value as the initial amount to trigger the
+              <code>
+               initial_fail_amount_action
+              </code>
+              .
+             </blockquote>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               CONTINUE
+              </code>
+              ,
+              <code>
+               CANCEL
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              accepted_payment_type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The payment types that are accepted for this plan. Read-only and reserved for future use.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              char_set
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The character set for this plan. Read-only and reserved for future use.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch">
+           </a>
+           patch
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              op
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The operation to complete.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               add
+              </code>
+              ,
+              <code>
+               remove
+              </code>
+              ,
+              <code>
+               replace
+              </code>
+              ,
+              <code>
+               move
+              </code>
+              ,
+              <code>
+               copy
+              </code>
+              ,
+              <code>
+               test
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              path
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A JSON pointer to a location in the target document at which to complete the operation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="number,integer,string,boolean,null,array,object">
+            <h5 class="dax-def-term">
+             <code>
+              value
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             number,integer,string,boolean,null,array,object
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The value to apply. The
+             <code>
+              remove
+             </code>
+             operation does not require a value.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              from
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A JSON pointer to the location in the target document from which to move the value. Required for the
+             <code>
+              move
+             </code>
+             operation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch_request">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch_request">
+           </a>
+           patch_request
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              patch_request
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-patch">
+              patch
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of JSON patch objects to apply partial updates to resources.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-payment_definition">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-payment_definition">
+           </a>
+           payment_definition
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the payment definition.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+             <p>
+              Maximum length: 128.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The payment definition name.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 128.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The payment definition type. Each plan must have at least one regular payment definition and, optionally, a trial payment definition. Each definition specifies how often and for how long the customer is charged.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               TRIAL
+              </code>
+              ,
+              <code>
+               REGULAR
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              frequency_interval
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The interval at which the customer is charged. Value cannot be greater than 12 months.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              frequency
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The frequency of the payment in this definition.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               WEEK
+              </code>
+              ,
+              <code>
+               DAY
+              </code>
+              ,
+              <code>
+               YEAR
+              </code>
+              ,
+              <code>
+               MONTH
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              cycles
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The number of payment cycles. For infinite plans with a regular payment definition, set
+             <code>
+              cycles
+             </code>
+             to
+             <code>
+              0
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              amount
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-currency">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The amount to charge at the end of each payment cycle for this definition.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              charge_models
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-charge_models">
+              charge_models
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of shipping fees and taxes.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-plan">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-plan">
+           </a>
+           plan
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the plan.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+             <p>
+              Maximum length: 128.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The plan name.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 128.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              description
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The plan description. Maximum length is 127 single-byte alphanumeric characters.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 127.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The plan type. Indicates whether the payment definitions in the plan have a fixed number of or infinite payment cycles. Value is:
+             <ul>
+              <li>
+               <code>
+                FIXED
+               </code>
+               . The plan has a fixed number of payment cycles.
+              </li>
+              <li>
+               <code>
+                INFINITE
+               </code>
+               . The plan has infinite, or
+               <code>
+                0
+               </code>
+               , payment cycles.
+              </li>
+             </ul>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               FIXED
+              </code>
+              ,
+              <code>
+               INFINITE
+              </code>
+              .
+             </p>
+             <p>
+              Maximum length: 20.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              state
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The plan status.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+             <p>
+              Possible values:
+              <code>
+               CREATED
+              </code>
+              ,
+              <code>
+               ACTIVE
+              </code>
+              ,
+              <code>
+               INACTIVE
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              create_time
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The date and time when the plan was created, in
+             <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+              Internet date and time format
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              update_time
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The date and time when the plan was updated, in
+             <a href="https://tools.ietf.org/html/rfc3339#section-5.6">
+              Internet date and time format
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              payment_definitions
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-payment_definition">
+              payment_definition
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A payment definition, which determines how often and for how long the customer is charged. Includes the interval at which the customer is charged, the charge amount, and optional shipping fees and taxes.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              terms
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-terms">
+              terms
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of terms for this plan. Read-only and reserved for future use.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              merchant_preferences
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-merchant_preferences">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The merchant preferences for a plan. Includes how much it costs to set up the agreement, the URLs where the customer can approve or cancel the agreement, the maximum number of allowed failed payment attempts, whether PayPal automatically bills the outstanding balance in the next billing cycle, and the action if the customer's initial payment fails.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              links
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-link_description">
+              link_description
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of request-related
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS links
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-plan_list">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-plan_list">
+           </a>
+           plan_list
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              plans
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-plan">
+              plan
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of plans.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              total_items
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The total number of plans in the list.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              total_pages
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The total number of pages in the response. The
+             <code>
+              page_size
+             </code>
+             request value determines how many plans appear on each page. The
+             <code>
+              total_items
+             </code>
+             and
+             <code>
+              page_size
+             </code>
+             request values are used to calculate the total number of pages in the response.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              links
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-link_description">
+              link_description
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of request-related
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS links
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-terms">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-terms">
+           </a>
+           terms
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the terms.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+             <p>
+              Maximum length: 128.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The term type.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               MONTHLY
+              </code>
+              ,
+              <code>
+               WEEKLY
+              </code>
+              ,
+              <code>
+               YEARLY
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              max_billing_amount
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-currency">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The maximum amount to bill for this term.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              occurrences
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The number of times that money can be pulled during this term.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              amount_range
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-currency">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The amount range for this term.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              buyer_editable
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             Indicates whether the customer can edit the amount in this term.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="dax-more">
+       <h2 class="sr-only">
+        Additional API information
+       </h2>
+       <div class="dax-more-error" id="errors">
+        <h3 class="dx-anchor">
+         <a aria-hidden="true" href="#errors">
+         </a>
+         Error messages
+        </h3>
+        <p>
+         In addition to
+         <a href="/docs/api/overview/#error-status-codes">
+          common HTTP status codes
+         </a>
+         that the REST APIs return, the Billing Plans API can return the following errors.
+        </p>
+        <ul class="dax-messages">
+         <li>
+          <h4>
+           <code>
+            INTERNAL_SERVICE_ERROR
+           </code>
+          </h4>
+          <p>
+           An internal service error has occurred. Resend the request at another time. If this error continues, contact
+           <a href="https://developer.paypal.com/webapps/developer/support">
+            PayPal Merchant Technical Support
+           </a>
+           .
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            REQUIRED_SCOPE_MISSING
+           </code>
+          </h4>
+          <p>
+           Access token does not have required scope. Use the scope required for this request type to get buyer consent.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            UNAUTHORIZED_ACCESS
+           </code>
+          </h4>
+          <p>
+           You don't have permission to access this resource. Pass a valid plan ID.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            VALIDATION_ERROR
+           </code>
+          </h4>
+          <p>
+           Invalid request - see details. A validation issue occurred with your request.
+          </p>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <span class="dxf-insert-rating">
+     </span>
+    </article>
+   </div>
+   <footer class="footer">
+    <section class="section">
+     <div class="section__content">
+      <div class="grid">
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Docs
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/integration/direct/express-checkout/integration-jsv4/" rel="nofollow">
+           Express Checkout
+          </a>
+         </li>
+         <li>
+          <a href="/docs/integration/web" rel="nofollow">
+           Payment Buttons
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.braintreepayments.com/start/overview/" rel="nofollow">
+           Braintree SDK
+          </a>
+         </li>
+         <li>
+          <a href="/docs/directory/" rel="nofollow">
+           All Docs
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Support
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/faq/" rel="nofollow">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-techsupport.com/" rel="nofollow">
+           Merchant Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">
+           Account Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Resources
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://github.com/paypal/" rel="nofollow">
+           GitHub
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/partnerprogram" rel="nofollow">
+           Partners
+          </a>
+         </li>
+         <li>
+          <a href="https://demo.paypal.com" rel="nofollow">
+           PayPal Demo
+          </a>
+         </li>
+         <li>
+          <a href="https://devblog.paypal.com/" rel="nofollow">
+           Blog
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Family
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://paypal.com/" rel="nofollow">
+           PayPal
+          </a>
+         </li>
+         <li>
+          <a href="https://braintreepayments.com/" rel="nofollow">
+           Braintree
+          </a>
+         </li>
+         <li>
+          <a href="https://venmo.com/" rel="nofollow">
+           Venmo
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paydiant.com/" rel="nofollow">
+           Paydiant
+          </a>
+         </li>
+         <li>
+          <a href="https://xoom.com/" rel="nofollow">
+           Xoom
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="grid">
+       <div class="grid__item grid__item--6">
+        <ul class="footer__legal">
+         <li>
+          <a class="scTrack:privacy-policy" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">
+           Privacy
+          </a>
+         </li>
+         <li>
+          <a class="scTrack:legal-agreements" href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">
+           Legal
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--6">
+        <p class="footer__copyright">
+         ©2018 PayPal
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+  </main>
+ </body>
+</html>

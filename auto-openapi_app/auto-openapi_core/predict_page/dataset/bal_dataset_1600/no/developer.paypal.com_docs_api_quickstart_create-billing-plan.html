@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA" name="google-site-verification"/>
+  <title>
+   Create billing plans - PayPal Developer
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" name="msapplication-TileImage"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png" rel="apple-touch-icon-precomposed"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png" rel="icon" sizes="32x32"/>
+  <link href="/css/docs.css" rel="stylesheet" type="text/css"/>
+  <script data-main="/js/master" src="/components/requirejs/require.js">
+  </script>
+ </head>
+ <body class="dx-docs dx-apis">
+  <header class="header" id="header">
+   <a aria-label="PayPal Developer" class="header__block header__brand" href="/">
+   </a>
+   <a aria-label="Toggle top-level navigation" class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0">
+   </a>
+   <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2">
+   </div>
+   <div class="header__nav">
+    <div class="header__nav--left">
+     <ul class="dx-nav-0 dx-nav-0-docs">
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/docs/">
+        Docs
+       </a>
+      </li>
+      <li class="dx-nav-0-item dx-nav-active">
+       <a class="dx-nav-0-link" href="/reference/">
+        APIs
+       </a>
+      </li>
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/support/">
+        Support
+       </a>
+      </li>
+     </ul>
+     <form action="/search" class="header__search dx-form-search" id="siteSearch" method="get" name="search">
+      <label class="sr-only" for="siteQ">
+       Enter search term
+      </label>
+      <input class="dx-search-input" id="siteQ" name="q" placeholder="Search" type="search" value=""/>
+     </form>
+    </div>
+    <div class="header__nav--right">
+     <div class="dx-auth-block profile__container">
+      <div class="dx-auth-logged-out">
+       <a class="dx-auth-login dx-btn dx-btn-primary" data-dxa="login,nav-click,nav-login" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications">
+        Log into Dashboard
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="dx-main">
+   <div class="dx-flex">
+    <div class="dx-main-nav-slug">
+    </div>
+    <nav class="dx-main-nav dx-mobile-nav">
+     <div class="dx-nav-back">
+      <a href="/docs/api/payments/">
+       View All Reference
+      </a>
+     </div>
+     <ul class="dx-nav dx-nav-1">
+      <li class="dx-nav-1-item dx-nav-active-parent">
+       <a class="dx-nav-heading" href="/docs/api/">
+        REST APIs
+       </a>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Get Started
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/overview/">
+          Get Started
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#authentication-and-authorization">
+            Authentication and Authorization
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-requests">
+            API Requests
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#query-parameters">
+              Query Parameters
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#http-request-headers">
+              HTTP Request Headers
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#accept">
+                Accept
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#authorization">
+                Authorization
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#content-type">
+                Content-Type
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-auth-assertion">
+                PayPal-Auth-Assertion
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-client-metadata-id">
+                PayPal-Client-Metadata-Id
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-partner-attribution-id">
+                PayPal-Partner-Attribution-Id
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-request-id">
+                PayPal-Request-Id
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-responses">
+            API Responses
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#http-status-codes">
+              HTTP Status Codes
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS Links
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#make-your-first-call">
+            Make Your First Call
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          API Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/balance-accounts">
+          Balance Accounts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.billing-agreements">
+          Billing Agreements API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.billing-plans">
+          Billing Plans API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/customer-disputes">
+          Customer Disputes API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/identity">
+          Identity API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/invoicing">
+          Invoicing API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/managed-accounts/">
+          Managed Accounts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/orders">
+          Orders API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/partner-referrals/">
+          Partner Referrals API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payment-experience">
+          Payment Experience API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments">
+          Payments API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.payouts-batch">
+          Payouts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/referenced-payouts/">
+          Referenced Payouts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/vault">
+          Vault API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/webhooks">
+          Webhooks API
+         </a>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/currency-codes/">
+          Currency Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/currency-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/country-codes/">
+          Country Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/country-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/state-codes/">
+          State &amp; Province Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#argentina">
+            Argentina
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#brazil">
+            Brazil
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#canada">
+            Canada
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#india">
+            India
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#indonesia">
+            Indonesia
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#italy">
+            Italy
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#japan">
+            Japan
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#mexico">
+            Mexico
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#thailand">
+            Thailand
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#usa">
+            United States
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/locale-codes/">
+          Locale Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#localize-the-checkout-experience">
+            Localize the Checkout Experience
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#supported-locale-codes">
+            Supported Locale Codes
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Release Notes
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2017/">
+          2017
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-november-2017">
+            09 November 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-november-2017">
+            02 November 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-october-2017">
+            25 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#20-october-2017">
+            20 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-october-2017">
+            19 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-october-2017">
+            11 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-october-2017">
+            05 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-september-2017">
+            22 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#21-september-2017">
+            21 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#14-september-2017">
+            14 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#07-september-2017">
+            07 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#31-august-2017">
+            31 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#24-august-2017">
+            24 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-august-2017">
+            16 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-august-2017">
+            11 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-august-2017">
+            09 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-august-2017">
+            04 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-july-2017">
+            27 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-july-2017">
+            19 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-july-2017">
+            13 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#06-july-2017">
+            06 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#28-june-2017">
+            28 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-june-2017">
+            22 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#15-june-2017">
+            15 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-june-2017">
+            09 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-may-2017">
+            25 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-may-2017">
+            11 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-may-2017">
+            04 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-april-2017">
+            25 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-april-2017">
+            13 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#30-march-2017">
+            30 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#23-march-2017">
+            23 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-march-2017">
+            16 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-february-2017">
+            27 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-february-2017">
+            16 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-february-2017">
+            02 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-january-2017">
+            25 January 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-january-2017">
+            05 January 2017
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2016/">
+          2016
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#22-december-2016">
+            22 December 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#17-november-2016">
+            17 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-november-2016">
+            10 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-november-2016">
+            04 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-october-2016">
+            27 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-october-2016">
+            06 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#29-september-2016">
+            29 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#08-september-2016">
+            08 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#01-september-2016">
+            01 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-august-2016">
+            11 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-august-2016">
+            04 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-july-2016">
+            27 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#20-july-2016">
+            20 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#07-july-2016">
+            07 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#16-june-2016">
+            16 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-june-2016">
+            02 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-may-2016">
+            11 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-may-2016">
+            02 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-april-2016">
+            06 April 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-march-2016">
+            10 March 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#26-february-2016">
+            26 February 2016
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2015/">
+          2015
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#16-december-2015">
+            16 December 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-november-2015">
+            13 November 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-october-2015">
+            25 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#21-october-2015">
+            21 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-august-2015">
+            12 August 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-july-2015">
+            19 July 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#18-june-2015">
+            18 June 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-may-2015">
+            19 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-may-2015">
+            05 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#23-april-2015">
+            23 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-april-2015">
+            05 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-march-2015">
+            25 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-march-2015">
+            12 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#26-february-2015">
+            26 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-february-2015">
+            13 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#22-january-2015">
+            22 January 2015
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2014/">
+          2014
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-december-2014">
+            17 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#10-december-2014">
+            10 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#03-december-2014">
+            03 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#05-november-2014">
+            05 November 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-october-2014">
+            23 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#15-october-2014">
+            15 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#01-october-2014">
+            01 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-september-2014">
+            17 September 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#13-august-2014">
+            13 August 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-july-2014">
+            23 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-july-2014">
+            07 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-march-2014">
+            07 March 2014
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2013/">
+          2013
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#30-july-2013">
+            30 July 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#28-may-2013">
+            28 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#22-may-2013">
+            22 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#15-may-2013">
+            15 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#24-april-2013">
+            24 April 2013
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          SDKs
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/rest-sdks/">
+          SDKs
+         </a>
+        </li>
+        <li class="dx-nav-2-item dx-nav-active-parent">
+         <a href="/docs/api/quickstart/">
+          SDK Quickstart
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/install">
+            Install the SDK
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/environment">
+            Configure Environment
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/payments">
+            Process PayPal Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item dx-nav-active">
+           <a href="/docs/api/quickstart/create-billing-plan">
+            Create Billing Plans
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-agreement">
+            Create Billing Agreements
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/capture-payment">
+            Capture Payments Later
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-process-order/">
+            Create and Process Orders
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/refund-payment">
+            Refund Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-webhook">
+            Create Notification Webhooks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/service-integrations/">
+          Service Integrations
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/service-integrations/slack-bot/">
+            Slack
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/simple_pay">
+              Add Person-to-Bot Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/direct_pay">
+              Add Person-to-Person Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/subscribe">
+              Add Agreement for Recurring Payment
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          GLOSSARY
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/glossary/">
+          Glossary
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <article class="content dx-content ">
+     <span class="label u-mobile-hide" data-js="product-section-label">
+     </span>
+     <h1 class="dx-content-title">
+      Create billing plans
+     </h1>
+     <p>
+      You use billing plans and billing agreements to create an agreement for a recurring PayPal payment for goods or services.
+     </p>
+     <p>
+      A billing plan includes payment definitions and other details. A plan must include at least one regular payment definition and, optionally, a trial payment definition. Each definition determines how often and for how long a customer is charged.
+     </p>
+     <p>
+      A plan can specify a type, which indicates whether the payment definitions in the plan have a fixed or infinite number of payment cycles. The plan also defines merchant preferences including how much it costs to set up the agreement, the URLs where a customer can approve or cancel the agreement, and the action if the customer's initial payment fails.
+     </p>
+     <p>
+      By default, a plan is not active when you create it. To activate it, you update its
+      <code>
+       state
+      </code>
+      to
+      <code>
+       ACTIVE
+      </code>
+      .
+     </p>
+     <p>
+      For more information, see
+      <a href="/docs/integration/direct/billing-plans-and-agreements/">
+       Billing Plans and Agreements
+      </a>
+      .
+     </p>
+     <p>
+      To create a billing plan, complete these steps:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         1.
+        </td>
+        <td>
+         <a href="#define-the-billing-plan-object">
+          Define the billing plan object
+         </a>
+         .
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2.
+        </td>
+        <td>
+         <a href="#create-and-activate-billing-plan">
+          Create and activate the billing plan
+         </a>
+         .
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <h2 id="define-the-billing-plan-object">
+      Define the billing plan object
+     </h2>
+     <p>
+      The billing plan object defines the subscription plan, including the number of cycles, frequency of payment, any setup fees, and so on.
+     </p>
+     <div class="picker dx-lang-list">
+      <button class="picker__btn" data-lang="Node">
+       Node
+      </button>
+      <button class="picker__btn" data-lang="PHP">
+       PHP
+      </button>
+      <button class="picker__btn" data-lang="Python">
+       Python
+      </button>
+      <button class="picker__btn" data-lang="Ruby">
+       Ruby
+      </button>
+      <button class="picker__btn" data-lang="Java">
+       Java
+      </button>
+      <button class="picker__btn" data-lang=".NET">
+       .NET
+      </button>
+     </div>
+     <pre class="dx-lang-active" data-lang="Node">var billingPlanAttribs = {
+  name: 'Food of the World Club Membership: Standard',
+  description: 'Monthly plan for getting the t-shirt of the month.',
+  type: 'fixed',
+  payment_definitions: [{
+    name: 'Standard Plan',
+    type: 'REGULAR',
+    frequency_interval: '1',
+    frequency: 'MONTH',
+    cycles: '11',
+    amount: {
+      currency: 'USD',
+      value: '19.99'
+    }
+  }],
+  merchant_preferences: {
+    setup_fee: {
+      currency: 'USD',
+      value: '1'
+    },
+    cancel_url: 'http://localhost:3000/cancel',
+    return_url: 'http://localhost:3000/processagreement',
+    max_fail_attempts: '0',
+    auto_bill_amount: 'YES',
+    initial_fail_amount_action: 'CONTINUE'
+  }
+};</pre>
+     <pre data-lang="PHP">use PayPal\Api\ChargeModel;
+use PayPal\Api\Currency;
+use PayPal\Api\MerchantPreferences;
+use PayPal\Api\PaymentDefinition;
+use PayPal\Api\Plan;
+use PayPal\Api\Patch;
+use PayPal\Api\PatchRequest;
+use PayPal\Common\PayPalModel;
+
+// Create a new billing plan
+$plan = new Plan();
+$plan-&gt;setName('T-Shirt of the Month Club Plan')
+  -&gt;setDescription('Template creation.')
+  -&gt;setType('fixed');
+
+// Set billing plan definitions
+$paymentDefinition = new PaymentDefinition();
+$paymentDefinition-&gt;setName('Regular Payments')
+  -&gt;setType('REGULAR')
+  -&gt;setFrequency('Month')
+  -&gt;setFrequencyInterval('2')
+  -&gt;setCycles('12')
+  -&gt;setAmount(new Currency(array('value' =&gt; 100, 'currency' =&gt; 'USD')));
+
+// Set charge models
+$chargeModel = new ChargeModel();
+$chargeModel-&gt;setType('SHIPPING')
+  -&gt;setAmount(new Currency(array('value' =&gt; 10, 'currency' =&gt; 'USD')));
+$paymentDefinition-&gt;setChargeModels(array($chargeModel));
+
+// Set merchant preferences
+$merchantPreferences = new MerchantPreferences();
+$merchantPreferences-&gt;setReturnUrl('http://localhost:3000/processagreement')
+  -&gt;setCancelUrl('http://localhost:3000/cancel')
+  -&gt;setAutoBillAmount('yes')
+  -&gt;setInitialFailAmountAction('CONTINUE')
+  -&gt;setMaxFailAttempts('0')
+  -&gt;setSetupFee(new Currency(array('value' =&gt; 1, 'currency' =&gt; 'USD')));
+
+$plan-&gt;setPaymentDefinitions(array($paymentDefinition));
+$plan-&gt;setMerchantPreferences($merchantPreferences);</pre>
+     <pre data-lang="Python">from paypalrestsdk import BillingPlan
+
+billing_plan = BillingPlan({
+  "name": "Testing1-Regular1",
+  "description": "Create Plan for Regular",
+  "type": "INFINITE",
+  "payment_definitions": [{
+    "name": "Standard Plan",
+    "type": "REGULAR",
+    "frequency_interval": "1",
+    "frequency": "MONTH",
+    "cycles": "0",
+    "amount": {
+      "currency": "USD",
+      "value": "20"
+    }
+  }],
+  "merchant_preferences": {
+    "auto_bill_amount": "yes",
+    "cancel_url": "http://localhost:3000/cancel",
+    "initial_fail_amount_action": "continue",
+    "max_fail_attempts": "1",
+    "return_url": "http://localhost:3000/processagreement",
+    "setup_fee": {
+      "currency": "USD",
+      "value": "25"
+    }
+  }
+})</pre>
+     <pre data-lang="Ruby"># Plan definition
+plan = Plan.new({
+  :name =&gt; 'Food of the World Club Membership: Standard',
+  :description =&gt; 'Monthly plan for getting the t-shirt of the month.',
+  :type =&gt; 'fixed',
+  :payment_definitions =&gt; [{
+    :name =&gt; 'Standard Plan',
+    :type =&gt; 'REGULAR',
+    :frequency_interval =&gt; '1',
+    :frequency =&gt; 'MONTH',
+    :cycles =&gt; '11',
+    :amount =&gt; {
+      :currency =&gt; 'USD',
+      :value =&gt; '19.99'
+    }
+  }],
+  :merchant_preferences =&gt; {
+    :setup_fee =&gt; {
+      :currency =&gt; 'USD',
+      :value =&gt; '1'
+    },
+    :cancel_url =&gt; 'http://localhost:3000/cancel',
+    :return_url =&gt; 'http://localhost:3000/processagreement',
+    :max_fail_attempts =&gt; '0',
+    :auto_bill_amount =&gt; 'YES',
+    :initial_fail_amount_action =&gt; 'CONTINUE'
+  }
+})</pre>
+     <pre data-lang="Java">import java.util.ArrayList;
+import java.util.List;
+
+import com.paypal.api.payments.ChargeModels;
+import com.paypal.api.payments.Currency;
+import com.paypal.api.payments.MerchantPreferences;
+import com.paypal.api.payments.PaymentDefinition;
+import com.paypal.api.payments.Plan;
+import com.paypal.base.rest.APIContext;
+import com.paypal.base.rest.PayPalRESTException;
+
+// Build Plan object
+Plan plan = new Plan();
+plan.setName("T-Shirt of the Month Club Plan");
+plan.setDescription("Template creation.");
+plan.setType("fixed");
+
+// Payment_definitions
+PaymentDefinition paymentDefinition = new PaymentDefinition();
+paymentDefinition.setName("Regular Payments");
+paymentDefinition.setType("REGULAR");
+paymentDefinition.setFrequency("MONTH");
+paymentDefinition.setFrequencyInterval("1");
+paymentDefinition.setCycles("12");
+
+// Currency
+Currency currency = new Currency();
+currency.setCurrency("USD");
+currency.setValue("20");
+paymentDefinition.setAmount(currency);
+
+// Charge_models
+ChargeModels chargeModels = new com.paypal.api.payments.ChargeModels();
+chargeModels.setType("SHIPPING");
+chargeModels.setAmount(currency);
+List<var>ChargeModels</var> chargeModelsList = new ArrayList<var>ChargeModels</var>();
+chargeModelsList.add(chargeModels);
+paymentDefinition.setChargeModels(chargeModelsList);
+
+// Payment_definition
+List<var>PaymentDefinition</var> paymentDefinitionList = new ArrayList<var>PaymentDefinition</var>();
+paymentDefinitionList.add(paymentDefinition);
+plan.setPaymentDefinitions(paymentDefinitionList);
+
+// Merchant_preferences
+MerchantPreferences merchantPreferences = new MerchantPreferences();
+merchantPreferences.setSetupFee(currency);
+merchantPreferences.setCancelUrl("https://example.com/cancel");
+merchantPreferences.setReturnUrl("https://example.com/return");
+merchantPreferences.setMaxFailAttempts("0");
+merchantPreferences.setAutoBillAmount("YES");
+merchantPreferences.setInitialFailAmountAction("CONTINUE");
+plan.setMerchantPreferences(merchantPreferences);</pre>
+     <pre data-lang=".NET">var plan = new Plan
+{
+  name = "T-Shirt of the Month Club Plan",
+  description = "Monthly plan for getting the t-shirt of the month.",
+  type = "fixed",
+
+  payment_definitions = new List<paymentdefinition>
+  {
+    new PaymentDefinition()
+    {
+      name = "Trial Plan",
+      type = "TRIAL",
+      frequency = "MONTH",
+      frequency_interval = "1",
+      amount = GetCurrency("9.99"),
+      cycles = "1",
+      charge_models = new List<chargemodel>
+      {
+        new ChargeModel()
+        {
+          type = "TAX",
+          amount = GetCurrency("1.65")
+        },
+        shippingChargeModel
+      }
+    },
+
+    new PaymentDefinition
+    {
+      name = "Standard Plan",
+      type = "REGULAR",
+      frequency = "MONTH",
+      frequency_interval = "1",
+      amount = GetCurrency("19.99"),
+      cycles = "11",
+      charge_models = new List<chargemodel>
+      {
+        new ChargeModel
+        {
+          type = "TAX",
+          amount = GetCurrency("2.47")
+        }
+      }
+    }
+  },
+
+  merchant_preferences = new MerchantPreferences()
+  {
+    setup_fee = GetCurrency("1"),
+    return_url = httpContext.Request.Url.ToString(),
+    cancel_url = httpContext.Request.Url.ToString() + "?cancel",
+    auto_bill_amount = "YES",
+    initial_fail_amount_action = "CONTINUE",
+    max_fail_attempts = "0"
+  }
+};</chargemodel></chargemodel></paymentdefinition></pre>
+     <h2 id="create-and-activate-billing-plan">
+      Create and activate billing plan
+     </h2>
+     <p>
+      Use the billing plan object to create and activate the billing plan. Then, you can create billing agreements against the billing plan.
+     </p>
+     <div class="picker dx-lang-list">
+      <button class="picker__btn" data-lang="Node">
+       Node
+      </button>
+      <button class="picker__btn" data-lang="PHP">
+       PHP
+      </button>
+      <button class="picker__btn" data-lang="Python">
+       Python
+      </button>
+      <button class="picker__btn" data-lang="Ruby">
+       Ruby
+      </button>
+      <button class="picker__btn" data-lang="Java">
+       Java
+      </button>
+      <button class="picker__btn" data-lang=".NET">
+       .NET
+      </button>
+     </div>
+     <pre class="dx-lang-active" data-lang="Node">paypal.billingPlan.create(billingPlanAttribs, function (error, billingPlan){
+  var billingPlanUpdateAttributes;
+
+  if (error){
+    console.error(JSON.stringify(error));
+    throw error;
+  } else {
+    // Create billing plan patch object
+    billingPlanUpdateAttributes = [{
+      op: 'replace',
+      path: '/',
+      value: {
+        state: 'ACTIVE'
+      }
+    }];
+
+    // Activate the plan by changing status to active
+    paypal.billingPlan.update(billingPlan.id, billingPlanUpdateAttributes, function(error, response){
+      if (error){
+        console.error(JSON.stringify(error));
+        throw error;
+      } else {
+        console.log('Billing plan created under ID: ' + billingPlan.id);
+      }
+    });
+  }
+});</pre>
+     <pre data-lang="PHP">//create plan
+try {
+  $createdPlan = $plan-&gt;create($apiContext);
+
+  try {
+    $patch = new Patch();
+    $value = new PayPalModel('{"state":"ACTIVE"}');
+    $patch-&gt;setOp('replace')
+      -&gt;setPath('/')
+      -&gt;setValue($value);
+    $patchRequest = new PatchRequest();
+    $patchRequest-&gt;addPatch($patch);
+    $createdPlan-&gt;update($patchRequest, $apiContext);
+    $plan = Plan::get($createdPlan-&gt;getId(), $apiContext);
+
+    // Output plan id
+    echo $plan-&gt;getId();
+  } catch (PayPal\Exception\PayPalConnectionException $ex) {
+    echo $ex-&gt;getCode();
+    echo $ex-&gt;getData();
+    die($ex);
+  } catch (Exception $ex) {
+    die($ex);
+  }
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex-&gt;getCode();
+  echo $ex-&gt;getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}</pre>
+     <pre data-lang="Python"># Create billing plan
+if billing_plan.create():
+  print("Billing Plan [%s] created successfully" % billing_plan.id)
+
+  # Activate billing plan
+  if billing_plan.activate():
+    billing_plan = BillingPlan.find(billing_plan.id)
+    print("Billing Plan [%s] state changed to %s" % (billing_plan.id, billing_plan.state))
+  else:
+    print(billing_plan.error)
+else:
+  print(billing_plan.error)</pre>
+     <pre data-lang="Ruby"># Create plan
+if plan.create
+  # Plan update activation object
+  plan_update = {
+    :op =&gt; 'replace',
+    :path =&gt; '/',
+    :value =&gt; {
+      :state =&gt; 'ACTIVE'
+    }
+  }
+
+  # Activate plan
+  if plan.update(plan_update)
+    puts("Billing plan activated with ID [#{plan.id}]")
+  else
+    logger.error payment.error.inspect
+  end
+else
+  logger.error payment.error.inspect
+end</pre>
+     <pre data-lang="Java">try {
+  // Create payment
+  Plan createdPlan = plan.create(apiContext);
+  System.out.println("Created plan with id = " + createdPlan.getId());
+  System.out.println("Plan state = " + createdPlan.getState());
+
+  // Set up plan activate PATCH request
+  List<var>Patch</var> patchRequestList = new ArrayList<var>Patch</var>();
+  Map&lt;String, String&gt; value = new HashMap&lt;String, String&gt;();
+  value.put("state", "ACTIVE");
+
+  // Create update object to activate plan
+  Patch patch = new Patch();
+  patch.setPath("/");
+  patch.setValue(value);
+  patch.setOp("replace");
+  patchRequestList.add(patch);
+
+  // Activate plan
+  createdPlan.update(apiContext, patchRequestList);
+  System.out.println("Plan state = " + createdPlan.getState());
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+}</pre>
+     <pre data-lang=".NET">var createdPlan = plan.Create(apiContext);
+
+var patchRequest = new PatchRequest()
+{
+  new Patch()
+  {
+    op = "replace",
+    path = "/",
+    value = {
+      "state": "ACTIVE"
+    }
+  }
+};
+
+createdPlan.Update(apiContext, patchRequest);</pre>
+     <p>
+      The first call creates the billing plan by passing in the definition object that was created in the first step.
+     </p>
+     <p>
+      Next, use a
+      <code>
+       PATCH
+      </code>
+      request to activate the plan. In the
+      <code>
+       PATCH
+      </code>
+      request, set the state of the billing plan to
+      <code>
+       active
+      </code>
+      . To update the billing plan, include the billing plan object in the
+      <code>
+       PATCH
+      </code>
+      request.
+     </p>
+     <p>
+      The billing plan is now active and ready to use. To create billing agreements from the plan, store and use the billing plan ID.
+     </p>
+     <h2 id="next">
+      Next
+     </h2>
+     <p>
+      <a href="/docs/api/quickstart/create-billing-agreement">
+       Create billing agreements
+      </a>
+      .
+     </p>
+     <h2 id="additional-information">
+      Additional information
+     </h2>
+     <ul>
+      <li>
+       Sample Code:
+       <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/subscription/billing_plans/create.js">
+        Node
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-PHP-SDK/sample/doc/billing/CreatePlan.html">
+        PHP
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/subscription/billing_plans/create.py">
+        Python
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Java-SDK/blob/master/rest-api-sample/src/main/java/com/paypal/api/sample/SubscriptionSample.java#L35">
+        Java
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-NET-SDK/Samples/BillingPlanCreate.aspx.html">
+        .NET
+       </a>
+      </li>
+      <li>
+       SDKs:
+       <a href="https://paypal.github.io/PayPal-node-SDK/">
+        Node
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-PHP-SDK/">
+        PHP
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Python-SDK">
+        Python
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Ruby-SDK">
+        Ruby
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Java-SDK">
+        Java
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-NET-SDK/">
+        .NET
+       </a>
+      </li>
+      <li>
+       <a href="/docs/api/payments.billing-plans">
+        Billing plans API definitions
+       </a>
+      </li>
+     </ul>
+     <span class="dxf-insert-rating">
+     </span>
+    </article>
+   </div>
+   <footer class="footer">
+    <section class="section">
+     <div class="section__content">
+      <div class="grid">
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Docs
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/integration/direct/express-checkout/integration-jsv4/" rel="nofollow">
+           Express Checkout
+          </a>
+         </li>
+         <li>
+          <a href="/docs/integration/web" rel="nofollow">
+           Payment Buttons
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.braintreepayments.com/start/overview/" rel="nofollow">
+           Braintree SDK
+          </a>
+         </li>
+         <li>
+          <a href="/docs/directory/" rel="nofollow">
+           All Docs
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Support
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/faq/" rel="nofollow">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-techsupport.com/" rel="nofollow">
+           Merchant Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">
+           Account Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Resources
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://github.com/paypal/" rel="nofollow">
+           GitHub
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/partnerprogram" rel="nofollow">
+           Partners
+          </a>
+         </li>
+         <li>
+          <a href="https://demo.paypal.com" rel="nofollow">
+           PayPal Demo
+          </a>
+         </li>
+         <li>
+          <a href="https://devblog.paypal.com/" rel="nofollow">
+           Blog
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Family
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://paypal.com/" rel="nofollow">
+           PayPal
+          </a>
+         </li>
+         <li>
+          <a href="https://braintreepayments.com/" rel="nofollow">
+           Braintree
+          </a>
+         </li>
+         <li>
+          <a href="https://venmo.com/" rel="nofollow">
+           Venmo
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paydiant.com/" rel="nofollow">
+           Paydiant
+          </a>
+         </li>
+         <li>
+          <a href="https://xoom.com/" rel="nofollow">
+           Xoom
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="grid">
+       <div class="grid__item grid__item--6">
+        <ul class="footer__legal">
+         <li>
+          <a class="scTrack:privacy-policy" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">
+           Privacy
+          </a>
+         </li>
+         <li>
+          <a class="scTrack:legal-agreements" href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">
+           Legal
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--6">
+        <p class="footer__copyright">
+         ©2018 PayPal
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+  </main>
+ </body>
+</html>

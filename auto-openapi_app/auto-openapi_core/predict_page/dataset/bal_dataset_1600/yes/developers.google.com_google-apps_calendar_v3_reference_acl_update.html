@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html class="chekov" lang="en">
+ <head>
+  <script>
+   var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(b){a.readyCallbacks.push(b)};window.devsite.ready=a.ready;
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="PkwtQ-rPziznav3O_vqGXnTcZf5nKT106WGIgmFpoS06MTUxODAwNzkzNDYxMjc4MA" name="xsrf_token"/>
+  <link href="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" rel="canonical"/>
+  <link href="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" hreflang="en" rel="alternate"/>
+  <link href="https://developers.google.cn/google-apps/calendar/v3/reference/acl/update" hreflang="en-cn" rel="alternate"/>
+  <link href="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" hreflang="x-default" rel="alternate"/>
+  <link href="https://developers.google.com/_static/18908e5f48/images/favicon.png" rel="shortcut icon"/>
+  <link href="https://developers.google.com/_static/18908e5f48/images/touch-icon.png" rel="apple-touch-icon"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons" rel="stylesheet"/>
+  <link href="https://developers.google.com/_static/18908e5f48/css/devsite-google-blue.css" rel="stylesheet"/>
+  <link href="https://developers.google.com/s/opensearch.xml" rel="search" title="Google Developers" type="application/opensearchdescription+xml"/>
+  <script src="https://developers.google.com/_static/18908e5f48/js/jquery-bundle.js">
+  </script>
+  <meta content="Google Developers" property="og:site_name"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" property="og:url"/>
+  <meta content="en" property="og:locale"/>
+  <script>
+   var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script>
+  <title>
+   Acl: update  |  Calendar API
+       |  Google Developers
+  </title>
+  <meta content="Acl: update  |  Calendar API
+       |  Google Developers" property="og:title"/>
+  <meta content="https://developers.google.com/_static/18908e5f48/images/share/devsite-google-blue.png" property="og:image"/>
+  <meta content="https://developers.google.com/_static/18908e5f48/images/share/devsite-google-blue.png" property="og:image:secure_url"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+ </head>
+ <body class=" devsite-doc-page devsite-user-in-eu devsite-header-no-upper-tabs " id="top_of_page">
+  <div class="devsite-wrapper">
+   <div class="devsite-top-section-wrapper ">
+    <header class="devsite-top-section nocontent">
+     <div class="devsite-top-logo-row-wrapper-wrapper">
+      <div class="devsite-top-logo-row-wrapper">
+       <div class="devsite-top-logo-row devsite-full-site-width">
+        <button class="devsite-expand-section-nav devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Hamburger menu" type="button">
+        </button>
+        <div class="devsite-product-name-wrapper">
+         <a class="devsite-product-name-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Project logo (header)" href="https://developers.google.com/google-apps/calendar/">
+          <img alt="Google Calendar API" class="devsite-product-logo" src="https://www.gstatic.com/images/branding/product/1x/calendar_64dp.png"/>
+         </a>
+         <span class="devsite-product-name">
+          <ul class="devsite-breadcrumb-list">
+           <li class="devsite-breadcrumb-item">
+            <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1" href="https://developers.google.com/google-apps/calendar/">
+             Google Calendar API
+            </a>
+           </li>
+          </ul>
+         </span>
+        </div>
+        <div class="devsite-header-upper-tabs">
+        </div>
+        <form action="https://developers.google.com/s/results/" class="devsite-search-form" id="top-search" method="GET" search-placeholder="Search">
+         <div class="devsite-searchbox" id="searchbox">
+          <input autocomplete="off" class="devsite-search-field devsite-search-query" name="q" placeholder="Search" type="text" value=""/>
+          <div class="devsite-search-image material-icons">
+          </div>
+         </div>
+         <input data-project-name="Calendar API" data-project-path="/google-apps/calendar/" data-query-match="" id="search_project" name="p" type="hidden" value="/google-apps/calendar/"/>
+         <input class="suggest-project" type="hidden" value="Calendar API"/>
+         <div class="suggest-project-metadata" data-home_url="/google-apps/calendar/" data-name="Calendar API" data-path="/google-apps/calendar/">
+         </div>
+        </form>
+        <a class="devsite-header-link devsite-top-button button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site header link" href="https://developers.google.com/products/" track-metadata-position="nav" track-name="all products" track-type="navigateTo">
+         <div class="devsite-header-link-label">
+          All Products
+         </div>
+        </a>
+        <button class="devsite-search-button devsite-header-icon-button button-flat material-icons" type="button">
+        </button>
+        <a class="devsite-user-signin devsite-top-button button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Sign in button" href="https://www.google.com/accounts/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fdevelopers.google.com%2Fgoogle-apps%2Fcalendar%2Fv3%2Freference%2Facl%2Fupdate%3Frefresh%3D1&amp;service=ahsid">
+         Sign in
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="devsite-collapsible-section">
+      <div class="devsite-header-background devsite-full-site-width">
+       <div class="devsite-doc-set-nav-row devsite-full-site-width">
+        <nav class="devsite-doc-set-nav devsite-nav devsite-overflow-tabs-scroll-wrapper">
+         <ul class="devsite-doc-set-nav-tab-list devsite-overflow-tabs-scroll">
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Home" href="https://developers.google.com/google-apps/calendar/">
+            Home
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Guides" href="https://developers.google.com/google-apps/calendar/overview">
+            Guides
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class="devsite-doc-set-nav-active devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Reference" href="https://developers.google.com/google-apps/calendar/v3/reference">
+            Reference
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Samples" href="https://developers.google.com/google-apps/calendar/quickstart/dotnet">
+            Samples
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Support" href="https://developers.google.com/google-apps/calendar/support">
+            Support
+           </a>
+          </li>
+          <button class="devsite-feedback-button devsite-top-button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Send Feedback Button" id="devsite-feedback-project" track-metadata-position="header" track-name="sendFeedbackLink" track-type="feedback" type="button">
+           Send feedback
+          </button>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+    </header>
+    <script>
+     if (window.jQuery) {
+      $(document).ready(function() {
+        if (window.devsite && window.devsite.search) {
+          
+          window.devsite.search.init('en')
+        }
+      });
+    }
+    </script>
+   </div>
+   <div id="gc-wrapper" itemscope="" itemtype="http://schema.org/APIReference">
+    <input class="google-analytics-id-json" type="hidden" value='{"dimensions": {"dimension6": "en", "dimension4": "Calendar API", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}'/>
+    <script>
+     var dataLayer = [{"freeTrialEligibleUser": "False", "userCountry": "FR", "language": {"requested": "en", "served": "en"}, "projectName": "Calendar API", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}];
+    </script>
+    <div class="devsite-site-mask">
+    </div>
+    <nav class="devsite-nav-responsive devsite-nav nocontent" tabindex="0">
+     <div class="devsite-nav-responsive-tabs-panel">
+      <nav class="devsite-nav-responsive-tabs devsite-nav">
+       <ul class="devsite-nav-list">
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Home" href="https://developers.google.com/google-apps/calendar/">
+          Home
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Guides" href="https://developers.google.com/google-apps/calendar/overview?nav=true">
+          Guides
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <span class="devsite-nav-responsive-forward devsite-nav-responsive-tab devsite-nav-title devsite-nav-active gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Reference" tabindex="0">
+          Reference
+         </span>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Samples" href="https://developers.google.com/google-apps/calendar/quickstart/dotnet">
+          Samples
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Support" href="https://developers.google.com/google-apps/calendar/support?nav=true">
+          Support
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Responsive Tab: all_products" href="https://developers.google.com/products/">
+          All Products
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+     <div class="devsite-nav-responsive-sidebar-panel">
+      <div class="devsite-nav-responsive-back" tabindex="0">
+      </div>
+      <nav class="devsite-nav-responsive-sidebar">
+       <ul class="devsite-nav-list devsite-nav-expandable">
+        <li class="devsite-nav-item">
+         <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference" track-metadata-position="0" track-name="titleLink" track-type="leftNav">
+          Resource Summary
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Acl
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-expanded material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-expanded">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item devsite-nav-active">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          CalendarList
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Calendars
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/clear" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            clear
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Channels
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels/stop" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            stop
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Colors
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Events
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/import" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            import
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/instances" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            instances
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/move" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            move
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/quickAdd" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            quickAdd
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Freebusy
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy/query" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            query
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Settings
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </nav>
+    <div class="devsite-main-content clearfix">
+     <nav class="devsite-section-nav devsite-nav nocontent">
+      <ul class="devsite-nav-list devsite-nav-expandable">
+       <li class="devsite-nav-item">
+        <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference" track-metadata-position="0" track-name="titleLink" track-type="leftNav">
+         Resource Summary
+        </a>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Acl
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-expanded material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-expanded">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item devsite-nav-active">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         CalendarList
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Calendars
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/clear" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           clear
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Channels
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels/stop" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           stop
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Colors
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Events
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/import" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           import
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/instances" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           instances
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/move" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           move
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/quickAdd" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           quickAdd
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Freebusy
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy/query" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           query
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Settings
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </nav>
+     <nav class="devsite-page-nav devsite-nav">
+     </nav>
+     <article class="devsite-article">
+      <article class="devsite-article-inner">
+       <nav class="devsite-breadcrumb-nav devsite-nav">
+        <ul class="devsite-breadcrumb-list">
+         <li class="devsite-breadcrumb-item">
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1" href="https://developers.google.com/products/">
+           Products
+          </a>
+         </li>
+         <li class="devsite-breadcrumb-item">
+          <div class="devsite-breadcrumb-guillemet material-icons">
+          </div>
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2" href="https://developers.google.com/gsuite/">
+           G Suite
+          </a>
+         </li>
+         <li class="devsite-breadcrumb-item">
+          <div class="devsite-breadcrumb-guillemet material-icons">
+          </div>
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3" href="https://developers.google.com/google-apps/calendar/">
+           Calendar API
+          </a>
+         </li>
+         <li class="devsite-breadcrumb-item">
+          <div class="devsite-breadcrumb-guillemet material-icons">
+          </div>
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="4" href="https://developers.google.com/google-apps/calendar/v3/reference">
+           Reference
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <h1 class="devsite-page-title" itemprop="name">
+        Acl: update
+       </h1>
+       <nav class="devsite-page-nav-embedded devsite-nav">
+       </nav>
+       <div class="devsite-article-body clearfix " itemprop="articleBody">
+        <div itemscope="" itemtype="http://developers.google.com/ReferenceObject">
+         <meta content="update" itemprop="name"/>
+         <meta content="Acl" itemprop="path"/>
+         <p class="note">
+          <b>
+           Requires
+           <a href="#auth">
+            authorization
+           </a>
+          </b>
+         </p>
+         <p>
+          Updates an access control rule.
+          <a href="#try-it">
+           Try it now
+          </a>
+          or
+          <a href="#examples">
+           see an example
+          </a>
+          .
+         </p>
+         <section id="request">
+          <h2>
+           Request
+          </h2>
+          <h3>
+           HTTP request
+          </h3>
+          <pre>PUT https://www.googleapis.com/calendar/v3/calendars/<var class="apiparam">calendarId</var>/acl/<var class="apiparam">ruleId</var></pre>
+          <h3>
+           Parameters
+          </h3>
+          <table class="matchpre" id="request_parameters">
+           <thead>
+            <tr>
+             <th>
+              Parameter name
+             </th>
+             <th>
+              Value
+             </th>
+             <th>
+              Description
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr class="alt" id="required-parameters">
+             <td colspan="3">
+              <b>
+               Path parameters
+              </b>
+             </td>
+            </tr>
+            <tr id="calendarId">
+             <td>
+              <code>
+               calendarId
+              </code>
+             </td>
+             <td>
+              <code class="apitype">
+               string
+              </code>
+             </td>
+             <td>
+              Calendar identifier. To retrieve calendar IDs call the
+              <a href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/list">
+               calendarList.list
+              </a>
+              method. If you want to access the primary calendar of the currently logged in user, use the "
+              <code>
+               primary
+              </code>
+              " keyword.
+             </td>
+            </tr>
+            <tr id="ruleId">
+             <td>
+              <code>
+               ruleId
+              </code>
+             </td>
+             <td>
+              <code class="apitype">
+               string
+              </code>
+             </td>
+             <td>
+              ACL rule identifier.
+             </td>
+            </tr>
+            <tr class="alt" id="optional-parameters">
+             <td colspan="3">
+              <b>
+               Optional query parameters
+              </b>
+             </td>
+            </tr>
+            <tr id="sendNotifications">
+             <td>
+              <code>
+               sendNotifications
+              </code>
+             </td>
+             <td>
+              <code class="apitype">
+               boolean
+              </code>
+             </td>
+             <td>
+              Whether to send notifications about the calendar sharing change. Note that there are no notifications on access removal. Optional. The default is True.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <h3 id="auth">
+           Authorization
+          </h3>
+          <p>
+           This request requires authorization with the following scope (
+           <a href="https://developers.google.com/google-apps/calendar/auth">
+            read more about authentication and authorization
+           </a>
+           ).
+          </p>
+          <table class="matchpre">
+           <thead>
+            <tr>
+             <th>
+              Scope
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <code>
+               https://www.googleapis.com/auth/calendar
+              </code>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <h3>
+           Request body
+          </h3>
+          <p>
+           In the request body, supply an
+           <a href="https://developers.google.com/google-apps/calendar/v3/reference/acl#resource">
+            Acl resource
+           </a>
+           with the following properties:
+          </p>
+          <table class="matchpre" id="request_properties_JSON">
+           <thead>
+            <tr>
+             <th>
+              Property name
+             </th>
+             <th>
+              Value
+             </th>
+             <th>
+              Description
+             </th>
+             <th>
+              Notes
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr class="alt" id="optional-properties">
+             <td colspan="4">
+              <b>
+               Optional Properties
+              </b>
+             </td>
+            </tr>
+            <tr id="role">
+             <td>
+              <code>
+               role
+              </code>
+             </td>
+             <td>
+              <code class="apitype">
+               string
+              </code>
+             </td>
+             <td>
+              The role assigned to the scope. Possible values are:
+              <ul>
+               <li>
+                "
+                <code>
+                 none
+                </code>
+                " - Provides no access.
+               </li>
+               <li>
+                "
+                <code>
+                 freeBusyReader
+                </code>
+                " - Provides read access to free/busy information.
+               </li>
+               <li>
+                "
+                <code>
+                 reader
+                </code>
+                " - Provides read access to the calendar. Private events will appear to users with reader access, but event details will be hidden.
+               </li>
+               <li>
+                "
+                <code>
+                 writer
+                </code>
+                " - Provides read and write access to the calendar. Private events will appear to users with writer access, and event details will be visible.
+               </li>
+               <li>
+                "
+                <code>
+                 owner
+                </code>
+                " - Provides ownership of the calendar. This role has all of the permissions of the writer role with the additional ability to see and manipulate ACLs.
+               </li>
+              </ul>
+             </td>
+             <td>
+              writable
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </section>
+         <section id="response">
+          <h2>
+           Response
+          </h2>
+          <p>
+           If successful, this method returns an
+           <a href="https://developers.google.com/google-apps/calendar/v3/reference/acl#resource">
+            Acl resource
+           </a>
+           in the response body.
+          </p>
+         </section>
+         <section id="examples">
+          <h2>
+           Examples
+          </h2>
+          <p class="note">
+           <b>
+            Note:
+           </b>
+           The code examples available for this method do not represent all supported programming languages (see the
+           <a href="https://developers.google.com/google-apps/calendar/downloads">
+            client libraries page
+           </a>
+           for a list of supported languages).
+          </p>
+          <div class="ds-selector-tabs" data-ds-scope="code-sample" id="code-sample">
+           <section>
+            <h3>
+             Java
+            </h3>
+            <p>
+             Uses the
+             <a href="https://developers.google.com/api-client-library/java/apis/calendar/v3" target="_blank">
+              Java client library
+             </a>
+             .
+            </p>
+            <pre class="prettyprint lang-java">import com.google.api.services.calendar.Calendar;
+import com.google.api.services.calendar.model.AclRule;
+
+// ...
+
+// Initialize Calendar service with valid OAuth credentials
+Calendar service = new Calendar.Builder(httpTransport, jsonFactory, credentials)
+    .setApplicationName("applicationName").build();
+
+// Retrieve the access rule from the API
+AclRule rule = service.acl().get('primary', "ruleId").execute();
+
+// Make a change
+rule.setRole("newRole");
+
+// Update the access rule
+AclRule updatedRule = service.acl().update('primary', rule.getId(), rule).execute();
+System.out.println(updatedRule.getEtag());
+</pre>
+           </section>
+           <section>
+            <h3>
+             Python
+            </h3>
+            <p>
+             Uses the
+             <a href="https://github.com/google/google-api-python-client" target="_blank">
+              Python client library
+             </a>
+             .
+            </p>
+            <pre class="prettyprint lang-python">rule = service.acl().get(calendarId='primary', ruleId='ruleId').execute()
+rule['role'] = 'newRole'
+
+updated_rule = service.acl().update(calendarId='primary', ruleId=rule['id'], body=rule).execute()
+print updated_rule['etag']
+</pre>
+           </section>
+           <section>
+            <h3>
+             PHP
+            </h3>
+            <p>
+             Uses the
+             <a href="https://developers.google.com/api-client-library/php/" target="_blank">
+              PHP client library
+             </a>
+             .
+            </p>
+            <pre class="prettyprint lang-php">$rule = $service-&gt;acl-&gt;get('primary', 'ruleId');
+$rule-&gt;setRole('newRole');
+
+$updatedRule = $service-&gt;acl-&gt;update('primary', $rule-&gt;getId(), $rule);
+echo $updatedRule-&gt;getEtag();
+</pre>
+           </section>
+           <section>
+            <h3>
+             Ruby
+            </h3>
+            <p>
+             Uses the
+             <a href="https://developers.google.com/api-client-library/ruby/" target="_blank">
+              Ruby client library
+             </a>
+             .
+            </p>
+            <pre class="prettyprint lang-ruby">rule = client.get_acl('primary', 'ruleId')
+rule.role = 'newRole'
+result = client.update_acl('primary', rule.id, rule)
+print result.etag
+</pre>
+           </section>
+          </div>
+         </section>
+         <section id="try-it">
+          <h2>
+           Try it!
+          </h2>
+          <p>
+           Use the APIs Explorer below to call this method on live data and see the response.
+          </p>
+          <div data-method="calendar.acl.update" data-params="" data-service="calendar" data-version="v3" id="embedded-explorer">
+          </div>
+         </section>
+        </div>
+       </div>
+       <div class="devsite-content-footer nocontent">
+        <p>
+         Except as otherwise noted, the content of this page is licensed under the
+         <a href="http://creativecommons.org/licenses/by/3.0/">
+          Creative Commons Attribution 3.0 License
+         </a>
+         , and code samples are licensed under the
+         <a href="http://www.apache.org/licenses/LICENSE-2.0">
+          Apache 2.0 License
+         </a>
+         . For details, see our
+         <a href="https://developers.google.com/terms/site-policies">
+          Site Policies
+         </a>
+         . Java is a registered trademark of Oracle and/or its affiliates.
+        </p>
+        <p class="devsite-content-footer-date" content="2017-10-19T13:35:16.000020" itemprop="datePublished">
+         Last updated October 19, 2017.
+        </p>
+       </div>
+      </article>
+     </article>
+    </div>
+    <footer class="devsite-footer-promos nocontent">
+     <nav class="devsite-full-site-width">
+      <ul class="devsite-footer-promos-list">
+       <li class="devsite-footer-promo">
+        <a class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo" href="https://gsuite-developers.googleblog.com">
+         <img class="devsite-footer-promo-icon" src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"/>
+         Blog
+        </a>
+        <div class="devsite-footer-promo-description">
+         Stay up-to-date on developing for G Suite
+        </div>
+       </li>
+       <li class="devsite-footer-promo">
+        <a class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo" href="https://stackoverflow.com/questions/tagged/google-calendar">
+         <img class="devsite-footer-promo-icon" src="https://developers.google.com/site-assets/logo-stack-overflow.svg"/>
+         Stack Overflow
+        </a>
+        <div class="devsite-footer-promo-description">
+         Ask questions with the google-calendar tag
+        </div>
+       </li>
+       <li class="devsite-footer-promo">
+        <a class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo" href="https://developers.google.com/google-apps/calendar/downloads">
+         <div class="devsite-footer-promo-icon material-icons">
+          file_download
+         </div>
+         Client Libraries
+        </a>
+        <div class="devsite-footer-promo-description">
+         Download a client library for your preferred language
+        </div>
+       </li>
+      </ul>
+     </nav>
+    </footer>
+    <footer class="devsite-footer-linkboxes nocontent devsite-footer-linkboxes-with-sites">
+     <nav class="devsite-full-site-width">
+      <ul class="devsite-footer-linkboxes-list">
+       <li class="devsite-footer-linkbox ">
+        <h3 class="devsite-footer-linkbox-heading">
+         Product Info
+        </h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/google-apps/calendar/downloads">
+           Downloads
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/terms">
+           Terms of Service
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/google-apps/calendar/pricing">
+           Usage Limits
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/google-apps/calendar/v3/whats-new">
+           What's New in v3
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-footer-linkbox ">
+        <h3 class="devsite-footer-linkbox-heading">
+         Related APIs
+        </h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/gmail">
+           Gmail
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/structured-data">
+           Structured Data
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/drive">
+           Google Drive
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/apps-script/reference/calendar">
+           Calendar Service in Apps Script
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-footer-linkbox devsite-footer-linkbox-backup">
+        <h3 class="devsite-footer-linkbox-heading">
+         Developer Consoles
+        </h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Console" href="//console.developers.google.com">
+           Google API Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Console" href="//console.cloud.google.com">
+           Google Cloud Platform Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Play Console" href="//play.google.com/apps/publish/">
+           Google Play Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Console" href="//console.firebase.google.com">
+           Firebase Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Cast SDK Developer Console" href="//cast.google.com/publish/">
+           Cast SDK Developer Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Web Store Developer Dashboard" href="//chrome.google.com/webstore/developer/dashboard">
+           Chrome Web Store Dashboard
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-footer-linkbox devsite-footer-linkbox-sites">
+        <a class="gc-analytics-event devsite-footer-linkbox-logo-link" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link" href="https://developers.google.com/">
+         <img class="devsite-footer-linkbox-logo" src="https://developers.google.com/_static/18908e5f48/images/redesign-14/lockup-color-knockout.png"/>
+        </a>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link" href="//developer.android.com/index.html">
+           Android
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link" href="//developer.chrome.com/home">
+           Chrome
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link" href="//firebase.google.com">
+           Firebase
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Cloud Link" href="//cloud.google.com">
+           Google Cloud Platform
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Products Link" href="//developers.google.com/products/">
+           All Products
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </nav>
+    </footer>
+    <footer class="devsite-utility-footer">
+     <nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width">
+      <div class="devsite-utility-footer-nav-left">
+       <form action="/i18n/setlang/" class="devsite-utility-footer-language" method="post">
+        <input name="xsrf_token" type="hidden" value="PkwtQ-rPziznav3O_vqGXnTcZf5nKT106WGIgmFpoS06MTUxODAwNzkzNDYxMjc4MA"/>
+        <input name="next" type="hidden" value="/google-apps/calendar/v3/reference/acl/update"/>
+        <select class="devsite-utility-footer-language-select kd-select" name="language" track-name="click" track-type="languageSelector">
+         <option track-metadata-original-language="en" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector" value="id">
+          Bahasa Indonesia
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector" value="de">
+          Deutsch
+         </option>
+         <option selected="selected" track-metadata-original-language="en" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector" value="en">
+          English
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector" value="es">
+          español
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector" value="fr">
+          français
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="pt-br" track-name="changed" track-type="languageSelector" value="pt-br">
+          Português Brasileiro
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector" value="ru">
+          Русский
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector" value="ja">
+          日本語
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="zh-cn" track-name="changed" track-type="languageSelector" value="zh-cn">
+          简体中文
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector" value="ko">
+          한국어
+         </option>
+        </select>
+       </form>
+       <span class="devsite-utility-footer-links">
+        <a class="devsite-utility-footer-link gc-analytics-event" data-category="Site-Wide Custom Events" data-footer-link-id="terms" data-label="Footer terms link" href="https://developers.google.com/terms/site-terms">
+         Terms
+        </a>
+        <a class="devsite-utility-footer-link gc-analytics-event" data-category="Site-Wide Custom Events" data-footer-link-id="privacy" data-label="Footer privacy link" href="https://www.google.com/policies/privacy/">
+         Privacy
+        </a>
+       </span>
+      </div>
+      <div class="devsite-utility-footer-nav-right">
+       <div class="devsite-utility-footer-newsletter-signup-text">
+        Sign up for the Google Developers newsletter
+       </div>
+       <a class="button button-primary devsite-utility-footer-newsletter-signup-button" href="https://services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch">
+        Subscribe
+       </a>
+      </div>
+     </nav>
+    </footer>
+    <div class="devsite-feedback-dialog devsite-dialog">
+     <div class="devsite-dialog-contents">
+      <h3>
+       Send feedback about...
+      </h3>
+      <div class="devsite-feedback-item">
+       <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Docs Feedback Image" data-type="documentation" track-metadata-position="header" track-name="feedbackDocIcon" track-type="feedback">
+        <div class="devsite-feedback-item-icon-container">
+         <div class="devsite-feedback-item-icon-white devsite-feedback-item-icon-docs material-icons">
+         </div>
+        </div>
+       </a>
+       <div class="devsite-feedback-item-name">
+        This page
+       </div>
+       <div class="devsite-feedback-item-description">
+        <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Docs Feedback Text" data-type="documentation" tabindex="0" track-metadata-position="header" track-name="feedbackDocText" track-type="feedback">
+         Documentation feedback
+        </a>
+       </div>
+      </div>
+      <div class="devsite-feedback-item">
+       <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Product Feedback Image" data-type="product" href="https://issuetracker.google.com/issues/new?component=191627&amp;template=823906" tabindex="0" track-metadata-position="header" track-name="feedbackProductIcon" track-type="feedback">
+        <img alt="Calendar API" class="devsite-feedback-item-icon" src="https://www.gstatic.com/images/branding/product/1x/calendar_64dp.png"/>
+       </a>
+       <div class="devsite-feedback-item-name">
+        Calendar API
+       </div>
+       <div class="devsite-feedback-item-description">
+        <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Product Feedback Text" data-type="product" href="https://issuetracker.google.com/issues/new?component=191627&amp;template=823906" tabindex="0" track-metadata-position="header" track-name="feedbackProductText" track-type="feedback">
+         Product feedback
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="devsite-dialog-buttons">
+      <button class="devsite-feedback-cancel button-white gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Cancel Feedback Button" track-metadata-position="header" track-name="cancelFeedbackButton" track-type="feedback" type="button">
+       Cancel
+      </button>
+     </div>
+    </div>
+    <script>
+     $(document).ready(function() {
+    new devsite.feedback.Widget({
+        'product_id': '717201',
+        'bucket': 'calendar',
+        'context': '',
+        'version': 'devsite-20180201-r03-rc00.default'
+      },
+      document.querySelectorAll('.devsite-feedback-button'),
+      'en',
+      document.querySelector('.devsite-site-mask'),
+      document.querySelector('.devsite-feedback-dialog'),
+      document.querySelector('.devsite-feedback-cancel'),
+      document.querySelectorAll('.devsite-feedback-item a:not([href])')
+    );
+  });
+    </script>
+   </div>
+   <script async="" defer="" src="//www.gstatic.com/feedback/api.js">
+   </script>
+   <script src="https://developers.google.com/_static2/18908e5f48/jsi18n/">
+   </script>
+   <script src="https://developers.google.com/_static/18908e5f48/js/script_foot_closure.js">
+   </script>
+   <script src="https://developers.google.com/_static/18908e5f48/js/script_foot.js">
+   </script>
+   <script>
+    (function($) {
+          
+          devsite.devsite.Init($, {'FULL_SITE_SEARCH_ENABLED': 1, 'ENABLE_BLOCKED_VIDEO_PLACEHOLDER': 0, 'VERSION_HASH': '18908e5f48', 'SITE_NAME': 'devsite', 'HISTORY_ENABLED': 1, 'ENABLE_BLOCKED_LINK_TOOLTIP': 0, 'ALLOWED_HOSTS': ['.android.com', '.anvato.com', '.apigee.com', '.appspot.com', '.dialogflow.com', '.gonglchuangl.net', '.google.cn', '.google.com', '.googleplex.com', '.nest.com', '.openthread.io', '.openweave.io', '.orbitera.com', '.tensorflow.org'], 'BLOCK_RSS_FEEDS': 0, 'SCRIPTSAFE_DOMAIN': 'google-developers.appspot.com'},
+                               '[]','en',
+                               true, '',
+                               {"f62218c009ec029abef196bba5aa34cf": true, "098dafe57affddc137df300142652cfd": false, "8e03e230de0bd8a6fe173fdf172e8b3f": true, "cb025a64a50094835616312f4774a53d": true, "51470233c56fc1fde50f00b73c52b216": false, "d169d485cf24243a263783dbe42029b1": true, "039e5d84b87fd75807ffb37b7f1bbf2c": true, "752953480de00a336d911a46966cc16d": false, "700def1a83e356c06c0925afb05de4b0": false, "6749dcb526ce9bde6993550c7d928d24": true}, '/google-apps/calendar/',
+                               'https://developers.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+   </script>
+   <script>
+    $('.devsite-utility-footer-language-select').each(function() {
+        $(this).change(function(){$('.devsite-utility-footer-language').submit();});
+      });
+   </script>
+   <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=w4kjta5nspxgd2qqxx5dxxqh54">
+   </script>
+  </div>
+  <span data-request-elapsed="190.580129623" id="devsite-request-elapsed">
+  </span>
+ </body>
+</html>
