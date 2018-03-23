@@ -21,11 +21,11 @@
   <meta content="index,follow,archive" name="robots"/>
   <meta content="Developer | MailChimp" property="og:title"/>
   <meta content="website" property="og:type"/>
-  <meta content="http://developer.mailchimp.com/" property="og:url"/>
-  <meta content="http://developer.mailchimp.com/documentation/mailchimp/img/freddie_wink_opengraph.png" property="og:image"/>
+  <meta content="https://developer.mailchimp.com/" property="og:url"/>
+  <meta content="https://developer.mailchimp.com/documentation/mailchimp/img/freddie_wink_opengraph.png" property="og:image"/>
   <meta content="MailChimp Developer" property="og:description"/>
   <meta content="summary_large_image" property="twitter:card"/>
-  <meta content="http://developer.mailchimp.com/documentation/mailchimp/img/freddie_wink_opengraph.png" property="twitter:image"/>
+  <meta content="https://developer.mailchimp.com/documentation/mailchimp/img/freddie_wink_opengraph.png" property="twitter:image"/>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400" rel="stylesheet"/>
   <link href="/documentation/mailchimp/img/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="/documentation/mailchimp/img/touch-icon-192x192.png" rel="icon" sizes="192x192"/>
@@ -48,7 +48,7 @@
           "@type" : "WebSite",
           "name" : "Developer | MailChimp",
           "alternateName" : "MailChimp Developer",
-          "url" : "http://developer.mailchimp.com/"
+          "url" : "https://developer.mailchimp.com/"
         }
   </script>
   <script>
@@ -82,7 +82,7 @@
     <div>
      <nav class="navigation-left group nochange">
       <div class="float-left pad-lv2 branding">
-       <a href="http://mailchimp.com/" id="freddie-developer-link">
+       <a href="https://mailchimp.com/" id="freddie-developer-link">
         <img height="36" role="presentation" src="/documentation/mailchimp/img/freddie_wink.svg"/>
        </a>
        <p class="header-text inline pad-lv2 pad-r0 pad-tb0 hide-phone" itemprop="headline">
@@ -279,6 +279,11 @@
            </ul>
           </li>
           <li class=" ">
+           <a href="/documentation/mailchimp/reference/connected-sites/">
+            Connected Sites
+           </a>
+          </li>
+          <li class=" ">
            <a href="/documentation/mailchimp/reference/conversations/">
             Conversations
            </a>
@@ -313,7 +318,7 @@
              </a>
             </li>
             <li class=" ">
-             <a href="/documentation/mailchimp/reference/ecommerce/stores/orders/">
+             <a href="/documentation/mailchimp/reference/ecommerce/orders/">
               Orders
              </a>
              <ul class="sub-menu">
@@ -337,6 +342,18 @@
               <li class=" ">
                <a href="/documentation/mailchimp/reference/ecommerce/stores/products/variants/">
                 Product Variants
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+              Promo Rules
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+                Promo Codes
                </a>
               </li>
              </ul>
@@ -447,6 +464,11 @@
            </ul>
           </li>
           <li class=" ">
+           <a href="/documentation/mailchimp/reference/ping/">
+            Ping
+           </a>
+          </li>
+          <li class=" ">
            <a href="/documentation/mailchimp/reference/reports/">
             Reports
            </a>
@@ -459,6 +481,11 @@
             <li class=" ">
              <a href="/documentation/mailchimp/reference/reports/advice/">
               Campaign Advice
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/open-details/">
+              Campaign Open Reports
              </a>
             </li>
             <li class=" ">
@@ -486,6 +513,11 @@
             <li class=" ">
              <a href="/documentation/mailchimp/reference/reports/email-activity/">
               Email Activity
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/google-analytics/">
+              Google Analytics
              </a>
             </li>
             <li class=" ">
@@ -553,7 +585,7 @@
       </li>
      </ul>
     </nav>
-    <article class="unit lastUnit">
+    <article class="unit lastUnit" data-swiftype-index="true">
      <p>
      </p>
      <section class="line below12">
@@ -786,6 +818,21 @@
           </td>
           <td>
            Get information about a specific workflow email
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method delete" data-content="delete-delete_automations_workflow_id_emails_workflow_email_id" href="/documentation/mailchimp/reference/automations/emails/">
+            DELETE
+           </a>
+          </td>
+          <td>
+           <a data-content="delete-delete_automations_workflow_id_emails_workflow_email_id" href="/documentation/mailchimp/reference/automations/emails/">
+            /automations/{workflow_id}/emails/{workflow_email_id}
+           </a>
+          </td>
+          <td>
+           Delete a workflow email
           </td>
          </tr>
          <tr>
@@ -1502,6 +1549,101 @@
        </table>
       </div>
       <h3>
+       Connected Sites
+      </h3>
+      <div class="mc-table-wrap">
+       <table class="link-to-action mc-table">
+        <tbody>
+         <tr>
+          <th>
+           HTTP method
+          </th>
+          <th>
+           Endpoint
+          </th>
+          <th>
+           Function
+          </th>
+         </tr>
+         <tr>
+          <td>
+           <a class="method create" data-content="create-post_connected_sites" href="/documentation/mailchimp/reference/connected-sites/">
+            POST
+           </a>
+          </td>
+          <td>
+           <a data-content="create-post_connected_sites" href="/documentation/mailchimp/reference/connected-sites/">
+            /connected-sites
+           </a>
+          </td>
+          <td>
+           Create a new connected site
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_connected_sites" href="/documentation/mailchimp/reference/connected-sites/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_connected_sites" href="/documentation/mailchimp/reference/connected-sites/">
+            /connected-sites
+           </a>
+          </td>
+          <td>
+           Get all connected sites
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_connected_sites_connected_site_id" href="/documentation/mailchimp/reference/connected-sites/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_connected_sites_connected_site_id" href="/documentation/mailchimp/reference/connected-sites/">
+            /connected-sites/{connected_site_id}
+           </a>
+          </td>
+          <td>
+           Get information about a specific connected site
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method delete" data-content="delete-delete_connected_sites_connected_site_id" href="/documentation/mailchimp/reference/connected-sites/">
+            DELETE
+           </a>
+          </td>
+          <td>
+           <a data-content="delete-delete_connected_sites_connected_site_id" href="/documentation/mailchimp/reference/connected-sites/">
+            /connected-sites/{connected_site_id}
+           </a>
+          </td>
+          <td>
+           Delete a connected site
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method action" data-content="action-post_connected_sites_connected_site_id_actions_verify_script_installation" href="/documentation/mailchimp/reference/connected-sites/">
+            POST
+           </a>
+          </td>
+          <td>
+           <a data-content="action-post_connected_sites_connected_site_id_actions_verify_script_installation" href="/documentation/mailchimp/reference/connected-sites/">
+            /connected-sites/{connected_site_id}/actions/verify-script-installation
+           </a>
+          </td>
+          <td>
+           Verify script installation for a connected site
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <h3>
        Conversations
       </h3>
       <div class="mc-table-wrap">
@@ -1612,6 +1754,21 @@
           <th>
            Function
           </th>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_ecommerce_orders" href="/documentation/mailchimp/reference/ecommerce/orders/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_ecommerce_orders" href="/documentation/mailchimp/reference/ecommerce/orders/">
+            /ecommerce/orders
+           </a>
+          </td>
+          <td>
+           Get information about an account’s orders
+          </td>
          </tr>
          <tr>
           <td>
@@ -2316,6 +2473,156 @@
           </td>
           <td>
            Delete a product variant
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method create" data-content="create-post_ecommerce_stores_store_id_promo_rules" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            POST
+           </a>
+          </td>
+          <td>
+           <a data-content="create-post_ecommerce_stores_store_id_promo_rules" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            /ecommerce/stores/{store_id}/promo-rules
+           </a>
+          </td>
+          <td>
+           Add a new promo rule to a store
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_ecommerce_stores_store_id_promo_rules" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_ecommerce_stores_store_id_promo_rules" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            /ecommerce/stores/{store_id}/promo-rules
+           </a>
+          </td>
+          <td>
+           Get information about a store’s promo rules
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_ecommerce_stores_store_id_promo_rules_promo_rule_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_ecommerce_stores_store_id_promo_rules_promo_rule_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}
+           </a>
+          </td>
+          <td>
+           Get information about a specific promo rule
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method edit" data-content="edit-patch_ecommerce_stores_store_id_promo_rules_promo_rule_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            PATCH
+           </a>
+          </td>
+          <td>
+           <a data-content="edit-patch_ecommerce_stores_store_id_promo_rules_promo_rule_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}
+           </a>
+          </td>
+          <td>
+           Update a promo rule. Please note, when a promo rule is updated, the new property/properties will apply to all the promo codes that share this promo_rule_id.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method delete" data-content="delete-delete_ecommerce_stores_store_id_promo_rules_promo_rule_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            DELETE
+           </a>
+          </td>
+          <td>
+           <a data-content="delete-delete_ecommerce_stores_store_id_promo_rules_promo_rule_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}
+           </a>
+          </td>
+          <td>
+           Delete a promo rule. Please note that when a promo rule is deleted, all the promo codes that share the deleted promo rule’s id will be deleted.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method create" data-content="create-post_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            POST
+           </a>
+          </td>
+          <td>
+           <a data-content="create-post_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes
+           </a>
+          </td>
+          <td>
+           Add a new promo code to a store
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes
+           </a>
+          </td>
+          <td>
+           Get information about a store’s promo codes
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes_promo_code_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes_promo_code_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes/{promo_code_id}
+           </a>
+          </td>
+          <td>
+           Get information about a specific promo code
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method edit" data-content="edit-patch_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes_promo_code_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            PATCH
+           </a>
+          </td>
+          <td>
+           <a data-content="edit-patch_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes_promo_code_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes/{promo_code_id}
+           </a>
+          </td>
+          <td>
+           Update a promo code
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method delete" data-content="delete-delete_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes_promo_code_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            DELETE
+           </a>
+          </td>
+          <td>
+           <a data-content="delete-delete_ecommerce_stores_store_id_promo_rules_promo_rule_id_promo_codes_promo_code_id" href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+            /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes/{promo_code_id}
+           </a>
+          </td>
+          <td>
+           Delete a promo code
           </td>
          </tr>
         </tbody>
@@ -3387,6 +3694,41 @@
        </table>
       </div>
       <h3>
+       Ping
+      </h3>
+      <div class="mc-table-wrap">
+       <table class="link-to-action mc-table">
+        <tbody>
+         <tr>
+          <th>
+           HTTP method
+          </th>
+          <th>
+           Endpoint
+          </th>
+          <th>
+           Function
+          </th>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_ping" href="/documentation/mailchimp/reference/ping/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_ping" href="/documentation/mailchimp/reference/ping/">
+            /ping
+           </a>
+          </td>
+          <td>
+           Ping the API
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <h3>
        Reports
       </h3>
       <div class="mc-table-wrap">
@@ -3555,6 +3897,21 @@
          </tr>
          <tr>
           <td>
+           <a class="method read" data-content="read-get_reports_campaign_id_ecommerce_product_activity" href="/documentation/mailchimp/reference/reports/ecommerce-product-activity/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_reports_campaign_id_ecommerce_product_activity" href="/documentation/mailchimp/reference/reports/ecommerce-product-activity/">
+            /reports/{campaign_id}/ecommerce-product-activity
+           </a>
+          </td>
+          <td>
+           No Summary
+          </td>
+         </tr>
+         <tr>
+          <td>
            <a class="method read" data-content="read-get_reports_campaign_id_eepurl" href="/documentation/mailchimp/reference/reports/eepurl/">
             GET
            </a>
@@ -3600,6 +3957,36 @@
          </tr>
          <tr>
           <td>
+           <a class="method read" data-content="read-get_reports_campaign_id_google_analytics" href="/documentation/mailchimp/reference/reports/google-analytics/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_reports_campaign_id_google_analytics" href="/documentation/mailchimp/reference/reports/google-analytics/">
+            /reports/{campaign_id}/google-analytics
+           </a>
+          </td>
+          <td>
+           Get Google Analytics reports for a campaign
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_reports_campaign_id_google_analytics_profile_id" href="/documentation/mailchimp/reference/reports/google-analytics/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_reports_campaign_id_google_analytics_profile_id" href="/documentation/mailchimp/reference/reports/google-analytics/">
+            /reports/{campaign_id}/google-analytics/{profile_id}
+           </a>
+          </td>
+          <td>
+           Get a specific Google Analytics View report
+          </td>
+         </tr>
+         <tr>
+          <td>
            <a class="method read" data-content="read-get_reports_campaign_id_locations" href="/documentation/mailchimp/reference/reports/locations/">
             GET
            </a>
@@ -3611,6 +3998,21 @@
           </td>
           <td>
            Get top open locations
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a class="method read" data-content="read-get_reports_campaign_id_open_details" href="/documentation/mailchimp/reference/reports/open-details/">
+            GET
+           </a>
+          </td>
+          <td>
+           <a data-content="read-get_reports_campaign_id_open_details" href="/documentation/mailchimp/reference/reports/open-details/">
+            /reports/{campaign_id}/open-details
+           </a>
+          </td>
+          <td>
+           Get campaign Open details
           </td>
          </tr>
          <tr>
@@ -3977,7 +4379,7 @@
    <footer class="alignc dim-el pad-lv6 pad-lr0 mc-content">
     <div class="line">
      <div class="lastUnit size1of1&gt;">
-      <a href="http://mailchimp.com" id="mailchimp-scripty-footer-link" tabindex="-1" target="_blank">
+      <a href="https://mailchimp.com" id="mailchimp-scripty-footer-link" tabindex="-1" target="_blank">
        <img alt="MailChimp logo" class="inline-block" height="32" src="/documentation/mailchimp/img/scripty-dark.svg"/>
       </a>
      </div>
@@ -3990,7 +4392,7 @@
      </div>
      <div class="lastUnit size1of2 centered hide-print">
       <p class="small-meta nomargin">
-       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="http://mailchimp.com" id="mailchimp-footer-link">
+       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="https://mailchimp.com" id="mailchimp-footer-link">
         MailChimp
        </a>
        <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="/documentation/mailchimp/" id="documentation-footer-link">
@@ -4002,7 +4404,7 @@
        <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="/status/" id="status-footer-link">
         API Status
        </a>
-       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="http://mailchimp.com/contact/feedback/" id="feedback-footer-link">
+       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="https://mailchimp.com/contact/feedback/" id="feedback-footer-link">
         Feedback
        </a>
       </p>

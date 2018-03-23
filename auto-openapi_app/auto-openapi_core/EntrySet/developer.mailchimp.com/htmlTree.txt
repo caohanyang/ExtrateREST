@@ -1,2 +1,140 @@
 
--- /developer.mailchimp.com/documentation/mailchimp/reference/overview-/
+                                                            /-/authorized-apps
+                                                           |
+                                                           |--/automations
+                                                           |
+                                                           |--/batch-webhooks
+                                                           |
+                                                           |--/batches
+                                                           |
+                                                           |--/campaign-folders
+                                                           |
+                                                           |--/campaigns
+                                                           |
+                                                           |--/connected-sites
+                                                           |
+                                                           |--/conversations
+                                                           |
+                                                           |--/lists
+                                                           |
+                                                           |--/overview
+                                                           |
+                                                           |--/ping
+                                                           |
+                                                           |--/reports
+                                                           |
+                                                           |--/root
+                                                           |
+                                                           |--/search-campaigns
+                                                           |
+                                                           |--/search-members
+                                                           |
+                                                           |--/template-folders
+                                                           |
+                                                           |--/templates
+                                                           |
+                                                           |            /-/emails
+                                                           |           |
+                                                           |-/automations-/removed-subscribers
+                                                           |           |
+                                                           |            \/emails-/queue
+                                                           |
+                                                           |          /-/content
+                                                           |         |
+                                                           |-/campaigns-/feedback
+                                                           |         |
+                                                           |          \-/send-checklist
+                                                           |
+                                                           |-/conversations-/messages
+                                                           |
+                                                           |          /-/orders
+                                                           |         |
+                                                           |         |--/stores
+                                                           |         |
+                                                           |         |       /-/carts
+                                                           |         |      |
+                                                           |-/ecommerce     |--/customers
+                                                           |         |      |
+                                                           |         |      |--/orders
+                                                           |         |      |
+                                                           |         |      |--/products
+                                                           |         |      |
+                                                           |         |      |--/promo-rules
+                                                           |          \/stores
+                                                           |                |-/carts-/lines
+                                                           |                |
+                                                           |                |-/orders-/lines
+                                                           |                |
+                                                           |                |         /-/images
+                                                           |                |-/products
+                                                           |                |         \-/variants
+-- /developer.mailchimp.com/documentation/mailchimp/reference               |
+                                                           |                 \/promo-rules-/promo-codes
+                                                           |
+                                                           |             /-/files
+                                                           |-/file-manager
+                                                           |             \-/folders
+                                                           |
+                                                           |      /-/abuse-reports
+                                                           |     |
+                                                           |     |--/activity
+                                                           |     |
+                                                           |     |--/clients
+                                                           |     |
+                                                           |     |--/growth-history
+                                                           |     |
+                                                           |     |--/interest-categories
+                                                           |     |
+                                                           |     |--/locations
+                                                           |     |
+                                                           |     |--/members
+                                                           |     |
+                                                           |     |--/merge-fields
+                                                           |-/lists
+                                                           |     |--/segments
+                                                           |     |
+                                                           |     |--/signup-forms
+                                                           |     |
+                                                           |     |--/webhooks
+                                                           |     |
+                                                           |     |-/interest-categories-/interests
+                                                           |     |
+                                                           |     |        /-/activity
+                                                           |     |       |
+                                                           |     |-/members-/goals
+                                                           |     |       |
+                                                           |     |        \-/notes
+                                                           |     |
+                                                           |      \/segments-/members
+                                                           |
+                                                           |-/overview-/
+                                                           |
+                                                           |        /-/abuse-reports
+                                                           |       |
+                                                           |       |--/advice
+                                                           |       |
+                                                           |       |--/click-details
+                                                           |       |
+                                                           |       |--/domain-performance
+                                                           |       |
+                                                           |       |--/ecommerce-product-activity
+                                                           |       |
+                                                           |       |--/eepurl
+                                                           |       |
+                                                           |       |--/email-activity
+                                                           |-/reports
+                                                           |       |--/google-analytics
+                                                           |       |
+                                                           |       |--/locations
+                                                           |       |
+                                                           |       |--/open-details
+                                                           |       |
+                                                           |       |--/sent-to
+                                                           |       |
+                                                           |       |--/sub-reports
+                                                           |       |
+                                                           |       |--/unsubscribed
+                                                           |       |
+                                                           |        \/click-details-/members
+                                                           |
+                                                            \/templates-/default-content

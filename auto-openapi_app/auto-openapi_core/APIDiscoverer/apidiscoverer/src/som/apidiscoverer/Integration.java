@@ -117,6 +117,11 @@ public class Integration {
 				// request example miss:
 				// use origin url
 				jsonCallExample.getJsonRequest().setUrl(jsonCallExample.getJsonRequest().getOurl());
+				
+				//TODO Check consistency
+				apidiscover.sendRequest();
+				TimeUnit.SECONDS.sleep(1);
+				jsonCallExample = apidiscover.getJsonCallExample();
 			}
 
 			// 6. Get Schema

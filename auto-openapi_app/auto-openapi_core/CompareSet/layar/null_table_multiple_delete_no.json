@@ -1,8 +1,11 @@
 {
-  "basePath": "/focus%E5%9B%BE%E5%83%8F.png",
-  "paths": {},
+  "paths": {
+    "/": {
+      "GET": {}
+    }
+  },
   "produces": "application/json",
-  "host": "custom.layar.nl",
+  "host": "<poiUrl>",
   "schemes": [
     "http"
   ],

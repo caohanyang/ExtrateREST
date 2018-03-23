@@ -18,12 +18,7 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "GET": {
         "parameters": [
@@ -62,12 +57,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/acl/ruleId": {
@@ -87,12 +77,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "GET": {
         "parameters": [
@@ -110,12 +95,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "PATCH": {
         "parameters": [
@@ -165,30 +145,17 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/channels/stopRequestbody": {
       "POST": {
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        "request": "{ \"id\": string , \"resourceId\": string }"
       }
     },
     "/freeBusyRequestbody": {
       "POST": {
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        "request": "{ \"timeMin\": datetime , \"timeMax\": datetime , \"timeZone\": string , \"groupExpansionMax\": integer , \"calendarExpansionMax\": integer , \"items\": [ { \"id\": string } ] }"
       }
     },
     "/calendars/calendarId": {
@@ -201,12 +168,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "GET": {
         "parameters": [
@@ -217,12 +179,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "PATCH": {
         "parameters": [
@@ -244,31 +201,14 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/colorsRequestbody": {
-      "GET": {
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
-      }
+      "GET": {}
     },
     "/calendarsAuthorization": {
-      "POST": {
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
-      }
+      "POST": {}
     },
     "/calendars/calendarId/events/eventId/instances": {
       "GET": {
@@ -350,12 +290,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/users/me/settings": {
@@ -382,21 +317,12 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/users/me/calendarList/watch": {
       "POST": {
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        "request": "{ \"id\": string , \"token\": string , \"type\": string , \"address\": string , \"params\": { \"ttl\": string } }"
       }
     },
     "/calendars/calendarId/events/eventId/move": {
@@ -430,30 +356,21 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/acl/watch": {
       "POST": {
+        "request": "{ \"id\": string , \"token\": string , \"type\": string , \"address\": string , \"params\": { \"ttl\": string } }",
         "parameters": [
           {
-            "in": "path",
+            "in": "body",
             "name": "calendarId",
             "description": "string Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the \" primary \" keyword.",
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/events": {
@@ -494,12 +411,7 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "GET": {
         "parameters": [
@@ -629,12 +541,7 @@
             "type": "integer",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/events/import": {
@@ -661,12 +568,7 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/clear": {
@@ -679,12 +581,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/events/eventId": {
@@ -711,12 +608,7 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "GET": {
         "parameters": [
@@ -755,12 +647,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "PATCH": {
         "parameters": [
@@ -866,12 +753,7 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/users/me/settings/setting": {
@@ -884,12 +766,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/events/quickAdd": {
@@ -916,30 +793,21 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/calendars/calendarId/events/watch": {
       "POST": {
+        "request": "{ \"id\": string , \"token\": string , \"type\": string , \"address\": string , \"params\": { \"ttl\": string } }",
         "parameters": [
           {
-            "in": "path",
+            "in": "body",
             "name": "calendarId",
             "description": "string Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the \" primary \" keyword.",
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/users/me/calendarList": {
@@ -952,12 +820,7 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "GET": {
         "parameters": [
@@ -1003,21 +866,12 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     },
     "/users/me/settings/watch": {
       "POST": {
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        "request": "{ \"id\": string , \"token\": string , \"type\": string , \"address\": string , \"params\": { \"ttl\": string } }"
       }
     },
     "/users/me/calendarList/calendarId": {
@@ -1030,12 +884,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "GET": {
         "parameters": [
@@ -1046,12 +895,7 @@
             "type": "string",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       },
       "PATCH": {
         "parameters": [
@@ -1087,12 +931,7 @@
             "type": "boolean",
             "required": true
           }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        }
+        ]
       }
     }
   },

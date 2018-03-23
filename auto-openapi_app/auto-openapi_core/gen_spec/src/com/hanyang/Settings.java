@@ -21,7 +21,7 @@ public class Settings {
 		
 	// The things between Http verbs and Url:
 	// \\s \\s.{0,60} (.*?) .{0,10} 
-	public static String STUFFING = "\\s.{0,300}";	
+	public static String STUFFING = "\\s";	
 	// for some url contains URL parameters
 	// It will present URL in different tags, which causes whitespace
 	// " " ""
@@ -29,20 +29,20 @@ public class Settings {
 	public static String URLAFTER = "\n";
 	// path template in the url
 	// :id  <id> {id} no
-	public static String URLTEMPLATE = ":id";
+	public static String URLTEMPLATE = "no";
 	
 	// "no", "yes"
 	public static String REVERSE = "no";
 	
 	// exist the verb or not
 	// no yes
-	public static String EXISTVERB = "yes";
+	public static String EXISTVERB = "no";
 	// Url :
-	public static String URLKEY= "";
+	public static String URLKEY= "API Method";
 	public static String VERBKEY= "";
 	
 	// "https://", "http://", "/",   "null" "key'
-	public static String MODE ="https://";
+	public static String MODE ="key";
 	
 	// "del", "delete"
 	public static String ABBREV_DELETE = "delete";
@@ -55,7 +55,7 @@ public class Settings {
 	// "EXAMPLE REQUEST"  "" "no"
 	public static String REQKEY = "Example Request";
 	// \\s \\s.{0,60} "" (.*?)
-	public static String REQMIDDLE = ".{0,10}";
+	public static String REQMIDDLE = ".{0,60}";
 	// The request exists or not 
 	// http no curl  ((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1} /
 	public static String REQEXAMPLE = "http";
@@ -71,14 +71,14 @@ public class Settings {
 	 */
 	
 	// (example)|(response)  ""  "no"
-	public static String RESKEY = "Example Response";
+	public static String RESKEY = "Example response";
 	// \\s \\s.{0,10} \\s.{0,100} ""
 	// 1.
-	public static String RESMIDDLE = "\\s.{0,10}";
+	public static String RESMIDDLE = "\\s";
 	// default true
 	public static Boolean URL1RES2 = true;
 	//  pre code span
-	public static String RESTEMPLATE = "pre";
+	public static String RESTEMPLATE = "code";
 	
 	// The response exists or not 
 	// ((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}
@@ -94,18 +94,18 @@ public class Settings {
 	// sometimes not common "Query Parameters" "url Parameters"
 	// choose the last common one
 	// (parameter)|(argument)|(field)|(parameters)|(arguments)|(fields)  or choose the first element Name
-	public static String PARAKEY = "parameters";
+	public static String PARAKEY = "(parameter)|(argument)|(field)|(parameters)|(arguments)";
 	// first URL then parameters
 	public static boolean URL1PARA2 = true;	
 	
-	public static String PARAMIDDLE= "13";
+	public static String PARAMIDDLE= "20";
 	// parameter types
 	// Required. The location of the parameter. 
 	// Possible values are "query", "header", "path", "formData" or "body".     
 	// for one api, the parameters can be "mix"
 	public static String PARAIN = "query";
 	// "table", "list"
-	public static String TEMPLATE = "table";
+	public static String TEMPLATE = "list";
 	// "single", "multiple"
 	public static String NUMBER = "multiple";
 

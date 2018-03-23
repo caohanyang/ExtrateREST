@@ -12,6 +12,10 @@ if (args.length > 0) {
 	// google have several APIs
 	if (API_NAME.includes("google")) {
 		API_NAME = args[2].split("//")[1].split("/")[1];
+	} else if (API_NAME.includes("/")) {
+		if (!args[2].split("//")[1].startsWith("www") && !args[2].split("//")[1].startsWith("api") ) {
+			API_NAME = args[2].split("//")[1].split("\.")[0];
+		}
 	}
 	CompareSet_PATH = "../CompareSet/" + API_NAME;
 }
@@ -65,7 +69,7 @@ if (openAPI.host && openAPI.schemes && openAPI.paths) {
 				} else {
 
 					if (verbObject.request.startsWith("/")) {
-						discover.request['url'] = openAPI.schemes + "://" + openAPI.host + verbObject.request
+						discover.request['url'] = openAPI.schemes + "://" + openAPI.host + basePath + verbObject.request
 					} else {
 						discover.request['url'] = verbObject.request;
 					}

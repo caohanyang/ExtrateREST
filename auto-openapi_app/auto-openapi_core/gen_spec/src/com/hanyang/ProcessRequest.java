@@ -80,7 +80,7 @@ public class ProcessRequest {
 
 				String matchStr = null;
 				if (Settings.REQEXAMPLE.equals("http")) {
-					matchStr = strAll.substring(requestMatcher.start(), requestMatcher.end() + 100).trim();
+					matchStr = strAll.substring(requestMatcher.start(), requestMatcher.end() + 200).trim();
 					matchStr = matchStr.substring(matchStr.indexOf(Settings.REQEXAMPLE)).split("\n")[0];
 					// remove all the whitespace
 					matchStr = matchStr.replaceAll(" ", "");
@@ -137,7 +137,7 @@ public class ProcessRequest {
 			Document doc, ProcessMethod processMe) throws JSONException {
 		ProcessParameter processPa = new ProcessParameter();
 		JSONObject sectionJson = processPa.matchURL(requestText, strAll, infoJson,
-				Long.valueOf(strAll.indexOf(requestText)), doc, "request");
+				Long.valueOf(requestText.contains("eventful")? strAll.indexOf(requestText.split("\\?")[0]):strAll.indexOf(requestText)), doc, "request");
 
 		// if the sectionJson is null, showing that it doesn't match
 		if (sectionJson.length() != 0) {

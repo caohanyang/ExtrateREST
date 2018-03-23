@@ -94,6 +94,8 @@ public class ProcessMethod {
 				return true;
 			} else if (Settings.MODE.equals("null")) {
 				return true;
+			} else if (Settings.MODE.equals("key")) {
+				return true;
 			} 
 			
 		}

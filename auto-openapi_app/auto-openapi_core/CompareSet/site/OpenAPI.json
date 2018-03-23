@@ -4,75 +4,37 @@
     "/following": {
       "GET": {}
     },
-    "https://api.picplz.com/,": {
-      "POST": {}
-    },
-    "http://picplz.com/pics": {
-      "GET": {}
-    },
-    "https://api.picplz.com/api/v2/user/follow": {
-      "DELETE": {},
-      "POST": {}
-    },
     "/followers": {
       "GET": {}
     },
-    "https://api.picplz.com/api/v2/pic": {
+    "/user": {
       "GET": {}
     },
-    "https://api.picplz.com/api/v2/user": {
+    "/place": {
       "GET": {}
     },
-    "https://api-upload.picplz.com/api/v2/upload_basic": {
-      "POST": {}
+    "/api/v2/feed": {
+      "GET": {}
     },
     "/filters": {
       "GET": {}
     },
     "/feed": {
-      "GET": {}
-    },
-    "https://YOUR_REGISTERED_REDIRECT_URI": {
-      "GET": {}
+      "GET": {
+        "request": "curl -H 'X-Pretty-JSON: 1' ' http://api.picplz.com/api/v2/feed.json?type=interesting'"
+      }
     },
     "/pic": {
       "GET": {}
     },
-    "http://picplz.com/city/san-francisco-ca/Â Â --->": {
-      "GET": {}
-    },
-    "https://api.picplz.com/api/v2/pic/like": {
-      "DELETE": {}
-    },
-    "https://api.picplz.com/api/v2/pic/comment": {
-      "DELETE": {},
-      "get": {}
-    },
-    "http://picplz.com/api/v2/user": {
-      "GET": {}
-    },
-    "http://picplz.com/user/jenyasis/pic": {
-      "DELETE": {},
-      "post": {},
-      "GET": {}
-    },
-    "https://api.picplz.com/api/v2/collection/pic": {
-      "DELETE": {}
-    },
-    "/user": {
-      "GET": {},
-      "get": {}
-    },
-    "http://picplz.com/apps": {
-      "GET": {}
-    },
-    "http://picplz.com/api/v2/feed": {
-      "GET": {},
-      "get": {}
-    },
     "/city": {
-      "GET": {},
-      "get": {}
+      "GET": {}
+    },
+    "/user/follow": {
+      "DELETE": {}
+    },
+    "/collection": {
+      "DELETE": {}
     }
   },
   "produces": "application/json",

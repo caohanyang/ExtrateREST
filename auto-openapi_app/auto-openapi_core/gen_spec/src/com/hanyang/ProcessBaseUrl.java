@@ -410,7 +410,8 @@ public class ProcessBaseUrl {
 				"(?si)curl.{1,200}((http)|(https)){1}://");
 		if (baseUrlList.size() != 0) {
 			// if matched, return directly
-			return baseUrlList.get(0);
+//			return baseUrlList.get(0);
+			return combineUrl(baseUrlList);
 		}
 
 		baseUrlList = searchUrlMode2(listFiles, API_NAME, baseUrlList, processMe);
@@ -442,6 +443,12 @@ public class ProcessBaseUrl {
 					while (matcherHttp.find()) {
 						// Fix 2: suppose the URL length < 40
 						String matchStrNull = strAll.substring(matcherHttp.start()).split("\n")[0].trim();
+						
+						// user/user-id authentication => user/user-id
+						 if (matchStrNull.contains(" ")) {
+							 matchStrNull = matchStrNull.split(" ")[0].trim();
+						 }
+						
 						// final API endpoint must contain API_NAME
 						matchStrNull = processMe.constrainUrl(matchStrNull, API_NAME);
 						if (matchStrNull != null) {

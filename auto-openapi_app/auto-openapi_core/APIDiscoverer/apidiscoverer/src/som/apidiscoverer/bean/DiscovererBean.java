@@ -269,7 +269,10 @@ public class DiscovererBean implements Serializable {
 			newAPIRequest.decode();
 			response = RESTClient.send(newAPIRequest);
 			newAPIRequest.setResponse(response);
+			
+			System.out.println(jsonCallExample.getJsonRequest().getUrl());
 			System.out.println(response.getStatus());
+			System.out.println(response.getBody());
 			
 			//TODO need to judge the status
 			if (response.getStatus() == 200) {

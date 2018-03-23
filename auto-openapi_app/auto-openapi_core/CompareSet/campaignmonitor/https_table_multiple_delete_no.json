@@ -190,7 +190,7 @@
       }
     },
     "/lists/{listid}/webhooks/{webhookid}/test.{xml|json}": {
-      "GET": {}
+      "POST": {}
     },
     "/clients/{clientid}/suppress.{xml|json}": {
       "POST": {
@@ -639,7 +639,7 @@
       "GET": {}
     },
     "/timezones.{xml|json}": {
-      "GET": {
+      "PUT": {
         "responses": {
           "200": {
             "description": "correct response",
@@ -1090,6 +1090,9 @@
         }
       }
     },
+    "/api.createsend.com/oauth/token": {
+      "POST": {}
+    },
     "/subscribers/{listid}/import.{xml|json}": {
       "POST": {
         "request": "{ \"Subscribers\": [ { \"EmailAddress\": \"subscriber1@example.com\", \"Name\": \"New Subscriber One\", \"CustomFields\": [ { \"Key\": \"website\", \"Value\": \"http://example.com\" }, { \"Key\": \"interests\", \"Value\": \"magic\" }, { \"Key\": \"interests\", \"Value\": \"romantic walks\" }, { \"Key\": \"age\", \"Value\": \"\", \"Clear\": true } ] }, { \"EmailAddress\": \"subscriber2@example.com\", \"Name\": \"New Subscriber Two\", }, { \"EmailAddress\": \"subscriber3@example.com\", \"Name\": \"New Subscriber Three\", } ], \"Resubscribe\": true, \"QueueSubscriptionBasedAutoResponders\": false, \"RestartSubscriptionBasedAutoresponders\": true }"
@@ -1401,17 +1404,7 @@
     },
     "/clients": {
       "POST": {},
-      "GET": {
-        "responses": {
-          "200": {
-            "description": "correct response",
-            "example": {
-              "Message": "NotallowedforaNon-agencyCustomer.",
-              "Code": 403
-            }
-          }
-        }
-      }
+      "GET": {}
     },
     "/transactional/smartEmail/{:smartEmailID}": {
       "GET": {
@@ -1586,7 +1579,7 @@
       }
     },
     "/countries.{xml|json}": {
-      "GET": {
+      "PUT": {
         "responses": {
           "200": {
             "description": "correct response",

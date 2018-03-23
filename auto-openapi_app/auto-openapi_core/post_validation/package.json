@@ -5,6 +5,7 @@
   "main": "refine.js",
   "dependencies": {
     "async": "^2.5.0",
+    "async-each-series": "^1.1.0",
     "chromedriver": "^2.33.2",
     "curlrequest": "^1.0.1",
     "fs": "0.0.1-security",

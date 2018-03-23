@@ -44,14 +44,17 @@ export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 # https://developer.vimeo.com/api/endpoints
 # https://developers.google.com/books/docs/v1/reference/
 # https://sites.google.com/site/picplzapi/
-# http://developer.active.com/docs/read/Home  http://developer.active.com/docs/read
-# https://www.layar.com/documentation/browser/api/
 # https://www.campaignmonitor.com/api/
+# https://www.layar.com/documentation/browser/api/
 # https://api.mobbr.com/
 # https://dev.groupme.com/
-
-
-# http://developer.mailchimp.com/documentation/mailchimp/reference/overview/
+# http://api.eventful.com/docs
+# https://www.behance.net/dev/api/endpoints/
+# http://developer.active.com/docs/read/Home  http://developer.active.com/docs/read
+# https://www.afterbanks.com/api/documentation/es/
+# https://developer.accuweather.com/apis  https://developer.accuweather.com/
+# https://aiception.com/static/doc/index.html
+# http://developer.mailchimp.com/documentation/mailchimp/reference/overview/ http://developer.mailchimp.com/documentation/mailchimp/reference/
 # https://www.ibm.com/watson/developercloud/conversation/api/v1/
 
 # 1.2 marketplace
@@ -59,20 +62,16 @@ export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 
 # 1.3 Random
 # https://developers.coinbase.com/api/v2
-# https://www.behance.net/dev/api/endpoints/
 # https://dev.groupme.com/
-# https://developer.accuweather.com/apis  https://developer.accuweather.com/
-# https://aiception.com/static/doc/index.html
 # https://www.campaignmonitor.com/api/
 # https://www.layar.com/documentation/browser/api/
 # https://sites.google.com/site/picplzapi/  
 # https://developer.vimeo.com/api/endpoints
-# https://developers.google.com/books/docs/v1/reference/
+
 # http://developer.active.com/docs/read/Home  http://developer.active.com/docs/read
 
 # 1.3 APIs.guru
-# https://1forge.com/forex-data-api/api-documentation
-# https://www.afterbanks.com/api/documentation/es/
+# https://1forge.com/forex-data-api/api-documentation 
 # https://rms.api.bbc.co.uk/docs/
 echo $PWD
 
@@ -82,7 +81,7 @@ cd auto-openapi_core/gen_spec
 python rest_crawler/crawlAllPages.py $1 $2
 
 # 2. predict html page
-# python predict_page/predictExternal.py $1
+python predict_page/predictExternal.py $1
 
 
 # 3. run java to build the OPENAPI documentation
@@ -108,3 +107,8 @@ python rest_crawler/crawlAllPages.py $1 $2
 # https://web.archive.org/web/20150107054829/https://www.instagram.com/developer/endpoints/
 
 # https://web.archive.org/web/20110712011347/https://www.instagram.com/developer/endpoints/
+
+
+# 5. validation
+# node apiDiscover.js https://developer.twitter.com/en/docs/api-reference-index
+# node combine.js https://developer.twitter.com/en/docs/api-reference-index

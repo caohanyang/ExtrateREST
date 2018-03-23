@@ -50,10 +50,6 @@ public class ExtractInformation {
 	
 	public static void main(String[] args) throws GateException, JSONException, IOException {
 		// System.out.close();
-//
-//		System.out.println(System.getProperty("gate.home"));
-//		System.out.println(System.getProperty("gate.plugins.home"));
-//		System.out.println(System.getProperty("gate.site.config"));
 		
 		if (args.length > 0) {
 			

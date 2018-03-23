@@ -27,35 +27,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{instagram_carousel_id}/instagram_comments",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/{user_id}",
       "url": null,
       "method": "DELETE",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{user_id}",
-      "url": null,
-      "method": "post",
       "body": ""
     },
     "response": {
@@ -170,9 +144,48 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/v2.9/me/feed",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{page_call_to_action_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/{page_call_to_action_id}",
       "url": null,
       "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{canvas_carousel_id}",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -211,7 +224,46 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{object-id}/likes",
       "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{object-id}/likes",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{object-id}/likes",
+      "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/videos",
+      "url": null,
+      "method": "POST",
       "body": ""
     },
     "response": {
@@ -238,6 +290,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{user-id}/ids_for_business",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{test-user-id}",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -354,7 +419,33 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{app-id}/subscriptions",
       "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{app-id}/subscriptions",
+      "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{milestone-id}",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -433,6 +524,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{user-id}/adaccounts",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{app-id}/scores",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -562,19 +666,6 @@
     "request": {
       "ourl": "https://graph.facebook.com/{photo_id}",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{photo_id}",
-      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -600,6 +691,19 @@
   {
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{user-id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{user-id}/favorite_requests",
       "url": null,
       "method": "GET",
       "body": ""
@@ -638,32 +742,6 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{user-id}/feed",
-      "url": null,
-      "method": "DELETE",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{page_id}/publisher_space",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{page-id}/crosspost_pending_approval_pages",
       "url": null,
       "method": "POST",
@@ -690,9 +768,35 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{instagram_media_id}/instagram_comments",
+      "ourl": "https://graph.facebook.com/v2.9/me/photos",
       "url": null,
       "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/thread_settings",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{user-id}/photos",
+      "url": null,
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -768,9 +872,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{page_label_id}/users",
+      "ourl": "https://graph.facebook.com/v2.9/{canvas-button-id}",
       "url": null,
-      "method": "POST",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -781,9 +885,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{canvas-button-id}",
+      "ourl": "https://graph.facebook.com/{canvas_photo_id}",
       "url": null,
-      "method": "GET",
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -861,45 +965,6 @@
     "request": {
       "ourl": "https://graph.facebook.com/{application_id}",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{application_id}",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{photo_id}/likes",
-      "url": null,
-      "method": "DELETE",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{photo_id}/likes",
-      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -976,9 +1041,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{application_id}/accounts",
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/settings",
       "url": null,
-      "method": "POST",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -1018,6 +1083,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{user-context-id}",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{canvas_footer_id}",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -1106,7 +1184,7 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{canvas_video_id}",
+      "ourl": "https://graph.facebook.com/attachment",
       "url": null,
       "method": "POST",
       "body": ""
@@ -1119,7 +1197,20 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{page_id}/instant_articles_publish",
+      "ourl": "https://graph.facebook.com/{canvas_video_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{canvas_video_id}",
       "url": null,
       "method": "POST",
       "body": ""
@@ -1135,32 +1226,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{application-context-id}",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{album_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{album_id}",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -1251,19 +1316,6 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}/likes",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}/likes",
-      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -1303,6 +1355,19 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{link-id}",
       "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{link-id}",
+      "url": null,
       "method": "GET",
       "body": ""
     },
@@ -1317,6 +1382,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{page-id}/feed",
       "url": null,
       "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/feed",
+      "url": null,
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -1405,22 +1483,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{offer_id}",
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/featured_videos_collection",
       "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{post-id}/attachments",
-      "url": null,
-      "method": "post",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -1509,6 +1574,19 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/{test-user-id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{application-id}/ads_app_insights_dimensions",
       "url": null,
       "method": "GET",
@@ -1576,19 +1654,6 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{crisis-id}/community_help_posts",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{crisis-id}/community_help_posts",
-      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -1639,32 +1704,6 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/notifications",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/notifications",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{user-id}/television",
       "url": null,
       "method": "GET",
@@ -1694,6 +1733,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{video-id}/comments",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{canvas_text_id}",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -1771,7 +1823,7 @@
     "request": {
       "ourl": "https://graph.facebook.com/{page_id}",
       "url": null,
-      "method": "post",
+      "method": "POST",
       "body": ""
     },
     "response": {
@@ -1782,7 +1834,20 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{page_id}",
+      "ourl": "https://graph.facebook.com/v2.9/{from.id}_{status-id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{from.id}_{status-id}",
       "url": null,
       "method": "POST",
       "body": ""
@@ -1834,9 +1899,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{video-id}/crosspost_shared_pages",
+      "ourl": "https://graph.facebook.com/{page-id}/photos",
       "url": null,
-      "method": "post",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -1848,32 +1913,6 @@
   {
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{video-id}/crosspost_shared_pages",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{group_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{group_id}",
       "url": null,
       "method": "POST",
       "body": ""
@@ -1912,32 +1951,6 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/page/feed",
-      "url": null,
-      "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/page/feed",
-      "url": null,
-      "method": "get",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{app-id}/picture",
       "url": null,
       "method": "GET",
@@ -1954,19 +1967,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{page-id}/show_playlists",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{video-id}/sharedposts",
-      "url": null,
-      "method": "post",
       "body": ""
     },
     "response": {
@@ -2094,6 +2094,32 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{app-id}/groups",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{app-id}/app_insights/{metric-name}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{life-event-id}/photos",
       "url": null,
       "method": "GET",
@@ -2123,19 +2149,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{user-id}/movies",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/app/accounts/test-users",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -2343,6 +2356,19 @@
     "request": {
       "ourl": "https://graph.facebook.com/{media_fingerprint_id}",
       "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{media_fingerprint_id}",
+      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -2367,20 +2393,7 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{native_offer_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{native_offer_id}",
+      "ourl": "https://graph.facebook.com/v2.9/{event-id}/feed",
       "url": null,
       "method": "POST",
       "body": ""
@@ -2395,7 +2408,7 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{event-id}/feed",
       "url": null,
-      "method": "POST",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -2473,6 +2486,19 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{request-id}",
       "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{request-id}",
+      "url": null,
       "method": "GET",
       "body": ""
     },
@@ -2523,32 +2549,6 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{life_event_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{life_event_id}",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/{video_id}",
       "url": null,
       "method": "DELETE",
@@ -2564,7 +2564,7 @@
     "request": {
       "ourl": "https://graph.facebook.com/{video_id}",
       "url": null,
-      "method": "post",
+      "method": "POST",
       "body": ""
     },
     "response": {
@@ -2575,9 +2575,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{video_id}",
+      "ourl": "https://graph.facebook.com/{canvas_store_locator_id}",
       "url": null,
-      "method": "POST",
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -2731,6 +2731,19 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/{rtb_dynamic_post_id}",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{application-id}/agencies",
       "url": null,
       "method": "GET",
@@ -2760,6 +2773,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{page-id}/locations",
       "url": null,
       "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/locations",
+      "url": null,
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -2928,6 +2954,19 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/me/scores",
       "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/me/scores",
+      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -3082,48 +3121,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{instagram_carousel_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{instagram_carousel_id}",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{page-id}/global_brand_children",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{video_id}/captions",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -3189,6 +3189,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{event-id}/admins",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{user-id}/permissions/{permission-name}",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -3277,9 +3290,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{user-id}/family",
+      "ourl": "https://graph.facebook.com/{post-id}",
       "url": null,
-      "method": "GET",
+      "method": "POST",
       "body": ""
     },
     "response": {
@@ -3290,9 +3303,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{page-id}/subscribed_apps",
+      "ourl": "https://graph.facebook.com/v2.9/{user-id}/family",
       "url": null,
-      "method": "POST",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -3422,19 +3435,6 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}",
-      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -3498,7 +3498,33 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{group-id}/videos",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{photo-id}/likes",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9",
       "url": null,
       "method": "GET",
       "body": ""
@@ -3615,6 +3641,19 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/v2.2/{page-id}/roles/{user-id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{user-id}/taggable_friends",
       "url": null,
       "method": "GET",
@@ -3680,7 +3719,33 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/{object_id}/insights/{metric}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{video-copyright-rule-id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/{user-id}/photos/uploaded",
       "url": null,
       "method": "GET",
       "body": ""
@@ -3862,6 +3927,19 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/{video-id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{message-id}/shares",
       "url": null,
       "method": "GET",
@@ -3903,19 +3981,6 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}/comments",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}/comments",
-      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -3930,6 +3995,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{application-id}/appassets",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{event-id}/videos",
+      "url": null,
+      "method": "POST",
       "body": ""
     },
     "response": {
@@ -3969,6 +4047,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{user-id}/events",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{comment-id}",
+      "url": null,
+      "method": "DELETE",
       "body": ""
     },
     "response": {
@@ -4031,32 +4122,6 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/act_{ad_account_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/act_{ad_account_id}",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{life-event-id}/sharedposts",
       "url": null,
       "method": "POST",
@@ -4109,6 +4174,19 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{app-id}/achievements",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{education-experience-id}",
       "url": null,
       "method": "GET",
@@ -4135,22 +4213,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{page-id}/tagged",
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/saved_message_responses",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{page-id}/tagged",
-      "url": null,
-      "method": "POST",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -4216,32 +4281,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{user-id}/picture",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{business_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{business_id}",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -4343,6 +4382,32 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/post",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/admin_notes",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/me/outbox",
       "url": null,
       "method": "GET",
@@ -4398,19 +4463,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{application-id}/insights_event_labels",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{event_id}/videos",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -4499,19 +4551,6 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{video_id}/comments",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{application-context-id}/friends_using_app",
       "url": null,
       "method": "GET",
@@ -4540,33 +4579,7 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{photo-id}/sharedposts",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{photo-id}/sharedposts",
-      "url": null,
       "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{post-id}/reactions",
-      "url": null,
-      "method": "post",
       "body": ""
     },
     "response": {
@@ -4616,9 +4629,35 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{group-id}/albums",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{group-id}/feed",
       "url": null,
       "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{group-id}/feed",
+      "url": null,
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -4645,32 +4684,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{work-experience-id}",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com//www.facebook.com/<POST_ID>",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com//www.facebook.com/<POST_ID>",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -4759,9 +4772,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{user_id}/videos",
+      "ourl": "https://graph.facebook.com/v2.9/{album-id}/photos",
       "url": null,
-      "method": "POST",
+      "method": "GET",
       "body": ""
     },
     "response": {
@@ -4814,6 +4827,19 @@
       "ourl": "https://graph.facebook.com/v2.9/{page-id}/saved_filters",
       "url": null,
       "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/photos",
+      "url": null,
+      "method": "POST",
       "body": ""
     },
     "response": {
@@ -4889,32 +4915,6 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{user_id}/permissions",
-      "url": null,
-      "method": "DELETE",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{user_id}/permissions",
-      "url": null,
-      "method": "delete",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{event-id}",
       "url": null,
       "method": "GET",
@@ -4954,6 +4954,19 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/...",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{event-id}/comments",
       "url": null,
       "method": "GET",
@@ -4968,6 +4981,19 @@
   {
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{instagram-comment-id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{instagram-carousel-id}/instagram_comments",
       "url": null,
       "method": "GET",
       "body": ""
@@ -5058,6 +5084,19 @@
   },
   {
     "request": {
+      "ourl": "https://graph.facebook.com/{page-id}/photos/uploaded",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{place-topic-id}",
       "url": null,
       "method": "GET",
@@ -5087,32 +5126,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{photo-id}/insights",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{event_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{event_id}",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -5162,35 +5175,9 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{payment-id}/dispute",
-      "url": null,
-      "method": "put",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/debug_token",
       "url": null,
       "method": "PUT",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/debug_token",
-      "url": null,
-      "method": "put",
       "body": ""
     },
     "response": {
@@ -5294,19 +5281,6 @@
     "request": {
       "ourl": "https://graph.facebook.com/v2.9/{post-id}",
       "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/v2.9/{post-id}",
-      "url": null,
       "method": "POST",
       "body": ""
     },
@@ -5334,32 +5308,6 @@
       "ourl": "https://graph.facebook.com/v2.9/{promotion-info-id}",
       "url": null,
       "method": "GET",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{product_catalog_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{product_catalog_id}",
-      "url": null,
-      "method": "POST",
       "body": ""
     },
     "response": {
@@ -5461,33 +5409,20 @@
   },
   {
     "request": {
-      "ourl": "https://graph.facebook.com/{instagram_media_id}",
-      "url": null,
-      "method": "post",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
-      "ourl": "https://graph.facebook.com/{instagram_media_id}",
-      "url": null,
-      "method": "POST",
-      "body": ""
-    },
-    "response": {
-      "status": "200",
-      "body": "",
-      "ebody": ""
-    }
-  },
-  {
-    "request": {
       "ourl": "https://graph.facebook.com/v2.9/{page-label-id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://graph.facebook.com/v2.9/{page-id}/labels",
       "url": null,
       "method": "GET",
       "body": ""

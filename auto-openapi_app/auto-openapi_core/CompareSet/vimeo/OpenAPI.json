@@ -3222,7 +3222,8 @@
             "required": true
           }
         ]
-      }
+      },
+      "GET": {}
     },
     "/videos/{video_id}/comments/{comment_id}": {
       "DELETE": {},
