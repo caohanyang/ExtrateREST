@@ -1,5 +1,5 @@
 {
-  "basePath": "/3.0/",
+  "basePath": "/3.0",
   "paths": {
     "/reports/{campaign_id}/domain-performance": {
       "GET": {
