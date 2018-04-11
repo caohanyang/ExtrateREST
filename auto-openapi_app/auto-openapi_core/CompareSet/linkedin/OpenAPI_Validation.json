@@ -1,0 +1,904 @@
+{
+  "basePath": "/v1",
+  "paths": {
+    "/companies/{id}/historical-follow-statistics": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "_total": 4,
+              "values": [
+                {
+                  "total-follower-count": 63911,
+                  "paid-follower-count": 3911,
+                  "time": 1399334400000,
+                  "organic-follower-count": 6000
+                },
+                {
+                  "total-follower-count": 64023,
+                  "paid-follower-count": 4023,
+                  "time": 1399420800000,
+                  "organic-follower-count": 6000
+                },
+                {
+                  "total-follower-count": 64023,
+                  "paid-follower-count": 4023,
+                  "time": 1399507200000,
+                  "organic-follower-count": 6000
+                },
+                {
+                  "total-follower-count": 64048,
+                  "paid-follower-count": 4048,
+                  "time": 1399593600000,
+                  "organic-follower-count": 6000
+                }
+              ]
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "time-granularity",
+            "description": "\nGranularity of statistics. Supported values are:\nday\nmonth\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "start-timestamp",
+            "description": "Starting timestamp of when the stats search should begin (milliseconds since epoch)",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "end-timestamp",
+            "description": "Ending timestamp of when the stats search should end (milliseconds since epoch). The current time will be used if parameter not set.",
+            "type": "integer",
+            "required": "No"
+          },
+          {
+            "in": "query",
+            "name": "update-key",
+            "description": "Optionally provide an update key value to return statistics for a specific company update.",
+            "type": "integer",
+            "required": "No"
+          }
+        ],
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/is-company-share-enabled": {
+      "GET": {
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}": {
+      "GET": {
+        "parameters": [],
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/shares": {
+      "POST": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "visibility": {
+                "code": "anyone"
+              },
+              "comment": "Testingafullcompanyshare!",
+              "content": {
+                "submitted-url": "https://www.example.com/content.html",
+                "submitted‐image-­url": "https://www.example.com/img.jpg",
+                "description": "contentdescription",
+                "title": "TestSharewithContent"
+              },
+              "shareTargetReach": {
+                "shareTargets": {
+                  "shareTarget": {
+                    "code": "geos",
+                    "tvalues": {
+                      "tvalue": "na"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "content",
+            "description": "A collection of fields describing the shared content.\n",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "title",
+            "description": "The title of the content being shared.\n",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "description",
+            "description": "The description of the content being shared.\n",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "submitted-url",
+            "description": "A fully qualified URL for the content being shared.\n",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "submitted-image-url",
+            "description": "A fully qualified URL to a thumbnail image to accompany the shared content.\n\nThe image should be at least 80 x 150px for best results. 2MB max filesize.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "comment\nA",
+            "description": "\nA comment by the member to associated with the share.\n\nIf none of the above content parameters are provided, the comment must contain a URL to the content you want to share.  If the comment contains multiple URLs, only the first one will be analyzed for content to share.\n\n",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "visibility",
+            "description": "A collection of visibility information about the share.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "code\nOne",
+            "description": "\nOne of the following values:\nanyone:  Share will be visible to all members.\nconnections-only:  Share will only be visible to connections of the member performing the share.\n\nThis field is required in all sharing calls.\n",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "share-target-reach",
+            "description": "A collection of targeting codes and values used to ensure that the shared content reaches a specific audience.\n\nSee targeting company shares for additional information about how to structure a targeted share request.\n",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/updates/key={update-key}/update-comments-as-company": {
+      "POST": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "time-granularity",
+            "description": "\nGranularity of statistics. Supported values are:\nday\nmonth\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "start-timestamp",
+            "description": "Starting timestamp of when the stats search should begin (milliseconds since epoch)",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "end-timestamp",
+            "description": "Ending timestamp of when the stats search should end (milliseconds since epoch). The current time will be used if parameter not set.",
+            "type": "integer",
+            "required": "No"
+          }
+        ],
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "//www.linkedin.com/uas/oauth2/accessToken": {
+      "POST": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "grant_type",
+            "description": "The value of this field should always be:  authorization_code\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "code",
+            "description": "The authorization code you received from Step 2.\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "redirect_uri",
+            "description": "The same 'redirect_uri' value that you passed in the previous step.\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "client_id",
+            "description": "The \"API Key\" value generated Step 1.\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "client_secret\nThe",
+            "description": "\nThe \"Secret Key\" value generated in Step 1.\n\nFollow the Best Practices guide for handing your client_secret value.\n\n",
+            "type": "integer",
+            "required": "Yes"
+          }
+        ],
+        "realresponses": {
+          "411": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>400: Content Length Required</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Content Length Required</h1>\n  <p>Could not process this request because Content-Length was not specified. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "//www.linkedin.com/oauth/v2/accessToken": {
+      "POST": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "grant_type",
+            "description": "The value of this field should always be:  authorization_code\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "code",
+            "description": "The authorization code you received from Step 2.\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "redirect_uri",
+            "description": "The same 'redirect_uri' value that you passed in the previous step.\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "client_id",
+            "description": "The \"API Key\" value generated Step 1.\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "client_secret\nThe",
+            "description": "\nThe \"Secret Key\" value generated in Step 1.\n\nFollow the Best Practices guide for handing your client_secret value.\n\n",
+            "type": "integer",
+            "required": "Yes"
+          }
+        ],
+        "realresponses": {
+          "411": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>400: Content Length Required</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Content Length Required</h1>\n  <p>Could not process this request because Content-Length was not specified. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/num-followers": {
+      "GET": {
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/people/~/shares": {
+      "POST": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "updateKey": "UPDATE-3346389-595113200…",
+              "updateUrl": "https://www.linkedin.com/updates?discuss=…&scope=…"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "GET",
+            "description": "https://www.linkedin.com/shareArticle",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "411": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>400: Content Length Required</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Content Length Required</h1>\n  <p>Could not process this request because Content-Length was not specified. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/relation-to-viewer/is-company-share-enabled": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "start",
+            "description": "The offset value for paginating update results by.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "description": "Maximum number of updates to return.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "name": "LinkedIn",
+              "id": 1337
+            }
+          }
+        },
+        "realresponses": {
+          "400": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<error>\n  <status>400</status>\n  <timestamp>1521814951298</timestamp>\n  <request-id>UPWLLB1IDG</request-id>\n  <error-code>0</error-code>\n  <message>Invalid company query request</message>\n</error>\n"
+        }
+      }
+    },
+    "/companies/{id}/updates/key={update-key}": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "isCommentable": true,
+              "updateKey": "UPDATE-c1337-998877665544332211",
+              "isLiked": false,
+              "updateComments": {
+                "_total": 1,
+                "values": [
+                  {
+                    "sequenceNumber": 0,
+                    "person": {
+                      "firstName": "Samwise",
+                      "lastName": "Gamgee",
+                      "pictureUrl": "https://media.licdn.com/mpr/mprx/…",
+                      "apiStandardProfileRequest": {
+                        "headers": {
+                          "_total": 1,
+                          "values": [
+                            {
+                              "name": "x-li-auth-token",
+                              "value": "name:Ff1A"
+                            }
+                          ]
+                        },
+                        "url": "https://api.linkedin.com/v1/people/12345678"
+                      },
+                      "id": "23456789",
+                      "headline": "Journeyman",
+                      "siteStandardProfileRequest": {
+                        "url": "https://www.linkedin.com/profile/view?id=…"
+                      }
+                    },
+                    "comment": "Greatcomment!",
+                    "id": 987654321,
+                    "timestamp": 1423281179569
+                  }
+                ]
+              },
+              "numLikes": 1,
+              "updateContent": {
+                "company": {
+                  "name": "LinkedIn",
+                  "id": 1337
+                },
+                "companyStatusUpdate": {
+                  "share": {
+                    "visibility": {
+                      "code": "anyone"
+                    },
+                    "comment": "Thisisatestcomment.",
+                    "id": "s132435465768",
+                    "source": {
+                      "serviceProvider": {
+                        "name": "LINKEDIN"
+                      },
+                      "serviceProviderShareId": "s97867564534231"
+                    },
+                    "content": {
+                      "eyebrowUrl": "http://linkd.in/…",
+                      "shortenedUrl": "http://linkd.in/…",
+                      "submittedUrl": "http://linkd.in/…",
+                      "submittedImageUrl": "http://m.c.lnkd.licdn.com/…",
+                      "description": "Testdescription",
+                      "title": "BestAdvice:TakeJobsOthersDon'tWant",
+                      "thumbnailUrl": "https://media.licdn.com/…"
+                    },
+                    "timestamp": 1423270834567
+                  }
+                }
+              },
+              "isLikable": true,
+              "likes": {
+                "_total": 1,
+                "values": [
+                  {
+                    "person": {
+                      "firstName": "Frodo",
+                      "lastName": "Baggins",
+                      "pictureUrl": "https://media.licdn.com/mpr/mprx/…",
+                      "id": "12345678",
+                      "headline": "2ndGenerationAdventurer"
+                    }
+                  }
+                ]
+              },
+              "timestamp": 1423270834567,
+              "updateType": "CMPY"
+            }
+          }
+        },
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/people/~:(id,num-connections,picture-url)": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "pictureUrl": "https://media.licdn.com/mpr/mprx/…",
+              "numConnections": 42,
+              "id": "1R2RtA"
+            }
+          }
+        },
+        "realresponses": {
+          "200": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<person>\n  <id>wBdFwMYwB5</id>\n  <num-connections>85</num-connections>\n  <picture-url>https://media.licdn.com/dms/image/C4E03AQGjz9V_8m8BZg/profile-displayphoto-shrink_100_100/0?e=1527001200&amp;v=alpha&amp;t=099QRb8-eCDzO6FTMWqol07z3hLaUScLvZ80nLJNIao</picture-url>\n</person>\n"
+        }
+      }
+    },
+    "/companies/1337/updates": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "_count": 10,
+              "_start": 20,
+              "_total": 613,
+              "values": [
+                "…"
+              ]
+            }
+          }
+        },
+        "realresponses": {
+          "403": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<error>\n  <status>403</status>\n  <timestamp>1521814955786</timestamp>\n  <request-id>YYF16KB3I2</request-id>\n  <error-code>0</error-code>\n  <message>Member does not have permission to get company.</message>\n</error>\n"
+        }
+      }
+    },
+    "//www.linkedin.com/shareArticle": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "url",
+            "description": "The url-encoded URL of the page that you wish to share.\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "mini",
+            "description": "A required argument who's value must always be:  true",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "title",
+            "description": "The url-encoded title value that you wish you use.\n",
+            "type": "integer",
+            "required": "No"
+          },
+          {
+            "in": "query",
+            "name": "summary",
+            "description": "The url-encoded description that you wish you use.",
+            "type": "integer",
+            "required": "No"
+          },
+          {
+            "in": "query",
+            "name": "source\nThe",
+            "description": "\nThe url-encoded source of the content (e.g. your website or application name)\n",
+            "type": "integer",
+            "required": "No"
+          }
+        ],
+        "realresponses": {
+          "400": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<error>\n  <status>400</status>\n  <timestamp>1521814957238</timestamp>\n  <request-id>M265P3279W</request-id>\n  <error-code>0</error-code>\n  <message>Unknown field {shareArticle} in resource {Root}</message>\n</error>\n"
+        }
+      }
+    },
+    "/companies/{id}:(id,name,ticker,description)": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "ticker": "LNKD",
+              "name": "LinkedIn",
+              "description": "Foundedin2003,LinkedInconnectstheworld'sprofessionalsto...",
+              "id": 1337
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "event-type",
+            "description": "\nFilter the results to only return updates of the specified event type.\n\n\nValid values are:\njob-posting\nnew-product\nstatus-update\n",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "start",
+            "description": "The offset value for paginating update results by.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "description": "Maximum number of updates to return.\n",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/updates/key={update-key}/update-comments": {
+      "GET": {
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/historical-status-update-statistics": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "_total": 3,
+              "values": [
+                {
+                  "time": 1378080000000,
+                  "impressionCount": 496111
+                },
+                {
+                  "time": 1378166400000,
+                  "impressionCount": 857282
+                },
+                {
+                  "time": 1378252800000,
+                  "impressionCount": 1539285
+                }
+              ]
+            }
+          }
+        },
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/company-statistics": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "followStatistics": {
+                "countsByMonth": {
+                  "_total": 1,
+                  "values": [
+                    {
+                      "date": {
+                        "month": 1,
+                        "year": 2015
+                      },
+                      "newCount": 44868,
+                      "totalCount": 1111157
+                    }
+                  ]
+                },
+                "regions": {
+                  "_total": 1,
+                  "values": [
+                    {
+                      "entryKey": "us-84",
+                      "entryValue": "107253"
+                    }
+                  ]
+                },
+                "functions": {
+                  "_total": 2,
+                  "values": [
+                    {
+                      "entryKey": "25",
+                      "entryValue": "100"
+                    },
+                    {
+                      "entryKey": "15",
+                      "entryValue": "3892"
+                    }
+                  ]
+                },
+                "count": 386420,
+                "companySizes": {
+                  "_total": 2,
+                  "values": [
+                    {
+                      "entryKey": "C",
+                      "entryValue": "79027"
+                    },
+                    {
+                      "entryKey": "E",
+                      "entryValue": "59788"
+                    }
+                  ]
+                },
+                "countries": {
+                  "_total": 1,
+                  "values": [
+                    {
+                      "entryKey": "us",
+                      "entryValue": "386420"
+                    }
+                  ]
+                },
+                "nonEmployeeCount": 107253,
+                "employeeCount": 3992,
+                "seniorities": {
+                  "_total": 2,
+                  "values": [
+                    {
+                      "entryKey": "4",
+                      "entryValue": "326866"
+                    },
+                    {
+                      "entryKey": "3",
+                      "entryValue": "319703"
+                    }
+                  ]
+                }
+              },
+              "statusUpdateStatistics": {
+                "viewsByMonth": {
+                  "_total": 1,
+                  "values": [
+                    {
+                      "date": {
+                        "month": 1,
+                        "year": 2015
+                      },
+                      "shares": 2145,
+                      "comments": 1203,
+                      "engagement": 0.003203537929382338,
+                      "clicks": 81333,
+                      "impressions": 32797489,
+                      "likes": 20387
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "//www.linkedin.com/oauth/v2/authorization": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "response_type",
+            "description": "The value of this field should always be:  code",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "client_id",
+            "description": "The \"API Key\" value generated when you registered your application.",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "redirect_uri\nThe",
+            "description": "\nThe URI your users will be sent back to after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration .\n\n\ne.g. https://www.example.com/auth/linkedin\n",
+            "type": "integer",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "state\nA",
+            "description": "\nA unique string value of your choice that is hard to guess. Used to prevent CSRF .\n\n\ne.g. state=DCEeFWf45A53sdfKef424\n",
+            "type": "string",
+            "required": "Yes"
+          },
+          {
+            "in": "query",
+            "name": "scope\nA",
+            "description": "\nA URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration .\n\n\ne.g. scope=r_fullprofile%20r_emailaddress%20w_share\n\nSee Understanding application permissions and the Best practices guide for additional information about scopes.\n\n",
+            "type": "integer",
+            "required": "Optional"
+          }
+        ],
+        "realresponses": {
+          "400": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<error>\n  <status>400</status>\n  <timestamp>1521814963596</timestamp>\n  <request-id>L7F7NFHYWV</request-id>\n  <error-code>0</error-code>\n  <message>Unknown field {oauth} in resource {Root}</message>\n</error>\n"
+        }
+      }
+    },
+    "/companies/{id}/updates/key={update-key}/likes": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "_total": 1,
+              "values": [
+                {
+                  "person": {
+                    "firstName": "Frodo",
+                    "lastName": "Baggins",
+                    "pictureUrl": "https://media.licdn.com/mpr/mprx/…",
+                    "id": "12345678",
+                    "headline": "2ndGenerationAdventurer"
+                  },
+                  "timestamp": 1423415040071
+                }
+              ]
+            }
+          }
+        },
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "/companies/{id}/updates": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "_total": 1,
+              "values": [
+                {
+                  "sequenceNumber": 0,
+                  "person": {
+                    "firstName": "Samwise",
+                    "lastName": "Gamgee",
+                    "pictureUrl": "https://media.licdn.com/mpr/mprx/…",
+                    "apiStandardProfileRequest": {
+                      "headers": {
+                        "_total": 1,
+                        "values": [
+                          {
+                            "name": "x-li-auth-token",
+                            "value": "name:Ff1A"
+                          }
+                        ]
+                      },
+                      "url": "https://api.linkedin.com/v1/people/12345678"
+                    },
+                    "id": "23456789",
+                    "headline": "Journeyman",
+                    "siteStandardProfileRequest": {
+                      "url": "https://www.linkedin.com/profile/view?id=…"
+                    }
+                  },
+                  "comment": "Greatcomment!",
+                  "id": 987654321,
+                  "timestamp": 1423281179569
+                }
+              ]
+            }
+          }
+        },
+        "realresponses": {
+          "400": "<!-- EF of static content included-->\n<html>\n<head>\n  <title>40: Invalid HTTP Request</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n  <style type=\"text/css\">\n/* GLOBAL */\nbody { margin: 0; padding: 0 0 10px 0; background: #FFF; color: #000; font: 82% arial, helvetica, \"Nimbus Sans L\", sans-serif; text-align: center; min-width: 775px; }\ntable { font-size: 100%; border: 0; }\nth { text-align: left; }\ntr.tblhdr { background: #999; }\n.helper { font-size: 85%; }\n.spacer { clear: both; line-height: 0; height: 0; _font-size: 1px; }\n.indent { margin-left: 35px; }\n.top { margin-top: 0 !important; }\n.bottom { margin-bottom: 0 !important; }\n.btn { text-align: center; }\n.right { text-align: right; }\n.preview { background: #9CF; }\n.even, .odd { background: #EEE; }\nabbr { text-decoration: none; border: none; font-style: normal; }\nsup { font-size: 70%; }\ndiv.skip { position: absolute; left: -999px; width: 990px; }\n.dim { color: #999 !important; }\n.vmid { vertical-align: middle; }\n.vtop { vertical-align: top; }\n.printme { float: right; width: 135px; margin: 0; padding: 3px; font-size: 92%;}\n.posrel { position: relative; }\nacronym { border: none; }\ndl dt { margin: 0 0 1px 15px; font-weight: bold; }\ndl dd { margin: 0 0 12px 30px; }\nblockquote { margin: 0; }\nblockquote div { text-align: right; font-style: italic; }\n\n.clearfix:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }\n.clearfix { display: inline-block; }\n/* ie5mac backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n/* end ie5mac backslash hack */\n\n/* LINKS */\na:link { color: #039; }\na:visited { color: #339; }\na img { border: 0; }\n\n/* HEADER */\n#header { min-width: 775px; width: 62.5em; *width: 62em; _width: 775px; margin: 0 auto; padding-top: 7px; text-align: left; position: relative; font-size: 95%; _font-size: 12px; }\nbody:last-child:not(:root:root) #header  { width: 62em; }\n@media all and (min-width: 0) { #header { width: 775px; } }\n#header #logo { float: left; width: 129px; height: 36px; }\n\n/* MAIN */\ndiv#main { width: 775px; margin: 0 auto; text-align: left; padding: 0 0 10px; background: #FFF; display: inline-block; clear: both; }\ndiv#main:after { content: \".\"; display: block; height: 0; clear: both; visibility: hidden; }  /* used to clear floats */\n/* ie5mac backslash hack \\*/\ndiv#main { display: block; }\n/* end ie5mac backslash hack */\ndiv.contain { margin-bottom: 15px; float: left; width: 555px; word-wrap: break-word; } /* nonstandard css for iewin */\ndiv.contain>*:first-child, div.sidebar>*:first-child { margin-top: 0; }\nh1 { font-size: 165%; margin: 0 0 15px; padding: 3px 0 7px; border-bottom: 1px solid #CCC; color: #000; text-align: left; font-weight: bold; }\nh1 a:link, h1 a:visited { text-decoration: none; }\nh1 a:hover { text-decoration: underline; }\nh2 { font-size: 140%; margin: 0; }\nh3 { font-size: 115%; }\ndiv.containmid { padding-left: 110px; }\n* html div.containmid { width: 665px; w\\idth: 555px; }\n\n/* ERRORS */\n.errorpg div#header { padding: 12px 0; border-bottom: 1px solid #999; }\n.errorpg div#main { text-align: left; padding-left: 50px; padding-bottom: 30px; width: 750px; voice-family: \"\\\"}\\\"\"; voice-family: inherit; width: 685px; }\nhtml>body .errorpg div#main { width: 685px; }\n.errorpg div#main h1 { border: 0; margin: 15px 0 0; padding: 0; font-weight: bold; }\n.errorpg div#main p { border: 0; margin: 15px 0 0; padding: 0; }\n.errorpg .error404 ul { float: left; width: 165px; margin: 0 0 0 30px; padding: 0 0 0 15px; }\n.error { font-size: 92%; font-weight: bold; color: #900; background: transparent; line-height: normal; }\n.warning { display: block; margin: 2px 0; background: url(/img/icon/icon_warning_16x16.gif) no-repeat; padding: 2px 0 2px 20px; font-size: 92%; color: #900; }\n</style>\n</head>\n\n<body class=\"errorpg\">\n\n<div id=\"header\">\n  <a href=\"//www.linkedin.com/home\" ><img src=\"//static.licdn.com/scds/common/u/img/logos/logo_linkedin_119x32.png\" width=\"119\" height=\"32\" alt=\"LinkedIn\"></a>\n</div>\n\n<div id=\"main\" class=\"error404\">\n  <h1>Invalid HTTP Request</h1>\n  <p>Could not process this client request HTTP method request for URL. Please double-check the URL (address) you used, or <a href=\"http://linkedin.custhelp.com/\">contact us</a> if you feel you have reached this page in error.</p>\n  <p><strong>Click the &#8220;Back&#8221; button on your browser or <a href=\"//www.linkedin.com/home\">go to the home page</a>.</strong></p>\n\n  <br>\n\n  <p><strong>Are you looking for any of these LinkedIn features?</strong></p>\n  <ul>\n    <li><a href=\"//www.linkedin.com/search\" >Find People</a></li>\n    <li><a href=\"//www.linkedin.com/jobs\" >Find Jobs</a></li>\n    <li><a href=\"//www.linkedin.com/answers\" >Find Answers</a></li>\n    <li><a href=\"//www.linkedin.com/companies\" >Find Companies</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"https://www.linkedin.com/secure/settings\" >My Account</a></li>\n    <li><a href=\"//www.linkedin.com/profile\" >My Profile</a></li>\n    <li><a href=\"//www.linkedin.com/connections\" >My Contacts</a></li>\n    <li><a href=\"//www.linkedin.com/inBox\" >My Inbox</a></li>\n  </ul>\n\n  <ul>\n    <li><a href=\"//www.linkedin.com/static?key=tools\" >Tools</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=outlook_toolbar_download\" >Outlook Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=browser_toolbar_download\" >Browser Toolbar</a></li>\n    <li><a href=\"//www.linkedin.com/static?key=company_info\" >About LinkedIn</a></li>\n  </ul>\n\n  <div class=\"spacer\">&nbsp;</div>\n\n</div>\n\n</body>\n</html>\n"
+        }
+      }
+    },
+    "//www.linkedin.com/uas/oauth2/authorization": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "POST",
+            "description": "https://www.linkedin.com/uas/oauth2/accessToken",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "400": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<error>\n  <status>400</status>\n  <timestamp>1521814967496</timestamp>\n  <request-id>AKA29P2JUR</request-id>\n  <error-code>0</error-code>\n  <message>Unknown field {uas} in resource {Root}</message>\n</error>\n"
+        }
+      }
+    },
+    "/people/~": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "firstName": "Frodo",
+              "lastName": "Baggins",
+              "id": "1R2RtA",
+              "headline": "2ndGenerationAdventurer",
+              "siteStandardProfileRequest": {
+                "url": "https://www.linkedin.com/profile/view?id=…"
+              }
+            }
+          }
+        },
+        "realresponses": {
+          "200": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<person>\n  <id>wBdFwMYwB5</id>\n  <first-name>Hanyang</first-name>\n  <last-name>CAO</last-name>\n  <headline>Ph.D student at University of Bordeaux</headline>\n  <site-standard-profile-request>\n    <url>https://www.linkedin.com/profile/view?id=AAoAABLFAMUBt7mHjOHh75eCPd6sV2VwNfcf78A&amp;authType=name&amp;authToken=9fw7&amp;trk=api*a3227641*s3301901*</url>\n  </site-standard-profile-request>\n</person>\n"
+        }
+      }
+    }
+  },
+  "produces": "application/json",
+  "host": "api.linkedin.com",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

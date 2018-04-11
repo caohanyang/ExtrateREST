@@ -1,0 +1,3516 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA" name="google-site-verification"/>
+  <title>
+   PayPal Developer
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" name="msapplication-TileImage"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png" rel="apple-touch-icon-precomposed"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png" rel="icon" sizes="32x32"/>
+  <link href="/css/docs.css" rel="stylesheet" type="text/css"/>
+  <script data-main="/js/master" src="/components/requirejs/require.js">
+  </script>
+ </head>
+ <body class="dx-apiref dx-apis">
+  <header class="header" id="header">
+   <a aria-label="PayPal Developer" class="header__block header__brand" href="/">
+   </a>
+   <a aria-label="Toggle top-level navigation" class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0">
+   </a>
+   <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2">
+   </div>
+   <div class="header__nav">
+    <div class="header__nav--left">
+     <ul class="dx-nav-0 dx-nav-0-docs">
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/docs/">
+        Docs
+       </a>
+      </li>
+      <li class="dx-nav-0-item dx-nav-active">
+       <a class="dx-nav-0-link" href="/reference/">
+        APIs
+       </a>
+      </li>
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/support/">
+        Support
+       </a>
+      </li>
+     </ul>
+     <form action="/search" class="header__search dx-form-search" id="siteSearch" method="get" name="search">
+      <label class="sr-only" for="siteQ">
+       Enter search term
+      </label>
+      <input class="dx-search-input" id="siteQ" name="q" placeholder="Search" type="search" value=""/>
+     </form>
+    </div>
+    <div class="header__nav--right">
+     <div class="dx-auth-block profile__container">
+      <div class="dx-auth-logged-out">
+       <a class="dx-auth-login dx-btn dx-btn-primary" data-dxa="login,nav-click,nav-login" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications">
+        Log into Dashboard
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="dx-main">
+   <div class="dx-flex">
+    <div class="dx-main-nav-slug">
+    </div>
+    <nav class="dx-main-nav dx-mobile-nav">
+     <div class="dx-nav-back">
+      <a href="/reference/">
+       View All Reference
+      </a>
+     </div>
+     <ul class="dx-nav dx-nav-1">
+      <li class="dx-nav-1-item">
+       <a class="dx-nav-heading" href="/docs/api/">
+        REST APIs
+       </a>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Get Started
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/overview/">
+          Get Started
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#authentication-and-authorization">
+            Authentication and Authorization
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-requests">
+            API Requests
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-responses">
+            API Responses
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#make-your-first-call">
+            Make Your First Call
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          References
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/">
+          API Reference
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/balance-accounts">
+            Balance Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-agreements">
+            Billing Agreements API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-plans">
+            Billing Plans API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/customer-disputes">
+            Customer Disputes API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/identity">
+            Identity API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/invoicing">
+            Invoicing API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/managed-accounts">
+            Managed Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/orders">
+            Orders API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/partner-referrals">
+            Partner Referrals API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payment-experience">
+            Payment Experience Web Profiles API
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="#web-profiles" title="resource group">
+              Web profiles
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#web-profiles_create" title="operation">
+                Create web experience profile
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#web-profiles_get-list" title="operation">
+                List web experience profiles
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#web-profiles_delete" title="operation">
+                Delete web experience profile
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#web-profiles_get" title="operation">
+                Show web experience profile details by ID
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#web-profiles_partial-update" title="operation">
+                Partially update web experience profile
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#web-profiles_update" title="operation">
+                Update web experience profile
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#definitions">
+              Common Object Definitions
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#definition-error">
+                error
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-error_details">
+                error_details
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-flow_config">
+                flow_config
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-input_fields">
+                input_fields
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch">
+                patch
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch_request">
+                patch_request
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-presentation">
+                presentation
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-web_profile">
+                web_profile
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-web_profile_list">
+                web_profile_list
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#errors">
+              Error Messages
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments">
+            Payments API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.payouts-batch">
+            Payouts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/sync">
+            PayPal Sync API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/referenced-payouts">
+            Referenced Payouts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/vault">
+            Vault API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/webhooks">
+            Webhooks API
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/currency-codes/">
+          Currency Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/currency-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/country-codes/">
+          Country Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/country-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/state-codes/">
+          State &amp; Province Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#argentina">
+            Argentina
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#brazil">
+            Brazil
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#canada">
+            Canada
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#india">
+            India
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#italy">
+            Italy
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#japan">
+            Japan
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#mexico">
+            Mexico
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#thailand">
+            Thailand
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#usa">
+            United States
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/locale-codes/">
+          Locale Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#localize-the-checkout-experience">
+            Localize the Checkout Experience
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#supported-locale-codes">
+            Supported Locale Codes
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Release Notes
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2017/">
+          2017
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#07-september-2017">
+            07 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#31-august-2017">
+            31 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#24-august-2017">
+            24 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-august-2017">
+            16 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-august-2017">
+            11 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-august-2017">
+            09 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-august-2017">
+            04 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-july-2017">
+            27 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-july-2017">
+            19 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-july-2017">
+            13 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#06-july-2017">
+            06 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#28-june-2017">
+            28 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-june-2017">
+            22 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#15-june-2017">
+            15 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-june-2017">
+            09 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-may-2017">
+            25 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-may-2017">
+            11 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-may-2017">
+            04 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-april-2017">
+            25 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-april-2017">
+            13 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#30-march-2017">
+            30 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#23-march-2017">
+            23 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-march-2017">
+            16 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-february-2017">
+            27 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-february-2017">
+            16 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-february-2017">
+            02 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-january-2017">
+            25 January 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-january-2017">
+            05 January 2017
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2016/">
+          2016
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#22-december-2016">
+            22 December 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#17-november-2016">
+            17 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-november-2016">
+            10 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-november-2016">
+            04 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-october-2016">
+            27 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-october-2016">
+            06 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#29-september-2016">
+            29 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#08-september-2016">
+            08 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#01-september-2016">
+            01 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-august-2016">
+            11 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-august-2016">
+            04 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-july-2016">
+            27 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#20-july-2016">
+            20 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#07-july-2016">
+            07 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#16-june-2016">
+            16 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-june-2016">
+            02 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-may-2016">
+            11 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-may-2016">
+            02 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-april-2016">
+            06 April 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-march-2016">
+            10 March 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#26-february-2016">
+            26 February 2016
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2015/">
+          2015
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#16-december-2015">
+            16 December 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-november-2015">
+            13 November 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-october-2015">
+            25 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#21-october-2015">
+            21 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-august-2015">
+            12 August 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-july-2015">
+            19 July 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#18-june-2015">
+            18 June 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-may-2015">
+            19 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-may-2015">
+            05 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#23-april-2015">
+            23 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-april-2015">
+            05 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-march-2015">
+            25 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-march-2015">
+            12 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#26-february-2015">
+            26 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-february-2015">
+            13 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#22-january-2015">
+            22 January 2015
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2014/">
+          2014
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-december-2014">
+            17 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#10-december-2014">
+            10 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#03-december-2014">
+            03 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#05-november-2014">
+            05 November 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-october-2014">
+            23 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#15-october-2014">
+            15 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#01-october-2014">
+            01 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-september-2014">
+            17 September 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#13-august-2014">
+            13 August 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-july-2014">
+            23 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-july-2014">
+            07 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-march-2014">
+            07 March 2014
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2013/">
+          2013
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#30-july-2013">
+            30 July 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#28-may-2013">
+            28 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#22-may-2013">
+            22 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#15-may-2013">
+            15 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#24-april-2013">
+            24 April 2013
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          SDKs
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/rest-sdks/">
+          SDKs
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/quickstart/">
+          SDK Quickstart
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/install">
+            Install the SDK
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/environment">
+            Configure Environment
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/payments">
+            Process PayPal Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-plan">
+            Create Billing Plans
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-agreement">
+            Create Billing Agreements
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/capture-payment">
+            Capture Payments Later
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-process-order/">
+            Create and Process Orders
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/refund-payment">
+            Refund Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-webhook">
+            Create Notification Webhooks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/service-integrations/">
+          Service Integrations
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/service-integrations/slack-bot/">
+            Slack
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/simple_pay">
+              Add Person-to-Bot Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/direct_pay">
+              Add Person-to-Person Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/subscribe">
+              Add Agreement for Recurring Payment
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          GLOSSARY
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/glossary/">
+          Glossary
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <article class="content dx-content ">
+     <div class="dax-api" id="">
+      <header class="dax-topic">
+       <h1 class="dx-content-title">
+        Payment Experience Web Profiles API
+       </h1>
+       <div class="dax-preamble">
+        Use the Payment Experience API to create seamless payment experience profiles. For information about how to create a PayPal payment with a web experience profile, see
+        <a href="/docs/integration/direct/payment-experience/">
+         Web experience profiles
+        </a>
+        .
+       </div>
+      </header>
+      <div class="dax-resource" id="web-profiles">
+       <header class="dax-topic-resource">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" class="dx-anchor__icon" href="#web-profiles">
+         </a>
+         Web profiles
+         <small>
+          (resource group)
+         </small>
+        </h2>
+        <div class="dax-preamble">
+         Use the
+         <code>
+          /payment-experience/web-profiles
+         </code>
+         resource to create, show details for, list, update, partially update, and delete web experience profiles.
+        </div>
+       </header>
+       <div class="dax-operation" id="web-profiles_create">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#web-profiles_create">
+          </a>
+          Create web experience profile
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-post">
+           POST
+          </span>
+          <span class="dax-operation-path">
+           /v1/payment-experience/web-profiles/
+           <wbr>
+           </wbr>
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Creates a web experience profile. In the JSON request body, specify the profile name and details.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="web-profiles-create-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#web-profiles-create-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                name
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The web experience profile name. Must be unique for a set of profiles for a merchant.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="boolean">
+              <h5 class="dax-def-term">
+               <code>
+                temporary
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               boolean
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Indicates whether the profile persists for three hours or permanently. To persist the profile permanently, set to
+               <code>
+                false
+               </code>
+               . To persist the profile for three hours, set to
+               <code>
+                true
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                flow_config
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-flow_config">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The flow configuration parameters.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                input_fields
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-input_fields">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The input field customization parameters.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                presentation
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-presentation">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The style and presentation parameters.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/PaymentExperienceCreate.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment_experience/web_profile/create.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/payment-experience/CreateWebProfile.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/payment_experience/web_profile/create_payment_with_customized_experience.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X POST https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '{
+  "name": "exampleProfile",
+  "presentation": {
+  "logo_image": "https://www.example.com"
+  },
+  "input_fields": {
+  "no_shipping": 1,
+  "address_override": 1
+  },
+  "flow_config": {
+  "landing_page_type": "billing",
+  "bank_txn_pending_url": "https://www.example.com"
+  }
+}'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="web-profiles-create-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#web-profiles-create-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             201 Created
+            </code>
+            status code and a JSON response body that shows the profile details and the ID of the profile.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the web experience profile.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The web experience profile name. Must be unique for a set of profiles for a merchant.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="boolean">
+             <h5 class="dax-def-term">
+              <code>
+               temporary
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              boolean
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              Indicates whether the profile persists for three hours or permanently. To persist the profile permanently, set to
+              <code>
+               false
+              </code>
+              . To persist the profile for three hours, set to
+              <code>
+               true
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               flow_config
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-flow_config">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The flow configuration parameters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               input_fields
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-input_fields">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The input field customization parameters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               presentation
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-presentation">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The style and presentation parameters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "id": "XP-RFV4-PVD8-AGHJ-8E5J",
+  "name": "exampleProfile",
+  "temporary": false,
+  "presentation": {
+    "logo_image": "https://www.example.com"
+  },
+  "input_fields": {
+    "no_shipping": 1,
+    "address_override": 1
+  },
+  "flow_config": {
+    "landing_page_type": "billing",
+    "bank_txn_pending_url": "https://www.example.com",
+    "user_action": "commit"
+  }
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="web-profiles_get-list">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#web-profiles_get-list">
+          </a>
+          List web experience profiles
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-get">
+           GET
+          </span>
+          <span class="dax-operation-path">
+           /v1/payment-experience/web-profiles/
+           <wbr>
+           </wbr>
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Lists all web experience profiles for a merchant or subject.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="web-profiles-get-list-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#web-profiles-get-list-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body that lists the profiles that the merchant owns, with details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               web_profile_list
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-web_profile">
+               web_profile
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of web profiles.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>[
+  {
+    "id": "XP-GCUV-X35G-HNEY-5MJY",
+    "name": "exampleProfile",
+    "flow_config": {
+      "landing_page_type": "billing",
+      "bank_txn_pending_url": "https://www.example.com"
+    },
+    "input_fields": {
+      "no_shipping": 1,
+      "address_override": 1
+    },
+    "presentation": {
+      "logo_image": "https://www.example.com"
+    }
+  },
+  {
+    "id": "XP-A88A-LYLW-8Y3X-E5ER",
+    "name": "exampleProfile",
+    "flow_config": {
+      "landing_page_type": "billing",
+      "bank_txn_pending_url": "https://www.example.com"
+    },
+    "input_fields": {
+      "no_shipping": 1,
+      "address_override": 1
+    },
+    "presentation": {
+      "logo_image": "https://www.example.com"
+    }
+  },
+  {
+    "id": "XP-RFV4-PVD8-AGHJ-8E5J",
+    "name": "exampleProfile",
+    "flow_config": {
+      "bank_txn_pending_url": "https://www.example.com"
+    },
+    "input_fields": {
+      "no_shipping": 1,
+      "address_override": 1
+    },
+    "presentation": {
+      "logo_image": "https://www.example.com"
+    }
+  }
+]</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="web-profiles_delete">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#web-profiles_delete">
+          </a>
+          Delete web experience profile
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-delete">
+           DELETE
+          </span>
+          <span class="dax-operation-path">
+           /v1/payment-experience/web-profiles/
+           <wbr>
+           </wbr>
+           {profile_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Deletes a web experience profile, by ID.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="web-profiles-delete-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#web-profiles-delete-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                profile_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the profile to delete.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/PaymentExperienceDelete.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/payment-experience/DeleteWebProfile.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/payment_experience/web_profile/delete.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X DELETE https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-A88A-LYLW-8Y3X-E5ER \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="web-profiles-delete-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#web-profiles-delete-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             204 No Content
+            </code>
+            status code with no JSON response body.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>204 No Content</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="web-profiles_get">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#web-profiles_get">
+          </a>
+          Show web experience profile details by ID
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-get">
+           GET
+          </span>
+          <span class="dax-operation-path">
+           /v1/payment-experience/web-profiles/
+           <wbr>
+           </wbr>
+           {profile_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Shows details for a web experience profile, by ID.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="web-profiles-get-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#web-profiles-get-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                profile_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the profile for which to show details.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/PaymentExperienceGet.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment_experience/web_profile/get.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/payment-experience/GetWebProfile.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/payment_experience/web_profile/get.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X GET https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-RFV4-PVD8-AGHJ-8E5J \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="web-profiles-get-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#web-profiles-get-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body that shows the profile details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID of the web experience profile.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Read only.
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               name
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The web experience profile name. Must be unique for a set of profiles for a merchant.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="boolean">
+             <h5 class="dax-def-term">
+              <code>
+               temporary
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              boolean
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              Indicates whether the profile persists for three hours or permanently. To persist the profile permanently, set to
+              <code>
+               false
+              </code>
+              . To persist the profile for three hours, set to
+              <code>
+               true
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               flow_config
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-flow_config">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The flow configuration parameters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               input_fields
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-input_fields">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The input field customization parameters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               presentation
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-presentation">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The style and presentation parameters.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "id": "XP-RFV4-PVD8-AGHJ-8E5J",
+  "name": "exampleProfile",
+  "temporary": false,
+  "flow_config": {
+    "landing_page_type": "billing",
+    "bank_txn_pending_url": "https://www.example.com"
+  },
+  "input_fields": {
+    "no_shipping": 1,
+    "address_override": 1
+  },
+  "presentation": {
+    "logo_image": "https://www.example.com"
+  }
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="web-profiles_partial-update">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#web-profiles_partial-update">
+          </a>
+          Partially update web experience profile
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-patch">
+           PATCH
+          </span>
+          <span class="dax-operation-path">
+           /v1/payment-experience/web-profiles/
+           <wbr>
+           </wbr>
+           {profile_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Partially-updates a web experience profile, by ID. In the JSON request body, specify a patch object, the path of the profile location to update, and a new value.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="web-profiles-partial-update-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#web-profiles-partial-update-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                profile_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the profile to partially update.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <header class="dax-topic-reference" id="web-profiles-partial-update-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#web-profiles-partial-update-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="array">
+              <h5 class="dax-def-term">
+               <code>
+                patch_request
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               array
+
+                
+                    (contains the
+               <a href="#definition-patch">
+                patch
+               </a>
+               object)
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               An array of JSON patch objects to apply partial updates to resources.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/PaymentExperiencePartialUpdate.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment_experience/web_profile/replace.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/payment-experience/PartiallyUpdateWebProfile.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/payment_experience/web_profile/replace.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X PATCH https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-RFV4-PVD8-AGHJ-8E5J \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '[
+  {
+  "op": "add",
+  "path": "/presentation/brand_name",
+  "value": "new_brand_name"
+  },
+  {
+  "op": "remove",
+  "path": "/flow_config/landing_page_type"
+  }
+]'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="web-profiles-partial-update-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#web-profiles-partial-update-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             204 No Content
+            </code>
+            status code with no JSON response body.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>204 No Content</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="web-profiles_update">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#web-profiles_update">
+          </a>
+          Update web experience profile
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-put">
+           PUT
+          </span>
+          <span class="dax-operation-path">
+           /v1/payment-experience/web-profiles/
+           <wbr>
+           </wbr>
+           {profile_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Updates a web experience profile, by ID. In the JSON request body, specify the profile details. If your request omits any profile parameters, any previously set values for those parameters are removed.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="web-profiles-update-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#web-profiles-update-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                profile_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the profile to update.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <header class="dax-topic-reference" id="web-profiles-update-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#web-profiles-update-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                name
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The web experience profile name. Must be unique for a set of profiles for a merchant.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="boolean">
+              <h5 class="dax-def-term">
+               <code>
+                temporary
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               boolean
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Indicates whether the profile persists for three hours or permanently. To persist the profile permanently, set to
+               <code>
+                false
+               </code>
+               . To persist the profile for three hours, set to
+               <code>
+                true
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                flow_config
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-flow_config">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The flow configuration parameters.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                input_fields
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-input_fields">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The input field customization parameters.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                presentation
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-presentation">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The style and presentation parameters.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <div class="dax-operation-sdks">
+           <span>
+            SDK samples:
+           </span>
+           <a href="https://github.com/paypal/PayPal-NET-SDK/blob/develop/Samples/Source/PaymentExperienceUpdate.aspx.cs" target="_blank">
+            C#
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment_experience/web_profile/update.js" target="_blank">
+            Node
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-PHP-SDK/blob/master/sample/payment-experience/UpdateWebProfile.php" target="_blank">
+            PHP
+           </a>
+           ,
+           <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/payment_experience/web_profile/update.py" target="_blank">
+            Python
+           </a>
+          </div>
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X PUT https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-RFV4-PVD8-AGHJ-8E5J \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '{
+  "name": "exampleProfile",
+  "presentation": {
+  "logo_image": "https://www.example.com"
+  },
+  "input_fields": {
+  "no_shipping": 1,
+  "address_override": 1
+  },
+  "flow_config": {
+  "landing_page_type": "billing",
+  "bank_txn_pending_url": "https://www.example.com"
+  }
+}'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="web-profiles-update-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#web-profiles-update-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             204 No Content
+            </code>
+            status code with no JSON response body.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>204 No Content</code></pre>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="dax-definitions" id="definitions">
+       <header class="dax-topic-definition">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" href="#definitions">
+         </a>
+         Common object definitions
+        </h2>
+       </header>
+       <div class="dax-reference-set dx-flex" id="definition-error">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error">
+           </a>
+           error
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The human-readable, unique name of the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              debug_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The PayPal internal ID. Used for correlation purposes.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              message
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The message that describes the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              information_link
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The URI to detailed information related to this error for the developer.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              details
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-error_details">
+              error_details
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of additional details for the error.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-error_details">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error_details">
+           </a>
+           error_details
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              field
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The name of the field that caused the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              issue
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The reason for the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-flow_config">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-flow_config">
+           </a>
+           flow_config
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              landing_page_type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The type of landing page to display on the PayPal site for user checkout. To use the non-PayPal account landing page, set to
+             <code>
+              Billing
+             </code>
+             . To use the PayPal account login landing page, set to
+             <code>
+              Login
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              bank_txn_pending_url
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The merchant site URL to display after a bank transfer payment. In Germany, valid only for the Giropay payment method or bank transfer payment method.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              user_action
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             Presents either the
+             <strong>
+              Continue
+             </strong>
+             or
+             <strong>
+              Pay Now
+             </strong>
+             checkout flow to the customer.
+             <br/>
+             <br/>
+             Default is
+             <strong>
+              Continue
+             </strong>
+             , or
+             <code>
+              user_action=continue
+             </code>
+             . When you do not know the final payment amount, accept this default flow, which redirects the customer to the PayPal payment page with the
+             <strong>
+              Continue
+             </strong>
+             button. When the customer clicks
+             <strong>
+              Continue
+             </strong>
+             , the customer can change the payment amount.
+             <br/>
+             <br/>
+             When you know the final payment amount, set
+             <code>
+              user_action=commit
+             </code>
+             to choose the
+             <strong>
+              Pay Now
+             </strong>
+             flow, which redirects the customer to the PayPal payment page with the
+             <strong>
+              Pay Now
+             </strong>
+             button. When the customer clicks
+             <strong>
+              Pay Now
+             </strong>
+             , the payment is processed immediately.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              return_uri_http_method
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The HTTP method to use to redirect the customer to a return URL. Value is
+             <code>
+              GET
+             </code>
+             or
+             <code>
+              POST
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-input_fields">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-input_fields">
+           </a>
+           input_fields
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="integer">
+            <h5 class="dax-def-term">
+             <code>
+              no_shipping
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             integer
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             Indicates whether PayPal displays shipping address fields on the experience pages. Value is:
+             <ul>
+              <li>
+               <code>
+                0
+               </code>
+               . Displays the shipping address on the PayPal pages.
+              </li>
+              <li>
+               <code>
+                1
+               </code>
+               . Redacts shipping address fields from the PayPal pages. For digital goods, this field is required and must be
+               <code>
+                1
+               </code>
+               .
+              </li>
+              <li>
+               <code>
+                2
+               </code>
+               . Gets the shipping address from the customer's account profile.
+              </li>
+             </ul>
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="integer">
+            <h5 class="dax-def-term">
+             <code>
+              address_override
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             integer
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             Indicates whether to display the shipping address that is passed to this call rather than the one on file for this buyer on the PayPal experience pages. Value is:
+             <ul>
+              <li>
+               <code>
+                0
+               </code>
+               . Displays the shipping address on file.
+              </li>
+              <li>
+               <code>
+                1
+               </code>
+               . Displays the shipping address specified in this call. the customer cannot edit this shipping address.
+              </li>
+             </ul>
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch">
+           </a>
+           patch
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              op
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The operation to complete.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               add
+              </code>
+              ,
+              <code>
+               remove
+              </code>
+              ,
+              <code>
+               replace
+              </code>
+              ,
+              <code>
+               move
+              </code>
+              ,
+              <code>
+               copy
+              </code>
+              ,
+              <code>
+               test
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              path
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The JSON pointer to the target document location at which to complete the operation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="number,integer,string,boolean,null,array,object">
+            <h5 class="dax-def-term">
+             <code>
+              value
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             number,integer,string,boolean,null,array,object
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The value to apply. The
+             <code>
+              remove
+             </code>
+             operation does not require a value.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              from
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The JSON pointer to the target document location from which to move the value. Required for the
+             <code>
+              move
+             </code>
+             operation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch_request">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch_request">
+           </a>
+           patch_request
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              patch_request
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-patch">
+              patch
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of JSON patch objects to apply partial updates to resources.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-presentation">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-presentation">
+           </a>
+           presentation
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              brand_name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A label that overrides the business name in the PayPal account on the PayPal pages. Character length and limitations: 127 single-byte alphanumeric characters.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              logo_image
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A URL to the logo image. A valid media type is
+             <code>
+              .gif
+             </code>
+             ,
+             <code>
+              .jpg
+             </code>
+             , or
+             <code>
+              .png
+             </code>
+             . The image's maximum width is 190 pixels and maximum height is 60 pixels. PayPal crops images that are larger. PayPal places your logo image at the top of the cart review area. PayPal recommends that you store the image on a secure (HTTPS) server. Otherwise, web browsers display a message that checkout pages contain non-secure items. Character length and limitations: 127 single-byte alphanumeric characters.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              locale_code
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The locale of pages that the PayPal payment experience displays. A valid value is
+             <code>
+              AU
+             </code>
+             ,
+             <code>
+              AT
+             </code>
+             ,
+             <code>
+              BE
+             </code>
+             ,
+             <code>
+              BR
+             </code>
+             ,
+             <code>
+              CA
+             </code>
+             ,
+             <code>
+              CH
+             </code>
+             ,
+             <code>
+              CN
+             </code>
+             ,
+             <code>
+              DE
+             </code>
+             ,
+             <code>
+              ES
+             </code>
+             ,
+             <code>
+              GB
+             </code>
+             ,
+             <code>
+              FR
+             </code>
+             ,
+             <code>
+              IT
+             </code>
+             ,
+             <code>
+              NL
+             </code>
+             ,
+             <code>
+              PL
+             </code>
+             ,
+             <code>
+              PT
+             </code>
+             ,
+             <code>
+              RU
+             </code>
+             , or
+             <code>
+              US
+             </code>
+             . A 5-character code is also valid for languages in these countries:
+             <code>
+              da_DK
+             </code>
+             ,
+             <code>
+              he_IL
+             </code>
+             ,
+             <code>
+              id_ID
+             </code>
+             ,
+             <code>
+              ja_JP
+             </code>
+             ,
+             <code>
+              no_NO
+             </code>
+             ,
+             <code>
+              pt_BR
+             </code>
+             ,
+             <code>
+              ru_RU
+             </code>
+             ,
+             <code>
+              sv_SE
+             </code>
+             ,
+             <code>
+              th_TH
+             </code>
+             ,
+             <code>
+              zh_CN
+             </code>
+             ,
+             <code>
+              zh_HK
+             </code>
+             , or
+             <code>
+              zh_TW
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-web_profile">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-web_profile">
+           </a>
+           web_profile
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the web experience profile.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Read only.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The web experience profile name. Must be unique for a set of profiles for a merchant.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="boolean">
+            <h5 class="dax-def-term">
+             <code>
+              temporary
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             boolean
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             Indicates whether the profile persists for three hours or permanently. To persist the profile permanently, set to
+             <code>
+              false
+             </code>
+             . To persist the profile for three hours, set to
+             <code>
+              true
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              flow_config
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-flow_config">
+              object
+             </a>
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The flow configuration parameters.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              input_fields
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-input_fields">
+              object
+             </a>
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The input field customization parameters.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              presentation
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-presentation">
+              object
+             </a>
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The style and presentation parameters.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-web_profile_list">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-web_profile_list">
+           </a>
+           web_profile_list
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              web_profile_list
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-web_profile">
+              web_profile
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of web profiles.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="dax-more">
+       <h2 class="sr-only">
+        Additional API information
+       </h2>
+       <div class="dax-more-error" id="errors">
+        <h3 class="dx-anchor">
+         <a aria-hidden="true" href="#errors">
+         </a>
+         Error messages
+        </h3>
+        <p>
+         In addition to
+         <a href="/docs/api/overview/#error-status-codes">
+          common HTTP status codes
+         </a>
+         that the REST APIs return, the Payment Experience Web Profiles API can return the following errors.
+        </p>
+        <ul class="dax-messages">
+         <li>
+          <h4>
+           <code>
+            DUPLICATE_REQUEST_ID
+           </code>
+          </h4>
+          <p>
+           The value of the
+           <code>
+            PayPal-Request-ID
+           </code>
+           header has already been used.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            INTERNAL_SERVICE_ERROR
+           </code>
+          </h4>
+          <p>
+           An internal service error has occurred.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            INVALID_RESOURCE_ID
+           </code>
+          </h4>
+          <p>
+           Invalid profile ID passed.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            MALFORMED_REQUEST
+           </code>
+          </h4>
+          <p>
+           The JSON request does not map to the expected resource.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            PERMISSION_DENIED
+           </code>
+          </h4>
+          <p>
+           No permission for the requested operation.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            VALIDATION_ERROR
+           </code>
+          </h4>
+          <p>
+           Invalid data passed.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            WRONG_PATCH
+           </code>
+          </h4>
+          <p>
+           The provided patch has errors.
+          </p>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <span class="dxf-insert-rating">
+     </span>
+    </article>
+   </div>
+   <footer class="footer">
+    <section class="section">
+     <div class="section__content">
+      <div class="grid">
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Docs
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/integration/direct/express-checkout/integration-jsv4/" rel="nofollow">
+           Express Checkout
+          </a>
+         </li>
+         <li>
+          <a href="/docs/integration/web" rel="nofollow">
+           Payment Buttons
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.braintreepayments.com/start/overview/" rel="nofollow">
+           Braintree SDK
+          </a>
+         </li>
+         <li>
+          <a href="/docs/directory/" rel="nofollow">
+           All Docs
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Support
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/faq/" rel="nofollow">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-techsupport.com/" rel="nofollow">
+           Merchant Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">
+           Account Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Resources
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://github.com/paypal/" rel="nofollow">
+           GitHub
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/partnerprogram" rel="nofollow">
+           Partners
+          </a>
+         </li>
+         <li>
+          <a href="https://demo.paypal.com" rel="nofollow">
+           PayPal Demo
+          </a>
+         </li>
+         <li>
+          <a href="https://devblog.paypal.com/" rel="nofollow">
+           Blog
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Family
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://paypal.com/" rel="nofollow">
+           PayPal
+          </a>
+         </li>
+         <li>
+          <a href="https://braintreepayments.com/" rel="nofollow">
+           Braintree
+          </a>
+         </li>
+         <li>
+          <a href="https://venmo.com/" rel="nofollow">
+           Venmo
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paydiant.com/" rel="nofollow">
+           Paydiant
+          </a>
+         </li>
+         <li>
+          <a href="https://xoom.com/" rel="nofollow">
+           Xoom
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="grid">
+       <div class="grid__item grid__item--6">
+        <ul class="footer__legal">
+         <li>
+          <a class="scTrack:privacy-policy" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">
+           Privacy
+          </a>
+         </li>
+         <li>
+          <a class="scTrack:legal-agreements" href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">
+           Legal
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--6">
+        <p class="footer__copyright">
+         ©2018 PayPal
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+  </main>
+ </body>
+</html>

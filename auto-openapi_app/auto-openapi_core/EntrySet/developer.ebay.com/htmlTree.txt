@@ -1,0 +1,180 @@
+
+                                           /-/fields
+                                          |
+                                          |--/overview.html
+                                          |
+                                          |--/release-notes.html
+                                          |
+                                          |          /-/methods
+                                          |         |
+                                          |         |                           /-/createFulfillmentPolicy
+                                          |         |                          |
+                                          |         |                          |--/deleteFulfillmentPolicy
+                                          |         |                          |
+                                          |         |                          |--/getFulfillmentPolicies
+                                          |         |-/fulfillment_policy/methods
+                                          |         |                          |--/getFulfillmentPolicy
+                                          |         |                          |
+                                          |         |                          |--/getFulfillmentPolicyByName
+                                          |         |                          |
+                                          |         |                           \-/updateFulfillmentPolicy
+                                          |         |
+                                          |         |                       /-/createPaymentPolicy
+                                          |         |                      |
+                                          |         |                      |--/deletePaymentPolicy
+                                          |         |                      |
+                                          |         |                      |--/getPaymentPolicies
+                                          |         |-/payment_policy/methods
+                                          |         |                      |--/getPaymentPolicy
+                                          |         |                      |
+                                          |         |                      |--/getPaymentPolicyByName
+                                          |         |                      |
+                                          |         |                       \-/updatePaymentPolicy
+                                          |-/resources
+                                          |         |-/privilege/methods-/getPrivileges
+                                          |         |
+                                          |         |                /-/getOptedInPrograms
+                                          |         |               |
+                                          |         |-/program/methods-/optInToProgram
+                                          |         |               |
+                                          |         |                \-/optOutOfProgram
+                                          |         |
+                                          |         |-/rate_table/methods-/getRateTables
+                                          |         |
+                                          |         |                      /-/createReturnPolicy
+                                          |         |                     |
+                                          |         |                     |--/deleteReturnPolicy
+                                          |         |                     |
+                                          |         |                     |--/getReturnPolicies
+                                          |         |-/return_policy/methods
+                                          |         |                     |--/getReturnPolicy
+                                          |         |                     |
+                                          |         |                     |--/getReturnPolicyByName
+                                          |         |                     |
+                                          |         |                      \-/updateReturnPolicy
+                                          |         |
+                                          |         |                  /-/createOrReplaceSalesTax
+                                          |         |                 |
+                                          |         |                 |--/deleteSalesTax
+                                          |          \/sales_tax/methods
+                                          |                           |--/getSalesTax
+                                          |                           |
+-- /developer.ebay.com/api-docs/sell/account                           \-/getSalesTaxes
+                                          |
+                                          |-/static-/overview.html
+                                          |
+                                          |      /-/base:CountryCodeEnum
+                                          |     |
+                                          |     |--/base:CurrencyCodeEnum
+                                          |     |
+                                          |     |--/base:MarketplaceIdEnum
+                                          |     |
+                                          |     |--/base:RegionTypeEnum
+                                          |     |
+                                          |     |--/base:TimeDuration
+                                          |     |
+                                          |     |--/base:TimeDurationUnitEnum
+                                          |     |
+                                          |     |--/cos:ErrorDetailV3
+                                          |     |
+                                          |     |--/cos:ErrorParameterV3
+                                          |     |
+                                          |     |--/sal:Amount
+                                          |     |
+                                          |     |--/sal:CategoryType
+                                          |     |
+                                          |     |--/sal:CategoryTypeEnum
+                                          |     |
+                                          |     |--/sal:Deposit
+                                          |     |
+                                          |     |--/sal:ExternalPaymentMethod
+                                          |     |
+                                          |     |--/sal:ExternalPaymentMethodTypeEnum
+                                          |     |
+                                          |     |--/sal:FulfillmentPolicy
+                                          |     |
+                                          |     |--/sal:FulfillmentPolicyRequest
+                                          |     |
+                                          |     |--/sal:FulfillmentPolicyResponse
+                                          |     |
+                                          |     |--/sal:InventorySizing
+                                          |     |
+                                          |     |--/sal:InventorySnapshot
+                                          |     |
+                                          |     |--/sal:LookbackPeriod
+                                          |     |
+                                          |     |--/sal:MerchantExternalProfile
+                                          |     |
+                                          |     |--/sal:PaymentInstrumentBrandEnum
+                                          |     |
+                                          |     |--/sal:PaymentMethod
+                                          |     |
+                                          |     |--/sal:PaymentMethodTypeEnum
+                                          |     |
+                                          |     |--/sal:PaymentPolicy
+                                          |     |
+                                          |     |--/sal:PaymentPolicyRequest
+                                          |     |
+                                          |     |--/sal:PaymentPolicyResponse
+                                          |     |
+                                          |     |--/sal:Program
+                                          |     |
+                                          |     |--/sal:ProgramTypeEnum
+                                           \/types
+                                                |--/sal:Programs
+                                                |
+                                                |--/sal:RateTable
+                                                |
+                                                |--/sal:RateTableResponse
+                                                |
+                                                |--/sal:RecipientAccountReference
+                                                |
+                                                |--/sal:RecipientAccountReferenceTypeEnum
+                                                |
+                                                |--/sal:RefundMethodEnum
+                                                |
+                                                |--/sal:Region
+                                                |
+                                                |--/sal:RegionSet
+                                                |
+                                                |--/sal:ReturnMethodEnum
+                                                |
+                                                |--/sal:ReturnPolicy
+                                                |
+                                                |--/sal:ReturnPolicyRequest
+                                                |
+                                                |--/sal:ReturnPolicyResponse
+                                                |
+                                                |--/sal:ReturnShippingCostPayerEnum
+                                                |
+                                                |--/sal:ReturnSnapshot
+                                                |
+                                                |--/sal:SalesTax
+                                                |
+                                                |--/sal:SalesTaxBase
+                                                |
+                                                |--/sal:SalesTaxes
+                                                |
+                                                |--/sal:SellingLimit
+                                                |
+                                                |--/sal:SellingPrivileges
+                                                |
+                                                |--/sal:SetFulfillmentPolicyResponse
+                                                |
+                                                |--/sal:SetPaymentPolicyResponse
+                                                |
+                                                |--/sal:SetReturnPolicyResponse
+                                                |
+                                                |--/sal:ShippingCostTypeEnum
+                                                |
+                                                |--/sal:ShippingOption
+                                                |
+                                                |--/sal:ShippingOptionTypeEnum
+                                                |
+                                                |--/sal:ShippingService
+                                                |
+                                                |--/sal:SoldAggregatedMetrics
+                                                |
+                                                |--/sal:TransactionSnapshot
+                                                |
+                                                 \-/sal:TransactionVolume

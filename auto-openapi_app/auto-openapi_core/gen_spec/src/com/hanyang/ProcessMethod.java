@@ -44,6 +44,13 @@ public class ProcessMethod {
 		return openAPI;
 	}
 
+	public boolean isSanboxUrl (String url) {
+		
+		if (url.contains("sandbox")) {
+			return true;
+		}
+		return false;
+	}
 	public boolean isRealUrl(String url) {
 
 		// clean two times
@@ -57,7 +64,7 @@ public class ProcessMethod {
 				| url.contains(".pdf")) {
 			return false;
 		}
-
+		
 		if (url.startsWith("http") | url.startsWith("/")| Settings.MODE.equals("null")) {
 
 			int spaces = url == null ? 0 : url.length() - url.replace(" ", "").length();

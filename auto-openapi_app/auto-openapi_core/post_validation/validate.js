@@ -130,7 +130,7 @@ each(Object.keys(pathObj), function (urlKey, next) {
 						
 					});
 				} else {
-					child = exec(composeUrl, function (error, stdout, stderr) {
+					child = exec(composeUrl.toString(), function (error, stdout, stderr) {
 						var data;
 						console.log('stdout: ' + stdout);
 
@@ -157,7 +157,7 @@ each(Object.keys(pathObj), function (urlKey, next) {
 
 
 				}
-			}, 1000);
+			}, 2000);
 		}, function (err) {
 			console.log("finished one loop")
 			next();

@@ -1,0 +1,4460 @@
+<!DOCTYPE html>
+<html class="chekov" lang="en">
+ <head>
+  <script>
+   var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(b){a.readyCallbacks.push(b)};window.devsite.ready=a.ready;
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="DxsLAxpLOq1zCNSgRnxkN8NhwL3hhQbWKAJLsXNcPZg6MTUxODAwNzk0NzY4MTE5MA" name="xsrf_token"/>
+  <link href="https://developers.google.com/google-apps/calendar/v3/reference/events" rel="canonical"/>
+  <link href="https://developers.google.com/google-apps/calendar/v3/reference/events" hreflang="en" rel="alternate"/>
+  <link href="https://developers.google.cn/google-apps/calendar/v3/reference/events" hreflang="en-cn" rel="alternate"/>
+  <link href="https://developers.google.com/google-apps/calendar/v3/reference/events" hreflang="x-default" rel="alternate"/>
+  <link href="https://developers.google.com/_static/18908e5f48/images/favicon.png" rel="shortcut icon"/>
+  <link href="https://developers.google.com/_static/18908e5f48/images/touch-icon.png" rel="apple-touch-icon"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons" rel="stylesheet"/>
+  <link href="https://developers.google.com/_static/18908e5f48/css/devsite-google-blue.css" rel="stylesheet"/>
+  <link href="https://developers.google.com/s/opensearch.xml" rel="search" title="Google Developers" type="application/opensearchdescription+xml"/>
+  <script src="https://developers.google.com/_static/18908e5f48/js/jquery-bundle.js">
+  </script>
+  <meta content="Google Developers" property="og:site_name"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://developers.google.com/google-apps/calendar/v3/reference/events" property="og:url"/>
+  <meta content="en" property="og:locale"/>
+  <script>
+   var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script>
+  <title>
+   Events  |  Calendar API
+       |  Google Developers
+  </title>
+  <meta content="Events  |  Calendar API
+       |  Google Developers" property="og:title"/>
+  <meta content="https://developers.google.com/_static/18908e5f48/images/share/devsite-google-blue.png" property="og:image"/>
+  <meta content="https://developers.google.com/_static/18908e5f48/images/share/devsite-google-blue.png" property="og:image:secure_url"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+ </head>
+ <body class=" devsite-doc-page devsite-user-in-eu devsite-header-no-upper-tabs " id="top_of_page">
+  <div class="devsite-wrapper">
+   <div class="devsite-top-section-wrapper ">
+    <header class="devsite-top-section nocontent">
+     <div class="devsite-top-logo-row-wrapper-wrapper">
+      <div class="devsite-top-logo-row-wrapper">
+       <div class="devsite-top-logo-row devsite-full-site-width">
+        <button class="devsite-expand-section-nav devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Hamburger menu" type="button">
+        </button>
+        <div class="devsite-product-name-wrapper">
+         <a class="devsite-product-name-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Project logo (header)" href="https://developers.google.com/google-apps/calendar/">
+          <img alt="Google Calendar API" class="devsite-product-logo" src="https://www.gstatic.com/images/branding/product/1x/calendar_64dp.png"/>
+         </a>
+         <span class="devsite-product-name">
+          <ul class="devsite-breadcrumb-list">
+           <li class="devsite-breadcrumb-item">
+            <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1" href="https://developers.google.com/google-apps/calendar/">
+             Google Calendar API
+            </a>
+           </li>
+          </ul>
+         </span>
+        </div>
+        <div class="devsite-header-upper-tabs">
+        </div>
+        <form action="https://developers.google.com/s/results/" class="devsite-search-form" id="top-search" method="GET" search-placeholder="Search">
+         <div class="devsite-searchbox" id="searchbox">
+          <input autocomplete="off" class="devsite-search-field devsite-search-query" name="q" placeholder="Search" type="text" value=""/>
+          <div class="devsite-search-image material-icons">
+          </div>
+         </div>
+         <input data-project-name="Calendar API" data-project-path="/google-apps/calendar/" data-query-match="" id="search_project" name="p" type="hidden" value="/google-apps/calendar/"/>
+         <input class="suggest-project" type="hidden" value="Calendar API"/>
+         <div class="suggest-project-metadata" data-home_url="/google-apps/calendar/" data-name="Calendar API" data-path="/google-apps/calendar/">
+         </div>
+        </form>
+        <a class="devsite-header-link devsite-top-button button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site header link" href="https://developers.google.com/products/" track-metadata-position="nav" track-name="all products" track-type="navigateTo">
+         <div class="devsite-header-link-label">
+          All Products
+         </div>
+        </a>
+        <button class="devsite-search-button devsite-header-icon-button button-flat material-icons" type="button">
+        </button>
+        <a class="devsite-user-signin devsite-top-button button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Sign in button" href="https://www.google.com/accounts/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fdevelopers.google.com%2Fgoogle-apps%2Fcalendar%2Fv3%2Freference%2Fevents%3Frefresh%3D1&amp;service=ahsid">
+         Sign in
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="devsite-collapsible-section">
+      <div class="devsite-header-background devsite-full-site-width">
+       <div class="devsite-doc-set-nav-row devsite-full-site-width">
+        <nav class="devsite-doc-set-nav devsite-nav devsite-overflow-tabs-scroll-wrapper">
+         <ul class="devsite-doc-set-nav-tab-list devsite-overflow-tabs-scroll">
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Home" href="https://developers.google.com/google-apps/calendar/">
+            Home
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Guides" href="https://developers.google.com/google-apps/calendar/overview">
+            Guides
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class="devsite-doc-set-nav-active devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Reference" href="https://developers.google.com/google-apps/calendar/v3/reference">
+            Reference
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Samples" href="https://developers.google.com/google-apps/calendar/quickstart/dotnet">
+            Samples
+           </a>
+          </li>
+          <li class="devsite-doc-set-nav-tab-container">
+           <a class=" devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Support" href="https://developers.google.com/google-apps/calendar/support">
+            Support
+           </a>
+          </li>
+          <button class="devsite-feedback-button devsite-top-button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Send Feedback Button" id="devsite-feedback-project" track-metadata-position="header" track-name="sendFeedbackLink" track-type="feedback" type="button">
+           Send feedback
+          </button>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+    </header>
+    <script>
+     if (window.jQuery) {
+      $(document).ready(function() {
+        if (window.devsite && window.devsite.search) {
+          
+          window.devsite.search.init('en')
+        }
+      });
+    }
+    </script>
+   </div>
+   <div id="gc-wrapper" itemscope="" itemtype="http://schema.org/APIReference">
+    <input class="google-analytics-id-json" type="hidden" value='{"dimensions": {"dimension6": "en", "dimension4": "Calendar API", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}'/>
+    <script>
+     var dataLayer = [{"freeTrialEligibleUser": "False", "userCountry": "FR", "language": {"requested": "en", "served": "en"}, "projectName": "Calendar API", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}];
+    </script>
+    <div class="devsite-site-mask">
+    </div>
+    <nav class="devsite-nav-responsive devsite-nav nocontent" tabindex="0">
+     <div class="devsite-nav-responsive-tabs-panel">
+      <nav class="devsite-nav-responsive-tabs devsite-nav">
+       <ul class="devsite-nav-list">
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Home" href="https://developers.google.com/google-apps/calendar/">
+          Home
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Guides" href="https://developers.google.com/google-apps/calendar/overview?nav=true">
+          Guides
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <span class="devsite-nav-responsive-forward devsite-nav-responsive-tab devsite-nav-title devsite-nav-active gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Reference" tabindex="0">
+          Reference
+         </span>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Samples" href="https://developers.google.com/google-apps/calendar/quickstart/dotnet">
+          Samples
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Support" href="https://developers.google.com/google-apps/calendar/support?nav=true">
+          Support
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-heading">
+         <a class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Responsive Tab: all_products" href="https://developers.google.com/products/">
+          All Products
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+     <div class="devsite-nav-responsive-sidebar-panel">
+      <div class="devsite-nav-responsive-back" tabindex="0">
+      </div>
+      <nav class="devsite-nav-responsive-sidebar">
+       <ul class="devsite-nav-list devsite-nav-expandable">
+        <li class="devsite-nav-item">
+         <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference" track-metadata-position="0" track-name="titleLink" track-type="leftNav">
+          Resource Summary
+         </a>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Acl
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          CalendarList
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Calendars
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/clear" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            clear
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Channels
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels/stop" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            stop
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Colors
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Events
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-expanded material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-expanded">
+          <li class="devsite-nav-item devsite-nav-active">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            delete
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/import" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            import
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            insert
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/instances" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            instances
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/move" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            move
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            patch
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/quickAdd" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            quickAdd
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            update
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Freebusy
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy/query" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            query
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="devsite-nav-item devsite-nav-item-section-expandable">
+         <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+          Settings
+         </span>
+         <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+         </a>
+         <ul class="devsite-nav-section devsite-nav-section-collapsed">
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            Overview
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            get
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            list
+           </a>
+          </li>
+          <li class="devsite-nav-item">
+           <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+            watch
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </nav>
+    <div class="devsite-main-content clearfix">
+     <nav class="devsite-section-nav devsite-nav nocontent">
+      <ul class="devsite-nav-list devsite-nav-expandable">
+       <li class="devsite-nav-item">
+        <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference" track-metadata-position="0" track-name="titleLink" track-type="leftNav">
+         Resource Summary
+        </a>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Acl
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/acl/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         CalendarList
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendarList/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Calendars
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/clear" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           clear
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/calendars/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Channels
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/channels/stop" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           stop
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Colors
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/colors/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Events
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-expanded material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-expanded">
+         <li class="devsite-nav-item devsite-nav-active">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/delete" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           delete
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/import" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           import
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/insert" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           insert
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/instances" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           instances
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/move" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           move
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/patch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           patch
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/quickAdd" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           quickAdd
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/update" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           update
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/events/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Freebusy
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/freebusy/query" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           query
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-nav-item devsite-nav-item-section-expandable">
+        <span class="devsite-nav-title devsite-nav-title-no-path" track-metadata-position="0" track-name="expandNavSectionNoLink" track-type="leftNav">
+         Settings
+        </span>
+        <a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-metadata-position="0" track-name="expandNavSectionArrow" track-type="leftNav">
+        </a>
+        <ul class="devsite-nav-section devsite-nav-section-collapsed">
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           Overview
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/get" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           get
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/list" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           list
+          </a>
+         </li>
+         <li class="devsite-nav-item">
+          <a class="devsite-nav-title gc-analytics-event" data-action="click" data-category="Site-Wide Custom Events" data-label="Left nav" href="https://developers.google.com/google-apps/calendar/v3/reference/settings/watch" track-metadata-position="1" track-name="titleLink" track-type="leftNav">
+           watch
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </nav>
+     <nav class="devsite-page-nav devsite-nav">
+     </nav>
+     <article class="devsite-article">
+      <article class="devsite-article-inner">
+       <nav class="devsite-breadcrumb-nav devsite-nav">
+        <ul class="devsite-breadcrumb-list">
+         <li class="devsite-breadcrumb-item">
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1" href="https://developers.google.com/products/">
+           Products
+          </a>
+         </li>
+         <li class="devsite-breadcrumb-item">
+          <div class="devsite-breadcrumb-guillemet material-icons">
+          </div>
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2" href="https://developers.google.com/gsuite/">
+           G Suite
+          </a>
+         </li>
+         <li class="devsite-breadcrumb-item">
+          <div class="devsite-breadcrumb-guillemet material-icons">
+          </div>
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3" href="https://developers.google.com/google-apps/calendar/">
+           Calendar API
+          </a>
+         </li>
+         <li class="devsite-breadcrumb-item">
+          <div class="devsite-breadcrumb-guillemet material-icons">
+          </div>
+          <a class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="4" href="https://developers.google.com/google-apps/calendar/v3/reference">
+           Reference
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <h1 class="devsite-page-title" itemprop="name">
+        Events
+       </h1>
+       <nav class="devsite-page-nav-embedded devsite-nav">
+       </nav>
+       <div class="devsite-article-body clearfix " itemprop="articleBody">
+        <div itemscope="" itemtype="http://developers.google.com/ReferenceObject">
+         <meta content="Events" itemprop="path"/>
+         <section id="overview">
+          <p>
+           The Calendar API provides different flavors of event resources, more information can be found in
+           <a href="https://developers.google.com/google-apps/calendar/concepts#events_resource">
+            About events
+           </a>
+           .
+          </p>
+          <p>
+           For a list of
+           <a href="#methods">
+            methods
+           </a>
+           for this resource, see the end of this page.
+          </p>
+         </section>
+         <section id="resource">
+          <h2>
+           Resource representations
+          </h2>
+          <p>
+          </p>
+          <section>
+           <pre class="prettyprint" id="alt-json" style="max-height: 500px; overflow: auto">{
+  "kind": "calendar#event",
+  "etag": <var class="apiparam">etag</var>,
+  "id": <var class="apiparam">string</var>,
+  "status": <var class="apiparam">string</var>,
+  "htmlLink": <var class="apiparam">string</var>,
+  "created": <var class="apiparam">datetime</var>,
+  "updated": <var class="apiparam">datetime</var>,
+  "summary": <var class="apiparam">string</var>,
+  "description": <var class="apiparam">string</var>,
+  "location": <var class="apiparam">string</var>,
+  "colorId": <var class="apiparam">string</var>,
+  "creator": {
+    "id": <var class="apiparam">string</var>,
+    "email": <var class="apiparam">string</var>,
+    "displayName": <var class="apiparam">string</var>,
+    "self": <var class="apiparam">boolean</var>
+  },
+  "organizer": {
+    "id": <var class="apiparam">string</var>,
+    "email": <var class="apiparam">string</var>,
+    "displayName": <var class="apiparam">string</var>,
+    "self": <var class="apiparam">boolean</var>
+  },
+  "start": {
+    "date": <var class="apiparam">date</var>,
+    "dateTime": <var class="apiparam">datetime</var>,
+    "timeZone": <var class="apiparam">string</var>
+  },
+  "end": {
+    "date": <var class="apiparam">date</var>,
+    "dateTime": <var class="apiparam">datetime</var>,
+    "timeZone": <var class="apiparam">string</var>
+  },
+  "endTimeUnspecified": <var class="apiparam">boolean</var>,
+  "recurrence": [
+    <var class="apiparam">string</var>
+  ],
+  "recurringEventId": <var class="apiparam">string</var>,
+  "originalStartTime": {
+    "date": <var class="apiparam">date</var>,
+    "dateTime": <var class="apiparam">datetime</var>,
+    "timeZone": <var class="apiparam">string</var>
+  },
+  "transparency": <var class="apiparam">string</var>,
+  "visibility": <var class="apiparam">string</var>,
+  "iCalUID": <var class="apiparam">string</var>,
+  "sequence": <var class="apiparam">integer</var>,
+  "attendees": [
+    {
+      "id": <var class="apiparam">string</var>,
+      "email": <var class="apiparam">string</var>,
+      "displayName": <var class="apiparam">string</var>,
+      "organizer": <var class="apiparam">boolean</var>,
+      "self": <var class="apiparam">boolean</var>,
+      "resource": <var class="apiparam">boolean</var>,
+      "optional": <var class="apiparam">boolean</var>,
+      "responseStatus": <var class="apiparam">string</var>,
+      "comment": <var class="apiparam">string</var>,
+      "additionalGuests": <var class="apiparam">integer</var>
+    }
+  ],
+  "attendeesOmitted": <var class="apiparam">boolean</var>,
+  "extendedProperties": {
+    "private": {
+      <var class="apiparam">(key)</var>: <var class="apiparam">string</var>
+    },
+    "shared": {
+      <var class="apiparam">(key)</var>: <var class="apiparam">string</var>
+    }
+  },
+  "hangoutLink": <var class="apiparam">string</var>,
+  "conferenceData": {
+    "createRequest": {
+      "requestId": <var class="apiparam">string</var>,
+      "conferenceSolutionKey": {
+        "type": <var class="apiparam">string</var>
+      },
+      "status": {
+        "statusCode": <var class="apiparam">string</var>
+      }
+    },
+    "entryPoints": [
+      {
+        "entryPointType": <var class="apiparam">string</var>,
+        "uri": <var class="apiparam">string</var>,
+        "label": <var class="apiparam">string</var>,
+        "pin": <var class="apiparam">string</var>,
+        "accessCode": <var class="apiparam">string</var>,
+        "meetingCode": <var class="apiparam">string</var>,
+        "passcode": <var class="apiparam">string</var>,
+        "password": <var class="apiparam">string</var>
+      }
+    ],
+    "conferenceSolution": {
+      "key": {
+        "type": <var class="apiparam">string</var>
+      },
+      "name": <var class="apiparam">string</var>,
+      "iconUri": <var class="apiparam">string</var>
+    },
+    "conferenceId": <var class="apiparam">string</var>,
+    "signature": <var class="apiparam">string</var>
+  },
+  "gadget": {
+    "type": <var class="apiparam">string</var>,
+    "title": <var class="apiparam">string</var>,
+    "link": <var class="apiparam">string</var>,
+    "iconLink": <var class="apiparam">string</var>,
+    "width": <var class="apiparam">integer</var>,
+    "height": <var class="apiparam">integer</var>,
+    "display": <var class="apiparam">string</var>,
+    "preferences": {
+      <var class="apiparam">(key)</var>: <var class="apiparam">string</var>
+    }
+  },
+  "anyoneCanAddSelf": <var class="apiparam">boolean</var>,
+  "guestsCanInviteOthers": <var class="apiparam">boolean</var>,
+  "guestsCanModify": <var class="apiparam">boolean</var>,
+  "guestsCanSeeOtherGuests": <var class="apiparam">boolean</var>,
+  "privateCopy": <var class="apiparam">boolean</var>,
+  "locked": <var class="apiparam">boolean</var>,
+  "reminders": {
+    "useDefault": <var class="apiparam">boolean</var>,
+    "overrides": [
+      {
+        "method": <var class="apiparam">string</var>,
+        "minutes": <var class="apiparam">integer</var>
+      }
+    ]
+  },
+  "source": {
+    "url": <var class="apiparam">string</var>,
+    "title": <var class="apiparam">string</var>
+  },
+  "attachments": [
+    {
+      "fileUrl": <var class="apiparam">string</var>,
+      "title": <var class="apiparam">string</var>,
+      "mimeType": <var class="apiparam">string</var>,
+      "iconLink": <var class="apiparam">string</var>,
+      "fileId": <var class="apiparam">string</var>
+    }
+  ]
+}</pre>
+           <table class="matchpre" id="properties">
+            <thead>
+             <tr>
+              <th>
+               Property name
+              </th>
+              <th>
+               Value
+              </th>
+              <th>
+               Description
+              </th>
+              <th>
+               Notes
+              </th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr id="anyoneCanAddSelf">
+              <td>
+               <code>
+                anyoneCanAddSelf
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether anyone can invite themselves to the event (currently works for Google+ events only). Optional. The default is False.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attachments">
+              <td>
+               <code>
+                attachments[]
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                list
+               </code>
+              </td>
+              <td>
+               File attachments for the event. Currently only Google Drive attachments are supported.
+               <p>
+                In order to modify attachments the
+                <code>
+                 supportsAttachments
+                </code>
+                request parameter should be set to
+                <code>
+                 true
+                </code>
+                .
+               </p>
+               <p>
+                There can be at most 25 attachments per event,
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attachments.fileId">
+              <td>
+               <code>
+                <span class="quiet">
+                 attachments[].
+                </span>
+                fileId
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               ID of the attached file. Read-only.
+               <p>
+                For Google Drive files, this is the ID of the corresponding
+                <a href="https://developers.google.com/drive/v3/reference/files">
+                 <code>
+                  Files
+                 </code>
+                </a>
+                resource entry in the Drive API.
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attachments.fileUrl">
+              <td>
+               <code>
+                <span class="quiet">
+                 attachments[].
+                </span>
+                fileUrl
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               URL link to the attachment.
+               <p>
+                For adding Google Drive file attachments use the same format as in
+                <code>
+                 alternateLink
+                </code>
+                property of the
+                <code>
+                 Files
+                </code>
+                resource in the Drive API.
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attachments.iconLink">
+              <td>
+               <code>
+                <span class="quiet">
+                 attachments[].
+                </span>
+                iconLink
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               URL link to the attachment's icon. Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attachments.mimeType">
+              <td>
+               <code>
+                <span class="quiet">
+                 attachments[].
+                </span>
+                mimeType
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Internet media type (MIME type) of the attachment.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attachments.title">
+              <td>
+               <code>
+                <span class="quiet">
+                 attachments[].
+                </span>
+                title
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Attachment title.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attendeesOmitted">
+              <td>
+               <code>
+                attendeesOmitted
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether attendees may have been omitted from the event's representation. When retrieving an event, this may be due to a restriction specified by the
+               <code>
+                maxAttendee
+               </code>
+               query parameter. When updating an event, this can be used to only update the participant's response. Optional. The default is False.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attendees">
+              <td>
+               <code>
+                attendees[]
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                list
+               </code>
+              </td>
+              <td>
+               The attendees of the event. See the
+               <a href="https://developers.google.com/google-apps/calendar/concepts.html#events_with_attendees">
+                Events with attendees
+               </a>
+               guide for more information on scheduling events with other calendar users.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attendees.additionalGuests">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                additionalGuests
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                integer
+               </code>
+              </td>
+              <td>
+               Number of additional guests. Optional. The default is 0.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attendees.comment">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                comment
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The attendee's response comment. Optional.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attendees.displayName">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                displayName
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The attendee's name, if available. Optional.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attendees.email">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                email
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The attendee's email address, if available. This field must be present when adding an attendee. It must be a valid email address as per
+               <a href="https://tools.ietf.org/html/rfc5322#section-3.4">
+                RFC5322
+               </a>
+               .
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attendees.id">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                id
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The attendee's Profile ID, if available. It corresponds to the
+               <code>
+                id
+               </code>
+               field in the
+               <a href="https://developers.google.com/+/web/api/rest/latest/people">
+                People collection of the Google+ API
+               </a>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attendees.optional">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                optional
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether this is an optional attendee. Optional. The default is False.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attendees.organizer">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                organizer
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether the attendee is the organizer of the event. Read-only. The default is False.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attendees.resource">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                resource
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether the attendee is a resource. Read-only. The default is False.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="attendees.responseStatus">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                responseStatus
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The attendee's response status. Possible values are:
+               <ul>
+                <li>
+                 "
+                 <code>
+                  needsAction
+                 </code>
+                 " - The attendee has not responded to the invitation.
+                </li>
+                <li>
+                 "
+                 <code>
+                  declined
+                 </code>
+                 " - The attendee has declined the invitation.
+                </li>
+                <li>
+                 "
+                 <code>
+                  tentative
+                 </code>
+                 " - The attendee has tentatively accepted the invitation.
+                </li>
+                <li>
+                 "
+                 <code>
+                  accepted
+                 </code>
+                 " - The attendee has accepted the invitation.
+                </li>
+               </ul>
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="attendees.self">
+              <td>
+               <code>
+                <span class="quiet">
+                 attendees[].
+                </span>
+                self
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether this entry represents the calendar on which this copy of the event appears. Read-only. The default is False.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="colorId">
+              <td>
+               <code>
+                colorId
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The color of the event. This is an ID referring to an entry in the
+               <code>
+                event
+               </code>
+               section of the colors definition (see the
+               <a href="https://developers.google.com/google-apps/calendar/v3/reference/colors">
+                colors endpoint
+               </a>
+               ). Optional.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="conferenceData">
+              <td>
+               <code>
+                conferenceData
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               The conference-related information, such as details of a Hangouts Meet conference. To create new conference details use the
+               <code>
+                createRequest
+               </code>
+               field. To persist your changes, remember to set the
+               <code>
+                conferenceDataVersion
+               </code>
+               request parameter to
+               <code>
+                1&lt;\code&gt; for all event modification requests.
+               </code>
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="conferenceData.conferenceId">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.
+                </span>
+                conferenceId
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The ID of the conference.
+               <p>
+                Can be used by developers to keep track of conferences, should not be displayed to users.
+               </p>
+               <p>
+                Values for solution types:
+               </p>
+               <ul>
+                <li>
+                 <code>
+                  "eventHangout"
+                 </code>
+                 : unset
+                </li>
+                <li>
+                 <code>
+                  "eventNamedHangout"
+                 </code>
+                 : the name of the Hangout.
+                </li>
+                <li>
+                 <code>
+                  "hangoutsMeet"
+                 </code>
+                 : the 10-letter meeting code, for example
+                 <code>
+                  "aaa-bbbb-ccc"
+                 </code>
+                 .
+                </li>
+               </ul>
+               Optional.
+               <p>
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.conferenceSolution">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.
+                </span>
+                conferenceSolution
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               The conference solution, such as Hangouts or Hangouts Meet.
+               <p>
+                Unset for a conference with failed create request.
+               </p>
+               <p>
+                Either
+                <code>
+                 conferenceSolution
+                </code>
+                and at least one
+                <code>
+                 entryPoint
+                </code>
+                , or
+                <code>
+                 createRequest
+                </code>
+                is required.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.conferenceSolution.iconUri">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.conferenceSolution.
+                </span>
+                iconUri
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The user-visible icon for this solution. Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.conferenceSolution.key">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.conferenceSolution.
+                </span>
+                key
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               The key which can uniquely identify the conference solution for this event.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.conferenceSolution.key.type">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.conferenceSolution.key.
+                </span>
+                type
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The conference solution type.
+               <p>
+                If a client encounters an unfamiliar or empty type, it should still be able to display the entry points. However, it should disallow modifications.
+               </p>
+               <p>
+                The possible values are:
+               </p>
+               <ul>
+                <li>
+                 <code>
+                  "eventHangout"
+                 </code>
+                 for Hangouts for consumers (http://hangouts.google.com)
+                </li>
+                <li>
+                 <code>
+                  "eventNamedHangout"
+                 </code>
+                 for Classic Hangouts for GSuite users (http://hangouts.google.com)
+                </li>
+                <li>
+                 <code>
+                  "hangoutsMeet"
+                 </code>
+                 for Hangouts Meet (http://meet.google.com)
+                </li>
+               </ul>
+               <p>
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.conferenceSolution.name">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.conferenceSolution.
+                </span>
+                name
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The user-visible name of this solution. Not localized. Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.createRequest">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.
+                </span>
+                createRequest
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               A request to generate a new conference and attach it to the event. The data is generated asynchronously. To see whether the data is present check the
+               <code>
+                status
+               </code>
+               field.
+               <p>
+                Either
+                <code>
+                 conferenceSolution
+                </code>
+                and at least one
+                <code>
+                 entryPoint
+                </code>
+                , or
+                <code>
+                 createRequest
+                </code>
+                is required.
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.createRequest.conferenceSolutionKey">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.createRequest.
+                </span>
+                conferenceSolutionKey
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               The conference solution, such as Hangouts or Hangouts Meet.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.createRequest.conferenceSolutionKey.type">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.createRequest.conferenceSolutionKey.
+                </span>
+                type
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The conference solution type.
+               <p>
+                If a client encounters an unfamiliar or empty type, it should still be able to display the entry points. However, it should disallow modifications.
+               </p>
+               <p>
+                The possible values are:
+               </p>
+               <ul>
+                <li>
+                 <code>
+                  "eventHangout"
+                 </code>
+                 for Hangouts for consumers (http://hangouts.google.com)
+                </li>
+                <li>
+                 <code>
+                  "eventNamedHangout"
+                 </code>
+                 for Classic Hangouts for GSuite users (http://hangouts.google.com)
+                </li>
+                <li>
+                 <code>
+                  "hangoutsMeet"
+                 </code>
+                 for Hangouts Meet (http://meet.google.com)
+                </li>
+               </ul>
+               <p>
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.createRequest.requestId">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.createRequest.
+                </span>
+                requestId
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The client-generated unique
+               <code>
+                ID
+               </code>
+               for this request.
+               <p>
+                Clients should regenerate this ID for every new request. If an ID provided is the same as for the previous request, the request is ignored.
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.createRequest.status">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.createRequest.
+                </span>
+                status
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               The status of the conference create request.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.createRequest.status.statusCode">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.createRequest.status.
+                </span>
+                statusCode
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The current status of the conference create request. Read-only.
+               <p>
+                The possible values are:
+               </p>
+               <ul>
+                <li>
+                 <code>
+                  "pending"
+                 </code>
+                 : the conference create request is still being processed.
+                </li>
+                <li>
+                 <code>
+                  "success"
+                 </code>
+                 : the conference create request succeeded, the entry points are populated.
+                </li>
+                <li>
+                 <code>
+                  "failure"
+                 </code>
+                 : the conference create request failed, there are no entry points.
+                </li>
+               </ul>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.
+                </span>
+                entryPoints[]
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                list
+               </code>
+              </td>
+              <td>
+               Information about individual conference entry points, such as URLs or phone numbers.
+               <p>
+                All of them must belong to the same conference.
+               </p>
+               <p>
+                Either
+                <code>
+                 conferenceSolution
+                </code>
+                and at least one
+                <code>
+                 entryPoint
+                </code>
+                , or
+                <code>
+                 createRequest
+                </code>
+                is required.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.accessCode">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                accessCode
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The
+               <code>
+                Access Code
+               </code>
+               to access the conference. The maximum length is 128 characters.
+               <p>
+                When creating new conference data, populate only the subset of {
+                <code>
+                 meetingCode
+                </code>
+                ,
+                <code>
+                 accessCode
+                </code>
+                ,
+                <code>
+                 passcode
+                </code>
+                ,
+                <code>
+                 password
+                </code>
+                ,
+                <code>
+                 pin
+                </code>
+                } fields that match the terminology that the conference provider uses. Only the populated fields should be displayed.
+               </p>
+               <p>
+                Optional.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.entryPointType">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                entryPointType
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The type of the conference entry point.
+               <p>
+                Possible values are:
+               </p>
+               <ul>
+                <li>
+                 <code>
+                  "video"
+                 </code>
+                 - joining a conference over
+                 <code>
+                  HTTP
+                 </code>
+                 . A conference can have zero or one
+                 <code>
+                  video
+                 </code>
+                 entry point.
+                </li>
+                <li>
+                 <code>
+                  "phone"
+                 </code>
+                 - joining a conference by dialing a phone number. A conference can have zero or more
+                 <code>
+                  phone
+                 </code>
+                 entry points.
+                </li>
+                <li>
+                 <code>
+                  "sip"
+                 </code>
+                 - joining a conference over
+                 <code>
+                  SIP
+                 </code>
+                 . A conference can have zero or one
+                 <code>
+                  sip
+                 </code>
+                 entry point.
+                </li>
+                <li>
+                 <code>
+                  "more"
+                 </code>
+                 - further conference joining instructions, for example additional phone numbers. A conference can have zero or one
+                 <code>
+                  more
+                 </code>
+                 entry point. A conference with only a
+                 <code>
+                  more
+                 </code>
+                 entry point is not a valid conference.
+                </li>
+               </ul>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.label">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                label
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The label for the URI.Visible to end users. Not localized. The maximum length is 512 characters.
+               <p>
+                Examples:
+               </p>
+               <ul>
+                <li>
+                 for video: meet.google.com/aaa-bbbb-ccc
+                </li>
+                <li>
+                 for phone: +1 123 268 2601
+                </li>
+                <li>
+                 for sip: sip:12345678@myprovider.com
+                </li>
+                <li>
+                 for more: should not be filled
+                </li>
+               </ul>
+               <p>
+                Optional.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.meetingCode">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                meetingCode
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The
+               <code>
+                Meeting Code
+               </code>
+               to access the conference. The maximum length is 128 characters.
+               <p>
+                When creating new conference data, populate only the subset of {
+                <code>
+                 meetingCode
+                </code>
+                ,
+                <code>
+                 accessCode
+                </code>
+                ,
+                <code>
+                 passcode
+                </code>
+                ,
+                <code>
+                 password
+                </code>
+                ,
+                <code>
+                 pin
+                </code>
+                } fields that match the terminology that the conference provider uses. Only the populated fields should be displayed.
+               </p>
+               <p>
+                Optional.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.passcode">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                passcode
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The
+               <code>
+                Passcode
+               </code>
+               to access the conference. The maximum length is 128 characters.
+               <p>
+                When creating new conference data, populate only the subset of {
+                <code>
+                 meetingCode
+                </code>
+                ,
+                <code>
+                 accessCode
+                </code>
+                ,
+                <code>
+                 passcode
+                </code>
+                ,
+                <code>
+                 password
+                </code>
+                ,
+                <code>
+                 pin
+                </code>
+                } fields that match the terminology that the conference provider uses. Only the populated fields should be displayed.
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.password">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                password
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The
+               <code>
+                Password
+               </code>
+               to access the conference. The maximum length is 128 characters.
+               <p>
+                When creating new conference data, populate only the subset of {
+                <code>
+                 meetingCode
+                </code>
+                ,
+                <code>
+                 accessCode
+                </code>
+                ,
+                <code>
+                 passcode
+                </code>
+                ,
+                <code>
+                 password
+                </code>
+                ,
+                <code>
+                 pin
+                </code>
+                } fields that match the terminology that the conference provider uses. Only the populated fields should be displayed.
+               </p>
+               <p>
+                Optional.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.pin">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                pin
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The
+               <code>
+                PIN
+               </code>
+               to access the conference. The maximum length is 128 characters.
+               <p>
+                When creating new conference data, populate only the subset of {
+                <code>
+                 meetingCode
+                </code>
+                ,
+                <code>
+                 accessCode
+                </code>
+                ,
+                <code>
+                 passcode
+                </code>
+                ,
+                <code>
+                 password
+                </code>
+                ,
+                <code>
+                 pin
+                </code>
+                } fields that match the terminology that the conference provider uses. Only the populated fields should be displayed.
+               </p>
+               <p>
+                Optional.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.entryPoints.uri">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.entryPoints[].
+                </span>
+                uri
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The
+               <code>
+                "URI"
+               </code>
+               of the entry point. The maximum length is 1300 characters.
+               <p>
+                Format:
+               </p>
+               <ul>
+                <li>
+                 for video, http: or https: schema is required.
+                </li>
+                <li>
+                 for phone, tel: schema is required. The URI should include the entire dial sequence (e.g., tel:+12345678900,,,123456789;1234).
+                </li>
+                <li>
+                 for sip, sip: schema is required, e.g., sip:12345678@myprovider.com.
+                </li>
+                <li>
+                 for more, http: or https: schema is required.
+                </li>
+               </ul>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="conferenceData.signature">
+              <td>
+               <code>
+                <span class="quiet">
+                 conferenceData.
+                </span>
+                signature
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The signature of the conference data.
+               <p>
+                Genereated on server side. Must be preserved while copying the conference data between events, otherwise the conference data will not be copied.
+               </p>
+               <p>
+                Unset for a conference with failed create request.
+               </p>
+               <p>
+                Optional for a conference with a pending create request.
+               </p>
+               <p>
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="created">
+              <td>
+               <code>
+                created
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                datetime
+               </code>
+              </td>
+              <td>
+               Creation time of the event (as a
+               <a href="https://tools.ietf.org/html/rfc3339">
+                RFC3339
+               </a>
+               timestamp). Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="creator">
+              <td>
+               <code>
+                creator
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               The creator of the event. Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="creator.displayName">
+              <td>
+               <code>
+                <span class="quiet">
+                 creator.
+                </span>
+                displayName
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The creator's name, if available.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="creator.email">
+              <td>
+               <code>
+                <span class="quiet">
+                 creator.
+                </span>
+                email
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The creator's email address, if available.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="creator.id">
+              <td>
+               <code>
+                <span class="quiet">
+                 creator.
+                </span>
+                id
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The creator's Profile ID, if available. It corresponds to the
+               <code>
+                id
+               </code>
+               field in the
+               <a href="https://developers.google.com/+/web/api/rest/latest/people">
+                People collection of the Google+ API
+               </a>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="creator.self">
+              <td>
+               <code>
+                <span class="quiet">
+                 creator.
+                </span>
+                self
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether the creator corresponds to the calendar on which this copy of the event appears. Read-only. The default is False.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="description">
+              <td>
+               <code>
+                description
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Description of the event. Optional.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="end">
+              <td>
+               <code>
+                end
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               The (exclusive) end time of the event. For a recurring event, this is the end time of the first instance.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="end.date">
+              <td>
+               <code>
+                <span class="quiet">
+                 end.
+                </span>
+                date
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                date
+               </code>
+              </td>
+              <td>
+               The date, in the format "yyyy-mm-dd", if this is an all-day event.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="end.dateTime">
+              <td>
+               <code>
+                <span class="quiet">
+                 end.
+                </span>
+                dateTime
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                datetime
+               </code>
+              </td>
+              <td>
+               The time, as a combined date-time value (formatted according to
+               <a href="https://tools.ietf.org/html/rfc3339">
+                RFC3339
+               </a>
+               ). A time zone offset is required unless a time zone is explicitly specified in
+               <code>
+                timeZone
+               </code>
+               .
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="end.timeZone">
+              <td>
+               <code>
+                <span class="quiet">
+                 end.
+                </span>
+                timeZone
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The time zone in which the time is specified. (Formatted as an IANA Time Zone Database name, e.g. "Europe/Zurich".) For recurring events this field is required and specifies the time zone in which the recurrence is expanded. For single events this field is optional and indicates a custom time zone for the event start/end.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="endTimeUnspecified">
+              <td>
+               <code>
+                endTimeUnspecified
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether the end time is actually unspecified. An end time is still provided for compatibility reasons, even if this attribute is set to True. The default is False.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="etag">
+              <td>
+               <code>
+                etag
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                etag
+               </code>
+              </td>
+              <td>
+               ETag of the resource.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="extendedProperties">
+              <td>
+               <code>
+                extendedProperties
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               Extended properties of the event.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="extendedProperties.private">
+              <td>
+               <code>
+                <span class="quiet">
+                 extendedProperties.
+                </span>
+                private
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               Properties that are private to the copy of the event that appears on this calendar.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="extendedProperties.private.(key)">
+              <td>
+               <code>
+                <span class="quiet">
+                 extendedProperties.private.
+                </span>
+                (key)
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The name of the private property and the corresponding value.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="extendedProperties.shared">
+              <td>
+               <code>
+                <span class="quiet">
+                 extendedProperties.
+                </span>
+                shared
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               Properties that are shared between copies of the event on other attendees' calendars.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="extendedProperties.shared.(key)">
+              <td>
+               <code>
+                <span class="quiet">
+                 extendedProperties.shared.
+                </span>
+                (key)
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The name of the shared property and the corresponding value.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="gadget">
+              <td>
+               <code>
+                gadget
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               A gadget that extends this event.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="gadget.display">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                display
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The gadget's display mode. Optional. Possible values are:
+               <ul>
+                <li>
+                 "
+                 <code>
+                  icon
+                 </code>
+                 " - The gadget displays next to the event's title in the calendar view.
+                </li>
+                <li>
+                 "
+                 <code>
+                  chip
+                 </code>
+                 " - The gadget displays when the event is clicked.
+                </li>
+               </ul>
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="gadget.height">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                height
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                integer
+               </code>
+              </td>
+              <td>
+               The gadget's height in pixels. The height must be an integer greater than 0. Optional.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="gadget.iconLink">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                iconLink
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The gadget's icon URL. The URL scheme must be HTTPS.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="gadget.link">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                link
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The gadget's URL. The URL scheme must be HTTPS.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="gadget.preferences">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                preferences
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               Preferences.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="gadget.preferences.(key)">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.preferences.
+                </span>
+                (key)
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The preference name and corresponding value.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="gadget.title">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                title
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The gadget's title.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="gadget.type">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                type
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The gadget's type.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="gadget.width">
+              <td>
+               <code>
+                <span class="quiet">
+                 gadget.
+                </span>
+                width
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                integer
+               </code>
+              </td>
+              <td>
+               The gadget's width in pixels. The width must be an integer greater than 0. Optional.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="guestsCanInviteOthers">
+              <td>
+               <code>
+                guestsCanInviteOthers
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether attendees other than the organizer can invite others to the event. Optional. The default is True.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="guestsCanModify">
+              <td>
+               <code>
+                guestsCanModify
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether attendees other than the organizer can modify the event. Optional. The default is False.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="guestsCanSeeOtherGuests">
+              <td>
+               <code>
+                guestsCanSeeOtherGuests
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether attendees other than the organizer can see who the event's attendees are. Optional. The default is True.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="hangoutLink">
+              <td>
+               <code>
+                hangoutLink
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               An absolute link to the Google+ hangout associated with this event. Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="htmlLink">
+              <td>
+               <code>
+                htmlLink
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               An absolute link to this event in the Google Calendar Web UI. Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="iCalUID">
+              <td>
+               <code>
+                iCalUID
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Event unique identifier as defined in
+               <a href="https://tools.ietf.org/html/rfc5545#section-3.8.4.7">
+                RFC5545
+               </a>
+               . It is used to uniquely identify events accross calendaring systems and must be supplied when importing events via the
+               <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/import">
+                import
+               </a>
+               method.
+               <p>
+                Note that the
+                <code>
+                 icalUID
+                </code>
+                and the
+                <code>
+                 id
+                </code>
+                are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all occurrences of one event have different
+                <code>
+                 id
+                </code>
+                s while they all share the same
+                <code>
+                 icalUID
+                </code>
+                s.
+               </p>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="id">
+              <td>
+               <code>
+                id
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Opaque identifier of the event. When creating new single or recurring events, you can specify their IDs. Provided IDs must follow these rules:
+               <ul>
+                <li>
+                 characters allowed in the ID are those used in base32hex encoding, i.e. lowercase letters a-v and digits 0-9, see section 3.1.2 in
+                 <a href="http://tools.ietf.org/html/rfc2938#section-3.1.2">
+                  RFC2938
+                 </a>
+                </li>
+                <li>
+                 the length of the ID must be between 5 and 1024 characters
+                </li>
+                <li>
+                 the ID must be unique per calendar
+                </li>
+               </ul>
+               Due to the globally distributed nature of the system, we cannot guarantee that ID collisions will be detected at event creation time. To minimize the risk of collisions we recommend using an established UUID algorithm such as one described in
+               <a href="https://tools.ietf.org/html/rfc4122">
+                RFC4122
+               </a>
+               .
+               <p>
+                If you do not specify an ID, it will be automatically generated by the server.
+               </p>
+               <p>
+                Note that the
+                <code>
+                 icalUID
+                </code>
+                and the
+                <code>
+                 id
+                </code>
+                are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all occurrences of one event have different
+                <code>
+                 id
+                </code>
+                s while they all share the same
+                <code>
+                 icalUID
+                </code>
+                s.
+               </p>
+               <p>
+               </p>
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="kind">
+              <td>
+               <code>
+                kind
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Type of the resource ("
+               <code>
+                calendar#event
+               </code>
+               ").
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="location">
+              <td>
+               <code>
+                location
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Geographic location of the event as free-form text. Optional.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="locked">
+              <td>
+               <code>
+                locked
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether this is a locked event copy where no changes can be made to the main event fields "summary", "description", "location", "start", "end" or "recurrence". The default is False. Read-Only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="organizer">
+              <td>
+               <code>
+                organizer
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               The organizer of the event. If the organizer is also an attendee, this is indicated with a separate entry in
+               <code>
+                attendees
+               </code>
+               with the
+               <code>
+                organizer
+               </code>
+               field set to True. To change the organizer, use the
+               <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/move">
+                move
+               </a>
+               operation. Read-only, except when importing an event.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="organizer.displayName">
+              <td>
+               <code>
+                <span class="quiet">
+                 organizer.
+                </span>
+                displayName
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The organizer's name, if available.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="organizer.email">
+              <td>
+               <code>
+                <span class="quiet">
+                 organizer.
+                </span>
+                email
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The organizer's email address, if available. It must be a valid email address as per
+               <a href="https://tools.ietf.org/html/rfc5322#section-3.4">
+                RFC5322
+               </a>
+               .
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="organizer.id">
+              <td>
+               <code>
+                <span class="quiet">
+                 organizer.
+                </span>
+                id
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The organizer's Profile ID, if available. It corresponds to the
+               <code>
+                id
+               </code>
+               field in the
+               <a href="https://developers.google.com/+/web/api/rest/latest/people">
+                People collection of the Google+ API
+               </a>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="organizer.self">
+              <td>
+               <code>
+                <span class="quiet">
+                 organizer.
+                </span>
+                self
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether the organizer corresponds to the calendar on which this copy of the event appears. Read-only. The default is False.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="originalStartTime">
+              <td>
+               <code>
+                originalStartTime
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               For an instance of a recurring event, this is the time at which this event would start according to the recurrence data in the recurring event identified by recurringEventId. Immutable.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="originalStartTime.date">
+              <td>
+               <code>
+                <span class="quiet">
+                 originalStartTime.
+                </span>
+                date
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                date
+               </code>
+              </td>
+              <td>
+               The date, in the format "yyyy-mm-dd", if this is an all-day event.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="originalStartTime.dateTime">
+              <td>
+               <code>
+                <span class="quiet">
+                 originalStartTime.
+                </span>
+                dateTime
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                datetime
+               </code>
+              </td>
+              <td>
+               The time, as a combined date-time value (formatted according to
+               <a href="https://tools.ietf.org/html/rfc3339">
+                RFC3339
+               </a>
+               ). A time zone offset is required unless a time zone is explicitly specified in
+               <code>
+                timeZone
+               </code>
+               .
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="originalStartTime.timeZone">
+              <td>
+               <code>
+                <span class="quiet">
+                 originalStartTime.
+                </span>
+                timeZone
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The time zone in which the time is specified. (Formatted as an IANA Time Zone Database name, e.g. "Europe/Zurich".) For recurring events this field is required and specifies the time zone in which the recurrence is expanded. For single events this field is optional and indicates a custom time zone for the event start/end.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="privateCopy">
+              <td>
+               <code>
+                privateCopy
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether this is a private event copy where changes are not shared with other copies on other calendars. Optional. Immutable. The default is False.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="recurrence">
+              <td>
+               <code>
+                recurrence[]
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                list
+               </code>
+              </td>
+              <td>
+               List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event, as specified in
+               <a href="http://tools.ietf.org/html/rfc5545#section-3.8.5">
+                RFC5545
+               </a>
+               . Note that DTSTART and DTEND lines are not allowed in this field; event start and end times are specified in the
+               <code>
+                start
+               </code>
+               and
+               <code>
+                end
+               </code>
+               fields. This field is omitted for single events or instances of recurring events.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="recurringEventId">
+              <td>
+               <code>
+                recurringEventId
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               For an instance of a recurring event, this is the
+               <code>
+                id
+               </code>
+               of the recurring event to which this instance belongs. Immutable.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="reminders">
+              <td>
+               <code>
+                reminders
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               Information about the event's reminders for the authenticated user.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="reminders.overrides">
+              <td>
+               <code>
+                <span class="quiet">
+                 reminders.
+                </span>
+                overrides[]
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                list
+               </code>
+              </td>
+              <td>
+               If the event doesn't use the default reminders, this lists the reminders specific to the event, or, if not set, indicates that no reminders are set for this event. The maximum number of override reminders is 5.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="reminders.overrides.method">
+              <td>
+               <code>
+                <span class="quiet">
+                 reminders.overrides[].
+                </span>
+                method
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The method used by this reminder. Possible values are:
+               <ul>
+                <li>
+                 "
+                 <code>
+                  email
+                 </code>
+                 " - Reminders are sent via email.
+                </li>
+                <li>
+                 "
+                 <code>
+                  sms
+                 </code>
+                 " - Reminders are sent via SMS. These are only available for G Suite customers. Requests to set SMS reminders for other account types are ignored.
+                </li>
+                <li>
+                 "
+                 <code>
+                  popup
+                 </code>
+                 " - Reminders are sent via a UI popup.
+                </li>
+               </ul>
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="reminders.overrides.minutes">
+              <td>
+               <code>
+                <span class="quiet">
+                 reminders.overrides[].
+                </span>
+                minutes
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                integer
+               </code>
+              </td>
+              <td>
+               Number of minutes before the start of the event when the reminder should trigger. Valid values are between 0 and 40320 (4 weeks in minutes).
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="reminders.useDefault">
+              <td>
+               <code>
+                <span class="quiet">
+                 reminders.
+                </span>
+                useDefault
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                boolean
+               </code>
+              </td>
+              <td>
+               Whether the default reminders of the calendar apply to the event.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="sequence">
+              <td>
+               <code>
+                sequence
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                integer
+               </code>
+              </td>
+              <td>
+               Sequence number as per iCalendar.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="source">
+              <td>
+               <code>
+                source
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                object
+               </code>
+              </td>
+              <td>
+               Source from which the event was created. For example, a web page, an email message or any document identifiable by an URL with HTTP or HTTPS scheme. Can only be seen or modified by the creator of the event.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="source.title">
+              <td>
+               <code>
+                <span class="quiet">
+                 source.
+                </span>
+                title
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Title of the source; for example a title of a web page or an email subject.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="source.url">
+              <td>
+               <code>
+                <span class="quiet">
+                 source.
+                </span>
+                url
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               URL of the source pointing to a resource. The URL scheme must be HTTP or HTTPS.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="start">
+              <td>
+               <code>
+                start
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                nested object
+               </code>
+              </td>
+              <td>
+               The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="start.date">
+              <td>
+               <code>
+                <span class="quiet">
+                 start.
+                </span>
+                date
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                date
+               </code>
+              </td>
+              <td>
+               The date, in the format "yyyy-mm-dd", if this is an all-day event.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="start.dateTime">
+              <td>
+               <code>
+                <span class="quiet">
+                 start.
+                </span>
+                dateTime
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                datetime
+               </code>
+              </td>
+              <td>
+               The time, as a combined date-time value (formatted according to
+               <a href="https://tools.ietf.org/html/rfc3339">
+                RFC3339
+               </a>
+               ). A time zone offset is required unless a time zone is explicitly specified in
+               <code>
+                timeZone
+               </code>
+               .
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="start.timeZone">
+              <td>
+               <code>
+                <span class="quiet">
+                 start.
+                </span>
+                timeZone
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               The time zone in which the time is specified. (Formatted as an IANA Time Zone Database name, e.g. "Europe/Zurich".) For recurring events this field is required and specifies the time zone in which the recurrence is expanded. For single events this field is optional and indicates a custom time zone for the event start/end.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="status">
+              <td>
+               <code>
+                status
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Status of the event. Optional. Possible values are:
+               <ul>
+                <li>
+                 "
+                 <code>
+                  confirmed
+                 </code>
+                 " - The event is confirmed. This is the default status.
+                </li>
+                <li>
+                 "
+                 <code>
+                  tentative
+                 </code>
+                 " - The event is tentatively confirmed.
+                </li>
+                <li>
+                 "
+                 <code>
+                  cancelled
+                 </code>
+                 " - The event is cancelled.
+                </li>
+               </ul>
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="summary">
+              <td>
+               <code>
+                summary
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Title of the event.
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="transparency">
+              <td>
+               <code>
+                transparency
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Whether the event blocks time on the calendar. Optional. Possible values are:
+               <ul>
+                <li>
+                 "
+                 <code>
+                  opaque
+                 </code>
+                 " - Default value. The event does block time on the calendar. This is equivalent to setting
+                 <strong>
+                  Show me as
+                 </strong>
+                 to
+                 <strong>
+                  Busy
+                 </strong>
+                 in the Calendar UI.
+                </li>
+                <li>
+                 "
+                 <code>
+                  transparent
+                 </code>
+                 " - The event does not block time on the calendar. This is equivalent to setting
+                 <strong>
+                  Show me as
+                 </strong>
+                 to
+                 <strong>
+                  Available
+                 </strong>
+                 in the Calendar UI.
+                </li>
+               </ul>
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+             <tr id="updated">
+              <td>
+               <code>
+                updated
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                datetime
+               </code>
+              </td>
+              <td>
+               Last modification time of the event (as a
+               <a href="https://tools.ietf.org/html/rfc3339">
+                RFC3339
+               </a>
+               timestamp). Read-only.
+              </td>
+              <td>
+              </td>
+             </tr>
+             <tr id="visibility">
+              <td>
+               <code>
+                visibility
+               </code>
+              </td>
+              <td>
+               <code class="apitype">
+                string
+               </code>
+              </td>
+              <td>
+               Visibility of the event. Optional. Possible values are:
+               <ul>
+                <li>
+                 "
+                 <code>
+                  default
+                 </code>
+                 " - Uses the default visibility for events on the calendar. This is the default value.
+                </li>
+                <li>
+                 "
+                 <code>
+                  public
+                 </code>
+                 " - The event is public and event details are visible to all readers of the calendar.
+                </li>
+                <li>
+                 "
+                 <code>
+                  private
+                 </code>
+                 " - The event is private and only event attendees may view event details.
+                </li>
+                <li>
+                 "
+                 <code>
+                  confidential
+                 </code>
+                 " - The event is private. This value is provided for compatibility reasons.
+                </li>
+               </ul>
+              </td>
+              <td>
+               writable
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </section>
+         </section>
+         <section id="methods">
+          <h2>
+           Methods
+          </h2>
+          <dl>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/delete">
+             delete
+            </a>
+           </dt>
+           <dd>
+            Deletes an event.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/get">
+             get
+            </a>
+           </dt>
+           <dd>
+            Returns an event.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/import">
+             import
+            </a>
+           </dt>
+           <dd>
+            Imports an event. This operation is used to add a private copy of an existing event to a calendar.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/insert">
+             insert
+            </a>
+           </dt>
+           <dd>
+            Creates an event.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/instances">
+             instances
+            </a>
+           </dt>
+           <dd>
+            Returns instances of the specified recurring event.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/list">
+             list
+            </a>
+           </dt>
+           <dd>
+            Returns events on the specified calendar.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/move">
+             move
+            </a>
+           </dt>
+           <dd>
+            Moves an event to another calendar, i.e. changes an event's organizer.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/patch">
+             patch
+            </a>
+           </dt>
+           <dd>
+            Updates an event. This method supports patch semantics.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/quickAdd">
+             quickAdd
+            </a>
+           </dt>
+           <dd>
+            Creates an event based on a simple text string.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/update">
+             update
+            </a>
+           </dt>
+           <dd>
+            Updates an event.
+           </dd>
+           <dt>
+            <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/watch">
+             watch
+            </a>
+           </dt>
+           <dd>
+            Watch for changes to Events resources.
+           </dd>
+          </dl>
+         </section>
+        </div>
+       </div>
+       <div class="devsite-content-footer nocontent">
+        <p>
+         Except as otherwise noted, the content of this page is licensed under the
+         <a href="http://creativecommons.org/licenses/by/3.0/">
+          Creative Commons Attribution 3.0 License
+         </a>
+         , and code samples are licensed under the
+         <a href="http://www.apache.org/licenses/LICENSE-2.0">
+          Apache 2.0 License
+         </a>
+         . For details, see our
+         <a href="https://developers.google.com/terms/site-policies">
+          Site Policies
+         </a>
+         . Java is a registered trademark of Oracle and/or its affiliates.
+        </p>
+        <p class="devsite-content-footer-date" content="2017-12-13T13:57:58.451450" itemprop="datePublished">
+         Last updated December 13, 2017.
+        </p>
+       </div>
+      </article>
+     </article>
+    </div>
+    <footer class="devsite-footer-promos nocontent">
+     <nav class="devsite-full-site-width">
+      <ul class="devsite-footer-promos-list">
+       <li class="devsite-footer-promo">
+        <a class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo" href="https://gsuite-developers.googleblog.com">
+         <img class="devsite-footer-promo-icon" src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"/>
+         Blog
+        </a>
+        <div class="devsite-footer-promo-description">
+         Stay up-to-date on developing for G Suite
+        </div>
+       </li>
+       <li class="devsite-footer-promo">
+        <a class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo" href="https://stackoverflow.com/questions/tagged/google-calendar">
+         <img class="devsite-footer-promo-icon" src="https://developers.google.com/site-assets/logo-stack-overflow.svg"/>
+         Stack Overflow
+        </a>
+        <div class="devsite-footer-promo-description">
+         Ask questions with the google-calendar tag
+        </div>
+       </li>
+       <li class="devsite-footer-promo">
+        <a class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo" href="https://developers.google.com/google-apps/calendar/downloads">
+         <div class="devsite-footer-promo-icon material-icons">
+          file_download
+         </div>
+         Client Libraries
+        </a>
+        <div class="devsite-footer-promo-description">
+         Download a client library for your preferred language
+        </div>
+       </li>
+      </ul>
+     </nav>
+    </footer>
+    <footer class="devsite-footer-linkboxes nocontent devsite-footer-linkboxes-with-sites">
+     <nav class="devsite-full-site-width">
+      <ul class="devsite-footer-linkboxes-list">
+       <li class="devsite-footer-linkbox ">
+        <h3 class="devsite-footer-linkbox-heading">
+         Product Info
+        </h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/google-apps/calendar/downloads">
+           Downloads
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/terms">
+           Terms of Service
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/google-apps/calendar/pricing">
+           Usage Limits
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/google-apps/calendar/v3/whats-new">
+           What's New in v3
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-footer-linkbox ">
+        <h3 class="devsite-footer-linkbox-heading">
+         Related APIs
+        </h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/gmail">
+           Gmail
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/structured-data">
+           Structured Data
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/drive">
+           Google Drive
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox" href="https://developers.google.com/apps-script/reference/calendar">
+           Calendar Service in Apps Script
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-footer-linkbox devsite-footer-linkbox-backup">
+        <h3 class="devsite-footer-linkbox-heading">
+         Developer Consoles
+        </h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Console" href="//console.developers.google.com">
+           Google API Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Console" href="//console.cloud.google.com">
+           Google Cloud Platform Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Play Console" href="//play.google.com/apps/publish/">
+           Google Play Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Console" href="//console.firebase.google.com">
+           Firebase Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Cast SDK Developer Console" href="//cast.google.com/publish/">
+           Cast SDK Developer Console
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Web Store Developer Dashboard" href="//chrome.google.com/webstore/developer/dashboard">
+           Chrome Web Store Dashboard
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="devsite-footer-linkbox devsite-footer-linkbox-sites">
+        <a class="gc-analytics-event devsite-footer-linkbox-logo-link" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link" href="https://developers.google.com/">
+         <img class="devsite-footer-linkbox-logo" src="https://developers.google.com/_static/18908e5f48/images/redesign-14/lockup-color-knockout.png"/>
+        </a>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link" href="//developer.android.com/index.html">
+           Android
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link" href="//developer.chrome.com/home">
+           Chrome
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link" href="//firebase.google.com">
+           Firebase
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Cloud Link" href="//cloud.google.com">
+           Google Cloud Platform
+          </a>
+         </li>
+         <li class="devsite-footer-linkbox-item">
+          <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Products Link" href="//developers.google.com/products/">
+           All Products
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </nav>
+    </footer>
+    <footer class="devsite-utility-footer">
+     <nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width">
+      <div class="devsite-utility-footer-nav-left">
+       <form action="/i18n/setlang/" class="devsite-utility-footer-language" method="post">
+        <input name="xsrf_token" type="hidden" value="DxsLAxpLOq1zCNSgRnxkN8NhwL3hhQbWKAJLsXNcPZg6MTUxODAwNzk0NzY4MTE5MA"/>
+        <input name="next" type="hidden" value="/google-apps/calendar/v3/reference/events"/>
+        <select class="devsite-utility-footer-language-select kd-select" name="language" track-name="click" track-type="languageSelector">
+         <option track-metadata-original-language="en" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector" value="id">
+          Bahasa Indonesia
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector" value="de">
+          Deutsch
+         </option>
+         <option selected="selected" track-metadata-original-language="en" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector" value="en">
+          English
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector" value="es">
+          español
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector" value="fr">
+          français
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="pt-br" track-name="changed" track-type="languageSelector" value="pt-br">
+          Português Brasileiro
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector" value="ru">
+          Русский
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector" value="ja">
+          日本語
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="zh-cn" track-name="changed" track-type="languageSelector" value="zh-cn">
+          简体中文
+         </option>
+         <option track-metadata-original-language="en" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector" value="ko">
+          한국어
+         </option>
+        </select>
+       </form>
+       <span class="devsite-utility-footer-links">
+        <a class="devsite-utility-footer-link gc-analytics-event" data-category="Site-Wide Custom Events" data-footer-link-id="terms" data-label="Footer terms link" href="https://developers.google.com/terms/site-terms">
+         Terms
+        </a>
+        <a class="devsite-utility-footer-link gc-analytics-event" data-category="Site-Wide Custom Events" data-footer-link-id="privacy" data-label="Footer privacy link" href="https://www.google.com/policies/privacy/">
+         Privacy
+        </a>
+       </span>
+      </div>
+      <div class="devsite-utility-footer-nav-right">
+       <div class="devsite-utility-footer-newsletter-signup-text">
+        Sign up for the Google Developers newsletter
+       </div>
+       <a class="button button-primary devsite-utility-footer-newsletter-signup-button" href="https://services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch">
+        Subscribe
+       </a>
+      </div>
+     </nav>
+    </footer>
+    <div class="devsite-feedback-dialog devsite-dialog">
+     <div class="devsite-dialog-contents">
+      <h3>
+       Send feedback about...
+      </h3>
+      <div class="devsite-feedback-item">
+       <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Docs Feedback Image" data-type="documentation" track-metadata-position="header" track-name="feedbackDocIcon" track-type="feedback">
+        <div class="devsite-feedback-item-icon-container">
+         <div class="devsite-feedback-item-icon-white devsite-feedback-item-icon-docs material-icons">
+         </div>
+        </div>
+       </a>
+       <div class="devsite-feedback-item-name">
+        This page
+       </div>
+       <div class="devsite-feedback-item-description">
+        <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Docs Feedback Text" data-type="documentation" tabindex="0" track-metadata-position="header" track-name="feedbackDocText" track-type="feedback">
+         Documentation feedback
+        </a>
+       </div>
+      </div>
+      <div class="devsite-feedback-item">
+       <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Product Feedback Image" data-type="product" href="https://issuetracker.google.com/issues/new?component=191627&amp;template=823906" tabindex="0" track-metadata-position="header" track-name="feedbackProductIcon" track-type="feedback">
+        <img alt="Calendar API" class="devsite-feedback-item-icon" src="https://www.gstatic.com/images/branding/product/1x/calendar_64dp.png"/>
+       </a>
+       <div class="devsite-feedback-item-name">
+        Calendar API
+       </div>
+       <div class="devsite-feedback-item-description">
+        <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Product Feedback Text" data-type="product" href="https://issuetracker.google.com/issues/new?component=191627&amp;template=823906" tabindex="0" track-metadata-position="header" track-name="feedbackProductText" track-type="feedback">
+         Product feedback
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="devsite-dialog-buttons">
+      <button class="devsite-feedback-cancel button-white gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Cancel Feedback Button" track-metadata-position="header" track-name="cancelFeedbackButton" track-type="feedback" type="button">
+       Cancel
+      </button>
+     </div>
+    </div>
+    <script>
+     $(document).ready(function() {
+    new devsite.feedback.Widget({
+        'product_id': '717201',
+        'bucket': 'calendar',
+        'context': '',
+        'version': 'devsite-20180201-r03-rc00.default'
+      },
+      document.querySelectorAll('.devsite-feedback-button'),
+      'en',
+      document.querySelector('.devsite-site-mask'),
+      document.querySelector('.devsite-feedback-dialog'),
+      document.querySelector('.devsite-feedback-cancel'),
+      document.querySelectorAll('.devsite-feedback-item a:not([href])')
+    );
+  });
+    </script>
+   </div>
+   <script async="" defer="" src="//www.gstatic.com/feedback/api.js">
+   </script>
+   <script src="https://developers.google.com/_static2/18908e5f48/jsi18n/">
+   </script>
+   <script src="https://developers.google.com/_static/18908e5f48/js/script_foot_closure.js">
+   </script>
+   <script src="https://developers.google.com/_static/18908e5f48/js/script_foot.js">
+   </script>
+   <script>
+    (function($) {
+          
+          devsite.devsite.Init($, {'FULL_SITE_SEARCH_ENABLED': 1, 'ENABLE_BLOCKED_VIDEO_PLACEHOLDER': 0, 'VERSION_HASH': '18908e5f48', 'SITE_NAME': 'devsite', 'HISTORY_ENABLED': 1, 'ENABLE_BLOCKED_LINK_TOOLTIP': 0, 'ALLOWED_HOSTS': ['.android.com', '.anvato.com', '.apigee.com', '.appspot.com', '.dialogflow.com', '.gonglchuangl.net', '.google.cn', '.google.com', '.googleplex.com', '.nest.com', '.openthread.io', '.openweave.io', '.orbitera.com', '.tensorflow.org'], 'BLOCK_RSS_FEEDS': 0, 'SCRIPTSAFE_DOMAIN': 'google-developers.appspot.com'},
+                               '[]','en',
+                               true, '',
+                               {"f62218c009ec029abef196bba5aa34cf": true, "098dafe57affddc137df300142652cfd": false, "8e03e230de0bd8a6fe173fdf172e8b3f": true, "cb025a64a50094835616312f4774a53d": true, "51470233c56fc1fde50f00b73c52b216": false, "d169d485cf24243a263783dbe42029b1": true, "039e5d84b87fd75807ffb37b7f1bbf2c": true, "752953480de00a336d911a46966cc16d": false, "700def1a83e356c06c0925afb05de4b0": false, "6749dcb526ce9bde6993550c7d928d24": true}, '/google-apps/calendar/',
+                               'https://developers.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+   </script>
+   <script>
+    $('.devsite-utility-footer-language-select').each(function() {
+        $(this).change(function(){$('.devsite-utility-footer-language').submit();});
+      });
+   </script>
+   <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=paewx4mdhuzny4k5rewdgkq2cy">
+   </script>
+  </div>
+  <span data-request-elapsed="284.739971161" id="devsite-request-elapsed">
+  </span>
+ </body>
+</html>

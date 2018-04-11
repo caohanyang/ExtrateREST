@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=5, IE=8, IE=9, IE=10" http-equiv="X-UA-Compatible"/>
+  <meta content="Access data and manage settings of your Monitis account without logging into dashboard. Learn more about Monitis REST API here." name="description"/>
+  <link href="http://www.monitis.com/docs/api.html" rel="canonical"/>
+  <link href="img/favicon.ico" rel="shortcut icon" type="images/x-icon"/>
+  <link href="style/main.css" rel="stylesheet" type="text/css"/>
+  <link href="style/style.css" rel="stylesheet" type="text/css"/>
+  <link href="style/testingPage.css" rel="stylesheet" type="text/css"/>
+  <script src="js/jquery-1.7.1.min.js" type="text/javascript">
+  </script>
+  <script src="js/upbutton.js" type="text/javascript">
+  </script>
+  <title>
+   Monitis API documentation
+  </title>
+  <script>
+   function getAPIInfo(iFrame) {
+                var iFrameBody;
+                if (iFrame.contentDocument) { // FF
+                    iFrameBody = iFrame.contentDocument.getElementsByTagName('body')[0];
+                } else if (iFrame.contentWindow) { // IE
+                    iFrameBody = iFrame.contentWindow.document.getElementsByTagName('body')[0];
+                }
+                iFrame.parentNode.innerHTML = iFrameBody.firstChild.innerHTML;
+            }
+            function goToTarget(){
+              	if(document.URL.indexOf("#")>0)
+                	window.location = document.URL;
+            };
+            function calculateHeight() {
+                var theHeight;
+                if (typeof(window.innerWidth) == 'number') { //Non-IE
+                    theHeight = window.innerHeight;
+                } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {//IE 6+ in 'standards compliant mode'
+                    theHeight = document.documentElement.clientHeight;
+                }
+                if (typeof tabsContHeight == "undefined") {
+                    tabsContHeight = 32;
+                }
+                var isIE = typeof window.ActiveXObject != "undefined";
+                theHeight = theHeight - tabsContHeight - (isIE ? 28 : 33);
+                document.getElementById("apiDoc").style.height = theHeight + 'px';           
+            }
+  </script>
+ </head>
+ <body onload="calculateHeight();
+														    initChecksumCalcTool();
+														    new ApiTest().init();
+														    goToTarget();" onresize="calculateHeight()" scroll="no">
+  <table id="apiDoc">
+   <tbody>
+    <tr>
+     <td class="titleimg">
+      <img src="img/logoApi.png"/>
+     </td>
+     <td class="titleText">
+      Monitis REST API Documentation
+     </td>
+    </tr>
+    <tr>
+     <td class="apiDocMap">
+      <ul>
+       <li>
+        <a href="#why">
+         Why use Monitis REST API?
+        </a>
+       </li>
+       <li>
+        <a href="#why_custom">
+         Why use Custom Monitor API?
+        </a>
+       </li>
+       <li>
+        <a href="#sdk">
+         SDK
+        </a>
+       </li>
+       <li>
+        <a href="#auth">
+         Authentication and Validation
+        </a>
+       </li>
+       <li>
+        <a href="#apibaseurl">
+         API URL
+        </a>
+       </li>
+       <li>
+        <a href="#requestStructure">
+         Request Structure
+        </a>
+       </li>
+       <li>
+        <a href="#requestStructureForRes">
+         Additional Parameters for Resellers
+        </a>
+       </li>
+       <li>
+        <a href="#responseFormat">
+         Response format
+        </a>
+       </li>
+       <li>
+        <a href="#parametersEncoding">
+         Parameters Encoding
+        </a>
+       </li>
+       <li>
+        <a href="#versions">
+         Version 3 vs version 2
+        </a>
+       </li>
+       <li>
+        <a href="apiActions.html" target="_blank">
+         API actions
+        </a>
+       </li>
+       <li>
+        <a href="customApiActions.html" target="_blank">
+         Custom Monitor API actions
+        </a>
+       </li>
+       <li>
+        <a href="#publicKey">
+         Public keys
+        </a>
+       </li>
+       <li>
+        <a href="#monitorTypes">
+         Monitor Types
+        </a>
+       </li>
+       <li>
+        <a href="#apiTest">
+         Testing tool
+        </a>
+       </li>
+      </ul>
+     </td>
+     <td class="main">
+      <div>
+       <h3 id="why" style="margin-top: 25px;">
+        Why use Monitis REST API?
+       </h3>
+       <div>
+        Monitis REST API makes it possible to access data and manage settings of your Monitis account without logging into dashboard 
+	                        thus allowing you to build your own application on top of Monitis. 
+	                        Suppose you’ve got a website which is being monitored in Monitis and you want to see the monitoring data in your admin panel. 
+	                        You can write a small script to retrieve the monitoring data via Monitis API and show it in your admin panel. 
+	                        Monitis Rest API is also a good solution in case you own a monitoring service and want to offer your users also monitors existing in Monitis.
+       </div>
+      </div>
+      <div>
+       <h3 id="why_custom">
+        Why use Monitis Custom Monitor REST API?
+       </h3>
+       <div>
+        Monitis Custom Monitor REST API gives a unique ability to monitor anything that is changing during some period – parameters of a network object, page rank, ticket price, exchange rate, air temperature. Suppose you have some script that does monitoring – retrieve and/or calculates metrics you want to monitor. Using Monitis Custom Monitor API you can create a custom monitor and schedule your script to upload monitoring data to Monitis server. After then you can access the monitoring data both by the API and on Monitis dashboard. Plus you can define notification rules so that you are alerted in case any metric is changed.
+       </div>
+      </div>
+      <div>
+       <iframe onload="getAPIInfo(this)" src="apiInfo.html">
+       </iframe>
+      </div>
+      <div>
+       <h3 id="publicKey">
+        Public keys
+       </h3>
+       <div>
+        <p>
+         Public key is a new authentication mechanizm which makes it easier and safer making API requests. 
+	                            It's some kind of shortcut for request parameters.
+        </p>
+        <h4>
+         Why Use Public Key
+        </h4>
+        <p>
+         Using public key makes your API calls safer. This way you hide your Api key and Secret key from everyone. 
+	                            Besides the list of parameters required for an api call becomes shorter making your life easier.
+        </p>
+        <p>
+         Imagine we have 2 monitors and we want to make an API call with action "testresult". We would have to make API call using following parameters:
+        </p>
+        <ul style="list-style-type:decimal;">
+         <li>
+          action=testresult
+         </li>
+         <li>
+          apikey=11ETMVREQT1RP3AMHDPI2ANHT6
+         </li>
+         <li>
+          locationIds=4,1
+         </li>
+         <li>
+          testId=86
+         </li>
+         <li>
+          timestamp=2012-04-26 15:12:50
+         </li>
+         <li>
+          timezone=0
+         </li>
+         <li>
+          version=2
+         </li>
+         <li>
+          checksum=pJpF2mkvwAfbb02parn4/aX7qi4=
+         </li>
+        </ul>
+        <b>
+         BUT NOW we can add a public key for the specified monitor and action to decrease the list of parameters.
+        </b>
+        <h4>
+         Add Public Key
+        </h4>
+        <p>
+         At first we have to add a public key. We can do this by sending POST request to
+         <b>
+          http://api.monitis.com/api
+         </b>
+         with the following parameters:
+        </p>
+        <ul>
+         <li>
+          action=addPublicKey
+         </li>
+         <li>
+          apikey=11ETMVREQT1RP3AMHDPI2ANHT6
+         </li>
+         <li>
+          <b>
+           params={action:\"testresult\", testId:[86,90]}
+          </b>
+         </li>
+         <li>
+          timestamp=2012-04-26 15:09:56
+         </li>
+         <li>
+          version=2
+         </li>
+         <li>
+          checksum=f0eZiAf06VoJZqJoy1/yxxYEN4o=
+         </li>
+        </ul>
+        <p>
+         The response will be the generated public key:
+        </p>
+        <pre>
+{
+ "status":"ok",
+ "data":<b>"2APSIBH5CU1108LTGEHME10HP5"</b>
+}
+                            </pre>
+        <p>
+         After adding a public key we can make testresult API call with the following parameters:
+        </p>
+        <ul style="list-style-type:decimal;">
+         <li>
+          <b>
+           publickey=2APSIBH5CU1108LTGEHME10HP5
+          </b>
+         </li>
+         <li>
+          locationIds=4,1
+         </li>
+         <li>
+          testId=86
+         </li>
+         <li>
+          timezone=0
+         </li>
+         <li>
+          version=2
+         </li>
+        </ul>
+        <p>
+         If you specify any monitorId except 86 and 90, which were defined when creating the Public Key you will get an error in response. And if monitorId had only one available value say only 86 you could also skip this parameter.
+        </p>
+        <p>
+         The api allows also to edit or delete pubic keys.
+        </p>
+       </div>
+      </div>
+      <div>
+       <h3 id="monitorTypes">
+        Monitor Types
+       </h3>
+       <div>
+        <p>
+         In some API actions you have to specify monitor type id. You can get monitor type id values from below table.
+        </p>
+        <table cellpadding="4" class="table" style="width:400px">
+         <tbody>
+          <tr>
+           <td style="width:60%;font-weight:bold;">
+            Monitor Type
+           </td>
+           <td style="font-weight:bold;">
+            Monitor Type Id
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Disk IO
+           </td>
+           <td>
+            2
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Bandwidth
+           </td>
+           <td>
+            6
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Tomcat
+           </td>
+           <td>
+            10
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Log
+           </td>
+           <td>
+            11
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Windows Service
+           </td>
+           <td>
+            12
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Oracle
+           </td>
+           <td>
+            13
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Custom
+           </td>
+           <td>
+            20
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Process
+           </td>
+           <td>
+            21
+           </td>
+          </tr>
+          <tr>
+           <td>
+            CPU
+           </td>
+           <td>
+            22
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Drive
+           </td>
+           <td>
+            23
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Memory
+           </td>
+           <td>
+            24
+           </td>
+          </tr>
+          <tr>
+           <td>
+            PING
+           </td>
+           <td>
+            25
+           </td>
+          </tr>
+          <tr>
+           <td>
+            HTPP/HTTPS
+           </td>
+           <td>
+            26
+           </td>
+          </tr>
+          <tr>
+           <td>
+            System Events
+           </td>
+           <td>
+            27
+           </td>
+          </tr>
+          <tr>
+           <td>
+            SNMP
+           </td>
+           <td>
+            29
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Linux Load
+           </td>
+           <td>
+            31
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Java/JMX
+           </td>
+           <td>
+            35
+           </td>
+          </tr>
+          <tr>
+           <td>
+            MySQL
+           </td>
+           <td>
+            36
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Node.JS
+           </td>
+           <td>
+            37
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Email Round Trip (ERT)
+           </td>
+           <td>
+            66
+           </td>
+          </tr>
+          <tr>
+           <td>
+            RUM
+           </td>
+           <td>
+            71
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Advanced Ping
+           </td>
+           <td>
+            72
+           </td>
+          </tr>
+          <tr>
+           <td>
+            TCP
+           </td>
+           <td>
+            73
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Transaction
+           </td>
+           <td>
+            86
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Jmeter
+           </td>
+           <td>
+            87
+           </td>
+          </tr>
+          <tr>
+           <td>
+            SQL Query Result
+           </td>
+           <td>
+            88
+           </td>
+          </tr>
+          <tr>
+           <td>
+            AWS Cloud Watch
+           </td>
+           <td>
+            90
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Uptime
+           </td>
+           <td>
+            102
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Full Page Load
+           </td>
+           <td>
+            103
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <div>
+       <h3 id="apiTest">
+        Testing tool
+       </h3>
+       <div id="testingTool">
+        <table cellspacing="5" id="actionsForm">
+         <tbody>
+          <tr>
+           <td>
+            <label for="groupLabel" style="font-weight:bold">
+             Group:
+            </label>
+           </td>
+           <td>
+            <select id="selectGroup" name="selectGroup">
+            </select>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <label for="selectAction" id="actionLabel" style="font-weight:bold;visibility:hidden">
+             Action:
+            </label>
+           </td>
+           <td id="actionTd">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <a id="upbutton" style="opacity: 1; display: none;" title="Up">
+  </a>
+  <script src="js/actionsJSON.js" type="text/javascript">
+  </script>
+  <script src="js/apiTest.js" type="text/javascript">
+  </script>
+ </body>
+</html>

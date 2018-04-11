@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Kinsey Reporter: Data
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="A global mobile survey platform to share, explore, and visualize anonymous data about sex." name="description"/>
+  <meta content="CNetS and The Kinsey Institute" name="author"/>
+  <meta content="https://kinseyreporter.org/" property="og:url"/>
+  <meta content="Kinsey Reporter: Share and explore anonymous data about sex." property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://kinseyreporter.org/site_media/images/logo/KinseyReporterLogo_175px.png" property="og:image"/>
+  <!-- styles -->
+  <!--link href="/site_media/css/bootstrap.css" rel="stylesheet"-->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"/>
+  <link href="/site_media/css/kinsey.css" rel="stylesheet"/>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- fav and touch icons -->
+  <!--link rel="shortcut icon" href="site_media/ico/favicon.ico"-->
+  <link href="/site_media/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  <link href="/site_media/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="/site_media/ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="/site_media/ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="/site_media/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed"/>
+  <style>
+   .headrow{
+    margin-left: 25px;
+    margin-right:25px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.subheadrow{
+    margin-left: 15px;
+}
+
+.accordion-toggle {
+    font-size: 15pt;
+    text-align: left;
+}
+
+.subheadrow,
+.accordion-inner p,
+.accordion-inner{
+    font-size: 12pt;
+    text-align: left;
+}
+
+.accordion{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+tt{
+    font-size: 10pt;
+}
+  </style>
+  <script type="text/javascript">
+   var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1262144-5']);
+        _gaq.push(['_setDomainName', 'kinseyreporter.org']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type =
+        'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+        'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+        })();
+  </script>
+ </head>
+ <body class="bg-check bg-white">
+  <div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+    <div class="container">
+     <a class="brand" href="/">
+      Kinsey Reporter
+     </a>
+     <ul class="nav">
+      <li>
+       <a href="/">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="/explore">
+        Explore
+       </a>
+      </li>
+      <li>
+       <a href="/data">
+        Data
+       </a>
+      </li>
+      <li>
+       <a href="/faq">
+        FAQ
+       </a>
+      </li>
+      <li>
+       <a href="/support">
+        Support
+       </a>
+      </li>
+     </ul>
+     <a class="pull-right appstore-btn" href="http://itunes.apple.com/us/app/kinsey-reporter/id533205458?mt=8&amp;uo=4" target="itunes_store">
+      <img alt="Kinsey Reporter - Indiana University" height="40" src="/site_media/images/badge_appstore-lrg.gif" width="116"/>
+     </a>
+     <a class="pull-right appstore-btn" href="https://play.google.com/store/apps/details?id=com.kinsey.android" target="google_play">
+      <img alt="Kinsey Reporter - Indiana University" height="40" src="/site_media/images/android_app_on_play_logo_custom.png" width="116"/>
+     </a>
+    </div>
+   </div>
+  </div>
+  <!--.navbar-->
+  <div class="container roundedcorners bg-white pretty-border content-box">
+   <div class="headrow row">
+    <div class="span10">
+     <h2>
+      API Specification
+     </h2>
+     <p class="subheadrow">
+      An
+      <a href="http://en.wikipedia.org/wiki/Api">
+       application programming interface (API)
+      </a>
+      describes how software components can communicate with each other.
+            Use the Kinsey Reporter API to obtain the data collected from the Kinsey Reporter mobile apps.
+      <!--This data-sharing web service is approved by Indiana University's Institutional Review Board (protocol #1205008624).-->
+      Kinsey Reporter staff makes no effort to verify the accuracy of crowd-sourced reports.
+     </p>
+    </div>
+   </div>
+   <div class="accordion" id="accordion2">
+    <div class="accordion-group">
+     <div class="accordion-heading">
+      <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseZero">
+       Usage
+      </a>
+     </div>
+     <div class="accordion-body collapse in" id="collapseZero">
+      <div class="accordion-inner">
+       <p>
+        <i>
+         Detail
+        </i>
+        methods, as their name implies, give detailed information on a single object;
+                    these take one argument, a name or id number, after the method name like so:
+        <code>
+         https://kinseyreporter.org/API/detail/survey/Sexual%20Fetish/
+        </code>
+        .
+       </p>
+       <p>
+        <i>
+         List
+        </i>
+        methods give brief information about many objects. They have no mandatory arguments, but some may take optional GET parameters to narrow down the list e.g.:
+        <code>
+         https://kinseyreporter.org/API/list/reports?tag=whip%20fetish
+        </code>
+        .
+       </p>
+       <p>
+        Do not submit more than one API request every 10 seconds.
+       </p>
+       <p>
+        This is a
+        <a href="http://en.wikipedia.org/wiki/REST">
+         REST
+        </a>
+        ful API, returning
+        <a href="http://en.wikipedia.org/wiki/JSON">
+         JSON
+        </a>
+        objects in the response. 
+                    All API calls are case-insensitive with respect to object [survey, question, tag] names, and must be URI-escaped (e.g. %20 for spaces).
+       </p>
+       <p>
+        Click on an API method below to learn more.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="accordion-group">
+     <div class="accordion-heading">
+      <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseOne">
+       list/surveys
+      </a>
+     </div>
+     <div class="accordion-body collapse" id="collapseOne">
+      <div class="accordion-inner">
+       <table cellpadding="5">
+        <tbody>
+         <tr>
+          <td width="120px">
+           Parameters:
+          </td>
+          <td>
+           None.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Returns:
+          </td>
+          <td>
+           Names and id numbers for currently active surveys.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example URL:
+          </td>
+          <td>
+           <code>
+            https://kinseyreporter.org/API/list/surveys/
+           </code>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example JSON Response:
+          </td>
+          <td>
+           <pre>
+{
+"surveys": [
+    {
+        "text": "Unwanted Experience",
+        "id": 2
+    },
+    {
+        "text": "Female Hormonal Birth Control Use and Effects",
+        "id": 7
+    }
+]
+}</pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="accordion-group">
+     <div class="accordion-heading">
+      <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseTwo">
+       list/reports
+      </a>
+     </div>
+     <div class="accordion-body collapse" id="collapseTwo">
+      <div class="accordion-inner">
+       <table cellpadding="5">
+        <tbody>
+         <tr>
+          <td width="120px">
+           Parameters:
+          </td>
+          <td>
+           <table class="table table-condensed table-bordered table-striped">
+            <tbody>
+             <tr>
+              <td>
+               from
+              </td>
+              <td>
+               The beginning of the time frame to search, specified as
+               <tt>
+                YYYY‑MM‑DD hh:mm:ss
+               </tt>
+               or
+               <tt>
+                YYYY‑MM‑DD.
+               </tt>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               to
+              </td>
+              <td>
+               The end of the time frame to search, specified as above.
+              </td>
+             </tr>
+             <tr>
+              <td>
+               tag
+              </td>
+              <td>
+               A tag name or id; restricts search to reports containing the given tag.
+              </td>
+             </tr>
+             <tr>
+              <td>
+               country
+              </td>
+              <td>
+               An
+               <a href="http://en.wikipedia.org/wiki/ISO_3166-1#Current_codes">
+                ISO two-letter country code
+               </a>
+               ; restricts search to reports originating from given country.
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Returns:
+          </td>
+          <td>
+           The list of criteria used for the actual search, and a list of reports that meet the specified criteria.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Notes:
+          </td>
+          <td>
+           <ul>
+            <li>
+             Please note that either a tag must be specified, or a time frame of one week or less.
+            </li>
+            <li>
+             Queries that do not meet this requirement will have their time frames truncated to one week.
+            </li>
+           </ul>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example URL:
+          </td>
+          <td>
+           <code>
+            https://kinseyreporter.org/API/list/reports/?tag=male%20victim&amp;from=2012-06-02
+           </code>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example JSON Response:
+          </td>
+          <td>
+           <pre>
+{
+"search_params": [
+    {
+        "tag": {
+            "text": "male victim", 
+            "id": 64
+        }
+    }, 
+    {
+        "from": "2012-06-02"
+    }
+], 
+"reports": [
+    {
+        "timestamp": "2012-07-20 13:10:17", 
+        "location": {
+            "city": null, 
+            "state": "Emilia-Romagna", 
+            "country": "IT",
+            "lat": 44.5968,
+            "lon": 11.2186
+        }, 
+        "report_id": 51
+    }, 
+    {
+        "timestamp": "2012-08-21 12:00:00", 
+        "location": {
+            "city": "Porlezza", 
+            "state": "Lombardy", 
+            "country": "IT",
+            "lat": 46.0352,
+            "lon": 9.1182
+        }, 
+        "report_id": 358
+    }, 
+    {
+        "timestamp": "2012-09-03 00:00:00", 
+        "location": {
+            "city": "Lexington", 
+            "state": "Kentucky", 
+            "country": "US",
+            "lat": 38.0406,
+            "lon": -84.5037
+        }, 
+        "report_id": 768
+    }
+]
+}</pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="accordion-group">
+     <div class="accordion-heading">
+      <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseThree">
+       detail/survey
+      </a>
+     </div>
+     <div class="accordion-body collapse" id="collapseThree">
+      <div class="accordion-inner">
+       <table cellpadding="5">
+        <tbody>
+         <tr>
+          <td width="120px">
+           Argument:
+          </td>
+          <td>
+           A survey name or id number.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Returns:
+          </td>
+          <td>
+           Details about the survey object and its associated questions.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example URL:
+          </td>
+          <td>
+           <code>
+            https://kinseyreporter.org/API/detail/survey/Unwanted%20Experience/
+           </code>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example JSON Response:
+          </td>
+          <td>
+           <pre>
+{
+"survey": {
+    "text": "Unwanted Experience", 
+    "start_date": "2012-05-31 12:00:00", 
+    "id": 2, 
+    "end_date": "2050-12-31 12:00:00", 
+    "instructions": null
+}, 
+"questions": [
+    {
+        "text": "Victim gender", 
+        "id": 9
+    }, 
+    {
+        "text": "Aggressor gender", 
+        "id": 10
+    }, 
+    {
+        "text": "Aggressor number", 
+        "id": 11
+    }, 
+    {
+        "text": "Victim age", 
+        "id": 12
+    }, 
+    {
+        "text": "Aggressor age", 
+        "id": 13
+    }, 
+    {
+        "text": "Unwanted behaviors", 
+        "id": 14
+    }, 
+    {
+        "text": "Setting", 
+        "id": 15
+    }, 
+    {
+        "text": "Reporting to authority", 
+        "id": 16
+    }, 
+    {
+        "text": "Aggressor relationship", 
+        "id": 49
+    }, 
+    {
+        "text": "Physical injury", 
+        "id": 50
+    }
+]
+}
+</pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="accordion-group">
+     <div class="accordion-heading">
+      <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseFour">
+       detail/question
+      </a>
+     </div>
+     <div class="accordion-body collapse" id="collapseFour">
+      <div class="accordion-inner">
+       <table cellpadding="5">
+        <tbody>
+         <tr>
+          <td width="120px">
+           Argument:
+          </td>
+          <td>
+           A question name or id number.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Returns:
+          </td>
+          <td>
+           Details about the question object and its associated survey and tags.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example URL:
+          </td>
+          <td>
+           <code>
+            https://kinseyreporter.org/API/detail/question/46/
+           </code>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example JSON Response:
+          </td>
+          <td>
+           <pre>
+{
+"survey": {
+    "text": "Unwanted Experience", 
+    "id": 2
+}, 
+"question": {
+    "text": "Victim gender", 
+    "id": 9, 
+    "multiple_answer": true, 
+    "description": "Pick all tags that apply."
+}, 
+"tags": [
+    {
+        "text": "male victim", 
+        "id": 64
+    }, 
+    {
+        "text": "female victim", 
+        "id": 65
+    }, 
+    {
+        "text": "transgender victim", 
+        "id": 66
+    }
+]
+}</pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="accordion-group">
+     <div class="accordion-heading">
+      <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseFive">
+       detail/tag
+      </a>
+     </div>
+     <div class="accordion-body collapse" id="collapseFive">
+      <div class="accordion-inner">
+       <table cellpadding="5">
+        <tbody>
+         <tr>
+          <td width="120px">
+           Argument:
+          </td>
+          <td>
+           A tag name or id number.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Returns:
+          </td>
+          <td>
+           Details about the tag object and its associated survey and question.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example URL:
+          </td>
+          <td>
+           <code>
+            https://kinseyreporter.org/API/detail/tag/male%20victim/
+           </code>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example JSON Response:
+          </td>
+          <td>
+           <pre>
+{
+"survey": {
+    "text": "Unwanted Experience", 
+    "id": 2
+}, 
+"tag": {
+    "text": "male victim", 
+    "id": 64
+}, 
+"question": {
+    "text": "Victim gender", 
+    "id": 9
+}
+}</pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="accordion-group">
+     <div class="accordion-heading">
+      <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseSix">
+       detail/report
+      </a>
+     </div>
+     <div class="accordion-body collapse" id="collapseSix">
+      <div class="accordion-inner">
+       <table cellpadding="5">
+        <tbody>
+         <tr>
+          <td width="120px">
+           Argument:
+          </td>
+          <td>
+           A report id number.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Returns:
+          </td>
+          <td>
+           Details about the report object, including time, location, and all tags submitted in the report.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example URL:
+          </td>
+          <td>
+           <code>
+            https://kinseyreporter.org/API/detail/report/989/
+           </code>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Example JSON Response:
+          </td>
+          <td>
+           <pre>
+{
+"timestamp": "2012-09-05 12:00:00", 
+"report_id": 989, 
+"location": {
+    "city": "New York", 
+    "state": "New York", 
+    "country": "US"
+}, 
+"tags": [
+    {
+        "text": "young victim", 
+        "id": 73
+    }, 
+    {
+        "text": "middle aged aggressor", 
+        "id": 78
+    }, 
+    {
+        "text": "male aggressor", 
+        "id": 67
+    }, 
+    {
+        "text": "male victim", 
+        "id": 64
+    }, 
+    {
+        "text": "single aggressor", 
+        "id": 70
+    }, 
+    {
+        "text": "verbal sexual harassment", 
+        "id": 81
+    }, 
+    {
+        "text": "body touching", 
+        "id": 82
+    }, 
+    {
+        "text": "other unwanted behaviors", 
+        "id": 278
+    }, 
+    {
+        "text": "unwanted behavior not reported", 
+        "id": 90
+    }, 
+    {
+        "text": "unwanted public experience", 
+        "id": 87
+    }
+]
+}
+</pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--/container-->
+  <div class="container">
+   <footer align="center" class="footer">
+    <div align="center" class="bg-white roundedcorners light-border" id="footer">
+     <a href="http://www.iub.edu">
+      <img src="/site_media/images/iub_white.gif"/>
+     </a>
+     <br/>
+     <a href="http://www.indiana.edu/comments/copyright.shtml" id="copyright_link">
+      Kinsey Reporter ©
+      <script type="text/javascript">
+       var theDate=new Date(); document.write(theDate.getFullYear());
+      </script>
+     </a>
+     <a href="http://cnets.indiana.edu/">
+      CNetS
+     </a>
+     <b>
+      ·
+     </b>
+     <a href="http://www.kinseyinstitute.org/">
+      ​Kinsey Institute​
+     </a>
+     ​
+     <b>
+      ·
+     </b>
+     <a href="/privacy_policy">
+      Privacy Policy
+     </a>
+     <b>
+      ·
+     </b>
+     <a href="/tos">
+      Terms of Service and License Agreement
+     </a>
+     <a href="#" id="admin_link">
+      <i class="icon-wrench pull-right">
+      </i>
+     </a>
+    </div>
+   </footer>
+  </div>
+  <!-- javascript -->
+  <!-- ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+  </script>
+  <!--script src="site_media/bootstrap/js/bootstrap.min.js"></script-->
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js">
+  </script>
+  <script type="text/javascript">
+   var title = 'Data';
+    $('.nav li').filter(
+        function(){
+            return $(this).text() == title
+        }).addClass('active');
+    $('#admin_link').attr('href', window.location.origin + "/admin/")
+  </script>
+  <!-- #div-bg-overlay-->
+ </body>
+</html>

@@ -67,47 +67,50 @@ if __name__ == "__main__":
     test_set = load_files(external_data_folder, shuffle=True)
     print("external_test_samples: %d" % len(test_set.data))
 
-    # Use Random forest max_depth=5, n_estimators=10, max_features=1
-    pipeline = Pipeline([('vect', TfidfVectorizer(min_df=3, max_df=0.95, decode_error='ignore')),
-                         ('clf', RandomForestClassifier()), ])
+    if (len(test_set.data) == 1):
+        copyfile(test_set.filenames[0], filteredSet + "/" + test_set.filenames[0].split("/")[-1])
+    else:
+        # Use Random forest max_depth=5, n_estimators=10, max_features=1
+        pipeline = Pipeline([('vect', TfidfVectorizer(min_df=3, max_df=0.95, decode_error='ignore')),
+                             ('clf', RandomForestClassifier()), ])
 
-    # TASK: Build a grid search to find out whether unigrams or bigrams are
-    # more useful.
-    # Fit the pipeline on the training set using grid search for the parameters
-    # parameters = {'vect__ngram_range': [(1,1),(1,2)],}
-    parameters = {'vect__ngram_range': [(1,1),(1,2)],}
-    grid_search = GridSearchCV(pipeline, parameters, n_jobs=-1, cv=10)
-    grid_search.fit(dataset.data, dataset.target)
-    # TASK: print the cross-validated scores for the each parameters set
-    # explored by the grid search
-    n_candidates = len(grid_search.cv_results_['params'])
-    for i in range(n_candidates):
-        print(i, 'params - %s; mean - %0.2f; std -%0.2f'
-                % (grid_search.cv_results_['params'][i],
-                   grid_search.cv_results_['mean_test_score'][i],
-                   grid_search.cv_results_['std_test_score'][i]))
+        # TASK: Build a grid search to find out whether unigrams or bigrams are
+        # more useful.
+        # Fit the pipeline on the training set using grid search for the parameters
+        # parameters = {'vect__ngram_range': [(1,1),(1,2)],}
+        parameters = {'vect__ngram_range': [(1,1),(1,2)],}
+        grid_search = GridSearchCV(pipeline, parameters, n_jobs=-1, cv=10)
+        grid_search.fit(dataset.data, dataset.target)
+        # TASK: print the cross-validated scores for the each parameters set
+        # explored by the grid search
+        n_candidates = len(grid_search.cv_results_['params'])
+        for i in range(n_candidates):
+            print(i, 'params - %s; mean - %0.2f; std -%0.2f'
+                    % (grid_search.cv_results_['params'][i],
+                       grid_search.cv_results_['mean_test_score'][i],
+                       grid_search.cv_results_['std_test_score'][i]))
 
-    # TASK: Predict the outcome on the testing set and store it in a variable named y_predicted
-    y_predicted = grid_search.predict(test_set.data)
-    # Print the classification report
-    report = metrics.classification_report(test_set.target, y_predicted,
-                                        target_names=dataset.target_names)
-    print report
+        # TASK: Predict the outcome on the testing set and store it in a variable named y_predicted
+        y_predicted = grid_search.predict(test_set.data)
+        # Print the classification report
+        report = metrics.classification_report(test_set.target, y_predicted,
+                                            target_names=dataset.target_names)
+        print report
 
-    # Write report to the file
-    if not os.path.exists(filteredSet):
-        os.makedirs(filteredSet)
-    report_name = filteredSet + "/balance_external.txt"
-    f = open(report_name, 'w+')
-    f.write(report)
+        # Write report to the file
+        if not os.path.exists(filteredSet):
+            os.makedirs(filteredSet)
+        report_name = filteredSet + "/balance_external.txt"
+        f = open(report_name, 'w+')
+        f.write(report)
 
 
-    # Show the details results for each file
-    for i in range(0, len(test_set.data)):
-        print('File "%s" is "%d": predicted "%d"' % (test_set.filenames[i], test_set.target[i], y_predicted[i]))
-        if (test_set.target[i] != y_predicted[i] ):
-            # Write filtered file into FilteredSet
-            print('Different: File "%s" is "%d": predicted "%d"' % (test_set.filenames[i], test_set.target[i], y_predicted[i]))
-            # move file to the new FilteredSet
-        else:
-            copyfile(test_set.filenames[i], filteredSet + "/" + test_set.filenames[i].split("/")[-1])
+        # Show the details results for each file
+        for i in range(0, len(test_set.data)):
+            print('File "%s" is "%d": predicted "%d"' % (test_set.filenames[i], test_set.target[i], y_predicted[i]))
+            if (test_set.target[i] != y_predicted[i] ):
+                # Write filtered file into FilteredSet
+                print('Different: File "%s" is "%d": predicted "%d"' % (test_set.filenames[i], test_set.target[i], y_predicted[i]))
+                # move file to the new FilteredSet
+            else:
+                copyfile(test_set.filenames[i], filteredSet + "/" + test_set.filenames[i].split("/")[-1])

@@ -1,0 +1,101 @@
+{
+  "basePath": "/api/search",
+  "paths": {
+    "/denver": {
+      "GET": {}
+    },
+    "/api/search/[keyword].[format]": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "show_rows",
+            "description": "show_rows=[integer] The maximum number of records the service will return. The default is 10 records.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "description": "page=[integer] If a query has more than 10 results, the page parameter can be used to paginate through the results. Page numbering starts at 0.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "filters",
+            "description": "List which filters to use and the respected values",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "type:[nrel_component]",
+            "description": "Filters results by Node Type",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sm_component_type:[string]",
+            "description": "Filters results by Component Type",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "is_component_fidelity_level:[1-5]",
+            "description": "Filters results by Fidelity Level",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tid:[integer]",
+            "description": "Filters results by Taxonomy ID (like Component Type filtering)",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "ss_component_manufacturer:[string]",
+            "description": "Filters results by Manufacturer",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "ss_component_model:[string]",
+            "description": "Filters results by Model",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "ss_component_author:[string]",
+            "description": "Filters results by Author",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "api_version",
+            "description": "api_version=[string] Specifies the API version to use. The latest version is 2.0 and contains format changes. The previous version is 1.1 and is still supported.",
+            "type": "string",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/": {
+      "GET": {}
+    }
+  },
+  "produces": "application/json",
+  "host": "bcl.nrel.gov",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

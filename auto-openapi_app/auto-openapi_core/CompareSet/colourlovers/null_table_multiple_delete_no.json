@@ -1,0 +1,343 @@
+{
+  "basePath": "/api",
+  "paths": {
+    "/lovers": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "X [Where X can be: ASC or DESC . Default ASC ]",
+            "description": "= X [Where X can be: ASC or DESC . Default ASC ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "20 [Number of results to return, maximum of 100 . Default 20 ]",
+            "description": "= 20 [Number of results to return, maximum of 100 . Default 20 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "5 [Result offset, for paging. Default 0 ]",
+            "description": "= 5 [Result offset, for paging. Default 0 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "json or xml [Result format. Default is xml ]",
+            "description": "= json or xml [Result format. Default is xml ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "yourCallbackFunction [Adds a callback to JSON format. Assumes format=json ]",
+            "description": "= yourCallbackFunction [Adds a callback to JSON format. Assumes format=json ]",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/stats/colors": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "format",
+            "description": "= json or xml [Result format. Default is xml ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "jsonCallback",
+            "description": "= yourCallbackFunction [Adds a callback to JSON format. Assumes format=json ]",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/palettes": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "lover",
+            "description": "= COLOURlover",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "hueOption",
+            "description": "= yellow,orange,red or green,violet or blue\n[Possible Values can be a combination of: red, orange, yellow, green, aqua, blue, violet, and / or fuchsia ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "hex",
+            "description": "= 00FF33 or 00FF33,CC00FF,DD0033,003333,0033FF\n[Possible Values: any valid 6-char hex value or list of up to five (5) hex values, separated by commas]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "hex_logic",
+            "description": "= AND or OR\nSets the comparison logic for the hex list. Passing AND will find palettes with all provided hex values, passing OR will find palettes with any of the provided hex values.\n[Possible Values: AND or OR . Default AND ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "keywords",
+            "description": "= search+term",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "keywordExact",
+            "description": "= 0 or 1 [Perform an exact search for the keywords passed. Default 0 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "orderCol",
+            "description": "= X [Where X can be: dateCreated, score, name, numVotes, or numViews ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sortBy",
+            "description": "= X [Where X can be: ASC or DESC . Default ASC ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "numResults",
+            "description": "= 20 [Number of results to return, maximum of 100 . Default 20 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "resultOffset",
+            "description": "= 5 [Result offset, for paging. Default 0 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "description": "= json or xml [Result format. Default is xml ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "jsonCallback",
+            "description": "= yourCallbackFunction [Adds a callback to JSON format. Assumes format=json ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "showPaletteWidths",
+            "description": "= 0 or 1 [Shows palette's color's widths. Default 0 ]",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/patterns": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "lover",
+            "description": "= COLOURlover",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "hueOption",
+            "description": "= yellow,orange,red or green,violet or blue\n[Possible Values can be a combination of: red, orange, yellow, green, aqua, blue, violet, and / or fuchsia ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "hex",
+            "description": "= 00FF33 or 00FF33,CC00FF,DD0033,003333,0033FF\n[Possible Values: any valid 6-char hex value or list of up to five (5) hex values, separated by commas]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "hex_logic",
+            "description": "= AND or OR\nSets the comparison logic for the hex list. Passing AND will find patterns with all provided hex values, passing OR will find patterns with any of the provided hex values.\n[Possible Values: AND or OR . Default AND ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "keywords",
+            "description": "= search+term",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "keywordExact",
+            "description": "= 0 or 1 [Perform an exact search for the keywords passed. Default 0 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "orderCol",
+            "description": "= X [Where X can be: dateCreated, score, name, numVotes, or numViews ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sortBy",
+            "description": "= X [Where X can be: ASC or DESC . Default ASC ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "numResults",
+            "description": "= 20 [Number of results to return, maximum of 100 . Default 20 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "resultOffset",
+            "description": "= 5 [Result offset, for paging. Default 0 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "description": "= json or xml [Result format. Default is xml ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "jsonCallback",
+            "description": "= yourCallbackFunction [Adds a callback to JSON format. Assumes format=json ]",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/colors": {
+      "GET": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "lover",
+            "description": "= COLOURlover",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "hueRange",
+            "description": "= 12,68 [values must be 0 >value< 359 , and the left value must be less than the right value]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "briRange",
+            "description": "= 2,88 [values must be 0 >value< 99 , and the left value must be less than the right value]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "keywords",
+            "description": "= search+term",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "keywordExact",
+            "description": "= 0 or 1 [Perform an exact search for the keywords passed. Default 0 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "orderCol",
+            "description": "= X [Where X can be: dateCreated, score, name, numVotes, or numViews ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sortBy",
+            "description": "= X [Where X can be: ASC or DESC . Default ASC ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "numResults",
+            "description": "= 20 [Number of results to return, maximum of 100 . Default 20 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "resultOffset",
+            "description": "= 5 [Result offset, for paging. Default 0 ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "description": "= json or xml [Result format. Default is xml ]",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "jsonCallback",
+            "description": "= yourCallbackFunction [Adds a callback to JSON format. Assumes format=json ]",
+            "type": "integer",
+            "required": true
+          }
+        ]
+      }
+    }
+  },
+  "produces": "application/json",
+  "host": "www.colourlovers.com",
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

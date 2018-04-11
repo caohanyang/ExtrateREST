@@ -1,0 +1,716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" dir="ltr" version="XHTML+RDFa 1.0" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+ <!--<![endif]-->
+ <head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <link href="https://bcl.nrel.gov/sites/default/files/favicon_1.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+  <link href="/node/2715" rel="shortlink"/>
+  <link href="/developer" rel="canonical"/>
+  <meta content="Drupal 7 (http://drupal.org)" name="Generator"/>
+  <title>
+   Developer Resources | Building Component Library
+  </title>
+  <style media="all" type="text/css">
+   @import url("https://bcl.nrel.gov/modules/system/system.base.css?p58ewo");
+@import url("https://bcl.nrel.gov/modules/system/system.menus.css?p58ewo");
+@import url("https://bcl.nrel.gov/modules/system/system.messages.css?p58ewo");
+@import url("https://bcl.nrel.gov/modules/system/system.theme.css?p58ewo");
+  </style>
+  <style media="all" type="text/css">
+   @import url("https://bcl.nrel.gov/modules/comment/comment.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/modules/date/date_api/date.css?p58ewo");
+@import url("https://bcl.nrel.gov/modules/field/theme/field.css?p58ewo");
+@import url("https://bcl.nrel.gov/modules/node/node.css?p58ewo");
+@import url("https://bcl.nrel.gov/modules/search/search.css?p58ewo");
+@import url("https://bcl.nrel.gov/modules/user/user.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/modules/views/css/views.css?p58ewo");
+  </style>
+  <style media="all" type="text/css">
+   @import url("https://bcl.nrel.gov/sites/all/modules/ctools/css/ctools.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/modules/panels/css/panels.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/modules/views_slideshow/views_slideshow.css?p58ewo");
+  </style>
+  <style media="all" type="text/css">
+   @import url("https://bcl.nrel.gov/sites/all/themes/fusion/fusion_core/css/fusion-style.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/themes/fusion/fusion_core/css/fusion-typography.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/themes/fusion/fusion_core/skins/core/fusion-core-skins.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/themes/nrel_fusion/css/nrel-fusion-style.css?p58ewo");
+  </style>
+  <style media="all" type="text/css">
+   @import url("https://bcl.nrel.gov/sites/all/themes/fusion/fusion_core/css/grid12-960.css?p58ewo");
+@import url("https://bcl.nrel.gov/sites/all/themes/nrel_fusion/css/local.css?p58ewo");
+  </style>
+  <script src="https://bcl.nrel.gov/misc/jquery.js?v=1.4.4" type="text/javascript">
+  </script>
+  <script src="https://bcl.nrel.gov/misc/jquery.once.js?v=1.2" type="text/javascript">
+  </script>
+  <script src="https://bcl.nrel.gov/misc/drupal.js?p58ewo" type="text/javascript">
+  </script>
+  <script src="https://bcl.nrel.gov/sites/all/modules/views_slideshow/js/views_slideshow.js?p58ewo" type="text/javascript">
+  </script>
+  <script src="https://bcl.nrel.gov/sites/all/modules/google_analytics/googleanalytics.js?p58ewo" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   <!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-18838154-5", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+  </script>
+  <script src="https://bcl.nrel.gov/sites/all/themes/fusion/fusion_core/js/script.js?p58ewo" type="text/javascript">
+  </script>
+  <script src="https://bcl.nrel.gov/sites/all/themes/nrel_fusion/nrel_fusion.js?p58ewo" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   <!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"nrel_fusion","theme_token":"e5P16ELIQ5pXCog17D_qTyB9RmYJ35e5Oh89Lmqil7o","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/fusion\/fusion_core\/js\/script.js":1,"sites\/all\/themes\/nrel_fusion\/nrel_fusion.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"sites\/all\/themes\/fusion\/fusion_core\/css\/fusion-style.css":1,"sites\/all\/themes\/fusion\/fusion_core\/css\/fusion-typography.css":1,"sites\/all\/themes\/fusion\/fusion_core\/skins\/core\/fusion-core-skins.css":1,"sites\/all\/themes\/nrel_fusion\/css\/nrel-fusion-style.css":1,"sites\/all\/themes\/fusion\/fusion_core\/css\/grid12-960.css":1,"sites\/all\/themes\/nrel_fusion\/css\/local.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/developer":true}});
+//--><!]]>
+  </script>
+ </head>
+ <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-2715 node-type-page font-size-12 grid-type-960 grid-width-12 sidebars-split" id="pid-developer">
+  <div id="skip-link">
+   <a href="#main-content-area">
+    Skip to main content area
+   </a>
+  </div>
+  <div class="page" id="page">
+   <div class="page-inner" id="page-inner">
+    <!-- header-group region: width = grid_width -->
+    <div class="header-group-wrapper full-width clearfix" id="header-group-wrapper">
+     <div class="header-group region grid12-12" id="header-group">
+      <div class="header-group-inner inner clearfix" id="header-group-inner">
+       <div class="header-site-info clearfix" id="header-site-info">
+        <div class="header-site-info-inner gutter" id="header-site-info-inner">
+         <div class="clearfix" id="site-name-wrapper">
+          <div id="site-name">
+           <a href="/" rel="home" title="Home">
+            Building Component Library
+           </a>
+          </div>
+         </div>
+         <!-- /site-name-wrapper -->
+        </div>
+        <!-- /header-site-info-inner -->
+       </div>
+       <!-- /header-site-info -->
+      </div>
+      <!-- /header-group-inner -->
+     </div>
+     <!-- /header-group -->
+    </div>
+    <!-- /header-group-wrapper -->
+    <!-- preface-top region -->
+    <div class="preface-top-wrapper full-width clearfix" id="preface-top-wrapper">
+     <div class="region region-preface-top preface-top grid12-12" id="preface-top">
+      <div class="preface-top-inner inner" id="preface-top-inner">
+       <div class="block block-block first odd" id="block-block-1">
+        <div class="gutter inner clearfix">
+         <div class="content clearfix">
+          <div class="loginbar-links">
+           <span class="loginbar-login">
+            <a href="/temp-login?destination=dashboard">
+             Login
+            </a>
+           </span>
+          </div>
+          <div class="loginbar-welcome">
+           Welcome, Guest!
+          </div>
+         </div>
+        </div>
+        <!-- /block-inner -->
+       </div>
+       <!-- /block -->
+       <div class="block block-search last even" id="block-search-form">
+        <div class="gutter inner clearfix">
+         <div class="content clearfix">
+          <form accept-charset="UTF-8" action="/developer" id="search-block-form" method="post">
+           <div>
+            <div class="container-inline">
+             <h2 class="element-invisible">
+              Search form
+             </h2>
+             <div class="form-item form-type-textfield form-item-search-block-form">
+              <label class="element-invisible" for="edit-search-block-form--2">
+               Search
+              </label>
+              <input class="form-text" id="edit-search-block-form--2" maxlength="128" name="search_block_form" size="15" title="Enter the terms you wish to search for." type="text" value=""/>
+             </div>
+             <div class="form-actions form-wrapper" id="edit-actions">
+              <input class="form-submit" id="edit-submit" name="op" type="submit" value="Search"/>
+             </div>
+             <input name="form_build_id" type="hidden" value="form-saoPfi8i9ZIZN93Pztf3InuCnlrG87rPs9JrP130WbA"/>
+             <input name="form_id" type="hidden" value="search_block_form"/>
+            </div>
+           </div>
+          </form>
+         </div>
+        </div>
+        <!-- /block-inner -->
+       </div>
+       <!-- /block -->
+      </div>
+      <!-- /preface-top-inner -->
+     </div>
+     <!-- /preface-top -->
+    </div>
+    <!-- /preface-top-wrapper -->
+    <!-- main region: width = grid_width -->
+    <div class="main-wrapper full-width clearfix" id="main-wrapper">
+     <div class="main region grid12-12" id="main">
+      <div class="main-inner inner clearfix" id="main-inner">
+       <!-- main group: width = grid_width - sidebar_first_width -->
+       <div class="main-group region nested grid12-12" id="main-group">
+        <div class="main-group-inner inner" id="main-group-inner">
+         <div class="main-content region nested" id="main-content">
+          <div class="main-content-inner inner" id="main-content-inner">
+           <!-- content group: width = grid_width - sidebar_first_width - sidebar_second_width -->
+           <div class="content-group region nested grid12-12" id="content-group">
+            <div class="content-group-inner inner" id="content-group-inner">
+             <div class="content-region region nested" id="content-region">
+              <div class="content-region-inner inner" id="content-region-inner">
+               <a id="main-content-area">
+               </a>
+               <h1 class="title gutter">
+                Developer Resources
+               </h1>
+               <!-- content region -->
+               <div class="region region-content content nested grid12-12" id="content">
+                <div class="content-inner inner" id="content-inner">
+                 <div class="block block-system first last odd" id="block-system-main">
+                  <div class="gutter inner clearfix">
+                   <div class="content clearfix">
+                    <div about="/developer" class="node node-page node-promoted odd full-node clearfix" id="node-2715" typeof="foaf:Document">
+                     <span class="rdf-meta element-hidden" content="Developer Resources" property="dc:title">
+                     </span>
+                     <span class="rdf-meta element-hidden" content="0" datatype="xsd:integer" property="sioc:num_replies">
+                     </span>
+                     <div class="node-top region nested" id="node-top">
+                     </div>
+                     <div class="content">
+                      <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                       <div class="field-items">
+                        <div class="field-item even" property="content:encoded">
+                         <p>
+                          The Building Component Library is accessible pragmatically through a RESTful API.  The API allows users to query the library.
+                         </p>
+                         <h2 style="color: black">
+                          API Access
+                         </h2>
+                         <p>
+                          In order to gain access to the API, log in to the site and include the session ID returned with the response in any future requests.
+                         </p>
+                         <p>
+                          The default API when no version is specified is version 1.1.  To use the new API, append each query with api_version=2.0.  The previous API (version 1.1) supported API keys.  If you already have an apikey, you can still use it by appending the key to any API query with oauth_consumer_key=[KEY], replacing [KEY] with the one obtained.
+                         </p>
+                         <p>
+                          The URL to query the Library for components is:
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;">http://bcl.nrel.gov/api/search/[keyword].[format]?[params]
+</pre>
+                         <p>
+                          where [keyword] is the search term, and can be left blank.  [format] is the return format, which can be xml, json, or yaml, and will default to xml if left blank. [params] are the query and filter parameters to apply to the search, and are described in more detail below.
+                         </p>
+                         <h2>
+                          API v1.1
+                         </h2>
+                         <p>
+                          The table below describes available query parameters.
+                         </p>
+                         <table style="border:1px solid black;border-collapse: collapse;">
+                          <tbody>
+                           <tr>
+                            <th style="border: 1px solid black;padding: 10px;background-color:#0070BC;color:white;">
+                             Parameter
+                            </th>
+                            <th style="border: 1px solid black;padding: 10px;background-color:#0070BC;color:white;" width="35%">
+                             Usage
+                            </th>
+                            <th style="border: 1px solid black;padding: 10px;background-color:#0070BC;color:white;">
+                             Description
+                            </th>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             show_rows
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             show_rows=[integer]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             The maximum number of records the service will return. The default is 10 records.
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             page
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             page=[integer]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             If a query has more than 10 results, the page parameter can be used to paginate through the results.  Page numbering starts at 0.
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             filters
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             List which filters to use and the respected values
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             type:[nrel_component]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filters results by Node Type
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             sm_component_type:[string]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filters results by Component Type
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             is_component_fidelity_level:[1-5]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filters results by Fidelity Level
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             tid:[integer]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filters results by Taxonomy ID (like Component Type filtering)
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             ss_component_manufacturer:[string]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filters results by Manufacturer
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             ss_component_model:[string]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filters results by Model
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             ss_component_author:[string]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filters results by Author
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             api_version
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             api_version=[string]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Specifies the API version to use.  The latest version is 2.0 and contains format changes.  The previous version is 1.1 and is still supported.
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                         <p>
+                          The API also accepts other component attributes as filters.
+                         </p>
+                         <p>
+                          An example search query is listed below.  This query returns the components matching the keyword "Denver" that are of component type "Weather File".  2 results are returned per request and the first page of results is requested.  The response is formatted in xml:
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;">http://bcl.nrel.gov/api/search/denver.xml?filters=type:nrel_component%20sm_component_type:"Weather File"&amp;show_rows=2&amp;page=0
+</pre>
+                         <!--<h2 style="color: black"><p>Single Component</h2>
+<p>The API also allows users to access individual components by ID (uuid).  The URL for downloading an individual component is: http://bcl.nrel.gov/api/component/download?uids=f5edd170-ae85-012d-6615-00ff10a04904&amp;api_version=1.1 with the ID of the content added to the path.  The user may choose to retrieve the data as xml, json, or yaml by appending the appropriate type with a dot (".").</p>
+<p>An example component download query is listed below. This query returns the component with a nid=22619, and the results are formatted in json:</p>
+<pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;">http://bcl.nrel.gov/api/component/22619.json</pre><p>-->
+                         <h2>
+                          API v2.0
+                         </h2>
+                         <p>
+                          A few example queries as well as syntax used by the API v2.0 are shown below.
+                         </p>
+                         <h3>
+                          Search by UUID
+                         </h3>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;">https://bcl.nrel.gov/api/search/?fq[]=ss_uuid:[UUID]&amp;api_version=2.0
+</pre>
+                         <h3>
+                          Search by File Type
+                         </h3>
+                         <p>
+                          There is no filter for file type, but if the file extension can be specified in the
+                          <keyword>
+                           part of the search:
+                          </keyword>
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;">https://bcl.nrel.gov/api/search/[file extension]?&amp;api_version=2.0
+</pre>
+                         <h3>
+                          Search by Attribute Presence
+                         </h3>
+                         <p>
+                          Wildcard searches can be performed to include all possible values of an attribute, and ensure that the content returned contains the specified attribute.  For example, to search for all components that have the "TPE UUID" attribute:
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;">https://bcl.nrel.gov/api/search/?fq[]=bundle:nrel_component&amp;fq[]=sm_a_TPE_uuid:[*%20TO%20*]&amp;api_version=2.0
+</pre>
+                         <p>
+                          The following table lists several useful attributes available for querying the BCL.
+                         </p>
+                         <table style="border:1px solid black;border-collapse: collapse;">
+                          <tbody>
+                           <tr>
+                            <th style="border: 1px solid black;padding: 10px;background-color:#0070BC;color:white;">
+                             Parameter
+                            </th>
+                            <th style="border: 1px solid black;padding: 10px;background-color:#0070BC;color:white;">
+                             Type
+                            </th>
+                            <th style="border: 1px solid black;padding: 10px;background-color:#0070BC;color:white;" width="35%">
+                             Usage
+                            </th>
+                            <th style="border: 1px solid black;padding: 10px;background-color:#0070BC;color:white;">
+                             Description
+                            </th>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             show_rows
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Query Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             show_rows=[integer]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             The maximum number of records the service will return. The default is 10 records.
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             page
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Query Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             page=[integer]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             If a query has more than 10 results, the page parameter can be used to paginate through the results.  Page numbering starts at 0.
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             api_version
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Query Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             api_version=[string]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Specifies the API version to use, and is required by API v2.0
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             UUID
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             fq[]=ss_uuid:[uuid]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter by UUID. Should return a maximum of 1 record
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             bundle
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             fq[]=bundle:[content type]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter by content type.  Options are
+                             <em>
+                              nrel_component
+                             </em>
+                             or
+                             <em>
+                              nrel_measure
+                             </em>
+                             .
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Component Type
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter Param
+                            </td>
+                            <td>
+                             fq[]=sm_vid_Component_Tags:[component type]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter by Component Type
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Measure Type
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             fq[]=sm_vid_Measure_Tags:[measure type]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter by Measure Type
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Component Type ID
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             fq[]=im_field_component_tags:[tid]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter by TaxonomyID of the component type
+                            </td>
+                           </tr>
+                           <tr>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             OpenStudio Type
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter Param
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             fq[]=sm_OpenStudio_Type:[openstudio type]
+                            </td>
+                            <td style="border: 1px solid black;padding: 10px;">
+                             Filter by OpenStudio type
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                         <p>
+                          Query parameters, such as api_version, page, and show_rows are appended to the URL, use a equal sign ("=") between parameter name and value, and are separated by an ampersand ("&amp;").  For example:
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;">https://bcl.nrel.gov/api/search/denver.json?page=2&amp;show_rows=2&amp;api_version=2.0</pre>
+                         <p>
+                          Filter parameters are appended to the URL by using the "fq[]=" syntax.  They use a color (":") between parameter name and value, and are separated by an ampersand ("&amp;").  Use one "fq[]" per filter parameter.  For example:
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;"> https://bcl.nrel.gov/api/search/?fq[]=bundle:nrel_component&amp;fq[]=sm_vid_Component_Tags:Window&amp;api_version=2.0
+</pre>
+                         <p>
+                          A
+                          <a href="list-of-attributes">
+                           full list of attributes
+                          </a>
+                          supported by the BCL is also available. If you would like to upload content with attributes not listed here, please
+                          <a href="contact">
+                           contact us
+                          </a>
+                          .
+                         </p>
+                         <h3>
+                          Download by UUID
+                         </h3>
+                         <p>
+                          Once you have the uuid of the component or measure that you would like to download, you can use the following resource to download it:
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;"> https://bcl.nrel.gov/api/component/download?uids=[the_uuid] </pre>
+                         <p>
+                          You can also download multiple components or measures at a time by listing uuids:
+                         </p>
+                         <pre style="font-family: 'Bitstream Vera Sans Mono','Courier',monospace;background-color:#eeeeee;border:1px solid #cccccc;padding:10px;"> https://bcl.nrel.gov/api/component/download?uids=[uuid1],[uuid2],[uuid3] </pre>
+                         <h2 style="color: black">
+                          Schemas
+                         </h2>
+                         <p>
+                          The component and measure schemas for the API version 2.0 are available below:
+                         </p>
+                         <p>
+                          <a href="https://bcl.nrel.gov/xsd/component/v/3">
+                           Component 3.0 Schema
+                          </a>
+                         </p>
+                         <p>
+                          <a href="https://bcl.nrel.gov/xsd/measure/v/3">
+                           Measure 3.0 Schema
+                          </a>
+                         </p>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="node-bottom region nested" id="node-bottom">
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <!-- /block-inner -->
+                 </div>
+                 <!-- /block -->
+                </div>
+                <!-- /content-inner -->
+               </div>
+               <!-- /content -->
+              </div>
+              <!-- /content-region-inner -->
+             </div>
+             <!-- /content-region -->
+            </div>
+            <!-- /content-group-inner -->
+           </div>
+           <!-- /content-group -->
+          </div>
+          <!-- /main-content-inner -->
+         </div>
+         <!-- /main-content -->
+        </div>
+        <!-- /main-group-inner -->
+       </div>
+       <!-- /main-group -->
+      </div>
+      <!-- /main-inner -->
+     </div>
+     <!-- /main -->
+    </div>
+    <!-- /main-wrapper -->
+    <!-- footer region -->
+    <div class="footer-wrapper full-width clearfix" id="footer-wrapper">
+     <div class="region region-footer footer grid12-12" id="footer">
+      <div class="footer-inner inner" id="footer-inner">
+       <div class="block block-nrel-footer first last odd" id="block-nrel_footer-nrel_footer_block">
+        <div class="gutter inner clearfix">
+         <div class="content clearfix">
+          <div class="nrel-footer">
+           <p>
+            Developed in collaboration with
+            <a href="http://www.nrel.gov">
+             NREL
+            </a>
+            ,
+            <a href="http://www.concept3d.com/">
+             Concept3D
+            </a>
+            and
+            <a href="https://devetry.com/">
+             Devetry
+            </a>
+            .
+           </p>
+           <p>
+            <a href="/contact">
+             Need Help?
+            </a>
+           </p>
+           <br/>
+          </div>
+         </div>
+        </div>
+        <!-- /block-inner -->
+       </div>
+       <!-- /block -->
+      </div>
+      <!-- /footer-inner -->
+     </div>
+     <!-- /footer -->
+    </div>
+    <!-- /footer-wrapper -->
+   </div>
+   <!-- /page-inner -->
+  </div>
+  <!-- /page -->
+ </body>
+</html>

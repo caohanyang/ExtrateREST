@@ -408,6 +408,12 @@ public class ProcessBaseUrl {
 
 		baseUrlList = searchUrlMode1(listFiles, API_NAME, baseUrlList, processMe,
 				"(?si)curl.{1,200}((http)|(https)){1}://");
+		
+		if (Settings.REQEXAMPLE.equals("http")) {
+			baseUrlList = searchUrlMode1(listFiles, API_NAME, baseUrlList, processMe,
+					"(?si)"+ Settings.REQKEY+ Settings.REQMIDDLE +"((http)|(https)){1}://");
+		}
+		
 		if (baseUrlList.size() != 0) {
 			// if matched, return directly
 //			return baseUrlList.get(0);
@@ -541,8 +547,9 @@ public class ProcessBaseUrl {
 						matchStrNull = matchStrNull.substring(matchStrNull.indexOf("http"));
 					}
 					
-					if (matchStrNull != null) {
+					if (matchStrNull != null & processMe.isRealUrl(matchStrNull)) {
 						Out.prln(matchStrNull);
+						matchStrNull = processMe.cleanUrl(matchStrNull);
 						baseUrlList.add(matchStrNull);
 					}
 				}
@@ -606,6 +613,7 @@ public class ProcessBaseUrl {
 		if (baseUrl == null)
 			return baseUrl;
 
+		baseUrl = baseUrl.split(" ")[0].trim();
 		String[] urlPart = baseUrl.split("/");
 		if (urlPart.length != 0) {
 			for (int i = 0; i < urlPart.length; i++) {

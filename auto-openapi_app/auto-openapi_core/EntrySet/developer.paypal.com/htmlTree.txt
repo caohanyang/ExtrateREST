@@ -1,0 +1,72 @@
+
+                                /-/balance-accounts
+                               |
+                               |--/customer-disputes
+                               |
+                               |--/glossary
+                               |
+                               |--/hateoas-links
+                               |
+                               |--/identity
+                               |
+                               |--/invoicing
+                               |
+                               |--/managed-accounts
+                               |
+                               |--/orders
+                               |
+                               |--/overview
+                               |
+                               |--/partner-referrals
+                               |
+                               |--/payment-experience
+                               |
+                               |--/payments
+                               |
+                               |--/payments.billing-agreements
+                               |
+                               |--/payments.billing-plans
+                               |
+                               |--/payments.payouts-batch
+                               |
+                               |--/quickstart
+                               |
+                               |--/referenced-payouts
+-- /developer.paypal.com/docs/api
+                               |--/rest-sdks
+                               |
+                               |--/service-integrations
+                               |
+                               |--/sync
+                               |
+                               |--/vault
+                               |
+                               |--/webhooks
+                               |
+                               |-/overview-/
+                               |
+                               |           /-/capture-payment
+                               |          |
+                               |          |--/create-billing-agreement
+                               |          |
+                               |          |--/create-billing-plan
+                               |          |
+                               |          |--/create-process-order
+                               |          |
+                               |-/quickstart-/create-webhook
+                               |          |
+                               |          |--/environment
+                               |          |
+                               |          |--/install
+                               |          |
+                               |          |--/payments
+                               |          |
+                               |           \-/refund-payment
+                               |
+                               |                     /-/slack-bot
+                               |                    |
+                                \/service-integrations         /-/direct_pay
+                                                    |         |
+                                                     \/slack-bot-/simple_pay
+                                                              |
+                                                               \-/subscribe

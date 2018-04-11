@@ -1,0 +1,1406 @@
+[
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/cancelendpoint:",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/authorization/{authorization_id}/capture",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B/capture \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"amount\": { \"currency\": \"USD\", \"total\": \"4.54\" }, \"is_final_capture\": true }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-44664305570317015KGEC5DI\",\"update_time\":\"2017-05-06T22:32:25Z\",\"amount\":{\"total\":\"4.54\",\"currency\":\"USD\"},\"is_final_capture\":true,\"create_time\":\"2017-05-06T22:32:24Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/capture/6BA17599X0950293U\"},{\"method\":\"POST\",\"rel\":\"refund\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/capture/6BA17599X0950293U/refund\"},{\"method\":\"GET\",\"rel\":\"authorization\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/5RA45624N3531924N\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-44664305570317015KGEC5DI\"}],\"id\":\"6BA17599X0950293U\",\"state\":\"completed\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks/webhook_id/event-types",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/notifications/webhooks/0EH40505U7160970P/event-types \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"event_types\":[{\"name\":\"PAYMENT.AUTHORIZATION.CREATED\",\"description\":\"Apaymentauthorizationwascreated.\",\"status\":\"ENABLED\"},{\"name\":\"PAYMENT.AUTHORIZATION.VOIDED\",\"description\":\"Apaymentauthorizationwasvoided.\",\"status\":\"ENABLED\"},{\"name\":\"RISK.DISPUTE.CREATED\",\"description\":\"Adisputewasfiledagainstatransaction.\",\"status\":\"DEPRECATED\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/refund-records/{transaction_id}",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-333R-YUQL-YNNN-D7WF/refund-records/EXTR-2LG703375E477444T \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"reference_id\": \"CAPTURETXNID\", \"reference_type\": \"TRANSACTION_ID\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"item_id\":\"SOMEITEMID\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/SOMEITEMID\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks-events",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/notifications/webhooks-events \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"count\":2,\"links\":[{\"method\":\"GET\",\"rel\":\"next\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks-events/?start_time=2014-08-04T12:46:47-07:00&amp;end_time=2014-09-18T12:46:47-07:00&amp;page_size=2&amp;move_to=next&amp;index_time=2014-09-17T23:07:35Z&amp;index_id=3\"},{\"method\":\"GET\",\"rel\":\"previous\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks-events/?start_time=2014-08-04T12:46:47-07:00&amp;end_time=2014-09-18T12:46:47-07:00&amp;page_size=2&amp;move_to=previous&amp;index_time=2014-09-17T23:07:35Z&amp;index_id=0\"}],\"events\":[{\"event_version\":\"1.0\",\"summary\":\"Apaymentauthorizationwascreated\",\"event_type\":\"PAYMENT.AUTHORIZATION.CREATED\",\"create_time\":\"2013-06-25T21:41:28Z\",\"resource\":{\"parent_payment\":\"PAY-36246664YD343335CKHFA4AY\",\"update_time\":\"2013-06-25T21:39:17Z\",\"amount\":{\"total\":\"7.47\",\"currency\":\"USD\",\"details\":{\"subtotal\":\"7.47\"}},\"valid_until\":\"2013-07-24T21:39:15Z\",\"create_time\":\"2013-06-25T21:39:15Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B/capture\"},{\"method\":\"POST\",\"rel\":\"void\",\"href\":\"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B/void\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.paypal.com/v1/payments/payment/PAY-36246664YD343335CKHFA4AY\"}],\"id\":\"2DC87612EK520411B\",\"state\":\"authorized\"},\"resource_type\":\"authorization\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notfications/webhooks-events/8PT597110X687430LKGECATA\"},{\"method\":\"POST\",\"rel\":\"resend\",\"href\":\"https://api.paypal.com/v1/notfications/webhooks-events/8PT597110X687430LKGECATA/resend\"}],\"id\":\"8PT597110X687430LKGECATA\"},{\"event_version\":\"1.0\",\"summary\":\"Apaymentauthorizationwascreated\",\"event_type\":\"PAYMENT.AUTHORIZATION.CREATED\",\"create_time\":\"2013-06-25T21:41:28Z\",\"resource\":{\"parent_payment\":\"PAY-ALDSFJ64YD343335CKHFA4AY\",\"update_time\":\"2013-06-25T21:39:17Z\",\"amount\":{\"total\":\"7.47\",\"currency\":\"USD\",\"details\":{\"subtotal\":\"7.47\"}},\"valid_until\":\"2013-07-24T21:39:15Z\",\"create_time\":\"2013-06-25T21:39:15Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/payments/authorization/HATH7S72EK520411B\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.paypal.com/v1/payments/authorization/HATH7S72EK520411B/capture\"},{\"method\":\"POST\",\"rel\":\"void\",\"href\":\"https://api.paypal.com/v1/payments/authorization/HATH7S72EK520411B/void\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.paypal.com/v1/payments/payment/PAY-HATH7S72EK520411B\"}],\"id\":\"HATH7S72EK520411B\",\"state\":\"authorized\"},\"resource_type\":\"authorization\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notfications/webhooks-events/HTSPGS710X687430LKGECATA\"},{\"method\":\"POST\",\"rel\":\"resend\",\"href\":\"https://api.paypal.com/v1/notfications/webhooks-events/HTSPGS710X687430LKGECATA/resend\"}],\"id\":\"HTSPGS710X687430LKGECATA\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/disputes/{dispute_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/customer/disputes/PP-000-003-648-191 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"disputed_transactions\":[{\"buyer_transaction_id\":\"965038709E474252Y\",\"seller\":{\"name\":\"TotalAttraction\",\"merchant_id\":\"MDLV8MPZEEXVJ\",\"email\":\"merchant@example.com\"},\"seller_transaction_id\":\"3VU62368U29897744\",\"transaction_status\":\"COMPLETED\",\"create_time\":\"2017-01-24T05:52:11.000Z\",\"gross_amount\":{\"value\":\"50.00\",\"currency_code\":\"USD\"},\"buyer\":{\"name\":\"JuneBuyer\",\"email\":\"buyer@example.com\"}}],\"reason\":\"MERCHANDISE_OR_SERVICE_NOT_RECEIVED\",\"update_time\":\"2017-01-24T11:40:32.000Z\",\"create_time\":\"2017-01-24T10:41:35.000Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/customer/disputes/PP-000-003-648-191\"}],\"dispute_amount\":{\"value\":\"50.00\",\"currency_code\":\"USD\"},\"dispute_id\":\"PP-000-003-648-191\",\"status\":\"WAITING_FOR_SELLER_RESPONSE\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"name\": \"Override Agreement\", \"description\": \"PayPal payment agreement that overrides merchant preferences and shipping fee and tax information.\", \"start_date\": \"2017-12-22T09:13:49Z\", \"payer\": { \"payment_method\": \"paypal\", \"payer_info\": { \"email\": \"payer@example.com\" } }, \"plan\": { \"id\": \"P-1WJ68935LL406420PUTENA2I\" }, \"shipping_address\": { \"line1\": \"Hotel Staybridge\", \"line2\": \"Crooke Street\", \"city\": \"San Jose\", \"state\": \"CA\", \"postal_code\": \"95112\", \"country_code\": \"US\" }, \"override_merchant_preferences\": { \"setup_fee\": { \"value\": \"3\", \"currency\": \"GBP\" }, \"return_url\": \"https://example.com/\", \"cancel_url\": \"https://example.com/cancel\", \"auto_bill_amount\": \"YES\", \"initial_fail_amount_action\": \"CONTINUE\", \"max_fail_attempts\": \"11\" }, \"override_charge_models\": [ { \"charge_id\": \"CHM-8373958130821962WUTENA2Q\", \"amount\": { \"value\": \"1\", \"currency\": \"GBP\" } } ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"name\":\"OverrideAgreement\",\"description\":\"Agreementthatoverridesmerchantpreferencesandchargemodels\",\"links\":[{\"method\":\"REDIRECT\",\"rel\":\"approval_url\",\"href\":\"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-83C745436S346813F\"},{\"method\":\"POST\",\"rel\":\"execute\",\"href\":\"https://www.sandbox.paypal.com/v1/payments/billing-agreements/EC-83C745436S346813F/agreement-execute\"}],\"payer\":{\"payment_method\":\"paypal\",\"payer_info\":{\"email\":\"payer@example.com\"}},\"plan\":{\"merchant_preferences\":{\"max_fail_attempts\":\"11\",\"setup_fee\":{\"currency\":\"GBP\",\"value\":\"3\"},\"initial_fail_amount_action\":\"CONTINUE\",\"return_url\":\"https://example.com/\",\"auto_bill_amount\":\"YES\",\"cancel_url\":\"https://example.com/cancel\"},\"name\":\"FastSpeedPlan\",\"description\":\"Vanillaplan\",\"payment_definitions\":[{\"amount\":{\"currency\":\"GBP\",\"value\":\"10\"},\"frequency_interval\":\"1\",\"name\":\"Regularpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"GBP\",\"value\":\"1\"},\"id\":\"CHM-8373958130821962WUTENA2Q\",\"type\":\"SHIPPING\"},{\"amount\":{\"currency\":\"GBP\",\"value\":\"2\"},\"id\":\"CHM-2937144979861454NUTENA2Q\",\"type\":\"TAX\"}],\"cycles\":\"0\",\"id\":\"PD-9WG6983719571780GUTENA2I\",\"type\":\"REGULAR\",\"frequency\":\"DAY\"},{\"amount\":{\"currency\":\"GBP\",\"value\":\"100\"},\"frequency_interval\":\"2\",\"name\":\"Trialpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"GBP\",\"value\":\"10\"},\"id\":\"CHM-78K47820SS4923826UTENA2Q\",\"type\":\"SHIPPING\"},{\"amount\":{\"currency\":\"GBP\",\"value\":\"12\"},\"id\":\"CHM-9M366179U7339472RUTENA2Q\",\"type\":\"TAX\"}],\"cycles\":\"5\",\"id\":\"PD-89M493313S710490TUTENA2Q\",\"type\":\"TRIAL\",\"frequency\":\"MONTH\"}],\"id\":\"P-1WJ68935LL406420PUTENA2I\",\"state\":\"ACTIVE\",\"type\":\"INFINITE\"},\"start_date\":\"2017-12-22T09:13:49Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}/set-balance",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/set-balance \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"value\": \"100\", \"currency\": \"USD\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/orders/{order_id}/capture",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/orders/O-3SP845109F051535C/capture \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"amount\": { \"currency\": \"USD\", \"total\": \"4.54\" }, \"is_final_capture\": true }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-9N9834337A9191208KOZOQWI\",\"update_time\":\"2017-07-01T17:13:47Z\",\"amount\":{\"total\":\"7.00\",\"currency\":\"USD\"},\"is_final_capture\":false,\"create_time\":\"2017-07-01T17:13:45Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/capture/51366113MA710110S\"},{\"method\":\"POST\",\"rel\":\"refund\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/capture/51366113MA710110S/refund\"},{\"method\":\"GET\",\"rel\":\"order\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-3SP845109F051535C\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9N9834337A9191208KOZOQWI\"}],\"id\":\"51366113MA710110S\",\"state\":\"completed\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/schedule",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-EHNV-LJ5S-A7DZ-V6NJ/schedule \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-RF6D-L66T-D7H2-CRU7\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/vault/credit-cards/{credit_card_id}",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-54E6956910402550WKGRL6EA \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/vault/credit-cards/{credit_card_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-54E6956910402550WKGRL6EA \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"number\":\"0000000000000000\",\"valid_until\":\"2016-05-26T00:00:00Z\",\"expire_month\":11,\"last_name\":\"Shopper\",\"billing_address\":{\"country_code\":\"US\",\"city\":\"Johnstown\",\"state\":\"OH\",\"postal_code\":\"43210\",\"line1\":\"52N.MainSt.\"},\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA\"},{\"method\":\"PATCH\",\"rel\":\"patch\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA\"}],\"state\":\"ok\",\"expire_year\":2018,\"id\":\"CARD-54E6956910402550WKGRL6EA\",\"type\":\"visa\",\"first_name\":\"Joe\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/vault/credit-cards/{credit_card_id}",
+      "url": "curl -v -X PATCH https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-1SW33690TH184423CKM2ZMVY \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '[ { \"op\": \"replace\", \"path\": \"/billing_address/line1\", \"value\": \"53 N Main St.\" } ]'",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"create_time\":\"2014-03-28T15:33:43Z\",\"expire_month\":11,\"last_name\":\"Shopper\",\"billing_address\":{\"country_code\":\"US\",\"city\":\"Johnstown\",\"phone\":\"408-334-8890\",\"state\":\"OH\",\"postal_code\":\"43210\",\"line1\":\"53NMainSt.\"},\"type\":\"visa\",\"number\":\"0000000000000000\",\"update_time\":\"2014-03-28T15:33:43Z\",\"valid_until\":\"2017-03-27T00:00:00Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY\"},{\"method\":\"PATCH\",\"rel\":\"patch\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY\"}],\"id\":\"CARD-1SW33690TH184423CKM2ZMVY\",\"state\":\"ok\",\"expire_year\":2015,\"first_name\":\"Joe\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payouts-item/payout_item_id/cancel",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/payouts-item/1421342/cancel \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"transaction_id\":\"4345\",\"payout_item_fee\":{\"currency\":\"USD\",\"value\":\"0.35\"},\"transaction_status\":\"RETURNED\",\"sender_batch_id\":\"2014021801\",\"time_processed\":\"2014-01-27T10:17:41Z\",\"payout_item\":{\"recipient_type\":\"EMAIL\",\"note\":\"Thanksforyourpatronage!\",\"amount\":{\"currency\":\"USD\",\"value\":\"9.87\"},\"receiver\":\"receiver@example.com\",\"sender_item_id\":\"14Feb_234\"},\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts-item/1421342\"},{\"method\":\"GET\",\"rel\":\"batch\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/20140724\"}],\"payout_item_id\":\"1421342\",\"payout_batch_id\":\"20140724\",\"errors\":{\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch#errors\",\"debug_id\":\"12341234\",\"name\":\"RECEIVER_UNREGISTERED\",\"message\":\"Receiverisunregistered\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/disputes/{dispute_id}/appeal",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/customer/disputes/PP-D-27803/appeal \\ -H \"Content-Type: multipart/related\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"notes\": \"Consider the following evidence.\", \"evidence_info\": { \"tracking_number\": \"ABX123\", \"carrier_name\": \"DHL\" } }'",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payouts-item/payout_item_id",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/payouts-item/1421342 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"transaction_id\":\"4345\",\"payout_item_fee\":{\"currency\":\"USD\",\"value\":\"0.35\"},\"transaction_status\":\"SUCCESS\",\"time_processed\":\"2014-01-27T10:17:41Z\",\"payout_item\":{\"recipient_type\":\"EMAIL\",\"note\":\"Thanksforyourpatronage!\",\"amount\":{\"currency\":\"USD\",\"value\":\"9.87\"},\"receiver\":\"receiver@example.com\",\"sender_item_id\":\"14Feb_234\"},\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts-item/1421342\"},{\"method\":\"POST\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts-item/1421342/cancel\"},{\"method\":\"GET\",\"rel\":\"batch\",\"href\":\"https://localhost:12380/v1/payments/payouts/NEYJ9G3JNQV78\"}],\"payout_item_id\":\"1421342\",\"payout_batch_id\":\"20140724\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/cancelendpoint.",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/capture/{capture_id}/refund",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/capture/2MU78835H4515710F/refund \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"amount\": { \"currency\": \"USD\", \"total\": \"110.54\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-8PT597110X687430LKGECATA\",\"update_time\":\"2017-05-06T22:11:51Z\",\"amount\":{\"total\":\"110.54\",\"currency\":\"USD\"},\"create_time\":\"2017-05-06T22:11:51Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/refund/0P209507D6694645N\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8PT597110X687430LKGECATA\"},{\"method\":\"GET\",\"rel\":\"capture\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/capture/8F148933LY9388354\"}],\"id\":\"0P209507D6694645N\",\"state\":\"completed\",\"capture_id\":\"8F148933LY9388354\",\"invoice_number\":\"INV-1234567\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/wallet/balance-accounts",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"reserved\":{\"value\":\"00.00\",\"currency_code\":\"USD\"},\"available\":{\"value\":\"1000.00\",\"currency_code\":\"USD\"},\"links\":[],\"id\":\"HO1069997\",\"open\":true,\"primary\":true}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}/cancel",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/cancel \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"note\": \"Canceling the profile.\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/processendpoint:",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/vault/credit-cards",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/vault/credit-cards/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"number\": \"4417119669820331\", \"type\": \"visa\", \"expire_month\": 11, \"expire_year\": 2015, \"first_name\": \"Joe\", \"last_name\": \"Shopper\", \"billing_address\": { \"line1\": \"52 N Main St.\", \"city\": \"Johnstown\", \"country_code\": \"US\", \"postal_code\": \"43210\", \"state\": \"OH\", \"phone\": \"408-334-8890\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"create_time\":\"2014-03-28T15:33:43Z\",\"expire_month\":11,\"last_name\":\"Shopper\",\"billing_address\":{\"country_code\":\"US\",\"city\":\"Johnstown\",\"phone\":\"408-334-8890\",\"state\":\"OH\",\"postal_code\":\"43210\",\"line1\":\"52NMainSt.\"},\"type\":\"visa\",\"number\":\"0000000000000000\",\"update_time\":\"2014-03-28T15:33:43Z\",\"valid_until\":\"2017-03-27T00:00:00Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY\"},{\"method\":\"PATCH\",\"rel\":\"patch\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-1SW33690TH184423CKM2ZMVY\"}],\"id\":\"CARD-1SW33690TH184423CKM2ZMVY\",\"state\":\"ok\",\"expire_year\":2015,\"first_name\":\"Joe\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/vault/credit-cards",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/vault/credit-cards?external_card_id=card-1 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"links\":[{\"method\":\"GET\",\"rel\":\"first\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-cards/?page_size=10&sort_by=create_time&external_card_id=card-1&sort_order=asc\"},{\"method\":\"GET\",\"rel\":\"last\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-cards/?page_size=10&sort_by=create_time&external_card_id=card-1&sort_order=asc&page=1\"}],\"total_pages\":1,\"items\":[{\"create_time\":\"2014-10-10T14:58:31Z\",\"external_card_id\":\"card-1\",\"expire_month\":11,\"last_name\":\"Shopper\",\"billing_address\":{\"country_code\":\"GB\",\"city\":\"Johnstown\",\"state\":\"CA\",\"postal_code\":\"43210\",\"line1\":\"52N.MainSt.\"},\"type\":\"visa\",\"number\":\"0000000000000000\",\"update_time\":\"2014-10-10T14:58:31Z\",\"valid_until\":\"2017-10-09T00:00:00Z\",\"payer_id\":\"rajesh\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-56X15128W3493241XKQ37IFY\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-56X15128W3493241XKQ37IFY\"},{\"method\":\"PATCH\",\"rel\":\"patch\",\"href\":\"https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-56X15128W3493241XKQ37IFY\"}],\"id\":\"CARD-56X15128W3493241XKQ37IFY\",\"state\":\"ok\",\"expire_year\":2018,\"first_name\":\"Mary\"}],\"total_items\":1}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/search",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/search/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"start_invoice_date\": \"2014-01-01 PST\", \"end_invoice_date\": \"2014-03-26 PST\", \"page\": 0, \"page_size\": 3, \"total_count_required\": true }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"invoices\":[{\"number\":\"0001\",\"metadata\":{\"created_date\":\"2012-05-0904:48:57PST\"},\"billing_info\":[{\"email\":\"sally-patient@example.com\"}],\"payment_term\":{\"due_date\":\"2012-05-24PST\"},\"total_amount\":{\"currency\":\"USD\",\"value\":\"250\"},\"id\":\"INV2-KXVU-7Z64-DT6W-MG2X\",\"merchant_info\":{\"email\":\"dennis@example.com\"},\"status\":\"SENT\",\"invoice_date\":\"2012-05-09PST\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/record-refund",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-T4UQ-VW4W-K7N7-XM2R/record-refund \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"date\": \"2013-11-10 14:00:00 PST\", \"note\": \"Refunded by cash!\", \"amount\": { \"currency\": \"USD\", \"value\": \"20.00\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/refund/{refund_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/refund/4GU360220B627614A \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"sale_id\":\"36C38912MN9658832\",\"parent_payment\":\"PAY-5YK922393D847794YKER7MUI\",\"update_time\":\"2017-01-01T03:00:02Z\",\"amount\":{\"total\":\"2.34\",\"currency\":\"USD\"},\"create_time\":\"2017-01-01T02:00:00Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/refund/4GU360220B627614A\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI\"},{\"method\":\"GET\",\"rel\":\"sale\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/sale/36C38912MN9658832\"}],\"id\":\"4GU360220B627614A\",\"state\":\"completed\",\"invoice_number\":\"INV-1234567\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/templates",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/templates/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"name\": \"Hours Template\", \"default\": true, \"unit_of_measure\": \"HOURS\", \"template_data\": { \"merchant_info\": { \"email\": \"doctor@example.com\", \"first_name\": \"Dennis\", \"last_name\": \"Doctor\", \"business_name\": \"Medical Professionals, LLC\", \"phone\": { \"country_code\": \"001\", \"national_number\": \"5032141716\" }, \"address\": { \"line1\": \"1234 Main St.\", \"city\": \"Portland\", \"state\": \"OR\", \"postal_code\": \"97217\", \"country_code\": \"US\" } }, \"items\": [ { \"name\": \"Nutri Bullet\", \"quantity\": 1, \"unit_price\": { \"currency\": \"USD\", \"value\": \"50.00\" } } ], \"tax_calculated_after_discount\": false, \"tax_inclusive\": false, \"note\": \"Thank you for your business.\", \"logo_url\": \"https://example.com/v1/images/redDot.jpeg\" }, \"settings\": [ { \"field_name\": \"items.date\", \"display_preference\": { \"hidden\": true } }, { \"field_name\": \"custom\", \"display_preference\": { \"hidden\": true } } ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"settings\":[{\"display_preference\":{\"hidden\":true},\"field_name\":\"items.date\"},{\"display_preference\":{\"hidden\":true},\"field_name\":\"custom\"}],\"default\":true,\"template_data\":{\"note\":\"Thankyouforyourbusiness.\",\"tax_calculated_after_discount\":false,\"logo_url\":\"https://example.com/v1/images/redDot.jpeg\",\"tax_inclusive\":false,\"merchant_info\":{\"business_name\":\"MedicalProfessionals,LLC\",\"address\":{\"country_code\":\"US\",\"city\":\"Portland\",\"state\":\"OR\",\"postal_code\":\"97217\",\"line1\":\"1234MainSt.\"},\"phone\":{\"country_code\":\"001\",\"national_number\":\"5032141716\"},\"last_name\":\"Doctor\",\"first_name\":\"Dennis\",\"email\":\"doctor@example.com\"},\"items\":[{\"quantity\":1,\"name\":\"NutriBullet\",\"unit_price\":{\"currency\":\"USD\",\"value\":\"50.00\"}}]},\"name\":\"HoursTemplate\",\"unit_of_measure\":\"HOURS\",\"template_id\":\"TEMP-XYZ\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-XYZ\"},{\"method\":\"PUT\",\"rel\":\"replace\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-XYZ\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-XYZ\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/templates",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/invoicing/templates \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"emails\":[\"invoicing-merchant@example.com\",\"invoicing-merch-store2@example.com\"],\"addresses\":[{\"country_code\":\"US\",\"city\":\"SanJose\",\"state\":\"CA\",\"postal_code\":\"95131\",\"line1\":\"2211N1stStreet\"}],\"templates\":[{\"settings\":[{\"display_preference\":{\"hidden\":true},\"field_name\":\"items.date\"},{\"display_preference\":{\"hidden\":true},\"field_name\":\"custom\"}],\"default\":true,\"template_data\":{\"note\":\"Thankyouforyourbusiness.\",\"tax_calculated_after_discount\":false,\"logo_url\":\"https://example.com/v1/images/redDot.jpeg\",\"tax_inclusive\":false,\"merchant_info\":{\"business_name\":\"MedicalProfessionals,LLC\",\"address\":{\"country_code\":\"US\",\"city\":\"Portland\",\"state\":\"OR\",\"postal_code\":\"97217\",\"line1\":\"1234MainSt.\"},\"phone\":{\"country_code\":\"001\",\"national_number\":\"5032141716\"},\"last_name\":\"Doctor\",\"first_name\":\"Dennis\",\"email\":\"doctor@example.com\"},\"items\":[{\"quantity\":1,\"name\":\"NutriBullet\",\"unit_price\":{\"currency\":\"USD\",\"value\":\"50.00\"}}]},\"name\":\"HoursTemplate\",\"unit_of_measure\":\"HOURS\",\"template_id\":\"TEMP-XYZ\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-XYZ\"},{\"method\":\"PUT\",\"rel\":\"replace\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-XYZ\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-XYZ\"}]}],\"phones\":[{\"country_code\":\"1\",\"national_number\":\"4085057783\"},{\"country_code\":\"1\",\"national_number\":\"4088064703\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"collection\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/templates\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/checkout/orders",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/checkout/orders \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"purchase_units\": [ { \"reference_id\": \"store_mobile_world_order_1234\", \"description\": \"Mobile World Store order-1234\", \"amount\": { \"currency\": \"USD\", \"details\": { \"subtotal\": \"1.09\", \"shipping\": \"0.02\", \"tax\": \"0.33\" }, \"total\": \"1.44\" }, \"payee\": { \"email\": \"seller@example.com\" }, \"items\": [ { \"name\": \"NeoPhone\", \"sku\": \"sku03\", \"price\": \"0.54\", \"currency\": \"USD\", \"quantity\": \"1\", \"category\": \"PHYSICAL\" }, { \"name\": \"Fitness Watch\", \"sku\": \"sku04\", \"price\": \"0.55\", \"currency\": \"USD\", \"quantity\": \"1\", \"category\": \"PHYSICAL\" } ], \"shipping_address\": { \"recipient_name\": \"John Doe\", \"line1\": \"2211 N First Street\", \"line2\": \"Building 17\", \"city\": \"San Jose\", \"country_code\": \"US\", \"postal_code\": \"95131\", \"state\": \"CA\", \"phone\": \"(123) 456-7890\" }, \"shipping_method\": \"United Postal Service\", \"partner_fee_details\": { \"receiver\": { \"email\": \"partner@example.com\" }, \"amount\": { \"value\": \"0.01\", \"currency\": \"USD\" } }, \"payment_linked_group\": 1, \"custom\": \"custom_value_2388\", \"invoice_number\": \"invoice_number_2388\", \"payment_descriptor\": \"Payment Mobile World\" } ], \"redirect_urls\": { \"return_url\": \"https://example.com/return\", \"cancel_url\": \"https://example.com/cancel\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"gross_total_amount\":{\"currency\":\"USD\",\"value\":\"1.44\"},\"create_time\":\"2017-04-26T21:18:49Z\",\"redirect_urls\":{\"return_url\":\"https://example.com/return\",\"cancel_url\":\"https://example.com/cancel\"},\"purchase_units\":[{\"amount\":{\"total\":\"1.44\",\"currency\":\"USD\",\"details\":{\"shipping\":\"0.02\",\"subtotal\":\"1.09\",\"tax\":\"0.33\"}},\"reference_id\":\"store_mobile_world_order_1234\",\"custom\":\"custom_value_2388\",\"description\":\"MobileWorldStoreorder-1234\",\"partner_fee_details\":{\"amount\":{\"currency\":\"USD\",\"value\":\"0.01\"},\"receiver\":{\"email\":\"partner@example.com\"}},\"payee\":{\"email\":\"seller@example.com\"},\"payment_linked_group\":1,\"payment_descriptor\":\"PaymentMobileWorld\",\"shipping_method\":\"UnitedPostalService\",\"shipping_address\":{\"preferred_address\":false,\"country_code\":\"US\",\"default_address\":false,\"city\":\"SanJose\",\"phone\":\"(123)456-7890\",\"primary_address\":false,\"disable_for_transaction\":false,\"state\":\"CA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"95131\",\"line2\":\"Building17\",\"line1\":\"2211NFirstStreet\"},\"items\":[{\"quantity\":\"1\",\"price\":\"0.54\",\"name\":\"NeoPhone\",\"currency\":\"USD\",\"sku\":\"sku03\",\"category\":\"PHYSICAL\"},{\"quantity\":\"1\",\"price\":\"0.55\",\"name\":\"FitnessWatch\",\"currency\":\"USD\",\"sku\":\"sku04\",\"category\":\"PHYSICAL\"}],\"invoice_number\":\"invoice_number_2388\",\"status\":\"CAPTURED\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/checkout/orders/8RU61172JS455403V\"},{\"method\":\"GET\",\"rel\":\"approval_url\",\"href\":\"https://www.paypal.com/webapps/hermes?token=8RU61172JS455403V\"},{\"method\":\"DELETE\",\"rel\":\"cancel\",\"href\":\"https://api.paypal.com/v1/checkout/orders/8RU61172JS455403V\"}],\"id\":\"8RU61172JS455403V\",\"status\":\"CREATED\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/checkout/orders/{order_id}",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/checkout/orders/RT52181732T9513405D \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/checkout/orders/{order_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/checkout/orders/8RU61172JS455403V \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"gross_total_amount\":{\"currency\":\"USD\",\"value\":\"1.44\"},\"metadata\":{\"supplementary_data\":[{\"name\":\"risk_correlation_id\",\"value\":\"8RU61172JS455403V\"},{\"name\":\"buyer_ipaddress\",\"value\":\"10.225.82.18\"},{\"name\":\"external_channel\",\"value\":\"WEB\"}]},\"payment_details\":{\"payment_id\":\"PAYID-LEAQ63Q3HV803789J6535430\"},\"create_time\":\"2017-04-26T21:18:49Z\",\"redirect_urls\":{\"return_url\":\"https://example.com/return\",\"cancel_url\":\"https://example.com/cancel\"},\"purchase_units\":[{\"amount\":{\"total\":\"1.44\",\"currency\":\"USD\",\"details\":{\"shipping\":\"0.02\",\"subtotal\":\"1.09\",\"tax\":\"0.33\"}},\"reference_id\":\"store_mobile_world_order_1234\",\"custom\":\"custom_value_2388\",\"description\":\"MobileWorldStoreorder-1234\",\"partner_fee_details\":{\"amount\":{\"currency\":\"USD\",\"value\":\"0.01\"},\"receiver\":{\"email\":\"partner@example.com\"}},\"payee\":{\"email\":\"seller@example.com\"},\"payment_linked_group\":1,\"payment_descriptor\":\"PaymentMobileWorld\",\"shipping_method\":\"UnitedPostalService\",\"payment_summary\":{\"captures\":[{\"amount\":{\"total\":\"1.44\",\"currency\":\"USD\",\"details\":{}},\"transaction_fee\":{\"currency\":\"USD\",\"value\":\"0.36\"},\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/payments/capture/14U02018GD754745H\"},{\"method\":\"POST\",\"rel\":\"refund\",\"href\":\"https://api.paypal.com/v1/payments/capture/14U02018GD754745H/refund\"}],\"id\":\"14U02018GD754745H\",\"status\":\"COMPLETED\"}]},\"shipping_address\":{\"preferred_address\":false,\"country_code\":\"US\",\"default_address\":false,\"city\":\"SanJose\",\"primary_address\":false,\"disable_for_transaction\":false,\"state\":\"CA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"95131\",\"type\":\"GIFT\",\"line2\":\"Building17\",\"line1\":\"2211NFirstStreet\"},\"items\":[{\"quantity\":\"1\",\"price\":\"0.54\",\"name\":\"NeoPhone\",\"currency\":\"USD\",\"sku\":\"sku03\",\"category\":\"PHYSICAL\"},{\"quantity\":\"1\",\"price\":\"0.55\",\"name\":\"FitnessWatch\",\"currency\":\"USD\",\"sku\":\"sku04\",\"category\":\"PHYSICAL\"}],\"invoice_number\":\"invoice_number_2388\",\"status\":\"CAPTURED\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/checkout/orders/8RU61172JS455403V\"}],\"id\":\"8RU61172JS455403V\",\"payer_info\":{\"country_code\":\"US\",\"last_name\":\"Doe\",\"payer_id\":\"9WVBNYPKKNBJS\",\"billing_address\":{\"country_code\":\"US\",\"city\":\"SanJose\",\"state\":\"CA\",\"postal_code\":\"95131\",\"line2\":\"\",\"line1\":\"1MainSt\"},\"shipping_address\":{\"preferred_address\":false,\"country_code\":\"US\",\"default_address\":false,\"city\":\"SanJose\",\"primary_address\":false,\"disable_for_transaction\":false,\"state\":\"CA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"95131\",\"type\":\"GIFT\",\"line2\":\"Building17\",\"line1\":\"2211NFirstStreet\"},\"first_name\":\"Jake\",\"email\":\"test-payer@paypal.com\"},\"status\":\"COMPLETED\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"merchant_info\": { \"email\": \"merchant@example.com\", \"first_name\": \"David\", \"last_name\": \"Larusso\", \"business_name\": \"Mitchell & Murray\", \"phone\": { \"country_code\": \"001\", \"national_number\": \"4085551234\" }, \"address\": { \"line1\": \"1234 First Street\", \"city\": \"Anytown\", \"state\": \"CA\", \"postal_code\": \"98765\", \"country_code\": \"US\" } }, \"billing_info\": [ { \"email\": \"bill-me@example.com\", \"first_name\": \"Stephanie\", \"last_name\": \"Meyers\" } ], \"shipping_info\": { \"first_name\": \"Stephanie\", \"last_name\": \"Meyers\", \"address\": { \"line1\": \"1234 Main Street\", \"city\": \"Anytown\", \"state\": \"CA\", \"postal_code\": \"98765\", \"country_code\": \"US\" } }, \"items\": [ { \"name\": \"Zoom System wireless headphones\", \"quantity\": 2, \"unit_price\": { \"currency\": \"USD\", \"value\": \"120\" }, \"tax\": { \"name\": \"Tax\", \"percent\": 8 } }, { \"name\": \"Bluetooth speaker\", \"quantity\": 1, \"unit_price\": { \"currency\": \"USD\", \"value\": \"145\" }, \"tax\": { \"name\": \"Tax\", \"percent\": 8 } } ], \"discount\": { \"percent\": 1 }, \"shipping_cost\": { \"amount\": { \"currency\": \"USD\", \"value\": \"10\" } }, \"note\": \"Thank you for your business.\", \"terms\": \"No refunds after 30 days.\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"shipping_info\":{\"address\":{\"country_code\":\"US\",\"city\":\"Anytown\",\"state\":\"CA\",\"postal_code\":\"98765\",\"line1\":\"1234MainStreet\"},\"last_name\":\"Meyers\",\"first_name\":\"Stephanie\"},\"note\":\"Thankyouforyourbusiness.\",\"tax_calculated_after_discount\":false,\"metadata\":{\"created_date\":\"2017-06-2209:39:04PDT\"},\"shipping_cost\":{\"amount\":{\"currency\":\"USD\",\"value\":\"10.00\"}},\"discount\":{\"amount\":{\"currency\":\"USD\",\"value\":\"38.50\"},\"percent\":10},\"tax_inclusive\":false,\"merchant_info\":{\"business_name\":\"Mitchell&Murray\",\"address\":{\"country_code\":\"US\",\"city\":\"Anytown\",\"state\":\"CA\",\"postal_code\":\"98765\",\"line1\":\"1234FirstStreet\"},\"phone\":{\"country_code\":\"001\",\"national_number\":\"4085551234\"},\"last_name\":\"Larusso\",\"first_name\":\"David\",\"email\":\"merchant@example.com\"},\"invoice_date\":\"2017-06-22PDT\",\"number\":\"INV01256\",\"billing_info\":[{\"last_name\":\"Meyers\",\"first_name\":\"Stephanie\",\"email\":\"bill-me@example.com\"}],\"allow_tip\":false,\"total_amount\":{\"currency\":\"USD\",\"value\":\"387.30\"},\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX\"},{\"method\":\"POST\",\"rel\":\"send\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX/send\"},{\"method\":\"PUT\",\"rel\":\"update\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX/update\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX\"}],\"id\":\"INV2-RUVR-ADWQ-H89Y-ABCD\",\"items\":[{\"quantity\":2,\"name\":\"ZoomSystemwirelessheadphones\",\"tax\":{\"amount\":{\"currency\":\"USD\",\"value\":\"19.20\"},\"name\":\"Tax\",\"percent\":8},\"unit_price\":{\"currency\":\"USD\",\"value\":\"120.00\"}},{\"quantity\":1,\"name\":\"Bluetoothspeaker\",\"tax\":{\"amount\":{\"currency\":\"USD\",\"value\":\"11.60\"},\"name\":\"Tax\",\"percent\":8},\"unit_price\":{\"currency\":\"USD\",\"value\":\"145.00\"}}],\"status\":\"DRAFT\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/invoicing/invoices?page=3&page_size=4&total_count_required=true \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"invoices\":[{\"number\":\"9879878979003791\",\"shipping_info\":{\"business_name\":\"Notapplicable\",\"last_name\":\"Patient\",\"first_name\":\"Sally\"},\"note\":\"MedicalInvoice16Jul,2013PST\",\"metadata\":{\"created_date\":\"2014-02-2723:55:58PST\"},\"billing_info\":[{\"email\":\"bill-me@example.com\"}],\"total_amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"id\":\"INV2-2NB5-UJ7A-YSUJ-ABCD\",\"merchant_info\":{\"email\":\"merchant@example.com\"},\"status\":\"DRAFT\",\"invoice_date\":\"2014-02-27PST\"},{\"number\":\"9879878979003790\",\"shipping_info\":{\"business_name\":\"Notapplicable\",\"last_name\":\"Patient\",\"first_name\":\"Sally\"},\"note\":\"MedicalInvoice16Jul,2013PST\",\"metadata\":{\"created_date\":\"2014-02-2719:41:56PST\"},\"billing_info\":[{\"email\":\"bill-me@example.com\"}],\"total_amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"id\":\"INV2-5AYC-UE5K-XXEG-ABCD\",\"merchant_info\":{\"email\":\"merchant@example.com\"},\"status\":\"DRAFT\",\"invoice_date\":\"2014-02-27PST\"},{\"number\":\"9879878979003789\",\"shipping_info\":{\"business_name\":\"Notapplicable\",\"last_name\":\"Patient\",\"first_name\":\"Sally\"},\"note\":\"MedicalInvoice16Jul,2013PST\",\"metadata\":{\"created_date\":\"2014-02-2715:34:11PST\"},\"billing_info\":[{\"email\":\"bill-me@example.com\"}],\"total_amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"id\":\"INV2-C4QH-KEKM-C5QE-ABCD\",\"merchant_info\":{\"email\":\"merchant@example.com\"},\"status\":\"DRAFT\",\"invoice_date\":\"2014-02-27PST\"},{\"number\":\"9879878979003788\",\"shipping_info\":{\"business_name\":\"Notapplicable\",\"last_name\":\"Patient\",\"first_name\":\"Sally\"},\"note\":\"MedicalInvoice16Jul,2013PST\",\"metadata\":{\"created_date\":\"2014-02-2715:34:01PST\"},\"billing_info\":[{\"email\":\"bill-me@example.com\"}],\"total_amount\":{\"currency\":\"USD\",\"value\":\"12.00\"},\"id\":\"INV2-YP6Y-9LJU-9NFS-ABCD\",\"merchant_info\":{\"email\":\"merchant@example.com\"},\"status\":\"DRAFT\",\"invoice_date\":\"2014-02-27PST\"}],\"total_count\":589,\"links\":[{\"method\":\"GET\",\"rel\":\"next\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices?page=4&page_size=4&total_count_required=true\"},{\"method\":\"GET\",\"rel\":\"previous\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices?page=2&page_size=4&total_count_required=true\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partner-referrals",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/customer/partner-referrals \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"customer_data\": { \"customer_type\": \"MERCHANT\", \"person_details\": { \"email_address\": \"customer@example.com\", \"name\": { \"prefix\": \"Mr.\", \"given_name\": \"Shashank\", \"surname\": \"Wankhede\", \"middle_name\": \"Govind\" }, \"phone_contacts\": [ { \"phone_number_details\": { \"country_code\": \"91\", \"national_number\": \"9740216087\" }, \"phone_type\": \"HOME\" } ], \"home_address\": { \"line1\": \"11, outer ring road\", \"state\": \"Karnataka\", \"city\": \"Bangalore\", \"country_code\": \"IN\", \"postal_code\": \"560103\" }, \"date_of_birth\": { \"event_type\": \"BIRTH\", \"event_date\": \"1987-12-29T23:59:59.999Z\" }, \"nationality_country_code\": \"IN\", \"identity_documents\": [ { \"type\": \"SOCIAL_SECURITY_NUMBER\", \"value\": \"ABCDEF34646\", \"partial_value\": false, \"issuer_country_code\": \"US\" } ] }, \"business_details\": { \"phone_contacts\": [ { \"phone_number_details\": { \"country_code\": \"91\", \"national_number\": \"9740216087\" }, \"phone_type\": \"FAX\" } ], \"business_address\": { \"line1\": \"11, outer ring road\", \"state\": \"Karnataka\", \"city\": \"Bangalore\", \"country_code\": \"IN\", \"postal_code\": \"560103\" }, \"business_type\": \"PROPRIETORSHIP\", \"category\": \"1004\", \"sub_category\": \"2025\", \"names\": [ { \"type\": \"LEGAL\", \"name\": \"SHASHANK STORE\" } ], \"business_description\": \"Arts and handicrafts\", \"event_dates\": [ { \"event_type\": \"ESTABLISHED\", \"event_date\": \"2009-01-31T13:59:45Z\" } ], \"website_urls\": [ \"https://www.example.com/mystore/\" ], \"annual_sales_volume_range\": { \"minimum_amount\": { \"currency\": \"USD\", \"value\": \"2000\" }, \"maximum_amount\": { \"currency\": \"USD\", \"value\": \"3000\" } }, \"average_monthly_volume_range\": {}, \"identity_documents\": [ { \"type\": \"TAX_IDENTIFICATION_NUMBER\", \"value\": \"ABCDEF34646\", \"partial_value\": false, \"issuer_country_code\": \"US\" } ], \"email_contacts\": [ { \"email_address\": \"customer-service@example.com\", \"role\": \"CUSTOMER_SERVICE\" } ] }, \"financial_instrument_data\": { \"bank_details\": [ { \"nick_name\": \"Bank of America\", \"account_number\": \"123405668293\", \"account_type\": \"CHECKING\", \"currency_code\": \"USD\", \"identifiers\": [ { \"type\": \"ROUTING_NUMBER_1\", \"value\": \"123456789\" } ] } ] }, \"preferred_language_code\": \"en_US\", \"primary_currency_code\": \"USD\", \"referral_user_payer_id\": { \"type\": \"PAYER_ID\", \"value\": \"RFYUH2QQDGUQU\" }, \"partner_specific_identifiers\": [ { \"type\": \"TRACKING_ID\", \"value\": \"ABJSDFO343SD\" } ] }, \"requested_capabilities\": [ { \"capability\": \"BANK_ADDITION\" } ], \"web_experience_preference\": { \"partner_logo_url\": \"https://www.example.com/logo/\", \"return_url\": \"https://www.example.com/\", \"action_renewal_url\": \"https://www.example.com/renew/\" }, \"collected_consents\": [ { \"type\": \"SHARE_DATA_CONSENT\", \"granted\": true } ], \"products\": [ \"EXPRESS_CHECKOUT\" ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"description\":\"Thereadreferraldatasharedbythepartner.\",\"href\":\"https://uri.paypal.com/v1/customer/partner-referrals/ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0=\"},{\"method\":\"GET\",\"rel\":\"action_url\",\"description\":\"ThetargetwebredirectURLforthenextaction.\",\"href\":\"https://www.paypal.com/merchantsignup/partner/onboardingentry?token=ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0=\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/authorization/{authorization_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-36246664YD343335CKHFA4AY\",\"update_time\":\"2017-06-25T21:39:17Z\",\"amount\":{\"total\":\"7.47\",\"currency\":\"USD\",\"details\":{\"subtotal\":\"7.47\"}},\"valid_until\":\"2017-07-24T21:39:15Z\",\"create_time\":\"2017-06-25T21:39:15Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B/capture\"},{\"method\":\"POST\",\"rel\":\"void\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B/void\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-36246664YD343335CKHFA4AY\"}],\"id\":\"2DC87612EK520411B\",\"state\":\"authorized\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks-event-types",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/notifications/webhooks-event-types \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"event_types\":[{\"name\":\"PAYMENT.AUTHORIZATION.CREATED\",\"description\":\"Apaymentauthorizationwascreated.\",\"status\":\"ENABLED\"},{\"name\":\"PAYMENT.AUTHORIZATION.VOIDED\",\"description\":\"Apaymentauthorizationwasvoided.\",\"status\":\"ENABLED\"},{\"name\":\"PAYMENT.CAPTURE.COMPLETED\",\"description\":\"Acapturepaymentwascompleted.\",\"status\":\"ENABLED\"},{\"name\":\"PAYMENT.CAPTURE.REFUNDED\",\"description\":\"Acapturepaymentwasrefunded.\",\"status\":\"ENABLED\"},{\"name\":\"PAYMENT.SALE.COMPLETED\",\"description\":\"Asalepaymentwascompleted.\",\"status\":\"ENABLED\"},{\"name\":\"PAYMENT.SALE.REFUNDED\",\"description\":\"Asalepaymentwasrefunded.\",\"status\":\"ENABLED\"},{\"name\":\"RISK.DISPUTE.CREATED\",\"description\":\"Adisputewasfiledagainstatransaction.\",\"status\":\"DEPRECATED\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/disputes",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/customer/disputes?disputed_transaction_id=965038709E474252Y \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/customer/disputes?disputed_transaction_id=965038709E474252Y\"},{\"method\":\"GET\",\"rel\":\"first\",\"href\":\"https://api.sandbox.paypal.com/v1/customer/disputes?disputed_transaction_id=965038709E474252Y\"}],\"items\":[{\"disputed_transactions\":[{\"buyer_transaction_id\":\"965038709E474252Y\",\"seller\":{\"name\":\"TotalAttraction\",\"merchant_id\":\"MDLV8MPZEEXVJ\",\"email\":\"merchant@example.com\"},\"seller_transaction_id\":\"3VU62368U29897744\",\"transaction_status\":\"COMPLETED\",\"create_time\":\"2017-01-24T05:52:11.000Z\",\"gross_amount\":{\"value\":\"10.00\",\"currency_code\":\"GBP\"},\"buyer\":{\"name\":\"JuneBuyer\",\"email\":\"buyer@example.com\"}}],\"reason\":\"MERCHANDISE_OR_SERVICE_NOT_RECEIVED\",\"update_time\":\"2017-01-26T09:61:11.000Z\",\"create_time\":\"2017-01-24T05:54:03.000Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/customer/disputes/PP-000-003-648-051\"}],\"dispute_amount\":{\"value\":\"10.00\",\"currency_code\":\"GBP\"},\"dispute_id\":\"PP-000-003-648-051\",\"dispute_outcome\":{\"outcome_code\":\"RESOLVED_SELLER_FAVOUR\"},\"status\":\"RESOLVED\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}/transactions",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/transaction?start_date=2017-06-15&end_date=2017-06-17 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"agreement_transaction_list\":[{\"transaction_id\":\"I-V8SSE9WLJGY6\",\"amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"fee_amount\":{\"currency\":\"USD\",\"value\":\"1\"},\"payer_email\":\"\",\"time_stamp\":\"2017-06-16T13:46:53Z\",\"net_amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"transaction_type\":\"RecurringPayment\",\"payer_name\":\"\",\"time_zone\":\"GMT\",\"status\":\"Completed\"},{\"transaction_id\":\"I-V8SSE9WLJGY6\",\"amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"fee_amount\":{\"currency\":\"USD\",\"value\":\"1\"},\"payer_email\":\"\",\"time_stamp\":\"2017-06-16T13:52:26Z\",\"net_amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"transaction_type\":\"RecurringPayment\",\"payer_name\":\"\",\"time_zone\":\"GMT\",\"status\":\"Denied\"},{\"transaction_id\":\"I-V8SSE9WLJGY6\",\"amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"fee_amount\":{\"currency\":\"USD\",\"value\":\"1\"},\"payer_email\":\"\",\"time_stamp\":\"2017-06-16T14:00:23Z\",\"net_amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"transaction_type\":\"RecurringPayment\",\"payer_name\":\"\",\"time_zone\":\"GMT\",\"status\":\"Pending\"},{\"transaction_id\":\"I-V8SSE9WLJGY6\",\"amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"fee_amount\":{\"currency\":\"USD\",\"value\":\"1\"},\"payer_email\":\"\",\"time_stamp\":\"2017-06-16T14:02:54Z\",\"net_amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"transaction_type\":\"RecurringPayment\",\"payer_name\":\"\",\"time_zone\":\"GMT\",\"status\":\"Denied\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partner-referrals/{partner_referral_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/customer/partner-referrals/ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0= \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"referral_data\":{\"requested_capabilities\":[{\"capability\":\"API_INTEGRATION\",\"api_integration_preference\":{\"partner_id\":\"RFYUH2QQDGUQU\",\"classic_api_integration_type\":\"FIRST_PARTY_INTEGRATED\",\"classic_first_party_details\":\"SIGNATURE\"}},{\"capability\":\"BANK_ADDITION\"}],\"collected_consents\":[{\"type\":\"SHARE_DATA_CONSENT\",\"granted\":true}],\"customer_data\":{\"customer_type\":\"MERCHANT\",\"person_details\":{\"nationality_country_code\":\"IN\",\"identity_documents\":[{\"issuer_country_code\":\"US\",\"type\":\"SOCIAL_SECURITY_NUMBER\",\"value\":\"ABCDEF34646\",\"partial_value\":false}],\"email_address\":\"customer@example.com\",\"home_address\":{\"country_code\":\"IN\",\"city\":\"Bangalore\",\"state\":\"Karnataka\",\"postal_code\":\"560103\",\"line1\":\"11,outerringroad\"},\"date_of_birth\":{\"event_type\":\"BIRTH\",\"event_date\":\"1987-12-29T23:59:59.999Z\"},\"name\":{\"prefix\":\"Mr.\",\"surname\":\"Wankhede\",\"given_name\":\"Shashank\",\"middle_name\":\"Govind\"},\"phone_contacts\":[{\"phone_type\":\"HOME\",\"phone_number_details\":{\"country_code\":\"91\",\"national_number\":\"9740216087\"}}]},\"business_details\":{\"identity_documents\":[{\"issuer_country_code\":\"US\",\"type\":\"TAX_IDENTIFICATION_NUMBER\",\"value\":\"ABCDEF34646\",\"partial_value\":false}],\"average_monthly_volume_range\":{},\"email_contacts\":[{\"email_address\":\"customer-service@example.com\",\"role\":\"CUSTOMER_SERVICE\"}],\"business_address\":{\"country_code\":\"IN\",\"city\":\"Bangalore\",\"state\":\"Karnataka\",\"postal_code\":\"560103\",\"line1\":\"11,outerringroad\"},\"sub_category\":\"2025\",\"website_urls\":[\"https://www.example.com/mystore/\"],\"names\":[{\"name\":\"SHASHANKSTORE\",\"type\":\"LEGAL\"}],\"event_dates\":[{\"event_type\":\"ESTABLISHED\",\"event_date\":\"2009-01-31T13:59:45Z\"}],\"business_type\":\"PROPRIETORSHIP\",\"business_description\":\"Artsandhandicrafts\",\"annual_sales_volume_range\":{\"maximum_amount\":{\"currency\":\"USD\",\"value\":\"3000\"},\"minimum_amount\":{\"currency\":\"USD\",\"value\":\"2000\"}},\"category\":\"1004\",\"phone_contacts\":[{\"phone_type\":\"FAX\",\"phone_number_details\":{\"country_code\":\"91\",\"national_number\":\"9740216087\"}}]},\"primary_currency_code\":\"USD\",\"preferred_language_code\":\"en_US\",\"referral_user_payer_id\":{\"type\":\"PAYER_ID\",\"value\":\"RFYUH2QQDGUQU\"},\"financial_instrument_data\":{},\"partner_specific_identifiers\":[{\"type\":\"TRACKING_ID\",\"value\":\"ABJSDFO343SD\"}]},\"web_experience_preference\":{\"action_renewal_url\":\"https://www.example.com/renew/\",\"return_url\":\"https://www.example.com/\",\"partner_logo_url\":\"https://www.example.com/logo/\"},\"products\":[\"EXPRESS_CHECKOUT\"]},\"partner_referral_id\":\"ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0=\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"description\":\"Readclientdatasharedbythepartner.\",\"href\":\"https://uri.paypal.com/v1/customer/partner-referrals/ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0=\"},{\"method\":\"GET\",\"rel\":\"action_url\",\"description\":\"TargetwebredirectURLforthenextaction.\",\"href\":\"https://www.paypal.com/merchantsignup/partner/onboardingentry?token=ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0=\"}],\"submitter_payer_id\":\"RFYUH2QQDGUQU\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/wallet/balance-accounts/{balance_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v2/wallet/balance-accounts/HO1069997 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/reporting/transactions",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/reporting/transactions?transaction_id=5TY05013RG002845M&fields=all&page_size=100&page=1 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"account_number\":\"XZXSPECPDZHZU\",\"last_refreshed_datetime\":\"2017-01-02T06:59:59+0000\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/reporting/transactions?transaction_id=5TY05013RG002845M&fields=all&page_size=100&page=1\"}],\"page\":1,\"total_pages\":1,\"total_items\":1,\"transaction_details\":[{\"cart_info\":{\"item_details\":[{\"item_code\":\"ItemCode-1\",\"total_item_amount\":{\"value\":\"120.00\",\"currency_code\":\"USD\"},\"item_unit_price\":{\"value\":\"50.00\",\"currency_code\":\"USD\"},\"item_name\":\"Item1-radio\",\"item_amount\":{\"value\":\"100.00\",\"currency_code\":\"USD\"},\"item_description\":\"Radio\",\"invoice_number\":\"Invoice-005\",\"item_quantity\":\"2\",\"tax_amounts\":[{\"tax_amount\":{\"value\":\"20.00\",\"currency_code\":\"USD\"}}]},{\"item_code\":\"ItemCode-2\",\"total_item_amount\":{\"value\":\"360.00\",\"currency_code\":\"USD\"},\"item_unit_price\":{\"value\":\"100.00\",\"currency_code\":\"USD\"},\"item_name\":\"Item2-Headset\",\"item_amount\":{\"value\":\"300.00\",\"currency_code\":\"USD\"},\"item_description\":\"Headset\",\"invoice_number\":\"Invoice-005\",\"item_quantity\":\"3\",\"tax_amounts\":[{\"tax_amount\":{\"value\":\"60.00\",\"currency_code\":\"USD\"}}]},{\"total_item_amount\":{\"value\":\"-50.00\",\"currency_code\":\"USD\"},\"item_unit_price\":{\"value\":\"-50.00\",\"currency_code\":\"USD\"},\"item_name\":\"3\",\"item_amount\":{\"value\":\"-50.00\",\"currency_code\":\"USD\"},\"invoice_number\":\"Invoice-005\",\"item_quantity\":\"1\"}]},\"shipping_info\":{\"address\":{\"country_code\":\"IN\",\"city\":\"Bangalore\",\"postal_code\":\"560103\",\"line2\":\"OuterRingRoad\",\"line1\":\"EcoSpace,bellandur\"},\"name\":\"Sowmith\"},\"incentive_info\":{},\"store_info\":{},\"auction_info\":{},\"transaction_info\":{\"transaction_id\":\"5TY05013RG002845M\",\"custom_field\":\"Thankyouforyourbusiness\",\"shipping_discount_amount\":{\"value\":\"10.00\",\"currency_code\":\"USD\"},\"transaction_status\":\"S\",\"transaction_amount\":{\"value\":\"465.00\",\"currency_code\":\"USD\"},\"transaction_note\":\"Checkoutthelatestsales\",\"transaction_subject\":\"Billforyourpurchase\",\"transaction_event_code\":\"T0006\",\"shipping_amount\":{\"value\":\"30.00\",\"currency_code\":\"USD\"},\"transaction_updated_date\":\"2014-07-11T04:03:52+0000\",\"fee_amount\":{\"value\":\"-13.79\",\"currency_code\":\"USD\"},\"insurance_amount\":{\"value\":\"15.00\",\"currency_code\":\"USD\"},\"transaction_initiation_date\":\"2014-07-11T04:03:52+0000\",\"invoice_id\":\"Invoice-005\",\"protection_eligibility\":\"01\",\"paypal_account_id\":\"6STWC2LSUYYYE\"},\"payer_info\":{\"country_code\":\"US\",\"account_id\":\"6STWC2LSUYYYE\",\"email_address\":\"consumer@example.com\",\"payer_status\":\"Y\",\"payer_name\":{\"surname\":\"consumer\",\"given_name\":\"test\",\"alternate_full_name\":\"testconsumer\"},\"address_status\":\"Y\"}}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-plans/{plan_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"merchant_preferences\":{\"max_fail_attempts\":\"0\",\"setup_fee\":{\"currency\":\"USD\",\"value\":\"1\"},\"initial_fail_amount_action\":\"CONTINUE\",\"return_url\":\"https://example.com\",\"auto_bill_amount\":\"YES\",\"cancel_url\":\"https://example.com/cancel\"},\"update_time\":\"2017-06-16T07:40:20.940Z\",\"create_time\":\"2017-06-16T07:40:20.940Z\",\"name\":\"PlanwithRegularandTrialPaymentDefinitions\",\"description\":\"Planwithregularandtrialpaymentdefinitions.\",\"payment_definitions\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"9.19\"},\"frequency_interval\":\"5\",\"name\":\"Trialpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"2\"},\"id\":\"CHM-6JY06508UT8026625UOPKETA\",\"type\":\"TAX\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"1\"},\"id\":\"CHM-7XN63093LF858372XUOPKETA\",\"type\":\"SHIPPING\"}],\"cycles\":\"2\",\"id\":\"PD-03223056L66578712UOPKETA\",\"type\":\"TRIAL\",\"frequency\":\"WEEK\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"frequency_interval\":\"2\",\"name\":\"Regularpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"12\"},\"id\":\"CHM-1V202179WT9709019UOPKETA\",\"type\":\"TAX\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"10\"},\"id\":\"CHM-89H01708244053321UOPKETA\",\"type\":\"SHIPPING\"}],\"cycles\":\"12\",\"id\":\"PD-0MF87809KK310750TUOPKETA\",\"type\":\"REGULAR\",\"frequency\":\"MONTH\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA\"}],\"id\":\"P-7DC96732KA7763723UOPKETA\",\"state\":\"CREATED\",\"type\":\"FIXED\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-plans/{plan_id}",
+      "url": "curl -v -X PATCH https://api.sandbox.paypal.com/v1/payments/billing-plans/P-6EM196669U062173D7QCVDRA/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '[ { \"op\": \"replace\", \"path\": \"/merchant-preferences\", \"value\": { \"cancel_url\": \"https://example.com/cancel\", \"setup_fee\": { \"value\": \"5\", \"currency\": \"USD\" } } } ]'",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks/webhook_id",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/notifications/webhooks/5GP028458E2496506 \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks/webhook_id",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/notifications/webhooks/0EH40505U7160970P \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"event_types\":[{\"name\":\"PAYMENT.AUTHORIZATION.CREATED\",\"description\":\"Apaymentauthorizationwascreated.\",\"status\":\"ENABLED\"},{\"name\":\"PAYMENT.AUTHORIZATION.VOIDED\",\"description\":\"Apaymentauthorizationwasvoided.\",\"status\":\"ENABLED\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"PATCH\",\"rel\":\"update\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"}],\"id\":\"0EH40505U7160970P\",\"url\":\"http://www.ebay.com/paypal_webhook\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks/webhook_id",
+      "url": "curl -v -X PATCH https://api.sandbox.paypal.com/v1/notifications/webhooks/0EH40505U7160970P \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '[ { \"op\": \"replace\", \"path\": \"/url\", \"value\": \"http://www.ebay.com/paypal_webhook_new_url\" }, { \"op\": \"replace\", \"path\": \"/event_types\", \"value\": [ { \"name\": \"PAYMENT.SALE.REFUNDED\" } ] } ]'",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"event_types\":[{\"name\":\"PAYMENT.SALE.REFUNDED\",\"description\":\"Asalepaymentwasrefunded.\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"PATCH\",\"rel\":\"update\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"}],\"id\":\"0EH40505U7160970P\",\"url\":\"http://www.ebay.com/paypal_webhook_new_url\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/orders/{order_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-4D805864V5423372TKOQLRUQ\",\"update_time\":\"2017-06-19T22:08:36Z\",\"amount\":{\"total\":\"41.15\",\"currency\":\"USD\"},\"create_time\":\"2017-06-19T22:05:06Z\",\"pending_reason\":\"order\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-4D805864V5423372TKOQLRUQ\"},{\"method\":\"POST\",\"rel\":\"authorize\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R/authorization\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R/capture\"},{\"method\":\"POST\",\"rel\":\"void\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R/void\"}],\"id\":\"O-0PW72302W3743444R\",\"state\":\"pending\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/authorization/{authorization_id}/void",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B/void \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-0PL82432AD7432233KGECOIQ\",\"update_time\":\"2017-05-06T21:57:51Z\",\"amount\":{\"total\":\"110.54\",\"currency\":\"USD\",\"details\":{\"subtotal\":\"110.54\"}},\"create_time\":\"2017-05-06T21:56:50Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/6CR34526N64144512\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0PL82432AD7432233KGECOIQ\"}],\"id\":\"6CR34526N64144512\",\"state\":\"voided\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{payment_token}/agreement-execute",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/EC-7WN97463LN263864T/agreement-execute \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"agreement_details\":{\"cycles_remaining\":\"2\",\"failed_payment_count\":\"0\",\"cycles_completed\":\"0\",\"final_payment_date\":\"2017-09-23T08:00:00Z\",\"outstanding_balance\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"last_payment_date\":\"2016-12-23T08:00:00Z\",\"last_payment_amount\":{\"currency\":\"USD\",\"value\":\"0.40\"},\"next_billing_date\":\"2017-01-23T08:00:00Z\"},\"description\":\"Monthlyagreementwithfreetrialpaymentdefinition.\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9\"}],\"id\":\"I-1TJ3GAGG82Y9\",\"state\":\"Active\",\"shipping_address\":{\"country_code\":\"US\",\"city\":\"Quimby\",\"state\":\"IA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"51049\",\"line2\":\"0976249ElizabethCourt\",\"line1\":\"751235StoutDrive\"},\"payer\":{\"payment_method\":\"paypal\",\"status\":\"unverified\",\"payer_info\":{\"last_name\":\"Doe\",\"payer_id\":\"NEW8A85AK4ET4\",\"shipping_address\":{\"country_code\":\"US\",\"city\":\"Quimby\",\"state\":\"IA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"51049\",\"line2\":\"0976249ElizabethCourt\",\"line1\":\"751235StoutDrive\"},\"first_name\":\"John\",\"email\":\"johndoe@example.com\"}},\"plan\":{\"merchant_preferences\":{\"max_fail_attempts\":\"2\",\"setup_fee\":{\"currency\":\"USD\",\"value\":\"0.40\"},\"return_url\":\"https://example.com\",\"auto_bill_amount\":\"YES\",\"cancel_url\":\"https://example.com/cancel\"},\"name\":\"PlanwithRegularandTrialPaymentDefinitions\",\"description\":\"Planwithregularandtrialpaymentdefinitions.\",\"payment_definitions\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"frequency_interval\":\"1\",\"name\":\"Trialpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"type\":\"TAX\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"type\":\"SHIPPING\"}],\"cycles\":\"2\",\"type\":\"TRIAL\",\"frequency\":\"MONTH\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"5.99\"},\"frequency_interval\":\"1\",\"name\":\"Regularpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"0.29\"},\"type\":\"TAX\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"0.20\"},\"type\":\"SHIPPING\"}],\"cycles\":\"10\",\"type\":\"REGULAR\",\"frequency\":\"MONTH\"}],\"links\":[],\"type\":\"FIXED\",\"currency_code\":\"USD\"},\"start_date\":\"2016-12-23T08:00:00Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/{payouts_item_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/CDZEC5MJ8R5HY \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"reference_id\":\"CAPTURETXNID\",\"item_id\":\"SOMEITEMID\",\"payout_destination\":\"PAYERED\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/payments/referenced-payouts-items/SOMEITEMID\"}],\"processing_state\":{\"status\":\"PROCESSING\"},\"payout_amount\":{\"value\":\"2.0\",\"currency_code\":\"USD\"},\"reference_type\":\"TRANSACTION_ID\",\"payout_transaction_id\":\"PAYOUTTXNID\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/payment-records/{transaction_id}",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-TBRZ-SWBK-7FQ9-AC8F/payment-records/EXTR-86F38350LX4353815 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/capture/{capture_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/capture/8F148933LY9388354 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-8PT597110X687430LKGECATA\",\"amount\":{\"total\":\"110.54\",\"currency\":\"USD\",\"details\":{\"subtotal\":\"110.54\"}},\"transaction_fee\":{\"currency\":\"USD\",\"value\":\"3.74\"},\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/capture/8F148933LY9388354\"},{\"method\":\"POST\",\"rel\":\"refund\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/capture/8F148933LY9388354/refund\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8PT597110X687430LKGECATA\"}],\"id\":\"8F148933LY9388354\",\"state\":\"completed\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/next-invoice-number",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"number\":\"ee0044\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/notifications/webhooks \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"url\": \"http://www.ebay.com/paypal_webhook\", \"event_types\": [ { \"name\": \"PAYMENT.AUTHORIZATION.CREATED\" }, { \"name\": \"PAYMENT.AUTHORIZATION.VOIDED\" } ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"event_types\":[{\"name\":\"PAYMENT.AUTHORIZATION.CREATED\",\"description\":\"Apaymentauthorizationwascreated.\"},{\"name\":\"PAYMENT.AUTHORIZATION.VOIDED\",\"description\":\"Apaymentauthorizationwasvoided.\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"PATCH\",\"rel\":\"update\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"}],\"id\":\"0EH40505U7160970P\",\"url\":\"http://www.ebay.com/paypal_webhook\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/notifications/webhooks \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"webhooks\":[{\"event_types\":[{\"name\":\"PAYMENT.AUTHORIZATION.CREATED\",\"description\":\"Apaymentauthorizationwascreated.\"},{\"name\":\"PAYMENT.AUTHORIZATION.VOIDED\",\"description\":\"Apaymentauthorizationwasvoided.\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/40Y916089Y8324740\"},{\"method\":\"PATCH\",\"rel\":\"update\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/40Y916089Y8324740\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/40Y916089Y8324740\"}],\"id\":\"40Y916089Y8324740\",\"url\":\"http://www.ebay.com/paypal_webhook\"},{\"event_types\":[{\"name\":\"PAYMENT.AUTHORIZATION.CREATED\",\"description\":\"Apaymentauthorizationwascreated.\"},{\"name\":\"PAYMENT.AUTHORIZATION.VOIDED\",\"description\":\"Apaymentauthorizationwasvoided.\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"PATCH\",\"rel\":\"update\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.paypal.com/v1/notifications/webhooks/0EH40505U7160970P\"}],\"id\":\"0EH40505U7160970P\",\"url\":\"http://www.ebay.com/another_paypal_webhook\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/send",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-EHNV-LJ5S-A7DZ-V6NJ/send?notify_merchant=true \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partners/{partner_id}/merchant-integrations/{merchant_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/customer/partners/U6E69K99P3G88/merchant-integrations/8LQLM2ML4ZTYU \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"oauth_integrations\":[{\"integration_method\":\"BRAINTREE\",\"oauth_third_party\":[{\"partner_client_id\":\"AZqTbhAo7fUgX2BQW5l-yYEHYY_C8FDUkiPP_6Cw7P35cQID26rsWVWXzgRQ\",\"access_token\":\"access_token$sandbox$s4dw8tjsz88cg7mh$45bdde2cfa55c1b060a409824b48b8d3\",\"merchant_client_id\":\"ARj22pLzUWaTt_RFAlFvn_dC6OpETq1HK_n49nyuDf4i5dqPBZmDk6X1u9JytrtMGaDExCvKSGCOwRbO\",\"refresh_token\":\"refresh_token$sandbox$s4dw8tjsz88cg7mh$b1dfdbbdbaa7b9165b696f916738ce2c\",\"scopes\":[\"https://uri.paypal.com/services/payments/payment/authcapture\",\"https://uri.paypal.com/services/payments/realtimepayment\"]}],\"integration_type\":\"OAUTH_THIRD_PARTY\"}],\"payments_receivable\":true,\"primary_email_confirmed\":true,\"merchant_id\":\"8LQLM2ML4ZTYU\",\"products\":[{\"name\":\"EXPRESS_CHECKOUT\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-5D3XDN2D5FH1 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"agreement_details\":{\"cycles_remaining\":\"2\",\"failed_payment_count\":\"0\",\"cycles_completed\":\"0\",\"final_payment_date\":\"2017-09-23T08:00:00Z\",\"outstanding_balance\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"last_payment_date\":\"2016-12-23T08:00:00Z\",\"last_payment_amount\":{\"currency\":\"USD\",\"value\":\"0.40\"},\"next_billing_date\":\"2017-01-23T08:00:00Z\"},\"description\":\"Monthlyagreementwithfreetrialpaymentdefinition.\",\"links\":[{\"method\":\"POST\",\"rel\":\"suspend\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/suspend\"},{\"method\":\"POST\",\"rel\":\"re_activate\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/re-activate\"},{\"method\":\"POST\",\"rel\":\"cancel\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/cancel\"},{\"method\":\"POST\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/bill-balance\"},{\"method\":\"POST\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/set-balance\"}],\"id\":\"I-1TJ3GAGG82Y9\",\"state\":\"Active\",\"shipping_address\":{\"country_code\":\"US\",\"city\":\"Quimby\",\"state\":\"IA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"51049\",\"line2\":\"0976249ElizabethCourt\",\"line1\":\"751235StoutDrive\"},\"payer\":{\"payment_method\":\"paypal\",\"status\":\"unverified\",\"payer_info\":{\"last_name\":\"Doe\",\"payer_id\":\"NEW8A85AK4ET4\",\"shipping_address\":{\"country_code\":\"US\",\"city\":\"Quimby\",\"state\":\"IA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"51049\",\"line2\":\"0976249ElizabethCourt\",\"line1\":\"751235StoutDrive\"},\"first_name\":\"John\",\"email\":\"johndoe@example.com\"}},\"plan\":{\"merchant_preferences\":{\"max_fail_attempts\":\"2\",\"setup_fee\":{\"currency\":\"USD\",\"value\":\"0.40\"},\"return_url\":\"https://example.com\",\"auto_bill_amount\":\"YES\",\"cancel_url\":\"https://example.com/cancel\"},\"name\":\"PlanwithRegularandTrialPaymentDefinitions\",\"description\":\"Planwithregularandtrialpaymentdefinitions.\",\"payment_definitions\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"frequency_interval\":\"1\",\"name\":\"Trialpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"type\":\"TAX\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"0.00\"},\"type\":\"SHIPPING\"}],\"cycles\":\"2\",\"type\":\"TRIAL\",\"frequency\":\"MONTH\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"5.99\"},\"frequency_interval\":\"1\",\"name\":\"Regularpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"0.29\"},\"type\":\"TAX\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"0.20\"},\"type\":\"SHIPPING\"}],\"cycles\":\"10\",\"type\":\"REGULAR\",\"frequency\":\"MONTH\"}],\"links\":[],\"type\":\"FIXED\",\"currency_code\":\"USD\"},\"start_date\":\"2016-12-23T08:00:00Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}",
+      "url": "curl -v -X PATCH https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '[ { \"op\": \"replace\", \"path\": \"/\", \"value\": { \"description\": \"Updated description.\", \"start_date\": \"2017-12-22T09:13:49Z\", \"shipping_address\": { \"line1\": \"Hotel Blue Diamond\", \"line2\": \"Church Street\", \"city\": \"San Jose\", \"state\": \"CA\", \"postal_code\": \"95112\", \"country_code\": \"US\" } } } ]'",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/orders/{order_id}/do-void",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/orders/O-0NR488530V5211123/do-void \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-0AY778532K612520BKOXHAKY\",\"update_time\":\"2017-06-28T07:36:25Z\",\"amount\":{\"total\":\"41.15\",\"currency\":\"USD\",\"details\":{\"shipping\":\"11.00\",\"subtotal\":\"30.00\",\"tax\":\"0.15\"}},\"create_time\":\"2017-06-28T07:35:08Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/O-0NR488530V5211123\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0AY778532K612520BKOXHAKY\"}],\"id\":\"O-0NR488530V5211123\",\"state\":\"voided\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"owner_info\": { \"email\": \"sydney@example.com\", \"name\": { \"prefix\": \"Mr\", \"given_name\": \"Victoria\", \"surname\": \"Asmania\", \"middle_name\": \"T.\", \"suffix\": \"\" }, \"country_code_of_nationality\": \"AU\", \"addresses\": [ { \"type\": \"HOME\", \"line1\": \"200 Broadway Av\", \"line2\": \"\", \"city\": \"West Beach\", \"state\": \"South Australia\", \"country_code\": \"AU\", \"postal_code\": \"5024\" } ], \"date_of_birth\": \"1990-01-01\", \"phones\": [ { \"type\": \"HOME\", \"country_code\": \"61\", \"national_number\": \"0491570156\", \"extension_number\": \"123\" }, { \"type\": \"MOBILE\", \"country_code\": \"61\", \"national_number\": \"0491570156\", \"extension_number\": \"123\" } ], \"identifications\": [ { \"value\": \"LICENSE_ABCD123\", \"type\": \"DRIVERS_LICENSE\", \"issuer_country_code\": \"AU\", \"masked\": false } ] }, \"business_info\": { \"type\": \"ASSOCIATION\", \"sub_type\": \"ASSO_TYPE_INCORPORATED\", \"names\": [ { \"type\": \"LEGAL\", \"name\": \"AU Business\" }, { \"type\": \"DOING_BUSINESS_AS\", \"name\": \"Doing Business As Name\" } ], \"identifications\": [ { \"value\": \"123423456723\", \"type\": \"ASSOCIATION_NUMBER\", \"issuer_country_code\": \"AU\", \"masked\": false } ], \"addresses\": [ { \"type\": \"REGISTERED_OFFICE\", \"line1\": \"200 Broadway Av\", \"line2\": \"\", \"city\": \"West Beach\", \"state\": \"South Australia\", \"country_code\": \"AU\", \"postal_code\": \"5024\" }, { \"type\": \"MAILING_ADDRESS\", \"line1\": \"200 Broadway Av\", \"line2\": \"\", \"city\": \"West Beach\", \"state\": \"South Australia\", \"country_code\": \"AU\", \"postal_code\": \"5024\" }, { \"type\": \"WORK\", \"line1\": \"200 Broadway Av\", \"line2\": \"\", \"city\": \"West Beach\", \"state\": \"South Australia\", \"country_code\": \"AU\", \"postal_code\": \"5024\" } ], \"phones\": [ { \"type\": \"WORK\", \"country_code\": \"61\", \"national_number\": \"0491570156\", \"extension_number\": \"123\" }, { \"type\": \"BUSINESS\", \"country_code\": \"61\", \"national_number\": \"0491570156\" } ], \"category\": \"1004\", \"sub_category\": \"2940\", \"merchant_category_code\": \"3011\", \"date_business_established\": \"2001-01-17\", \"date_of_registration\": \"2011-04-17\", \"dispute_email\": \"dispute@example.com\", \"business_sales_details\": { \"average_price\": { \"minimum_amount\": { \"currency_code\": \"AUD\", \"value\": \"10\" }, \"maximum_amount\": { \"currency_code\": \"AUD\", \"value\": \"100\" } }, \"average_monthly_volume\": { \"minimum_amount\": { \"currency_code\": \"AUD\", \"value\": \"1000\" }, \"maximum_amount\": { \"currency_code\": \"AUD\", \"value\": \"2000\" } }, \"sales_venues\": [ { \"type\": \"EBAY\", \"ebay_id\": \"ebayid123\", \"description\": \"ebay venue\" }, { \"type\": \"ANOTHER_MARKET_PLACE\", \"description\": \"description\" } ], \"website\": \"https://www.example.AU.com\", \"revenue_from_online_sales\": { \"minimum_percent\": 0, \"maximum_percent\": 25 } }, \"customer_service\": { \"email\": \"customer-service@example.com\", \"phone\": { \"country_code\": \"61\", \"national_number\": \"0491570156\", \"extension_number\": \"123\" }, \"message\": [ { \"type\": \"ONLINE\", \"headline\": \"Your online purchase\", \"logo_image_url\": \"https://www.example.com/logo/online/\", \"service_image_url\": \"https://www.example.com/service/online/\", \"seller_message\": \"Your online purchase\" }, { \"type\": \"RETAIL\", \"headline\": \"Your retail purchase\", \"logo_image_url\": \"https://www.example.com/logo/retail/\", \"service_image_url\": \"https://www.example.com/service/retail/\", \"seller_message\": \"Your retail purchase\" } ] }, \"country_code_of_incorporation\": \"AU\", \"stakeholders\": [ { \"type\": \"CHAIRMAN\", \"country_code_of_nationality\": \"AU\", \"date_of_birth\": \"1992-01-01\", \"name\": { \"prefix\": \"Mr\", \"given_name\": \"Victoria\", \"surname\": \"Asmania\", \"middle_name\": \"T.\", \"suffix\": \"Jr.\" }, \"addresses\": [ { \"type\": \"WORK\", \"line1\": \"200 Broadway Av\", \"line2\": \"\", \"city\": \"West Beach\", \"state\": \"South Australia\", \"country_code\": \"AU\", \"postal_code\": \"5024\" } ], \"phones\": [ { \"type\": \"WORK\", \"country_code\": \"61\", \"national_number\": \"0491570156\", \"extension_number\": \"123\" } ], \"place_of_birth\": { \"city\": \"West Beach\", \"country_code\": \"AU\" }, \"identifications\": [ { \"value\": \"LICENSE_ABCD123\", \"type\": \"DRIVERS_LICENSE\", \"issuer_country_code\": \"AU\", \"masked\": false } ] }, { \"type\": \"SECRETARY\", \"country_code_of_nationality\": \"AU\", \"date_of_birth\": \"1992-01-01\", \"name\": { \"prefix\": \"Mr\", \"given_name\": \"John\", \"surname\": \"Snow\", \"middle_name\": \"T.\", \"suffix\": \"Jr.\" }, \"addresses\": [ { \"type\": \"WORK\", \"line1\": \"200 Broadway Av\", \"line2\": \"\", \"city\": \"West Beach\", \"state\": \"South Australia\", \"country_code\": \"AU\", \"postal_code\": \"5024\" } ], \"phones\": [ { \"type\": \"WORK\", \"country_code\": \"61\", \"national_number\": \"0491570156\", \"extension_number\": \"123\" } ], \"place_of_birth\": { \"city\": \"West Beach\", \"country_code\": \"AU\" }, \"identifications\": [ { \"value\": \"LICENSE_ABCD123JS\", \"type\": \"DRIVERS_LICENSE\", \"issuer_country_code\": \"AU\", \"masked\": false } ] }, { \"type\": \"TREASURER\", \"country_code_of_nationality\": \"AU\", \"date_of_birth\": \"1992-01-01\", \"name\": { \"prefix\": \"Mr\", \"given_name\": \"Josh\", \"surname\": \"Snow\", \"middle_name\": \"T.\", \"suffix\": \"Jr.\" }, \"addresses\": [ { \"type\": \"WORK\", \"line1\": \"200 Broadway Av\", \"line2\": \"\", \"city\": \"West Beach\", \"state\": \"South Australia\", \"country_code\": \"AU\", \"postal_code\": \"5024\" } ], \"phones\": [ { \"type\": \"WORK\", \"country_code\": \"61\", \"national_number\": \"0491570156\", \"extension_number\": \"123\" } ], \"place_of_birth\": { \"city\": \"West Beach\", \"country_code\": \"AU\" }, \"identifications\": [ { \"value\": \"LICENSE_ABCD123JSY\", \"type\": \"DRIVERS_LICENSE\", \"issuer_country_code\": \"AU\", \"masked\": false } ] } ] }, \"account_status\": \"A\", \"account_currency\": \"AUD\", \"secondary_currency\": [ \"USD\" ], \"financial_info\": { \"bank_accounts\": [ { \"transfer_type\": \"NORMAL\", \"account_number\": \"11111113\", \"account_type\": \"CHECKING\", \"currency_code\": \"AUD\", \"identifiers\": [ { \"type\": \"ROUTING_NUMBER_1\", \"value\": \"645\" }, { \"type\": \"ROUTING_NUMBER_2\", \"value\": \"000\" } ], \"bank_name\": \"Bank of Australia\", \"branch_location\": { \"city\": \"Sydney\", \"country_code\": \"AU\" } } ] }, \"payment_receiving_preferences\": { \"block_unconfirmed_us_address_payments\": true, \"block_non_us_payments\": true, \"block_echeck_payments\": true, \"block_cross_currency_payments\": true, \"block_send_money_payments\": true, \"alternate_payment_url\": \"https://www.example.com/alternate/\", \"display_instructions_text_input\": true, \"cc_soft_descriptor\": \"USCCSOFTDES\", \"cc_soft_descriptor_extended\": \"USCCSOFTDESEXT\" }, \"account_relations\": [ { \"type\": \"PARTNER\" } ], \"account_permissions\": [ { \"permissions\": [ \"EXPRESS_CHECKOUT\", \"RECURRING_PAYMENT\", \"EXTENDED_PRO_PROCESSING\", \"EXCEPTION_PROCESSING\", \"MASS_PAY\", \"ENCRYPTED_WEBSITE_PAYMENTS\" ] } ], \"timezone\": \"Australia/Adelaide\", \"partner_merchant_external_id\": \"abc123\", \"loginable\": false, \"partner_tax_reporting\": true }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"partner_merchant_external_id\":\"abc123\",\"payer_id\":\"7G4EPEEPEF74L\",\"links\":[{\"method\":\"PATCH\",\"rel\":\"edit\",\"href\":\"https://api.paypal.com/v1/customer/partners/merchant-accounts/7G4EPEEPEF74L\"},{\"method\":\"POST\",\"rel\":\"replace\",\"href\":\"https://api.paypal.com/v1/customer/partners/merchant-accounts/7G4EPEEPEF74L\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/record-payment",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-T4UQ-VW4W-K7N7-XM2R/record-payment \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"method\": \"CASH\", \"date\": \"2013-11-06 03:30:00 PST\", \"note\": \"I got the payment by cash!\", \"amount\": { \"currency\": \"USD\", \"value\": \"20.00\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/templates/{template_id}",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-0JV3858360943364J \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/templates/{template_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-0JV3858360943364J \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/templates/{template_id}",
+      "url": "curl -v -X PUT https://api.sandbox.paypal.com/v1/invoicing/templates/TEMP-XYZ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"template_id\": \"TEMP-XYZ\", \"name\": \"Hours Template\", \"default\": true, \"unit_of_measure\": \"HOURS\", \"template_data\": { \"merchant_info\": { \"email\": \"doctor@example.com\", \"first_name\": \"Dennis\", \"last_name\": \"Doctor\", \"business_name\": \"Medical Professionals, LLC\", \"phone\": { \"country_code\": \"001\", \"national_number\": \"5032141716\" }, \"address\": { \"line1\": \"1234 Main St.\", \"city\": \"Portland\", \"state\": \"OR\", \"postal_code\": \"97217\", \"country_code\": \"US\" } }, \"items\": [ { \"name\": \"Nutri Bullet\", \"quantity\": 1, \"unit_price\": { \"currency\": \"USD\", \"value\": \"50.00\" } } ], \"tax_calculated_after_discount\": false, \"tax_inclusive\": false, \"note\": \"Thank you for your business.\", \"logo_url\": \"https://example.com/v1/images/redDot.jpeg\" }, \"settings\": [ { \"field_name\": \"items.date\", \"display_preference\": { \"hidden\": true } }, { \"field_name\": \"custom\", \"display_preference\": { \"hidden\": true } } ] }'",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/disputes/{dispute_id}/accept-claim",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/customer/disputes/PP-D-27803/accept-claim \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"note\": \"Refund to the customer.\" }'",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/customer/disputes/PP-D-27803\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/simulate-event",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/notifications/simulate-event \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"url\": \"http://www.ebay.com/paypal_webhook\", \"event_type\": \"PAYMENT.AUTHORIZATION.CREATED\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/checkout/orders/{order_id}/pay",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/checkout/orders/8RU61172JS455403V/pay \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"disbursement_mode\": \"DELAYED\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"update_time\":\"2017-04-26T21:21:50Z\",\"create_time\":\"2017-04-26T21:21:50Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/checkout/orders/8RU61172JS455403V\"}],\"order_id\":\"8RU61172JS455403V\",\"status\":\"APPROVED\",\"payer_info\":{\"country_code\":\"US\",\"phone\":\"4087811648\",\"last_name\":\"Doe\",\"payer_id\":\"9WVBNYPKKNBJS\",\"shipping_address\":{\"preferred_address\":false,\"country_code\":\"US\",\"default_address\":false,\"city\":\"SanJose\",\"primary_address\":false,\"disable_for_transaction\":false,\"state\":\"CA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"95131\",\"line2\":\"Building17\",\"line1\":\"2211NFirstStreet\"},\"first_name\":\"Jake\",\"email\":\"test-payer@paypal.com\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/{profile_id}",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-A88A-LYLW-8Y3X-E5ER \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/{profile_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-RFV4-PVD8-AGHJ-8E5J \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"presentation\":{\"logo_image\":\"https://www.example.com\"},\"temporary\":false,\"flow_config\":{\"landing_page_type\":\"billing\",\"bank_txn_pending_url\":\"https://www.example.com\"},\"name\":\"exampleProfile\",\"input_fields\":{\"no_shipping\":1,\"address_override\":1},\"id\":\"XP-RFV4-PVD8-AGHJ-8E5J\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/{profile_id}",
+      "url": "curl -v -X PATCH https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-RFV4-PVD8-AGHJ-8E5J \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '[ { \"op\": \"add\", \"path\": \"/presentation/brand_name\", \"value\": \"new_brand_name\" }, { \"op\": \"remove\", \"path\": \"/flow_config/landing_page_type\" } ]'",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/{profile_id}",
+      "url": "curl -v -X PUT https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-RFV4-PVD8-AGHJ-8E5J \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"name\": \"exampleProfile\", \"presentation\": { \"logo_image\": \"https://www.example.com\" }, \"input_fields\": { \"no_shipping\": 1, \"address_override\": 1 }, \"flow_config\": { \"landing_page_type\": \"billing\", \"bank_txn_pending_url\": \"https://www.example.com\" } }'",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payouts/payout_batch_id",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/payouts/12345678?fields=batch_header \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"batch_header\":{\"amount\":{\"currency\":\"USD\",\"value\":\"435.85\"},\"time_completed\":\"2014-01-27T11:17:39.00Z\",\"sender_batch_header\":{\"sender_batch_id\":\"2014021801\",\"email_subject\":\"Youhaveapayout!\"},\"batch_status\":\"ACKNOWLEDGED\",\"time_created\":\"2014-01-27T10:17:00Z\",\"payout_batch_id\":\"12345678\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/disputes/{dispute_id}/provide-evidence",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/customers/disputes/PP-D-27803/provide-evidence \\ -H \"Content-Type: multipart/related\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"evidence_type\": \"PROOF_OF_FULFILLMENT\", \"evidence_info\": { \"tracking_info\": [ { \"carrier_name\": \"FEDEX\", \"tracking_number\": \"FED111112345\" } ] }, \"documents\": [ { \"name\": \"SHIPMENT_1\", \"url\": \"https://example.com\" } ] }'",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/customers/disputes/PP-D-27803\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/verify-webhook-signature",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/notifications/verify-webhook-signature \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"transmission_id\": \"69cd13f0-d67a-11e5-baa3-778b53f4ae55\", \"transmission_time\": \"2016-02-18T20:01:35Z\", \"cert_url\": \"cert_url\", \"auth_algo\": \"SHA256withRSA\", \"transmission_sig\": \"lmI95Jx3Y9nhR5SJWlHVIWpg4AgFk7n9bCHSRxbrd8A9zrhdu2rMyFrmz+Zjh3s3boXB07VXCXUZy/UFzUlnGJn0wDugt7FlSvdKeIJenLRemUxYCPVoEZzg9VFNqOa48gMkvF+XTpxBeUx/kWy6B5cp7GkT2+pOowfRK7OaynuxUoKW3JcMWw272VKjLTtTAShncla7tGF+55rxyt2KNZIIqxNMJ48RDZheGU5w1npu9dZHnPgTXB9iomeVRoD8O/jhRpnKsGrDschyNdkeh81BJJMH4Ctc6lnCCquoP/GzCzz33MMsNdid7vL/NIWaCsekQpW26FpWPi/tfj8nLA==\", \"webhook_id\": \"1JE4291016473214C\", \"webhook_event\": { \"id\": \"8PT597110X687430LKGECATA\", \"create_time\": \"2013-06-25T21:41:28Z\", \"resource_type\": \"authorization\", \"event_type\": \"PAYMENT.AUTHORIZATION.CREATED\", \"summary\": \"A payment authorization was created\", \"resource\": { \"id\": \"2DC87612EK520411B\", \"create_time\": \"2013-06-25T21:39:15Z\", \"update_time\": \"2013-06-25T21:39:17Z\", \"state\": \"authorized\", \"amount\": { \"total\": \"7.47\", \"currency\": \"USD\", \"details\": { \"subtotal\": \"7.47\" } }, \"parent_payment\": \"PAY-36246664YD343335CKHFA4AY\", \"valid_until\": \"2013-07-24T21:39:15Z\", \"links\": [ { \"href\": \"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B\", \"rel\": \"self\", \"method\": \"GET\" }, { \"href\": \"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B/capture\", \"rel\": \"capture\", \"method\": \"POST\" }, { \"href\": \"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B/void\", \"rel\": \"void\", \"method\": \"POST\" }, { \"href\": \"https://api.paypal.com/v1/payments/payment/PAY-36246664YD343335CKHFA4AY\", \"rel\": \"parent_payment\", \"method\": \"GET\" } ] } } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"verification_status\":\"SUCCESS\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payment/{payment_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/payment/PAY-0US81985GW1191216KOY7OXA \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payment/{payment_id}",
+      "url": "curl -v -X PATCH https://api.sandbox.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '[ { \"op\": \"replace\", \"path\": \"/transactions/0/amount\", \"value\": { \"total\": \"18.37\", \"currency\": \"EUR\", \"details\": { \"subtotal\": \"13.37\", \"shipping\": \"5.00\" } } }, { \"op\": \"add\", \"path\": \"/transactions/0/item_list/shipping_address\", \"value\": { \"recipient_name\": \"Anna Gruneberg\", \"line1\": \"Kathwarinenhof 1\", \"city\": \"Flensburg\", \"postal_code\": \"24939\", \"country_code\": \"DE\" } } ]'",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"create_time\":\"2017-04-24T14:26:59.059Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI\"}],\"id\":\"PAY-5YK922393D847794YKER7MUI\",\"state\":\"approved\",\"transactions\":[{\"payee\":{\"email\":\"payee@example.com\"},\"amount\":{\"total\":\"18.37\",\"currency\":\"EUR\",\"details\":{\"shipping\":\"5.00\",\"subtotal\":\"13.37\"}},\"item_list\":{\"shipping_address\":{\"country_code\":\"DE\",\"city\":\"Flensburg\",\"recipient_name\":\"AnnaGruneberg\",\"postal_code\":\"24939\",\"line1\":\"Kathwarinenhof1\"},\"items\":[{\"quantity\":\"1\",\"price\":\"13.37\",\"name\":\"iPad\",\"currency\":\"EUR\"}]},\"description\":\"Uber\"}],\"intent\":\"authorize\",\"payer\":{\"payment_method\":\"paypal\",\"payer_info\":{\"country_code\":\"DE\",\"phone\":\"605-521-1234\",\"last_name\":\"Anna\",\"payer_id\":\"8J4VWY56VUXQ6\",\"first_name\":\"Gruneberg\",\"email\":\"payer@example.com\"},\"status\":\"VERIFIED\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks-events/event_id/resend",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/notifications/webhooks-events/webhooks-events/8PT597110X687430LKGECATA/resend \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"webhook_ids\": [ \"12334456\" ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}/bill-balance",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/bill-balance \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"note\": \"Billing balance amount.\", \"amount\": { \"value\": \"100\", \"currency\": \"USD\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payment",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/payment \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"intent\": \"sale\", \"payer\": { \"payment_method\": \"paypal\" }, \"transactions\": [ { \"amount\": { \"total\": \"30.11\", \"currency\": \"USD\", \"details\": { \"subtotal\": \"30.00\", \"tax\": \"0.07\", \"shipping\": \"0.03\", \"handling_fee\": \"1.00\", \"shipping_discount\": \"-1.00\", \"insurance\": \"0.01\" } }, \"description\": \"The payment transaction description.\", \"custom\": \"EBAY_EMS_90048630024435\", \"invoice_number\": \"48787589673\", \"payment_options\": { \"allowed_payment_method\": \"INSTANT_FUNDING_SOURCE\" }, \"soft_descriptor\": \"ECHI5786786\", \"item_list\": { \"items\": [ { \"name\": \"hat\", \"description\": \"Brown hat.\", \"quantity\": \"5\", \"price\": \"3\", \"tax\": \"0.01\", \"sku\": \"1\", \"currency\": \"USD\" }, { \"name\": \"handbag\", \"description\": \"Black handbag.\", \"quantity\": \"1\", \"price\": \"15\", \"tax\": \"0.02\", \"sku\": \"product34\", \"currency\": \"USD\" } ], \"shipping_address\": { \"recipient_name\": \"Brian Robinson\", \"line1\": \"4th Floor\", \"line2\": \"Unit #34\", \"city\": \"San Jose\", \"country_code\": \"US\", \"postal_code\": \"95131\", \"phone\": \"011862212345678\", \"state\": \"CA\" } } } ], \"note_to_payer\": \"Contact us for any questions on your order.\", \"redirect_urls\": { \"return_url\": \"https://example.com/return\", \"cancel_url\": \"https://example.com/cancel\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"update_time\":\"2017-09-22T20:53:44Z\",\"create_time\":\"2017-09-22T20:53:43Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-1B56960729604235TKQQIYVY\"},{\"method\":\"REDIRECT\",\"rel\":\"approval_url\",\"href\":\"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-60385559L1062554J\"},{\"method\":\"POST\",\"rel\":\"execute\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-1B56960729604235TKQQIYVY/execute\"}],\"id\":\"PAY-1B56960729604235TKQQIYVY\",\"state\":\"created\",\"transactions\":[{\"amount\":{\"total\":\"30.11\",\"currency\":\"USD\",\"details\":{\"insurance\":\"0.01\",\"shipping\":\"0.03\",\"shipping_discount\":\"-1.00\",\"subtotal\":\"30.00\",\"tax\":\"0.07\",\"handling_fee\":\"1.00\"}},\"item_list\":{\"shipping_address\":{\"country_code\":\"US\",\"city\":\"SanJose\",\"phone\":\"011862212345678\",\"state\":\"CA\",\"recipient_name\":\"BrianRobinson\",\"postal_code\":\"95131\",\"line2\":\"Unit#34\",\"line1\":\"4thFloor\"},\"items\":[{\"quantity\":\"5\",\"price\":\"3.00\",\"name\":\"hat\",\"description\":\"Brownhat.\",\"currency\":\"USD\",\"tax\":\"0.01\",\"sku\":\"1\"},{\"quantity\":\"1\",\"price\":\"15.00\",\"name\":\"handbag\",\"description\":\"Blackhandbag.\",\"currency\":\"USD\",\"tax\":\"0.02\",\"sku\":\"product34\"}]},\"custom\":\"EBAY_EMS_90048630024435\",\"description\":\"Thepaymenttransactiondescription.\",\"invoice_number\":\"48787589673\"}],\"intent\":\"sale\",\"payer\":{\"payment_method\":\"paypal\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payment",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/payment?count=10&start_index=0&sort_by=create_time&sort_order=desc \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"update_time\":\"2017-06-30T23:49:27Z\",\"create_time\":\"2017-06-30T23:48:44Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0US81985GW1191216KOY7OXA\"}],\"id\":\"PAY-0US81985GW1191216KOY7OXA\",\"state\":\"approved\",\"transactions\":[{\"amount\":{\"total\":\"41.15\",\"currency\":\"USD\",\"details\":{\"shipping\":\"10.00\",\"subtotal\":\"30.00\",\"tax\":\"1.15\"}},\"related_resources\":[{\"authorization\":{\"parent_payment\":\"PAY-0US81985GW1191216KOY7OXA\",\"update_time\":\"2017-06-30T23:50:01Z\",\"amount\":{\"total\":\"41.15\",\"currency\":\"USD\"},\"valid_until\":\"2017-07-29T23:49:52Z\",\"create_time\":\"2017-06-30T23:50:01Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0US81985GW1191216KOY7OXA\"}],\"id\":\"53P09338XY5426455\"}}],\"item_list\":{\"shipping_address\":{\"country_code\":\"US\",\"city\":\"RedwoodCity\",\"phone\":\"4084217591\",\"state\":\"CA\",\"recipient_name\":\"JohnDoe\",\"postal_code\":\"94065\",\"line2\":\"Unit#34\",\"line1\":\"4thFloor,OneLagoonDrive\"},\"items\":[{\"quantity\":\"5\",\"price\":\"3.00\",\"name\":\"hat\",\"currency\":\"USD\",\"sku\":\"1\"},{\"quantity\":\"1\",\"price\":\"15.00\",\"name\":\"handbag\",\"currency\":\"USD\",\"sku\":\"product34\"}]},\"description\":\"Thepaymenttransactiondescription.\"}],\"intent\":\"order\",\"payer\":{\"payment_method\":\"paypal\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/identity/openidconnect/userinfo",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/oauth2/token/userinfo?schema=openid \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"address\":{\"street_address\":\"7917394AnnursnacHillRoadUnit0C\",\"country\":\"US\",\"locality\":\"Ventura\",\"region\":\"CA\",\"postal_code\":\"93003\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/cancel",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-WW57-VFCD-X5H4-XTUP/cancel \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"subject\": \"Invoice canceled\", \"note\": \"Canceling this invoice per your request.\", \"send_to_merchant\": true, \"send_to_payer\": true, \"cc_emails\": [ \"cc-email@example.com\" ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payment-experience/web-profiles",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"name\": \"exampleProfile\", \"presentation\": { \"logo_image\": \"https://www.example.com\" }, \"input_fields\": { \"no_shipping\": 1, \"address_override\": 1 }, \"flow_config\": { \"landing_page_type\": \"billing\", \"bank_txn_pending_url\": \"https://www.example.com\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"presentation\":{\"logo_image\":\"https://www.example.com\"},\"temporary\":false,\"flow_config\":{\"user_action\":\"commit\",\"landing_page_type\":\"billing\",\"bank_txn_pending_url\":\"https://www.example.com\"},\"name\":\"exampleProfile\",\"input_fields\":{\"no_shipping\":1,\"address_override\":1},\"id\":\"XP-RFV4-PVD8-AGHJ-8E5J\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payment-experience/web-profiles",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "[{\"presentation\":{\"logo_image\":\"https://www.example.com\"},\"flow_config\":{\"landing_page_type\":\"billing\",\"bank_txn_pending_url\":\"https://www.example.com\"},\"name\":\"exampleProfile\",\"input_fields\":{\"no_shipping\":1,\"address_override\":1},\"id\":\"XP-GCUV-X35G-HNEY-5MJY\"},{\"presentation\":{\"logo_image\":\"https://www.example.com\"},\"flow_config\":{\"landing_page_type\":\"billing\",\"bank_txn_pending_url\":\"https://www.example.com\"},\"name\":\"exampleProfile\",\"input_fields\":{\"no_shipping\":1,\"address_override\":1},\"id\":\"XP-A88A-LYLW-8Y3X-E5ER\"},{\"presentation\":{\"logo_image\":\"https://www.example.com\"},\"flow_config\":{\"bank_txn_pending_url\":\"https://www.example.com\"},\"name\":\"exampleProfile\",\"input_fields\":{\"no_shipping\":1,\"address_override\":1},\"id\":\"XP-RFV4-PVD8-AGHJ-8E5J\"}]"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/orders/{order_id}/authorize",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/orders/O-0NR488530V5211123/authorize \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"amount\": { \"currency\": \"USD\", \"total\": \"4.54\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"O-0NR488530V5211123\",\"update_time\":\"2017-06-28T07:38:12Z\",\"amount\":{\"total\":\"41.15\",\"currency\":\"USD\"},\"create_time\":\"2017-06-28T07:38:10Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-0NR488530V5211123\"},{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/0PG032325D352531H\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/0PG032325D352531H/capture\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0AY778532K612520BKOXHAKY\"}],\"id\":\"0PG032325D352531H\",\"state\":\"pending\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/remind",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-T4UQ-VW4W-K7N7-XM2R/remind \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"subject\": \"Past due\", \"note\": \"Please pay soon\", \"send_to_merchant\": true, \"cc_emails\": [ \"cc-email@example.com\" ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-plans",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-plans/ \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"name\": \"Plan with Regular and Trial Payment Definitions\", \"description\": \"Plan with regular and trial payment definitions.\", \"type\": \"FIXED\", \"payment_definitions\": [ { \"name\": \"Regular payment definition\", \"type\": \"REGULAR\", \"frequency\": \"MONTH\", \"frequency_interval\": \"2\", \"amount\": { \"value\": \"100\", \"currency\": \"USD\" }, \"cycles\": \"12\", \"charge_models\": [ { \"type\": \"SHIPPING\", \"amount\": { \"value\": \"10\", \"currency\": \"USD\" } }, { \"type\": \"TAX\", \"amount\": { \"value\": \"12\", \"currency\": \"USD\" } } ] }, { \"name\": \"Trial payment definition\", \"type\": \"TRIAL\", \"frequency\": \"WEEK\", \"frequency_interval\": \"5\", \"amount\": { \"value\": \"9.19\", \"currency\": \"USD\" }, \"cycles\": \"2\", \"charge_models\": [ { \"type\": \"SHIPPING\", \"amount\": { \"value\": \"1\", \"currency\": \"USD\" } }, { \"type\": \"TAX\", \"amount\": { \"value\": \"2\", \"currency\": \"USD\" } } ] } ], \"merchant_preferences\": { \"setup_fee\": { \"value\": \"1\", \"currency\": \"USD\" }, \"return_url\": \"https://example.com\", \"cancel_url\": \"https://example.com/cancel\", \"auto_bill_amount\": \"YES\", \"initial_fail_amount_action\": \"CONTINUE\", \"max_fail_attempts\": \"0\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"merchant_preferences\":{\"max_fail_attempts\":\"0\",\"setup_fee\":{\"currency\":\"USD\",\"value\":\"1\"},\"initial_fail_amount_action\":\"CONTINUE\",\"return_url\":\"https://example.com\",\"auto_bill_amount\":\"YES\",\"cancel_url\":\"https://example.com/cancel\"},\"update_time\":\"2017-06-16T07:40:20.940Z\",\"create_time\":\"2017-06-16T07:40:20.940Z\",\"name\":\"PlanwithRegularandTrialPaymentDefinitions\",\"description\":\"Planwithregularandtrialpaymentdefinitions.\",\"payment_definitions\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"100\"},\"frequency_interval\":\"2\",\"name\":\"Regularpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"10\"},\"id\":\"CHM-89H01708244053321UOPKETA\",\"type\":\"SHIPPING\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"12\"},\"id\":\"CHM-1V202179WT9709019UOPKETA\",\"type\":\"TAX\"}],\"cycles\":\"12\",\"id\":\"PD-0MF87809KK310750TUOPKETA\",\"type\":\"REGULAR\",\"frequency\":\"MONTH\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"9.19\"},\"frequency_interval\":\"5\",\"name\":\"Trialpaymentdefinition\",\"charge_models\":[{\"amount\":{\"currency\":\"USD\",\"value\":\"1\"},\"id\":\"CHM-7XN63093LF858372XUOPKETA\",\"type\":\"SHIPPING\"},{\"amount\":{\"currency\":\"USD\",\"value\":\"2\"},\"id\":\"CHM-6JY06508UT8026625UOPKETA\",\"type\":\"TAX\"}],\"cycles\":\"2\",\"id\":\"PD-03223056L66578712UOPKETA\",\"type\":\"TRIAL\",\"frequency\":\"WEEK\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA\"}],\"id\":\"P-7DC96732KA7763723UOPKETA\",\"state\":\"CREATED\",\"type\":\"FIXED\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-plans",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=3&status=ACTIVE&page_size=2&page=1&total_required=yes \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"plans\":[{\"update_time\":\"2017-08-22T04:41:53.169Z\",\"create_time\":\"2017-08-22T04:41:52.836Z\",\"name\":\"PlanwithRegularandTrialPaymentDefinitions\",\"description\":\"Planwithregularandtrialbillingpaymentdefinitions.\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com//v1/payments/billing-plans/P-7DC96732KA7763723UOPKETA\"}],\"id\":\"P-7DC96732KA7763723UOPKETA\",\"state\":\"ACTIVE\",\"type\":\"FIXED\"},{\"update_time\":\"2017-08-22T04:41:56.055Z\",\"create_time\":\"2017-08-22T04:41:55.623Z\",\"name\":\"PlanwithRegularPaymentDefinition\",\"description\":\"Planwithoneregularpaymentdefinition,minimalmerchantpreferences,andnoshippingfeesortax.\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com//v1/payments/billing-plans/P-1TV69435N82273154UPWDU4I\"}],\"id\":\"P-1TV69435N82273154UPWDU4I\",\"state\":\"ACTIVE\",\"type\":\"INFINITE\"}],\"links\":[{\"method\":\"GET\",\"rel\":\"start\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&page=1&start=3&status=active\"},{\"method\":\"GET\",\"rel\":\"previous_page\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&page=0&status=active\"},{\"method\":\"GET\",\"rel\":\"next_page\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&page=2&status=active\"},{\"method\":\"GET\",\"rel\":\"last\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/billing-plans?page_size=2&page=82&status=active\"}],\"total_pages\":\"83\",\"total_items\":\"166\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/sale/{sale_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/payments/sale/36C38912MN9658832 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-5YK922393D847794YKER7MUI\",\"update_time\":\"2017-02-19T22:01:55Z\",\"amount\":{\"total\":\"7.47\",\"currency\":\"USD\"},\"create_time\":\"2017-02-19T22:01:53Z\",\"protection_eligibility_type\":\"ITEM_NOT_RECEIVED_ELIGIBLE,UNAUTHORIZED_PAYMENT_ELIGIBLE\",\"transaction_fee\":{\"currency\":\"USD\",\"value\":\"1.75\"},\"protection_eligibility\":\"ELIGIBLE\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/sale/36C38912MN9658832\"},{\"method\":\"POST\",\"rel\":\"refund\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/sale/36C38912MN9658832/refund\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI\"}],\"id\":\"36C38912MN9658832\",\"state\":\"completed\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}",
+      "url": "curl -v -X DELETE https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-92MG-CNXV-ND7G-P3D2 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-RF6D-L66T-D7H2-CRU7 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"shipping_info\":{\"business_name\":\"Notapplicable\",\"address\":{\"country_code\":\"US\",\"city\":\"Portland\",\"state\":\"OR\",\"postal_code\":\"97216\",\"line1\":\"1234BroadSt.\"},\"last_name\":\"Patient\",\"first_name\":\"Sally\"},\"note\":\"MedicalInvoice16Jul,2013PST\",\"tax_calculated_after_discount\":false,\"metadata\":{\"created_date\":\"2014-03-2412:11:52PDT\"},\"payment_term\":{\"due_date\":\"2014-05-08PDT\",\"term_type\":\"NET_45\"},\"tax_inclusive\":false,\"merchant_info\":{\"business_name\":\"MedicalProfessionals,LLC\",\"address\":{\"country_code\":\"US\",\"city\":\"Portland\",\"state\":\"OR\",\"postal_code\":\"97217\",\"line1\":\"1234MainSt.\"},\"phone\":{\"country_code\":\"1\",\"national_number\":\"5032141716\"},\"last_name\":\"Doctor\",\"first_name\":\"Dennis\",\"email\":\"merchant@example.com\"},\"invoice_date\":\"2014-03-24PDT\",\"number\":\"0002\",\"billing_info\":[{\"email\":\"bill-me@example.com\"}],\"total_amount\":{\"currency\":\"USD\",\"value\":\"500.00\"},\"template_id\":\"TEMP-XYZ\",\"links\":[{\"method\":\"POST\",\"rel\":\"send\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-RF6D-L66T-D7H2-CRU7/send\"},{\"method\":\"DELETE\",\"rel\":\"delete\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-RF6D-L66T-D7H2-CRU7\"},{\"method\":\"PUT\",\"rel\":\"update\",\"href\":\"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-RF6D-L66T-D7H2-CRU7\"}],\"id\":\"INV2-RF6D-L66T-D7H2-CRU7\",\"items\":[{\"quantity\":100,\"name\":\"Sutures\",\"unit_price\":{\"currency\":\"USD\",\"value\":\"5.00\"}}],\"status\":\"DRAFT\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}",
+      "url": "curl -v -X PUT https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-8UZ6-Q3DK-VZXV-SXQB \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"merchant_info\": { \"email\": \"merchant@example.com\", \"first_name\": \"Dennis\", \"last_name\": \"Doctor\", \"business_name\": \"Medical Professionals, LLC\", \"phone\": { \"country_code\": \"001\", \"national_number\": \"5032141716\" }, \"address\": { \"line1\": \"1234 Main St.\", \"city\": \"Portland\", \"state\": \"OR\", \"postal_code\": \"97217\", \"country_code\": \"US\" } }, \"billing_info\": [ { \"email\": \"bill-me@example.com\" } ], \"items\": [ { \"name\": \"Sutures\", \"quantity\": 100, \"unit_price\": { \"currency\": \"USD\", \"value\": \"5\" } } ], \"note\": \"Medical Invoice 16 Jul, 2013 PST\", \"payment_term\": { \"term_type\": \"NET_45\" }, \"shipping_info\": { \"first_name\": \"Sally\", \"last_name\": \"Patient\", \"business_name\": \"Not applicable\", \"address\": { \"line1\": \"1234 Broad St.\", \"city\": \"Portland\", \"state\": \"OR\", \"postal_code\": \"97216\", \"country_code\": \"US\" } } }'",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"shipping_info\":{\"business_name\":\"Notapplicable\",\"address\":{\"country_code\":\"US\",\"city\":\"Portland\",\"state\":\"OR\",\"postal_code\":\"97216\",\"line1\":\"1234BroadSt.\"},\"last_name\":\"Patient\",\"first_name\":\"Sally\"},\"note\":\"MedicalInvoice16Jul,2013PST\",\"tax_calculated_after_discount\":false,\"payment_term\":{\"due_date\":\"2014-05-08PDT\",\"term_type\":\"NET_45\"},\"tax_inclusive\":false,\"merchant_info\":{\"business_name\":\"MedicalProfessionals,LLC\",\"address\":{\"country_code\":\"US\",\"city\":\"Portland\",\"state\":\"OR\",\"postal_code\":\"97217\",\"line1\":\"1234MainSt.\"},\"phone\":{\"country_code\":\"1\",\"national_number\":\"5032141716\"},\"last_name\":\"Doctor\",\"first_name\":\"Dennis\",\"email\":\"merchant@example.com\"},\"invoice_date\":\"2014-03-24PDT\",\"number\":\"0014\",\"billing_info\":[{\"email\":\"bill-me@example.com\"}],\"total_amount\":{\"currency\":\"USD\",\"value\":\"500.00\"},\"id\":\"INV2-8UZ6-Q3DK-VZXV-SXQB\",\"items\":[{\"quantity\":100,\"name\":\"Sutures\",\"unit_price\":{\"currency\":\"USD\",\"value\":\"5.00\"}}],\"status\":\"DRAFT\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payouts",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/payouts \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"sender_batch_header\": { \"sender_batch_id\": \"2014021801\", \"email_subject\": \"You have a payout!\", \"email_message\": \"You have received a payout! Thanks for using our service!\" }, \"items\": [ { \"recipient_type\": \"EMAIL\", \"amount\": { \"value\": \"9.87\", \"currency\": \"USD\" }, \"note\": \"Thanks for your patronage!\", \"sender_item_id\": \"201403140001\", \"receiver\": \"receiver@example.com\" }, { \"recipient_type\": \"PHONE\", \"amount\": { \"value\": \"112.34\", \"currency\": \"EUR\" }, \"note\": \"Thanks for your support!\", \"sender_item_id\": \"201403140002\", \"receiver\": \"91-734-234-1234\" }, { \"recipient_type\": \"PHONE\", \"amount\": { \"value\": \"5.32\", \"currency\": \"USD\" }, \"note\": \"Thanks for your patronage!\", \"sender_item_id\": \"201403140003\", \"receiver\": \"408-234-1234\" }, { \"recipient_type\": \"PHONE\", \"amount\": { \"value\": \"5.32\", \"currency\": \"USD\" }, \"note\": \"Thanks for your patronage!\", \"sender_item_id\": \"201403140004\", \"receiver\": \"408-234-1234\" } ] }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"batch_header\":{\"sender_batch_header\":{\"sender_batch_id\":\"2014021801\",\"email_subject\":\"Youhaveapayout!\"},\"batch_status\":\"PENDING\",\"payout_batch_id\":\"12345678\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}/suspend",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/suspend \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"note\": \"Suspending the profile.\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/{agreement_id}/re-activate",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9/re-activate \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"note\": \"Re-activating the profile.\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/{merchant_payer_id}",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/F9E99K66P3G77 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"owner_info\": { \"email\": \"demo-201@example.com\", \"name\": { \"prefix\": \"Mr\", \"given_name\": \"John\", \"surname\": \"Collins\", \"middle_name\": \"Davis\", \"suffix\": \"Jr\" }, \"country_code_of_nationality\": \"US\", \"addresses\": [ { \"type\": \"HOME\", \"line1\": \"150 E San Fernando St\", \"line2\": \"apt #1\", \"city\": \"San Jose\", \"state\": \"CA\", \"country_code\": \"US\", \"postal_code\": \"95112\" } ], \"date_of_birth\": \"1990-01-01\", \"phones\": [ { \"type\": \"HOME\", \"country_code\": \"1\", \"national_number\": \"4089679174\", \"extension_number\": \"123\" }, { \"type\": \"MOBILE\", \"country_code\": \"1\", \"national_number\": \"4089679175\", \"extension_number\": \"123\" } ], \"identifications\": [ { \"type\": \"SOCIAL_SECURITY_NUMBER\", \"value\": \"1234\", \"masked\": true, \"issuer_country_code\": \"US\" } ] }, \"business_info\": { \"type\": \"INDIVIDUAL\", \"names\": [ { \"type\": \"LEGAL\", \"name\": \"US Business\" }, { \"type\": \"DOING_BUSINESS_AS\", \"name\": \"Doing Business As Name\" } ], \"identifications\": [ { \"type\": \"EMPLOYMENT_IDENTIFICATION_NUMBER\", \"value\": \"111234501\", \"masked\": false, \"issuer_country_code\": \"US\" } ], \"addresses\": [ { \"type\": \"WORK\", \"line1\": \"585 Franklin Str\", \"line2\": \"apt #1\", \"city\": \"Mountain View\", \"state\": \"CA\", \"country_code\": \"US\", \"postal_code\": \"94041\" } ], \"phones\": [ { \"type\": \"WORK\", \"country_code\": \"1\", \"national_number\": \"4089672222\", \"extension_number\": \"123\" }, { \"type\": \"BUSINESS\", \"country_code\": \"1\", \"national_number\": \"4081234567\" } ], \"category\": \"1004\", \"sub_category\": \"2940\", \"merchant_category_code\": \"3011\", \"date_business_established\": \"2001-01-17\", \"date_of_registration\": \"2011-04-17\", \"dispute_email\": \"dispute@example.com\", \"business_sales_details\": { \"average_price\": { \"minimum_amount\": { \"currency_code\": \"USD\", \"value\": \"10\" }, \"maximum_amount\": { \"currency_code\": \"USD\", \"value\": \"100\" } }, \"average_monthly_volume\": { \"minimum_amount\": { \"currency_code\": \"USD\", \"value\": \"1000\" }, \"maximum_amount\": { \"currency_code\": \"USD\", \"value\": \"2000\" } }, \"sales_venues\": [ { \"type\": \"EBAY\", \"ebay_id\": \"ebayid123\", \"description\": \"ebay venue\" }, { \"type\": \"ANOTHER_MARKET_PLACE\", \"description\": \"description\" } ], \"website\": \"https://www.example.com\", \"revenue_from_online_sales\": { \"minimum_percent\": 0, \"maximum_percent\": 25 } }, \"customer_service\": { \"email\": \"customer-service@example.com\", \"phone\": { \"country_code\": \"1\", \"national_number\": \"4089673333\", \"extension_number\": \"123\" }, \"message\": [ { \"type\": \"ONLINE\", \"headline\": \"Your online purchase\", \"logo_image_url\": \"https://www.example.com/logo/online/\", \"service_image_url\": \"https://www.example.com/service/online/\", \"seller_message\": \"Your online purchase\" }, { \"type\": \"RETAIL\", \"headline\": \"Your retail purchase\", \"logo_image_url\": \"https://www.example.com/logo/retail/\", \"service_image_url\": \"https://www.example.com/service/retail/\", \"seller_message\": \"Your retail purchase\" } ] } }, \"account_status\": \"A\", \"account_currency\": \"USD\", \"secondary_currency\": [ \"CAD\", \"JPY\" ], \"payment_receiving_preferences\": { \"block_unconfirmed_us_address_payments\": true, \"block_non_us_payments\": true, \"block_echeck_payments\": true, \"block_cross_currency_payments\": true, \"block_send_money_payments\": true, \"alternate_payment_url\": \"https://www.example.com/alternate/\", \"display_instructions_text_input\": true, \"cc_soft_descriptor\": \"USCCSOFTDES\", \"cc_soft_descriptor_extended\": \"USCCSOFTDESEXT\" }, \"account_relations\": [ { \"type\": \"PARTNER\" } ], \"account_permissions\": [ { \"permissions\": [ \"EXPRESS_CHECKOUT\", \"RECURRING_PAYMENT\", \"EXTENDED_PRO_PROCESSING\", \"EXCEPTION_PROCESSING\", \"MASS_PAY\", \"ENCRYPTED_WEBSITE_PAYMENTS\" ] } ], \"timezone\": \"America/Los_Angeles\", \"partner_merchant_external_id\": \"abc123\", \"loginable\": false, \"partner_tax_reporting\": true }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"partner_merchant_external_id\":\"abc123\",\"payer_id\":\"7G4EPEEPEF74L\",\"links\":[{\"method\":\"PATCH\",\"rel\":\"edit\",\"href\":\"https://api.paypal.com/v1/customer/partners/merchant-accounts/7G4EPEEPEF74L\"},{\"method\":\"POST\",\"rel\":\"edit\",\"href\":\"https://api.paypal.com/v1/customer/partners/merchant-accounts/7G4EPEEPEF74L\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/{merchant_payer_id}",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/9KGJMW85LN4KC \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"account_currency\":\"USD\",\"partner_merchant_external_id\":\"abc123\",\"business_info\":{\"addresses\":[{\"country_code\":\"US\",\"city\":\"MountainView\",\"state\":\"CA\",\"type\":\"WORK\",\"postal_code\":\"94041\",\"line2\":\"apt#1\",\"line1\":\"585FranklinStr\"}],\"sub_category\":\"2940\",\"merchant_category_code\":\"3011\",\"phones\":[{\"country_code\":\"1\",\"extension_number\":\"123\",\"type\":\"WORK\",\"national_number\":\"4089672222\"},{\"country_code\":\"1\",\"type\":\"BUSINESS\",\"national_number\":\"4081234567\"}],\"customer_service\":{\"phone\":{\"country_code\":\"1\",\"extension_number\":\"123\",\"national_number\":\"4089673333\"},\"message\":[{\"service_image_url\":\"https://example.com/serviceimageurl1/\",\"logo_image_url\":\"https://example.com/logoimage/\",\"seller_message\":\"sellermessage\",\"type\":\"ONLINE\",\"headline\":\"headline1\"},{\"service_image_url\":\"https://example.com/serviceimageurl2/\",\"logo_image_url\":\"https://example.com/logoimageurl2/\",\"seller_message\":\"sellermessage\",\"type\":\"RETAIL\",\"headline\":\"headline2\"}],\"email\":\"customer-service@example.com\"},\"type\":\"INDIVIDUAL\",\"dispute_email\":\"dispute@example.com\",\"identifications\":[{\"issuer_country_code\":\"US\",\"masked\":false,\"type\":\"EMPLOYMENT_IDENTIFICATION_NUMBER\",\"value\":\"****\"}],\"names\":[{\"name\":\"USBusiness\",\"type\":\"LEGAL\"},{\"name\":\"DoingBusinessAsName\",\"type\":\"DOING_BUSINESS_AS\"}],\"date_business_established\":\"2001-01-17\",\"date_of_registration\":\"2011-04-17\",\"category\":\"1004\",\"business_sales_details\":{\"sales_venues\":[{\"description\":\"ebayvenue\",\"ebay_id\":\"ebayid123\",\"type\":\"EBAY\"},{\"description\":\"description\",\"type\":\"ANOTHER_MARKET_PLACE\"}],\"website\":\"https://example.com\",\"average_price\":{\"maximum_amount\":{\"value\":\"100\",\"currency_code\":\"USD\"},\"minimum_amount\":{\"value\":\"10\",\"currency_code\":\"USD\"}},\"average_monthly_volume\":{\"maximum_amount\":{\"value\":\"2000\",\"currency_code\":\"USD\"},\"minimum_amount\":{\"value\":\"1000\",\"currency_code\":\"USD\"}},\"revenue_from_online_sales\":{\"minimum_percent\":0,\"maximum_percent\":25}}},\"timezone\":\"America/Los_Angeles\",\"owner_info\":{\"addresses\":[{\"country_code\":\"US\",\"city\":\"SanJose\",\"state\":\"CA\",\"type\":\"HOME\",\"postal_code\":\"95112\",\"line2\":\"apt#1\",\"line1\":\"150ESanFernandoSt\"}],\"date_of_birth\":\"1990-01-01\",\"name\":{\"prefix\":\"USPrefix\",\"surname\":\"USLastName\",\"given_name\":\"USFirstName\",\"middle_name\":\"USMiddleName\",\"suffix\":\"USSuffix\"},\"phones\":[{\"country_code\":\"1\",\"extension_number\":\"123\",\"type\":\"HOME\",\"national_number\":\"4089679174\"},{\"country_code\":\"1\",\"extension_number\":\"123\",\"type\":\"MOBILE\",\"national_number\":\"4089679175\"}],\"country_code_of_nationality\":\"US\",\"email\":\"owner-info@example.com\",\"identifications\":[{\"issuer_country_code\":\"US\",\"masked\":true,\"type\":\"SOCIAL_SECURITY_NUMBER\",\"value\":\"****\"}]},\"loginable\":false,\"account_status\":\"A\",\"account_relations\":[{\"type\":\"PARTNER\"}],\"account_permissions\":[{\"permissions\":[\"EXPRESS_CHECKOUT\",\"RECURRING_PAYMENT\",\"EXTENDED_PRO_PROCESSING\",\"EXCEPTION_PROCESSING\",\"MASS_PAY\",\"ENCRYPTED_WEBSITE_PAYMENTS\"]}],\"payment_receiving_preferences\":{\"block_cross_currency_payments\":true,\"block_non_us_payments\":true,\"alternate_payment_url\":\"www.original.com\",\"cc_soft_descriptor_extended\":\"USCCSOFTDESEXT\",\"cc_soft_descriptor\":\"USCCSOFTDES\",\"block_unconfirmed_us_address_payments\":true,\"block_send_money_payments\":true,\"block_echeck_payments\":true,\"display_instructions_text_input\":true},\"links\":[{\"method\":\"PATCH\",\"rel\":\"edit\",\"href\":\"http://localhost:8080/v1/customer/partners/merchant-accounts/9KGJMW85LN4KC\"},{\"method\":\"PUT\",\"rel\":\"replace\",\"href\":\"http://localhost:8080/v1/customer/partners/merchant-accounts/9KGJMW85LN4KC\"},{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"http://localhost:8080/v1/customer/partners/merchant-accounts/9KGJMW85LN4KC\"}],\"partner_tax_reporting\":true,\"secondary_currency\":[\"CAD\",\"JPY\"]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/{merchant_payer_id}",
+      "url": "curl -v -X PATCH https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/F9E99K66P3G77 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '[ { \"op\": \"add\", \"path\": \"/financial_info/bank_accounts\", \"value\": [ { \"transfer_type\": \"NORMAL\", \"account_number\": \"11111113\", \"account_type\": \"CHECKING\", \"currency_code\": \"AUD\", \"identifiers\": [ { \"type\": \"ROUTING_NUMBER_1\", \"value\": \"645\" }, { \"type\": \"ROUTING_NUMBER_2\", \"value\": \"000\" } ], \"bank_name\": \"Bank of Australia\", \"branch_location\": { \"city\": \"Sydney\", \"country_code\": \"AU\" } } ] } ]'",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/{merchant_payer_id}",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/customer/partners/merchant-accounts/F9E99K66P3G77 \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"owner_info\": { \"email\": \"owner-info@example.com\", \"name\": { \"prefix\": \"US Prefix\", \"given_name\": \"USFirstName\", \"surname\": \"US LastName\", \"middle_name\": \"US MiddleName\", \"suffix\": \"US Suffix\" }, \"country_code_of_nationality\": \"US\", \"addresses\": [ { \"type\": \"HOME\", \"line1\": \"150 E San Fernando St\", \"line2\": \"apt #1\", \"city\": \"San Jose\", \"state\": \"CA\", \"country_code\": \"US\", \"postal_code\": \"95112\" } ], \"date_of_birth\": \"1990-01-01\", \"phones\": [ { \"type\": \"HOME\", \"country_code\": \"1\", \"national_number\": \"4089679174\", \"extension_number\": \"123\" }, { \"type\": \"MOBILE\", \"country_code\": \"1\", \"national_number\": \"4089679175\", \"extension_number\": \"123\" } ], \"identifications\": [ { \"type\": \"SOCIAL_SECURITY_NUMBER\", \"value\": \"1234\", \"masked\": true, \"issuer_country_code\": \"US\" } ] }, \"business_info\": { \"type\": \"INDIVIDUAL\", \"names\": [ { \"type\": \"LEGAL\", \"name\": \"US Business\" }, { \"type\": \"DOING_BUSINESS_AS\", \"name\": \"Doing Business As Name\" } ], \"identifications\": [ { \"type\": \"EMPLOYMENT_IDENTIFICATION_NUMBER\", \"value\": \"111234501\", \"masked\": false, \"issuer_country_code\": \"US\" } ], \"addresses\": [ { \"type\": \"WORK\", \"line1\": \"585 Franklin Str\", \"line2\": \"apt #1\", \"city\": \"Mountain View\", \"state\": \"CA\", \"country_code\": \"US\", \"postal_code\": \"94041\" } ], \"phones\": [ { \"type\": \"WORK\", \"country_code\": \"1\", \"national_number\": \"4089672222\", \"extension_number\": \"123\" }, { \"type\": \"BUSINESS\", \"country_code\": \"1\", \"national_number\": \"4081234567\" } ], \"category\": \"1004\", \"sub_category\": \"2940\", \"merchant_category_code\": \"3011\", \"date_business_established\": \"2001-01-17\", \"date_of_registration\": \"2011-04-17\", \"dispute_email\": \"dispute@example.com\", \"business_sales_details\": { \"average_price\": { \"minimum_amount\": { \"currency_code\": \"USD\", \"value\": \"10\" }, \"maximum_amount\": { \"currency_code\": \"USD\", \"value\": \"100\" } }, \"average_monthly_volume\": { \"minimum_amount\": { \"currency_code\": \"USD\", \"value\": \"1000\" }, \"maximum_amount\": { \"currency_code\": \"USD\", \"value\": \"2000\" } }, \"sales_venues\": [ { \"type\": \"EBAY\", \"ebay_id\": \"ebayid123\", \"description\": \"ebay venue\" }, { \"type\": \"ANOTHER_MARKET_PLACE\", \"description\": \"description\" } ], \"website\": \"https://example.com\", \"revenue_from_online_sales\": { \"minimum_percent\": 0, \"maximum_percent\": 25 } }, \"customer_service\": { \"email\": \"customer-service@example.com\", \"phone\": { \"country_code\": \"1\", \"national_number\": \"4089673333\", \"extension_number\": \"123\" }, \"message\": [ { \"type\": \"ONLINE\", \"headline\": \"headline1\", \"logo_image_url\": \"https://example.com/logoimage/\", \"service_image_url\": \"https://example.com/serviceimageurl1/\", \"seller_message\": \"seller message\" }, { \"type\": \"RETAIL\", \"headline\": \"headline2\", \"logo_image_url\": \"https://example.com/logoimageurl2/\", \"service_image_url\": \"https://example.com/serviceimageurl2/\", \"seller_message\": \"seller message\" } ] } }, \"account_status\": \"A\", \"account_currency\": \"USD\", \"secondary_currency\": [ \"CAD\", \"JPY\" ], \"payment_receiving_preferences\": { \"block_unconfirmed_us_address_payments\": true, \"block_non_us_payments\": true, \"block_echeck_payments\": true, \"block_cross_currency_payments\": true, \"block_send_money_payments\": true, \"alternate_payment_url\": \"www.original.com\", \"display_instructions_text_input\": true, \"cc_soft_descriptor\": \"USCCSOFTDES\", \"cc_soft_descriptor_extended\": \"USCCSOFTDESEXT\" }, \"account_relations\": [ { \"type\": \"PARTNER\" } ], \"account_permissions\": [ { \"permissions\": [ \"EXPRESS_CHECKOUT\", \"RECURRING_PAYMENT\", \"EXTENDED_PRO_PROCESSING\", \"EXCEPTION_PROCESSING\", \"MASS_PAY\", \"ENCRYPTED_WEBSITE_PAYMENTS\" ] } ], \"timezone\": \"America/Los_Angeles\", \"partner_merchant_external_id\": \"abc123\", \"loginable\": false, \"partner_tax_reporting\": true }'",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/sale/{sale_id}/refund",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/sale/2MU78835H4515710F/refund \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"amount\": { \"total\": \"2.34\", \"currency\": \"USD\" }, \"invoice_number\": \"INV-1234567\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"sale_id\":\"2MU78835H4515710F\",\"parent_payment\":\"PAY-46E69296BH2194803KEE662Y\",\"update_time\":\"2017-01-31T04:13:36Z\",\"amount\":{\"total\":\"2.34\",\"currency\":\"USD\"},\"create_time\":\"2017-01-31T04:13:34Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/refund/4CF18861HF410323U\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-46E69296BH2194803KEE662Y\"},{\"method\":\"GET\",\"rel\":\"sale\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/sale/2MU78835H4515710F\"}],\"id\":\"4CF18861HF410323U\",\"state\":\"completed\",\"invoice_number\":\"INV-1234567\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/processagreementendpoint.",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/notifications/webhooks-events/event_id",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/notifications/webhooks-events/8PT597110X687430LKGECATA \\ -H \"Content-Type:application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"event_version\":\"1.0\",\"summary\":\"Apaymentauthorizationwascreated\",\"event_type\":\"PAYMENT.AUTHORIZATION.CREATED\",\"create_time\":\"2013-06-25T21:41:28Z\",\"resource\":{\"parent_payment\":\"PAY-36246664YD343335CKHFA4AY\",\"update_time\":\"2013-06-25T21:39:17Z\",\"amount\":{\"total\":\"7.47\",\"currency\":\"USD\",\"details\":{\"subtotal\":\"7.47\"}},\"valid_until\":\"2013-07-24T21:39:15Z\",\"create_time\":\"2013-06-25T21:39:15Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B/capture\"},{\"method\":\"POST\",\"rel\":\"void\",\"href\":\"https://api.paypal.com/v1/payments/authorization/2DC87612EK520411B/void\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.paypal.com/v1/payments/payment/PAY-36246664YD343335CKHFA4AY\"}],\"id\":\"2DC87612EK520411B\",\"state\":\"authorized\"},\"resource_type\":\"authorization\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.paypal.com/v1/notfications/webhooks-events/8PT597110X687430LKGECATA\"},{\"method\":\"POST\",\"rel\":\"resend\",\"href\":\"https://api.paypal.com/v1/notfications/webhooks-events/8PT597110X687430LKGECATA/resend\"}],\"id\":\"8PT597110X687430LKGECATA\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/payment/{payment_id}/execute",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/payment/PAY-9N9834337A9191208KOZOQWI/execute \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"payer_id\": \"CR87QHB7JTRSC\" }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"update_time\":\"2017-07-01T17:05:41Z\",\"create_time\":\"2017-07-01T16:56:57Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9N9834337A9191208KOZOQWI\"}],\"id\":\"PAY-9N9834337A9191208KOZOQWI\",\"state\":\"approved\",\"transactions\":[{\"amount\":{\"total\":\"41.15\",\"currency\":\"USD\",\"details\":{\"shipping\":\"11.00\",\"subtotal\":\"30.00\",\"tax\":\"0.15\"}},\"related_resources\":[{\"order\":{\"parent_payment\":\"PAY-9N9834337A9191208KOZOQWI\",\"update_time\":\"2017-07-01T17:05:41Z\",\"amount\":{\"total\":\"41.15\",\"currency\":\"USD\"},\"create_time\":\"2017-07-01T16:56:58Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-3SP845109F051535C\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9N9834337A9191208KOZOQWI\"},{\"method\":\"POST\",\"rel\":\"void\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-3SP845109F051535C/void\"},{\"method\":\"POST\",\"rel\":\"authorization\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-3SP845109F051535C/authorize\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/orders/O-3SP845109F051535C/capture\"}],\"id\":\"O-3SP845109F051535C\",\"state\":\"pending\"}}],\"item_list\":{\"shipping_address\":{\"country_code\":\"US\",\"city\":\"RedwoodCity\",\"phone\":\"011862212345678\",\"state\":\"CA\",\"recipient_name\":\"ThomasMiller\",\"postal_code\":\"94065\",\"line2\":\"Unit#34\",\"line1\":\"4thFloor,OneLagoonDrive\"},\"items\":[{\"quantity\":\"5\",\"price\":\"3.00\",\"name\":\"hat\",\"currency\":\"USD\",\"sku\":\"1\"},{\"quantity\":\"1\",\"price\":\"15.00\",\"name\":\"handbag\",\"currency\":\"USD\",\"sku\":\"product34\"}]},\"description\":\"Thepaymenttransactiondescription.\"}],\"intent\":\"order\",\"payer\":{\"payment_method\":\"paypal\",\"payer_info\":{\"last_name\":\"Miller\",\"payer_id\":\"PUP87RBJV8HPU\",\"shipping_address\":{\"country_code\":\"US\",\"city\":\"RedwoodCity\",\"phone\":\"011862212345678\",\"state\":\"CA\",\"postal_code\":\"94065\",\"recipient_name\":\"ThomasMiller\",\"line2\":\"Unit#34\",\"line1\":\"4thFloor,OneLagoonDrive\"},\"first_name\":\"Thomas\",\"email\":\"qa152-biz@example.com\"}}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/payments/authorization/{authorization_id}/reauthorize",
+      "url": "curl -v -X POST https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B/reauthorize \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \" \\ -d '{ \"amount\": { \"total\": \"7.00\", \"currency\": \"USD\" } }'",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"parent_payment\":\"PAY-7LD317540C810384EKHFAGYA\",\"update_time\":\"2017-06-25T21:39:17Z\",\"amount\":{\"total\":\"7.00\",\"currency\":\"USD\"},\"valid_until\":\"2017-07-24T21:39:15Z\",\"create_time\":\"2017-06-25T21:39:15Z\",\"links\":[{\"method\":\"GET\",\"rel\":\"self\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/8AA831015G517922L\"},{\"method\":\"GET\",\"rel\":\"parent_payment\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7LD317540C810384EKHFAGYA\"},{\"method\":\"POST\",\"rel\":\"capture\",\"href\":\"https://api.sandbox.paypal.com/v1/payments/authorization/8AA831015G517922L/capture\"}],\"id\":\"8AA831015G517922L\",\"state\":\"authorized\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/wallet/unavailable-balance-accounts",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v2/wallet/unavailable-balance-accounts \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"balance_accounts\":[{\"reserved\":{\"value\":\"0\",\"currency_code\":\"USD\"},\"available\":{\"value\":\"0\",\"currency_code\":\"USD\"},\"id\":\"HO1078386\",\"open\":false,\"primary\":false}],\"links\":[{\"rel\":\"self\",\"href\":\"http://api.sandbox.paypal.com/v2/wallets/unavailable-balance-accounts\"},{\"rel\":\"balance_accounts\",\"href\":\"http://api.sandbox.paypal.com/v2/wallets/balance-accounts\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://api.sandbox.paypal.com/v1/invoicing/invoices/{invoice_id}/qr-code",
+      "url": "curl -v -X GET https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-S6FG-ZZCK-VXMM-8KKP/qr-code \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer Access-Token \"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"image\":\"iVBORw0KGgoAA......XUDM\"}"
+    }
+  }
+]

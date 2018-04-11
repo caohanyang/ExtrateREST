@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA" name="google-site-verification"/>
+  <title>
+   Process PayPal payments - PayPal Developer
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" name="msapplication-TileImage"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png" rel="apple-touch-icon-precomposed"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png" rel="icon" sizes="32x32"/>
+  <link href="/css/docs.css" rel="stylesheet" type="text/css"/>
+  <script data-main="/js/master" src="/components/requirejs/require.js">
+  </script>
+ </head>
+ <body class="dx-docs dx-apis">
+  <header class="header" id="header">
+   <a aria-label="PayPal Developer" class="header__block header__brand" href="/">
+   </a>
+   <a aria-label="Toggle top-level navigation" class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0">
+   </a>
+   <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2">
+   </div>
+   <div class="header__nav">
+    <div class="header__nav--left">
+     <ul class="dx-nav-0 dx-nav-0-docs">
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/docs/">
+        Docs
+       </a>
+      </li>
+      <li class="dx-nav-0-item dx-nav-active">
+       <a class="dx-nav-0-link" href="/reference/">
+        APIs
+       </a>
+      </li>
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/support/">
+        Support
+       </a>
+      </li>
+     </ul>
+     <form action="/search" class="header__search dx-form-search" id="siteSearch" method="get" name="search">
+      <label class="sr-only" for="siteQ">
+       Enter search term
+      </label>
+      <input class="dx-search-input" id="siteQ" name="q" placeholder="Search" type="search" value=""/>
+     </form>
+    </div>
+    <div class="header__nav--right">
+     <div class="dx-auth-block profile__container">
+      <div class="dx-auth-logged-out">
+       <a class="dx-auth-login dx-btn dx-btn-primary" data-dxa="login,nav-click,nav-login" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications">
+        Log into Dashboard
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="dx-main">
+   <div class="dx-flex">
+    <div class="dx-main-nav-slug">
+    </div>
+    <nav class="dx-main-nav dx-mobile-nav">
+     <div class="dx-nav-back">
+      <a href="/docs/api/payments/">
+       View All Reference
+      </a>
+     </div>
+     <ul class="dx-nav dx-nav-1">
+      <li class="dx-nav-1-item dx-nav-active-parent">
+       <a class="dx-nav-heading" href="/docs/api/">
+        REST APIs
+       </a>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Get Started
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/overview/">
+          Get Started
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#authentication-and-authorization">
+            Authentication and Authorization
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-requests">
+            API Requests
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#query-parameters">
+              Query Parameters
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#http-request-headers">
+              HTTP Request Headers
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#accept">
+                Accept
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#authorization">
+                Authorization
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#content-type">
+                Content-Type
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-auth-assertion">
+                PayPal-Auth-Assertion
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-client-metadata-id">
+                PayPal-Client-Metadata-Id
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-partner-attribution-id">
+                PayPal-Partner-Attribution-Id
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="/docs/api/overview/#paypal-request-id">
+                PayPal-Request-Id
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-responses">
+            API Responses
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#http-status-codes">
+              HTTP Status Codes
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS Links
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#make-your-first-call">
+            Make Your First Call
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          API Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/balance-accounts">
+          Balance Accounts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.billing-agreements">
+          Billing Agreements API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.billing-plans">
+          Billing Plans API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/customer-disputes">
+          Customer Disputes API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/identity">
+          Identity API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/invoicing">
+          Invoicing API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/managed-accounts/">
+          Managed Accounts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/orders">
+          Orders API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/partner-referrals/">
+          Partner Referrals API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payment-experience">
+          Payment Experience API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments">
+          Payments API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/payments.payouts-batch">
+          Payouts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/referenced-payouts/">
+          Referenced Payouts API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/vault">
+          Vault API
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/webhooks">
+          Webhooks API
+         </a>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/currency-codes/">
+          Currency Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/currency-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/country-codes/">
+          Country Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/country-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/state-codes/">
+          State &amp; Province Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#argentina">
+            Argentina
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#brazil">
+            Brazil
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#canada">
+            Canada
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#india">
+            India
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#indonesia">
+            Indonesia
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#italy">
+            Italy
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#japan">
+            Japan
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#mexico">
+            Mexico
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#thailand">
+            Thailand
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#usa">
+            United States
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/locale-codes/">
+          Locale Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#localize-the-checkout-experience">
+            Localize the Checkout Experience
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#supported-locale-codes">
+            Supported Locale Codes
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          Release Notes
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2017/">
+          2017
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-november-2017">
+            09 November 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-november-2017">
+            02 November 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-october-2017">
+            25 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#20-october-2017">
+            20 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-october-2017">
+            19 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-october-2017">
+            11 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-october-2017">
+            05 October 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-september-2017">
+            22 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#21-september-2017">
+            21 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#14-september-2017">
+            14 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#07-september-2017">
+            07 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#31-august-2017">
+            31 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#24-august-2017">
+            24 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-august-2017">
+            16 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-august-2017">
+            11 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-august-2017">
+            09 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-august-2017">
+            04 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-july-2017">
+            27 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-july-2017">
+            19 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-july-2017">
+            13 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#06-july-2017">
+            06 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#28-june-2017">
+            28 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-june-2017">
+            22 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#15-june-2017">
+            15 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-june-2017">
+            09 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-may-2017">
+            25 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-may-2017">
+            11 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-may-2017">
+            04 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-april-2017">
+            25 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-april-2017">
+            13 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#30-march-2017">
+            30 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#23-march-2017">
+            23 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-march-2017">
+            16 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-february-2017">
+            27 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-february-2017">
+            16 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-february-2017">
+            02 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-january-2017">
+            25 January 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-january-2017">
+            05 January 2017
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2016/">
+          2016
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#22-december-2016">
+            22 December 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#17-november-2016">
+            17 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-november-2016">
+            10 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-november-2016">
+            04 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-october-2016">
+            27 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-october-2016">
+            06 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#29-september-2016">
+            29 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#08-september-2016">
+            08 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#01-september-2016">
+            01 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-august-2016">
+            11 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-august-2016">
+            04 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-july-2016">
+            27 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#20-july-2016">
+            20 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#07-july-2016">
+            07 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#16-june-2016">
+            16 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-june-2016">
+            02 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-may-2016">
+            11 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-may-2016">
+            02 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-april-2016">
+            06 April 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-march-2016">
+            10 March 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#26-february-2016">
+            26 February 2016
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2015/">
+          2015
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#16-december-2015">
+            16 December 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-november-2015">
+            13 November 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-october-2015">
+            25 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#21-october-2015">
+            21 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-august-2015">
+            12 August 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-july-2015">
+            19 July 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#18-june-2015">
+            18 June 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-may-2015">
+            19 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-may-2015">
+            05 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#23-april-2015">
+            23 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-april-2015">
+            05 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-march-2015">
+            25 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-march-2015">
+            12 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#26-february-2015">
+            26 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-february-2015">
+            13 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#22-january-2015">
+            22 January 2015
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2014/">
+          2014
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-december-2014">
+            17 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#10-december-2014">
+            10 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#03-december-2014">
+            03 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#05-november-2014">
+            05 November 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-october-2014">
+            23 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#15-october-2014">
+            15 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#01-october-2014">
+            01 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-september-2014">
+            17 September 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#13-august-2014">
+            13 August 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-july-2014">
+            23 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-july-2014">
+            07 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-march-2014">
+            07 March 2014
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2013/">
+          2013
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#30-july-2013">
+            30 July 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#28-may-2013">
+            28 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#22-may-2013">
+            22 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#15-may-2013">
+            15 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#24-april-2013">
+            24 April 2013
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          SDKs
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/rest-sdks/">
+          SDKs
+         </a>
+        </li>
+        <li class="dx-nav-2-item dx-nav-active-parent">
+         <a href="/docs/api/quickstart/">
+          SDK Quickstart
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/install">
+            Install the SDK
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/environment">
+            Configure Environment
+           </a>
+          </li>
+          <li class="dx-nav-3-item dx-nav-active">
+           <a href="/docs/api/quickstart/payments">
+            Process PayPal Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-plan">
+            Create Billing Plans
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-agreement">
+            Create Billing Agreements
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/capture-payment">
+            Capture Payments Later
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-process-order/">
+            Create and Process Orders
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/refund-payment">
+            Refund Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-webhook">
+            Create Notification Webhooks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/service-integrations/">
+          Service Integrations
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/service-integrations/slack-bot/">
+            Slack
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/simple_pay">
+              Add Person-to-Bot Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/direct_pay">
+              Add Person-to-Person Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/subscribe">
+              Add Agreement for Recurring Payment
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li class="dx-nav-2-item">
+         <h5 class="dx-nav-subheading">
+          GLOSSARY
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/glossary/">
+          Glossary
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <article class="content dx-content ">
+     <span class="label u-mobile-hide" data-js="product-section-label">
+     </span>
+     <h1 class="dx-content-title">
+      Process PayPal payments
+     </h1>
+     <p>
+      To create a PayPal payment, complete these steps:
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         1.
+        </td>
+        <td>
+         <a href="#set-up-the-payment-information-object">
+          Set up a payment information object
+         </a>
+         that contains details about the PayPal payment.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2.
+        </td>
+        <td>
+         <a href="#initialize-the-payment-and-redirect-the-user">
+          Initialize the payment and redirect the user
+         </a>
+         . To do so, send the payment object to PayPal. This action provides a redirect URL to which to redirect the user. After the user confirms the payment, PayPal redirects the user to the return URLs specified in the payment object.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3.
+        </td>
+        <td>
+         <a href="#complete-the-payment">
+          Complete the payment
+         </a>
+         . Use the payer and payment IDs provided in the query string following the redirect.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <h2 id="set-up-the-payment-information-object">
+      Set up the payment information object
+     </h2>
+     <p>
+      The payment object contains information about the method of payment, transaction details, where to redirect the user after they accept the payment on PayPal, and so on. Start the payment by creating this object.
+     </p>
+     <div class="picker dx-lang-list">
+      <button class="picker__btn" data-lang="Node">
+       Node
+      </button>
+      <button class="picker__btn" data-lang="PHP">
+       PHP
+      </button>
+      <button class="picker__btn" data-lang="Python">
+       Python
+      </button>
+      <button class="picker__btn" data-lang="Ruby">
+       Ruby
+      </button>
+      <button class="picker__btn" data-lang="Java">
+       Java
+      </button>
+      <button class="picker__btn" data-lang=".NET">
+       .NET
+      </button>
+     </div>
+     <pre class="dx-lang-active" data-lang="Node">// Build PayPal payment request
+var payReq = JSON.stringify({
+  intent:'sale',
+  payer:{
+    payment_method:'paypal'
+  },
+  redirect_urls:{
+    return_url:'http://localhost:3000/process',
+    cancel_url:'http://localhost:3000/cancel'
+  },
+  transactions:[{
+    amount:{
+      total:'10',
+      currency:'USD'
+    },
+    description:'This is the payment transaction description.'
+  }]
+});</pre>
+     <pre data-lang="PHP">use PayPal\Api\Amount;
+use PayPal\Api\Details;
+use PayPal\Api\Item;
+use PayPal\Api\ItemList;
+use PayPal\Api\Payer;
+use PayPal\Api\Payment;
+use PayPal\Api\RedirectUrls;
+use PayPal\Api\Transaction;
+
+// Create new payer and method
+$payer = new Payer();
+$payer-&gt;setPaymentMethod("paypal");
+
+// Set redirect urls
+$redirectUrls = new RedirectUrls();
+$redirectUrls-&gt;setReturnUrl('http://localhost:3000/process.php')
+  -&gt;setCancelUrl('http://localhost:3000/cancel.php');
+
+// Set payment amount
+$amount = new Amount();
+$amount-&gt;setCurrency("USD")
+  -&gt;setTotal(10);
+
+// Set transaction object
+$transaction = new Transaction();
+$transaction-&gt;setAmount($amount)
+  -&gt;setDescription("Payment description");
+
+// Create the full payment object
+$payment = new Payment();
+$payment-&gt;setIntent('sale')
+  -&gt;setPayer($payer)
+  -&gt;setRedirectUrls($redirectUrls)
+  -&gt;setTransactions(array($transaction));</pre>
+     <pre data-lang="Python">from paypalrestsdk import Payment
+
+# Create payment object
+payment = Payment({
+  "intent": "sale",
+
+  # Set payment method
+  "payer": {
+    "payment_method": "paypal"
+  },
+
+  # Set redirect urls
+  "redirect_urls": {
+    "return_url": "http://localhost:3000/process",
+    "cancel_url": "http://localhost:3000/cancel"
+  },
+
+  # Set transaction object
+  "transactions": [{
+    "amount": {
+      "total": "10.00",
+      "currency": "USD"
+    },
+    "description": "payment description"
+  }]
+})</pre>
+     <pre data-lang="Ruby"># Create payment object
+payment = Payment.new({
+  :intent =&gt;  "sale",
+
+  # Set payment type
+  :payer =&gt;  {
+    :payment_method =&gt;  "paypal"
+  },
+
+  # Set redirect urls
+  :redirect_urls =&gt; {
+    :return_url =&gt; "http://localhost/payment/execute",
+    :cancel_url =&gt; "http://localhost:3000/"
+  },
+
+  # Set transaction object
+  :transactions =&gt;  [{
+
+    # Items
+    :item_list =&gt; {
+      :items =&gt; [{
+        :name =&gt; "item",
+        :sku =&gt; "item",
+        :price =&gt; "10",
+        :currency =&gt; "USD",
+        :quantity =&gt; 1
+      }]
+    },
+
+    # Amount - must match item list breakdown price
+    :amount =&gt;  {
+      :total =&gt;  "10",
+      :currency =&gt;  "USD"
+    },
+    :description =&gt;  "payment description."
+  }]
+})</pre>
+     <pre data-lang="Java">import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import com.paypal.api.payments.Amount;
+import com.paypal.api.payments.Details;
+import com.paypal.api.payments.Links;
+import com.paypal.api.payments.Payer;
+import com.paypal.api.payments.Payment;
+import com.paypal.api.payments.PaymentExecution;
+import com.paypal.api.payments.RedirectUrls;
+import com.paypal.api.payments.Transaction;
+
+// Set payer details
+Payer payer = new Payer();
+payer.setPaymentMethod("paypal");
+
+// Set redirect URLs
+RedirectUrls redirectUrls = new RedirectUrls();
+redirectUrls.setCancelUrl("http://localhost:3000/cancel");
+redirectUrls.setReturnUrl("http://localhost:3000/process");
+
+// Set payment details
+Details details = new Details();
+details.setShipping("1");
+details.setSubtotal("5");
+details.setTax("1");
+
+// Payment amount
+Amount amount = new Amount();
+amount.setCurrency("USD");
+// Total must be equal to sum of shipping, tax and subtotal.
+amount.setTotal("7");
+amount.setDetails(details);
+
+// Transaction information
+Transaction transaction = new Transaction();
+transaction.setAmount(amount);
+transaction
+  .setDescription("This is the payment transaction description.");
+
+// Add transaction to a list
+List<var>Transaction</var> transactions = new ArrayList<var>Transaction</var>();
+transactions.add(transaction);
+
+// Add payment details
+Payment payment = new Payment();
+payment.setIntent("sale");
+payment.setPayer(payer);
+payment.setRedirectUrls(redirectUrls);
+payment.setTransactions(transactions);
+</pre>
+     <pre data-lang=".NET">var payer = new Payer() { payment_method = "paypal" };
+
+var guid = Convert.ToString((new Random()).Next(100000));
+var redirUrls = new RedirectUrls()
+{
+  cancel_url = "http://localhost:3000/cancel",
+  return_url = "http://localhost:3000/process"
+};
+
+var itemList = new ItemList()
+{
+  items = new List<item>()
+  {
+    new Item()
+    {
+      name = "Item Name",
+      currency = "USD",
+      price = "15",
+      quantity = "5",
+      sku = "sku"
+    }
+  }
+};
+
+var details = new Details()
+{
+  tax = "15",
+  shipping = "10",
+  subtotal = "75"
+};
+
+var amount = new Amount()
+{
+  currency = "USD",
+  total = "100.00", // Total must be equal to sum of shipping, tax and subtotal.
+  details = details
+};
+
+var transactionList = new List<transaction>();
+
+transactionList.Add(new Transaction()
+{
+  description = "Transaction description.",
+  invoice_number = Common.GetRandomInvoiceNumber(),
+  amount = amount,
+  item_list = itemList
+});
+
+var payment = new Payment()
+{
+  intent = "sale",
+  payer = payer,
+  redirect_urls = redirUrls,
+  transactions = transactionList
+};</transaction></item></pre>
+     <p>
+      To create a PayPal payment, set
+      <code>
+       payment_method
+      </code>
+      to
+      <code>
+       paypal
+      </code>
+      under
+      <code>
+       payer
+      </code>
+      .
+     </p>
+     <p>
+      Adjust the rest of the payment information to your needs.
+     </p>
+     <h2 id="initialize-the-payment-and-redirect-the-user">
+      Initialize the payment and redirect the user
+     </h2>
+     <p>
+      With the payment object set, you can initialize the payment on PayPal. After you send the request to create a payment, PayPal responds with a JSON response that includes a
+      <code>
+       links
+      </code>
+      object with the
+      <code>
+       approval_url
+      </code>
+      , which is the location to which to redirect the customer so that he or she can verify or cancel the payment.
+     </p>
+     <div class="picker dx-lang-list">
+      <button class="picker__btn" data-lang="Node">
+       Node
+      </button>
+      <button class="picker__btn" data-lang="PHP">
+       PHP
+      </button>
+      <button class="picker__btn" data-lang="Python">
+       Python
+      </button>
+      <button class="picker__btn" data-lang="Ruby">
+       Ruby
+      </button>
+      <button class="picker__btn" data-lang="Java">
+       Java
+      </button>
+      <button class="picker__btn" data-lang=".NET">
+       .NET
+      </button>
+     </div>
+     <pre class="dx-lang-active" data-lang="Node">paypal.payment.create(payReq, function(error, payment){
+  var links = {};
+
+  if(error){
+    console.error(JSON.stringify(error));
+  } else {
+    // Capture HATEOAS links
+    payment.links.forEach(function(linkObj){
+      links[linkObj.rel] = {
+        href: linkObj.href,
+        method: linkObj.method
+      };
+    })
+
+    // If redirect url present, redirect user
+    if (links.hasOwnProperty('approval_url')){
+      //REDIRECT USER TO links['approval_url'].href
+    } else {
+      console.error('no redirect URI present');
+    }
+  }
+});</pre>
+     <pre data-lang="PHP">// Create payment with valid API context
+try {
+  $payment-&gt;create($apiContext);
+
+  // Get PayPal redirect URL and redirect user
+  $approvalUrl = $payment-&gt;getApprovalLink();
+
+  // REDIRECT USER TO $approvalUrl
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex-&gt;getCode();
+  echo $ex-&gt;getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}</pre>
+     <pre data-lang="Python"># Create payment
+if payment.create():
+  # Extract redirect url
+  for link in payment.links:
+    if link.method == "REDIRECT":
+      # Capture redirect url
+      redirect_url = str(link.href)
+
+      # REDIRECT USER to redirect_url
+else:
+  print("Error while creating payment:")
+  print(payment.error)</pre>
+     <pre data-lang="Ruby"># Create payment
+if payment.create
+  # Capture redirect url
+  redirect_url = payment.links.find{|v| v.rel == "approval_url" }.href
+
+  # REDIRECT USER TO redirect_url
+else
+  logger.error payment.error.inspect
+end</pre>
+     <pre data-lang="Java">// Create payment
+try {
+  Payment createdPayment = payment.create(apiContext);
+
+  Iterator<links> links = createdPayment.getLinks().iterator();
+  while (links.hasNext()) {
+    Links link = links.next();
+    if (link.getRel().equalsIgnoreCase("approval_url")) {
+      // REDIRECT USER TO link.getHref()
+    }
+  }
+} catch (PayPalRESTException e) {
+    System.err.println(e.getDetails());
+}</links></pre>
+     <pre data-lang=".NET">var createdPayment = payment.Create(apiContext);
+
+var links = createdPayment.links.GetEnumerator();
+while (links.MoveNext())
+{
+  var link = links.Current;
+  if (link.rel.ToLower().Trim().Equals("approval_url"))
+  {
+    // REDIRECT USER TO link.href
+  }
+}</pre>
+     <p>
+      Issue a call to create the payment. Pass the payment information object that you created in the previous step. If that request succeeds, extract the
+      <code>
+       approval_url
+      </code>
+      and redirect the user to the PayPal URL to confirm that payment information.
+     </p>
+     <h2 id="complete-the-payment">
+      Complete the payment
+     </h2>
+     <p>
+      After the customer confirms the payment information, he or she is redirected to the URL that was specified in the payment information object, set in the first step. In the query string will also be two parameters,
+      <code>
+       PayerID
+      </code>
+      and
+      <code>
+       paymentId
+      </code>
+      . These parameters are confirmation objects used to complete the payment.
+     </p>
+     <div class="picker dx-lang-list">
+      <button class="picker__btn" data-lang="Node">
+       Node
+      </button>
+      <button class="picker__btn" data-lang="PHP">
+       PHP
+      </button>
+      <button class="picker__btn" data-lang="Python">
+       Python
+      </button>
+      <button class="picker__btn" data-lang="Ruby">
+       Ruby
+      </button>
+      <button class="picker__btn" data-lang="Java">
+       Java
+      </button>
+      <button class="picker__btn" data-lang=".NET">
+       .NET
+      </button>
+     </div>
+     <pre class="dx-lang-active" data-lang="Node">var paymentId = req.query.paymentId;
+var payerId = { payer_id: req.query.PayerID };
+
+paypal.payment.execute(paymentId, payerId, function(error, payment){
+  if(error){
+    console.error(JSON.stringify(error));
+  } else {
+    if (payment.state == 'approved'){
+      console.log('payment completed successfully');
+    } else {
+      console.log('payment not successful');
+    }
+  }
+});</pre>
+     <pre data-lang="PHP">require __DIR__ . '/../bootstrap.php';
+use PayPal\Api\Amount;
+use PayPal\Api\Details;
+use PayPal\Api\ExecutePayment;
+use PayPal\Api\Payment;
+use PayPal\Api\PaymentExecution;
+use PayPal\Api\Transaction;
+
+// Get payment object by passing paymentId
+$paymentId = $_GET['paymentId'];
+$payment = Payment::get($paymentId, $apiContext);
+$payerId = $_GET['PayerID'];
+
+// Execute payment with payer id
+$execution = new PaymentExecution();
+$execution-&gt;setPayerId($payerId);
+
+try {
+  // Execute payment
+  $result = $payment-&gt;execute($execution, $apiContext);
+  var_dump($result);
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex-&gt;getCode();
+  echo $ex-&gt;getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}</pre>
+     <pre data-lang="Python">from paypalrestsdk import Payment
+
+# Payment id obtained when creating the payment (following redirect)
+payment = Payment.find("PAY-28103131SP722473WKFD7VGQ")
+
+# Execute payment using payer_id obtained when creating the payment (following redirect)
+if payment.execute({"payer_id": "DUFRQ8GWYMJXC"}):
+  print("Payment[%s] execute successfully" % (payment.id))
+else:
+  print(payment.error)</pre>
+     <pre data-lang="Ruby"># Get payment id from query string following redirect
+payment = Payment.find(ENV["PAYMENT_ID"])
+
+# Execute payment using payer_id obtained from query string following redirect
+if payment.execute( :payer_id =&gt; ENV["PAYER_ID"] )  #return true or false
+  logger.info "Payment[#{payment.id}] executed successfully"
+else
+  logger.error payment.error.inspect
+end</pre>
+     <pre data-lang="Java">Payment payment = new Payment();
+payment.setId(req.getParameter("paymentId"));
+
+PaymentExecution paymentExecution = new PaymentExecution();
+paymentExecution.setPayerId(req.getParameter("PayerID"));
+try {
+  Payment createdPayment = payment.execute(apiContext, paymentExecution);
+  System.out.println(createdPayment);
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+}</pre>
+     <pre data-lang=".NET">var guid = Request.Params["guid"];
+
+// Using the information from the redirect, setup the payment to execute.
+var paymentId = Session[guid] as string;
+var paymentExecution = new PaymentExecution() { payer_id = payerId };
+var payment = new Payment() { id = paymentId };
+
+// Execute the payment.
+var executedPayment = payment.Execute(apiContext, paymentExecution);</pre>
+     <p>
+      To complete the payment, extract the
+      <code>
+       paymentId
+      </code>
+      and
+      <code>
+       PayerID
+      </code>
+      from the query string parameters and call the execute method.
+     </p>
+     <h2 id="additional-information">
+      Additional information
+     </h2>
+     <ul>
+      <li>
+       Sample Code:
+       <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/create_with_paypal.js">
+        Node
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-PHP-SDK/sample/doc/payments/CreatePaymentUsingPayPal.html">
+        PHP
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Python-SDK/blob/master/samples/payment/create_with_paypal.py">
+        Python
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Ruby-SDK/blob/master/samples/payment/create_with_paypal.rb">
+        Ruby
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Java-SDK/blob/master/rest-api-sample/src/main/java/com/paypal/api/payments/servlet/PaymentWithPayPalServlet.java">
+        Java
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-NET-SDK/Samples/PaymentWithPayPal.aspx.html">
+        .NET
+       </a>
+      </li>
+      <li>
+       SDKs:
+       <a href="https://paypal.github.io/PayPal-node-SDK/">
+        Node
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-PHP-SDK/">
+        PHP
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Python-SDK">
+        Python
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Ruby-SDK">
+        Ruby
+       </a>
+       |
+       <a href="https://github.com/paypal/PayPal-Java-SDK">
+        Java
+       </a>
+       |
+       <a href="https://paypal.github.io/PayPal-NET-SDK/">
+        .NET
+       </a>
+      </li>
+      <li>
+       <a href="/docs/api/payments/#payment_create">
+        Create payment API documentation
+       </a>
+      </li>
+      <li>
+       <a href="/docs/api/payments/#definition-payment">
+        Payment object API definitions
+       </a>
+      </li>
+     </ul>
+     <span class="dxf-insert-rating">
+     </span>
+    </article>
+   </div>
+   <footer class="footer">
+    <section class="section">
+     <div class="section__content">
+      <div class="grid">
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Docs
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/integration/direct/express-checkout/integration-jsv4/" rel="nofollow">
+           Express Checkout
+          </a>
+         </li>
+         <li>
+          <a href="/docs/integration/web" rel="nofollow">
+           Payment Buttons
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.braintreepayments.com/start/overview/" rel="nofollow">
+           Braintree SDK
+          </a>
+         </li>
+         <li>
+          <a href="/docs/directory/" rel="nofollow">
+           All Docs
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Support
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/faq/" rel="nofollow">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-techsupport.com/" rel="nofollow">
+           Merchant Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">
+           Account Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Resources
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://github.com/paypal/" rel="nofollow">
+           GitHub
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/partnerprogram" rel="nofollow">
+           Partners
+          </a>
+         </li>
+         <li>
+          <a href="https://demo.paypal.com" rel="nofollow">
+           PayPal Demo
+          </a>
+         </li>
+         <li>
+          <a href="https://devblog.paypal.com/" rel="nofollow">
+           Blog
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Family
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://paypal.com/" rel="nofollow">
+           PayPal
+          </a>
+         </li>
+         <li>
+          <a href="https://braintreepayments.com/" rel="nofollow">
+           Braintree
+          </a>
+         </li>
+         <li>
+          <a href="https://venmo.com/" rel="nofollow">
+           Venmo
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paydiant.com/" rel="nofollow">
+           Paydiant
+          </a>
+         </li>
+         <li>
+          <a href="https://xoom.com/" rel="nofollow">
+           Xoom
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="grid">
+       <div class="grid__item grid__item--6">
+        <ul class="footer__legal">
+         <li>
+          <a class="scTrack:privacy-policy" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">
+           Privacy
+          </a>
+         </li>
+         <li>
+          <a class="scTrack:legal-agreements" href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">
+           Legal
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--6">
+        <p class="footer__copyright">
+         ©2018 PayPal
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+  </main>
+ </body>
+</html>

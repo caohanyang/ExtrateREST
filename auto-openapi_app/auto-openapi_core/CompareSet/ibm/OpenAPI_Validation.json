@@ -1,0 +1,1988 @@
+{
+  "basePath": "/conversation/api/v1",
+  "paths": {
+    "/workspaces/{workspace_id}/intents/{intent}/examples/{text}": {
+      "DELETE": {
+        "request": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples/Good%20afternoon?version=2017-05-26\"",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The intent name (for example, pizza_order ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "text",
+            "description": "path string The text of the user input example, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Hello there!\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples/hi%20there?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-02-20T19:00:03.160Z",
+              "text": "Hellothere!",
+              "updated": "2017-02-21T20:06:54.552Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The intent name (for example, pizza_order ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "text",
+            "description": "path string The current text of the user input example, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "example",
+            "description": "body json UpdateExample An UpdateExample object defining the new text for the user input example.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples/Good%20afternoon?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-02-21T18:51:41.785Z",
+              "text": "Goodafternoon",
+              "updated": "2017-02-21T18:51:41.785Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The intent name (for example, pizza_order ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "text",
+            "description": "path string The text of the user input example, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/entities": {
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"entity\\\": \\\"beverage\\\",\\\"values\\\":[{\\\"value\\\":\\\"water\\\"},{\\\"value\\\":\\\"orange juice\\\"},{\\\"value\\\":\\\"soda\\\"}]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-04-12T15:10:34.037Z",
+              "updated": "2017-04-12T15:10:34.037Z",
+              "entity": "beverage"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "entity",
+            "description": "body json CreateEntity A CreateEntity object defining the content of the new entity.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "pagination": {
+                "refresh_url": "/v1/workspaces/bec28d8f-18c1-4e97-8d08-9c842c658b51/entities?version=2017-05-26"
+              },
+              "entities": [
+                {
+                  "created": "2017-04-10T14:36:49.177Z",
+                  "updated": "2017-04-10T14:36:49.177Z",
+                  "entity": "animal"
+                }
+              ]
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "export",
+            "description": "query boolean Whether to include all element content in the returned data. If export= false , the returned data includes only information about the element itself. If export= true , all content, including subelements, is included. The default value is false .",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "include_count",
+            "description": "query boolean Whether to include information about the number of records returned.",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). Supported values are entity and updated .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/counterexamples": {
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Make me a sandwich\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-03-07T20:13:33.850Z",
+              "text": "Makemeasandwich",
+              "updated": "2017-03-07T20:13:33.850Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "counterexample",
+            "description": "body json CreateExample A CreateExample object defining the content of the new user input example.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-03-07T19:02:33.513Z",
+              "text": "Whatareyouwearing?",
+              "updated": "2017-03-07T19:02:33.513Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "include_count",
+            "description": "query boolean Whether to include information about the number of records returned.",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). Supported values are text and updated .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/entities/{entity}/values/{value}/synonyms": {
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"synonym\\\":\\\"OJ\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "synonym": "OJ",
+              "created": "2017-04-12T15:02:29.188Z",
+              "updated": "2017-04-12T15:02:29.188Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "synonym",
+            "description": "body json CreateSynonym A CreateSynonym object defining the new synonym.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/soda/synonyms?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "pagination": {
+                "refresh_url": "/v1/workspaces/bec28d8f-18c1-4e97-8d08-9c842c658b51/entities/beverage/values/soda/synonyms?version=2017-05-26"
+              },
+              "synonyms": [
+                {
+                  "synonym": "pop",
+                  "created": "2017-04-12T14:58:09.029Z",
+                  "updated": "2017-04-12T14:58:09.029Z"
+                },
+                {
+                  "synonym": "softdrink",
+                  "created": "2017-04-12T14:58:09.029Z",
+                  "updated": "2017-04-12T14:58:09.029Z"
+                }
+              ]
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "include_count",
+            "description": "query boolean Whether to include information about the number of records returned.",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). Supported values are synonym and updated .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/intents": {
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"intent\\\":\\\"hello\\\",\\\"examples\\\":[{\\\"text\\\":\\\"Good morning\\\"},{\\\"text\\\":\\\"Hi there\\\"}]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-02-16T18:36:31.809Z",
+              "intent": "hello",
+              "updated": "2017-02-16T18:36:31.809Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "body json CreateIntent A CreateIntent object defining the content of the new intent.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents?version=2017-05-26&export=true\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "intents": [
+                {
+                  "examples": [
+                    {
+                      "created": "2017-02-02T21:04:26.049Z",
+                      "text": "goodmorning",
+                      "updated": "2017-02-02T21:04:26.049Z"
+                    },
+                    {
+                      "created": "2017-02-02T21:04:26.049Z",
+                      "text": "hello",
+                      "updated": "2017-02-02T21:04:26.049Z"
+                    }
+                  ],
+                  "created": "2017-02-02T21:04:26.049Z",
+                  "intent": "hello",
+                  "updated": "2017-02-02T21:04:26.049Z"
+                }
+              ],
+              "pagination": {
+                "refresh_url": "/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents?version=2017-05-26&export=true"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "export",
+            "description": "query boolean Whether to include all element content in the returned data. If export= false , the returned data includes only information about the element itself. If export= true , all content, including subelements, is included. The default value is false .",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "include_count",
+            "description": "query boolean Whether to include information about the number of records returned.",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). Supported values are intent and updated .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/entities/{entity}": {
+      "DELETE": {
+        "request": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage?version=2017-05-26\"",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"description\\\":\\\"Liquid refreshment\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-04-12T14:51:52.508Z",
+              "description": "Liquidrefreshment",
+              "updated": "2017-04-12T14:53:38.687Z",
+              "entity": "beverage"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity to update.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "new_entity",
+            "description": "body json UpdateEntity An UpdateEntity object defining the updated content of the entity.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-04-12T15:12:48.445Z",
+              "updated": "2017-04-12T15:12:48.445Z",
+              "entity": "beverage"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "export",
+            "description": "query boolean Whether to include all element content in the returned data. If export= false , the returned data includes only information about the element itself. If export= true , all content, including subelements, is included. The default value is false .",
+            "type": "boolean",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/entities/{entity}/values/{value}/synonyms/{synonym}": {
+      "DELETE": {
+        "request": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms/OJ?version=2017-05-26\"",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "synonym",
+            "description": "path string The text of the synonym, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"synonym\\\":\\\"O.J.\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms/OJ?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "synonym": "O.J.",
+              "created": "2017-04-12T15:05:45.662Z",
+              "updated": "2017-04-12T15:06:50.408Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "synonym",
+            "description": "path string The current text of the synonym, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "new_synonym",
+            "description": "body json UpdateSynonym An UpdateSynonym object defining the new synonym text.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "@curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms/OJ?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "synonym": "OJ",
+              "created": "2017-04-12T15:05:45.662Z",
+              "updated": "2017-04-12T15:05:45.662Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "synonym",
+            "description": "path string The text of the synonym, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "401": "{\n  \"code\": 401,\n  \"error\": \"Not Authorized\",\n  \"description\": \"No credentials supplied.\"\n}\n"
+        }
+      }
+    },
+    "/workspaces": {
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"name\\\":\\\"API test\\\",\\\"intents\\\":[],\\\"entities\\\":[],\\\"language\\\":\\\"en\\\",\\\"description\\\":\\\"Example workspace created via API.\\\",\\\"dialog_nodes\\\":[]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "workspace_id": "245edf96-b89f-46ac-b647-c6618b2eb5f0",
+              "created": "2017-01-31T18:02:19.070Z",
+              "name": "APItest",
+              "description": "ExampleworkspacecreatedviaAPI.",
+              "language": "en",
+              "updated": "2017-01-31T18:02:19.070Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "description": "string The name of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "description",
+            "description": "string The description of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "language",
+            "description": "string The language of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "metadata",
+            "description": "object Any metadata related to the workspace.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "counterexamples",
+            "description": "CreateExample[ ] An array of objects defining input examples that have been marked as irrelevant input.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "dialog_nodes",
+            "description": "object[ ] An array of objects defining the nodes in the workspace dialog.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "entities",
+            "description": "CreateEntity[ ] An array of objects defining the entities for the workspace.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "intents",
+            "description": "CreateIntent[ ] An array of objects defining the intents for the workspace.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "200": "{\"name\":\"API test\",\"created\":\"2018-03-26T00:26:55.954Z\",\"updated\":\"2018-03-26T00:26:55.954Z\",\"language\":\"en\",\"metadata\":null,\"description\":\"Example workspace created via API.\",\"workspace_id\":\"80b9324d-ddd7-4c78-9827-33e9ad6626df\",\"learning_opt_out\":false}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "pagination": {
+                "refresh_url": "/v1/workspaces?version=2017-05-26"
+              },
+              "workspaces": [
+                {
+                  "workspace_id": "0a0c06c1-8e31-4655-9067-58fcac5134fc",
+                  "metadata": {
+                    "runtime_version": "2017-05-26"
+                  },
+                  "created": "2016-07-13T12:26:55.781Z",
+                  "name": "Car_Dashboard",
+                  "description": "CognitiveCarworkspacewhichallowsmulti-turnconversationstoperformtasksinthecar.",
+                  "language": "en",
+                  "updated": "2016-11-29T21:46:38.969Z"
+                },
+                {
+                  "workspace_id": "e42c8e5c-eb34-4b65-99f0-59f9329b66ec",
+                  "metadata": {
+                    "runtime_version": "2017-05-26"
+                  },
+                  "created": "2016-09-01T21:20:26.514Z",
+                  "name": "testing",
+                  "language": "en",
+                  "updated": "2016-11-29T21:46:38.969Z"
+                },
+                {
+                  "workspace_id": "293b58fc-3c5b-4ac5-a8f4-8d52c393d875",
+                  "metadata": {
+                    "runtime_version": "2017-05-26"
+                  },
+                  "created": "2016-07-11T17:06:57.089Z",
+                  "name": "workspace-example",
+                  "description": "Exampleworkspacetotryouttheservice",
+                  "language": "en",
+                  "updated": "2016-11-29T21:46:38.969Z"
+                }
+              ]
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "include_count",
+            "description": "query boolean Whether to include information about the number of records returned.",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). Supported values are name , updated , and workspace_id .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "200": "{\"workspaces\":[{\"name\":\"API test\",\"created\":\"2018-03-26T00:15:37.795Z\",\"updated\":\"2018-03-26T00:15:37.795Z\",\"language\":\"en\",\"metadata\":null,\"description\":\"Example workspace created via API.\",\"workspace_id\":\"3d919cd0-ba1f-4557-9992-7aa9268830c9\",\"learning_opt_out\":false},{\"name\":\"API test\",\"created\":\"2018-03-26T00:26:55.954Z\",\"updated\":\"2018-03-26T00:26:55.954Z\",\"language\":\"en\",\"metadata\":null,\"description\":\"Example workspace created via API.\",\"workspace_id\":\"80b9324d-ddd7-4c78-9827-33e9ad6626df\",\"learning_opt_out\":false}],\"pagination\":{\"refresh_url\":\"/v1/workspaces?version=2017-05-26\"}}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/intents/{intent}/examples": {
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Howdy!\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-02-20T21:19:42.210Z",
+              "text": "Howdy!",
+              "updated": "2017-02-20T21:19:42.210Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The intent name (for example, pizza_order ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "example",
+            "description": "body json CreateExample A CreateExample object defining the content of the new user input example.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples?version=2017-05-26&export=true\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "pagination": {
+                "refresh_url": "/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples?version=2017-05-26&export=true"
+              },
+              "examples": [
+                {
+                  "created": "2017-02-16T22:41:45.400Z",
+                  "text": "Goodafternoon",
+                  "updated": "2017-02-16T22:41:45.400Z"
+                },
+                {
+                  "created": "2017-02-20T19:00:03.160Z",
+                  "text": "hithere",
+                  "updated": "2017-02-20T19:00:03.160Z"
+                }
+              ]
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The intent name (for example, pizza_order ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "include_count",
+            "description": "query boolean Whether to include information about the number of records returned.",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). Supported values are text and updated .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/entities/{entity}/values": {
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"value\\\":\\\"beer\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-03-22T16:31:05.199Z",
+              "value": "beer",
+              "updated": "2017-03-22T16:31:05.199Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "body json CreateValue A CreateValue object defining the new entity value.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "pagination": {
+                "refresh_url": "/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values?version=2017-05-26"
+              },
+              "values": [
+                {
+                  "created": "2017-03-22T15:01:30.947Z",
+                  "value": "orangejuice",
+                  "updated": "2017-03-22T15:01:30.947Z"
+                },
+                {
+                  "created": "2017-03-22T15:01:30.947Z",
+                  "value": "soda",
+                  "updated": "2017-03-22T15:01:30.947Z"
+                },
+                {
+                  "created": "2017-03-22T15:01:30.947Z",
+                  "value": "water",
+                  "updated": "2017-03-22T15:01:30.947Z"
+                }
+              ]
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "export",
+            "description": "query boolean Whether to include all element content in the returned data. If export= false , the returned data includes only information about the element itself. If export= true , all content, including subelements, is included. The default value is false .",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "include_count",
+            "description": "query boolean Whether to include information about the number of records returned.",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). Supported values are value and updated .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/counterexamples/{text}": {
+      "DELETE": {
+        "request": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples/Make%20me%20a%20sandwich?version=2017-05-26\"",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "text",
+            "description": "path string The text of a user input counterexample, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Make me a cheeseburger!\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples/Make%20me%20a%20sandwich?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-03-07T20:36:48.681Z",
+              "text": "Makemeacheeseburger!",
+              "updated": "2017-03-07T21:09:46.047Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "text",
+            "description": "path string The current text of the counterexample, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "counterexample",
+            "description": "body json UpdateExample An UpdateExample object defining the new text for the counterexample.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples/What%20are%20you%20wearing%3F?version=2017-05-26\"",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "text",
+            "description": "path string The text of the user input example, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/message": {
+      "POST": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "output": {
+                "log_messages": [],
+                "text": [
+                  "Ok.Turningonthelight."
+                ],
+                "nodes_visited": [
+                  "node_1_1467221909631",
+                  "node_2_1467232480480"
+                ]
+              },
+              "input": {
+                "text": "Turnonthelights"
+              },
+              "intents": [
+                {
+                  "confidence": 0.99,
+                  "intent": "turn_on"
+                }
+              ],
+              "entities": [
+                {
+                  "confidence": 1,
+                  "location": [
+                    12,
+                    18
+                  ],
+                  "value": "light",
+                  "entity": "appliance"
+                }
+              ],
+              "context": {
+                "defaultCounter": 0,
+                "system": {
+                  "dialog_request_counter": 2,
+                  "dialog_stack": [
+                    {
+                      "dialog_node": "root"
+                    }
+                  ],
+                  "dialog_turn_counter": 2
+                },
+                "conversation_id": "f1ab5f76-f41b-47b4-a8dc-e1c32b925b79"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "input",
+            "description": "InputData The user input.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "alternate_intents",
+            "description": "boolean Whether to return more than one intent. Set to true to return all matching intents. For example, return all intents when the confidence is not high to allow users to choose their intent. The default value is false .",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "context",
+            "description": "Context State information for the conversation. To maintain state, include the Context object from the previous response when sending multiple requests for the same conversation, .",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "entities",
+            "description": "RuntimeEntity[ ] Entities to use when evaluating the message. Include entities from the previous response to continue using those entities rather than detecting entities in the new input.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "intents",
+            "description": "RuntimeIntent[ ] Intents to use when evaluating the user input. Include the intents from the previous response to continue using those intents rather than trying to recognize intents in the new input.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "output",
+            "description": "OutputData System output. Include the output from the previous response to maintain intermediate informationif you have several requests within the same dialog turn.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "401": "{\n  \"code\": 401,\n  \"error\": \"Not Authorized\",\n  \"description\": \"No credentials supplied.\"\n}\n"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/entities/{entity}/values/{value}": {
+      "DELETE": {
+        "request": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice?version=2017-05-26\"",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"synonyms\\\":[\\\"pop\\\",\\\"soft drink\\\"]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/soda?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-03-23T15:13:58.834Z",
+              "value": "soda",
+              "updated": "2017-03-23T15:13:58.834Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The current text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "new_value",
+            "description": "body json UpdateValue An UpdateValue object defining the updated content for the entity value.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-03-22T19:30:04.856Z",
+              "value": "orangejuice",
+              "updated": "2017-03-22T19:30:04.856Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "entity",
+            "description": "path string The name of the entity (for example, beverage ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "value",
+            "description": "path string The text of the entity value, with spaces and special characters in URL encoding.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "export",
+            "description": "query boolean Whether to include all element content in the returned data. If export= false , the returned data includes only information about the element itself. If export= true , all content, including subelements, is included. The default value is false .",
+            "type": "boolean",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/logs": {
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/test/examples?version=2017-05-26&page_limit=10&sort=-modified\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": "{...\"pagination\":{\"refresh_url\":\"/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/test/examples?page_limit=10&sort=-modified&version=2017-05-26\",\"next_url\":\"/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/test/examples?cursor=eyJtb2RpZmllZCI6eyJ2YWx1ZSI6IjIwMTctMDMtMDNUMjE6MTg6MjMuOTI0WiIsIm9yZGVyIjoiZGVzYyJ9LCJ0ZXh0Ijp7InZhbHVlIjoibmluZXRlZW4iLCJvcmRlciI6ImFzYyIsInRpZV9icmVha2VyIjp0cnVlfX0=&page_limit=10&sort=-modified&version=2017-05-26\"}}"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "filter",
+            "description": "query string A cacheable parameter that limits the results to those matching the specified filter. For more information, see Filter query reference .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "query string The attribute by which returned results will be sorted. To reverse the sort order, prefix the value with a minus sign ( - ). The only supported value is request_timestamp .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "page_limit",
+            "description": "query integer The number of records to return in each page of results. The default page limit is 100.",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "description": "query string A token identifying the last object from the previous page of results.",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}": {
+      "DELETE": {
+        "request": "curl -X DELETE -u \"{username}\":\"{password}\" --header \"Accept: text/html\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/394927d3-bf81-40d8-8cb5-368a13f60fee?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {}
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"name\\\":\\\"API test\\\",\\\"intents\\\":[],\\\"entities\\\":[],\\\"language\\\":\\\"en\\\",\\\"description\\\":\\\"Example workspace updated via API.\\\",\\\"dialog_nodes\\\":[]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/394927d3-bf81-40d8-8cb5-368a13f60fee?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "workspace_id": "394927d3-bf81-40d8-8cb5-368a13f60fee",
+              "created": "2017-02-01T15:28:10.145Z",
+              "name": "APItest",
+              "description": "ExampleworkspaceupdatedviaAPI.",
+              "language": "en",
+              "updated": "2017-02-01T21:49:32.690Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "workspace",
+            "description": "body json UpdateWorkspace The JSON data defining the new and updated workspace content. Note : The maximum size for this data is 50MB. If you need to import a larger workspace, consider importing the workspace without intents and entities and then adding them separately.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/394927d3-bf81-40d8-8cb5-368a13f60fee?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "workspace_id": "394927d3-bf81-40d8-8cb5-368a13f60fee",
+              "created": "2017-02-01T15:28:10.145Z",
+              "name": "APItest",
+              "description": "Exampleworkspace.",
+              "language": "en",
+              "updated": "2017-02-01T15:28:10.145Z",
+              "status": "Available"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "export",
+            "description": "query boolean Whether to include all element content in the returned data. If export= false , the returned data includes only information about the element itself. If export= true , all content, including subelements, is included. The default value is false .",
+            "type": "boolean",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    },
+    "/workspaces/{workspace_id}/intents/{intent}": {
+      "DELETE": {
+        "request": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello?version=2017-05-26\"",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The intent name (for example, pizza_order ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "POST": {
+        "request": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"intent\\\":\\\"hello\\\",\\\"examples\\\":[{\\\"text\\\":\\\"Good afternoon\\\"}],\\\"description\\\":\\\"Updated intent\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-02-16T22:08:13.352Z",
+              "description": "Updatedintent",
+              "intent": "hello",
+              "updated": "2017-02-16T22:41:45.400Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string The workspace ID.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The name of the intent to update.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "new_intent",
+            "description": "body json UpdateIntent An UpdateIntent object defining the updated content of the intent.",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      },
+      "GET": {
+        "request": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello?version=2017-05-26\"",
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "created": "2017-02-16T22:08:13.352Z",
+              "intent": "hello",
+              "updated": "2017-02-16T22:08:13.352Z"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "workspace_id",
+            "description": "path string Unique identifier of the workspace.",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "intent",
+            "description": "path string The intent name (for example, pizza_order ).",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "version",
+            "description": "query string The release date of the version of the API you want to use. Specify dates in YYYY-MM-DD format. The current version is 2017-05-26 .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "export",
+            "description": "query boolean Whether to include all element content in the returned data. If export= false , the returned data includes only information about the element itself. If export= true , all content, including subelements, is included. The default value is false .",
+            "type": "boolean",
+            "required": true
+          }
+        ],
+        "realresponses": {
+          "404": "{\"error\":\"Resource not found\",\"code\":404}"
+        }
+      }
+    }
+  },
+  "produces": "application/json",
+  "host": "gateway.watsonplatform.net",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

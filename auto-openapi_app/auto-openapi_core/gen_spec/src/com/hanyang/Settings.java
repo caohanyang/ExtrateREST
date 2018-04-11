@@ -21,15 +21,15 @@ public class Settings {
 		
 	// The things between Http verbs and Url:
 	// \\s \\s.{0,60} (.*?) .{0,10} 
-	public static String STUFFING = "\\s";	
+	public static String STUFFING = ".{0,80}";	
 	// for some url contains URL parameters
 	// It will present URL in different tags, which causes whitespace
 	// " " ""
 	public static String URLMIDDLE = "";
-	public static String URLAFTER = "\n";
+	public static String URLAFTER = "";
 	// path template in the url
 	// :id  <id> {id} no
-	public static String URLTEMPLATE = "no";
+	public static String URLTEMPLATE = "";
 	
 	// "no", "yes"
 	public static String REVERSE = "no";
@@ -38,9 +38,12 @@ public class Settings {
 	// no yes
 	public static String EXISTVERB = "no";
 	// Url :
-	public static String URLKEY= "API Method";
+	public static String URLKEY= "The URL";
 	public static String VERBKEY= "";
+	// <h1> <h2>
+	public static String URLTAG= "";
 	
+
 	// "https://", "http://", "/",   "null" "key'
 	public static String MODE ="key";
 	
@@ -53,9 +56,9 @@ public class Settings {
 	 */
 	// The key word before the request
 	// "EXAMPLE REQUEST"  "" "no"
-	public static String REQKEY = "Example Request";
+	public static String REQKEY = "no";
 	// \\s \\s.{0,60} "" (.*?)
-	public static String REQMIDDLE = ".{0,60}";
+	public static String REQMIDDLE = ".{0,200}";
 	// The request exists or not 
 	// http no curl  ((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1} /
 	public static String REQEXAMPLE = "http";
@@ -64,21 +67,21 @@ public class Settings {
 	public static Boolean URL1REQ2 = true;
 	
 	// pre code b a p
-	public static String REQTEMPLATE = "p";
+	public static String REQTEMPLATE = "code";
 	
 	/*
 	 * RESPONSE 
 	 */
 	
 	// (example)|(response)  ""  "no"
-	public static String RESKEY = "Example response";
+	public static String RESKEY = "Example JSON Response:";
 	// \\s \\s.{0,10} \\s.{0,100} ""
 	// 1.
-	public static String RESMIDDLE = "\\s";
+	public static String RESMIDDLE = "\\s.{0,10}";
 	// default true
 	public static Boolean URL1RES2 = true;
 	//  pre code span
-	public static String RESTEMPLATE = "code";
+	public static String RESTEMPLATE = "pre";
 	
 	// The response exists or not 
 	// ((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}
@@ -94,18 +97,18 @@ public class Settings {
 	// sometimes not common "Query Parameters" "url Parameters"
 	// choose the last common one
 	// (parameter)|(argument)|(field)|(parameters)|(arguments)|(fields)  or choose the first element Name
-	public static String PARAKEY = "(parameter)|(argument)|(field)|(parameters)|(arguments)";
+	public static String PARAKEY = " query parameters";
 	// first URL then parameters
 	public static boolean URL1PARA2 = true;	
 	
-	public static String PARAMIDDLE= "20";
+	public static String PARAMIDDLE= "10";
 	// parameter types
 	// Required. The location of the parameter. 
 	// Possible values are "query", "header", "path", "formData" or "body".     
 	// for one api, the parameters can be "mix"
 	public static String PARAIN = "query";
 	// "table", "list"
-	public static String TEMPLATE = "list";
+	public static String TEMPLATE = "table";
 	// "single", "multiple"
 	public static String NUMBER = "multiple";
 
@@ -121,6 +124,7 @@ public class Settings {
             properties.setProperty("URLMIDDLE",URLMIDDLE );
             properties.setProperty("URLAFTER", URLAFTER);
             properties.setProperty("URLTEMPLATE", URLTEMPLATE);
+            properties.setProperty("URLTAG", URLTAG);
             properties.setProperty("REVERSE",REVERSE);
             properties.setProperty("MODE", MODE);
             properties.setProperty("URL1PARA2", Boolean.toString(URL1PARA2));
@@ -174,6 +178,7 @@ public class Settings {
             setURLMIDDLE(properties.getProperty("URLMIDDLE"));
             setURLAFTER(properties.getProperty("URLAFTER"));
             setURLTEMPLATE(properties.getProperty("URLTEMPLATE"));
+            setURLTAG(properties.getProperty("URLTAG"));
             setREVERSE(properties.getProperty("REVERSE"));
             setMODE(properties.getProperty("MODE"));
             setURL1PARA2(Boolean.valueOf(properties.getProperty("URL1PARA2")));
@@ -438,6 +443,14 @@ public class Settings {
 
 	public static void setPARAMIDDLE(String pARAMIDDLE) {
 		PARAMIDDLE = pARAMIDDLE;
+	}
+	
+	public static String getURLTAG() {
+		return URLTAG;
+	}
+
+	public static void setURLTAG(String uRLTAG) {
+		URLTAG = uRLTAG;
 	}
 	
 }

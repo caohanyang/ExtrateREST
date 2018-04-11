@@ -1,0 +1,4131 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "api.twitter.com",
+    "version": "0.0"
+  },
+  "host": "api.twitter.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "//blog.twitter.com": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      },
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/users/report_spam": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/followers/list": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/List"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/mentions_timeline": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Statuses"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/account/settings": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Settings"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Settings"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/saved_searches/show/{showId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "showId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/favorites/list": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/List"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/welcome_messages/new": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/New"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/ownerships": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Ownerships"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/members": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Members"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/user_timeline": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Statuses"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/blocks/ids": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Ids"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/users/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/mutes/users/create": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/blocks/list": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/List"
+            }
+          }
+        }
+      }
+    },
+    "//data-api.twitter.com/insights/engagement/totals": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Totals"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/users/suggestions/twitter": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Twitter"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/favorites/create": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/welcome_messages/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/saved_searches/create": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Show"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/retweet/{retweetId}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "retweetId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Statuses"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/statuses": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Statuses"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/update": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Update"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friends/ids": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Ids"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/trends/available": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Available"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/trends/closest": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Closest"
+              }
+            }
+          }
+        }
+      }
+    },
+    "//publish.twitter.com/oembed": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/users/suggestions/funny/members": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Members"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/trends/place": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Place"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/mutes/users/destroy": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Destroy"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/collections/update": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Update"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/mutes/users/ids": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Ids"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/incoming": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Incoming"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/blocks/create": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create"
+            }
+          }
+        }
+      }
+    },
+    "//data-api.twitter.com/insights/engagement/historical": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Historical"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/users/lookup": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Lookup"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/account/update_profile": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Account"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/retweeters/ids": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Ids"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Unkown"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/mutes/users/list": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/List"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/destroy": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Destroy"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/lookup": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Lookup"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/saved_searches/list": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/List"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/collections/entries": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entries"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/memberships": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Memberships"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/search/tweets": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Tweets"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/retweets/{retweetsId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "retweetsId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Statuses"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/subscribers/create": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/welcome_messages/rules/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/home_timeline": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Statuses"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/members/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/favorites/destroy": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Destroy"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/update": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Update"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/new": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/New"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/subscribers": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Subscribers"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/events/new": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/New"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/no_retweets/ids": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Ids"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/unretweet/{unretweetId}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "unretweetId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Statuses"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/create": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/blocks/destroy": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Destroy"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/sent": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Sent"
+              }
+            }
+          }
+        }
+      }
+    },
+    "//upload.twitter.com/1.1/media/upload": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Upload"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/subscriptions": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Subscriptions"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/retweets_of_me": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Statuses"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/users/profile_banner": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/subscribers/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/account/verify_credentials": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Account"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/lookup": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Lookup"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/account/update_profile_image": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Account"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/lists/list": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/List"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friendships/outgoing": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Outgoing"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/events/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "//data-api.twitter.com/insights/engagement/28hr": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Engagement"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/destroy/{destroyId}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "destroyId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Destroy"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/geo/search": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/saved_searches/destroy/{destroyId}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "destroyId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Destroy"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/users/search": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Search"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/1.1/statuses/show": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Show"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/geo/id/{idId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Id"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/direct_messages/destroy": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Destroy"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/account/update_profile_background_image": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Account"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/friends/list": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/List"
+            }
+          }
+        }
+      }
+    },
+    "/1.1/application/rate_limit_status": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Application"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Unkown": {
+      "type": "object",
+      "properties": {
+        "Request": {
+          "$ref": "#/definitions/Request"
+        },
+        "Data": {
+          "$ref": "#/definitions/Data"
+        }
+      }
+    },
+    "Request": {
+      "type": "object",
+      "properties": {
+        "Param": {
+          "$ref": "#/definitions/Param"
+        }
+      }
+    },
+    "Param": {
+      "type": "object",
+      "properties": {
+        "website_dest_url": {
+          "type": "string"
+        },
+        "video_height": {
+          "type": "string"
+        },
+        "video_poster_width": {
+          "type": "string"
+        },
+        "video_width": {
+          "type": "string"
+        },
+        "video_poster_url": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "card_type": {
+          "type": "string"
+        },
+        "website_display_url": {
+          "type": "string"
+        },
+        "content_duration_seconds": {
+          "type": "string"
+        },
+        "video_url": {
+          "type": "string"
+        },
+        "account_id": {
+          "type": "string"
+        },
+        "website_url": {
+          "type": "string"
+        },
+        "video_poster_height": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "video_hls_url": {
+          "type": "string"
+        },
+        "video_owner_id": {
+          "type": "string"
+        },
+        "video_content_id": {
+          "type": "string"
+        },
+        "autocomplete": {
+          "type": "string"
+        },
+        "granularity": {
+          "type": "string"
+        },
+        "trim_place": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "accuracy": {
+          "type": "integer"
+        }
+      }
+    },
+    "Data": {
+      "type": "object",
+      "properties": {
+        "website_dest_url": {
+          "type": "string"
+        },
+        "video_height": {
+          "type": "string"
+        },
+        "video_poster_width": {
+          "type": "string"
+        },
+        "video_width": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "video_poster_url": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "card_type": {
+          "type": "string"
+        },
+        "website_display_url": {
+          "type": "string"
+        },
+        "video_url": {
+          "type": "string"
+        },
+        "account_id": {
+          "type": "string"
+        },
+        "deleted": {
+          "type": "string"
+        },
+        "website_url": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "video_poster_height": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "video_hls_url": {
+          "type": "string"
+        },
+        "card_uri": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "video_owner_id": {
+          "type": "string"
+        },
+        "video_content_id": {
+          "type": "string"
+        }
+      }
+    },
+    "Users": {
+      "type": "object"
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        },
+        "is_translation_enabled": {
+          "type": "string"
+        },
+        "muting": {
+          "type": "string"
+        },
+        "profile_banner_url": {
+          "type": "string"
+        },
+        "/users/show/:id": {
+          "$ref": "#/definitions//users/show/:id"
+        },
+        "/users/profile_banner": {
+          "$ref": "#/definitions//users/profile_banner"
+        },
+        "/users/lookup": {
+          "$ref": "#/definitions//users/lookup"
+        },
+        "/users/contributor": {
+          "$ref": "#/definitions//users/contributor"
+        },
+        "/users/contributee": {
+          "$ref": "#/definitions//users/contributee"
+        },
+        "/users/search": {
+          "$ref": "#/definitions//users/search"
+        },
+        "/users/suggestions/:slug": {
+          "$ref": "#/definitions//users/suggestions/:slug"
+        },
+        "/users/suggestions/:slug/member": {
+          "$ref": "#/definitions//users/suggestions/:slug/member"
+        },
+        "/users/suggestion": {
+          "$ref": "#/definitions//users/suggestion"
+        }
+      }
+    },
+    "Description": {
+      "type": "object",
+      "properties": {
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Entitie": {
+      "type": "object",
+      "properties": {
+        "hashtags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Description": {
+          "$ref": "#/definitions/Description"
+        },
+        "Url": {
+          "$ref": "#/definitions/Url"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "user_mentions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "symbols": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Statu": {
+      "type": "object",
+      "properties": {
+        "in_reply_to_status_id_str": {
+          "type": "string"
+        },
+        "in_reply_to_status_id": {
+          "type": "integer"
+        },
+        "possibly_sensitive": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "truncated": {
+          "type": "string"
+        },
+        "in_reply_to_user_id_str": {
+          "type": "string"
+        },
+        "possibly_sensitive_editable": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "retweet_count": {
+          "type": "integer"
+        },
+        "retweeted": {
+          "type": "string"
+        },
+        "in_reply_to_screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "in_reply_to_user_id": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "favorited": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "favorite_count": {
+          "type": "integer"
+        },
+        "lang": {
+          "type": "string"
+        }
+      }
+    },
+    "User_mention": {
+      "type": "object",
+      "properties": {
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "Url": {
+      "type": "object",
+      "properties": {
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "url": {
+          "type": "string"
+        },
+        "display_url": {
+          "type": "string"
+        },
+        "expanded_url": {
+          "type": "string"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Url"
+          }
+        }
+      }
+    },
+    "List": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "subscriber_count": {
+          "type": "integer"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "member_count": {
+          "type": "integer"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Statuses": {
+      "type": "object"
+    },
+    "Statuse": {
+      "type": "object",
+      "properties": {
+        "truncated": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "in_reply_to_user_id_str": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "retweet_count": {
+          "type": "integer"
+        },
+        "retweeted": {
+          "type": "string"
+        },
+        "in_reply_to_screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "in_reply_to_user_id": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "favorited": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "Metadata": {
+          "$ref": "#/definitions/Metadata"
+        },
+        "/statuses/mentions_timeline": {
+          "$ref": "#/definitions//statuses/mentions_timeline"
+        },
+        "/statuses/show/:id": {
+          "$ref": "#/definitions//statuses/show/:id"
+        },
+        "/statuses/user_timeline": {
+          "$ref": "#/definitions//statuses/user_timeline"
+        },
+        "/statuses/retweets/:id": {
+          "$ref": "#/definitions//statuses/retweets/:id"
+        },
+        "/statuses/retweeters/id": {
+          "$ref": "#/definitions//statuses/retweeters/id"
+        },
+        "/statuses/home_timeline": {
+          "$ref": "#/definitions//statuses/home_timeline"
+        },
+        "/statuses/lookup": {
+          "$ref": "#/definitions//statuses/lookup"
+        },
+        "/statuses/oembed": {
+          "$ref": "#/definitions//statuses/oembed"
+        },
+        "/statuses/retweets_of_me": {
+          "$ref": "#/definitions//statuses/retweets_of_me"
+        }
+      }
+    },
+    "Settings": {
+      "type": "object"
+    },
+    "PlaceType": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Setting": {
+      "type": "object",
+      "properties": {
+        "discoverable_by_email": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "use_cookie_personalization": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "always_use_https": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "Sleep_time": {
+          "$ref": "#/definitions/Sleep_time"
+        },
+        "trend_location": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Trend_location"
+          }
+        }
+      }
+    },
+    "Trend_location": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "woeid": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "parentid": {
+          "type": "integer"
+        },
+        "PlaceType": {
+          "$ref": "#/definitions/PlaceType"
+        }
+      }
+    },
+    "Sleep_time": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "string"
+        }
+      }
+    },
+    "Show": {
+      "type": "object",
+      "properties": {
+        "id_str": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "New": {
+      "type": "object"
+    },
+    "Ownerships": {
+      "type": "object"
+    },
+    "Ownership": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "lists": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/List"
+          }
+        }
+      }
+    },
+    "Members": {
+      "type": "object"
+    },
+    "Member": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Ids": {
+      "type": "object"
+    },
+    "Id": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_cursor_str": {
+          "type": "string"
+        }
+      }
+    },
+    "Create": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "is_translation_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "muting": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        }
+      }
+    },
+    "Totals": {
+      "type": "object"
+    },
+    "Group1": {
+      "type": "object",
+      "properties": {
+        "123456789": {
+          "$ref": "#/definitions/123456789"
+        },
+        "223456789": {
+          "$ref": "#/definitions/223456789"
+        }
+      }
+    },
+    "223456789": {
+      "type": "object",
+      "properties": {
+        "favorites": {
+          "type": "string"
+        },
+        "replies": {
+          "type": "string"
+        },
+        "retweets": {
+          "type": "string"
+        },
+        "url_clicks": {
+          "type": "string"
+        },
+        "detail_expands": {
+          "type": "string"
+        },
+        "engagements": {
+          "type": "string"
+        },
+        "impressions": {
+          "type": "string"
+        }
+      }
+    },
+    "Total": {
+      "type": "object",
+      "properties": {
+        "Group1": {
+          "$ref": "#/definitions/Group1"
+        }
+      }
+    },
+    "123456789": {
+      "type": "object",
+      "properties": {
+        "favorites": {
+          "type": "string"
+        },
+        "replies": {
+          "type": "string"
+        },
+        "retweets": {
+          "type": "string"
+        },
+        "url_clicks": {
+          "type": "string"
+        },
+        "detail_expands": {
+          "type": "string"
+        },
+        "engagements": {
+          "type": "string"
+        },
+        "impressions": {
+          "type": "string"
+        },
+        "Engagement": {
+          "$ref": "#/definitions/Engagement"
+        },
+        "Impression": {
+          "$ref": "#/definitions/Impression"
+        }
+      }
+    },
+    "Twitter": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Update": {
+      "type": "object",
+      "properties": {
+        "created_at": {
+          "type": "string"
+        },
+        "truncated": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "retweet_count": {
+          "type": "integer"
+        },
+        "retweeted": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "favorited": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Hashtag": {
+      "type": "object",
+      "properties": {
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "Available": {
+      "type": "object"
+    },
+    "Closest": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "woeid": {
+          "type": "integer"
+        },
+        "parentid": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        },
+        "PlaceType": {
+          "$ref": "#/definitions/PlaceType"
+        }
+      }
+    },
+    "Place": {
+      "type": "object",
+      "properties": {
+        "as_of": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Location"
+          }
+        },
+        "trends": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Trend"
+          }
+        },
+        "country": {
+          "type": "string"
+        },
+        "country_code": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "place_type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "contained_within": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Contained_within"
+          }
+        },
+        "Bounding_box": {
+          "$ref": "#/definitions/Bounding_box"
+        },
+        "Attribute": {
+          "$ref": "#/definitions/Attribute"
+        }
+      }
+    },
+    "Trend": {
+      "type": "object",
+      "properties": {
+        "tweet_volume": {
+          "type": "integer"
+        },
+        "query": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "Location": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "woeid": {
+          "type": "integer"
+        }
+      }
+    },
+    "Destroy": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "is_translation_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "muting": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        }
+      }
+    },
+    "Incoming": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_cursor_str": {
+          "type": "string"
+        }
+      }
+    },
+    "Historical": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        },
+        "Types-by-tweet-id": {
+          "$ref": "#/definitions/Types-by-tweet-id"
+        }
+      }
+    },
+    "Types-by-tweet-id": {
+      "type": "object",
+      "properties": {
+        "123456789": {
+          "$ref": "#/definitions/123456789"
+        },
+        "223456789": {
+          "$ref": "#/definitions/223456789"
+        },
+        "323456789": {
+          "$ref": "#/definitions/323456789"
+        }
+      }
+    },
+    "323456789": {
+      "type": "object",
+      "properties": {
+        "url_clicks": {
+          "type": "string"
+        },
+        "detail_expands": {
+          "type": "string"
+        },
+        "engagements": {
+          "type": "string"
+        },
+        "impressions": {
+          "type": "string"
+        }
+      }
+    },
+    "Lookup": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        },
+        "Statu": {
+          "$ref": "#/definitions/Statu"
+        }
+      }
+    },
+    "Account": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        }
+      }
+    },
+    "Entries": {
+      "type": "object"
+    },
+    "Memberships": {
+      "type": "object"
+    },
+    "Membership": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "lists": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/List"
+          }
+        }
+      }
+    },
+    "Tweets": {
+      "type": "object"
+    },
+    "Tweet": {
+      "type": "object",
+      "properties": {
+        "statuses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Statuse"
+          }
+        },
+        "Search_metadata": {
+          "$ref": "#/definitions/Search_metadata"
+        }
+      }
+    },
+    "Metadata": {
+      "type": "object",
+      "properties": {
+        "result_type": {
+          "type": "string"
+        },
+        "iso_language_code": {
+          "type": "string"
+        }
+      }
+    },
+    "Search_metadata": {
+      "type": "object",
+      "properties": {
+        "next_results": {
+          "type": "string"
+        },
+        "since_id_str": {
+          "type": "string"
+        },
+        "max_id_str": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "max_id": {
+          "type": "integer"
+        },
+        "since_id": {
+          "type": "integer"
+        },
+        "refresh_url": {
+          "type": "string"
+        },
+        "completed_in": {
+          "type": "integer"
+        }
+      }
+    },
+    "Subscribers": {
+      "type": "object"
+    },
+    "Subscriber": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Sent": {
+      "type": "object",
+      "properties": {
+        "recipient_screen_name": {
+          "type": "string"
+        },
+        "sender_screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "sender_id": {
+          "type": "integer"
+        },
+        "recipient_id": {
+          "type": "integer"
+        },
+        "Entitie": {
+          "$ref": "#/definitions/Entitie"
+        },
+        "Sender": {
+          "$ref": "#/definitions/Sender"
+        },
+        "Recipient": {
+          "$ref": "#/definitions/Recipient"
+        }
+      }
+    },
+    "Sender": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        }
+      }
+    },
+    "Recipient": {
+      "type": "object",
+      "properties": {
+        "utc_offset": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "profile_image_url_https": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "profile_background_image_url": {
+          "type": "string"
+        },
+        "default_profile_image": {
+          "type": "string"
+        },
+        "favourites_count": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "is_translator": {
+          "type": "string"
+        },
+        "profile_background_image_url_https": {
+          "type": "string"
+        },
+        "protected": {
+          "type": "string"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "profile_link_color": {
+          "type": "string"
+        },
+        "show_all_inline_media": {
+          "type": "string"
+        },
+        "geo_enabled": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "profile_background_color": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "profile_sidebar_border_color": {
+          "type": "string"
+        },
+        "profile_text_color": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "string"
+        },
+        "profile_image_url": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "contributors_enabled": {
+          "type": "string"
+        },
+        "profile_background_tile": {
+          "type": "string"
+        },
+        "follow_request_sent": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "default_profile": {
+          "type": "string"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "following": {
+          "type": "string"
+        },
+        "profile_use_background_image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "profile_sidebar_fill_color": {
+          "type": "string"
+        },
+        "notifications": {
+          "type": "string"
+        }
+      }
+    },
+    "Upload": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer"
+        },
+        "media_id_string": {
+          "type": "string"
+        },
+        "media_id": {
+          "type": "integer"
+        },
+        "expires_after_secs": {
+          "type": "integer"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        }
+      }
+    },
+    "Image": {
+      "type": "object",
+      "properties": {
+        "w": {
+          "type": "integer"
+        },
+        "h": {
+          "type": "integer"
+        },
+        "image_type": {
+          "type": "string"
+        }
+      }
+    },
+    "Subscriptions": {
+      "type": "object"
+    },
+    "Subscription": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "next_cursor_str": {
+          "type": "string"
+        },
+        "lists": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/List"
+          }
+        }
+      }
+    },
+    "Outgoing": {
+      "type": "object",
+      "properties": {
+        "previous_cursor": {
+          "type": "integer"
+        },
+        "next_cursor": {
+          "type": "integer"
+        },
+        "previous_cursor_str": {
+          "type": "string"
+        },
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "next_cursor_str": {
+          "type": "string"
+        }
+      }
+    },
+    "Engagement": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        },
+        "2015-09-15": {
+          "$ref": "#/definitions/2015-09-15"
+        },
+        "2015-09-14": {
+          "$ref": "#/definitions/2015-09-14"
+        },
+        "Hourly-time-serie": {
+          "$ref": "#/definitions/Hourly-time-serie"
+        }
+      }
+    },
+    "2015-09-15": {
+      "type": "object",
+      "properties": {
+        "10": {
+          "type": "string"
+        },
+        "11": {
+          "type": "string"
+        },
+        "12": {
+          "type": "string"
+        },
+        "13": {
+          "type": "string"
+        },
+        "14": {
+          "type": "string"
+        },
+        "15": {
+          "type": "string"
+        },
+        "16": {
+          "type": "string"
+        },
+        "17": {
+          "type": "string"
+        },
+        "18": {
+          "type": "string"
+        },
+        "19": {
+          "type": "string"
+        },
+        "20": {
+          "type": "string"
+        },
+        "21": {
+          "type": "string"
+        },
+        "00": {
+          "type": "string"
+        },
+        "01": {
+          "type": "string"
+        },
+        "02": {
+          "type": "string"
+        },
+        "03": {
+          "type": "string"
+        },
+        "04": {
+          "type": "string"
+        },
+        "05": {
+          "type": "string"
+        },
+        "06": {
+          "type": "string"
+        },
+        "07": {
+          "type": "string"
+        },
+        "08": {
+          "type": "string"
+        },
+        "09": {
+          "type": "string"
+        }
+      }
+    },
+    "2015-09-14": {
+      "type": "object",
+      "properties": {
+        "17": {
+          "type": "string"
+        },
+        "18": {
+          "type": "string"
+        },
+        "19": {
+          "type": "string"
+        },
+        "20": {
+          "type": "string"
+        },
+        "21": {
+          "type": "string"
+        },
+        "22": {
+          "type": "string"
+        },
+        "23": {
+          "type": "string"
+        }
+      }
+    },
+    "Hourly-time-serie": {
+      "type": "object",
+      "properties": {
+        "123456789": {
+          "$ref": "#/definitions/123456789"
+        }
+      }
+    },
+    "Impression": {
+      "type": "object",
+      "properties": {
+        "2015-09-15": {
+          "$ref": "#/definitions/2015-09-15"
+        },
+        "2015-09-14": {
+          "$ref": "#/definitions/2015-09-14"
+        }
+      }
+    },
+    "Search": {
+      "type": "object",
+      "properties": {
+        "Result": {
+          "$ref": "#/definitions/Result"
+        },
+        "Query": {
+          "$ref": "#/definitions/Query"
+        },
+        "/search/tweet": {
+          "$ref": "#/definitions//search/tweet"
+        }
+      }
+    },
+    "Query": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "Param": {
+          "$ref": "#/definitions/Param"
+        }
+      }
+    },
+    "Attribute": {
+      "type": "object"
+    },
+    "Contained_within": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "country_code": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "place_type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "Bounding_box": {
+          "$ref": "#/definitions/Bounding_box"
+        },
+        "Attribute": {
+          "$ref": "#/definitions/Attribute"
+        }
+      }
+    },
+    "Result": {
+      "type": "object",
+      "properties": {
+        "places": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Place"
+          }
+        }
+      }
+    },
+    "Bounding_box": {
+      "type": "object",
+      "properties": {
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "Application": {
+      "type": "object",
+      "properties": {
+        "Resource": {
+          "$ref": "#/definitions/Resource"
+        },
+        "Rate_limit_context": {
+          "$ref": "#/definitions/Rate_limit_context"
+        }
+      }
+    },
+    "Help": {
+      "type": "object",
+      "properties": {
+        "/help/privacy": {
+          "$ref": "#/definitions//help/privacy"
+        },
+        "/help/language": {
+          "$ref": "#/definitions//help/language"
+        },
+        "/help/configuration": {
+          "$ref": "#/definitions//help/configuration"
+        },
+        "/help/to": {
+          "$ref": "#/definitions//help/to"
+        }
+      }
+    },
+    "/statuses/retweeters/id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/show/:id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/contributee": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/contributor": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/privacy": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/configuration": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "Rate_limit_context": {
+      "type": "object",
+      "properties": {
+        "access_token": {
+          "type": "string"
+        }
+      }
+    },
+    "/users/suggestions/:slug": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/oembed": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/retweets_of_me": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/language": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/show/:id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/help/to": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/user_timeline": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/lookup": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "Resource": {
+      "type": "object",
+      "properties": {
+        "Help": {
+          "$ref": "#/definitions/Help"
+        },
+        "Search": {
+          "$ref": "#/definitions/Search"
+        },
+        "Statuse": {
+          "$ref": "#/definitions/Statuse"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "/users/suggestion": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/search": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/suggestions/:slug/member": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/home_timeline": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/users/profile_banner": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/search/tweet": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/mentions_timeline": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/retweets/:id": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "/statuses/lookup": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

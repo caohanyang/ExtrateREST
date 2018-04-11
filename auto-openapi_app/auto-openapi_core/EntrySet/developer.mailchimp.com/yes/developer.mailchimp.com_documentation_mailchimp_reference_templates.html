@@ -1,0 +1,4877 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+ <!--<![endif]-->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Developer | MailChimp
+  </title>
+  <meta content="MailChimp Developer" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="MailChimp Developer" name="apple-mobile-web-app-title"/>
+  <meta content="no" name="msapplication-tap-highlight"/>
+  <meta content="en" name="language"/>
+  <meta content="index,follow,archive" name="robots"/>
+  <meta content="Developer | MailChimp" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://developer.mailchimp.com/" property="og:url"/>
+  <meta content="https://developer.mailchimp.com/documentation/mailchimp/img/freddie_wink_opengraph.png" property="og:image"/>
+  <meta content="MailChimp Developer" property="og:description"/>
+  <meta content="summary_large_image" property="twitter:card"/>
+  <meta content="https://developer.mailchimp.com/documentation/mailchimp/img/freddie_wink_opengraph.png" property="twitter:image"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400" rel="stylesheet"/>
+  <link href="/documentation/mailchimp/img/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/documentation/mailchimp/img/touch-icon-192x192.png" rel="icon" sizes="192x192"/>
+  <link href="/documentation/mailchimp/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  <link href="/documentation/mailchimp/img/favicon.ico" rel="shortcut icon"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/github.min.css" rel="stylesheet"/>
+  <link href="/documentation/mailchimp/css/api.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  </script>
+  <script src="/documentation/mailchimp/js/apidocs.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script type="application/ld+json">
+   {
+          "@context" : "http://schema.org",
+          "@type" : "WebSite",
+          "name" : "Developer | MailChimp",
+          "alternateName" : "MailChimp Developer",
+          "url" : "https://developer.mailchimp.com/"
+        }
+  </script>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-329148-81', 'auto', {
+		  'allowLinker': true
+		});
+		ga('require', 'linker');
+		ga('linker:autoLink', [/(.*\.)?mailchimp(app)?\.com$/], false, true);
+		ga('require', 'linkid', 'linkid.js');
+		ga('send', 'pageview');
+  </script>
+ </head>
+ <body class="nopadding">
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-PBD4RC" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PBD4RC');
+  </script>
+  <header class="below30" itemscope="" itemtype="http://schema.org/WPHeader">
+   <div class="main-navigation selfclearrelative no-sticky-nav">
+    <div>
+     <nav class="navigation-left group nochange">
+      <div class="float-left pad-lv2 branding">
+       <a href="https://mailchimp.com/" id="freddie-developer-link">
+        <img height="36" role="presentation" src="/documentation/mailchimp/img/freddie_wink.svg"/>
+       </a>
+       <p class="header-text inline pad-lv2 pad-r0 pad-tb0 hide-phone" itemprop="headline">
+        <a href="/" id="developer-link">
+         Developer
+        </a>
+       </p>
+      </div>
+      <ul class="linear-list selfclear hide-print" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+       <li class="nav-link small-meta fwb show-phone">
+        <a aria-label="Menu button — click to toggle menu" class="menu-button no-delay gray-link alignc pad-lv3 pad-tb0" href="#" id="toggle-mobile-nav">
+         <span class="freddicon hamburger">
+         </span>
+        </a>
+       </li>
+       <li class="nav-link small-meta fwb hide-phone" itemprop="url">
+        <a class="selected gray-link pad-lv3 pad-tb0" href="/documentation/mailchimp/" id="documentation-link">
+         Documentation
+        </a>
+       </li>
+       <li class="nav-link small-meta fwb hide-phone" itemprop="url">
+        <a class="pad-lv3 pad-tb0 gray-link" href="https://us1.api.mailchimp.com/playground/" id="playground-link">
+         Playground
+        </a>
+       </li>
+       <li class="nav-link small-meta fwb hide-phone" itemprop="url">
+        <a class="pad-lv3 pad-tb0 gray-link" href="/status/" id="status-link">
+         API Status
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <div class="below48">
+   <div class="line">
+    <nav class="unit nav-local hide-print">
+     <ul class="regular">
+      <li>
+       <a class="show-phone" href="/documentation/mailchimp/">
+        Documentation
+       </a>
+       <ul>
+        <li class="show-phone">
+         <a href="/documentation/mailchimp/guides/">
+          Guides
+         </a>
+         <ul>
+          <li>
+           <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/">
+            Getting Started
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/an-introduction-to-rest/">
+            Intro to REST
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/about-the-api-playground/">
+            About the Playground
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/mailchimp-api-best-practices/">
+            Best Practices
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/">
+            Manage Subscribers
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/getting-started-with-ecommerce/">
+            E-Commerce API Guide
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/how-to-use-batch-operations/">
+            Batch Operations
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/changelog/">
+            Changelog
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/how-to-use-oauth2/">
+            How to Use OAuth2
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/error-glossary/">
+            Error Glossary
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/about-webhooks/">
+            About Webhooks
+           </a>
+          </li>
+          <li>
+           <a href="/documentation/mailchimp/guides/how-to-use-the-export-api/">
+            Export API
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="hide-phone nav-heading">
+         Reference:
+        </li>
+        <li>
+         <a class="show-phone" href="/documentation/mailchimp/reference/overview/">
+          Reference
+         </a>
+         <ul>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/overview/">
+            Overview
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/root/">
+            API Root
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/authorized-apps/">
+            Authorized Apps
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/automations/">
+            Automations
+           </a>
+           <ul class="sub-menu">
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/automations/emails/">
+              Emails
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/automations/emails/queue/">
+                Queue
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/automations/removed-subscribers/">
+              Removed Subscribers
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/batches/">
+            Batch Operations
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/batch-webhooks/">
+            Batch Webhooks
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/campaign-folders/">
+            Campaign Folders
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/campaigns/">
+            Campaigns
+           </a>
+           <ul class="sub-menu">
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/campaigns/content/">
+              Content
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/campaigns/feedback/">
+              Feedback
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/campaigns/send-checklist/">
+              Send Checklist
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/connected-sites/">
+            Connected Sites
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/conversations/">
+            Conversations
+           </a>
+           <ul class="sub-menu">
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/conversations/messages/">
+              Messages
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/ecommerce/stores/">
+            E-commerce Stores
+           </a>
+           <ul class="sub-menu">
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/ecommerce/stores/carts/">
+              Carts
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/ecommerce/stores/carts/lines/">
+                Cart Lines
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/ecommerce/stores/customers/">
+              Customers
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/ecommerce/orders/">
+              Orders
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/ecommerce/stores/orders/lines/">
+                Order Lines
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/ecommerce/stores/products/">
+              Products
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/ecommerce/stores/products/images/">
+                Product Images
+               </a>
+              </li>
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/ecommerce/stores/products/variants/">
+                Product Variants
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/">
+              Promo Rules
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/ecommerce/stores/promo-rules/promo-codes/">
+                Promo Codes
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/file-manager/files/">
+            File Manager Files
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/file-manager/folders/">
+            File Manager Folders
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/lists/">
+            Lists
+           </a>
+           <ul class="sub-menu">
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/abuse-reports/">
+              Abuse Reports
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/activity/">
+              Activity
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/clients/">
+              Clients
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/growth-history/">
+              Growth History
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/interest-categories/">
+              Interest Categories
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/lists/interest-categories/interests/">
+                Interests
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/locations/">
+              Locations
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/members/">
+              Members
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/lists/members/activity/">
+                Member Activity
+               </a>
+              </li>
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/lists/members/goals/">
+                Member Goals
+               </a>
+              </li>
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/lists/members/notes/">
+                Member Notes
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/merge-fields/">
+              Merge Fields
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/segments/">
+              Segments
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/lists/segments/members/">
+                Segment Members
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/signup-forms/">
+              Signup Forms
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/lists/webhooks/">
+              Webhooks
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/ping/">
+            Ping
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/reports/">
+            Reports
+           </a>
+           <ul class="sub-menu">
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/abuse-reports/">
+              Campaign Abuse
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/advice/">
+              Campaign Advice
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/open-details/">
+              Campaign Open Reports
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/click-details/">
+              Click Reports
+             </a>
+             <ul class="sub-menu">
+              <li class=" ">
+               <a href="/documentation/mailchimp/reference/reports/click-details/members/">
+                Click Reports Members
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/domain-performance/">
+              Domain Performance
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/eepurl/">
+              EepURL Reports
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/email-activity/">
+              Email Activity
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/google-analytics/">
+              Google Analytics
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/locations/">
+              Location
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/sent-to/">
+              Sent To
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/sub-reports/">
+              Sub-Reports
+             </a>
+            </li>
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/reports/unsubscribed/">
+              Unsubscribes
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/search-campaigns/">
+            Search Campaigns
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/search-members/">
+            Search Members
+           </a>
+          </li>
+          <li class=" ">
+           <a href="/documentation/mailchimp/reference/template-folders/">
+            Template Folders
+           </a>
+          </li>
+          <li class="selected current">
+           <a href="/documentation/mailchimp/reference/templates/">
+            Templates
+           </a>
+           <ul class="sub-menu">
+            <li class=" ">
+             <a href="/documentation/mailchimp/reference/templates/default-content/">
+              Default Content
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li class="show-phone">
+       <a href="https://us1.api.mailchimp.com/playground/">
+        Playground
+       </a>
+      </li>
+      <li class="show-phone">
+       <a href="/status/">
+        Status
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div class="unit main-content lastUnit" data-swiftype-index="true">
+     <p>
+     </p>
+     <section class="intro">
+      <h1>
+       Templates
+      </h1>
+      <p>
+       Manage your MailChimp templates. A template is an HTML file used to create the layout and basic design for a campaign.
+       <a href="https://kb.mailchimp.com/templates/basic-and-themes/types-of-templates?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+        Learn more about templates
+       </a>
+       .
+      </p>
+     </section>
+     <section class="subresources">
+      <h2>
+       Subresources
+      </h2>
+      <nav>
+       <ul>
+        <li>
+         <a href="/documentation/mailchimp/reference/templates/default-content/">
+          Default Content
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </section>
+     <section>
+      <h2 class="clear available-methods">
+       Available methods
+      </h2>
+      <div class="search-tabs">
+       <nav>
+        <ul class="search-tabs-navigation">
+         <li>
+          <a class="selected" data-content="create" href="#">
+           Create
+          </a>
+         </li>
+         <li>
+          <a data-content="read" href="#">
+           Read
+          </a>
+         </li>
+         <li>
+          <a data-content="edit" href="#">
+           Edit
+          </a>
+         </li>
+         <li>
+          <a data-content="delete" href="#">
+           Delete
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <ul class="search-tabs-content">
+        <li class="selected" data-content="create">
+         <ul>
+          <li>
+           <div class="mc-table-wrap">
+            <table class="jump-to below36">
+             <tbody>
+              <tr>
+               <td>
+                <a href="#create-post_templates">
+                 <span class="method create">
+                  POST
+                 </span>
+                 <span>
+                  /templates
+                 </span>
+                </a>
+               </td>
+               <td>
+                Create a new template
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <article class="method-content">
+            <h2 class="method-heading" id="create-post_templates">
+             Create a new template
+            </h2>
+            <h3>
+             POST /templates
+            </h3>
+            <p>
+             Create a new template for the account. Only
+             <a href="https://kb.mailchimp.com/templates/basic-and-themes/types-of-templates?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+              Classic templates
+             </a>
+             are supported.
+            </p>
+            <h3>
+             Request body parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td class="required">
+                 name
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Name
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The name of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 folder_id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Folder ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The id of the folder the template is currently in.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 html
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template HTML
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The raw HTML for the template. We  support the MailChimp
+                 <a href="https://kb.mailchimp.com/templates/code/getting-started-with-mailchimps-template-language?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+                  Template Language
+                 </a>
+                 in any HTML code passed via the API.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Response body parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The individual id for the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The type of template (user, base, or gallery).
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 name
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Name
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The name of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 drag_and_drop
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Drag and Drop
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 Whether the template uses the drag and drop editor.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 responsive
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Responsive
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 Whether the template contains media queries to make it responsive.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 category
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Category
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 If available, the category the template is listed in.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 date_created
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Date Created
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The date and time the template was created.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 created_by
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Created By
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The login name for template’s creator.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 active
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Active
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 User templates are not ‘deleted,’ but rather marked as ‘inactive.’ Returns whether the template is still active.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 folder_id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Folder ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The id of the folder the template is currently in.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 thumbnail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Thumbnail
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 If available, the URL for a thumbnail of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 share_url
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Share URL
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The URL used for
+                 <a href="https://kb.mailchimp.com/templates/basic-and-themes/how-to-share-a-template?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+                  template sharing
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 _links
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Links
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 A list of link types and descriptions for the API schema documents.
+                </td>
+               </tr>
+               <tr class="subgroup">
+                <td colspan="5">
+                 <a class="subgroup-toggle" href="#">
+                  <i class="freddicon nomargin menu-right arrow-img rotate0">
+                  </i>
+                  <span>
+                   Show properties
+                  </span>
+                 </a>
+                 <div>
+                  <table class="parameters">
+                   <tbody>
+                    <tr>
+                     <td>
+                      rel
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Rel
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      As with an HTML ‘rel’ attribute, this describes the type of link.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      href
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Href
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      This property contains a fully-qualified URL that can be called to retrieve the linked resource or perform the linked action.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      method
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Method
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The HTTP method that should be used when accessing the URL defined in ‘href’.
+                      <section>
+                       <h5>
+                        Possible Values:
+                       </h5>
+                       <ul class="linear-list dots">
+                        <li>
+                         GET
+                        </li>
+                        <li>
+                         POST
+                        </li>
+                        <li>
+                         PUT
+                        </li>
+                        <li>
+                         PATCH
+                        </li>
+                        <li>
+                         DELETE
+                        </li>
+                        <li>
+                         OPTIONS
+                        </li>
+                        <li>
+                         HEAD
+                        </li>
+                       </ul>
+                      </section>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      targetSchema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Target Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For GETs, this is a URL representing the schema that the response should conform to.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      schema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For HTTP methods that can receive bodies (POST and PUT), this is a URL representing the schema that the body should conform to.
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Example request
+            </h3>
+            <div class="code-block">
+             <pre><code class="language-bash">
+curl --request POST \
+--url 'https://usX.api.mailchimp.com/3.0/templates' \
+--user 'anystring:apikey' \
+--header 'content-type: application/json' \
+--data '{"name":"Test Template","html":"&lt;!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD XHTML 1.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/xhtml1\/DTD\/xhtml1-transitional.dtd\"&gt;\n&lt;html&gt;\n    &lt;head&gt;\n        &lt;meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-8\"&gt;\n        \n        &lt;meta property=\"og:title\" content=\"*|MC:SUBJECT|*\"&gt;\n        \n        &lt;title&gt;*|MC:SUBJECT|*&lt;\/title&gt;\n\t\t\n\t&lt;style type=\"text\/css\"&gt;\n\t\t#outlook a{\n\t\t\tpadding:0;\n\t\t}\n\t\tbody{\n\t\t\twidth:100% !important;\n\t\t}\n\t\tbody{\n\t\t\t-webkit-text-size-adjust:none;\n\t\t}\n\t\tbody{\n\t\t\tmargin:0;\n\t\t\tpadding:0;\n\t\t}\n\t\timg{\n\t\t\tborder:none;\n\t\t\tfont-size:14px;\n\t\t\tfont-weight:bold;\n\t\t\theight:auto;\n\t\t\tline-height:100%;\n\t\t\toutline:none;\n\t\t\ttext-decoration:none;\n\t\t\ttext-transform:capitalize;\n\t\t}\n\t\t#backgroundTable{\n\t\t\theight:100% !important;\n\t\t\tmargin:0;\n\t\t\tpadding:0;\n\t\t\twidth:100% !important;\n\t\t}\n\t\tbody,.backgroundTable{\n\t\t\tbackground-color:#FAFAFA;\n\t\t}\n\t\t#templateContainer{\n\t\t\tborder:1px solid #DDDDDD;\n\t\t}\n\t\th1,.h1{\n\t\t\tcolor:#202020;\n\t\t\tdisplay:block;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:34px;\n\t\t\tfont-weight:bold;\n\t\t\tline-height:100%;\n\t\t\tmargin-bottom:10px;\n\t\t\ttext-align:left;\n\t\t}\n\t\th2,.h2{\n\t\t\tcolor:#202020;\n\t\t\tdisplay:block;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:30px;\n\t\t\tfont-weight:bold;\n\t\t\tline-height:100%;\n\t\t\tmargin-bottom:10px;\n\t\t\ttext-align:left;\n\t\t}\n\t\th3,.h3{\n\t\t\tcolor:#202020;\n\t\t\tdisplay:block;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:26px;\n\t\t\tfont-weight:bold;\n\t\t\tline-height:100%;\n\t\t\tmargin-bottom:10px;\n\t\t\ttext-align:left;\n\t\t}\n\t\th4,.h4{\n\t\t\tcolor:#202020;\n\t\t\tdisplay:block;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:22px;\n\t\t\tfont-weight:bold;\n\t\t\tline-height:100%;\n\t\t\tmargin-bottom:10px;\n\t\t\ttext-align:left;\n\t\t}\n\t\t#templatePreheader{\n\t\t\tbackground-color:#FAFAFA;\n\t\t}\n\t\t.preheaderContent div{\n\t\t\tcolor:#505050;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:10px;\n\t\t\tline-height:100%;\n\t\t\ttext-align:left;\n\t\t}\n\t\t.preheaderContent div a:link,.preheaderContent div a:visited{\n\t\t\tcolor:#336699;\n\t\t\tfont-weight:normal;\n\t\t\ttext-decoration:underline;\n\t\t}\n\t\t.preheaderContent div img{\n\t\t\theight:auto;\n\t\t\tmax-width:600px;\n\t\t}\n\t\t#templateHeader{\n\t\t\tbackground-color:#FFFFFF;\n\t\t\tborder-bottom:0;\n\t\t}\n\t\t.headerContent{\n\t\t\tcolor:#202020;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:34px;\n\t\t\tfont-weight:bold;\n\t\t\tline-height:100%;\n\t\t\tpadding:0;\n\t\t\ttext-align:center;\n\t\t\tvertical-align:middle;\n\t\t}\n\t\t.headerContent a:link,.headerContent a:visited{\n\t\t\tcolor:#336699;\n\t\t\tfont-weight:normal;\n\t\t\ttext-decoration:underline;\n\t\t}\n\t\t#headerImage{\n\t\t\theight:auto;\n\t\t\tmax-width:600px !important;\n\t\t}\n\t\t#templateContainer,.bodyContent{\n\t\t\tbackground-color:#FDFDFD;\n\t\t}\n\t\t.bodyContent div{\n\t\t\tcolor:#505050;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:14px;\n\t\t\tline-height:150%;\n\t\t\ttext-align:left;\n\t\t}\n\t\t.bodyContent div a:link,.bodyContent div a:visited{\n\t\t\tcolor:#336699;\n\t\t\tfont-weight:normal;\n\t\t\ttext-decoration:underline;\n\t\t}\n\t\t.bodyContent img{\n\t\t\tdisplay:inline;\n\t\t\tmargin-bottom:10px;\n\t\t}\n\t\t#templateFooter{\n\t\t\tbackground-color:#FDFDFD;\n\t\t\tborder-top:0;\n\t\t}\n\t\t.footerContent div{\n\t\t\tcolor:#707070;\n\t\t\tfont-family:Arial;\n\t\t\tfont-size:12px;\n\t\t\tline-height:125%;\n\t\t\ttext-align:left;\n\t\t}\n\t\t.footerContent div a:link,.footerContent div a:visited{\n\t\t\tcolor:#336699;\n\t\t\tfont-weight:normal;\n\t\t\ttext-decoration:underline;\n\t\t}\n\t\t.footerContent img{\n\t\t\tdisplay:inline;\n\t\t}\n\t\t#social{\n\t\t\tbackground-color:#FAFAFA;\n\t\t\tborder:1px solid #F5F5F5;\n\t\t}\n\t\t#social div{\n\t\t\ttext-align:center;\n\t\t}\n\t\t#utility{\n\t\t\tbackground-color:#FDFDFD;\n\t\t\tborder-top:1px solid #F5F5F5;\n\t\t}\n\t\t#utility div{\n\t\t\ttext-align:center;\n\t\t}\n\t\t#monkeyRewards img{\n\t\t\tmax-width:160px;\n\t\t}\n&lt;\/style&gt;&lt;\/head&gt;\n    &lt;body leftmargin=\"0\" marginwidth=\"0\" topmargin=\"0\" marginheight=\"0\" offset=\"0\"&gt;\n    \t&lt;center&gt;\n        \t&lt;table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\" width=\"100%\" id=\"backgroundTable\"&gt;\n            \t&lt;tr&gt;\n                \t&lt;td align=\"center\" valign=\"top\"&gt;\n                        &lt;table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" width=\"600\" id=\"templatePreheader\"&gt;\n                            &lt;tr&gt;\n                                &lt;td valign=\"top\" class=\"preheaderContent\"&gt;\n                                \n                                    &lt;table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" width=\"100%\"&gt;\n                                    \t&lt;tr&gt;\n                                        \t&lt;td valign=\"top\"&gt;\n                                            \t&lt;div mc:edit=\"std_preheader_content\"&gt;\n                                                \tUse one or two sentences in this area to offer a teaser of your email content. Text here will show in a preview area in some email clients.\n                                                &lt;\/div&gt;\n                                            &lt;\/td&gt;\n                                            &lt;td valign=\"top\" width=\"180\"&gt;\n                                            \t&lt;div mc:edit=\"std_preheader_links\"&gt;\n                                                \t&lt;!-- *|IFNOT:ARCHIVE_PAGE|* --&gt;Is this email not displaying correctly?&lt;br&gt;&lt;a href=\"*|ARCHIVE|*\" target=\"_blank\"&gt;View it in your browser&lt;\/a&gt;.&lt;!-- *|END:IF|* --&gt;\n                                                &lt;\/div&gt;\n                                            &lt;\/td&gt;\n                                        &lt;\/tr&gt;\n                                    &lt;\/table&gt;\n                                \n                                &lt;\/td&gt;\n                            &lt;\/tr&gt;\n                        &lt;\/table&gt;\n                    \t&lt;table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\" id=\"templateContainer\"&gt;\n                        \t&lt;tr&gt;\n                            \t&lt;td align=\"center\" valign=\"top\"&gt;\n                                \t&lt;table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\" id=\"templateHeader\"&gt;\n                                        &lt;tr&gt;\n                                            &lt;td class=\"headerContent\"&gt;\n                                            \n                                            \t&lt;img src=\"http:\/\/gallery.mailchimp.com\/653153ae841fd11de66ad181a\/images\/placeholder_600.gif\" style=\"max-width:600px;\" id=\"headerImage campaign-icon\" mc:label=\"header_image\" mc:edit=\"header_image\" mc:allowdesigner=\"\" mc:allowtext=\"\"&gt;\n                                            \n                                            &lt;\/td&gt;\n                                        &lt;\/tr&gt;\n                                    &lt;\/table&gt;\n                                &lt;\/td&gt;\n                            &lt;\/tr&gt;\n                        \t&lt;tr&gt;\n                            \t&lt;td align=\"center\" valign=\"top\"&gt;\n                                \t&lt;table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" width=\"600\" id=\"templateBody\"&gt;\n                                    \t&lt;tr&gt;\n                                            &lt;td valign=\"top\" class=\"bodyContent\"&gt;\n                                \n                                                &lt;table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" width=\"100%\"&gt;\n                                                    &lt;tr&gt;\n                                                        &lt;td valign=\"top\"&gt;\n                                                            &lt;div mc:edit=\"std_content00\"&gt;\n                                                                &lt;span class=\"h1\"&gt;Heading 1&lt;\/span&gt;\n                                                                &lt;span class=\"h2\"&gt;Heading 2&lt;\/span&gt;\n                                                                &lt;span class=\"h3\"&gt;Heading 3&lt;\/span&gt;\n                                                                &lt;span class=\"h4\"&gt;Heading 4&lt;\/span&gt;\n                                                                &lt;strong&gt;Getting started:&lt;\/strong&gt; Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.\n                                                                &lt;br&gt;\n                                                                &lt;br&gt;\n                                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the \"styles\" drop down box. Want to &lt;a href=\"http:\/\/www.mailchimp.com\/kb\/article\/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change\" target=\"_blank\"&gt;get rid of styling on a bit of text&lt;\/a&gt;, but having trouble doing it? Just use the \"clear styles\" button to strip the text of any formatting and reset your style.\n                                                            &lt;\/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;\/td&gt;\n                                                    &lt;\/tr&gt;\n                                                &lt;\/table&gt;                                              \n                                            &lt;\/td&gt;\n                                        &lt;\/tr&gt;\n                                    &lt;\/table&gt;\n                                &lt;\/td&gt;\n                            &lt;\/tr&gt;\n                        \t&lt;tr&gt;\n                            \t&lt;td align=\"center\" valign=\"top\"&gt;\n                                \t&lt;table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" width=\"600\" id=\"templateFooter\"&gt;\n                                    \t&lt;tr&gt;\n                                        \t&lt;td valign=\"top\" class=\"footerContent\"&gt;\n                                                &lt;table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" width=\"100%\"&gt;\n                                                    &lt;tr&gt;\n                                                        &lt;td colspan=\"2\" valign=\"middle\" id=\"social\"&gt;\n                                                            &lt;div mc:edit=\"std_social\"&gt;\n                                                                &amp;nbsp;&lt;a href=\"*|TWITTER:PROFILEURL|*\"&gt;follow on Twitter&lt;\/a&gt; | &lt;a href=\"*|FACEBOOK:PROFILEURL|*\"&gt;friend on Facebook&lt;\/a&gt; | &lt;a href=\"*|FORWARD|*\"&gt;forward to a friend&lt;\/a&gt;&amp;nbsp;\n                                                            &lt;\/div&gt;\n                                                        &lt;\/td&gt;\n                                                    &lt;\/tr&gt;\n                                                    &lt;tr&gt;\n                                                        &lt;td valign=\"top\" width=\"370\"&gt;\n                                                            &lt;br&gt;\n                                                            &lt;div mc:edit=\"std_footer\"&gt;\n                                                                *|IF:LIST|*\n                                                                &lt;em&gt;Copyright &amp;copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.&lt;\/em&gt;\n                                                                &lt;br&gt;\n                                                                &lt;!-- *|IFNOT:ARCHIVE_PAGE|* --&gt;\n                                                                *|LIST:DESCRIPTION|*\n                                                                &lt;br&gt;\n                                                                &lt;strong&gt;Our mailing address is:&lt;\/strong&gt;\n                                                                &lt;br&gt;\n                                                                *|HTML:LIST_ADDRESS_HTML|*\n                                                                &lt;br&gt;\n                                                                &lt;!-- *|END:IF|* --&gt;\n                                                                *|ELSE:|*\n                                                                &lt;!-- *|IFNOT:ARCHIVE_PAGE|* --&gt;\n                                                                &lt;em&gt;Copyright &amp;copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.&lt;\/em&gt;\n                                                                &lt;br&gt;\n                                                                &lt;strong&gt;Our mailing address is:&lt;\/strong&gt;\n                                                                &lt;br&gt;\n                                                                *|USER:ADDRESS_HTML|*\n                                                                &lt;!-- *|END:IF|* --&gt;\n                                                                *|END:IF|*\n                                                            &lt;\/div&gt;\n                                                            &lt;br&gt;\n                                                        &lt;\/td&gt;\n                                                        &lt;td valign=\"top\" width=\"170\" id=\"monkeyRewards\"&gt;\n                                                            &lt;br&gt;\n                                                            &lt;div mc:edit=\"monkeyrewards\"&gt;\n                                                                *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*\n                                                            &lt;\/div&gt;\n                                                            &lt;br&gt;\n                                                        &lt;\/td&gt;\n                                                    &lt;\/tr&gt;\n                                                    &lt;tr&gt;\n                                                        &lt;td colspan=\"2\" valign=\"middle\" id=\"utility\"&gt;\n                                                            &lt;div mc:edit=\"std_utility\"&gt;\n                                                                &amp;nbsp;&lt;a href=\"*|UNSUB|*\"&gt;unsubscribe from this list&lt;\/a&gt; | &lt;a href=\"*|UPDATE_PROFILE|*\"&gt;update subscription preferences&lt;\/a&gt;&lt;!-- *|IFNOT:ARCHIVE_PAGE|* --&gt; | &lt;a href=\"*|ARCHIVE|*\"&gt;view email in browser&lt;\/a&gt;&lt;!-- *|END:IF|* --&gt;&amp;nbsp;\n                                                            &lt;\/div&gt;\n                                                        &lt;\/td&gt;\n                                                    &lt;\/tr&gt;\n                                                &lt;\/table&gt;\n                                            \n                                            &lt;\/td&gt;\n                                        &lt;\/tr&gt;\n                                    &lt;\/table&gt;\n                                &lt;\/td&gt;\n                            &lt;\/tr&gt;\n                        &lt;\/table&gt;\n                        &lt;br&gt;\n                    &lt;\/td&gt;\n                &lt;\/tr&gt;\n            &lt;\/table&gt;\n        &lt;\/center&gt;\n    &lt;\/body&gt;\n&lt;\/html&gt;"}' \
+--include
+                                </code></pre>
+            </div>
+            <h3>
+             Example response
+            </h3>
+            <div class="code-block long-code">
+             <pre><code class="language-bash">
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 05 Feb 2016 15:24:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1056
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Request-Id: 2280c66a-44de-4b10-9f91-2f26448ef09e
+Link: &lt;https://api.mailchimp.com/schema/3.0/Templates/Instance.json&gt;; rel="describedBy", &lt;https://usX.admin.mailchimp.com/templates/edit?id=265057&gt;; rel="dashboard"
+
+{
+  "id": 265057,
+  "type": "user",
+  "name": "Test Template",
+  "drag_and_drop": false,
+  "responsive": false,
+  "category": "",
+  "date_created": "2016-02-05 15:24:09",
+  "created_by": "Freddie von Chimpenheimer",
+  "active": true,
+  "thumbnail": "",
+  "share_url": "",
+  "_links": [
+    {
+      "rel": "self",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/265057",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Instance.json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://usX.api.mailchimp.com/3.0/templates",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Collection.json",
+      "schema": "https://api.mailchimp.com/schema/3.0/CollectionLinks/Templates.json"
+    },
+    {
+      "rel": "delete",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/265057",
+      "method": "DELETE"
+    },
+    {
+      "rel": "default-content",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/265057/default-content",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Defaultcontent/Collection.json",
+      "schema": "https://api.mailchimp.com/schema/3.0/CollectionLinks/Templates.json"
+    }
+  ]
+}
+                                </code></pre>
+            </div>
+            <a class="expand-code-btn" href="#" title="expand/collapse code">
+             <i class="freddicon nomargin play">
+             </i>
+            </a>
+            <h3>
+             Error response
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td class="required">
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Problem Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 An absolute URI that identifies the problem type. When dereferenced, it should provide human-readable documentation for the problem type.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 title
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Title
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A short, human-readable summary of the problem type. It shouldn’t change based on the occurrence of the problem, except for purposes of localization.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 status
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 HTTP Status Code
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The HTTP status code (RFC2616, Section 6) generated by the origin server for this occurrence of the problem.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 detail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Message
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A human-readable explanation specific to this occurrence of the problem.
+                 <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/#errors">
+                  Learn more about errors
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 instance
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Instance ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A string that identifies this specific occurrence of the problem. Please provide this ID when contacting support.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+           </article>
+          </li>
+         </ul>
+        </li>
+        <li data-content="read">
+         <ul>
+          <li>
+           <div class="mc-table-wrap">
+            <table class="jump-to below36">
+             <tbody>
+              <tr>
+               <td>
+                <a href="#read-get_templates">
+                 <span class="method read">
+                  GET
+                 </span>
+                 <span>
+                  /templates
+                 </span>
+                </a>
+               </td>
+               <td>
+                Get all templates
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#read-get_templates_template_id">
+                 <span class="method read">
+                  GET
+                 </span>
+                 <span>
+                  /templates/{template_id}
+                 </span>
+                </a>
+               </td>
+               <td>
+                Get information about a specific template
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <article class="method-content">
+            <h2 class="method-heading" id="read-get_templates">
+             Get all templates
+            </h2>
+            <h3>
+             GET /templates
+            </h3>
+            <p>
+             Get a list of an account’s available templates.
+            </p>
+            <h3>
+             Query string parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 fields
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Fields
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 exclude_fields
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Exclude Fields
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A comma-separated list of fields to exclude. Reference parameters of sub-objects with dot notation.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 count
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Count
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The number of records to return.
+                 <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/#pagination">
+                  Default value
+                 </a>
+                 is
+                 <strong>
+                  10
+                 </strong>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 offset
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Offset
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The number of records from a collection to skip. Iterating over large collections with this parameter can be slow.
+                 <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/#pagination">
+                  Default value
+                 </a>
+                 is
+                 <strong>
+                  0
+                 </strong>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 created_by
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Created By
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The MailChimp account user who created the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 since_created_at
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Since Created At
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 Restrict the response to templates created after the set date.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 before_created_at
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Before Created At
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 Restrict the response to templates created before the set date.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 Limit results based on template type.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 category
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Category
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 Limit results based on category.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 folder_id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Folder ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The unique folder id.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Response body parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 templates
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 User Templates
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 All of an account’s saved or custom templates.
+                </td>
+               </tr>
+               <tr class="subgroup">
+                <td colspan="5">
+                 <a class="subgroup-toggle" href="#">
+                  <i class="freddicon nomargin menu-right arrow-img rotate0">
+                  </i>
+                  <span>
+                   Show properties
+                  </span>
+                 </a>
+                 <div>
+                  <table class="parameters">
+                   <tbody>
+                    <tr>
+                     <td>
+                      id
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      Integer
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Template ID
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The individual id for the template.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      type
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Template Type
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The type of template (user, base, or gallery).
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      name
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Template Name
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      false
+                     </td>
+                     <td>
+                      The name of the template.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      drag_and_drop
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      Boolean
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Drag and Drop
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      Whether the template uses the drag and drop editor.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      responsive
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      Boolean
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Responsive
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      Whether the template contains media queries to make it responsive.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      category
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Template Category
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      If available, the category the template is listed in.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      date_created
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Date Created
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The date and time the template was created.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      created_by
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Created By
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The login name for template’s creator.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      active
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      Boolean
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Active
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      User templates are not ‘deleted,’ but rather marked as ‘inactive.’ Returns whether the template is still active.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      folder_id
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Folder ID
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      false
+                     </td>
+                     <td>
+                      The id of the folder the template is currently in.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      thumbnail
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Template Thumbnail
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      If available, the URL for a thumbnail of the template.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      share_url
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Share URL
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The URL used for
+                      <a href="https://kb.mailchimp.com/templates/basic-and-themes/how-to-share-a-template?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+                       template sharing
+                      </a>
+                      .
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      _links
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      Array
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Links
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      A list of link types and descriptions for the API schema documents.
+                     </td>
+                    </tr>
+                    <tr class="subgroup">
+                     <td colspan="5">
+                      <a class="subgroup-toggle" href="#">
+                       <i class="freddicon nomargin menu-right arrow-img rotate0">
+                       </i>
+                       <span>
+                        Show properties
+                       </span>
+                      </a>
+                      <div>
+                       <table class="parameters">
+                        <tbody>
+                         <tr>
+                          <td>
+                           rel
+                          </td>
+                          <td>
+                           <span>
+                            Type:
+                           </span>
+                           String
+                          </td>
+                          <td>
+                           <span>
+                            Title:
+                           </span>
+                           Rel
+                          </td>
+                          <td class="read-only">
+                           <span>
+                            Read only:
+                           </span>
+                           true
+                          </td>
+                          <td>
+                           As with an HTML ‘rel’ attribute, this describes the type of link.
+                          </td>
+                         </tr>
+                         <tr>
+                          <td>
+                           href
+                          </td>
+                          <td>
+                           <span>
+                            Type:
+                           </span>
+                           String
+                          </td>
+                          <td>
+                           <span>
+                            Title:
+                           </span>
+                           Href
+                          </td>
+                          <td class="read-only">
+                           <span>
+                            Read only:
+                           </span>
+                           true
+                          </td>
+                          <td>
+                           This property contains a fully-qualified URL that can be called to retrieve the linked resource or perform the linked action.
+                          </td>
+                         </tr>
+                         <tr>
+                          <td>
+                           method
+                          </td>
+                          <td>
+                           <span>
+                            Type:
+                           </span>
+                           String
+                          </td>
+                          <td>
+                           <span>
+                            Title:
+                           </span>
+                           Method
+                          </td>
+                          <td class="read-only">
+                           <span>
+                            Read only:
+                           </span>
+                           true
+                          </td>
+                          <td>
+                           The HTTP method that should be used when accessing the URL defined in ‘href’.
+                           <section>
+                            <h5>
+                             Possible Values:
+                            </h5>
+                            <ul class="linear-list dots">
+                             <li>
+                              GET
+                             </li>
+                             <li>
+                              POST
+                             </li>
+                             <li>
+                              PUT
+                             </li>
+                             <li>
+                              PATCH
+                             </li>
+                             <li>
+                              DELETE
+                             </li>
+                             <li>
+                              OPTIONS
+                             </li>
+                             <li>
+                              HEAD
+                             </li>
+                            </ul>
+                           </section>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td>
+                           targetSchema
+                          </td>
+                          <td>
+                           <span>
+                            Type:
+                           </span>
+                           String
+                          </td>
+                          <td>
+                           <span>
+                            Title:
+                           </span>
+                           Target Schema
+                          </td>
+                          <td class="read-only">
+                           <span>
+                            Read only:
+                           </span>
+                           true
+                          </td>
+                          <td>
+                           For GETs, this is a URL representing the schema that the response should conform to.
+                          </td>
+                         </tr>
+                         <tr>
+                          <td>
+                           schema
+                          </td>
+                          <td>
+                           <span>
+                            Type:
+                           </span>
+                           String
+                          </td>
+                          <td>
+                           <span>
+                            Title:
+                           </span>
+                           Schema
+                          </td>
+                          <td class="read-only">
+                           <span>
+                            Read only:
+                           </span>
+                           true
+                          </td>
+                          <td>
+                           For HTTP methods that can receive bodies (POST and PUT), this is a URL representing the schema that the body should conform to.
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 total_items
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Item Count
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The total number of items matching the query regardless of pagination.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 _links
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Links
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 A list of link types and descriptions for the API schema documents.
+                </td>
+               </tr>
+               <tr class="subgroup">
+                <td colspan="5">
+                 <a class="subgroup-toggle" href="#">
+                  <i class="freddicon nomargin menu-right arrow-img rotate0">
+                  </i>
+                  <span>
+                   Show properties
+                  </span>
+                 </a>
+                 <div>
+                  <table class="parameters">
+                   <tbody>
+                    <tr>
+                     <td>
+                      rel
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Rel
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      As with an HTML ‘rel’ attribute, this describes the type of link.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      href
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Href
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      This property contains a fully-qualified URL that can be called to retrieve the linked resource or perform the linked action.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      method
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Method
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The HTTP method that should be used when accessing the URL defined in ‘href’.
+                      <section>
+                       <h5>
+                        Possible Values:
+                       </h5>
+                       <ul class="linear-list dots">
+                        <li>
+                         GET
+                        </li>
+                        <li>
+                         POST
+                        </li>
+                        <li>
+                         PUT
+                        </li>
+                        <li>
+                         PATCH
+                        </li>
+                        <li>
+                         DELETE
+                        </li>
+                        <li>
+                         OPTIONS
+                        </li>
+                        <li>
+                         HEAD
+                        </li>
+                       </ul>
+                      </section>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      targetSchema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Target Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For GETs, this is a URL representing the schema that the response should conform to.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      schema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For HTTP methods that can receive bodies (POST and PUT), this is a URL representing the schema that the body should conform to.
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Example request
+            </h3>
+            <div class="code-block">
+             <pre><code class="language-bash">
+curl --request GET \
+--url 'https://usX.api.mailchimp.com/3.0/templates' \
+--user 'anystring:apikey' \
+--include
+                                </code></pre>
+            </div>
+            <h3>
+             Example response
+            </h3>
+            <div class="code-block long-code">
+             <pre><code class="language-bash">
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+X-Request-Id: 6788ee52-8a1d-40a2-af0b-4c7a5a6df968
+Link: &lt;https://api.mailchimp.com/schema/3.0/Templates/Collection.json&gt;; rel="describedBy"
+Content-Length: 8503
+Date: Thu, 17 Sep 2015 19:15:57 GMT
+Connection: keep-alive
+
+
+{
+  "templates": [
+    {
+      "id": 2000094,
+      "type": "gallery",
+      "name": "Event by Veerle Pieters",
+      "drag_and_drop": true,
+      "responsive": true,
+      "category": "Events",
+      "date_created": "2015-09-16 13:16:04",
+      "created_by": "",
+      "active": true,
+      "folder_id": 0,
+      "thumbnail": "http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/event_veerle_pieters_nb.png",
+      "share_url": "",
+      "_links": [
+        {
+          "rel": "self",
+          "href": "https://usX.api.mailchimp.com/3.0/templates/2000094",
+          "method": "GET",
+          "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Instance.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://usX.api.mailchimp.com/3.0/templates",
+          "method": "GET",
+          "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Collection.json",
+          "schema": "https://api.mailchimp.com/schema/3.0/CollectionLinks/Templates.json"
+        },
+        {
+          "rel": "delete",
+          "href": "https://usX.api.mailchimp.com/3.0/templates/2000094",
+          "method": "DELETE"
+        }
+      ]
+    }
+  ],
+  "_links": [
+    {
+      "rel": "parent",
+      "href": "https://usX.api.mailchimp.com/3.0/",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Root.json"
+    },
+    {
+      "rel": "self",
+      "href": "https://usX.api.mailchimp.com/3.0/templates",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Collection.json",
+      "schema": "https://api.mailchimp.com/schema/3.0/CollectionLinks/Templates.json"
+    }
+  ],
+  "total_items": 1
+}
+                                </code></pre>
+            </div>
+            <a class="expand-code-btn" href="#" title="expand/collapse code">
+             <i class="freddicon nomargin play">
+             </i>
+            </a>
+            <h3>
+             Error response
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td class="required">
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Problem Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 An absolute URI that identifies the problem type. When dereferenced, it should provide human-readable documentation for the problem type.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 title
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Title
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A short, human-readable summary of the problem type. It shouldn’t change based on the occurrence of the problem, except for purposes of localization.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 status
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 HTTP Status Code
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The HTTP status code (RFC2616, Section 6) generated by the origin server for this occurrence of the problem.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 detail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Message
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A human-readable explanation specific to this occurrence of the problem.
+                 <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/#errors">
+                  Learn more about errors
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 instance
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Instance ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A string that identifies this specific occurrence of the problem. Please provide this ID when contacting support.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+           </article>
+           <article class="method-content">
+            <h2 class="method-heading" id="read-get_templates_template_id">
+             Get information about a specific template
+            </h2>
+            <h3>
+             GET /templates/{template_id}
+            </h3>
+            <p>
+             Get information about a specific template.
+            </p>
+            <h3>
+             Path parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 template_id
+                </td>
+                <td>
+                 The unique id for the template.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Query string parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 fields
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Fields
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 exclude_fields
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Exclude Fields
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A comma-separated list of fields to exclude. Reference parameters of sub-objects with dot notation.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Response body parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The individual id for the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The type of template (user, base, or gallery).
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 name
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Name
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The name of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 drag_and_drop
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Drag and Drop
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 Whether the template uses the drag and drop editor.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 responsive
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Responsive
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 Whether the template contains media queries to make it responsive.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 category
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Category
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 If available, the category the template is listed in.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 date_created
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Date Created
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The date and time the template was created.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 created_by
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Created By
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The login name for template’s creator.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 active
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Active
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 User templates are not ‘deleted,’ but rather marked as ‘inactive.’ Returns whether the template is still active.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 folder_id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Folder ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The id of the folder the template is currently in.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 thumbnail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Thumbnail
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 If available, the URL for a thumbnail of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 share_url
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Share URL
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The URL used for
+                 <a href="https://kb.mailchimp.com/templates/basic-and-themes/how-to-share-a-template?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+                  template sharing
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 _links
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Links
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 A list of link types and descriptions for the API schema documents.
+                </td>
+               </tr>
+               <tr class="subgroup">
+                <td colspan="5">
+                 <a class="subgroup-toggle" href="#">
+                  <i class="freddicon nomargin menu-right arrow-img rotate0">
+                  </i>
+                  <span>
+                   Show properties
+                  </span>
+                 </a>
+                 <div>
+                  <table class="parameters">
+                   <tbody>
+                    <tr>
+                     <td>
+                      rel
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Rel
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      As with an HTML ‘rel’ attribute, this describes the type of link.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      href
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Href
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      This property contains a fully-qualified URL that can be called to retrieve the linked resource or perform the linked action.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      method
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Method
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The HTTP method that should be used when accessing the URL defined in ‘href’.
+                      <section>
+                       <h5>
+                        Possible Values:
+                       </h5>
+                       <ul class="linear-list dots">
+                        <li>
+                         GET
+                        </li>
+                        <li>
+                         POST
+                        </li>
+                        <li>
+                         PUT
+                        </li>
+                        <li>
+                         PATCH
+                        </li>
+                        <li>
+                         DELETE
+                        </li>
+                        <li>
+                         OPTIONS
+                        </li>
+                        <li>
+                         HEAD
+                        </li>
+                       </ul>
+                      </section>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      targetSchema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Target Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For GETs, this is a URL representing the schema that the response should conform to.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      schema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For HTTP methods that can receive bodies (POST and PUT), this is a URL representing the schema that the body should conform to.
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Example request
+            </h3>
+            <div class="code-block">
+             <pre><code class="language-bash">
+curl --request GET \
+--url 'https://usX.api.mailchimp.com/3.0/templates/2000094' \
+--user 'anystring:apikey' \
+--include
+                                </code></pre>
+            </div>
+            <h3>
+             Example response
+            </h3>
+            <div class="code-block long-code">
+             <pre><code class="language-bash">
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Content-Length: 855
+Vary: Accept-Encoding
+X-Request-Id: 5a554e78-22a3-40d1-93e8-e6e73d0ad1ab
+Link: &lt;https://api.mailchimp.com/schema/3.0/Templates/Instance.json&gt;; rel="describedBy"
+Date: Thu, 17 Sep 2015 19:18:22 GMT
+Connection: keep-alive
+
+
+{
+  "id": 2000094,
+  "type": "gallery",
+  "name": "Event by Veerle Pieters",
+  "drag_and_drop": true,
+  "responsive": true,
+  "category": "Events",
+  "date_created": "2015-09-16 13:16:04",
+  "created_by": "",
+  "active": true,
+  "folder_id": 0,
+  "thumbnail": "http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/event_veerle_pieters_nb.png",
+  "share_url": "",
+  "_links": [
+    {
+      "rel": "self",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/2000094",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Instance.json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://usX.api.mailchimp.com/3.0/templates",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Collection.json",
+      "schema": "https://api.mailchimp.com/schema/3.0/CollectionLinks/Templates.json"
+    },
+    {
+      "rel": "delete",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/2000094",
+      "method": "DELETE"
+    }
+  ]
+}
+                                </code></pre>
+            </div>
+            <a class="expand-code-btn" href="#" title="expand/collapse code">
+             <i class="freddicon nomargin play">
+             </i>
+            </a>
+            <h3>
+             Error response
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td class="required">
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Problem Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 An absolute URI that identifies the problem type. When dereferenced, it should provide human-readable documentation for the problem type.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 title
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Title
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A short, human-readable summary of the problem type. It shouldn’t change based on the occurrence of the problem, except for purposes of localization.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 status
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 HTTP Status Code
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The HTTP status code (RFC2616, Section 6) generated by the origin server for this occurrence of the problem.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 detail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Message
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A human-readable explanation specific to this occurrence of the problem.
+                 <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/#errors">
+                  Learn more about errors
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 instance
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Instance ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A string that identifies this specific occurrence of the problem. Please provide this ID when contacting support.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+           </article>
+          </li>
+         </ul>
+        </li>
+        <li data-content="edit">
+         <ul>
+          <li>
+           <div class="mc-table-wrap">
+            <table class="jump-to below36">
+             <tbody>
+              <tr>
+               <td>
+                <a href="#edit-patch_templates_template_id">
+                 <span class="method edit">
+                  PATCH
+                 </span>
+                 <span>
+                  /templates/{template_id}
+                 </span>
+                </a>
+               </td>
+               <td>
+                Update an existing template
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <article class="method-content">
+            <h2 class="method-heading" id="edit-patch_templates_template_id">
+             Update an existing template
+            </h2>
+            <h3>
+             PATCH /templates/{template_id}
+            </h3>
+            <p>
+             Update the name, HTML, or
+             <code>
+              folder_id
+             </code>
+             of an existing template.
+            </p>
+            <h3>
+             Path parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 template_id
+                </td>
+                <td>
+                 The unique id for the template.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Request body parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td class="required">
+                 name
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Name
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The name of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 folder_id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Folder ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The id of the folder the template is currently in.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 html
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template HTML
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The raw HTML for the template. We  support the MailChimp
+                 <a href="https://kb.mailchimp.com/templates/code/getting-started-with-mailchimps-template-language?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+                  Template Language
+                 </a>
+                 in any HTML code passed via the API.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Response body parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The individual id for the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The type of template (user, base, or gallery).
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 name
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Name
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The name of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 drag_and_drop
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Drag and Drop
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 Whether the template uses the drag and drop editor.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 responsive
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Responsive
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 Whether the template contains media queries to make it responsive.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 category
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Category
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 If available, the category the template is listed in.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 date_created
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Date Created
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The date and time the template was created.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 created_by
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Created By
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The login name for template’s creator.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 active
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Boolean
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Active
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 User templates are not ‘deleted,’ but rather marked as ‘inactive.’ Returns whether the template is still active.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 folder_id
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Folder ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The id of the folder the template is currently in.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 thumbnail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Template Thumbnail
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 If available, the URL for a thumbnail of the template.
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 share_url
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Share URL
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 The URL used for
+                 <a href="https://kb.mailchimp.com/templates/basic-and-themes/how-to-share-a-template?utm_source=mc-api&amp;utm_medium=docs&amp;utm_campaign=apidocs">
+                  template sharing
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 _links
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Array
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Links
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 true
+                </td>
+                <td>
+                 A list of link types and descriptions for the API schema documents.
+                </td>
+               </tr>
+               <tr class="subgroup">
+                <td colspan="5">
+                 <a class="subgroup-toggle" href="#">
+                  <i class="freddicon nomargin menu-right arrow-img rotate0">
+                  </i>
+                  <span>
+                   Show properties
+                  </span>
+                 </a>
+                 <div>
+                  <table class="parameters">
+                   <tbody>
+                    <tr>
+                     <td>
+                      rel
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Rel
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      As with an HTML ‘rel’ attribute, this describes the type of link.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      href
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Href
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      This property contains a fully-qualified URL that can be called to retrieve the linked resource or perform the linked action.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      method
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Method
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      The HTTP method that should be used when accessing the URL defined in ‘href’.
+                      <section>
+                       <h5>
+                        Possible Values:
+                       </h5>
+                       <ul class="linear-list dots">
+                        <li>
+                         GET
+                        </li>
+                        <li>
+                         POST
+                        </li>
+                        <li>
+                         PUT
+                        </li>
+                        <li>
+                         PATCH
+                        </li>
+                        <li>
+                         DELETE
+                        </li>
+                        <li>
+                         OPTIONS
+                        </li>
+                        <li>
+                         HEAD
+                        </li>
+                       </ul>
+                      </section>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      targetSchema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Target Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For GETs, this is a URL representing the schema that the response should conform to.
+                     </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      schema
+                     </td>
+                     <td>
+                      <span>
+                       Type:
+                      </span>
+                      String
+                     </td>
+                     <td>
+                      <span>
+                       Title:
+                      </span>
+                      Schema
+                     </td>
+                     <td class="read-only">
+                      <span>
+                       Read only:
+                      </span>
+                      true
+                     </td>
+                     <td>
+                      For HTTP methods that can receive bodies (POST and PUT), this is a URL representing the schema that the body should conform to.
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Example request
+            </h3>
+            <div class="code-block">
+             <pre><code class="language-bash">
+curl --request PATCH \
+--url 'https://usX.api.mailchimp.com/3.0/templates/265057' \
+--user 'anystring:apikey' \
+--header 'content-type: application/json' \
+--data '{"name":"This is an updated Template name"}' \
+--include
+                                </code></pre>
+            </div>
+            <h3>
+             Example response
+            </h3>
+            <div class="code-block long-code">
+             <pre><code class="language-bash">
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 05 Feb 2016 16:08:36 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1164
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Request-Id: ea702ecd-91dc-44a3-9c84-139d68a7447f
+Link: &lt;https://api.mailchimp.com/schema/3.0/Templates/Instance.json&gt;; rel="describedBy", &lt;https://usX.admin.mailchimp.com/templates/edit?id=265057&gt;; rel="dashboard"
+
+{
+  "id": 265057,
+  "type": "user",
+  "name": "This is an updated Template name",
+  "drag_and_drop": false,
+  "responsive": false,
+  "category": "",
+  "date_created": "2016-02-05 15:24:09",
+  "created_by": "Freddie von Chimpenheimer",
+  "active": true,
+  "thumbnail": "http://gallery.mailchimp.com/xxxx/template-screens/265057_screen.png",
+  "share_url": "",
+  "_links": [
+    {
+      "rel": "self",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/265057",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Instance.json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://usX.api.mailchimp.com/3.0/templates",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Collection.json",
+      "schema": "https://api.mailchimp.com/schema/3.0/CollectionLinks/Templates.json"
+    },
+    {
+      "rel": "delete",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/265057",
+      "method": "DELETE"
+    },
+    {
+      "rel": "default-content",
+      "href": "https://usX.api.mailchimp.com/3.0/templates/265057/default-content",
+      "method": "GET",
+      "targetSchema": "https://api.mailchimp.com/schema/3.0/Templates/Defaultcontent/Collection.json",
+      "schema": "https://api.mailchimp.com/schema/3.0/CollectionLinks/Templates.json"
+    }
+  ]
+}
+                                </code></pre>
+            </div>
+            <a class="expand-code-btn" href="#" title="expand/collapse code">
+             <i class="freddicon nomargin play">
+             </i>
+            </a>
+            <h3>
+             Error response
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td class="required">
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Problem Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 An absolute URI that identifies the problem type. When dereferenced, it should provide human-readable documentation for the problem type.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 title
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Title
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A short, human-readable summary of the problem type. It shouldn’t change based on the occurrence of the problem, except for purposes of localization.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 status
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 HTTP Status Code
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The HTTP status code (RFC2616, Section 6) generated by the origin server for this occurrence of the problem.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 detail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Message
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A human-readable explanation specific to this occurrence of the problem.
+                 <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/#errors">
+                  Learn more about errors
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 instance
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Instance ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A string that identifies this specific occurrence of the problem. Please provide this ID when contacting support.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+           </article>
+          </li>
+         </ul>
+        </li>
+        <li data-content="delete">
+         <ul>
+          <li>
+           <div class="mc-table-wrap">
+            <table class="jump-to below36">
+             <tbody>
+              <tr>
+               <td>
+                <a href="#delete-delete_templates_template_id">
+                 <span class="method delete">
+                  DELETE
+                 </span>
+                 <span>
+                  /templates/{template_id}
+                 </span>
+                </a>
+               </td>
+               <td>
+                Delete a specific template
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <article class="method-content">
+            <h2 class="method-heading" id="delete-delete_templates_template_id">
+             Delete a specific template
+            </h2>
+            <h3>
+             DELETE /templates/{template_id}
+            </h3>
+            <p>
+             Delete a specific template.
+            </p>
+            <h3>
+             Path parameters
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td>
+                 template_id
+                </td>
+                <td>
+                 The unique id for the template.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h3>
+             Example request
+            </h3>
+            <div class="code-block">
+             <pre><code class="language-bash">
+curl --request DELETE \
+--url 'https://usX.api.mailchimp.com/3.0/templates/2000094' \
+--user 'anystring:apikey' \
+--include
+                                </code></pre>
+            </div>
+            <h3>
+             Example response
+            </h3>
+            <div class="code-block ">
+             <pre><code class="language-bash">
+HTTP/1.1 204 No Content
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+X-Request-Id: 0e71b16c-d99f-4651-b2e5-ea39747f44e1
+Date: Wed, 17 Sep 2015 20:29:37 GMT
+Connection: keep-alive
+                                </code></pre>
+            </div>
+            <h3>
+             Error response
+            </h3>
+            <div class="mc-table-wrap">
+             <table class="mc-table parameters">
+              <tbody>
+               <tr>
+                <td class="required">
+                 type
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Problem Type
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 An absolute URI that identifies the problem type. When dereferenced, it should provide human-readable documentation for the problem type.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 title
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Title
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A short, human-readable summary of the problem type. It shouldn’t change based on the occurrence of the problem, except for purposes of localization.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 status
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 Integer
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 HTTP Status Code
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 The HTTP status code (RFC2616, Section 6) generated by the origin server for this occurrence of the problem.
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 detail
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Error Message
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A human-readable explanation specific to this occurrence of the problem.
+                 <a href="/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/#errors">
+                  Learn more about errors
+                 </a>
+                 .
+                </td>
+               </tr>
+               <tr>
+                <td class="required">
+                 instance
+                </td>
+                <td>
+                 <span>
+                  Type:
+                 </span>
+                 String
+                </td>
+                <td>
+                 <span>
+                  Title:
+                 </span>
+                 Instance ID
+                </td>
+                <td class="read-only">
+                 <span>
+                  Read only:
+                 </span>
+                 false
+                </td>
+                <td>
+                 A string that identifies this specific occurrence of the problem. Please provide this ID when contacting support.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+           </article>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </div>
+     </section>
+     <p>
+     </p>
+    </div>
+   </div>
+   <a class="hide-print" href="#top" id="to-top">
+    <span class="freddicon menu-up">
+    </span>
+    Back to top
+   </a>
+   <footer class="alignc dim-el pad-lv6 pad-lr0 mc-content">
+    <div class="line">
+     <div class="lastUnit size1of1&gt;">
+      <a href="https://mailchimp.com" id="mailchimp-scripty-footer-link" tabindex="-1" target="_blank">
+       <img alt="MailChimp logo" class="inline-block" height="32" src="/documentation/mailchimp/img/scripty-dark.svg"/>
+      </a>
+     </div>
+    </div>
+    <div class="line relative">
+     <div class="unit size1of2 centered">
+      <p class="small-meta below18">
+       ©2001-2017 All Rights Reserved. MailChimp® is a registered trademark of The Rocket Science Group.
+      </p>
+     </div>
+     <div class="lastUnit size1of2 centered hide-print">
+      <p class="small-meta nomargin">
+       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="https://mailchimp.com" id="mailchimp-footer-link">
+        MailChimp
+       </a>
+       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="/documentation/mailchimp/" id="documentation-footer-link">
+        Documentation
+       </a>
+       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="https://us1.api.mailchimp.com/playground/" id="playground-footer-link">
+        Playground
+       </a>
+       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="/status/" id="status-footer-link">
+        API Status
+       </a>
+       <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="https://mailchimp.com/contact/feedback/" id="feedback-footer-link">
+        Feedback
+       </a>
+      </p>
+     </div>
+    </div>
+   </footer>
+  </div>
+ </body>
+</html>

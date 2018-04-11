@@ -1,0 +1,1755 @@
+419
+https://graph.facebook.com/{canvas_product_set_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_product_set_id}","type":"OAuthException","code":803,"fbtrace_id":"CPGUwqrY148"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_product_set_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_product_set_id}","type":"OAuthException","code":803,"fbtrace_id":"HFSkRPw66nN"}}
+Fail to return response
+https://graph.facebook.com/{user_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user_id}","type":"OAuthException","code":803,"fbtrace_id":"EgI5U9oC74Q"}}
+Fail to return response
+
+https://graph.facebook.com/{user_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user_id}","type":"OAuthException","code":803,"fbtrace_id":"BD0bY0CvyDt"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/page_backed_instagram_accounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"B9AbTbMuwBN"}}
+Fail to return response
+https://graph.facebook.com/{app_request_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app_request_id}","type":"OAuthException","code":803,"fbtrace_id":"HGooZ25AF5F"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-object-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-object-id}","type":"OAuthException","code":803,"fbtrace_id":"FoVQlAR3k5p"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{status-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {status-id}","type":"OAuthException","code":803,"fbtrace_id":"DmxbC07BSKp"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/events
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"D8b0Upd70YO"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{story-attachment-id}/subattachments
+400
+{"error":{"message":"Unknown path components: \/subattachments","type":"OAuthException","code":2500,"fbtrace_id":"Gmc5\/fIke+Z"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/me/feed
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"Fyo5\/mJSRhu"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/feed
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"BDEn6nMDF8x"}}
+Fail to return response
+https://graph.facebook.com/{page_call_to_action_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page_call_to_action_id}","type":"OAuthException","code":803,"fbtrace_id":"G69zqH4SQVB"}}
+Fail to return response
+
+https://graph.facebook.com/{page_call_to_action_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page_call_to_action_id}","type":"OAuthException","code":803,"fbtrace_id":"HI265W+2uAj"}}
+Fail to return response
+https://graph.facebook.com/{canvas_carousel_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_carousel_id}","type":"OAuthException","code":803,"fbtrace_id":"AmvjBS8cIzV"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_carousel_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_carousel_id}","type":"OAuthException","code":803,"fbtrace_id":"FIKFmCQHxEV"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{live-video-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {live-video-id}","type":"OAuthException","code":803,"fbtrace_id":"ELeRIVoDQuA"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{object-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object-id}","type":"OAuthException","code":803,"fbtrace_id":"DliIUKZoEGW"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{object-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object-id}","type":"OAuthException","code":803,"fbtrace_id":"C6XfkNInEwx"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{object-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object-id}","type":"OAuthException","code":803,"fbtrace_id":"Fhlojd10e4i"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{page-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"CV4MKu8\/I+D"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"FGE8rGdR7W1"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/ids_for_business
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"FXnMRfe7TPd"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{test-user-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {test-user-id}","type":"OAuthException","code":803,"fbtrace_id":"BgWcrJUkWmO"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{test-user-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {test-user-id}","type":"OAuthException","code":803,"fbtrace_id":"GFQhdNVioWU"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/videos_you_can_use
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"EPG3EEBT3Xt"}}
+Fail to return response
+https://graph.facebook.com/{saved_message_response_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {saved_message_response_id}","type":"OAuthException","code":803,"fbtrace_id":"HTUt6uoVomj"}}
+Fail to return response
+
+https://graph.facebook.com/{saved_message_response_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {saved_message_response_id}","type":"OAuthException","code":803,"fbtrace_id":"F55MyhAolPq"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-media-id}/insights
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-media-id}","type":"OAuthException","code":803,"fbtrace_id":"Hu+TsCHPETR"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/blocked
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"FQjFIW2nF+I"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-context-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-context-id}","type":"OAuthException","code":803,"fbtrace_id":"DoDKPuETp77"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/subscriptions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"Aa4u2yyJc+I"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{app-id}/subscriptions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"BpX8k8bYj+8"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/subscriptions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"C0c2jhqrsn6"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{milestone-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {milestone-id}","type":"OAuthException","code":803,"fbtrace_id":"CGAET20ybAx"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{milestone-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {milestone-id}","type":"OAuthException","code":803,"fbtrace_id":"HATI7ii9nxx"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{milestone-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {milestone-id}","type":"OAuthException","code":803,"fbtrace_id":"A187cvy4\/Jk"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{photo-id}/reactions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo-id}","type":"OAuthException","code":803,"fbtrace_id":"DlSYJUsVT5L"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/music
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"C2x7fys2878"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/albums
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"AvoYv8axjO7"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/adaccounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"BQz9IsIm2Md"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/scores
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"FlZ7g++piXr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/scores
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"FbFoDlyJpw9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/thumbnails
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"CB1XrbzGgFF"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{native-offer-id}/views
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {native-offer-id}","type":"OAuthException","code":803,"fbtrace_id":"El9b1QrYJVJ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/video_broadcasts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"CcNJY8+Y6e4"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/video_insights
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"HcIZyNVQigE"}}
+Fail to return response
+https://graph.facebook.com/{page_admin_note_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page_admin_note_id}","type":"OAuthException","code":803,"fbtrace_id":"HbG9Rx5BLE3"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-context-id}/all_mutual_friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-context-id}","type":"OAuthException","code":803,"fbtrace_id":"CazHHdddotM"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{live-video-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {live-video-id}","type":"OAuthException","code":803,"fbtrace_id":"EXTZoImTEbQ"}}
+Fail to return response
+https://graph.facebook.com/{photo_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo_id}","type":"OAuthException","code":803,"fbtrace_id":"Dy9CPvhRZQx"}}
+Fail to return response
+
+https://graph.facebook.com/{photo_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo_id}","type":"OAuthException","code":803,"fbtrace_id":"ArCxdK0Ge0s"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"EqQcfVybzzn"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Acv8qDG\/7wc"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/favorite_requests
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"HlxQYSYPOGR"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{question-option-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {question-option-id}","type":"OAuthException","code":803,"fbtrace_id":"HfvNJwTBz16"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{object-id}/sharedposts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object-id}","type":"OAuthException","code":803,"fbtrace_id":"GC9hEll5PhR"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{page-id}/crosspost_pending_approval_pages
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"FpcwT7WtZex"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-call-to-action-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-call-to-action-id}","type":"OAuthException","code":803,"fbtrace_id":"ErPgpQTi7Y0"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/me/photos
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"CY3FA9LI2du"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/thread_settings
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"G4jXDkF9zRR"}}
+Fail to return response
+https://graph.facebook.com/{user-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Et9gLB2oST3"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-copyright-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-copyright-id}","type":"OAuthException","code":803,"fbtrace_id":"FbiJHF8Hd49"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-carousel-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-carousel-id}","type":"OAuthException","code":803,"fbtrace_id":"BgqIzn9C8xC"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/members
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"BxwTUKxf5pr"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{group-id}/members
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"GAqnyd40aXu"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/members
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"AH3\/NkcbBnl"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-button-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-button-id}","type":"OAuthException","code":803,"fbtrace_id":"E5Aef61+xuq"}}
+Fail to return response
+https://graph.facebook.com/{canvas_photo_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_photo_id}","type":"OAuthException","code":803,"fbtrace_id":"GimqPeyVwdi"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_photo_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_photo_id}","type":"OAuthException","code":803,"fbtrace_id":"BNYk18q\/9+k"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"EmJ6QEUCskc"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{test-user-1}/friends/{test-user-2}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {test-user-1}","type":"OAuthException","code":803,"fbtrace_id":"CN9rErONkye"}}
+Fail to return response
+https://graph.facebook.com/{object_id}/insights
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object_id}","type":"OAuthException","code":803,"fbtrace_id":"HuTAiXQtS8v"}}
+Fail to return response
+https://graph.facebook.com/{application_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application_id}","type":"OAuthException","code":803,"fbtrace_id":"G+8aktUQcXE"}}
+Fail to return response
+
+https://graph.facebook.com/{application_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application_id}","type":"OAuthException","code":803,"fbtrace_id":"CrjiPsHPQmr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/friendlists
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"AN377S2m3KR"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/auto_generated_captions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"G7km2wtha+E"}}
+Fail to return response
+https://graph.facebook.com/{video_copyright_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_copyright_id}","type":"OAuthException","code":803,"fbtrace_id":"HyhJyGK3VOk"}}
+Fail to return response
+
+https://graph.facebook.com/{video_copyright_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_copyright_id}","type":"OAuthException","code":803,"fbtrace_id":"AhusCwkFV+2"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-label-id}/users
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-label-id}","type":"OAuthException","code":803,"fbtrace_id":"Fahm7G13xhd"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/settings
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"Bp+J1xtbbbO"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/call_to_actions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"D3PHH0HwqCo"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/nativeoffers
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"CAE2uQlJdXw"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-context-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-context-id}","type":"OAuthException","code":803,"fbtrace_id":"ELnuOm+w4wT"}}
+Fail to return response
+https://graph.facebook.com/{canvas_footer_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_footer_id}","type":"OAuthException","code":803,"fbtrace_id":"HRw6KMsoVCD"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_footer_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_footer_id}","type":"OAuthException","code":803,"fbtrace_id":"CbLJtSr94eU"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{limited-profile-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {limited-profile-id}","type":"OAuthException","code":803,"fbtrace_id":"ARm2YmsnRz1"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/promotable_domains
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"DDffMF9NNeq"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{album-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {album-id}","type":"OAuthException","code":803,"fbtrace_id":"FncVvRxMRTF"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/tabs
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"CVa75Tettry"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/curated_collections
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"HgRL15Sm4iJ"}}
+Fail to return response
+
+https://graph.facebook.com/attachment
+404
+{"error":{"message":"(#803) Cannot query users by their username (attachment)","type":"OAuthException","code":803,"fbtrace_id":"E\/VPFMKwMmD"}}
+Fail to return response
+https://graph.facebook.com/{canvas_video_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_video_id}","type":"OAuthException","code":803,"fbtrace_id":"Fc3skSFuLi4"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_video_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_video_id}","type":"OAuthException","code":803,"fbtrace_id":"Br4VrbtbFco"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-context-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-context-id}","type":"OAuthException","code":803,"fbtrace_id":"AJjn9QZ+4uP"}}
+Fail to return response
+https://graph.facebook.com/{custom_audience_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {custom_audience_id}","type":"OAuthException","code":803,"fbtrace_id":"H1uHzPnOvy2"}}
+Fail to return response
+
+https://graph.facebook.com/{custom_audience_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {custom_audience_id}","type":"OAuthException","code":803,"fbtrace_id":"CZBAISUdE4Y"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-context-id}/video_watch_friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-context-id}","type":"OAuthException","code":803,"fbtrace_id":"BSQchPBNjH0"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{photo-id}/sponsor_tags
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo-id}","type":"OAuthException","code":803,"fbtrace_id":"DZ755ibCqLv"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/ids_for_apps
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"HszOxsLYR\/p"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-context-id}/music_listen_friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-context-id}","type":"OAuthException","code":803,"fbtrace_id":"GC2r9G7MXek"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {rtb-dynamic-post-id}","type":"OAuthException","code":803,"fbtrace_id":"BjRy4Khkgen"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-context-id}/mutual_friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-context-id}","type":"OAuthException","code":803,"fbtrace_id":"EcEvDWaWaLY"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/tags
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"BZpRtssMVQL"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{link-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {link-id}","type":"OAuthException","code":803,"fbtrace_id":"AALU93Mnh7C"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{link-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {link-id}","type":"OAuthException","code":803,"fbtrace_id":"FHMBvjlfpHI"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{page-id}/feed
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"HNza2MW4GYd"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/feed
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"Dh70C4HUMPu"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/instant_articles
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"A8n5kz8uTgY"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"G+vgS7Mg4XH"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{page-id}/crosspost_whitelisted_pages
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"DPFynqCLK3l"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-store-locator-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-store-locator-id}","type":"OAuthException","code":803,"fbtrace_id":"Fqv+a2YE4fb"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-object-type-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-object-type-id}","type":"OAuthException","code":803,"fbtrace_id":"BP2nR7Igfc2"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/adcontracts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"G6Au9q7QCes"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/featured_videos_collection
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"FyllnaJYSCS"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{post-id}/attachments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {post-id}","type":"OAuthException","code":803,"fbtrace_id":"At6gGRFrAr8"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/video_copyrights
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"FPtrSR\/UTrN"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{notification-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {notification-id}","type":"OAuthException","code":803,"fbtrace_id":"AZ\/8R5nNX2I"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-object-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-object-id}","type":"OAuthException","code":803,"fbtrace_id":"Es\/ePbo4Vnm"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/ratings
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"C91cwmoo+Eq"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-photo-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-photo-id}","type":"OAuthException","code":803,"fbtrace_id":"HUsPHgjWQiM"}}
+Fail to return response
+https://graph.facebook.com/{test-user-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {test-user-id}","type":"OAuthException","code":803,"fbtrace_id":"F4DHvviqmFO"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/ads_app_insights_dimensions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"AeU7gllJ3AI"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-list-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-list-id}","type":"OAuthException","code":803,"fbtrace_id":"FT2TICQUX\/8"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-media-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-media-id}","type":"OAuthException","code":803,"fbtrace_id":"DvZ8qKlv6qu"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/business_activities
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Ej9jGQPqJ7Q"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/accounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"GeRR94lozbH"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{crisis-id}/community_help_posts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {crisis-id}","type":"OAuthException","code":803,"fbtrace_id":"GisXiJlpGvD"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{test-user-2}/friends/{test-user-1}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {test-user-2}","type":"OAuthException","code":803,"fbtrace_id":"GV2iACpQHl\/"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-user-id}/agencies
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-user-id}","type":"OAuthException","code":803,"fbtrace_id":"BRbud4jUlTs"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/services
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"EB5gQm7gXeW"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/television
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"D\/Yaou0ybVK"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/albums
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"FXZe385EF2g"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"E3D1eTQM0OT"}}
+Fail to return response
+https://graph.facebook.com/{canvas_text_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_text_id}","type":"OAuthException","code":803,"fbtrace_id":"CN0NGV1cduD"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_text_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_text_id}","type":"OAuthException","code":803,"fbtrace_id":"CKqdskGvJJu"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/attending
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"Aa0gHj8Uo9c"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/domains
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Hr8BHwV5M2F"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-action-type-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-action-type-id}","type":"OAuthException","code":803,"fbtrace_id":"BgsaxL6hy6v"}}
+Fail to return response
+https://graph.facebook.com/{page_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page_id}","type":"OAuthException","code":803,"fbtrace_id":"Cu4qJIN9Fc9"}}
+Fail to return response
+
+https://graph.facebook.com/{page_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page_id}","type":"OAuthException","code":803,"fbtrace_id":"Ey0ZdvO97o+"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{from.id}_{status-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {from.id}_{status-id}","type":"OAuthException","code":803,"fbtrace_id":"EVdBD\/rjKYA"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{from.id}_{status-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {from.id}_{status-id}","type":"OAuthException","code":803,"fbtrace_id":"GfarzKxToGr"}}
+Fail to return response
+https://graph.facebook.com/{canvas_header_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_header_id}","type":"OAuthException","code":803,"fbtrace_id":"BBsGtK40BsH"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_header_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_header_id}","type":"OAuthException","code":803,"fbtrace_id":"BWanMDvoVfQ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{friend-list-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {friend-list-id}","type":"OAuthException","code":803,"fbtrace_id":"F+joXLDjaey"}}
+Fail to return response
+https://graph.facebook.com/{page-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"HoV\/Zi66LFV"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{video-id}/crosspost_shared_pages
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"HermOV3P9uC"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-object-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-object-id}","type":"OAuthException","code":803,"fbtrace_id":"ChR6WFVZw3X"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/seasons
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"F75cQ7JA+e5"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"BS4OOtbIctZ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/show_playlists
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"CiOsZhW2CU\/"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{video-id}/sharedposts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"FEavv\/FI83A"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/files
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"Gyuqjeerr5w"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{photo-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo-id}","type":"OAuthException","code":803,"fbtrace_id":"HHhX7toi1tJ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/session_keys
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"F1oHwAaSekP"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/purchases
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"GxffpAJWB6+"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{achievement-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {achievement-id}","type":"OAuthException","code":803,"fbtrace_id":"H5AVztl4Ccv"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/docs
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"H5vRmdJJWZ6"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{photo-id}/tags
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo-id}","type":"OAuthException","code":803,"fbtrace_id":"CRvH\/QkpjxO"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{app-id}/groups
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"ACJ2L2PyAYK"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/groups
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"APtfMR+xU\/e"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/app_insights/{metric-name}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"FZ5aGL4AS4\/"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{life-event-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {life-event-id}","type":"OAuthException","code":803,"fbtrace_id":"C0F2DOCyuue"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{place-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {place-id}","type":"OAuthException","code":803,"fbtrace_id":"D0VtjbKAtL1"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/movies
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"ErwNLAGb349"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/permissions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"Hs7JUkQK7IN"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-request-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-request-id}","type":"OAuthException","code":803,"fbtrace_id":"BG2LCzE3UDU"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/objects
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"FdU9YD4\/gdt"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/tagged_places
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Bu1uIVVmxFj"}}
+Fail to return response
+
+https://graph.facebook.com/{live_video_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {live_video_id}","type":"OAuthException","code":803,"fbtrace_id":"GAzTBJ8tiIS"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{native-offer-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {native-offer-id}","type":"OAuthException","code":803,"fbtrace_id":"B7d3zYU9JFZ"}}
+Fail to return response
+https://graph.facebook.com/{page_label_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page_label_id}","type":"OAuthException","code":803,"fbtrace_id":"BMcNfohdL5R"}}
+Fail to return response
+
+https://graph.facebook.com/{page_label_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page_label_id}","type":"OAuthException","code":803,"fbtrace_id":"AEqMutvFp1u"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-carousel-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-carousel-id}","type":"OAuthException","code":803,"fbtrace_id":"CwiEvtk9VSH"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{media-fingerprint-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {media-fingerprint-id}","type":"OAuthException","code":803,"fbtrace_id":"HUHTzyc1+q9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/links
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"BMGqen1Hdgt"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/app_link_hosts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"CmPOsiUp9Ct"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"DJ78w0Ulbky"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-media-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-media-id}","type":"OAuthException","code":803,"fbtrace_id":"G11BIgD9PlP"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/sponsor_tags
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"Cubv\/nF4Qr+"}}
+Fail to return response
+https://graph.facebook.com/{media_fingerprint_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {media_fingerprint_id}","type":"OAuthException","code":803,"fbtrace_id":"FjswacnPRh5"}}
+Fail to return response
+
+https://graph.facebook.com/{media_fingerprint_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {media_fingerprint_id}","type":"OAuthException","code":803,"fbtrace_id":"GavnaubSVqq"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/friendrequests
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"GbF3LFhEcXK"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{event-id}/feed
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"BK+Dwpz9aVy"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/feed
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"H\/mcgOtrh15"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"AjrOdmjHiWw"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/connections
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"Asdc\/7L29SJ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{question-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {question-id}","type":"OAuthException","code":803,"fbtrace_id":"DUdaulmU70+"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/media_fingerprints
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"GOwQW0bT3Vr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/business_activities
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"BnQNKshBgpz"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{request-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {request-id}","type":"OAuthException","code":803,"fbtrace_id":"ArIjyX2zB\/l"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{request-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {request-id}","type":"OAuthException","code":803,"fbtrace_id":"GJINvRBmgQB"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/tagged
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"EtGkCjxdyx0"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-carousel-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-carousel-id}","type":"OAuthException","code":803,"fbtrace_id":"Cp7UoeA0iSk"}}
+Fail to return response
+https://graph.facebook.com/v2.4/me/inbox
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"HhbroDhd\/Ao"}}
+Fail to return response
+https://graph.facebook.com/{video_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_id}","type":"OAuthException","code":803,"fbtrace_id":"AnrNjbZ5Bwi"}}
+Fail to return response
+
+https://graph.facebook.com/{video_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_id}","type":"OAuthException","code":803,"fbtrace_id":"H9wJy\/a6Coh"}}
+Fail to return response
+https://graph.facebook.com/{canvas_store_locator_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_store_locator_id}","type":"OAuthException","code":803,"fbtrace_id":"AdCefZtJ1Gb"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_store_locator_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_store_locator_id}","type":"OAuthException","code":803,"fbtrace_id":"DeYFUrXw2MB"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{comment-id}/private_replies
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {comment-id}","type":"OAuthException","code":803,"fbtrace_id":"AhYf8Ne5lqS"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-text-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-text-id}","type":"OAuthException","code":803,"fbtrace_id":"BAEkV91Tv2P"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{crisis-listing-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {crisis-listing-id}","type":"OAuthException","code":803,"fbtrace_id":"H8tgU64Y\/ZT"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"DDirloFaVm4"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-link-host-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-link-host-id}","type":"OAuthException","code":803,"fbtrace_id":"GK6DL9yUEjS"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/live_videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Covs\/JiiqsD"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/staticresources
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"GkKwswaCaso"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-action-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-action-id}","type":"OAuthException","code":803,"fbtrace_id":"D0XKyoG5\/jp"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/object_types
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"GwvKw5dw7Sb"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/canvas_elements
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"D8DbtciICzh"}}
+Fail to return response
+
+https://graph.facebook.com/{rtb_dynamic_post_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {rtb_dynamic_post_id}","type":"OAuthException","code":803,"fbtrace_id":"AM+lLtb2uuA"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/agencies
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"HYrDzM4jEtr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/locations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"Hob47GmJ23P"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{page-id}/locations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"GC+Gaq1hIU3"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/locations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"C11\/ufEfL7m"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{place-tag-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {place-tag-id}","type":"OAuthException","code":803,"fbtrace_id":"AGLJ+P0BznJ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{saved-message-response-id}/macros
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {saved-message-response-id}","type":"OAuthException","code":803,"fbtrace_id":"A9PlC9F0rO9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/adnetworkanalytics
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"H+CQk72Vm1r"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/leadgen_conditional_questions_group
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"ExuIDyhuILi"}}
+Fail to return response
+https://graph.facebook.com/{instagram_comment_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram_comment_id}","type":"OAuthException","code":803,"fbtrace_id":"DHCZeJYMe6e"}}
+Fail to return response
+
+https://graph.facebook.com/{instagram_comment_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram_comment_id}","type":"OAuthException","code":803,"fbtrace_id":"ETWm6sQ+\/y7"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/insights
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"H1H086NgRun"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/leadgen_whitelisted_users
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"AnIlox5hmfX"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/roles
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"HPcsCaO3jUk"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/app_event_types
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"HcSQ40XOKFr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/invitable_friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"CwElp5eBkoP"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/apprequests
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"DdKFLadEUG3"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/scores
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"FvEoPLHcrwC"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/me/scores
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"AdB+CphzpTh"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/scores
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"CIz2eCnTaNV"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-user-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-user-id}","type":"OAuthException","code":803,"fbtrace_id":"CRUBDdTYZGr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/games
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"GKPYYZULluX"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/captions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"BAzLW2YcOQS"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/admins
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"Ft56CLo6Drf"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{group-id}/admins
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"ARo6Y3wzdRs"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/place_topics
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"BE\/3VQ2PgWr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-id}/reactions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"FlIyEMgFKn2"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{live-video-id}/reactions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {live-video-id}","type":"OAuthException","code":803,"fbtrace_id":"DJ\/8LQp0GQ\/"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/accounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"G3xsDtKY3L6"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{payment-id}/refunds
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {payment-id}","type":"OAuthException","code":803,"fbtrace_id":"BC4pb25u3gO"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/global_brand_children
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"Ftvjxfj913N"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{audience-insights-rule-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {audience-insights-rule-id}","type":"OAuthException","code":803,"fbtrace_id":"CaIgeeLKUWH"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/stream_filters
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"BceF\/wAG6E5"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/statuses
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"FgRCz8tuptc"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-footer-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-footer-id}","type":"OAuthException","code":803,"fbtrace_id":"BpAhvw8adjZ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/admins
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"EAgJJfFJnVj"}}
+Fail to return response
+https://graph.facebook.com/{user-id}/permissions/{permission-name}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"GYDOVahTTRX"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/authorized_adaccounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"BvuMxl7phgA"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/live_videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"HqjWxIwMrpk"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/product_catalogs
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"BbPsYORlae2"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/roles
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"FQpPiJSTrcl"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{app-id}/roles
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"Dad7B5IGGtG"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/roles
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"DCo\/HX+azTw"}}
+Fail to return response
+
+https://graph.facebook.com/{post-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {post-id}","type":"OAuthException","code":803,"fbtrace_id":"DPJ1pxeMIRA"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/family
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"FIanFhnW+7e"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{doc-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {doc-id}","type":"OAuthException","code":803,"fbtrace_id":"DToPzeuuMbb"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/notifications
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"H4N4MPzd5pz"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/me/albums
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"H6npMK3\/E9S"}}
+Fail to return response
+https://graph.facebook.com/{video_copyright_rule_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_copyright_rule_id}","type":"OAuthException","code":803,"fbtrace_id":"AdNbENz33V8"}}
+Fail to return response
+
+https://graph.facebook.com/{video_copyright_rule_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_copyright_rule_id}","type":"OAuthException","code":803,"fbtrace_id":"EKXJXTHkt5T"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{crisis-listing-id}/reactions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {crisis-listing-id}","type":"OAuthException","code":803,"fbtrace_id":"Dr5Xa+zVYKF"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"CdTqc6Q2\/Vk"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{group-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"DNaVMJ+upuk"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"CDIaK\/o3rEX"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {rtb-dynamic-post-id}","type":"OAuthException","code":803,"fbtrace_id":"GnCxLB0BouC"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/events
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"E2TdWqke\/v1"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}/instagram_comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {rtb-dynamic-post-id}","type":"OAuthException","code":803,"fbtrace_id":"EYJHBswkWQz"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/ad_studies
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"EsaACKtd07v"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{group-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"AyOIRfVLGQt"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"EOE57pUxR0G"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{photo-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo-id}","type":"OAuthException","code":803,"fbtrace_id":"Da7ce2Vd4Kc"}}
+Fail to return response
+https://graph.facebook.com/v2.9
+400
+{"error":{"message":"Unsupported get request. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"error_subcode":33,"fbtrace_id":"F\/GMCPvRVIF"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"FvZ+aeLsHHu"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{live-video-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {live-video-id}","type":"OAuthException","code":803,"fbtrace_id":"AFOcNT2EQW3"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/books
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"EHZarbMUuQe"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{conversation-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {conversation-id}","type":"OAuthException","code":803,"fbtrace_id":"BIQdw9vq4zH"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{object-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object-id}","type":"OAuthException","code":803,"fbtrace_id":"G\/H3CwJB38K"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{object-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object-id}","type":"OAuthException","code":803,"fbtrace_id":"FK1l4EVLLZj"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-action-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-action-id}","type":"OAuthException","code":803,"fbtrace_id":"Gdt8iauYsUp"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-video-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-video-id}","type":"OAuthException","code":803,"fbtrace_id":"Bp50aCdJjvn"}}
+Fail to return response
+https://graph.facebook.com/v2.2/{page-id}/roles/{user-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"DbEck7X8caS"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/taggable_friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"D8IWFY1iCgr"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/instagram_accounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"A4usubpAgJP"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/video_broadcasts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"GdZRwcyp5OH"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-user-id}/authorized_adaccounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-user-id}","type":"OAuthException","code":803,"fbtrace_id":"FSgygKKBeu5"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/locations
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"BEBYp74vJFr"}}
+Fail to return response
+https://graph.facebook.com/{object_id}/insights/{metric}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {object_id}","type":"OAuthException","code":803,"fbtrace_id":"AvZepWcL2zq"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-copyright-rule-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-copyright-rule-id}","type":"OAuthException","code":803,"fbtrace_id":"Bgsl\/pMeV0e"}}
+Fail to return response
+https://graph.facebook.com/{user-id}/photos/uploaded
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Gs54lPLkLVa"}}
+Fail to return response
+https://graph.facebook.com/{video_list_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_list_id}","type":"OAuthException","code":803,"fbtrace_id":"CK6svP00\/mX"}}
+Fail to return response
+
+https://graph.facebook.com/{video_list_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video_list_id}","type":"OAuthException","code":803,"fbtrace_id":"GDlmmqAK2Oi"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/home
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"ElX5v7A8UW5"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{conversation-id}/messages
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {conversation-id}","type":"OAuthException","code":803,"fbtrace_id":"DArz5adcpxz"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{conversation-id}/messages
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {conversation-id}","type":"OAuthException","code":803,"fbtrace_id":"GFiDaFuwgu+"}}
+Fail to return response
+https://graph.facebook.com/{canvas_button_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_button_id}","type":"OAuthException","code":803,"fbtrace_id":"CYeWRDGu\/As"}}
+Fail to return response
+
+https://graph.facebook.com/{canvas_button_id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas_button_id}","type":"OAuthException","code":803,"fbtrace_id":"CrwbPzjptAH"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/roles
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"CDW3Ew1V6Bt"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/ids_for_pages
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"EpAzlYzpRmh"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/payments_test_users
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"EbUHswjpDch"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/accounts/test-users
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"BkTsObNOYS+"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{app-id}/accounts/test-users
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"CEuWk3Gilt9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/accounts/test-users
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"H9fqQ5so156"}}
+Fail to return response
+https://graph.facebook.com/{video-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-id}","type":"OAuthException","code":803,"fbtrace_id":"AmCPUMrKITf"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{message-id}/shares
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {message-id}","type":"OAuthException","code":803,"fbtrace_id":"DRWBKMcUaSh"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/groups
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"E80n7YEKhgc"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{crisis-id}/community_help_categories
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {crisis-id}","type":"OAuthException","code":803,"fbtrace_id":"FF8lpbQJ2Yt"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{rtb-dynamic-post-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {rtb-dynamic-post-id}","type":"OAuthException","code":803,"fbtrace_id":"BCApFXa1L0o"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/appassets
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"AWet3gC8F1K"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{event-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"Cn7X2LfinVX"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"C718ffn9Dw\/"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/events
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"HyIrO2yvJyy"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/events
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"DgZWq8MuB7q"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{comment-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {comment-id}","type":"OAuthException","code":803,"fbtrace_id":"DbOe6MSgRkU"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{comment-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {comment-id}","type":"OAuthException","code":803,"fbtrace_id":"CdAS1vtO9r6"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{comment-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {comment-id}","type":"OAuthException","code":803,"fbtrace_id":"COzSSrVB0mW"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{saved-message-response-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {saved-message-response-id}","type":"OAuthException","code":803,"fbtrace_id":"Fe+rfN8McC8"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{achievement-type-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {achievement-type-id}","type":"OAuthException","code":803,"fbtrace_id":"E5oxUfHRi\/O"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{life-event-id}/sharedposts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {life-event-id}","type":"OAuthException","code":803,"fbtrace_id":"GssRsc9LMn\/"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{pages-platform-component-flow-service-config-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {pages-platform-component-flow-service-config-id}","type":"OAuthException","code":803,"fbtrace_id":"AJijydBIWZ+"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/achievements
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"Dv9IbT2ZtXc"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{app-id}/achievements
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"ApCg65TTHA0"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/achievements
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"CKx9Q\/NXk1O"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{education-experience-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {education-experience-id}","type":"OAuthException","code":803,"fbtrace_id":"F2CdPfykidN"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/conversations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"DceebgQcK2h"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/saved_message_responses
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"Gw9Wp+oBtlF"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"FNR4SdTkMVw"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/conversations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"DcQVwvN79lE"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-doc-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-doc-id}","type":"OAuthException","code":803,"fbtrace_id":"FWn0sftoYyE"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{message-id}/attachments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {message-id}","type":"OAuthException","code":803,"fbtrace_id":"BrdYFK3yGr4"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"CuR5YGUjxX+"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{video-list-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {video-list-id}","type":"OAuthException","code":803,"fbtrace_id":"FO3MaBewChJ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/promotable_events
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"B05od0hyj4k"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{payment-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {payment-id}","type":"OAuthException","code":803,"fbtrace_id":"DLKR0M0nHK8"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{life-event-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {life-event-id}","type":"OAuthException","code":803,"fbtrace_id":"BnbkhFudl0F"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-context-id}/friends_who_like
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-context-id}","type":"OAuthException","code":803,"fbtrace_id":"DQzkyLlszGb"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/direct_deals
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"C04v6ixRZ0O"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/products
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"Hv+TfaWJ9OO"}}
+Fail to return response
+
+https://graph.facebook.com/post
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: post","type":"OAuthException","code":803,"fbtrace_id":"E9i3q+cU+3W"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/admin_notes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"ENurlR6rybH"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/outbox
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"Ag3orrmg0bH"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{limited-friend-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {limited-friend-id}","type":"OAuthException","code":803,"fbtrace_id":"F7+5prMeijn"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/noreply
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"CIyTa8sDy\/r"}}
+Fail to return response
+https://graph.facebook.com/v2.5/{thread-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {thread-id}","type":"OAuthException","code":803,"fbtrace_id":"B3hweFQK\/n9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/insights_event_labels
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"BNRoic1Ujyk"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/video_copyright_rules
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"D2\/ntvYPPYT"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/video_lists
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"HX9JzyY8ub8"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/ozone_release
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"BURSNDtxthc"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{group-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"HGozNX75U10"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{life-event-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {life-event-id}","type":"OAuthException","code":803,"fbtrace_id":"FcPE2pG8s8F"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-context-id}/three_degree_mutual_friends
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-context-id}","type":"OAuthException","code":803,"fbtrace_id":"HawtRvvTlH5"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-context-id}/friends_using_app
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-context-id}","type":"OAuthException","code":803,"fbtrace_id":"AtOlra8QuY9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{mailing-address-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {mailing-address-id}","type":"OAuthException","code":803,"fbtrace_id":"DMJfZGIPDY6"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{photo-id}/sharedposts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo-id}","type":"OAuthException","code":803,"fbtrace_id":"BiccyPLB+M+"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{post-id}/reactions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {post-id}","type":"OAuthException","code":803,"fbtrace_id":"CGUqf4qjbBI"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/banned
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"C+s7IyIGX\/f"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-header-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-header-id}","type":"OAuthException","code":803,"fbtrace_id":"DGvnUwuLXE7"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/albums
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"BWaKwiZ8lOu"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{group-id}/feed
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"A7i69sKyv76"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{group-id}/feed
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {group-id}","type":"OAuthException","code":803,"fbtrace_id":"ExkZPN8uOfx"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{crisis-listing-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {crisis-listing-id}","type":"OAuthException","code":803,"fbtrace_id":"EGpfkF7ykBM"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{work-experience-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {work-experience-id}","type":"OAuthException","code":803,"fbtrace_id":"GOMik1EbFZg"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/permissions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"HvFuJvEyDt9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/groups/{group-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"GUF9M8o+6pu"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/live_videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"DrQgKH4Ye60"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/curated_collections
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"By8IEcw9CWX"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/milestones
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"H4bzbTncnQq"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{album-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {album-id}","type":"OAuthException","code":803,"fbtrace_id":"Ha+FfiNOweF"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{album-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {album-id}","type":"OAuthException","code":803,"fbtrace_id":"AedisJ7cx3G"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-links-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-links-id}","type":"OAuthException","code":803,"fbtrace_id":"CuQASPIbefx"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{message-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {message-id}","type":"OAuthException","code":803,"fbtrace_id":"Bqe0ZBjvEx7"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{thread-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {thread-id}","type":"OAuthException","code":803,"fbtrace_id":"F6s51fMXE+3"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/saved_filters
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"CdT30s4Tudm"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{page-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"Ah59t53Wlzd"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/photos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"HT++lCdlZP1"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/moods_for_application
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"AlzSbMEdhkO"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/maybe
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"B7xZyObEcwm"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-object-id}/reactions
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-object-id}","type":"OAuthException","code":803,"fbtrace_id":"CruMEEi5xqh"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/app_insights
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"HuKnNnR5via"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"CiFK021gL5H"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"HLIXCIml64i"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/objects
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"EKuaXwsRGAZ"}}
+Fail to return response
+https://graph.facebook.com/...
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: ...","type":"OAuthException","code":803,"fbtrace_id":"EHtnQz9yB2F"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"B7HDrX3f023"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-comment-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-comment-id}","type":"OAuthException","code":803,"fbtrace_id":"EICy9O+s4\/g"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-carousel-id}/instagram_comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-carousel-id}","type":"OAuthException","code":803,"fbtrace_id":"B+TYMP0FzIj"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{domain-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {domain-id}","type":"OAuthException","code":803,"fbtrace_id":"FHr2hQeRgsg"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/subscribed_apps
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"GyK9PTPM25s"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{album-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {album-id}","type":"OAuthException","code":803,"fbtrace_id":"Cc+lyzAUMGc"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-context-id}/mutual_likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-context-id}","type":"OAuthException","code":803,"fbtrace_id":"H1fKDEXuMNh"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{canvas-product-set-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {canvas-product-set-id}","type":"OAuthException","code":803,"fbtrace_id":"GbzhZos1ewE"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/apprequestformerrecipients
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"FAvDeNPxWRH"}}
+Fail to return response
+https://graph.facebook.com/{page-id}/photos/uploaded
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"AtkZXHxMCV9"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{place-topic-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {place-topic-id}","type":"OAuthException","code":803,"fbtrace_id":"DL5KU3NZNAU"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{crisis-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {crisis-id}","type":"OAuthException","code":803,"fbtrace_id":"G1geUDs6NCB"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{photo-id}/insights
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {photo-id}","type":"OAuthException","code":803,"fbtrace_id":"H9b9kOnZHxd"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{life-event-id}/comments
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {life-event-id}","type":"OAuthException","code":803,"fbtrace_id":"FN5qbIsXFPL"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{open-graph-context-id}/friends_tagged_at
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {open-graph-context-id}","type":"OAuthException","code":803,"fbtrace_id":"Fk00I65P7\/P"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{payment-id}/dispute
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {payment-id}","type":"OAuthException","code":803,"fbtrace_id":"HsQd\/mmx\/rJ"}}
+Fail to return response
+https://graph.facebook.com/v2.9/debug_token
+400
+{"error":{"message":"Unsupported put request. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"error_subcode":33,"fbtrace_id":"FSpx+EU+jlK"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{application-id}/custom_audience_third_party_id
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {application-id}","type":"OAuthException","code":803,"fbtrace_id":"DzM\/ruKY+54"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/picture
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"D7IO0M5Zzeo"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/translations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"EelIOgSmS4T"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{app-id}/translations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"DbfYU3dXPiS"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{app-id}/translations
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {app-id}","type":"OAuthException","code":803,"fbtrace_id":"Elc5o17W38P"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/request_history
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"BeVQkcfOh+0"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{instagram-media-id}/instagram_usertags
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {instagram-media-id}","type":"OAuthException","code":803,"fbtrace_id":"B34eBnxtwoV"}}
+Fail to return response
+
+https://graph.facebook.com/v2.9/{post-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {post-id}","type":"OAuthException","code":803,"fbtrace_id":"BhYlTUJpLEp"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/interested
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"EkMJfIZkJ3p"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{promotion-info-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {promotion-info-id}","type":"OAuthException","code":803,"fbtrace_id":"HxwVMPrr663"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{crisis-listing-id}/likes
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {crisis-listing-id}","type":"OAuthException","code":803,"fbtrace_id":"Dc9HC4S3bCn"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{event-id}/declined
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {event-id}","type":"OAuthException","code":803,"fbtrace_id":"C1uLi9Fyssw"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/videos
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"DrHBUimQywB"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-admin-note-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-admin-note-id}","type":"OAuthException","code":803,"fbtrace_id":"GjHvpMI46Z8"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/achievements
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"Bd7i65CMAPC"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{user-id}/personal_ad_accounts
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {user-id}","type":"OAuthException","code":803,"fbtrace_id":"A21vlbHhMGw"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/screennames
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"DRB2SDy1GrH"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-label-id}
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-label-id}","type":"OAuthException","code":803,"fbtrace_id":"EvKQ6aRkD6X"}}
+Fail to return response
+https://graph.facebook.com/v2.9/{page-id}/labels
+404
+{"error":{"message":"(#803) Some of the aliases you requested do not exist: {page-id}","type":"OAuthException","code":803,"fbtrace_id":"FZ23VC9vgpk"}}
+Fail to return response
+https://graph.facebook.com/v2.9/me/inbox
+400
+{"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"Gfj0PdKHCqz"}}
+Fail to return response
+{}

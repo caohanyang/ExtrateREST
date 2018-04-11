@@ -1,0 +1,483 @@
+[
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}/examples/{text}",
+      "url": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples/Good%20afternoon?version=2017-05-26\"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}/examples/{text}",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Hello there!\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples/hi%20there?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-02-20T19:00:03.160Z\",\"text\":\"Hellothere!\",\"updated\":\"2017-02-21T20:06:54.552Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}/examples/{text}",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples/Good%20afternoon?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-02-21T18:51:41.785Z\",\"text\":\"Goodafternoon\",\"updated\":\"2017-02-21T18:51:41.785Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"entity\\\": \\\"beverage\\\",\\\"values\\\":[{\\\"value\\\":\\\"water\\\"},{\\\"value\\\":\\\"orange juice\\\"},{\\\"value\\\":\\\"soda\\\"}]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-04-12T15:10:34.037Z\",\"updated\":\"2017-04-12T15:10:34.037Z\",\"entity\":\"beverage\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"pagination\":{\"refresh_url\":\"/v1/workspaces/bec28d8f-18c1-4e97-8d08-9c842c658b51/entities?version=2017-05-26\"},\"entities\":[{\"created\":\"2017-04-10T14:36:49.177Z\",\"updated\":\"2017-04-10T14:36:49.177Z\",\"entity\":\"animal\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/counterexamples",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Make me a sandwich\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-03-07T20:13:33.850Z\",\"text\":\"Makemeasandwich\",\"updated\":\"2017-03-07T20:13:33.850Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/counterexamples",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-03-07T19:02:33.513Z\",\"text\":\"Whatareyouwearing?\",\"updated\":\"2017-03-07T19:02:33.513Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}/synonyms",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"synonym\\\":\\\"OJ\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"synonym\":\"OJ\",\"created\":\"2017-04-12T15:02:29.188Z\",\"updated\":\"2017-04-12T15:02:29.188Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}/synonyms",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/soda/synonyms?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"pagination\":{\"refresh_url\":\"/v1/workspaces/bec28d8f-18c1-4e97-8d08-9c842c658b51/entities/beverage/values/soda/synonyms?version=2017-05-26\"},\"synonyms\":[{\"synonym\":\"pop\",\"created\":\"2017-04-12T14:58:09.029Z\",\"updated\":\"2017-04-12T14:58:09.029Z\"},{\"synonym\":\"softdrink\",\"created\":\"2017-04-12T14:58:09.029Z\",\"updated\":\"2017-04-12T14:58:09.029Z\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"intent\\\":\\\"hello\\\",\\\"examples\\\":[{\\\"text\\\":\\\"Good morning\\\"},{\\\"text\\\":\\\"Hi there\\\"}]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-02-16T18:36:31.809Z\",\"intent\":\"hello\",\"updated\":\"2017-02-16T18:36:31.809Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents?version=2017-05-26&export=true\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"intents\":[{\"examples\":[{\"created\":\"2017-02-02T21:04:26.049Z\",\"text\":\"goodmorning\",\"updated\":\"2017-02-02T21:04:26.049Z\"},{\"created\":\"2017-02-02T21:04:26.049Z\",\"text\":\"hello\",\"updated\":\"2017-02-02T21:04:26.049Z\"}],\"created\":\"2017-02-02T21:04:26.049Z\",\"intent\":\"hello\",\"updated\":\"2017-02-02T21:04:26.049Z\"}],\"pagination\":{\"refresh_url\":\"/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents?version=2017-05-26&export=true\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}",
+      "url": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage?version=2017-05-26\"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"description\\\":\\\"Liquid refreshment\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-04-12T14:51:52.508Z\",\"description\":\"Liquidrefreshment\",\"updated\":\"2017-04-12T14:53:38.687Z\",\"entity\":\"beverage\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-04-12T15:12:48.445Z\",\"updated\":\"2017-04-12T15:12:48.445Z\",\"entity\":\"beverage\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}/synonyms/{synonym}",
+      "url": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms/OJ?version=2017-05-26\"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}/synonyms/{synonym}",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"synonym\\\":\\\"O.J.\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms/OJ?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"synonym\":\"O.J.\",\"created\":\"2017-04-12T15:05:45.662Z\",\"updated\":\"2017-04-12T15:06:50.408Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}/synonyms/{synonym}",
+      "url": "@curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice/synonyms/OJ?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"synonym\":\"OJ\",\"created\":\"2017-04-12T15:05:45.662Z\",\"updated\":\"2017-04-12T15:05:45.662Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"name\\\":\\\"API test\\\",\\\"intents\\\":[],\\\"entities\\\":[],\\\"language\\\":\\\"en\\\",\\\"description\\\":\\\"Example workspace created via API.\\\",\\\"dialog_nodes\\\":[]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"workspace_id\":\"245edf96-b89f-46ac-b647-c6618b2eb5f0\",\"created\":\"2017-01-31T18:02:19.070Z\",\"name\":\"APItest\",\"description\":\"ExampleworkspacecreatedviaAPI.\",\"language\":\"en\",\"updated\":\"2017-01-31T18:02:19.070Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"pagination\":{\"refresh_url\":\"/v1/workspaces?version=2017-05-26\"},\"workspaces\":[{\"workspace_id\":\"0a0c06c1-8e31-4655-9067-58fcac5134fc\",\"metadata\":{\"runtime_version\":\"2017-05-26\"},\"created\":\"2016-07-13T12:26:55.781Z\",\"name\":\"Car_Dashboard\",\"description\":\"CognitiveCarworkspacewhichallowsmulti-turnconversationstoperformtasksinthecar.\",\"language\":\"en\",\"updated\":\"2016-11-29T21:46:38.969Z\"},{\"workspace_id\":\"e42c8e5c-eb34-4b65-99f0-59f9329b66ec\",\"metadata\":{\"runtime_version\":\"2017-05-26\"},\"created\":\"2016-09-01T21:20:26.514Z\",\"name\":\"testing\",\"language\":\"en\",\"updated\":\"2016-11-29T21:46:38.969Z\"},{\"workspace_id\":\"293b58fc-3c5b-4ac5-a8f4-8d52c393d875\",\"metadata\":{\"runtime_version\":\"2017-05-26\"},\"created\":\"2016-07-11T17:06:57.089Z\",\"name\":\"workspace-example\",\"description\":\"Exampleworkspacetotryouttheservice\",\"language\":\"en\",\"updated\":\"2016-11-29T21:46:38.969Z\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}/examples",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Howdy!\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-02-20T21:19:42.210Z\",\"text\":\"Howdy!\",\"updated\":\"2017-02-20T21:19:42.210Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}/examples",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples?version=2017-05-26&export=true\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"pagination\":{\"refresh_url\":\"/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello/examples?version=2017-05-26&export=true\"},\"examples\":[{\"created\":\"2017-02-16T22:41:45.400Z\",\"text\":\"Goodafternoon\",\"updated\":\"2017-02-16T22:41:45.400Z\"},{\"created\":\"2017-02-20T19:00:03.160Z\",\"text\":\"hithere\",\"updated\":\"2017-02-20T19:00:03.160Z\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"value\\\":\\\"beer\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-03-22T16:31:05.199Z\",\"value\":\"beer\",\"updated\":\"2017-03-22T16:31:05.199Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"pagination\":{\"refresh_url\":\"/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values?version=2017-05-26\"},\"values\":[{\"created\":\"2017-03-22T15:01:30.947Z\",\"value\":\"orangejuice\",\"updated\":\"2017-03-22T15:01:30.947Z\"},{\"created\":\"2017-03-22T15:01:30.947Z\",\"value\":\"soda\",\"updated\":\"2017-03-22T15:01:30.947Z\"},{\"created\":\"2017-03-22T15:01:30.947Z\",\"value\":\"water\",\"updated\":\"2017-03-22T15:01:30.947Z\"}]}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/counterexamples/{text}",
+      "url": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples/Make%20me%20a%20sandwich?version=2017-05-26\"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/counterexamples/{text}",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"text\\\":\\\"Make me a cheeseburger!\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples/Make%20me%20a%20sandwich?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-03-07T20:36:48.681Z\",\"text\":\"Makemeacheeseburger!\",\"updated\":\"2017-03-07T21:09:46.047Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/counterexamples/{text}",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/counterexamples/What%20are%20you%20wearing%3F?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/message",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"output\":{\"log_messages\":[],\"text\":[\"Ok.Turningonthelight.\"],\"nodes_visited\":[\"node_1_1467221909631\",\"node_2_1467232480480\"]},\"input\":{\"text\":\"Turnonthelights\"},\"intents\":[{\"confidence\":0.99,\"intent\":\"turn_on\"}],\"entities\":[{\"confidence\":1,\"location\":[12,18],\"value\":\"light\",\"entity\":\"appliance\"}],\"context\":{\"defaultCounter\":0,\"system\":{\"dialog_request_counter\":2,\"dialog_stack\":[{\"dialog_node\":\"root\"}],\"dialog_turn_counter\":2},\"conversation_id\":\"f1ab5f76-f41b-47b4-a8dc-e1c32b925b79\"}}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}",
+      "url": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice?version=2017-05-26\"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"synonyms\\\":[\\\"pop\\\",\\\"soft drink\\\"]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/soda?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-03-23T15:13:58.834Z\",\"value\":\"soda\",\"updated\":\"2017-03-23T15:13:58.834Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/entities/{entity}/values/{value}",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/entities/beverage/values/orange%20juice?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-03-22T19:30:04.856Z\",\"value\":\"orangejuice\",\"updated\":\"2017-03-22T19:30:04.856Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/logs",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/test/examples?version=2017-05-26&page_limit=10&sort=-modified\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "\"{...\\\"pagination\\\":{\\\"refresh_url\\\":\\\"/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/test/examples?page_limit=10&sort=-modified&version=2017-05-26\\\",\\\"next_url\\\":\\\"/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/test/examples?cursor=eyJtb2RpZmllZCI6eyJ2YWx1ZSI6IjIwMTctMDMtMDNUMjE6MTg6MjMuOTI0WiIsIm9yZGVyIjoiZGVzYyJ9LCJ0ZXh0Ijp7InZhbHVlIjoibmluZXRlZW4iLCJvcmRlciI6ImFzYyIsInRpZV9icmVha2VyIjp0cnVlfX0=&page_limit=10&sort=-modified&version=2017-05-26\\\"}}\""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}",
+      "url": "curl -X DELETE -u \"{username}\":\"{password}\" --header \"Accept: text/html\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/394927d3-bf81-40d8-8cb5-368a13f60fee?version=2017-05-26\"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"name\\\":\\\"API test\\\",\\\"intents\\\":[],\\\"entities\\\":[],\\\"language\\\":\\\"en\\\",\\\"description\\\":\\\"Example workspace updated via API.\\\",\\\"dialog_nodes\\\":[]}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/394927d3-bf81-40d8-8cb5-368a13f60fee?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"workspace_id\":\"394927d3-bf81-40d8-8cb5-368a13f60fee\",\"created\":\"2017-02-01T15:28:10.145Z\",\"name\":\"APItest\",\"description\":\"ExampleworkspaceupdatedviaAPI.\",\"language\":\"en\",\"updated\":\"2017-02-01T21:49:32.690Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/394927d3-bf81-40d8-8cb5-368a13f60fee?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"workspace_id\":\"394927d3-bf81-40d8-8cb5-368a13f60fee\",\"created\":\"2017-02-01T15:28:10.145Z\",\"name\":\"APItest\",\"description\":\"Exampleworkspace.\",\"language\":\"en\",\"updated\":\"2017-02-01T15:28:10.145Z\",\"status\":\"Available\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}",
+      "url": "curl -X DELETE -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello?version=2017-05-26\"",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}",
+      "url": "curl -H \"Content-Type: application/json\" -X POST -u \"{username}\":\"{password}\" -d \"{\\\"intent\\\":\\\"hello\\\",\\\"examples\\\":[{\\\"text\\\":\\\"Good afternoon\\\"}],\\\"description\\\":\\\"Updated intent\\\"}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello?version=2017-05-26\"",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-02-16T22:08:13.352Z\",\"description\":\"Updatedintent\",\"intent\":\"hello\",\"updated\":\"2017-02-16T22:41:45.400Z\"}"
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://gateway.watsonplatform.net/workspaces/{workspace_id}/intents/{intent}",
+      "url": "curl -u \"{username}\":\"{password}\" \"https://gateway.watsonplatform.net/conversation/api/v1/workspaces/9978a49e-ea89-4493-b33d-82298d3db20d/intents/hello?version=2017-05-26\"",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": "{\"created\":\"2017-02-16T22:08:13.352Z\",\"intent\":\"hello\",\"updated\":\"2017-02-16T22:08:13.352Z\"}"
+    }
+  }
+]

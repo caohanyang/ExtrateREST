@@ -171,6 +171,7 @@ public class ExtractInformation {
 		genInfoJsonTag(doc, processMe, strAll, infoJson, annoH1);
 		// 2.2 generate info json based on the code tag
 		genInfoJsonTag(doc, processMe, strAll, infoJson, annoCode);
+		
 
 		Out.prln("---------INFO JSON-------");
 		Out.prln(infoJson.toString());
@@ -192,6 +193,9 @@ public class ExtractInformation {
 				if (anno.getType().equals("h1")) {
 
 					urlString = "?method=" + urlText;
+					if (API_NAME.equals("aws")) {
+						urlString = "?Operation=" + urlText;
+					}
 					actionStr = processMe.findAction(urlString);
 				} else if (anno.getType().equals("code")) {
 					urlString = urlText.split(" ")[1];
@@ -442,6 +446,11 @@ public class ExtractInformation {
 				sectionJson.put("action", new JSONObject().put(processMe.findAction(urlString), uLocation));
 			} 
 			
+			if (API_NAME.contains("ebay")) {
+				if (processMe.isSanboxUrl(urlString)) {
+					continue;
+				}
+			}
 			// Write into openAPI
 			// After matching table, we write url/action into openAPI
 			infoJson.add(sectionJson);
@@ -459,6 +468,7 @@ public class ExtractInformation {
 		urlString = processMe.compressUrl(urlString);
 		Out.prln("==========URL ADDRESS============");
 		Out.prln(urlString);
+
 		JSONObject urJson = new JSONObject();
 		urJson.put(urlString, uLocation);
 		sectionJson.put("url", urJson);

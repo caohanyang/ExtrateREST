@@ -1,10 +1,9 @@
 {
-  "basePath": "/gp/cart/aws-merge.html",
   "paths": {},
   "produces": "application/json",
-  "host": "www.amazon.com",
+  "host": "webservices.amazon.c",
   "schemes": [
-    "https"
+    "http"
   ],
   "swagger": "2.0",
   "info": "This is the information of the API"

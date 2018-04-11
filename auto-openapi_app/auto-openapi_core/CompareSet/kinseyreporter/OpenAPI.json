@@ -1,0 +1,266 @@
+{
+  "basePath": "/API",
+  "paths": {
+    "/detail/report/989": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "report_id": 989,
+              "location": {
+                "country": "US",
+                "city": "NewYork",
+                "state": "NewYork"
+              },
+              "timestamp": "2012-09-0512:00:00",
+              "tags": [
+                {
+                  "text": "youngvictim",
+                  "id": 73
+                },
+                {
+                  "text": "middleagedaggressor",
+                  "id": 78
+                },
+                {
+                  "text": "maleaggressor",
+                  "id": 67
+                },
+                {
+                  "text": "malevictim",
+                  "id": 64
+                },
+                {
+                  "text": "singleaggressor",
+                  "id": 70
+                },
+                {
+                  "text": "verbalsexualharassment",
+                  "id": 81
+                },
+                {
+                  "text": "bodytouching",
+                  "id": 82
+                },
+                {
+                  "text": "otherunwantedbehaviors",
+                  "id": 278
+                },
+                {
+                  "text": "unwantedbehaviornotreported",
+                  "id": 90
+                },
+                {
+                  "text": "unwantedpublicexperience",
+                  "id": 87
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/detail/tag/male%20victim": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "question": {
+                "text": "Victimgender",
+                "id": 9
+              },
+              "survey": {
+                "text": "UnwantedExperience",
+                "id": 2
+              },
+              "tag": {
+                "text": "malevictim",
+                "id": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "/list/surveys": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "surveys": [
+                {
+                  "text": "UnwantedExperience",
+                  "id": 2
+                },
+                {
+                  "text": "FemaleHormonalBirthControlUseandEffects",
+                  "id": 7
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/detail/question/46": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "question": {
+                "multiple_answer": true,
+                "description": "Pickalltagsthatapply.",
+                "text": "Victimgender",
+                "id": 9
+              },
+              "survey": {
+                "text": "UnwantedExperience",
+                "id": 2
+              },
+              "tags": [
+                {
+                  "text": "malevictim",
+                  "id": 64
+                },
+                {
+                  "text": "femalevictim",
+                  "id": 65
+                },
+                {
+                  "text": "transgendervictim",
+                  "id": 66
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/detail/survey/Unwanted%20Experience": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "questions": [
+                {
+                  "text": "Victimgender",
+                  "id": 9
+                },
+                {
+                  "text": "Aggressorgender",
+                  "id": 10
+                },
+                {
+                  "text": "Aggressornumber",
+                  "id": 11
+                },
+                {
+                  "text": "Victimage",
+                  "id": 12
+                },
+                {
+                  "text": "Aggressorage",
+                  "id": 13
+                },
+                {
+                  "text": "Unwantedbehaviors",
+                  "id": 14
+                },
+                {
+                  "text": "Setting",
+                  "id": 15
+                },
+                {
+                  "text": "Reportingtoauthority",
+                  "id": 16
+                },
+                {
+                  "text": "Aggressorrelationship",
+                  "id": 49
+                },
+                {
+                  "text": "Physicalinjury",
+                  "id": 50
+                }
+              ],
+              "survey": {
+                "end_date": "2050-12-3112:00:00",
+                "text": "UnwantedExperience",
+                "id": 2,
+                "start_date": "2012-05-3112:00:00"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/list/reports": {
+      "GET": {
+        "responses": {
+          "200": {
+            "description": "correct response",
+            "example": {
+              "reports": [
+                {
+                  "report_id": 51,
+                  "location": {
+                    "country": "IT",
+                    "lon": 11.2186,
+                    "state": "Emilia-Romagna",
+                    "lat": 44.5968
+                  },
+                  "timestamp": "2012-07-2013:10:17"
+                },
+                {
+                  "report_id": 358,
+                  "location": {
+                    "country": "IT",
+                    "city": "Porlezza",
+                    "lon": 9.1182,
+                    "state": "Lombardy",
+                    "lat": 46.0352
+                  },
+                  "timestamp": "2012-08-2112:00:00"
+                },
+                {
+                  "report_id": 768,
+                  "location": {
+                    "country": "US",
+                    "city": "Lexington",
+                    "lon": -84.5037,
+                    "state": "Kentucky",
+                    "lat": 38.0406
+                  },
+                  "timestamp": "2012-09-0300:00:00"
+                }
+              ],
+              "search_params": [
+                {
+                  "tag": {
+                    "text": "malevictim",
+                    "id": 64
+                  }
+                },
+                {
+                  "from": "2012-06-02"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "produces": "application/json",
+  "host": "kinseyreporter.org",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}

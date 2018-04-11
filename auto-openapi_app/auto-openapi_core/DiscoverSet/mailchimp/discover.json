@@ -1,0 +1,3265 @@
+[
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/domain-performance",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/domain-performance' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/variants",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001/variants' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"PROD001C\", \"title\" : \"Freddie'\\''s Jokes Volume 3\", \"sku\" : \"Jokes001C\", \"price\" : \"5\", \"inventory_quantity\" : 50, \"image_url\" : \"https://static.mailchimp.com/web/brand-assets/Freddie_wink.png\", \"backorders\" : \"1\", \"visibility\" : \"visible\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/variants",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001/variants' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\": \"PROD001\", \"title\": \"Freddie'\\''s Jokes\", \"handle\": \"freddie_jokes\", \"url\": \"freddiesjokes.com\", \"description\": \"A collection of Freddie'\\''s favorite jokes.\", \"type\": \"Book\", \"vendor\": \"MailChimp\", \"image_url\": \"https://static.mailchimp.com/web/brand-assets/Freddie_OG.png\", \"variants\": [{\"id\": \"PROD001A\", \"title\": \"Freddie'\\''s Jokes Volume 1\", \"url\": \"\", \"sku\": \"Jokes001A\", \"price\": 5, \"inventory_quantity\": 100, \"image_url\": \"https://static.mailchimp.com/web/brand-assets/Freddie_wink.png\", \"backorders\": \"0\", \"visibility\": \"visible\", \"created_at\": \"2016-02-08T13:06:44+00:00\", \"updated_at\": \"2016-02-08T13:06:44+00:00\"},{ \"id\": \"PROD001B\", \"title\": \"Freddie'\\''s Jokes Volume 2\", \"url\": \"\", \"sku\": \"Jokes002\", \"price\": 5, \"inventory_quantity\": 99, \"image_url\": \"https://static.mailchimp.com/web/brand-assets/bro_freddie.png\", \"backorders\": \"0\", \"visibility\": \"true\", \"created_at\": \"2016-02-08T22:14:37+00:00\", \"updated_at\": \"2016-02-08T22:22:38+00:00\"}]}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/clients",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/clients' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/search-campaigns",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/search-campaigns?query=sale&snip_start=<strong>&snip_end=</strong>' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/template-folders Create a template folder",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/folders",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/folders' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"Discarded Jokes\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/folders",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/folders' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batch-webhooks/{batch_webhook_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batch-webhooks/{batch_webhook_id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batch-webhooks/{batch_webhook_id}",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/segments' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"The jokes that didn'\\''t quite make it.\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/segments' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\":\"MC001\", \"list_id\" : \"205d96e6b4\", \"name\" : \"Freddie'\\''s Merchandise\", \"domain\" : \"freddiesjokes.com\", \"email_address\" : \"store@freddiesjokes.com\", \"currency_code\" : \"USD\", \"primary-locale\" : \"us\", \"timezone\" : \"Eastern\", \"address\" : {\"address1\" : \"675 Ponce de Leon Ave NE\", \"address2\" : \"Suite 5000\", \"city\" : \"Atlanta, GA 30308\"}}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batches Start a batch operation",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ping Ping the API",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/locations",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/unschedule",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/b03bfc273a/actions/unschedule' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/resume",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/c9ce47c75d/actions/resume' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/connected-sites",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/connected-sites",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/sent-to",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/sent-to' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batch-webhooks Get a list of all webhooks configured for batches",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batches Get a list of batch requests",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates/{template_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/templates/2000094' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates/{template_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/templates/2000094' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates/{template_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/templates/265057' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"This is an updated Template name\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/customers",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/customers' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"cust0001\", \"email_address\" : \"freddie@freddiesjokes.com\", \"opt_in_status\" : true, \"company\" : \"MailChimp\", \"first_name\" : \"Freddie\", \"last_name\" : \"Von Chimpenheimer\", \"orders_count\" : 1, \"total_spent\" : 10.25, \"address\" : {\"address1\" : \"675 Ponce de Leon Ave NE\", \"address2\" : \"Suite 5000\", \"city\" : \"Atlanta\", \"province\" : \"GA\", \"province_code\" : \"30033\", \"country_code\" : \"\"}}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/customers",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/customers' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/abuse-reports/{report_id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/actions/pause-all-emails",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/actions/pause-all-emails' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord0001' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord0001' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord0001/lines/L002' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\":\"L002\", \"product_id\":\"PROD001\", \"product_variant_id\":\"PROD001B\", \"quantity\":2,\"price\":\"10\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/growth-history/{month}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/growth-history/2015-09' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/google-analytics",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists Get information about all lists",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/abuse-reports",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/1a2df69511/abuse-reports' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/sent-to/{subscriber_hash}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/sent-to/62eeb292278cc15f5817cb78f7790b08' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/automations' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/files",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/files' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\": \"test.txt\", \"file_data\": \"VGhpcyBpcyBhbiBleGFtcGxlIGxpbmUgb2YgdGV4dC4=\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/files",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/files' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}/interests",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories/a1e9f4b7f6/interests/a1e9f4b7f6/interests' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"Wait, I'\\''ve got something stuck in my teeth.\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}/interests",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories/a1e9f4b7f6/interests' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}/members/{subscriber_hash}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/segments/457/members/06f12badc3b5fffc57576822131ded7c' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/webhooks/{webhook_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/webhooks/37b9c73a88' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/webhooks/{webhook_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/webhooks/37b9c73a88' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/webhooks/{webhook_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/lists/3da7c56ccb/webhooks/8de72ada47' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"events\" : {\"subscribe\" : true, \"unsubscribe\" : true, \"profile\" : false, \"cleaned\" : false, \"upemail\" : false, \"campaign\" : true}, \"sources\" : {\"user\" : false, \"admin\" : true, \"api\" : true}}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/connected-sites/{connected_site_id}/actions/verify-script-installation",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/signup-forms",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/signup-forms' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"header\": {\"image_url\": \"https://static.mailchimp.com/web/brand-assets/mc_freddie_color_web.png\", \"text\": \"Freddie'\\''s Favorite Jokes\", \"image_link\": \"http://freddiesjokes.com/\", \"image_align\": \"center\"}, \"contents\": [{\"section\": \"signup_message\", \"value\": \"You'\\''ve subscribed to Freddie'\\''s Joke of the Day!\"}, {\"section\": \"unsub_message\", \"value\": \"You'\\''ve unsubscribed from Freddie'\\''s Joke of the Day.\"}, {\"section\": \"signup_thank_you_title\", \"value\": \"Thanks for signing up!\"}]}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/signup-forms",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/signup-forms' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists Create a new list",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}/lines/{line_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord0006/lines/L002' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}/lines/{line_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord0001/lines/L001' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}/lines/{line_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord05/lines/123abc' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\": \"ORD005\", \"product_id\": \"PROD001\", \"product_title\": \"Freddie'\\''s Jokes\", \"product_variant_id\": \"PROD001B\", \"product_variant_title\": \"Freddie'\\''s Jokes Volume 2\", \"quantity\": 2, \"price\": 1.25}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/orders",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates Create a new template",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}/goals",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/62eeb292278cc15f5817cb78f7790b08/goals' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"email_address\":\"urist.mcvankab+3@freddiesjokes.com\", \"status\":\"subscribed\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails/{workflow_email_id}/actions/pause",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/emails/491fec26f1/actions/pause' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaign-folders Create campaign folder",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/3e06f4ec92' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"recipients\":{\"list_id\":\"3c307a9f3f\"},\"type\":\"regular\",\"settings\":{\"subject_line\":\"This is an updated subject line\",\"reply_to\":\"orders@mammothhouse.com\",\"from_name\":\"Customer Service\"}}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}/interests/{interest_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories/a1e9f4b7f6/interests/9112523ad7' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}/interests/{interest_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories/a1e9f4b7f6/interests/a1e9f4b7f6/interests/9112523ad7' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}/interests/{interest_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories/a1e9f4b7f6/interests/9112523ad7' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"Wait, I'\\''ve got something stuck in my teeth.\", \"display_order\": 4}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batch-webhooks Configure a webhook for batches",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/sub-reports",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/e6a3f74d09/sub-reports' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/conversations/{conversation_id}/messages/{message_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/conversations/fa8c387539/messages/d7cd9cd4b8' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/unsubscribed",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/8d6f39ce45/unsubscribed' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaign-folders",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaign-folders' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\": \"The name of the folder\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaign-folders",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaign-folders' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/merge-fields/{merge_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/merge-fields/3' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/merge-fields/{merge_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/merge-fields/3' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/merge-fields/{merge_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/merge-fields/3' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"FAVORITEHAT\", \"type\":\"text\", \"required\":true}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaign-folders Get all campaign folders",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/authorized-apps Link your application",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}/lines/{line_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001/lines/line002' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}/lines/{line_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001/lines/line002' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}/lines/{line_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001/lines/line002' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"product_id\" : \"PROD001\", \"product_variant_id\" : \"PROD001B\", \"quantity\" : 2, \"price\": \"10\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batches/{batch_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batches/{batch_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/batches/8b2428d747' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/advice",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/3.0/reports/42694e9e57/advice' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/authorized-apps",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/authorized-apps",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/authorized-apps' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/connected-sites Create a new connected site",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/authorized-apps Get a list of authorized apps",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/templates' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"Test Template\",\"html\":\"<!DOCTYPE html PUBLIC \\\"-\\/\\/W3C\\/\\/DTD XHTML 1.0 Transitional\\/\\/EN\\\" \\\"http:\\/\\/www.w3.org\\/TR\\/xhtml1\\/DTD\\/xhtml1-transitional.dtd\\\">\\n<html>\\n <head>\\n <meta http-equiv=\\\"Content-Type\\\" content=\\\"text\\/html; charset=UTF-8\\\">\\n \\n <meta property=\\\"og:title\\\" content=\\\"*|MC:SUBJECT|*\\\">\\n \\n <title>*|MC:SUBJECT|*<\\/title>\\n\\t\\t\\n\\t<style type=\\\"text\\/css\\\">\\n\\t\\t#outlook a{\\n\\t\\t\\tpadding:0;\\n\\t\\t}\\n\\t\\tbody{\\n\\t\\t\\twidth:100% !important;\\n\\t\\t}\\n\\t\\tbody{\\n\\t\\t\\t-webkit-text-size-adjust:none;\\n\\t\\t}\\n\\t\\tbody{\\n\\t\\t\\tmargin:0;\\n\\t\\t\\tpadding:0;\\n\\t\\t}\\n\\t\\timg{\\n\\t\\t\\tborder:none;\\n\\t\\t\\tfont-size:14px;\\n\\t\\t\\tfont-weight:bold;\\n\\t\\t\\theight:auto;\\n\\t\\t\\tline-height:100%;\\n\\t\\t\\toutline:none;\\n\\t\\t\\ttext-decoration:none;\\n\\t\\t\\ttext-transform:capitalize;\\n\\t\\t}\\n\\t\\t#backgroundTable{\\n\\t\\t\\theight:100% !important;\\n\\t\\t\\tmargin:0;\\n\\t\\t\\tpadding:0;\\n\\t\\t\\twidth:100% !important;\\n\\t\\t}\\n\\t\\tbody,.backgroundTable{\\n\\t\\t\\tbackground-color:#FAFAFA;\\n\\t\\t}\\n\\t\\t#templateContainer{\\n\\t\\t\\tborder:1px solid #DDDDDD;\\n\\t\\t}\\n\\t\\th1,.h1{\\n\\t\\t\\tcolor:#202020;\\n\\t\\t\\tdisplay:block;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:34px;\\n\\t\\t\\tfont-weight:bold;\\n\\t\\t\\tline-height:100%;\\n\\t\\t\\tmargin-bottom:10px;\\n\\t\\t\\ttext-align:left;\\n\\t\\t}\\n\\t\\th2,.h2{\\n\\t\\t\\tcolor:#202020;\\n\\t\\t\\tdisplay:block;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:30px;\\n\\t\\t\\tfont-weight:bold;\\n\\t\\t\\tline-height:100%;\\n\\t\\t\\tmargin-bottom:10px;\\n\\t\\t\\ttext-align:left;\\n\\t\\t}\\n\\t\\th3,.h3{\\n\\t\\t\\tcolor:#202020;\\n\\t\\t\\tdisplay:block;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:26px;\\n\\t\\t\\tfont-weight:bold;\\n\\t\\t\\tline-height:100%;\\n\\t\\t\\tmargin-bottom:10px;\\n\\t\\t\\ttext-align:left;\\n\\t\\t}\\n\\t\\th4,.h4{\\n\\t\\t\\tcolor:#202020;\\n\\t\\t\\tdisplay:block;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:22px;\\n\\t\\t\\tfont-weight:bold;\\n\\t\\t\\tline-height:100%;\\n\\t\\t\\tmargin-bottom:10px;\\n\\t\\t\\ttext-align:left;\\n\\t\\t}\\n\\t\\t#templatePreheader{\\n\\t\\t\\tbackground-color:#FAFAFA;\\n\\t\\t}\\n\\t\\t.preheaderContent div{\\n\\t\\t\\tcolor:#505050;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:10px;\\n\\t\\t\\tline-height:100%;\\n\\t\\t\\ttext-align:left;\\n\\t\\t}\\n\\t\\t.preheaderContent div a:link,.preheaderContent div a:visited{\\n\\t\\t\\tcolor:#336699;\\n\\t\\t\\tfont-weight:normal;\\n\\t\\t\\ttext-decoration:underline;\\n\\t\\t}\\n\\t\\t.preheaderContent div img{\\n\\t\\t\\theight:auto;\\n\\t\\t\\tmax-width:600px;\\n\\t\\t}\\n\\t\\t#templateHeader{\\n\\t\\t\\tbackground-color:#FFFFFF;\\n\\t\\t\\tborder-bottom:0;\\n\\t\\t}\\n\\t\\t.headerContent{\\n\\t\\t\\tcolor:#202020;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:34px;\\n\\t\\t\\tfont-weight:bold;\\n\\t\\t\\tline-height:100%;\\n\\t\\t\\tpadding:0;\\n\\t\\t\\ttext-align:center;\\n\\t\\t\\tvertical-align:middle;\\n\\t\\t}\\n\\t\\t.headerContent a:link,.headerContent a:visited{\\n\\t\\t\\tcolor:#336699;\\n\\t\\t\\tfont-weight:normal;\\n\\t\\t\\ttext-decoration:underline;\\n\\t\\t}\\n\\t\\t#headerImage{\\n\\t\\t\\theight:auto;\\n\\t\\t\\tmax-width:600px !important;\\n\\t\\t}\\n\\t\\t#templateContainer,.bodyContent{\\n\\t\\t\\tbackground-color:#FDFDFD;\\n\\t\\t}\\n\\t\\t.bodyContent div{\\n\\t\\t\\tcolor:#505050;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:14px;\\n\\t\\t\\tline-height:150%;\\n\\t\\t\\ttext-align:left;\\n\\t\\t}\\n\\t\\t.bodyContent div a:link,.bodyContent div a:visited{\\n\\t\\t\\tcolor:#336699;\\n\\t\\t\\tfont-weight:normal;\\n\\t\\t\\ttext-decoration:underline;\\n\\t\\t}\\n\\t\\t.bodyContent img{\\n\\t\\t\\tdisplay:inline;\\n\\t\\t\\tmargin-bottom:10px;\\n\\t\\t}\\n\\t\\t#templateFooter{\\n\\t\\t\\tbackground-color:#FDFDFD;\\n\\t\\t\\tborder-top:0;\\n\\t\\t}\\n\\t\\t.footerContent div{\\n\\t\\t\\tcolor:#707070;\\n\\t\\t\\tfont-family:Arial;\\n\\t\\t\\tfont-size:12px;\\n\\t\\t\\tline-height:125%;\\n\\t\\t\\ttext-align:left;\\n\\t\\t}\\n\\t\\t.footerContent div a:link,.footerContent div a:visited{\\n\\t\\t\\tcolor:#336699;\\n\\t\\t\\tfont-weight:normal;\\n\\t\\t\\ttext-decoration:underline;\\n\\t\\t}\\n\\t\\t.footerContent img{\\n\\t\\t\\tdisplay:inline;\\n\\t\\t}\\n\\t\\t#social{\\n\\t\\t\\tbackground-color:#FAFAFA;\\n\\t\\t\\tborder:1px solid #F5F5F5;\\n\\t\\t}\\n\\t\\t#social div{\\n\\t\\t\\ttext-align:center;\\n\\t\\t}\\n\\t\\t#utility{\\n\\t\\t\\tbackground-color:#FDFDFD;\\n\\t\\t\\tborder-top:1px solid #F5F5F5;\\n\\t\\t}\\n\\t\\t#utility div{\\n\\t\\t\\ttext-align:center;\\n\\t\\t}\\n\\t\\t#monkeyRewards img{\\n\\t\\t\\tmax-width:160px;\\n\\t\\t}\\n<\\/style><\\/head>\\n <body leftmargin=\\\"0\\\" marginwidth=\\\"0\\\" topmargin=\\\"0\\\" marginheight=\\\"0\\\" offset=\\\"0\\\">\\n \\t<center>\\n \\t<table border=\\\"0\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\" height=\\\"100%\\\" width=\\\"100%\\\" id=\\\"backgroundTable\\\">\\n \\t<tr>\\n \\t<td align=\\\"center\\\" valign=\\\"top\\\">\\n <table border=\\\"0\\\" cellpadding=\\\"10\\\" cellspacing=\\\"0\\\" width=\\\"600\\\" id=\\\"templatePreheader\\\">\\n <tr>\\n <td valign=\\\"top\\\" class=\\\"preheaderContent\\\">\\n \\n <table border=\\\"0\\\" cellpadding=\\\"10\\\" cellspacing=\\\"0\\\" width=\\\"100%\\\">\\n \\t<tr>\\n \\t<td valign=\\\"top\\\">\\n \\t<div mc:edit=\\\"std_preheader_content\\\">\\n \\tUse one or two sentences in this area to offer a teaser of your email content. Text here will show in a preview area in some email clients.\\n <\\/div>\\n <\\/td>\\n <td valign=\\\"top\\\" width=\\\"180\\\">\\n \\t<div mc:edit=\\\"std_preheader_links\\\">\\n \\t<!-- *|IFNOT:ARCHIVE_PAGE|* -->Is this email not displaying correctly?<br><a href=\\\"*|ARCHIVE|*\\\" target=\\\"_blank\\\">View it in your browser<\\/a>.<!-- *|END:IF|* -->\\n <\\/div>\\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n \\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n \\t<table border=\\\"0\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\" width=\\\"600\\\" id=\\\"templateContainer\\\">\\n \\t<tr>\\n \\t<td align=\\\"center\\\" valign=\\\"top\\\">\\n \\t<table border=\\\"0\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\" width=\\\"600\\\" id=\\\"templateHeader\\\">\\n <tr>\\n <td class=\\\"headerContent\\\">\\n \\n \\t<img src=\\\"http:\\/\\/gallery.mailchimp.com\\/653153ae841fd11de66ad181a\\/images\\/placeholder_600.gif\\\" style=\\\"max-width:600px;\\\" id=\\\"headerImage campaign-icon\\\" mc:label=\\\"header_image\\\" mc:edit=\\\"header_image\\\" mc:allowdesigner=\\\"\\\" mc:allowtext=\\\"\\\">\\n \\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n <\\/td>\\n <\\/tr>\\n \\t<tr>\\n \\t<td align=\\\"center\\\" valign=\\\"top\\\">\\n \\t<table border=\\\"0\\\" cellpadding=\\\"10\\\" cellspacing=\\\"0\\\" width=\\\"600\\\" id=\\\"templateBody\\\">\\n \\t<tr>\\n <td valign=\\\"top\\\" class=\\\"bodyContent\\\">\\n \\n <table border=\\\"0\\\" cellpadding=\\\"10\\\" cellspacing=\\\"0\\\" width=\\\"100%\\\">\\n <tr>\\n <td valign=\\\"top\\\">\\n <div mc:edit=\\\"std_content00\\\">\\n <span class=\\\"h1\\\">Heading 1<\\/span>\\n <span class=\\\"h2\\\">Heading 2<\\/span>\\n <span class=\\\"h3\\\">Heading 3<\\/span>\\n <span class=\\\"h4\\\">Heading 4<\\/span>\\n <strong>Getting started:<\\/strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.\\n <br>\\n <br>\\n After you enter your content, highlight the text you want to style and select the options you set in the style editor in the \\\"styles\\\" drop down box. Want to <a href=\\\"http:\\/\\/www.mailchimp.com\\/kb\\/article\\/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change\\\" target=\\\"_blank\\\">get rid of styling on a bit of text<\\/a>, but having trouble doing it? Just use the \\\"clear styles\\\" button to strip the text of any formatting and reset your style.\\n <\\/div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<\\/td>\\n <\\/tr>\\n <\\/table> \\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n <\\/td>\\n <\\/tr>\\n \\t<tr>\\n \\t<td align=\\\"center\\\" valign=\\\"top\\\">\\n \\t<table border=\\\"0\\\" cellpadding=\\\"10\\\" cellspacing=\\\"0\\\" width=\\\"600\\\" id=\\\"templateFooter\\\">\\n \\t<tr>\\n \\t<td valign=\\\"top\\\" class=\\\"footerContent\\\">\\n <table border=\\\"0\\\" cellpadding=\\\"10\\\" cellspacing=\\\"0\\\" width=\\\"100%\\\">\\n <tr>\\n <td colspan=\\\"2\\\" valign=\\\"middle\\\" id=\\\"social\\\">\\n <div mc:edit=\\\"std_social\\\">\\n &nbsp;<a href=\\\"*|TWITTER:PROFILEURL|*\\\">follow on Twitter<\\/a> | <a href=\\\"*|FACEBOOK:PROFILEURL|*\\\">friend on Facebook<\\/a> | <a href=\\\"*|FORWARD|*\\\">forward to a friend<\\/a>&nbsp;\\n <\\/div>\\n <\\/td>\\n <\\/tr>\\n <tr>\\n <td valign=\\\"top\\\" width=\\\"370\\\">\\n <br>\\n <div mc:edit=\\\"std_footer\\\">\\n *|IF:LIST|*\\n <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.<\\/em>\\n <br>\\n <!-- *|IFNOT:ARCHIVE_PAGE|* -->\\n *|LIST:DESCRIPTION|*\\n <br>\\n <strong>Our mailing address is:<\\/strong>\\n <br>\\n *|HTML:LIST_ADDRESS_HTML|*\\n <br>\\n <!-- *|END:IF|* -->\\n *|ELSE:|*\\n <!-- *|IFNOT:ARCHIVE_PAGE|* -->\\n <em>Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.<\\/em>\\n <br>\\n <strong>Our mailing address is:<\\/strong>\\n <br>\\n *|USER:ADDRESS_HTML|*\\n <!-- *|END:IF|* -->\\n *|END:IF|*\\n <\\/div>\\n <br>\\n <\\/td>\\n <td valign=\\\"top\\\" width=\\\"170\\\" id=\\\"monkeyRewards\\\">\\n <br>\\n <div mc:edit=\\\"monkeyrewards\\\">\\n *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*\\n <\\/div>\\n <br>\\n <\\/td>\\n <\\/tr>\\n <tr>\\n <td colspan=\\\"2\\\" valign=\\\"middle\\\" id=\\\"utility\\\">\\n <div mc:edit=\\\"std_utility\\\">\\n &nbsp;<a href=\\\"*|UNSUB|*\\\">unsubscribe from this list<\\/a> | <a href=\\\"*|UPDATE_PROFILE|*\\\">update subscription preferences<\\/a><!-- *|IFNOT:ARCHIVE_PAGE|* --> | <a href=\\\"*|ARCHIVE|*\\\">view email in browser<\\/a><!-- *|END:IF|* -->&nbsp;\\n <\\/div>\\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n \\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n <br>\\n <\\/td>\\n <\\/tr>\\n <\\/table>\\n <\\/center>\\n <\\/body>\\n<\\/html>\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/templates' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/emails' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates/{template_id}/default-content",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/templates/2000094/default-content' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/open-details",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/search-members Search Members",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns Get all campaigns",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}Batchsub/unsub",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/test",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/b03bfc273a/actions/test' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"test_emails\":[\"freddie.dev@freddiesjokes.com\"],\"send_type\":\"html\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"title\":\"Favorite Freddie Joke\",\"type\":\"checkboxes\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/abuse-reports/{report_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/1a2df69511/abuse-reports/42' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/authorized-apps/{app_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/authorized-apps/248682284215' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/ecommerce-product-activity",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}Batchadd/remove",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/conversations Get a list of conversations",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"Freddie'\\''s Favorite Hats\",\"contact\":{\"company\":\"MailChimp\",\"address1\":\"675 Ponce De Leon Ave NE\",\"address2\":\"Suite 5000\",\"city\":\"Atlanta\",\"state\":\"GA\",\"zip\":\"30308\",\"country\":\"US\",\"phone\":\"\"},\"permission_reminder\":\"You'\\''re receiving this email because you signed up for updates about Freddie'\\''s newest hats.\",\"campaign_defaults\":{\"from_name\":\"Freddie\",\"from_email\":\"freddie@freddiehats.com\",\"subject\":\"\",\"language\":\"en\"},\"email_type_option\":true}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/webhooks",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/webhooks' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"url\" : \"http://requestb.in/u5nuzfu5\", \"events\" : {\"subscribe\" : true, \"unsubscribe\" : true, \"profile\" : true, \"cleaned\" : true, \"upemail\" : true, \"campaign\" : true}, \"sources\" : {\"user\" : true, \"admin\" : true, \"api\" : true}}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/webhooks",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/webhooks' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/folders/{folder_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/folders/861' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/folders/{folder_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/folders/861' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/folders/{folder_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/folders/861' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\": \"Changing the folder name\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/templates Get all templates",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/segments/445' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/3da7c56ccb/segments/11281' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"members_to_add\": [\"freddie@mailchimp.com\", \"freddie@freddiesjokes.com\"], \"members_to_remove\":[\"freddie@gmail.com\", \"freddie@yahoo.com\", \"freddie@hotmail.com\"]}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/segments/49381' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/segments/49381' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"What'\\''s your favorite Freddie hat?\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/conversations/{conversation_id}/messages",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/conversations/fa8c387539/messages' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"from_email\": \"urist.mcvankab@freddiesjokes.com\", \"read\": false, \"message\": \"I love Freddie'\\''s jokes!\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/conversations/{conversation_id}/messages",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/conversations/fa8c387539/messages' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/email-activity",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/email-activity' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports Get campaign reports",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails/{workflow_email_id}/queue",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/emails/491fec26f1/queue' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"email_address\": \"urist.mcvankab@freddiesjokes.com\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails/{workflow_email_id}/queue",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/emails/491fec26f1/queue' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ API Root",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC002' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC002' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC002' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"MC002\", \"list_id\" : \"205d96e6b4\", \"name\" : \"Freddie'\\''s T-Shirt Sales\", \"domain\" : \"freddiesjokes.com\", \"email_address\" : \"shirts@freddiesjokes.com\", \"currency_code\" : \"USD\", \"primary-locale\" : \"us\", \"timezone\" : \"Eastern\", \"address\" : {\"address1\" : \"675 Ponce de Leon Ave NE\", \"address2\" : \"Suite 5000\", \"city\" : \"Atlanta, GA 30308\"}}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"cart0001\", \"customer\" : {\"id\": \"cust0005\"}, \"campaign_id\" : \"b03bfc273a\", \"checkout_url\" : \"freddiesjokes.com/cart/?checkout=xxxx\", \"currency_code\" : \"USD\", \"order_total\" : 12.45, \"tax_total\" : 2.45, \"lines\" : [{\"id\" : \"LINE001\", \"product_id\" : \"PROD001\", \"product_title\" : \"Freddie'\\''s Jokes\", \"product_variant_id\" : \"PROD001A\", \"product_variant_title\" : \"Freddie'\\''s Jokes Volume 1\", \"quantity\" : 2, \"price\" : \"10\"}]}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/customers/{customer_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/customers/cust0003' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/customers/{customer_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/customers/cust0001' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/customers/{customer_id}",
+      "url": "curl --request PUT \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/customers/cust0003' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"cust0003\", \"email_address\" : \"frederick@freddiesjokes.com\", \"opt_in_status\" : true, \"company\" : \"MailChimp\", \"first_name\" : \"Frederick\", \"last_name\" : \"Von Chimpenheimer\", \"orders_count\" : 1, \"total_spent\" : 10.25, \"address\" : {\"address1\" : \"675 Ponce de Leon Ave NE\", \"address2\" : \"Suite 5000\", \"city\" : \"Atlanta\", \"province\" : \"GA\", \"province_code\" : \"30033\", \"country_code\" : \"\"}}' \\ --include",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/customers/{customer_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/customers/cust0003' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"cust0003\", \"email_address\" : \"frederick@freddiesjokes.com\", \"company\" : \"Freddie'\\''s Jokes\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/actions/start-all-emails",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/actions/start-all-emails' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}/members",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/segments/457/members' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"email_address\" : \"freddy@freddiesjokes.com\", \"status\" : \"subscribed\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/segments/{segment_id}/members",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/segments/457/members' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/feedback/{feedback_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57/feedback/5445' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/feedback/{feedback_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57/feedback/5445' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/feedback/{feedback_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57/feedback/5445' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"message\": \"Please make sure we include a link to the jokes from the last two weeks.\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}/lines",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord0001/lines' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\":\"L002\", \"product_id\":\"PROD001\", \"product_variant_id\":\"PROD001B\", \"quantity\":1,\"price\":\"5\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders/{order_id}/lines",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders/ord0001/lines' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}/notes/{note_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/62eeb292278cc15f5817cb78f7790b08/notes/10509' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}/notes/{note_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/62eeb292278cc15f5817cb78f7790b08/notes/10509' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}/notes/{note_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/62eeb292278cc15f5817cb78f7790b08/notes/10509' \\ --user 'anystring:apikey' \\ --data '{\"note\":\"Urist visited the site today and added 3 Freddie totes to his cart, but didn'\\''t purchase them.\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations Get a list of Automations",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/click-details/{link_id}/members/{subscriber_hash}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/click-details/54debc3673/members/62eeb292278cc15f5817cb78f7790b08' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batch-webhooks",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batch-webhooks",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/send",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/3e06f4ec92/actions/send' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD002' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"variants\": [{\"id\": \"PROD001A\", \"title\": \"Freddie'\\''s Jokes Volume 1\", \"url\": \"\", \"sku\": \"Jokes001A\", \"price\": 5, \"inventory_quantity\": 100, \"image_url\": \"https://static.mailchimp.com/web/brand-assets/Freddie_wink.png\", \"backorders\": \"0\", \"visibility\": \"visible\", \"created_at\": \"2016-02-08T13:06:44+00:00\", \"updated_at\": \"2016-02-08T13:06:44+00:00\"},{ \"id\": \"PROD001B\", \"title\": \"Freddie'\\''s Jokes Volume 2\", \"url\": \"\", \"sku\": \"Jokes002\", \"price\": 5, \"inventory_quantity\": 0, \"image_url\": \"https://static.mailchimp.com/web/brand-assets/bro_freddie.png\", \"backorders\": \"0\", \"visibility\": \"true\", \"created_at\": \"2016-02-08T22:14:37+00:00\", \"updated_at\": \"2016-02-08T22:22:38+00:00\"}]}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/conversations/{conversation_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/conversations/fa8c387539' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}/activity",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/62eeb292278cc15f5817cb78f7790b08/activity' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaign-folders/{folder_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/campaign-folders/67d0d46c87' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaign-folders/{folder_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaign-folders/67d0d46c87' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaign-folders/{folder_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaign-folders/67d0d46c87' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\": \"The updated name of the folder\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes/{promo_code_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes/{promo_code_id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes/{promo_code_id}",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails/{workflow_email_id}/actions/start",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/emails/491fec26f1/actions/start' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/images",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/images",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/replicate",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/b03bfc273a/actions/replicate' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/send-checklist",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/6325018bde/send-checklist' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/20dbbf20d91106a9377bb671ba83f381' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/852aaa9532cb36adfb5e9fef7a4206a9' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}",
+      "url": "curl --request PUT \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/20dbbf20d91106a9377bb671ba83f381' \\ --user 'anystring:apikey' \\ --data '{\"email_address\":\"urist.mcvankab+8@freddiesjokes.com\", \"status_if_new\":\"subscribed\"}' \\ --include",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/20dbbf20d91106a9377bb671ba83f381' \\ --user 'anystring:apikey' \\ --data '{\"email_address\":\"urist.mcvankab+8@freddiesjokes.com\", \"status\":\"unsubscribed\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/abuse-reports",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/template-folders/{folder_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/template-folders/f758cc3387' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/template-folders/{folder_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/template-folders/f758cc3387' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/template-folders/{folder_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/template-folders/f758cc3387' \\ --header 'content-type: application/json' \\ --data '{\"name\": \"The updated name of the folder\"}' \\ --user 'anystring:apikey' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/cancel-send",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/67d0d46c87/actions/cancel-send' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/variants/{variant_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001/variants/PROD001D' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/variants/{variant_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001/variants/PROD001A' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/variants/{variant_id}",
+      "url": "curl --request PUT \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001/variants/PROD001D' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"PROD001D\", \"title\" : \"Freddie'\\''s Jokes Volume 4\", \"sku\" : \"Jokes001D\", \"price\" : \"5\", \"inventory_quantity\" : 10, \"image_url\" : \"https://static.mailchimp.com/web/brand-assets/Freddie_wink.png\", \"backorders\" : \"1\", \"visibility\" : \"visible\"}' \\ --include",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/variants/{variant_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/products/PROD001/variants/PROD001D' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"PROD001D\", \"title\" : \"Freddie'\\''s Jokes Volume 4\", \"sku\" : \"Jokes001D\", \"price\" : \"5\", \"inventory_quantity\" : 50, \"image_url\" : \"https://static.mailchimp.com/web/brand-assets/Freddie_wink.png\", \"backorders\" : \"1\", \"visibility\" : \"visible\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/files/{file_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/files/1890965' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/files/{file_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/files/1890965' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/file-manager/files/{file_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/files/1890965' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\": \"test.txt\", \"file_data\": \"VGhpcyBpcyBhbiBleGFtcGxlIGxpbmUgb2YgdGV4dC4=\", \"folder_id\": 42}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/growth-history",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/growth-history' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batches",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/batches' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"operations\" : [{\"method\" : \"POST\",\"path\" : \"lists/624ea08019/members\", \"body\": \"{\\\"email_address\\\":\\\"freddie@mailchimp.com\\\", \\\"status\\\":\\\"subscribed\\\"}\"}, {\"method\" : \"POST\",\"path\" : \"lists/624ea08019/members\", \"body\": \"{\\\"email_address\\\":\\\"freddy@mailchimp.com\\\", \\\"status\\\":\\\"subscribed\\\"}\"}, {\"method\" : \"POST\",\"path\" : \"lists/624ea08019/members\", \"body\": \"{\\\"email_address\\\":\\\"fred@mailchimp.com\\\", \\\"status\\\":\\\"subscribed\\\"}\"}, {\"method\" : \"POST\",\"path\" : \"lists/624ea08019/members\", \"body\": \"{\\\"email_address\\\":\\\"frederick@mailchimp.com\\\", \\\"status\\\":\\\"subscribed\\\"}\"}]}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/batches",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/batches' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/schedule",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/b03bfc273a/actions/schedule' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"schedule_time\":\"2017-02-04T19:13:00+00:00\",\"timewarp\":\"false\",\"batch_delay\":\"false\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/template-folders Get all template folders",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/actions/pause",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/c9ce47c75d/actions/pause' \\ --user 'anystring:apikey' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/connected-sites/{connected_site_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/connected-sites/{connected_site_id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/click-details/{link_id}/members",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/click-details/54debc3673/members' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/unsubscribed/{subscriber_hash}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/e6a3f74d09/unsubscribed/62eeb292278cc15f5817cb78f7790b08' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/email-activity/{subscriber_hash}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/email-activity/62eeb292278cc15f5817cb78f7790b08' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}/notes",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/62eeb292278cc15f5817cb78f7790b08/notes' \\ --user 'anystring:apikey' \\ --data '{\"note\":\"Urist came to the site today and purchased three new Freddie bags.\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/members/{subscriber_hash}/notes",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members/62eeb292278cc15f5817cb78f7790b08/notes' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/conversations",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/conversations' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/feedback",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57/feedback' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"message\": \"Please make sure we include a link to the joke from last week.\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/feedback",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57/feedback' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails/{workflow_email_id}/queue/{subscriber_hash}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/emails/491fec26f1/queue/62eeb292278cc15f5817cb78f7790b08' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/click-details",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/click-details' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/removed-subscribers",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/removed-subscribers' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"email_address\": \"urist.mcvankab@freddiesjokes.com\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/removed-subscribers",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/removed-subscribers' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/google-analytics/{profile_id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}/lines",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001/lines' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"LINE002\", \"product_id\" : \"PROD001\", \"product_variant_id\" : \"PROD001B\", \"quantity\" : 1, \"price\": \"5\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}/lines",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001/lines' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/locations",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/locations' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/activity",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/activity' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/carts/{cart_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/carts/cart0001' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"customer\" : {\"id\" : \"cust0005\"}, \"campaign_id\" : \"b03bfc273a\", \"checkout_url\": \"freddiesjokes.com/cart/?checkout=xxxx\", \"currency_code\": \"USD\", \"order_total\": 16.20, \"tax_total\": 1.20, \"lines\":[{\"id\" : \"LINE001\", \"product_id\" : \"PROD001\", \"product_variant_id\" : \"PROD001A\", \"quantity\" : 1, \"price\": \"10\"}, {\"id\" : \"LINE002\", \"product_id\" : \"PROD001\", \"product_variant_id\" : \"PROD001B\", \"quantity\" : 1, \"price\": \"5\"}]}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/eepurl",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/b294987f6c/eepurl' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"recipients\":{\"list_id\":\"3c307a9f3f\"},\"type\":\"regular\",\"settings\":{\"subject_line\":\"Your Purchase Receipt\",\"reply_to\":\"orders@mammothhouse.com\",\"from_name\":\"Customer Service\"}}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"id\" : \"ord0001\", \"customer\" : {\"id\": \"cust0005\", \"email_address\": \"freddy@freddiesjokes.com\", \"opt_in_status\": true, \"company\": \"MailChimp\", \"first_name\": \"Freddy\", \"last_name\": \"Von Chimpenheimer\", \"orders_count\": 1, \"total_spent\": 10.25}, \"campaign_id\" : \"b03bfc273a\", \"checkout_url\" : \"freddiesjokes.com/cart/?checkout=xxxx\", \"currency_code\" : \"USD\", \"order_total\" : 12.45, \"tax_total\" : 2.45, \"lines\" : [{\"id\": \"L001\", \"product_id\" : \"PROD001\", \"product_title\" : \"Freddie'\\''s Jokes\", \"product_variant_id\" : \"PROD001A\", \"product_variant_title\" : \"Freddie'\\''s Jokes Volume 1\", \"quantity\" : 2, \"price\" : \"10\"}]}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/orders",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/ecommerce/stores/MC001/orders' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/search-campaigns Search Campaigns",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails/{workflow_email_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/automations/{workflow_id}/emails/{workflow_email_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/automations/b0a1c24f1a/emails/491fec26f1' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ping",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/content",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57/content' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns/{campaign_id}/content",
+      "url": "curl --request PUT \\ --url 'https://usX.api.mailchimp.com/3.0/campaigns/42694e9e57/content' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"html\": \"<p>The HTML to use for the saved campaign<./p>\"}' \\ --include",
+      "method": "PUT",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/4ca5becb8d' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"members\": [{\"email_address\": \"urist.mcvankab@freddiesjokes.com\", \"status\": \"subscribed\"}, {\"email_address\": \"urist.mcvankab+1@freddiesjokes.com\", \"status\": \"subscribed\"}, {\"email_address\": \"urist.mcvankab+2@freddiesjokes.com\", \"status_if_new\": \"subscribed\"}], \"update_existing\": true}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/file-manager/folders/861' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"Freddie'\\''s Favorite Bags\",\"contact\":{\"company\":\"MailChimp\",\"address1\":\"675 Ponce De Leon Ave NE\",\"address2\":\"Suite 5000\",\"city\":\"Atlanta\",\"state\":\"GA\",\"zip\":\"30308\",\"country\":\"US\",\"phone\":\"\"},\"permission_reminder\":\"You'\\''re receiving this email because you signed up for updates about Freddie'\\''s newest bags.\",\"campaign_defaults\":{\"from_name\":\"Freddie\",\"from_email\":\"freddie@freddiesbags.com\",\"subject\":\"\",\"language\":\"en\"},\"email_type_option\":true}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}",
+      "url": "curl --request DELETE \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/interest-categories/f7c1aa50d1' \\ --user 'anystring:apikey' \\ --include",
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/interest-categories/a1e9f4b7f6' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/interest-categories/{interest_category_id}",
+      "url": "curl --request PATCH \\ --url 'https://usX.api.mailchimp.com/3.0/lists/205d96e6b4/interest-categories/f7c1aa50d1' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"title\":\"Joke Subjects\", \"display_order\":1, \"type\":\"checkboxes\"}' \\ --include",
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/reports/{campaign_id}/click-details/{link_id}",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/reports/42694e9e57/click-details/54debc3673' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/connected-sites Get all connected sites",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/template-folders",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/template-folders' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\": \"The name of the folder\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/template-folders",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/template-folders' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/search-members",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/search-members?query=freddie@' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/images/{image_id}",
+      "url": null,
+      "method": "DELETE",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/images/{image_id}",
+      "url": null,
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/ecommerce/stores/{store_id}/products/{product_id}/images/{image_id}",
+      "url": null,
+      "method": "PATCH",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/campaigns Create a new campaign",
+      "url": null,
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/merge-fields",
+      "url": "curl --request POST \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/merge-fields' \\ --user 'anystring:apikey' \\ --header 'content-type: application/json' \\ --data '{\"name\":\"FAVORITEJOKE\", \"type\":\"text\"}' \\ --include",
+      "method": "POST",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  },
+  {
+    "request": {
+      "ourl": "https://usX.api.mailchimp.com/lists/{list_id}/merge-fields",
+      "url": "curl --request GET \\ --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/merge-fields' \\ --user 'anystring:apikey' \\ --include",
+      "method": "GET",
+      "body": ""
+    },
+    "response": {
+      "status": "200",
+      "body": "",
+      "ebody": ""
+    }
+  }
+]

@@ -1,0 +1,92 @@
+
+                                                          /-/
+                                                         |
+                                                         |--/acl
+                                                         |
+                                                         |--/calendarList
+                                                         |
+                                                         |--/calendars
+                                                         |
+                                                         |--/channels
+                                                         |
+                                                         |--/colors
+                                                         |
+                                                         |--/events
+                                                         |
+                                                         |--/freebusy
+                                                         |
+                                                         |--/settings
+                                                         |
+                                                         |    /-/delete
+                                                         |   |
+                                                         |   |--/get
+                                                         |   |
+                                                         |   |--/insert
+                                                         |   |
+                                                         |-/acl-/list
+                                                         |   |
+                                                         |   |--/patch
+                                                         |   |
+                                                         |   |--/update
+                                                         |   |
+                                                         |    \-/watch
+                                                         |
+                                                         |             /-/delete
+                                                         |            |
+                                                         |            |--/get
+                                                         |            |
+                                                         |            |--/insert
+                                                         |            |
+                                                         |-/calendarList-/list
+                                                         |            |
+                                                         |            |--/patch
+                                                         |            |
+                                                         |            |--/update
+                                                         |            |
+-- /developers.google.com/google-apps/calendar/v3/reference            \-/watch
+                                                         |
+                                                         |          /-/clear
+                                                         |         |
+                                                         |         |--/delete
+                                                         |         |
+                                                         |         |--/get
+                                                         |-/calendars
+                                                         |         |--/insert
+                                                         |         |
+                                                         |         |--/patch
+                                                         |         |
+                                                         |          \-/update
+                                                         |
+                                                         |-/channels-/stop
+                                                         |
+                                                         |-/colors-/get
+                                                         |
+                                                         |       /-/delete
+                                                         |      |
+                                                         |      |--/get
+                                                         |      |
+                                                         |      |--/import
+                                                         |      |
+                                                         |      |--/insert
+                                                         |      |
+                                                         |      |--/instances
+                                                         |      |
+                                                         |-/events-/list
+                                                         |      |
+                                                         |      |--/move
+                                                         |      |
+                                                         |      |--/patch
+                                                         |      |
+                                                         |      |--/quickAdd
+                                                         |      |
+                                                         |      |--/update
+                                                         |      |
+                                                         |       \-/watch
+                                                         |
+                                                         |-/freebusy-/query
+                                                         |
+                                                         |         /-/get
+                                                         |        |
+                                                          \/settings-/list
+                                                                  |
+                                                                   \-/watch

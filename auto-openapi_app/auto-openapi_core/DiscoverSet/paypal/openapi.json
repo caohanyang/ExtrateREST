@@ -1,0 +1,2506 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "api.sandbox.paypal.com",
+    "version": "0.0"
+  },
+  "host": "api.sandbox.paypal.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/v1/payments/authorization/{authorization_id}/capture": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Capture"
+            }
+          }
+        }
+      }
+    },
+    "/v1/notifications/webhooks/webhook_id/event-types": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      }
+    },
+    "/v1/notifications/webhooks-events": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/disputes/{dispute_id}": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Disputes"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/orders/{order_id}/capture": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Capture"
+            }
+          }
+        }
+      }
+    },
+    "/v1/invoicing/invoices/{invoice_id}/schedule": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Schedule"
+            }
+          }
+        }
+      }
+    },
+    "/v1/vault/credit-cards/{credit_card_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Vault"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/payouts-item/payout_item_id/cancel": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Cancel"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/payouts-item/payout_item_id": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payments"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/capture/{capture_id}/refund": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Refund"
+            }
+          }
+        }
+      }
+    },
+    "/wallet/balance-accounts": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Wallet"
+            }
+          }
+        }
+      }
+    },
+    "/v1/vault/credit-cards": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Vault"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Vault"
+            }
+          }
+        }
+      }
+    },
+    "/v1/invoicing/search": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Search"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/refund/{refund_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Refund"
+            }
+          }
+        }
+      }
+    },
+    "/v1/invoicing/templates": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Templates"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Templates"
+            }
+          }
+        }
+      }
+    },
+    "/v1/checkout/orders": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Orders"
+            }
+          }
+        }
+      }
+    },
+    "/v1/checkout/orders/{order_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Orders"
+            }
+          }
+        }
+      }
+    },
+    "/v1/invoicing/invoices": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Invoices"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Invoices"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/partner-referrals": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Customer"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/authorization/{authorization_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Authorization"
+            }
+          }
+        }
+      }
+    },
+    "/v1/notifications/webhooks-event-types": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/disputes": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Disputes"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/billing-agreements/{agreement_id}/transactions": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Transactions"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/partner-referrals/{partner_referral_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Customer"
+            }
+          }
+        }
+      }
+    },
+    "/v1/reporting/transactions": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Transactions"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/billing-plans/{plan_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payments"
+            }
+          }
+        }
+      }
+    },
+    "/v1/notifications/webhooks/webhook_id": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/orders/{order_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Orders"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/authorization/{authorization_id}/void": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Void"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/billing-agreements/{payment_token}/agreement-execute": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payments"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/referenced-payouts-items/{payouts_item_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payments"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/capture/{capture_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Capture"
+            }
+          }
+        }
+      }
+    },
+    "/v1/invoicing/invoices/next-invoice-number": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Invoices"
+            }
+          }
+        }
+      }
+    },
+    "/v1/notifications/webhooks": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/partners/{partner_id}/merchant-integrations/{merchant_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Partners"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/billing-agreements/{agreement_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payments"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/orders/{order_id}/do-void": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Orders"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/partners/merchant-accounts": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Partners"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/disputes/{dispute_id}/accept-claim": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Disputes"
+            }
+          }
+        }
+      }
+    },
+    "/v1/checkout/orders/{order_id}/pay": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Pay"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payment-experience/web-profiles/{profile_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/payouts/payout_batch_id": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payments"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/disputes/{dispute_id}/provide-evidence": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Disputes"
+            }
+          }
+        }
+      }
+    },
+    "/v1/notifications/verify-webhook-signature": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/payment/{payment_id}": {},
+    "/v1/payments/{payments}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "payments",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payment"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "payments",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Payment"
+            }
+          }
+        }
+      }
+    },
+    "/v1/identity/openidconnect/userinfo": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Identity"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payment-experience/web-profiles": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Unkown"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Unkown"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/orders/{order_id}/authorize": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Authorize"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/sale/{sale_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Sale"
+            }
+          }
+        }
+      }
+    },
+    "/v1/invoicing/invoices/{invoice_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Invoices"
+            }
+          }
+        }
+      },
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Invoices"
+            }
+          }
+        }
+      }
+    },
+    "/v1/customer/partners/merchant-accounts/{merchant_payer_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Partners"
+            }
+          }
+        }
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Partners"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/sale/{sale_id}/refund": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Refund"
+            }
+          }
+        }
+      }
+    },
+    "/v1/notifications/webhooks-events/event_id": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Notifications"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/payment/{payment_id}/execute": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Execute"
+            }
+          }
+        }
+      }
+    },
+    "/v1/payments/authorization/{authorization_id}/reauthorize": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Authorization"
+            }
+          }
+        }
+      }
+    },
+    "/wallet/unavailable-balance-accounts": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Wallet"
+            }
+          }
+        }
+      }
+    },
+    "/v1/invoicing/invoices/{invoice_id}/qr-code": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Invoices"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Capture": {
+      "type": "object",
+      "properties": {
+        "parent_payment": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "is_final_capture": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Amount": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "Detail": {
+          "$ref": "#/definitions/Detail"
+        }
+      }
+    },
+    "Link": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "rel": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Notifications": {
+      "type": "object"
+    },
+    "Event_type": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "Notification": {
+      "type": "object",
+      "properties": {
+        "event_types": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Event_type"
+          }
+        }
+      }
+    },
+    "Payments": {
+      "type": "object"
+    },
+    "Payment": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Disputes": {
+      "type": "object"
+    },
+    "Gross_amount": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "Disputed_transaction": {
+      "type": "object",
+      "properties": {
+        "buyer_transaction_id": {
+          "type": "string"
+        },
+        "seller_transaction_id": {
+          "type": "string"
+        },
+        "transaction_status": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "Seller": {
+          "$ref": "#/definitions/Seller"
+        },
+        "Gross_amount": {
+          "$ref": "#/definitions/Gross_amount"
+        },
+        "Buyer": {
+          "$ref": "#/definitions/Buyer"
+        }
+      }
+    },
+    "Dispute_amount": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "Dispute": {
+      "type": "object",
+      "properties": {
+        "reason": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "dispute_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "disputed_transactions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Disputed_transaction"
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "Dispute_amount": {
+          "$ref": "#/definitions/Dispute_amount"
+        }
+      }
+    },
+    "Buyer": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "Seller": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "merchant_id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "Schedule": {
+      "type": "object",
+      "properties": {
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Vault": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string"
+        },
+        "valid_until": {
+          "type": "string"
+        },
+        "expire_month": {
+          "type": "integer"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "expire_year": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "Billing_addres": {
+          "$ref": "#/definitions/Billing_addres"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Billing_addres": {
+      "type": "object",
+      "properties": {
+        "country_code": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "postal_code": {
+          "type": "string"
+        },
+        "line1": {
+          "type": "string"
+        }
+      }
+    },
+    "Cancel": {
+      "type": "object",
+      "properties": {
+        "transaction_id": {
+          "type": "string"
+        },
+        "transaction_status": {
+          "type": "string"
+        },
+        "sender_batch_id": {
+          "type": "string"
+        },
+        "time_processed": {
+          "type": "string"
+        },
+        "payout_item_id": {
+          "type": "string"
+        },
+        "payout_batch_id": {
+          "type": "string"
+        },
+        "Payout_item_fee": {
+          "$ref": "#/definitions/Payout_item_fee"
+        },
+        "Payout_item": {
+          "$ref": "#/definitions/Payout_item"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "Error": {
+          "$ref": "#/definitions/Error"
+        }
+      }
+    },
+    "Payout_item": {
+      "type": "object",
+      "properties": {
+        "recipient_type": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "receiver": {
+          "type": "string"
+        },
+        "sender_item_id": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        }
+      }
+    },
+    "Payout_item_fee": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Error": {
+      "type": "object",
+      "properties": {
+        "information_link": {
+          "type": "string"
+        },
+        "debug_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "Refund": {
+      "type": "object",
+      "properties": {
+        "parent_payment": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "capture_id": {
+          "type": "string"
+        },
+        "invoice_number": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Wallet": {
+      "type": "object",
+      "properties": {
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "open": {
+          "type": "string"
+        },
+        "primary": {
+          "type": "string"
+        },
+        "Reserved": {
+          "$ref": "#/definitions/Reserved"
+        },
+        "Available": {
+          "$ref": "#/definitions/Available"
+        }
+      }
+    },
+    "Available": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "Reserved": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "Search": {
+      "type": "object",
+      "properties": {
+        "invoices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Invoice"
+          }
+        }
+      }
+    },
+    "Total_amount": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Invoice": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "invoice_date": {
+          "type": "string"
+        },
+        "Metadata": {
+          "$ref": "#/definitions/Metadata"
+        },
+        "billing_info": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Billing_info"
+          }
+        },
+        "Payment_term": {
+          "$ref": "#/definitions/Payment_term"
+        },
+        "Total_amount": {
+          "$ref": "#/definitions/Total_amount"
+        },
+        "Merchant_info": {
+          "$ref": "#/definitions/Merchant_info"
+        },
+        "note": {
+          "type": "string"
+        },
+        "tax_calculated_after_discount": {
+          "type": "string"
+        },
+        "tax_inclusive": {
+          "type": "string"
+        },
+        "allow_tip": {
+          "type": "string"
+        },
+        "Shipping_info": {
+          "$ref": "#/definitions/Shipping_info"
+        },
+        "Shipping_cost": {
+          "$ref": "#/definitions/Shipping_cost"
+        },
+        "Discount": {
+          "$ref": "#/definitions/Discount"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      }
+    },
+    "Metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string"
+        }
+      }
+    },
+    "Payment_term": {
+      "type": "object",
+      "properties": {
+        "due_date": {
+          "type": "string"
+        }
+      }
+    },
+    "Merchant_info": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "business_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "Addres": {
+          "$ref": "#/definitions/Addres"
+        },
+        "Phone": {
+          "$ref": "#/definitions/Phone"
+        }
+      }
+    },
+    "Billing_info": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        }
+      }
+    },
+    "Templates": {
+      "type": "object"
+    },
+    "Item": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "Unit_price": {
+          "$ref": "#/definitions/Unit_price"
+        },
+        "price": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "sku": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "Tax": {
+          "$ref": "#/definitions/Tax"
+        }
+      }
+    },
+    "Display_preference": {
+      "type": "object",
+      "properties": {
+        "hidden": {
+          "type": "string"
+        }
+      }
+    },
+    "Template_data": {
+      "type": "object",
+      "properties": {
+        "note": {
+          "type": "string"
+        },
+        "tax_calculated_after_discount": {
+          "type": "string"
+        },
+        "logo_url": {
+          "type": "string"
+        },
+        "tax_inclusive": {
+          "type": "string"
+        },
+        "Merchant_info": {
+          "$ref": "#/definitions/Merchant_info"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      }
+    },
+    "Addres": {
+      "type": "object",
+      "properties": {
+        "country_code": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "postal_code": {
+          "type": "string"
+        },
+        "line1": {
+          "type": "string"
+        },
+        "street_address": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "locality": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        }
+      }
+    },
+    "Phone": {
+      "type": "object",
+      "properties": {
+        "country_code": {
+          "type": "string"
+        },
+        "national_number": {
+          "type": "string"
+        }
+      }
+    },
+    "Setting": {
+      "type": "object",
+      "properties": {
+        "field_name": {
+          "type": "string"
+        },
+        "Display_preference": {
+          "$ref": "#/definitions/Display_preference"
+        }
+      }
+    },
+    "Unit_price": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Template": {
+      "type": "object",
+      "properties": {
+        "default": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "unit_of_measure": {
+          "type": "string"
+        },
+        "template_id": {
+          "type": "string"
+        },
+        "settings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Setting"
+          }
+        },
+        "Template_data": {
+          "$ref": "#/definitions/Template_data"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Orders": {
+      "type": "object"
+    },
+    "Order": {
+      "type": "object",
+      "properties": {
+        "create_time": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "Gross_total_amount": {
+          "$ref": "#/definitions/Gross_total_amount"
+        },
+        "Redirect_url": {
+          "$ref": "#/definitions/Redirect_url"
+        },
+        "purchase_units": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Purchase_unit"
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "parent_payment": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        }
+      }
+    },
+    "Redirect_url": {
+      "type": "object",
+      "properties": {
+        "return_url": {
+          "type": "string"
+        },
+        "cancel_url": {
+          "type": "string"
+        }
+      }
+    },
+    "Partner_fee_detail": {
+      "type": "object",
+      "properties": {
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "Receiver": {
+          "$ref": "#/definitions/Receiver"
+        }
+      }
+    },
+    "Purchase_unit": {
+      "type": "object",
+      "properties": {
+        "reference_id": {
+          "type": "string"
+        },
+        "custom": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "payment_linked_group": {
+          "type": "integer"
+        },
+        "payment_descriptor": {
+          "type": "string"
+        },
+        "shipping_method": {
+          "type": "string"
+        },
+        "invoice_number": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "Partner_fee_detail": {
+          "$ref": "#/definitions/Partner_fee_detail"
+        },
+        "Payee": {
+          "$ref": "#/definitions/Payee"
+        },
+        "Shipping_addres": {
+          "$ref": "#/definitions/Shipping_addres"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      }
+    },
+    "Shipping_addres": {
+      "type": "object",
+      "properties": {
+        "preferred_address": {
+          "type": "string"
+        },
+        "country_code": {
+          "type": "string"
+        },
+        "default_address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "primary_address": {
+          "type": "string"
+        },
+        "disable_for_transaction": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "recipient_name": {
+          "type": "string"
+        },
+        "postal_code": {
+          "type": "string"
+        },
+        "line2": {
+          "type": "string"
+        },
+        "line1": {
+          "type": "string"
+        }
+      }
+    },
+    "Receiver": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "Gross_total_amount": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Payee": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "Detail": {
+      "type": "object",
+      "properties": {
+        "shipping": {
+          "type": "string"
+        },
+        "subtotal": {
+          "type": "string"
+        },
+        "tax": {
+          "type": "string"
+        }
+      }
+    },
+    "Invoices": {
+      "type": "object"
+    },
+    "Shipping_info": {
+      "type": "object",
+      "properties": {
+        "last_name": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "Addres": {
+          "$ref": "#/definitions/Addres"
+        }
+      }
+    },
+    "Discount": {
+      "type": "object",
+      "properties": {
+        "percent": {
+          "type": "integer"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        }
+      }
+    },
+    "Shipping_cost": {
+      "type": "object",
+      "properties": {
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        }
+      }
+    },
+    "Tax": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "percent": {
+          "type": "integer"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        }
+      }
+    },
+    "Customer": {
+      "type": "object",
+      "properties": {
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Authorization": {
+      "type": "object",
+      "properties": {
+        "parent_payment": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "valid_until": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Transactions": {
+      "type": "object"
+    },
+    "Transaction": {
+      "type": "object",
+      "properties": {
+        "agreement_transaction_list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Agreement_transaction_list"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "related_resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Related_resource"
+          }
+        },
+        "Item_list": {
+          "$ref": "#/definitions/Item_list"
+        }
+      }
+    },
+    "Fee_amount": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Net_amount": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Agreement_transaction_list": {
+      "type": "object",
+      "properties": {
+        "transaction_id": {
+          "type": "string"
+        },
+        "payer_email": {
+          "type": "string"
+        },
+        "time_stamp": {
+          "type": "string"
+        },
+        "transaction_type": {
+          "type": "string"
+        },
+        "payer_name": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "Fee_amount": {
+          "$ref": "#/definitions/Fee_amount"
+        },
+        "Net_amount": {
+          "$ref": "#/definitions/Net_amount"
+        }
+      }
+    },
+    "Void": {
+      "type": "object",
+      "properties": {
+        "parent_payment": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Partners": {
+      "type": "object"
+    },
+    "Oauth_integration": {
+      "type": "object",
+      "properties": {
+        "integration_method": {
+          "type": "string"
+        },
+        "integration_type": {
+          "type": "string"
+        },
+        "oauth_third_party": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Oauth_third_party"
+          }
+        }
+      }
+    },
+    "Oauth_third_party": {
+      "type": "object",
+      "properties": {
+        "partner_client_id": {
+          "type": "string"
+        },
+        "access_token": {
+          "type": "string"
+        },
+        "merchant_client_id": {
+          "type": "string"
+        },
+        "refresh_token": {
+          "type": "string"
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Partner": {
+      "type": "object",
+      "properties": {
+        "payments_receivable": {
+          "type": "string"
+        },
+        "primary_email_confirmed": {
+          "type": "string"
+        },
+        "merchant_id": {
+          "type": "string"
+        },
+        "oauth_integrations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Oauth_integration"
+          }
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Product"
+          }
+        }
+      }
+    },
+    "Pay": {
+      "type": "object",
+      "properties": {
+        "update_time": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "Payer_info": {
+          "$ref": "#/definitions/Payer_info"
+        }
+      }
+    },
+    "Payer_info": {
+      "type": "object",
+      "properties": {
+        "country_code": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "payer_id": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "Shipping_addres": {
+          "$ref": "#/definitions/Shipping_addres"
+        }
+      }
+    },
+    "Unkown": {
+      "type": "object",
+      "properties": {
+        "temporary": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "Presentation": {
+          "$ref": "#/definitions/Presentation"
+        },
+        "Flow_config": {
+          "$ref": "#/definitions/Flow_config"
+        },
+        "Input_field": {
+          "$ref": "#/definitions/Input_field"
+        }
+      }
+    },
+    "Input_field": {
+      "type": "object",
+      "properties": {
+        "no_shipping": {
+          "type": "integer"
+        },
+        "address_override": {
+          "type": "integer"
+        }
+      }
+    },
+    "Presentation": {
+      "type": "object",
+      "properties": {
+        "logo_image": {
+          "type": "string"
+        }
+      }
+    },
+    "Flow_config": {
+      "type": "object",
+      "properties": {
+        "landing_page_type": {
+          "type": "string"
+        },
+        "bank_txn_pending_url": {
+          "type": "string"
+        }
+      }
+    },
+    "Identity": {
+      "type": "object",
+      "properties": {
+        "Addres": {
+          "$ref": "#/definitions/Addres"
+        }
+      }
+    },
+    "Authorize": {
+      "type": "object",
+      "properties": {
+        "parent_payment": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Sale": {
+      "type": "object",
+      "properties": {
+        "parent_payment": {
+          "type": "string"
+        },
+        "update_time": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "protection_eligibility_type": {
+          "type": "string"
+        },
+        "protection_eligibility": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "Amount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "Transaction_fee": {
+          "$ref": "#/definitions/Transaction_fee"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "Transaction_fee": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Execute": {
+      "type": "object",
+      "properties": {
+        "update_time": {
+          "type": "string"
+        },
+        "create_time": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "intent": {
+          "type": "string"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "transactions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Transaction"
+          }
+        },
+        "Payer": {
+          "$ref": "#/definitions/Payer"
+        }
+      }
+    },
+    "Payer": {
+      "type": "object",
+      "properties": {
+        "payment_method": {
+          "type": "string"
+        },
+        "Payer_info": {
+          "$ref": "#/definitions/Payer_info"
+        }
+      }
+    },
+    "Item_list": {
+      "type": "object",
+      "properties": {
+        "Shipping_addres": {
+          "$ref": "#/definitions/Shipping_addres"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      }
+    },
+    "Related_resource": {
+      "type": "object",
+      "properties": {
+        "Order": {
+          "$ref": "#/definitions/Order"
+        }
+      }
+    }
+  }
+}

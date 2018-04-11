@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+  <meta content="no-cache" http-equiv="Pragma"/>
+  <meta content="0" http-equiv="Expires"/>
+  <title>
+   getReturnPolicyByName - eBay account API
+  </title>
+  <link href="//ir.ebaystatic.com" rel="dns-prefetch"/>
+  <link href="//secureir.ebaystatic.com" rel="dns-prefetch"/>
+  <link href="//i.ebayimg.com" rel="dns-prefetch"/>
+  <link href="//rover.ebay.com" rel="dns-prefetch"/>
+  <script nonce="beJK4SwWhOaiOZAN6U73SWU0EURzv9">
+   $ssgST=new Date().getTime();
+  </script>
+  <link href="https://ir.ebaystatic.com/rs/c/call-d79712.css" rel="stylesheet"/>
+  <link href="https://ir.ebaystatic.com/rs/c/call-29beb9.css" rel="stylesheet"/>
+ </head>
+ <body class="skin-large _edp brand-ui ">
+  <a class="clipped" href="#mainContent">
+   Skip to main content
+  </a>
+  <div class="app-status-message" data-widget="/edpweb$6.5.5/src/components/app-status-message/index" id="w0">
+   <div class="status-container">
+    <span class="icon-close" data-w-onclick="closeStatusMessage|w0">
+    </span>
+    <p class="status error hidden" id="w0-error">
+     <span aria-hidden="true" class="icon-error">
+     </span>
+     <span class="message">
+     </span>
+    </p>
+    <p class="status warn hidden" id="w0-warn">
+     <span aria-hidden="true" class="icon-alert">
+     </span>
+     <span class="message">
+     </span>
+    </p>
+    <p class="status info hidden" id="w0-info">
+     <span aria-hidden="true" class="icon-info">
+     </span>
+     <span class="message">
+     </span>
+    </p>
+    <p class="status success hidden" id="w0-success">
+     <span aria-hidden="true" class="icon-success">
+     </span>
+     <span class="message">
+     </span>
+    </p>
+   </div>
+  </div>
+  <div class="app-banner" data-widget="/edpweb$6.5.5/src/components/app-banner/index" id="w1">
+  </div>
+  <section>
+   <header class="app-header flex font-light" data-widget="/edpweb$6.5.5/src/components/app-header/index" id="w2">
+    <a class="flex-4" href="http://go.developer.ebay.com">
+     <span class="logo">
+     </span>
+    </a>
+    <ul class="menu flex-12 margin-left-auto">
+     <li>
+      <a href="#">
+       Hi!
+      </a>
+      <a class="link" href="/signin">
+       Sign in
+      </a>
+      <a href="#">
+       or
+      </a>
+      <a class="link" href="/signin?tab=register">
+       Register
+      </a>
+      <a href="#">
+       <span class="icon-arrow-down">
+       </span>
+      </a>
+      <div class="list-entries hidden">
+       <a href="/my/keys">
+        Application access keys
+       </a>
+       <a href="/my/stats?env=sandbox&amp;index=0">
+        Application reports
+       </a>
+       <a href="/my/auth?env=sandbox&amp;index=0">
+        Auth tokens for eBay
+       </a>
+       <a href="/my/push?env=sandbox&amp;index=0">
+        Buyer / seller notifications &amp; alerts
+       </a>
+       <a href="/my/applications/directory">
+        Solutions Directory account
+       </a>
+       <a href="/my/profile">
+        Profile &amp; contacts
+       </a>
+      </div>
+     </li>
+     <li>
+      <a href="#">
+       Forums
+       <span class="icon-arrow-down">
+       </span>
+      </a>
+      <div class="list-entries hidden">
+       <a href="https://forums.developer.ebay.com/spaces/12/ebay-apis-selling.html">
+        Selling
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/11/ebay-apis-search.html">
+        Search
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/8/default.html">
+        Orders, resolutions and feedback
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/9/help.html">
+        Java SDK for Trading API
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/14/ebay-apis-net-sdk-for-trading-api.html">
+        .NET SDK for Trading API
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/15/ebay-apis-getting-tokens-notifications-alerts-mess.html">
+        Getting tokens, notifications &amp; alerts, messages
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/13/ebay-apis-talk-to-your-fellow-developers.html">
+        Talk to your fellow developers
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/37/buy-apis-beta-browse.html">
+        Buy APIs (BETA) - Browse
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/38/buy-apis-beta-order.html">
+        Buy APIs (BETA) - Order
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/16/feedback-comments-suggestions.html">
+        Feedback, Comments, suggestions
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/31/new-sell-apis-account-inventory.html">
+        New Sell APIs - Account, Inventory
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/32/new-sell-apis-fullfillment.html">
+        New Sell APIs - Fulfillment
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/33/new-sell-apis-marketing-analytics-metadata.html">
+        New Sell APIs - Marketing, Analytics, Metadata
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/34/post-order-apis-cancellation.html">
+        Post Order APIs - Cancellation
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/35/post-order-apis-inquiry-case-management.html">
+        Post Order APIs - Inquiry, Case Management
+       </a>
+       <a href="https://forums.developer.ebay.com/spaces/36/post-order-apis-return.html">
+        Post Order APIs - Return
+       </a>
+      </div>
+     </li>
+     <li>
+      <a href="#">
+       Docs &amp; KBs
+       <span class="icon-arrow-down">
+       </span>
+      </a>
+      <div class="list-entries hidden">
+       <a href="https://go.developer.ebay.com/release-notes">
+        Release notes
+       </a>
+       <a href="https://go.developer.ebay.com/including-buying-your-app">
+        Buy
+       </a>
+       <a href="https://go.developer.ebay.com/sell-inventory-ebay">
+        Sell
+       </a>
+       <a href="https://go.developer.ebay.com/commerce-apis-shared-capabilities-0">
+        Commerce
+       </a>
+       <a href="https://go.developer.ebay.com/api-documentation">
+        All API documentation
+       </a>
+       <a href="https://go.developer.ebay.com/marketing-handbook-introduction">
+        App Marketing Handbook
+       </a>
+       <a href="https://go.developer.ebay.com/knowledge-base">
+        Knowledge Base
+       </a>
+      </div>
+     </li>
+     <li>
+      <a href="#">
+       Support
+       <span class="icon-arrow-down">
+       </span>
+      </a>
+      <div class="list-entries hidden">
+       <a href="https://go.developer.ebay.com/api-status">
+        API site status
+       </a>
+       <a href="/my/support/tickets">
+        Premium support
+       </a>
+       <a href="https://go.developer.ebay.com/api-call-limits">
+        API call limits
+       </a>
+       <a href="/my/support/tickets?tab=app-check">
+        Compatible app check
+       </a>
+      </div>
+     </li>
+     <li>
+      <a href="#">
+       Tools &amp; Samples
+       <span class="icon-arrow-down">
+       </span>
+      </a>
+      <div class="list-entries hidden">
+       <a href="https://go.developer.ebay.com/quick-start-guide">
+        Quick Start steps
+       </a>
+       <a href="/my/quick_start">
+        Try a sample app
+       </a>
+       <a href="/my/api_test_tool">
+        API Explorer
+       </a>
+       <a href="http://sandbox.ebay.com/">
+        eBay Sandbox
+       </a>
+       <a class="sub" href="http://developer.ebay.com/DevZone/guides/ebayfeatures/Basics/Call-SandboxTesting.html">
+        About the Sandbox
+       </a>
+       <a class="sub" href="http://sandbox.ebay.com/">
+        Sandbox home page
+       </a>
+       <a class="sub" href="/sandbox/register">
+        Sandbox user registration
+       </a>
+       <a class="sub" href="https://go.developer.ebay.com/sandbox-api-status">
+        Sandbox site status
+       </a>
+       <a href="https://go.developer.ebay.com/ebay-sdks">
+        eBay SDKs
+       </a>
+       <a href="https://github.com/eBayDeveloper/eBay_APICall_CodeSamples">
+        GitHub: Code samples
+       </a>
+       <a href="https://go.developer.ebay.com/dev-help-center">
+        Help Center: More tools &amp; info
+       </a>
+      </div>
+     </li>
+     <li>
+      <a href="#">
+       Growth
+       <span class="icon-arrow-down">
+       </span>
+      </a>
+      <div class="list-entries hidden right">
+       <a href="https://go.developer.ebay.com/dev-program-blog">
+        API blog
+       </a>
+       <a href="https://go.developer.ebay.com/marketing-guidelines">
+        Branding guidelines
+       </a>
+       <a href="https://go.developer.ebay.com/introduction-logos">
+        eBay logos and policies
+       </a>
+       <a href="https://go.developer.ebay.com/ebay-solutions-directory-0">
+        Solutions Directory: Find apps and services
+       </a>
+       <a href="https://apps.ebay.com/">
+        Apps Center: Use widgets &amp; apps on eBay
+       </a>
+       <a href="https://go.developer.ebay.com/affiliate-developers">
+        eBay Partner (Affiliate) Network
+       </a>
+       <a href="https://go.developer.ebay.com/success-stories">
+        Success Stories
+       </a>
+       <a href="http://collabfinder.com/groups/ebay-api-developers-unite">
+        CollabFinder: Build a project team
+       </a>
+      </div>
+     </li>
+     <li>
+      <a class="link search" href="https://go.developer.ebay.com/search-page">
+       <span class="icon i-magnifier">
+       </span>
+      </a>
+     </li>
+    </ul>
+   </header>
+   <div class="page grid-cntr " id="mainContent" role="main" tabindex="-1">
+    <section class="app-documentation-mid-nav" data-widget="/edpweb$6.5.5/src/components/app-documentation-mid-nav/index" id="w3">
+     <div class="mid-menu-div sell">
+      <ul class="mid-menu">
+       <li class="first-list-item sell">
+        <a class="api-group" href="/api-docs/sell/static/sell-landing.html">
+         <span class="icon i-sell">
+         </span>
+         sell
+        </a>
+       </li>
+       <li class="startHere sell" data-id="startHere" id="w3-menu-item-id-0">
+        <a href="/api-docs/sell/static/sell-landing.html" id="w3-menu-item-id-0-link">
+         Start Here
+        </a>
+       </li>
+       <li class="apiDocumentation sell" data-id="apiDocumentation" id="w3-menu-item-id-1">
+        <a class="selected" data-w-onclick="handleMenuClick|w3" href="#" id="w3-menu-item-id-1-link">
+         API Documentation
+         <span class="clipped">
+          Mid level navigation - API Documentation
+         </span>
+        </a>
+        <div class="list-entries hidden sell">
+         <a class="font-light" href="/api-docs/sell/account/overview.html" id="w3-menu-item-child-1-0-link">
+          Account API
+          <span class="clipped">
+           Mid level navigation - Account API
+          </span>
+         </a>
+         <a class="font-light" href="/api-docs/sell/inventory/overview.html" id="w3-menu-item-child-1-1-link">
+          Inventory API
+          <span class="clipped">
+           Mid level navigation - Inventory API
+          </span>
+         </a>
+         <a class="font-light" href="/api-docs/sell/fulfillment/overview.html" id="w3-menu-item-child-1-2-link">
+          Fulfillment API
+          <span class="clipped">
+           Mid level navigation - Fulfillment API
+          </span>
+         </a>
+         <a class="font-light" href="/api-docs/sell/marketing/overview.html" id="w3-menu-item-child-1-3-link">
+          Marketing API
+          <span class="clipped">
+           Mid level navigation - Marketing API
+          </span>
+         </a>
+         <a class="font-light" href="/api-docs/sell/analytics/overview.html" id="w3-menu-item-child-1-4-link">
+          Analytics API
+          <span class="clipped">
+           Mid level navigation - Analytics API
+          </span>
+         </a>
+         <a class="font-light" href="/api-docs/sell/metadata/overview.html" id="w3-menu-item-child-1-5-link">
+          Metadata API
+          <span class="clipped">
+           Mid level navigation - Metadata API
+          </span>
+         </a>
+         <a class="font-light" href="/api-docs/sell/compliance/overview.html" id="w3-menu-item-child-1-6-link">
+          Compliance API
+          <span class="clipped">
+           Mid level navigation - Compliance API
+          </span>
+         </a>
+        </div>
+       </li>
+       <li class="integration sell" data-id="integration" id="w3-menu-item-id-2">
+        <a href="/api-docs/sell/static/selling-ig-landing.html" id="w3-menu-item-id-2-link">
+         Selling Integration Guide
+        </a>
+       </li>
+       <li class="relatedDocs sell" data-id="relatedDocs" id="w3-menu-item-id-3">
+        <a data-w-onclick="handleMenuClick|w3" href="#" id="w3-menu-item-id-3-link">
+         Related Docs
+         <span class="clipped">
+          Mid level navigation - Related Docs
+         </span>
+        </a>
+        <div class="list-entries hidden sell">
+         <a class="font-light" href="/api-docs/static/ebay-rest-landing.html" id="w3-menu-item-child-3-0-link">
+          Using eBay RESTful APIs
+          <span class="clipped">
+           Mid level navigation - Using eBay RESTful APIs
+          </span>
+         </a>
+         <a class="font-light" href="/api-docs/commerce/static/commerce-landing.html" id="w3-menu-item-child-3-1-link">
+          Commerce APIs
+          <span class="clipped">
+           Mid level navigation - Commerce APIs
+          </span>
+         </a>
+         <a class="font-light" href="https://developer.ebay.com/devzone/xml/docs/reference/ebay/index.html" id="w3-menu-item-child-3-2-link">
+          Trading API
+          <span class="clipped">
+           Mid level navigation - Trading API
+          </span>
+         </a>
+         <a class="font-light" href="https://developer.ebay.com/Devzone/post-order/index.html" id="w3-menu-item-child-3-3-link">
+          Post-Order API
+          <span class="clipped">
+           Mid level navigation - Post-Order API
+          </span>
+         </a>
+         <a class="font-light" href="https://developer.ebay.com/devzone/finding/callref/index.html" id="w3-menu-item-child-3-4-link">
+          Finding API
+          <span class="clipped">
+           Mid level navigation - Finding API
+          </span>
+         </a>
+         <a class="font-light" href="https://developer.ebay.com/devzone/guides/ebayfeatures/Notifications/Notifications.html" id="w3-menu-item-child-3-5-link">
+          Platform Notifications
+          <span class="clipped">
+           Mid level navigation - Platform Notifications
+          </span>
+         </a>
+        </div>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h2 class="page-title sell">
+       account API
+       <span class="api-version sell" id="w3-api-version">
+        v1.2.0
+       </span>
+      </h2>
+     </div>
+    </section>
+    <section class="app-documentation flex" data-w-body="0" data-widget="/edpweb$6.5.5/src/components/app-documentation/index" id="w4">
+     <div class="left-nav-toggle-expand">
+      <a class="nav-slit" data-w-onclick="toggleFullscreenMode|w4" href="#" id="w4-menu-arrow">
+       <i class="icon-wrap icon-arrow-down icon-arrow-x" id="w4-icon-arrow-x">
+       </i>
+      </a>
+     </div>
+     <nav class="doc-navigation-links " id="w4-navigation-links">
+      <section class="app-documentation-side-nav" data-widget="/edpweb$6.5.5/src/components/app-documentation-side-nav/index" id="w4-w0">
+       <div class="documentation-left-menu" id="w4-w0-documentation-left-menu">
+        <div class="collapsed" data-id="apiOverviewGuidelines" data-level="0">
+         <a class=" anchor" href="/api-docs/sell/account/overview.html">
+          API overview
+         </a>
+        </div>
+        <div class="expanded" data-id="apiReference" data-level="0">
+         <button aria-controls="expando-0-section" aria-expanded="true" class="panel-header" data-url="/api-docs/sell/account/resources/methods" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-apiReference">
+          <i class="icon icon i-minus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+          </i>
+          API reference
+         </button>
+         <div class="panelcontent">
+          <div class="collapsed" data-id="account-resourceTypes" data-level="1">
+           <a class=" anchor" href="/api-docs/sell/account/resources/methods">
+            Resources
+           </a>
+          </div>
+          <div class="collapsed" data-id="fulfillment_policy" data-level="1">
+           <button aria-controls="expando-1-section" aria-expanded="false" class="panel-header" data-url="/api-docs/sell/account/resources/fulfillment_policy/methods/createFulfillmentPolicy" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-fulfillment_policy">
+            <i class="icon icon i-plus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+            </i>
+            fulfillment_policy
+           </button>
+           <div class="panelcontent">
+            <div class="collapsed" data-id="account-fulfillment_policy-createFulfillmentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/fulfillment_policy/methods/createFulfillmentPolicy">
+              createFulfillmentPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-fulfillment_policy-deleteFulfillmentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/fulfillment_policy/methods/deleteFulfillmentPolicy">
+              deleteFulfillmentPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-fulfillment_policy-getFulfillmentPolicies" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/fulfillment_policy/methods/getFulfillmentPolicies">
+              getFulfillmentPolicies
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-fulfillment_policy-getFulfillmentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/fulfillment_policy/methods/getFulfillmentPolicy">
+              getFulfillmentPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-fulfillment_policy-getFulfillmentPolicyByName" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/fulfillment_policy/methods/getFulfillmentPolicyByName">
+              getFulfillmentPolicyByName
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-fulfillment_policy-updateFulfillmentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/fulfillment_policy/methods/updateFulfillmentPolicy">
+              updateFulfillmentPolicy
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="collapsed" data-id="payment_policy" data-level="1">
+           <button aria-controls="expando-1-section" aria-expanded="false" class="panel-header" data-url="/api-docs/sell/account/resources/payment_policy/methods/createPaymentPolicy" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-payment_policy">
+            <i class="icon icon i-plus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+            </i>
+            payment_policy
+           </button>
+           <div class="panelcontent">
+            <div class="collapsed" data-id="account-payment_policy-createPaymentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/payment_policy/methods/createPaymentPolicy">
+              createPaymentPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-payment_policy-deletePaymentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/payment_policy/methods/deletePaymentPolicy">
+              deletePaymentPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-payment_policy-getPaymentPolicies" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/payment_policy/methods/getPaymentPolicies">
+              getPaymentPolicies
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-payment_policy-getPaymentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/payment_policy/methods/getPaymentPolicy">
+              getPaymentPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-payment_policy-getPaymentPolicyByName" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/payment_policy/methods/getPaymentPolicyByName">
+              getPaymentPolicyByName
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-payment_policy-updatePaymentPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/payment_policy/methods/updatePaymentPolicy">
+              updatePaymentPolicy
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="collapsed" data-id="privilege" data-level="1">
+           <button aria-controls="expando-1-section" aria-expanded="false" class="panel-header" data-url="/api-docs/sell/account/resources/privilege/methods/getPrivileges" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-privilege">
+            <i class="icon icon i-plus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+            </i>
+            privilege
+           </button>
+           <div class="panelcontent">
+            <div class="collapsed" data-id="account-privilege-getPrivileges" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/privilege/methods/getPrivileges">
+              getPrivileges
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="collapsed" data-id="program" data-level="1">
+           <button aria-controls="expando-1-section" aria-expanded="false" class="panel-header" data-url="/api-docs/sell/account/resources/program/methods/getOptedInPrograms" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-program">
+            <i class="icon icon i-plus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+            </i>
+            program
+           </button>
+           <div class="panelcontent">
+            <div class="collapsed" data-id="account-program-getOptedInPrograms" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/program/methods/getOptedInPrograms">
+              getOptedInPrograms
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-program-optInToProgram" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/program/methods/optInToProgram">
+              optInToProgram
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-program-optOutOfProgram" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/program/methods/optOutOfProgram">
+              optOutOfProgram
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="collapsed" data-id="rate_table" data-level="1">
+           <button aria-controls="expando-1-section" aria-expanded="false" class="panel-header" data-url="/api-docs/sell/account/resources/rate_table/methods/getRateTables" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-rate_table">
+            <i class="icon icon i-plus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+            </i>
+            rate_table
+           </button>
+           <div class="panelcontent">
+            <div class="collapsed" data-id="account-rate_table-getRateTables" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/rate_table/methods/getRateTables">
+              getRateTables
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="expanded" data-id="return_policy" data-level="1">
+           <button aria-controls="expando-1-section" aria-expanded="true" class="panel-header" data-url="/api-docs/sell/account/resources/return_policy/methods/createReturnPolicy" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-return_policy">
+            <i class="icon icon i-minus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+            </i>
+            return_policy
+           </button>
+           <div class="panelcontent">
+            <div class="collapsed" data-id="account-return_policy-createReturnPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/return_policy/methods/createReturnPolicy">
+              createReturnPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-return_policy-deleteReturnPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/return_policy/methods/deleteReturnPolicy">
+              deleteReturnPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-return_policy-getReturnPolicies" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/return_policy/methods/getReturnPolicies">
+              getReturnPolicies
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-return_policy-getReturnPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/return_policy/methods/getReturnPolicy">
+              getReturnPolicy
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-return_policy-getReturnPolicyByName" data-level="2">
+             <a class="selected anchor" href="/api-docs/sell/account/resources/return_policy/methods/getReturnPolicyByName">
+              getReturnPolicyByName
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-return_policy-updateReturnPolicy" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/return_policy/methods/updateReturnPolicy">
+              updateReturnPolicy
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="collapsed" data-id="sales_tax" data-level="1">
+           <button aria-controls="expando-1-section" aria-expanded="false" class="panel-header" data-url="/api-docs/sell/account/resources/sales_tax/methods/createOrReplaceSalesTax" data-w-onclick="handleMenuButtonClick|w4-w0" id="w4-w0-sales_tax">
+            <i class="icon icon i-plus" data-w-onclick="handleMenuButtonIconClick|w4-w0">
+            </i>
+            sales_tax
+           </button>
+           <div class="panelcontent">
+            <div class="collapsed" data-id="account-sales_tax-createOrReplaceSalesTax" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/sales_tax/methods/createOrReplaceSalesTax">
+              createOrReplaceSalesTax
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-sales_tax-deleteSalesTax" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/sales_tax/methods/deleteSalesTax">
+              deleteSalesTax
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-sales_tax-getSalesTax" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/sales_tax/methods/getSalesTax">
+              getSalesTax
+             </a>
+            </div>
+            <div class="collapsed" data-id="account-sales_tax-getSalesTaxes" data-level="2">
+             <a class=" anchor" href="/api-docs/sell/account/resources/sales_tax/methods/getSalesTaxes">
+              getSalesTaxes
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="collapsed" data-id="indexes" data-level="1">
+           <a class=" anchor" href="/api-docs/sell/account/fields">
+            Index
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="collapsed" data-id="releaseNotes" data-level="0">
+         <a class=" anchor" href="/api-docs/sell/account/release-notes.html">
+          API release notes
+         </a>
+        </div>
+       </div>
+      </section>
+     </nav>
+     <div class="doc-content">
+      <h1 class="section-title">
+       getReturnPolicyByName
+      </h1>
+      <div class="doc-main-content no-padding" id="w4-0">
+       <section class="app-call" data-widget="/edpweb$6.5.5/src/components/app-call/index" id="w4-w1">
+        <div class="">
+         <div class="call-page-body-wide" id="w4-w1-call-page-body">
+          <section class="app-call-intro" data-widget="/edpweb$6.5.5/src/components/app-call-intro/index" id="w4-w1-w0">
+           <div class="badge-container">
+            <div class="http-method get">
+             GET
+            </div>
+            <div class="path">
+             /return_policy/get_by_policy_name
+            </div>
+           </div>
+           <div>
+            <p>
+             This call retrieves the complete details of a single return policy. Supply both the policy
+             <code>
+              name
+             </code>
+             and its associated
+             <code>
+              marketplace_id
+             </code>
+             in the request query parameters.
+            </p>
+           </div>
+          </section>
+          <section class="app-call-input" data-widget="/edpweb$6.5.5/src/components/app-call-input/index" id="w4-w1-w1">
+           <a class="non-link" name="h2-input">
+            <h2>
+             Input
+            </h2>
+           </a>
+           <a class="non-link" name="h3-resource-uri">
+            <h3 class="section-title">
+             Resource URI (production)
+            </h3>
+           </a>
+           <section class="app-call-uri-parameters" data-widget="/edpweb$6.5.5/src/components/app-call-uri-parameters/index" id="w4-w1-w1-w0">
+            <div class="uri" id="w4-w1-w1-w0-resource-uri">
+             GET https://api.ebay.com/sell/account/v1/return_policy/get_by_policy_name?
+             <div class="uri-parameters">
+              <span>
+               <a href="#uri.marketplace_id" id="w4-w1-w1-w0-uri-param-marketplace_id">
+                marketplace_id
+               </a>
+              </span>
+              <span>
+               =
+              </span>
+              <span>
+               <a class="type" href="/api-docs/sell/account/types/base:MarketplaceIdEnum" id="w4-w1-w1-w0-uri-param-type-0">
+                MarketplaceIdEnum
+               </a>
+              </span>
+              <span>
+               &amp;
+              </span>
+             </div>
+             <div class="uri-parameters">
+              <span>
+               <a href="#uri.name" id="w4-w1-w1-w0-uri-param-name">
+                name
+               </a>
+              </span>
+              <span>
+               =
+              </span>
+              <span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w1-w0-uri-param-type-1">
+                string
+               </a>
+              </span>
+             </div>
+            </div>
+            <a class="non-link" name="h3-uri-parameters">
+             <h3 class="section-title">
+              URI parameters
+             </h3>
+            </a>
+            <section class="app-parameter-table" data-widget="/edpweb$6.5.5/src/components/app-parameter-table/index" id="w4-w1-w1-w0-w0">
+             <div>
+              <table id="uri-parameter-table">
+               <thead>
+                <tr>
+                 <th style="width: 30%;">
+                  Parameter
+                 </th>
+                 <th style="width: 20%;">
+                  Type
+                 </th>
+                 <th style="width: 50%;">
+                  Description
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w1-w0-w0-parameter-full-name-name-0" name="uri.name">
+                   <span class="bold" id="w4-w1-w1-w0-w0-parameter-name-name-0">
+                    name
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="string" href="/api-docs/static/simple-types.html" id="w4-w1-w1-w0-w0-parameter-type-string-0">
+                   string
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w1-w0-w0-parameter-description-name-0">
+                   User-defined return policy name.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Required
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w1-w0-w0-parameter-full-name-marketplace_id-1" name="uri.marketplace_id">
+                   <span class="bold" id="w4-w1-w1-w0-w0-parameter-name-marketplace_id-1">
+                    marketplace_id
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="base:MarketplaceIdEnum" href="/api-docs/sell/account/types/base:MarketplaceIdEnum" id="w4-w1-w1-w0-w0-parameter-type-MarketplaceIdEnum-1">
+                   MarketplaceIdEnum
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w1-w0-w0-parameter-description-marketplace_id-1">
+                   A unique identifier for an eBay marketplace.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Required
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+            </section>
+           </section>
+           <a class="non-link" name="h3-request-headers">
+            <h3 class="section-title">
+             HTTP request headers
+            </h3>
+           </a>
+           <div>
+            All requests made to eBay REST operations require you to provide the
+            <span class="scope">
+             authorization
+            </span>
+            HTTP header for authentication.
+           </div>
+           <p>
+           </p>
+           <section class="app-parameter-table" data-widget="/edpweb$6.5.5/src/components/app-parameter-table/index" id="w4-w1-w1-w1">
+            <label class="non-link" id="w4-w1-w1-w1-parameter-table-no-data">
+             This method has no additional required headers. See
+             <a class="link" href="http://developer.ebay.com/devzone/rest/ebay-rest/content/rest-request-components.html#HTTP">
+              HTTP request headers
+              <span class="clipped">
+               - opens rest request components page
+              </span>
+             </a>
+             for details.
+            </label>
+           </section>
+           <a class="non-link" name="h3-oauth-scope">
+            <h3 class="section-title">
+             OAuth scope
+            </h3>
+           </a>
+           <p>
+            This request requires a User access token with the following scope(s):
+           </p>
+           <p class="scope" id="w4-w1-w1-scope-0">
+            https://api.ebay.com/oauth/api_scope/sell.account
+           </p>
+           <p class="scope" id="w4-w1-w1-scope-1">
+            https://api.ebay.com/oauth/api_scope/sell.account.readonly
+           </p>
+           <p>
+            See
+            <a href="/api-docs/static/oauth-tokens.html">
+             Oauth access tokens
+            </a>
+            for more information.
+           </p>
+           <div class="flex flex-align-center">
+            <a class="non-link flex-10" name="h3-request-payload">
+             <h3 class="section-title">
+              Request payload
+             </h3>
+            </a>
+           </div>
+           <section class="app-call-payload" data-widget="/edpweb$6.5.5/src/components/app-call-payload/index" id="w4-w1-w1-w2">
+            <label id="w4-w1-w1-w2-payload-no-data">
+             This call has no payload.
+            </label>
+           </section>
+           <div class="flex details-container input-row">
+            <div class="flex-17">
+             <a class="non-link" name="h3-request-fields">
+              <h3 class="section-title">
+               Request fields
+              </h3>
+             </a>
+            </div>
+            <div class="flex-3">
+            </div>
+           </div>
+           <div>
+            <section class="app-field-definitions" data-widget="/edpweb$6.5.5/src/components/app-field-definitions/index" id="w4-w1-w1-w3">
+             <label class="non-link" id="w4-w1-w1-w3-field-definitions-no-data">
+              This call has no field definitions.
+             </label>
+            </section>
+           </div>
+          </section>
+          <section class="app-call-output" data-widget="/edpweb$6.5.5/src/components/app-call-output/index" id="w4-w1-w2">
+           <a class="non-link" name="h2-output">
+            <h2>
+             Output
+            </h2>
+           </a>
+           <div>
+            <a class="non-link" name="h3-response-headers">
+             <h3 class="section-title">
+              HTTP response headers
+             </h3>
+            </a>
+            <label id="w4-w1-w2-response-headers-no-data">
+             This call has no response headers.
+            </label>
+           </div>
+           <div class="flex flex-align-center">
+            <a class="non-link flex-10" name="h3-response-payload">
+             <h3 class="section-title flex-10">
+              Response payload
+             </h3>
+            </a>
+            <div class="flex-10">
+             <a class="copy-to-clipboard link" data-w-onclick="handleCopyToClipboard|w4-w1-w2" href="#" id="w4-w1-w2-response-copy-to-clipboard">
+              <i alt="Copy response JSON to clipboard" class="icon i-clipboard">
+              </i>
+              Copy complete valid JSON to Clipboard
+             </a>
+            </div>
+           </div>
+           <section class="app-call-payload" data-widget="/edpweb$6.5.5/src/components/app-call-payload/index" id="w4-w1-w2-w0">
+            <div class="payload">
+             <div>
+              { /*
+              <a class="comment-type" href="/api-docs/sell/account/types/sal:ReturnPolicy" id="w4-w1-w2-w0-type-ReturnPolicy" name="first-occurrence-of-ReturnPolicy">
+               ReturnPolicy
+              </a>
+              <span>
+               */
+              </span>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.categoryTypes" id="w4-w1-w2-w0-categoryTypes">
+                categoryTypes
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                [
+               </span>
+               <div class="field-div">
+                { /*
+                <a class="comment-type" href="/api-docs/sell/account/types/sal:CategoryType" id="w4-w1-w2-w0-type-CategoryType" name="first-occurrence-of-CategoryType">
+                 CategoryType
+                </a>
+                <span>
+                 */
+                </span>
+                <div class="field-div">
+                 <span>
+                  "
+                 </span>
+                 <a class="field" href="#response.categoryTypes.default" id="w4-w1-w2-w0-categoryTypes-default">
+                  default
+                 </a>
+                 <span>
+                  "
+                 </span>
+                 <span>
+                  :
+                 </span>
+                 <span>
+                  "
+                 </span>
+                 <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-boolean-0">
+                  boolean
+                 </a>
+                 <span>
+                  "
+                 </span>
+                 <span>
+                  ,
+                 </span>
+                </div>
+                <div class="field-div">
+                 <span>
+                  "
+                 </span>
+                 <a class="field" href="#response.categoryTypes.name" id="w4-w1-w2-w0-categoryTypes-name">
+                  name
+                 </a>
+                 <span>
+                  "
+                 </span>
+                 <span>
+                  :
+                 </span>
+                 <span>
+                  "
+                 </span>
+                 <a class="type" href="/api-docs/sell/account/types/sal:CategoryTypeEnum" id="w4-w1-w2-w0-type-CategoryTypeEnum-1">
+                  CategoryTypeEnum
+                 </a>
+                 <span>
+                  :
+                 </span>
+                 <a class="values-type" href="/api-docs/sell/account/types/sal:CategoryTypeEnum" id="w4-w1-w2-w0-values-CategoryTypeEnum-1">
+                  [MOTORS_VEHICLES,ALL_EXCLUDING_MOTORS_VEHICLES]
+                 </a>
+                 <span>
+                  "
+                 </span>
+                </div>
+                <span>
+                 }
+                </span>
+               </div>
+               <span>
+                ]
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.description" id="w4-w1-w2-w0-description">
+                description
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-string-1">
+                string
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.extendedHolidayReturnsOffered" id="w4-w1-w2-w0-extendedHolidayReturnsOffered">
+                extendedHolidayReturnsOffered
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-boolean-2">
+                boolean
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.marketplaceId" id="w4-w1-w2-w0-marketplaceId">
+                marketplaceId
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/sell/account/types/base:MarketplaceIdEnum" id="w4-w1-w2-w0-type-MarketplaceIdEnum-3">
+                MarketplaceIdEnum
+               </a>
+               <span>
+                :
+               </span>
+               <a class="values-type" href="/api-docs/sell/account/types/base:MarketplaceIdEnum" id="w4-w1-w2-w0-values-MarketplaceIdEnum-3">
+                [EBAY_AT,EBAY_AU,EBAY_BE...]
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.name" id="w4-w1-w2-w0-name">
+                name
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-string-4">
+                string
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.refundMethod" id="w4-w1-w2-w0-refundMethod">
+                refundMethod
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/sell/account/types/sal:RefundMethodEnum" id="w4-w1-w2-w0-type-RefundMethodEnum-5">
+                RefundMethodEnum
+               </a>
+               <span>
+                :
+               </span>
+               <a class="values-type" href="/api-docs/sell/account/types/sal:RefundMethodEnum" id="w4-w1-w2-w0-values-RefundMethodEnum-5">
+                [MERCHANDISE_CREDIT,MONEY_BACK]
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.restockingFeePercentage" id="w4-w1-w2-w0-restockingFeePercentage">
+                restockingFeePercentage
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-string-6">
+                string
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.returnInstructions" id="w4-w1-w2-w0-returnInstructions">
+                returnInstructions
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-string-7">
+                string
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.returnMethod" id="w4-w1-w2-w0-returnMethod">
+                returnMethod
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/sell/account/types/sal:ReturnMethodEnum" id="w4-w1-w2-w0-type-ReturnMethodEnum-8">
+                ReturnMethodEnum
+               </a>
+               <span>
+                :
+               </span>
+               <a class="values-type" href="/api-docs/sell/account/types/sal:ReturnMethodEnum" id="w4-w1-w2-w0-values-ReturnMethodEnum-8">
+                [EXCHANGE,REPLACEMENT]
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.returnPeriod" id="w4-w1-w2-w0-returnPeriod">
+                returnPeriod
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <div class="field-div">
+                { /*
+                <a class="comment-type" href="/api-docs/sell/account/types/base:TimeDuration" id="w4-w1-w2-w0-type-TimeDuration" name="first-occurrence-of-TimeDuration">
+                 TimeDuration
+                </a>
+                <span>
+                 */
+                </span>
+                <div class="field-div">
+                 <span>
+                  "
+                 </span>
+                 <a class="field" href="#response.returnPeriod.unit" id="w4-w1-w2-w0-returnPeriod-unit">
+                  unit
+                 </a>
+                 <span>
+                  "
+                 </span>
+                 <span>
+                  :
+                 </span>
+                 <span>
+                  "
+                 </span>
+                 <a class="type" href="/api-docs/sell/account/types/base:TimeDurationUnitEnum" id="w4-w1-w2-w0-type-TimeDurationUnitEnum-0">
+                  TimeDurationUnitEnum
+                 </a>
+                 <span>
+                  :
+                 </span>
+                 <a class="values-type" href="/api-docs/sell/account/types/base:TimeDurationUnitEnum" id="w4-w1-w2-w0-values-TimeDurationUnitEnum-0">
+                  [YEAR,MONTH,DAY...]
+                 </a>
+                 <span>
+                  "
+                 </span>
+                 <span>
+                  ,
+                 </span>
+                </div>
+                <div class="field-div">
+                 <span>
+                  "
+                 </span>
+                 <a class="field" href="#response.returnPeriod.value" id="w4-w1-w2-w0-returnPeriod-value">
+                  value
+                 </a>
+                 <span>
+                  "
+                 </span>
+                 <span>
+                  :
+                 </span>
+                 <span>
+                  "
+                 </span>
+                 <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-integer-1">
+                  integer
+                 </a>
+                 <span>
+                  "
+                 </span>
+                </div>
+                <span>
+                 }
+                </span>
+                <span>
+                 ,
+                </span>
+               </div>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.returnPolicyId" id="w4-w1-w2-w0-returnPolicyId">
+                returnPolicyId
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-string-10">
+                string
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.returnsAccepted" id="w4-w1-w2-w0-returnsAccepted">
+                returnsAccepted
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w0-type-boolean-11">
+                boolean
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                ,
+               </span>
+              </div>
+              <div class="field-div">
+               <span>
+                "
+               </span>
+               <a class="field" href="#response.returnShippingCostPayer" id="w4-w1-w2-w0-returnShippingCostPayer">
+                returnShippingCostPayer
+               </a>
+               <span>
+                "
+               </span>
+               <span>
+                :
+               </span>
+               <span>
+                "
+               </span>
+               <a class="type" href="/api-docs/sell/account/types/sal:ReturnShippingCostPayerEnum" id="w4-w1-w2-w0-type-ReturnShippingCostPayerEnum-12">
+                ReturnShippingCostPayerEnum
+               </a>
+               <span>
+                :
+               </span>
+               <a class="values-type" href="/api-docs/sell/account/types/sal:ReturnShippingCostPayerEnum" id="w4-w1-w2-w0-values-ReturnShippingCostPayerEnum-12">
+                [BUYER,SELLER]
+               </a>
+               <span>
+                "
+               </span>
+              </div>
+              <span>
+               }
+              </span>
+             </div>
+            </div>
+           </section>
+           <div class="flex details-container input-row">
+            <div class="flex-17">
+             <a class="non-link" name="h3-response-fields">
+              <h3 class="section-title">
+               Response fields
+              </h3>
+             </a>
+            </div>
+           </div>
+           <div>
+            <section class="app-field-definitions" data-widget="/edpweb$6.5.5/src/components/app-field-definitions/index" id="w4-w1-w2-w1">
+             <div>
+              <table id="Output-field-definitions-table">
+               <thead>
+                <tr>
+                 <th style="width: 30%;">
+                  Output container/field
+                 </th>
+                 <th style="width: 20%;">
+                  Type
+                 </th>
+                 <th style="width: 50%;">
+                  Description
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-categoryTypes-1-0" name="response.categoryTypes">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-categoryTypes-1-0">
+                    categoryTypes
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-type-array-1-0">
+                   array of
+                  </span>
+                  <a class="link" data-type="sal:CategoryType" href="/api-docs/sell/account/types/sal:CategoryType" id="w4-w1-w2-w1-field-definitions-of-CategoryType-1-0">
+                   CategoryType
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-categoryTypes-1-0">
+                   For return policies, this field can be set to only
+                   <code>
+                    ALL_EXCLUDING_MOTORS_VEHICLES
+                   </code>
+                   (returns on motor vehicles are not processed through eBay flows.)
+                   <br/>
+                   <br/>
+                   <b>
+                    Default
+                   </b>
+                   :
+                   <code>
+                    ALL_EXCLUDING_MOTORS_VEHICLES
+                   </code>
+                   (for return policies only)
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Conditional
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-categoryTypes-default-2-0" name="response.categoryTypes.default">
+                   categoryTypes.
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-default-2-0">
+                    default
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="boolean" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-boolean-2-0">
+                   boolean
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-categoryTypes-default-2-0">
+                   Sellers can create multiple policies for any
+                   <code>
+                    categoryTypes.
+                   </code>
+                   <b>
+                    name
+                   </b>
+                   and
+                   <b>
+                    marketplaceId
+                   </b>
+                   combination. For example, you can create multiple fulfillment policies for one marketplace, where they all target the same category type; however, only one can be default at a time.
+                   <br/>
+                   <br/>
+                   If this value is set to
+                   <code>
+                    true
+                   </code>
+                   , it indicates that this policy is the default policy for the associated
+                   <code>
+                    categoryTypes.
+                   </code>
+                   <b>
+                    name
+                   </b>
+                   and
+                   <b>
+                    marketplaceId
+                   </b>
+                   pair.
+                   <br/>
+                   <br/>
+                   <b>
+                    Note:
+                   </b>
+                   eBay considers the status of this field only when you create listings through the Web flow. If you create listings using the APIs, you must specifically set the policies you want applied to a listing in the payload of the call you use to create the listing. If you use the Web flow to create item listings, eBay uses the default policy for the marketplace and category type specified, unless you override the default.
+                   <br/>
+                   <br/>
+                   For more on default policies, see
+                   <a href="/api-docs/sell/static/seller-accounts/business-policies.html#default_policy">
+                    Changing the default policy for a category type
+                   </a>
+                   .
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-categoryTypes-name-2-1" name="response.categoryTypes.name">
+                   categoryTypes.
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-name-2-1">
+                    name
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="sal:CategoryTypeEnum" href="/api-docs/sell/account/types/sal:CategoryTypeEnum" id="w4-w1-w2-w1-field-definitions-type-CategoryTypeEnum-2-1">
+                   CategoryTypeEnum
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-categoryTypes-name-2-1">
+                   The category type to which the policy applies (motor vehicles or non-motor vehicles).
+                   <p class="tablenote">
+                    <b>
+                     Note
+                    </b>
+                    for return policies: The 'MOTORS_VEHICLES' category type is not valid for return policies because eBay flows do not support the return of motor vehicles.
+                   </p>
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-description-2-1" name="response.description">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-description-2-1">
+                    description
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="string" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-string-2-1">
+                   string
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-description-2-1">
+                   An optional seller-defined description of the return policy.
+                   <br/>
+                   <br/>
+                   <b>
+                    Max length
+                   </b>
+                   : 250
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Conditional
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-extendedHolidayReturnsOffered-3-2" name="response.extendedHolidayReturnsOffered">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-extendedHolidayReturnsOffered-3-2">
+                    extendedHolidayReturnsOffered
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="boolean" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-boolean-3-2">
+                   boolean
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-extendedHolidayReturnsOffered-3-2">
+                   If this value is set to
+                   <code>
+                    true
+                   </code>
+                   , it indicates the seller offers an
+                   <em>
+                    Extended Holiday Returns
+                   </em>
+                   policy for their listings.
+                   <p>
+                    <span class="tablenote">
+                     <strong>
+                      IMPORTANT:
+                     </strong>
+                     Extended Holiday Returns is a seasonally available feature that is offered on some eBay marketplaces. To see if the feature is enabled in any given year, check the
+                     <a href="http://pages.ebay.com/seller-center/shipping/returns.html">
+                      Returns on eBay
+                     </a>
+                     page before the holiday season begins. If the feature is not enabled for the season, this field is ignored.
+                    </span>
+                   </p>
+                   <p>
+                    The extended holiday returns period is defined by three dates:
+                   </p>
+                   <ul>
+                    <li>
+                     The start date = start of November.
+                    </li>
+                    <li>
+                     The purchase cutoff date = end of the year.
+                    </li>
+                    <li>
+                     The end date = end of January.
+                    </li>
+                   </ul>
+                   <p>
+                    The above dates may vary by a few days each year. Sellers are notified of the current dates on their eBay marketplace before the holiday period starts.
+                   </p>
+                   <p>
+                    Sellers can specify Extended Holiday Returns (as well as their regular non-holiday returns period) for chosen listings at any time during the year. The Extended Holiday Returns offer is not visible in listings until the start date of current year's holiday returns period, at which point it overrides the non-holiday returns policy. Buyers can see the Extended Holiday Returns offer in listings displayed through the purchase cutoff date and are able to return those purchases until the end date of the period.
+                   </p>
+                   <p>
+                    After the purchase cutoff date, the Extended Holiday Returns offer automatically disappears from the listings and the seller's non-holiday returns period reappears. Purchases made from that point on are subject to the non-holiday returns period, while purchases made before the cutoff date still have until the end of the period to return under the program.
+                   </p>
+                   <p>
+                    If the value of
+                    <strong>
+                     holidayReturns
+                    </strong>
+                    is
+                    <code>
+                     false
+                    </code>
+                    for an item, the return period specified by the
+                    <strong>
+                     returnsWithinOption
+                    </strong>
+                    field applies, regardless of the purchase date. If the item is listed with a policy of no returns,
+                    <strong>
+                     holidayReturns
+                    </strong>
+                    is automatically reset to
+                    <code>
+                     false
+                    </code>
+                    .
+                   </p>
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-marketplaceId-4-3" name="response.marketplaceId">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-marketplaceId-4-3">
+                    marketplaceId
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="base:MarketplaceIdEnum" href="/api-docs/sell/account/types/base:MarketplaceIdEnum" id="w4-w1-w2-w1-field-definitions-type-MarketplaceIdEnum-4-3">
+                   MarketplaceIdEnum
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-marketplaceId-4-3">
+                   The ID of the eBay marketplace to which this return policy applies. If this value is not specified, value defaults to the seller's eBay registration site.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Required
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-name-5-4" name="response.name">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-name-5-4">
+                    name
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="string" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-string-5-4">
+                   string
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-name-5-4">
+                   A user-defined name for this return policy. Names must be unique for policies assigned to the same marketplace.
+                   <br/>
+                   <br/>
+                   <b>
+                    Max length
+                   </b>
+                   : 64
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Required
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-refundMethod-6-5" name="response.refundMethod">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-refundMethod-6-5">
+                    refundMethod
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="sal:RefundMethodEnum" href="/api-docs/sell/account/types/sal:RefundMethodEnum" id="w4-w1-w2-w1-field-definitions-type-RefundMethodEnum-6-5">
+                   RefundMethodEnum
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-refundMethod-6-5">
+                   Indicates the method the seller uses to compensate the buyer for returned items. The return method specified applies only to
+                   <a href="http://developer.ebay.com/DevZone/guides/ebayfeatures/Development/Post-Order-Returns.html#return-reasons" target="_blank">
+                    remorse returns
+                   </a>
+                   .
+                   <br/>
+                   <br/>
+                   Note that each eBay marketplace can support different sets of refund methods. Also, each eBay marketplace has a default setting for this value and if you do not specifically set this value, sellers are obligated to honor the setting that displays in their listings. Call
+                   <b>
+                    GeteBayDetails
+                   </b>
+                   in the Trading API to see what refund methods the marketplaces you sell into support.
+                   <br/>
+                   <br/>
+                   We recommend you set this field to the value of your preferred refund method and that you use the
+                   <b>
+                    description
+                   </b>
+                   field to detail the seller's return policy (such as indicating how quickly the seller will process a refund, whether the seller must receive the item before processing a refund, and other similar useful details).
+                   <br/>
+                   <br/>
+                   You cannot modify this value in a Revise item call if (1) the listing has bids or (2) the listing ends within 12 hours.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-restockingFeePercentage-7-6" name="response.restockingFeePercentage">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-restockingFeePercentage-7-6">
+                    restockingFeePercentage
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="string" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-string-7-6">
+                   string
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-restockingFeePercentage-7-6">
+                   Sellers who accept returns should include this field if they charge buyers a restocking fee when items are returned. A restocking fee comes into play only when an item is returned due to buyer remorse and/or a purchasing mistake, but sellers cannot charge a restocking fee for SNAD-related returns. The total amount returned to the buyer is reduced by the cost of the item multiplied by the percentage indicated by this field.
+                   <p>
+                    Allowable restocking fee values are:
+                   </p>
+                   <ul>
+                    <li>
+                     <code>
+                      0.0
+                     </code>
+                     : No restocking fee is charged to the buyer
+                    </li>
+                    <li>
+                     <code>
+                      10.0
+                     </code>
+                     : 10 percent of the item price is charged to the buyer
+                    </li>
+                    <li>
+                     <code>
+                      15.0
+                     </code>
+                     : 15 percent of the item price is charged to the buyer
+                    </li>
+                    <li>
+                     <code>
+                      20.0
+                     </code>
+                     : Up to 20 percent of the item price is charged to the buyer
+                    </li>
+                   </ul>
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Conditional
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnInstructions-8-7" name="response.returnInstructions">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-returnInstructions-8-7">
+                    returnInstructions
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="string" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-string-8-7">
+                   string
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnInstructions-8-7">
+                   This optional free-form string field lets the seller provide a detailed explanation of the return policy.
+                   <p>
+                    eBay uses this text string as-is in the Return Policy section of the View Item page. Avoid HTML in your descriptions and avoid character entity references (such as
+                    <code>
+                     &amp;pound;
+                    </code>
+                    or
+                    <code>
+                     &amp;#163;
+                    </code>
+                    ). If you include special characters in the return policy description, use the literal UTF-8 or ISO-8559-1 character (e.g. £).
+                   </p>
+                   <p>
+                    <b>
+                     Max length
+                    </b>
+                    : 5000 characters
+                   </p>
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Conditional
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnMethod-9-8" name="response.returnMethod">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-returnMethod-9-8">
+                    returnMethod
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="sal:ReturnMethodEnum" href="/api-docs/sell/account/types/sal:ReturnMethodEnum" id="w4-w1-w2-w1-field-definitions-type-ReturnMethodEnum-9-8">
+                   ReturnMethodEnum
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnMethod-9-8">
+                   This field indicates the method in which the seller handles non-money back return requests for
+                   <a href="http://developer.ebay.com/DevZone/guides/ebayfeatures/Development/Post-Order-Returns.html#return-reasons" target="_blank">
+                    remorse returns
+                   </a>
+                   . Sellers can specify they either exchange or replace items.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnPeriod-10-9" name="response.returnPeriod">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-returnPeriod-10-9">
+                    returnPeriod
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="base:TimeDuration" href="/api-docs/sell/account/types/base:TimeDuration" id="w4-w1-w2-w1-field-definitions-type-TimeDuration-10-9">
+                   TimeDuration
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnPeriod-10-9">
+                   This value indicates the length of time the seller accepts returns, the duration of which starts when the buyer receives the item. If the return policy specifies that the seller accepts returns (
+                   <b>
+                    ReturnsAccepted
+                   </b>
+                   =
+                   <code>
+                    true
+                   </code>
+                   ), then you must set a value for
+                   <b>
+                    returnPeriod
+                   </b>
+                   . It's good practice to call out the value you set here in the
+                   <b>
+                    returnInstructions
+                   </b>
+                   field of the policy.
+                   <br/>
+                   <br/>
+                   The US marketplace accepts three values for this field (note that
+                   <b>
+                    TimeDuration
+                   </b>
+                   is a complex type):
+                   <ul>
+                    <li>
+                     14 Days
+                    </li>
+                    <li>
+                     30 Days
+                    </li>
+                    <li>
+                     60 Days
+                    </li>
+                   </ul>
+                   <p>
+                    Different marketplaces may support different allowable time periods, and some eBay marketplaces may set a default value for this period (such as '14 Days') if the seller accepts returns but omits this
+                    <b>
+                     returnPeriod
+                    </b>
+                    value.
+                   </p>
+                   <p>
+                    To retrieve the allowable values for this field, call
+                    <b>
+                     GeteBayDetails
+                    </b>
+                    in the Trading API with
+                    <b>
+                     DetailName
+                    </b>
+                    set to
+                    <code>
+                     ReturnPolicyDetails
+                    </code>
+                    . In the response review the
+                    <b>
+                     ReturnPolicyDetails.ReturnsWithin
+                    </b>
+                    field to see the values supported on the marketplace targeted by your return policy.
+                   </p>
+                   <p>
+                    Note that this value cannot be modified if the listing has bids or sales, or if the listing ends within 12 hours.
+                   </p>
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnPeriod-unit-11-0" name="response.returnPeriod.unit">
+                   returnPeriod.
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-unit-11-0">
+                    unit
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="base:TimeDurationUnitEnum" href="/api-docs/sell/account/types/base:TimeDurationUnitEnum" id="w4-w1-w2-w1-field-definitions-type-TimeDurationUnitEnum-11-0">
+                   TimeDurationUnitEnum
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnPeriod-unit-11-0">
+                   <i>
+                    Required in
+                   </i>
+                   the
+                   <b>
+                    TimeDuration
+                   </b>
+                   container.
+                   <br/>
+                   <br/>
+                   A time-measurement unit used to specify a period of time.
+                   <br/>
+                   <br/>
+                   Time-measurement units can be years, months, days, hours, minutes, and other time units (see
+                   <b>
+                    TimeDurationUnitEnum
+                   </b>
+                   for a complete list of possible units). The unit is applied to the number in the
+                   <b>
+                    value
+                   </b>
+                   field to define a span of time. See the containing object for details and call
+                   <b>
+                    GeteBayDetails
+                   </b>
+                   in the Trading API to get the allowable values for the specific object you're configuring.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Conditional
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnPeriod-value-11-1" name="response.returnPeriod.value">
+                   returnPeriod.
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-value-11-1">
+                    value
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="integer" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-integer-11-1">
+                   integer
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnPeriod-value-11-1">
+                   <i>
+                    Required in
+                   </i>
+                   the
+                   <b>
+                    TimeDuration
+                   </b>
+                   container.
+                   <br/>
+                   <br/>
+                   An amount of time, as measured by the time-measurement units specified in the
+                   <b>
+                    unit
+                   </b>
+                   field.
+                   <br/>
+                   <br/>
+                   Supported values for this field vary according to the object using the time duration. See the containing object for details and call
+                   <b>
+                    GeteBayDetails
+                   </b>
+                   in the Trading API to get the allowable values for the specific object you're configuring.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Conditional
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnPolicyId-11-10" name="response.returnPolicyId">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-returnPolicyId-11-10">
+                    returnPolicyId
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="string" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-string-11-10">
+                   string
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnPolicyId-11-10">
+                   A unique eBay-assigned ID for this policy. This ID value is appended to the end of the
+                   <code>
+                    Location
+                   </code>
+                   URI that is returned as a response header when you call
+                   <b>
+                    createReturnPolicy
+                   </b>
+                   ).
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Required
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnsAccepted-12-11" name="response.returnsAccepted">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-returnsAccepted-12-11">
+                    returnsAccepted
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="boolean" href="/api-docs/static/simple-types.html" id="w4-w1-w2-w1-field-definitions-type-boolean-12-11">
+                   boolean
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnsAccepted-12-11">
+                   Set this value to
+                   <code>
+                    true
+                   </code>
+                   to indicate the seller accepts returns.
+                   <p>
+                    Call the
+                    <b>
+                     getReturnPolicies
+                    </b>
+                    in the Metadata API to see what categories require returns to be offered for listings in each category. Also, note that some European marketplaces (for example, UK, IE, and DE) require sellers to accept returns for fixed-price items and auctions listed with Buy It Now. For details, see
+                    <a href="http://pages.ebay.co.uk/help/policies/user-agreement.html#returns">
+                     Returns and the Law (UK)
+                    </a>
+                    .
+                   </p>
+                   <p>
+                    <span class="tablenote">
+                     <strong>
+                      Note:
+                     </strong>
+                     Top-Rated sellers must accept item returns and the
+                     <b>
+                      handlingTime
+                     </b>
+                     should be set to zero days or one day for a listing to receive a Top-Rated Plus badge on the View Item or search result pages. For more information on eBay's Top-Rated seller program, see
+                     <a href="http://pages.ebay.com/help/sell/top-rated.html">
+                      Becoming a Top Rated Seller and qualifying for Top Rated Plus benefits
+                     </a>
+                     .
+                    </span>
+                   </p>
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a class="non-link" id="w4-w1-w2-w1-field-definitions-full-name-returnShippingCostPayer-13-12" name="response.returnShippingCostPayer">
+                   <span class="bold" id="w4-w1-w2-w1-field-definitions-field-name-returnShippingCostPayer-13-12">
+                    returnShippingCostPayer
+                   </span>
+                  </a>
+                 </td>
+                 <td>
+                  <a class="link" data-type="sal:ReturnShippingCostPayerEnum" href="/api-docs/sell/account/types/sal:ReturnShippingCostPayerEnum" id="w4-w1-w2-w1-field-definitions-type-ReturnShippingCostPayerEnum-13-12">
+                   ReturnShippingCostPayerEnum
+                  </a>
+                 </td>
+                 <td>
+                  <span id="w4-w1-w2-w1-field-definitions-description-returnShippingCostPayer-13-12">
+                   The seller uses this value to specify whether the buyer or the seller is responsible for paying return shipping charges. The field can be set to either
+                   <code>
+                    BUYER
+                   </code>
+                   or
+                   <code>
+                    SELLER
+                   </code>
+                   .
+                   <br/>
+                   <br/>
+                   Note that the seller is always responsible for return shipping costs for SNAD-related issues.
+                   <p>
+                    <span class="bold">
+                     Occurrence:
+                    </span>
+                    <span>
+                     Always
+                    </span>
+                   </p>
+                  </span>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+            </section>
+           </div>
+           <div>
+            <a class="non-link" name="h3-status-codes">
+             <h3 class="section-title">
+              HTTP status codes
+             </h3>
+            </a>
+            <p>
+             This call can return one of the following HTTP status codes. For an overview of the status codes, see
+             <a href="https://developer.ebay.com/api-docs/static/rest-response-components.html#HTTP">
+              HTTP status codes
+             </a>
+             in
+             <i>
+              Using eBay RESTful APIs
+             </i>
+             .
+            </p>
+            <table id="w4-w1-w2-error-codes-table">
+             <thead>
+              <tr>
+               <th class="header">
+                Status
+               </th>
+               <th>
+                Meaning
+               </th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr id="w4-w1-w2-status-codes-row-0">
+               <td id="w4-w1-w2-status-codes-status-0">
+                200
+               </td>
+               <td id="w4-w1-w2-status-codes-meaning-0">
+                Success
+               </td>
+              </tr>
+              <tr id="w4-w1-w2-status-codes-row-1">
+               <td id="w4-w1-w2-status-codes-status-1">
+                400
+               </td>
+               <td id="w4-w1-w2-status-codes-meaning-1">
+                Bad Request
+               </td>
+              </tr>
+              <tr id="w4-w1-w2-status-codes-row-2">
+               <td id="w4-w1-w2-status-codes-status-2">
+                500
+               </td>
+               <td id="w4-w1-w2-status-codes-meaning-2">
+                Internal Server Error
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </section>
+          <section class="app-call-error-codes" data-widget="/edpweb$6.5.5/src/components/app-call-error-codes/index" id="w4-w1-w3">
+           <a class="non-link" name="h2-error-codes">
+            <h2>
+             Error codes
+            </h2>
+            <p id="w4-w1-w3-error-codes-note">
+            </p>
+           </a>
+           <div>
+            <table id="w4-w1-w3-error-codes-table">
+             <thead>
+              <tr>
+               <th>
+                Code
+               </th>
+               <th>
+                Domain
+               </th>
+               <th>
+                Category
+               </th>
+               <th>
+                Meaning
+               </th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr id="w4-w1-w3-error-codes-row-0">
+               <td id="w4-w1-w3-error-codes-error-id-0">
+                20401
+               </td>
+               <td id="w4-w1-w3-error-codes-domain-0">
+                API_ACCOUNT
+               </td>
+               <td id="w4-w1-w3-error-codes-category-0">
+                REQUEST
+               </td>
+               <td id="w4-w1-w3-error-codes-description0">
+                Missing field {fieldName}. {additionalInfo}
+               </td>
+              </tr>
+              <tr id="w4-w1-w3-error-codes-row-1">
+               <td id="w4-w1-w3-error-codes-error-id-1">
+                20403
+               </td>
+               <td id="w4-w1-w3-error-codes-domain-1">
+                API_ACCOUNT
+               </td>
+               <td id="w4-w1-w3-error-codes-category-1">
+                REQUEST
+               </td>
+               <td id="w4-w1-w3-error-codes-description1">
+                Invalid {fieldName}. {additionalInfo}
+               </td>
+              </tr>
+              <tr id="w4-w1-w3-error-codes-row-2">
+               <td id="w4-w1-w3-error-codes-error-id-2">
+                20404
+               </td>
+               <td id="w4-w1-w3-error-codes-domain-2">
+                API_ACCOUNT
+               </td>
+               <td id="w4-w1-w3-error-codes-category-2">
+                REQUEST
+               </td>
+               <td id="w4-w1-w3-error-codes-description2">
+                {fieldName} not found.
+               </td>
+              </tr>
+              <tr id="w4-w1-w3-error-codes-row-3">
+               <td id="w4-w1-w3-error-codes-error-id-3">
+                20500
+               </td>
+               <td id="w4-w1-w3-error-codes-domain-3">
+                API_ACCOUNT
+               </td>
+               <td id="w4-w1-w3-error-codes-category-3">
+                APPLICATION
+               </td>
+               <td id="w4-w1-w3-error-codes-description3">
+                System error.
+               </td>
+              </tr>
+              <tr id="w4-w1-w3-error-codes-row-4">
+               <td id="w4-w1-w3-error-codes-error-id-4">
+                20501
+               </td>
+               <td id="w4-w1-w3-error-codes-domain-4">
+                API_ACCOUNT
+               </td>
+               <td id="w4-w1-w3-error-codes-category-4">
+                APPLICATION
+               </td>
+               <td id="w4-w1-w3-error-codes-description4">
+                Service unavailable. Please try again in next 24 hours.
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </section>
+          <section class="app-call-samples" data-widget="/edpweb$6.5.5/src/components/app-call-samples/index" id="w4-w1-w4">
+           <a class="non-link" name="h2-samples">
+            <h2 id="_samples">
+             Samples
+            </h2>
+           </a>
+           <p>
+            New to making API calls? Please see
+            <a href="/api-docs/static/make-a-call.html">
+             Making a Call
+            </a>
+            .
+           </p>
+           <p>
+            Note: Some item IDs, user IDs, or other data in these samples might no longer be active on eBay. If necessary, you can substitute current eBay data in your requests.
+           </p>
+           <div class="sample" id="w4-w1-w4-GetReturnPolicybyName-0">
+            <h3 class="sample-heading" id="w4-w1-w4-title-0">
+             Sample 1: Get Return Policy by Name
+            </h3>
+            <div id="w4-w1-w4-main-description-0">
+             This call retrieves the return policy that matches the name you specify in the request.
+            </div>
+            <h4 class="in-out-head">
+             Input
+            </h4>
+            <div class="sub-description" id="w4-w1-w4-request-description-0">
+             This call uses two query parameters to identify the policy you want to retrieve. Specify the name of the policy you want to retrieve using the
+             <b>
+              name
+             </b>
+             query parameter and supply the marketplace for the policy using the
+             <b>
+              marketplace_id
+             </b>
+             parameter. This call does not use a request body.
+            </div>
+            <div class="endpoint-container flex">
+             <div class="http-method get" id="w4-w1-w4-input-endpoint-0">
+              <span>
+               GET
+              </span>
+             </div>
+             <div class="path">
+              https://api.sandbox.ebay.com/sell/account/v1/return_policy/get_by_policy_name?name=minimal return policy, US marketplace&amp; marketplace_id=EBAY_US
+             </div>
+            </div>
+            <h4 class="in-out-head">
+             Output
+            </h4>
+            <div class="sub-description" id="w4-w1-w4-response-description-0">
+             A successful call returns an HTTP status code of
+             <b>
+              200 OK
+             </b>
+             and a response body containing the specified return policy.
+            </div>
+            <div class="editor-container" id="w4-w1-w4-output-body-0">
+             <textarea class="sample-payload" id="w4-w1-w4-response-body-0">{
+  "name": "minimal return policy, US marketplace",
+  "marketplaceId": "EBAY_US",
+  "categoryTypes": [
+    {
+      "name": "ALL_EXCLUDING_MOTORS_VEHICLES",
+      "default": false
+    }
+  ],
+  "returnsAccepted": true,
+  "returnPeriod": {
+    "value": 30,
+    "unit": "DAY"
+  },
+  "extendedHolidayReturnsOffered": false,
+  "restockingFeePercentage": "0.0",
+  "refundMethod": "MONEY_BACK",
+  "returnShippingCostPayer": "SELLER",
+  "returnPolicyId": "5487680000"
+}</textarea>
+            </div>
+           </div>
+          </section>
+         </div>
+        </div>
+        <section class="app-documentation-right-nav" data-widget="/edpweb$6.5.5/src/components/app-documentation-right-nav/index" id="w4-w1-w5">
+        </section>
+       </section>
+      </div>
+     </div>
+    </section>
+    <div style="clear: both">
+    </div>
+   </div>
+   <footer class="app-footer" data-widget="/edpweb$6.5.5/src/components/app-footer/index" id="w5">
+    <div class="flex">
+     <div class="flex-5">
+      <h2>
+       Support
+      </h2>
+      <a href="https://go.developer.ebay.com/dev-help-center">
+       Developer Help Center
+      </a>
+      <a href="https://go.developer.ebay.com/api-status">
+       API Status
+      </a>
+      <a href="/my/support/tickets">
+       Request Support
+      </a>
+      <a href="https://go.developer.ebay.com/knowledge-base">
+       Knowledge Base
+      </a>
+      <a href="https://forums.developer.ebay.com">
+       Developer Forums
+      </a>
+      <a href="https://go.developer.ebay.com/ebay-sdks">
+       eBay Software Development Kits
+      </a>
+     </div>
+     <div class="flex-5">
+      <h2>
+       API Information
+      </h2>
+      <a href="https://go.developer.ebay.com/api-license-agreement">
+       API License Agreement
+      </a>
+      <a href="https://go.developer.ebay.com/api-documentation">
+       API Documentation
+      </a>
+      <a href="https://go.developer.ebay.com/api-call-limits">
+       API Call Limits
+      </a>
+      <a href="https://go.developer.ebay.com/marketing-handbook-introduction">
+       Marketing Handbook
+      </a>
+      <a href="https://go.developer.ebay.com/api-features-guide-find-right-api-your-use-case">
+       API Features Comparison
+      </a>
+     </div>
+     <div class="flex-5">
+      <h2>
+       Apps Center
+      </h2>
+      <a href="http://apps.ebay.com" target="_blank" title="opens in new window or tab">
+       Applications Directory
+       <i class="fa fa-external-link fa-1">
+       </i>
+      </a>
+      <a href="http://solutions.ebay.com">
+       Solutions Directory
+      </a>
+      <h2>
+       Social Media
+      </h2>
+      <div>
+       <a class="edp-social edp-fb" href="https://www.facebook.com/eBayDev/">
+       </a>
+       <a class="edp-social edp-twitter" href="https://twitter.com/intent/user?screen_name=eBayDev">
+       </a>
+       <a class="edp-social edp-youtube" href="https://www.youtube.com/user/ebaydeveloper">
+       </a>
+       <a class="edp-social edp-envelope" href="https://go.developer.ebay.com/contact">
+       </a>
+      </div>
+     </div>
+     <div class="flex-5">
+      <h2>
+       Programs
+      </h2>
+      <a href="https://go.developer.ebay.com/about-us">
+       About Us
+      </a>
+      <a href="https://go.developer.ebay.com/dev-program-blog">
+       eBay Developers Program Blog
+      </a>
+      <a href="https://go.developer.ebay.com/affiliate-developers">
+       Affiliate Developers
+      </a>
+      <a href="https://go.developer.ebay.com/developer-directory">
+       Developer Directory
+      </a>
+      <a href="https://go.developer.ebay.com/developer-jobs">
+       Developer Jobs
+      </a>
+     </div>
+    </div>
+    <div class="sub-text">
+     Copyright 1999 - 2018 eBay Inc. All rights reserved.
+     <a href="http://pages.ebay.com/help/policies/user-agreement.html?rt=nc" target="_blank" title="opens in new window or tab">
+      User Agreement
+     </a>
+     |
+     <a href="http://pages.ebay.com/help/policies/privacy-policy.html?rt=nc" target="_blank" title="opens in new window or tab">
+      Privacy Policy
+     </a>
+     |
+     <a href="http://pages.ebay.com/help/account/cookies-web-beacons.html" target="_blank" title="opens in new window or tab">
+      Cookies
+     </a>
+     .
+     <a href="https://go.developer.ebay.com/contact">
+      Site Feedback
+     </a>
+    </div>
+   </footer>
+  </section>
+  <div class="app-mask hidden" data-widget="/edpweb$6.5.5/src/components/app-mask/index" id="w6">
+   <div class="mask">
+   </div>
+  </div>
+  <div class="app-spinner hidden" data-widget="/edpweb$6.5.5/src/components/app-spinner/index" id="w7">
+   <span aria-label="Busy" class="spinner spinner--large" role="img">
+   </span>
+  </div>
+  <script src="https://ir.ebaystatic.com/rs/c/call-d0cc0f.js">
+  </script>
+  <script nonce="beJK4SwWhOaiOZAN6U73SWU0EURzv9">
+   $_mod.ready();
+  </script>
+  <script>
+   (function() {var t=window.$markoWidgetsState||(window.$markoWidgetsState={})
+var $={"w4-w0":{"iconClicked":false},"w4-w1-w1-w0-w0":{"anchorPrefix":"uri","apiFacts":{"apiGroup":"sell","apiName":"account","swiftFolder":"master","resourceKey":"return_policy","methodKey":"getReturnPolicyByName","startHerePageUrl":"/api-docs/sell/static/sell-landing.html","openApiSpec":{"v2":{},"v3":{}},"leftNavDataModel":{"navigationTitle":"account API","keysToExpand":["apiReference","return_policy","getReturnPolicyByName"],"navigationSourceData":{"title":"apiOverviewMenuItems","children":[{"key":"apiOverviewGuidelines","title":"API overview","url":"/api-docs/sell/account/overview.html"},{"key":"apiReference","title":"API reference","children":[{"key":"account-resourceTypes","title":"Resources","url":"/api-docs/sell/account/resources/methods"},{"key":"fulfillment_policy","title":"fulfillment_policy","children":[{"key":"account-fulfillment_policy-createFulfillmentPolicy","title":"createFulfillmentPolicy","url":"/api-docs/sell/account/resources/fulfillment_policy/methods/createFulfillmentPolicy"},{"key":"account-fulfillment_policy-deleteFulfillmentPolicy","title":"deleteFulfillmentPolicy","url":"/api-docs/sell/account/resources/fulfillment_policy/methods/deleteFulfillmentPolicy"},{"key":"account-fulfillment_policy-getFulfillmentPolicies","title":"getFulfillmentPolicies","url":"/api-docs/sell/account/resources/fulfillment_policy/methods/getFulfillmentPolicies"},{"key":"account-fulfillment_policy-getFulfillmentPolicy","title":"getFulfillmentPolicy","url":"/api-docs/sell/account/resources/fulfillment_policy/methods/getFulfillmentPolicy"},{"key":"account-fulfillment_policy-getFulfillmentPolicyByName","title":"getFulfillmentPolicyByName","url":"/api-docs/sell/account/resources/fulfillment_policy/methods/getFulfillmentPolicyByName"},{"key":"account-fulfillment_policy-updateFulfillmentPolicy","title":"updateFulfillmentPolicy","url":"/api-docs/sell/account/resources/fulfillment_policy/methods/updateFulfillmentPolicy"}]},{"key":"payment_policy","title":"payment_policy","children":[{"key":"account-payment_policy-createPaymentPolicy","title":"createPaymentPolicy","url":"/api-docs/sell/account/resources/payment_policy/methods/createPaymentPolicy"},{"key":"account-payment_policy-deletePaymentPolicy","title":"deletePaymentPolicy","url":"/api-docs/sell/account/resources/payment_policy/methods/deletePaymentPolicy"},{"key":"account-payment_policy-getPaymentPolicies","title":"getPaymentPolicies","url":"/api-docs/sell/account/resources/payment_policy/methods/getPaymentPolicies"},{"key":"account-payment_policy-getPaymentPolicy","title":"getPaymentPolicy","url":"/api-docs/sell/account/resources/payment_policy/methods/getPaymentPolicy"},{"key":"account-payment_policy-getPaymentPolicyByName","title":"getPaymentPolicyByName","url":"/api-docs/sell/account/resources/payment_policy/methods/getPaymentPolicyByName"},{"key":"account-payment_policy-updatePaymentPolicy","title":"updatePaymentPolicy","url":"/api-docs/sell/account/resources/payment_policy/methods/updatePaymentPolicy"}]},{"key":"privilege","title":"privilege","children":[{"key":"account-privilege-getPrivileges","title":"getPrivileges","url":"/api-docs/sell/account/resources/privilege/methods/getPrivileges"}]},{"key":"program","title":"program","children":[{"key":"account-program-getOptedInPrograms","title":"getOptedInPrograms","url":"/api-docs/sell/account/resources/program/methods/getOptedInPrograms"},{"key":"account-program-optInToProgram","title":"optInToProgram","url":"/api-docs/sell/account/resources/program/methods/optInToProgram"},{"key":"account-program-optOutOfProgram","title":"optOutOfProgram","url":"/api-docs/sell/account/resources/program/methods/optOutOfProgram"}]},{"key":"rate_table","title":"rate_table","children":[{"key":"account-rate_table-getRateTables","title":"getRateTables","url":"/api-docs/sell/account/resources/rate_table/methods/getRateTables"}]},{"key":"return_policy","title":"return_policy","children":[{"key":"account-return_policy-createReturnPolicy","title":"createReturnPolicy","url":"/api-docs/sell/account/resources/return_policy/methods/createReturnPolicy"},{"key":"account-return_policy-deleteReturnPolicy","title":"deleteReturnPolicy","url":"/api-docs/sell/account/resources/return_policy/methods/deleteReturnPolicy"},{"key":"account-return_policy-getReturnPolicies","title":"getReturnPolicies","url":"/api-docs/sell/account/resources/return_policy/methods/getReturnPolicies"},{"key":"account-return_policy-getReturnPolicy","title":"getReturnPolicy","url":"/api-docs/sell/account/resources/return_policy/methods/getReturnPolicy"},{"key":"account-return_policy-getReturnPolicyByName","title":"getReturnPolicyByName","url":"/api-docs/sell/account/resources/return_policy/methods/getReturnPolicyByName"},{"key":"account-return_policy-updateReturnPolicy","title":"updateReturnPolicy","url":"/api-docs/sell/account/resources/return_policy/methods/updateReturnPolicy"}]},{"key":"sales_tax","title":"sales_tax","children":[{"key":"account-sales_tax-createOrReplaceSalesTax","title":"createOrReplaceSalesTax","url":"/api-docs/sell/account/resources/sales_tax/methods/createOrReplaceSalesTax"},{"key":"account-sales_tax-deleteSalesTax","title":"deleteSalesTax","url":"/api-docs/sell/account/resources/sales_tax/methods/deleteSalesTax"},{"key":"account-sales_tax-getSalesTax","title":"getSalesTax","url":"/api-docs/sell/account/resources/sales_tax/methods/getSalesTax"},{"key":"account-sales_tax-getSalesTaxes","title":"getSalesTaxes","url":"/api-docs/sell/account/resources/sales_tax/methods/getSalesTaxes"}]},{"key":"indexes","title":"Index","url":"/api-docs/sell/account/fields"}]},{"key":"releaseNotes","title":"API release notes","url":"/api-docs/sell/account/release-notes.html"}]},"selectedKey":"account-return_policy-getReturnPolicyByName"},"pageMainTitle":"getReturnPolicyByName - eBay account API","version":"v1.2.0"},"displayParameters":{"fields":[{"name":"name","description":"User-defined return policy name.","occurrence":"Required","location":"query","typeDetails":{"type":"string","displayNameForType":"string"}},{"name":"marketplace_id","description":"A unique identifier for an eBay marketplace.","occurrence":"Required","location":"query","typeDetails":{"type":"base:MarketplaceIdEnum","displayNameForType":"MarketplaceIdEnum"}}]},"isRequired":false,"parameters":{"fields":[null,null]},"requiredParameters":[],"typeOfContainer":"uri","typeOfParameter":"Parameter"},"w4-w1-w1-w1":{"anchorPrefix":"","displayParameters":{"fields":[]},"isRequired":false,"requiredParameters":[],"typeOfContainer":"header","typeOfParameter":"Header"},"w4-w1-w1-w3":{"displayFields":{},"anchorPrefix":"request","isRequired":false,"noDataMessage":"field definitions","requiredFields":[],"typeOfContainer":"Input","typeOfField":"container/field"},"w4-w1-w1":{"isRequired":false,"requestJsonView":{}},"w4-w1-w2-w1":{"displayFields":{"typeDetails":{"type":"sal:ReturnPolicy","displayNameForType":"ReturnPolicy","isFirstAncestor":true},"fields":[{"name":"categoryTypes","description":"For return policies, this field can be set to only <code>ALL_EXCLUDING_MOTORS_VEHICLES\u003C/code> (returns on motor vehicles are not processed through eBay flows.) <br><br><b>Default\u003C/b>: <code>ALL_EXCLUDING_MOTORS_VEHICLES\u003C/code> (for return policies only)","occurrence":"Conditional","typeDetails":{"type":"array","displayNameForType":"array","isFirstAncestor":true,"of":"sal:CategoryType","displayNameForOf":"CategoryType"},"fields":[{"name":"default","typeDetails":{"type":"boolean","displayNameForType":"boolean"},"description":"Sellers can create multiple policies for any <code>categoryTypes.\u003C/code><b>name\u003C/b> and <b>marketplaceId\u003C/b> combination. For example, you can create multiple fulfillment policies for one marketplace, where they all target the same category type; however, only one can be default at a time. <br><br>If this value is set to <code>true\u003C/code>, it indicates that this policy is the default policy for the associated <code>categoryTypes.\u003C/code><b>name\u003C/b> and <b>marketplaceId\u003C/b> pair. <br><br><b>Note:\u003C/b> eBay considers the status of this field only when you create listings through the Web flow. If you create listings using the APIs, you must specifically set the policies you want applied to a listing in the payload of the call you use to create the listing. If you use the Web flow to create item listings, eBay uses the default policy for the marketplace and category type specified, unless you override the default. <br><br>For more on default policies, see <a href=\"/api-docs/sell/static/seller-accounts/business-policies.html#default_policy\">Changing the default policy for a category type\u003C/a>.","occurrence":"Always"},{"name":"name","typeDetails":{"type":"sal:CategoryTypeEnum","displayNameForType":"CategoryTypeEnum","values":["MOTORS_VEHICLES","ALL_EXCLUDING_MOTORS_VEHICLES"]},"description":"The category type to which the policy applies (motor vehicles or non-motor vehicles). <p class=\"tablenote\"><b>Note\u003C/b> for return policies: The 'MOTORS_VEHICLES' category type is not valid for return policies because eBay flows do not support the return of motor vehicles.\u003C/p>","occurrence":"Always"}]},{"name":"description","typeDetails":{"type":"string","displayNameForType":"string"},"description":"An optional seller-defined description of the return policy. <br><br><b>Max length\u003C/b>: 250","occurrence":"Conditional"},{"name":"extendedHolidayReturnsOffered","typeDetails":{"type":"boolean","displayNameForType":"boolean"},"description":"If this value is set to <code>true\u003C/code>, it indicates the seller offers an <em>Extended Holiday Returns\u003C/em> policy for their listings.  <p><span class=\"tablenote\"><strong>IMPORTANT:\u003C/strong> Extended Holiday Returns is a seasonally available feature that is offered on some eBay marketplaces. To see if the feature is enabled in any given year, check the <a href=\"http://pages.ebay.com/seller-center/shipping/returns.html\">Returns on eBay\u003C/a> page before the holiday season begins. If the feature is not enabled for the season, this field is ignored.\u003C/span>\u003C/p>  <p>The extended holiday returns period is defined by three dates:\u003C/p> <ul><li>The start date = start of November.\u003C/li><li>The purchase cutoff date = end of the year.\u003C/li><li>The end date = end of January.\u003C/li>\u003C/ul>  <p>The above dates may vary by a few days each year. Sellers are notified of the current dates on their eBay marketplace before the holiday period starts.\u003C/p>  <p>Sellers can specify Extended Holiday Returns (as well as their regular non-holiday returns period) for chosen listings at any time during the year. The Extended Holiday Returns offer is not visible in listings until the start date of current year's holiday returns period, at which point it overrides the non-holiday returns policy. Buyers can see the Extended Holiday Returns offer in listings displayed through the purchase cutoff date and are able to return those purchases until the end date of the period.\u003C/p>  <p>After the purchase cutoff date, the Extended Holiday Returns offer automatically disappears from the listings and the seller's non-holiday returns period reappears. Purchases made from that point on are subject to the non-holiday returns period, while purchases made before the cutoff date still have until the end of the period to return under the program.\u003C/p>  <p>If the value of <strong>holidayReturns\u003C/strong> is <code>false\u003C/code> for an item, the return period specified by the <strong>returnsWithinOption\u003C/strong> field applies, regardless of the purchase date. If the item is listed with a policy of no returns, <strong>holidayReturns\u003C/strong> is automatically reset to <code>false\u003C/code>.\u003C/p>","occurrence":"Always"},{"name":"marketplaceId","typeDetails":{"type":"base:MarketplaceIdEnum","displayNameForType":"MarketplaceIdEnum","values":["EBAY_AT","EBAY_AU","EBAY_BE","EBAY_CA","EBAY_CH","EBAY_CN","EBAY_CZ","EBAY_DE","EBAY_DK","EBAY_ES","EBAY_FI","EBAY_FR","EBAY_GB","EBAY_GR","EBAY_HK","EBAY_HU","EBAY_ID","EBAY_IE","EBAY_IL","EBAY_IN","EBAY_IT","EBAY_JP","EBAY_MY","EBAY_NL","EBAY_NO","EBAY_NZ","EBAY_PE","EBAY_PH","EBAY_PL","EBAY_PR","EBAY_PT","EBAY_RU","EBAY_SE","EBAY_SG","EBAY_TH","EBAY_TW","EBAY_US","EBAY_VN","EBAY_ZA","EBAY_HALF_US","EBAY_MOTORS_US"]},"description":"The ID of the eBay marketplace to which this return policy applies. If this value is not specified, value defaults to the seller's eBay registration site.","occurrence":"Required"},{"name":"name","typeDetails":{"type":"string","displayNameForType":"string"},"description":"A user-defined name for this return policy. Names must be unique for policies assigned to the same marketplace. <br><br><b>Max length\u003C/b>: 64","occurrence":"Required"},{"name":"refundMethod","typeDetails":{"type":"sal:RefundMethodEnum","displayNameForType":"RefundMethodEnum","values":["MERCHANDISE_CREDIT","MONEY_BACK"]},"description":"Indicates the method the seller uses to compensate the buyer for returned items. The return method specified applies only to <a href=\"http://developer.ebay.com/DevZone/guides/ebayfeatures/Development/Post-Order-Returns.html#return-reasons\" target=\"_blank\">remorse returns\u003C/a>. <br><br>Note that each eBay marketplace can support different sets of refund methods. Also, each eBay marketplace has a default setting for this value and if you do not specifically set this value, sellers are obligated to honor the setting that displays in their listings. Call <b>GeteBayDetails\u003C/b> in the Trading API to see what refund methods the marketplaces you sell into support. <br><br>We recommend you set this field to the value of your preferred refund method and that you use the <b>description\u003C/b> field to detail the seller's return policy (such as indicating how quickly the seller will process a refund, whether the seller must receive the item before processing a refund, and other similar useful details). <br><br>You cannot modify this value in a Revise item call if (1) the listing has bids or (2) the listing ends within 12 hours.","occurrence":"Always"},{"name":"restockingFeePercentage","typeDetails":{"type":"string","displayNameForType":"string"},"description":"Sellers who accept returns should include this field if they charge buyers a restocking fee when items are returned. A restocking fee comes into play only when an item is returned due to buyer remorse and/or a purchasing mistake, but sellers cannot charge a restocking fee for SNAD-related returns. The total amount returned to the buyer is reduced by the cost of the item multiplied by the percentage indicated by this field. <p>Allowable restocking fee values are:\u003C/p> <ul><li><code>0.0\u003C/code>: No restocking fee is charged to the buyer\u003C/li><li><code>10.0\u003C/code>: 10 percent of the item price is charged to the buyer\u003C/li><li><code>15.0\u003C/code>: 15 percent of the item price is charged to the buyer\u003C/li> <li><code>20.0\u003C/code>: Up to 20 percent of the item price is charged to the buyer\u003C/li>\u003C/ul>","occurrence":"Conditional"},{"name":"returnInstructions","typeDetails":{"type":"string","displayNameForType":"string"},"description":"This optional free-form string field lets the seller provide a detailed explanation of the return policy. <p>eBay uses this text string as-is in the Return Policy section of the View Item page. Avoid HTML in your descriptions and avoid character entity references (such as <code>&amp;pound;\u003C/code> or <code>&amp;#163;\u003C/code>). If you include special characters in the return policy description, use the literal UTF-8 or ISO-8559-1 character (e.g. £).\u003C/p> <p><b>Max length\u003C/b>: 5000 characters\u003C/p>","occurrence":"Conditional"},{"name":"returnMethod","typeDetails":{"type":"sal:ReturnMethodEnum","displayNameForType":"ReturnMethodEnum","values":["EXCHANGE","REPLACEMENT"]},"description":"This field indicates the method in which the seller handles non-money back return requests for <a href=\"http://developer.ebay.com/DevZone/guides/ebayfeatures/Development/Post-Order-Returns.html#return-reasons\" target=\"_blank\">remorse returns\u003C/a>. Sellers can specify they either exchange or replace items.","occurrence":"Always"},{"name":"returnPeriod","typeDetails":{"type":"base:TimeDuration","displayNameForType":"TimeDuration","isFirstAncestor":true},"description":"This value indicates the length of time the seller accepts returns, the duration of which starts when the buyer receives the item. If the return policy specifies that the seller accepts returns (<b>ReturnsAccepted\u003C/b>=<code>true\u003C/code>), then you must set a value for <b>returnPeriod\u003C/b>. It's good practice to call out the value you set here in the <b>returnInstructions\u003C/b> field of the policy. <br><br>The US marketplace accepts three values for this field (note that <b>TimeDuration\u003C/b> is a complex type): <ul><li>14 Days\u003C/li><li>30 Days\u003C/li><li>60 Days\u003C/li>\u003C/ul>  <p>Different marketplaces may support different allowable time periods, and some eBay marketplaces may set a default value for this period (such as '14 Days') if the seller accepts returns but omits this <b>returnPeriod\u003C/b> value.\u003C/p>  <p>To retrieve the allowable values for this field, call <b>GeteBayDetails\u003C/b> in the Trading API with <b>DetailName\u003C/b> set to <code>ReturnPolicyDetails\u003C/code>. In the response review the <b>ReturnPolicyDetails.ReturnsWithin\u003C/b> field to see the values supported on the marketplace targeted by your return policy.\u003C/p>  <p>Note that this value cannot be modified if the listing has bids or sales, or if the listing ends within 12 hours.\u003C/p>","occurrence":"Always","fields":[{"name":"unit","typeDetails":{"type":"base:TimeDurationUnitEnum","displayNameForType":"TimeDurationUnitEnum","values":["YEAR","MONTH","DAY","HOUR","CALENDAR_DAY","BUSINESS_DAY","MINUTE","SECOND","MILLISECOND"]},"description":"<i>Required in \u003C/i> the <b>TimeDuration\u003C/b> container.  <br><br>A time-measurement unit used to specify a period of time. <br><br>Time-measurement units can be years, months, days, hours, minutes, and other time units (see <b>TimeDurationUnitEnum\u003C/b> for a complete list of possible units). The unit is applied to the number in the <b>value\u003C/b> field to define a span of time. See the containing object for details and call <b>GeteBayDetails\u003C/b> in the Trading API to get the allowable values for the specific object you're configuring.","occurrence":"Conditional"},{"name":"value","typeDetails":{"type":"integer","displayNameForType":"integer"},"description":"<i>Required in \u003C/i> the <b>TimeDuration\u003C/b> container.  <br><br>An amount of time, as measured by the time-measurement units specified in the <b>unit\u003C/b> field. <br><br>Supported values for this field vary according to the object using the time duration. See the containing object for details and call <b>GeteBayDetails\u003C/b> in the Trading API to get the allowable values for the specific object you're configuring.","occurrence":"Conditional"}]},{"name":"returnPolicyId","typeDetails":{"type":"string","displayNameForType":"string"},"description":"A unique eBay-assigned ID for this policy. This ID value is appended to the end of the <code>Location\u003C/code> URI that is returned as a response header when you call <b>createReturnPolicy\u003C/b>).","occurrence":"Required"},{"name":"returnsAccepted","typeDetails":{"type":"boolean","displayNameForType":"boolean"},"description":"Set this value to <code>true\u003C/code> to indicate the seller accepts returns. <p>Call the <b>getReturnPolicies\u003C/b> in the Metadata API to see what categories require returns to be offered for listings in each category. Also, note that some European marketplaces (for example, UK, IE, and DE) require sellers to accept returns for fixed-price items and auctions listed with Buy It Now. For details, see <a href=\"http://pages.ebay.co.uk/help/policies/user-agreement.html#returns\">Returns and the Law (UK)\u003C/a>.\u003C/p>  <p><span class=\"tablenote\"><strong>Note:\u003C/strong>Top-Rated sellers must accept item returns and the <b>handlingTime\u003C/b> should be set to zero days or one day for a listing to receive a Top-Rated Plus badge on the View Item or search result pages. For more information on eBay's Top-Rated seller program, see <a href=\"http://pages.ebay.com/help/sell/top-rated.html\">Becoming a Top Rated Seller and qualifying for Top Rated Plus benefits\u003C/a>.\u003C/span>\u003C/p>","occurrence":"Always"},{"name":"returnShippingCostPayer","typeDetails":{"type":"sal:ReturnShippingCostPayerEnum","displayNameForType":"ReturnShippingCostPayerEnum","values":["BUYER","SELLER"]},"description":"The seller uses this value to specify whether the buyer or the seller is responsible for paying return shipping charges. The field can be set to either <code>BUYER\u003C/code> or <code>SELLER\u003C/code>. <br><br>Note that the seller is always responsible for return shipping costs for SNAD-related issues.","occurrence":"Always"}]},"anchorPrefix":"response","isRequired":false,"noDataMessage":"field definitions","requiredFields":[],"typeOfContainer":"Output","typeOfField":"container/field"},"w4-w1-w2":{"responseJsonView":{"categoryTypes":[{"default":"boolean","name":"CategoryTypeEnum : [MOTORS_VEHICLES,ALL_EXCLUDING_MOTORS_VEHICLES]"}],"description":"string","extendedHolidayReturnsOffered":"boolean","marketplaceId":"MarketplaceIdEnum : [EBAY_AT,EBAY_AU,EBAY_BE,EBAY_CA,EBAY_CH,EBAY_CN,EBAY_CZ,EBAY_DE,EBAY_DK,EBAY_ES,EBAY_FI,EBAY_FR,EBAY_GB,EBAY_GR,EBAY_HK,EBAY_HU,EBAY_ID,EBAY_IE,EBAY_IL,EBAY_IN,EBAY_IT,EBAY_JP,EBAY_MY,EBAY_NL,EBAY_NO,EBAY_NZ,EBAY_PE,EBAY_PH,EBAY_PL,EBAY_PR,EBAY_PT,EBAY_RU,EBAY_SE,EBAY_SG,EBAY_TH,EBAY_TW,EBAY_US,EBAY_VN,EBAY_ZA,EBAY_HALF_US,EBAY_MOTORS_US]","name":"string","refundMethod":"RefundMethodEnum : [MERCHANDISE_CREDIT,MONEY_BACK]","restockingFeePercentage":"string","returnInstructions":"string","returnMethod":"ReturnMethodEnum : [EXCHANGE,REPLACEMENT]","returnPeriod":{"unit":"TimeDurationUnitEnum : [YEAR,MONTH,DAY,HOUR,CALENDAR_DAY,BUSINESS_DAY,MINUTE,SECOND,MILLISECOND]","value":"integer"},"returnPolicyId":"string","returnsAccepted":"boolean","returnShippingCostPayer":"ReturnShippingCostPayerEnum : [BUYER,SELLER]"}},"w4-w1-w3":{},"w4-w1-w4":{},"w4-w1-w5":{"container":"app-call","h2List":[],"prevHeader":"","showRightNav":true},"w4":{"fullscreenView":false,"sectionTitle":"getReturnPolicyByName","removePadding":true,"menuArrow":"down","showLeftNav":true,"navigationTitle":"account API"},"w5":{},"w6":{"hidden":true},"w7":{"hidden":true,"ie":false,"showSpinnerEvent":"showWindowSpinner","hideSpinnerEvent":"hideWindowSpinner"}}
+$["w4-w1-w1-w0-w0"].parameters.fields[0]=$["w4-w1-w1-w0-w0"].displayParameters.fields[1]
+$["w4-w1-w1-w0-w0"].parameters.fields[1]=$["w4-w1-w1-w0-w0"].displayParameters.fields[0]
+$["w4-w1-w1-w1"].apiFacts=$["w4-w1-w1-w0-w0"].apiFacts
+$["w4-w1-w1-w1"].parameters=$["w4-w1-w1-w0-w0"].parameters
+$["w4-w1-w1-w3"].apiFacts=$["w4-w1-w1-w0-w0"].apiFacts
+$["w4-w1-w1-w3"].fieldDefinitions=$["w4-w1-w1-w3"].displayFields
+$["w4-w1-w2-w1"].apiFacts=$["w4-w1-w1-w0-w0"].apiFacts
+$["w4-w1-w2-w1"].fieldDefinitions=$["w4-w1-w2-w1"].displayFields
+$.w4.apiFacts=$["w4-w1-w1-w0-w0"].apiFacts
+t["w4-w0"]=$["w4-w0"]
+t["w4-w1-w1-w0-w0"]=$["w4-w1-w1-w0-w0"]
+t["w4-w1-w1-w1"]=$["w4-w1-w1-w1"]
+t["w4-w1-w1-w3"]=$["w4-w1-w1-w3"]
+t["w4-w1-w1"]=$["w4-w1-w1"]
+t["w4-w1-w2-w1"]=$["w4-w1-w2-w1"]
+t["w4-w1-w2"]=$["w4-w1-w2"]
+t["w4-w1-w3"]=$["w4-w1-w3"]
+t["w4-w1-w4"]=$["w4-w1-w4"]
+t["w4-w1-w5"]=$["w4-w1-w5"]
+t.w4=$.w4
+t.w5=$.w5
+t.w6=$.w6
+t.w7=$.w7
+}());
+(function() {var t=window.$markoWidgetsConfig||(window.$markoWidgetsConfig={})
+var $={"w0":{"statusViewModel":{"errors":[]}},"w2":{},"w4-w1-w0":{},"w4-w1":{},"w5":{}}
+t.w0=$.w0
+t.w2=$.w2
+t["w4-w1-w0"]=$["w4-w1-w0"]
+t["w4-w1"]=$["w4-w1"]
+t.w5=$.w5
+}());
+  </script>
+  <noscript data-ids="w0,w1,w2,w3,w4-w0,w4-w1-w0,w4-w1-w1-w0-w0,w4-w1-w1-w0,w4-w1-w1-w1,w4-w1-w1-w2,w4-w1-w1-w3,w4-w1-w1,w4-w1-w2-w0,w4-w1-w2-w1,w4-w1-w2,w4-w1-w3,w4-w1-w4,w4-w1-w5,w4-w1,w4,w5,w6,w7,w8" id="markoWidgets">
+  </noscript>
+  <div class="app-piwik" data-widget="/edpweb$6.5.5/src/components/app-piwik/index" id="w8">
+   <script id="piwik-js" nonce="beJK4SwWhOaiOZAN6U73SWU0EURzv9" type="text/javascript">
+    var _paq = _paq || [];
+                 _paq.push(['setCustomVariable',
+                     // Index, the number from 1 to 5 where this custom variable name is stored
+                     1,
+                     // Name, the name of the variable, for example: Gender, VisitorType
+                     "userName",
+                     // Value, for example: "Male", "Female" or "new", "engaged", "customer"
+                     "anonymous",
+                     // Scope of the custom variable, "visit" means the custom variable applies to the current visit
+                     "visit"
+                 ]);
+                 _paq.push(['setCustomVariable',
+                     // Index, the number from 1 to 5 where this custom variable name is stored
+                     2,
+                     // Name, the name of the variable, for example: Gender, VisitorType
+                     "requestEnvironment",
+                     // Value, for example: "Male", "Female" or "new", "engaged", "customer"
+                     "sandbox",
+                     // Scope of the custom variable, "visit" means the custom variable applies to the current visit
+                     "visit"
+                 ]);
+                 _paq.push(['trackPageView']);
+                 _paq.push(['enableLinkTracking']);
+                 (function() {
+                     var u = "https://edp-piwik-l68tf.ebayc3.com/";
+                     _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                     _paq.push(['setSiteId', 1]);
+                     var d = document,
+                             g = d.createElement('script'),
+                             s = d.getElementsByTagName('script')[0];
+                     g.type = 'text/javascript';
+                     g.async = true;
+                     g.defer = true;
+                     g.src = u + 'piwik.js';
+                     s.parentNode.insertBefore(g, s);
+                 })();
+   </script>
+   <noscript>
+    <p>
+     <img alt="" src="https://edp-piwik-l68tf.ebayc3.com/piwik.php?idsite=1" style="border:0;"/>
+    </p>
+   </noscript>
+  </div>
+  <script nonce="beJK4SwWhOaiOZAN6U73SWU0EURzv9">
+   /* ssgST: excluded from sampling */
+  </script>
+ </body>
+</html>
+<!-- RcmdId EDPWEB_DOCUMENTATION_METHOD,RlogId t6favpfg4%3D9vjdfavpfg4*2746%3B36-1628bc53308-0x2607 -->

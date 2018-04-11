@@ -63,6 +63,7 @@ if __name__ == "__main__":
     # Fit the pipeline on the training set using grid search for the parameters
     parameters = {'vect__ngram_range': [(1,1)],}
     grid_search = GridSearchCV(pipeline, parameters, n_jobs=-1)
+    # grid_search = GridSearchCV(pipeline, parameters, n_jobs=-1, cv=10)
     grid_search.fit(docs_train, y_train)
     # TASK: print the cross-validated scores for the each parameters set
     # explored by the grid search

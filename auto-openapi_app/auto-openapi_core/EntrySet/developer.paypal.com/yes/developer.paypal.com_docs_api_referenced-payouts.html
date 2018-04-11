@@ -1,0 +1,4377 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA" name="google-site-verification"/>
+  <title>
+   PayPal Developer
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" name="msapplication-TileImage"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png" rel="apple-touch-icon-precomposed"/>
+  <link href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png" rel="icon" sizes="32x32"/>
+  <link href="/css/docs.css" rel="stylesheet" type="text/css"/>
+  <script data-main="/js/master" src="/components/requirejs/require.js">
+  </script>
+ </head>
+ <body class="dx-apiref dx-apis">
+  <header class="header" id="header">
+   <a aria-label="PayPal Developer" class="header__block header__brand" href="/">
+   </a>
+   <a aria-label="Toggle top-level navigation" class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0">
+   </a>
+   <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2">
+   </div>
+   <div class="header__nav">
+    <div class="header__nav--left">
+     <ul class="dx-nav-0 dx-nav-0-docs">
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/docs/">
+        Docs
+       </a>
+      </li>
+      <li class="dx-nav-0-item dx-nav-active">
+       <a class="dx-nav-0-link" href="/reference/">
+        APIs
+       </a>
+      </li>
+      <li class="dx-nav-0-item ">
+       <a class="dx-nav-0-link" href="/support/">
+        Support
+       </a>
+      </li>
+     </ul>
+     <form action="/search" class="header__search dx-form-search" id="siteSearch" method="get" name="search">
+      <label class="sr-only" for="siteQ">
+       Enter search term
+      </label>
+      <input class="dx-search-input" id="siteQ" name="q" placeholder="Search" type="search" value=""/>
+     </form>
+    </div>
+    <div class="header__nav--right">
+     <div class="dx-auth-block profile__container">
+      <div class="dx-auth-logged-out">
+       <a class="dx-auth-login dx-btn dx-btn-primary" data-dxa="login,nav-click,nav-login" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications">
+        Log into Dashboard
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="dx-main">
+   <div class="dx-flex">
+    <div class="dx-main-nav-slug">
+    </div>
+    <nav class="dx-main-nav dx-mobile-nav">
+     <div class="dx-nav-back">
+      <a href="/reference/">
+       View All Reference
+      </a>
+     </div>
+     <ul class="dx-nav dx-nav-1">
+      <li class="dx-nav-1-item">
+       <a class="dx-nav-heading" href="/docs/api/">
+        REST APIs
+       </a>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Get Started
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/overview/">
+          Get Started
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#authentication-and-authorization">
+            Authentication and Authorization
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-requests">
+            API Requests
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#api-responses">
+            API Responses
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/overview/#make-your-first-call">
+            Make Your First Call
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          References
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/">
+          API Reference
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/balance-accounts">
+            Balance Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-agreements">
+            Billing Agreements API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.billing-plans">
+            Billing Plans API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/customer-disputes">
+            Customer Disputes API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/identity">
+            Identity API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/invoicing">
+            Invoicing API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/managed-accounts">
+            Managed Accounts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/orders">
+            Orders API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/partner-referrals">
+            Partner Referrals API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payment-experience">
+            Payment Experience API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments">
+            Payments API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/payments.payouts-batch">
+            Payouts API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/sync">
+            PayPal Sync API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/referenced-payouts">
+            Referenced Payouts API
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="#referenced-payouts-items" title="resource group">
+              Referenced payouts items
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#referenced-payouts-items_create" title="operation">
+                Create referenced payout item
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#referenced-payouts-items_get" title="operation">
+                Show referenced payout item details
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#definitions">
+              Common Object Definitions
+             </a>
+             <ul class="dx-nav dx-nav-5">
+              <li class="dx-nav-5-item">
+               <a href="#definition-batch_header">
+                batch_header
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-batch_item_collections">
+                batch_item_collections
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-batch_request">
+                batch_request
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-batch_response">
+                batch_response
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-batch_response_header">
+                batch_response_header
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-batch_status_enum">
+                batch_status_enum
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-currency_code">
+                currency_code
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-email_address">
+                email_address
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-error">
+                error
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-error_details">
+                error_details
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-item_status_enum">
+                item_status_enum
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-link_description">
+                link_description
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-money">
+                money
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch">
+                patch
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-patch_request">
+                patch_request
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-processing_state">
+                processing_state
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-reason_code">
+                reason_code
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-reference_type">
+                reference_type
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-referenced_payouts_item">
+                referenced_payouts_item
+               </a>
+              </li>
+              <li class="dx-nav-5-item">
+               <a href="#definition-referenced_payouts_items">
+                referenced_payouts_items
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="#errors">
+              Error Messages
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/vault">
+            Vault API
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/webhooks">
+            Webhooks API
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Reference
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/currency-codes/">
+          Currency Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/currency-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/country-codes/">
+          Country Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/country-codes/#paypal-account-payments">
+            PayPal Account Payments
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/state-codes/">
+          State &amp; Province Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#argentina">
+            Argentina
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#brazil">
+            Brazil
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#canada">
+            Canada
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#india">
+            India
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#italy">
+            Italy
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#japan">
+            Japan
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#mexico">
+            Mexico
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#thailand">
+            Thailand
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/state-codes/#usa">
+            United States
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/integration/direct/rest/locale-codes/">
+          Locale Codes
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#localize-the-checkout-experience">
+            Localize the Checkout Experience
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/integration/direct/rest/locale-codes/#supported-locale-codes">
+            Supported Locale Codes
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          Release Notes
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2017/">
+          2017
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#07-september-2017">
+            07 September 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#31-august-2017">
+            31 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#24-august-2017">
+            24 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-august-2017">
+            16 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-august-2017">
+            11 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-august-2017">
+            09 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-august-2017">
+            04 August 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-july-2017">
+            27 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#19-july-2017">
+            19 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-july-2017">
+            13 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#06-july-2017">
+            06 July 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#28-june-2017">
+            28 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#22-june-2017">
+            22 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#15-june-2017">
+            15 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#09-june-2017">
+            09 June 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-may-2017">
+            25 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#11-may-2017">
+            11 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#04-may-2017">
+            04 May 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-april-2017">
+            25 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#13-april-2017">
+            13 April 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#30-march-2017">
+            30 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#23-march-2017">
+            23 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-march-2017">
+            16 March 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#27-february-2017">
+            27 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#16-february-2017">
+            16 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#02-february-2017">
+            02 February 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#25-january-2017">
+            25 January 2017
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2017/#05-january-2017">
+            05 January 2017
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2016/">
+          2016
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#22-december-2016">
+            22 December 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#17-november-2016">
+            17 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-november-2016">
+            10 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-november-2016">
+            04 November 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-october-2016">
+            27 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-october-2016">
+            06 October 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#29-september-2016">
+            29 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#08-september-2016">
+            08 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#01-september-2016">
+            01 September 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-august-2016">
+            11 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#04-august-2016">
+            04 August 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#27-july-2016">
+            27 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#20-july-2016">
+            20 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#07-july-2016">
+            07 July 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#16-june-2016">
+            16 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-june-2016">
+            02 June 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#11-may-2016">
+            11 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#02-may-2016">
+            02 May 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#06-april-2016">
+            06 April 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#10-march-2016">
+            10 March 2016
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2016/#26-february-2016">
+            26 February 2016
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2015/">
+          2015
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#16-december-2015">
+            16 December 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-november-2015">
+            13 November 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-october-2015">
+            25 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#21-october-2015">
+            21 October 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-august-2015">
+            12 August 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-july-2015">
+            19 July 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#18-june-2015">
+            18 June 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#19-may-2015">
+            19 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-may-2015">
+            05 May 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#23-april-2015">
+            23 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#05-april-2015">
+            05 April 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#25-march-2015">
+            25 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#12-march-2015">
+            12 March 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#26-february-2015">
+            26 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#13-february-2015">
+            13 February 2015
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2015/#22-january-2015">
+            22 January 2015
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2014/">
+          2014
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-december-2014">
+            17 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#10-december-2014">
+            10 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#03-december-2014">
+            03 December 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#05-november-2014">
+            05 November 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-october-2014">
+            23 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#15-october-2014">
+            15 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#01-october-2014">
+            01 October 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#17-september-2014">
+            17 September 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#13-august-2014">
+            13 August 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#23-july-2014">
+            23 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-july-2014">
+            07 July 2014
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2014/#07-march-2014">
+            07 March 2014
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/release-notes/release-notes-2013/">
+          2013
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#30-july-2013">
+            30 July 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#28-may-2013">
+            28 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#22-may-2013">
+            22 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#15-may-2013">
+            15 May 2013
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/release-notes/release-notes-2013/#24-april-2013">
+            24 April 2013
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          SDKs
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/rest-sdks/">
+          SDKs
+         </a>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/quickstart/">
+          SDK Quickstart
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/install">
+            Install the SDK
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/environment">
+            Configure Environment
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/payments">
+            Process PayPal Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-plan">
+            Create Billing Plans
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-billing-agreement">
+            Create Billing Agreements
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/capture-payment">
+            Capture Payments Later
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-process-order/">
+            Create and Process Orders
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/refund-payment">
+            Refund Payments
+           </a>
+          </li>
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/quickstart/create-webhook">
+            Create Notification Webhooks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/service-integrations/">
+          Service Integrations
+         </a>
+         <ul class="dx-nav dx-nav-3">
+          <li class="dx-nav-3-item">
+           <a href="/docs/api/service-integrations/slack-bot/">
+            Slack
+           </a>
+           <ul class="dx-nav dx-nav-4">
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/simple_pay">
+              Add Person-to-Bot Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/direct_pay">
+              Add Person-to-Person Payments
+             </a>
+            </li>
+            <li class="dx-nav-4-item">
+             <a href="/docs/api/service-integrations/slack-bot/subscribe">
+              Add Agreement for Recurring Payment
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="dx-nav dx-nav-2">
+        <hr/>
+        <li>
+         <h5 class="dx-nav-subheading">
+          GLOSSARY
+         </h5>
+        </li>
+        <li class="dx-nav-2-item">
+         <a href="/docs/api/glossary/">
+          Glossary
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <article class="content dx-content ">
+     <div class="dax-api" id="">
+      <header class="dax-topic">
+       <h1 class="dx-content-title">
+        Referenced Payouts API
+       </h1>
+       <div class="dax-preamble">
+        The Referenced Payouts API enables partner merchants and developers to process individual referenced payouts to recipients. To use this API, you must request a build notation (BN) code. To learn more or to request a BN code, contact your partner manager or visit the
+        <a href="https://www.paypal.com/us/webapps/mpp/partner-program">
+         PayPal Partner Portal
+        </a>
+        .
+       </div>
+      </header>
+      <div class="dax-resource" id="referenced-payouts-items">
+       <header class="dax-topic-resource">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" class="dx-anchor__icon" href="#referenced-payouts-items">
+         </a>
+         Referenced payouts items
+         <small>
+          (resource group)
+         </small>
+        </h2>
+        <div class="dax-preamble">
+         Enables you to create a referenced payout item and show details for a payout item, by ID.
+        </div>
+       </header>
+       <div class="dax-operation" id="referenced-payouts-items_create">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#referenced-payouts-items_create">
+          </a>
+          Create referenced payout item
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-post">
+           POST
+          </span>
+          <span class="dax-operation-path">
+           /v1/payments/referenced-payouts-items
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Creates a referenced payout item.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="referenced-payouts-items-create-header-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#referenced-payouts-items-create-header-parameters">
+             </a>
+             Header parameters
+            </h4>
+            <div class="dax-preamble">
+             For more information about HTTP request headers, see
+             <a href="/docs/api/overview/#http-request-headers">
+              HTTP request headers
+             </a>
+             .
+            </div>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                Prefer
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Optional. Indicates how the client expects the server to process this request. To process the request asynchronously, set this header to
+               <code>
+                respond-async
+               </code>
+               . If you omit this header, the API processes the request synchronously.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                PayPal-Partner-Attribution-Id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Optional. Indicates that you are a PayPal partner. To receive revenue attribution, specify a unique build notation (BN) code. BN codes provide tracking on all transactions that originate or are associated with a particular partner. To learn more or to request a BN code, contact your partner manager or visit the
+               <a href="https://www.paypal.com/us/webapps/mpp/partner-program">
+                PayPal Partner Portal
+               </a>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                PayPal-Request-Id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Optional. Contains a unique user-generated ID that you can use to enforce idempotency.
+               <blockquote>
+                <strong>
+                 Note:
+                </strong>
+                If you omit this header, the risk of duplicate transactions increases.
+               </blockquote>
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <header class="dax-topic-reference" id="referenced-payouts-items-create-request-body">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#referenced-payouts-items-create-request-body">
+             </a>
+             Request body
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                item_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID for the payout item request.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                processing_state
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-processing_state">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The processing state of the item.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                reference_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The original reference ID, based on
+               <code>
+                reference_type
+               </code>
+               , based on the type payout.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                reference_type
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               enum
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The type of the passed reference. For example,
+               <code>
+                transaction_id
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Allowed values:
+                <code>
+                 TRANSACTION_ID
+                </code>
+                ,
+                <code>
+                 OTHERS
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                payout_transaction_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The encrypted PayPal transaction ID for the payout when the
+               <code>
+                item_status
+               </code>
+               is
+               <code>
+                success
+               </code>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                external_merchant_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The unique ID for the merchant on the partner side. Can be used to retrieve the PayPal account linked to this ID for the payout.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                external_reference_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The unique ID for the request on the partner side to enable idempotency. If this parameter is not available, idempotency is enabled for this item.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                payee_email
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-email_address">
+                object
+               </a>
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The PayPal merchant account email that receives the payout. Can be used to override the default behavior where the payout receiver is derived from the reference that is passed.
+              </div>
+              <div class="dax-def-meta">
+               <p>
+                Minimum length: 3.
+               </p>
+               <p>
+                Maximum length: 254.
+               </p>
+               <p>
+                Pattern:
+                <code>
+                 ^.+@[^"\-].+$
+                </code>
+                .
+               </p>
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="object">
+              <h5 class="dax-def-term">
+               <code>
+                payout_amount
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               <a href="#definition-money">
+                object
+               </a>
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The amount to be paid to merchant.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                payout_destination
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The encrypted PayPal account number that received the payout. Can be different than the account related to
+               <code>
+                payee_email
+               </code>
+               , based on partner and merchant grants and permissions.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                invoice_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The partner invoice ID for this referenced-payouts item. Used for reporting purposes only.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                custom
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The partner custom data for this referenced-payouts item. Used for reporting purposes only.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="array">
+              <h5 class="dax-def-term">
+               <code>
+                links
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               array
+
+                
+                    (contains the
+               <a href="#definition-link_description">
+                link_description
+               </a>
+               object)
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               An array of request-related
+               <a href="/docs/api/overview/#hateoas-links">
+                HATEOAS links
+               </a>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X POST https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>" \
+-d '{
+  "reference_id": "CAPTURETXNID",
+  "reference_type": "TRANSACTION_ID"
+}'</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="referenced-payouts-items-create-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#referenced-payouts-items-create-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            If the
+            <code>
+             Prefer
+            </code>
+            request header is
+            <code>
+             respond-async
+            </code>
+            and the API successfully queued the request for processing, a successful request returns the HTTP
+            <code>
+             202 Accepted
+            </code>
+            status code and the API proceeds to process the request asynchronously.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               item_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID for the payout item request.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               processing_state
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-processing_state">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The processing state of the item.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               reference_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The original reference ID, based on
+              <code>
+               reference_type
+              </code>
+              , based on the type payout.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               reference_type
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The type of the passed reference. For example,
+              <code>
+               transaction_id
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Possible values:
+               <code>
+                TRANSACTION_ID
+               </code>
+               ,
+               <code>
+                OTHERS
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               payout_transaction_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The encrypted PayPal transaction ID for the payout when the
+              <code>
+               item_status
+              </code>
+              is
+              <code>
+               success
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_merchant_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The unique ID for the merchant on the partner side. Can be used to retrieve the PayPal account linked to this ID for the payout.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_reference_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The unique ID for the request on the partner side to enable idempotency. If this parameter is not available, idempotency is enabled for this item.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               payee_email
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-email_address">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The PayPal merchant account email that receives the payout. Can be used to override the default behavior where the payout receiver is derived from the reference that is passed.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Minimum length: 3.
+              </p>
+              <p>
+               Maximum length: 254.
+              </p>
+              <p>
+               Pattern:
+               <code>
+                ^.+@[^"\-].+$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               payout_amount
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-money">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The amount to be paid to merchant.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               payout_destination
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The encrypted PayPal account number that received the payout. Can be different than the account related to
+              <code>
+               payee_email
+              </code>
+              , based on partner and merchant grants and permissions.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               invoice_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The partner invoice ID for this referenced-payouts item. Used for reporting purposes only.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               custom
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The partner custom data for this referenced-payouts item. Used for reporting purposes only.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "item_id": "SOMEITEMID",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/SOMEITEMID",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+       <div class="dax-operation" id="referenced-payouts-items_get">
+        <header class="dax-topic-operation">
+         <h3 class="dx-anchor">
+          <a aria-hidden="true" class="dx-anchor__icon" href="#referenced-payouts-items_get">
+          </a>
+          Show referenced payout item details
+         </h3>
+         <div class="dax-operation-verbpath">
+          <span class="dax-operation-verb dax-operation-verb-get">
+           GET
+          </span>
+          <span class="dax-operation-path">
+           /v1/payments/referenced-payouts-items/
+           <wbr>
+           </wbr>
+           {payouts_item_id}
+          </span>
+         </div>
+         <div class="dax-preamble">
+          Shows details for a referenced payout item, by ID.
+         </div>
+        </header>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <div>
+           <header class="dax-topic-reference" id="referenced-payouts-items-get-header-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#referenced-payouts-items-get-header-parameters">
+             </a>
+             Header parameters
+            </h4>
+            <div class="dax-preamble">
+             For more information about HTTP request headers, see
+             <a href="/docs/api/overview/#http-request-headers">
+              HTTP request headers
+             </a>
+             .
+            </div>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                PayPal-Partner-Attribution-Id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               Optional. Indicates that you are a PayPal partner. To receive revenue attribution, specify a unique build notation (BN) code. BN codes provide tracking on all transactions that originate or are associated with a particular partner. To learn more or to request a BN code, contact your partner manager or visit the
+               <a href="https://www.paypal.com/us/webapps/mpp/partner-program">
+                PayPal Partner Portal
+               </a>
+               .
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <header class="dax-topic-reference" id="referenced-payouts-items-get-path-parameters">
+            <h4 class="dx-anchor">
+             <a aria-hidden="true" href="#referenced-payouts-items-get-path-parameters">
+             </a>
+             Path parameters
+            </h4>
+           </header>
+           <ul class="dax-def-list">
+            <li class="dax-def-item">
+             <div class="dax-def-label" data-type="string">
+              <h5 class="dax-def-term">
+               <code>
+                payouts_item_id
+               </code>
+              </h5>
+              <p class="dax-def-type">
+               string
+              </p>
+              <p class="dax-def-note">
+               required
+              </p>
+             </div>
+             <div class="dax-def-value">
+              <div class="dax-def-detail">
+               The ID of the referenced payout item for which to show details.
+              </div>
+              <div class="dax-def-meta">
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Request
+          </h4>
+          <pre class="language-bash"><code>curl -v -X GET https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/CDZEC5MJ8R5HY \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <var>Access-Token</var>"</code></pre>
+         </div>
+        </div>
+        <div class="dax-reference-set dx-flex">
+         <div class="dax-reference">
+          <header class="dax-topic-reference" id="referenced-payouts-items-get-response">
+           <h4 class="dx-anchor">
+            <a aria-hidden="true" href="#referenced-payouts-items-get-response">
+            </a>
+            Response
+           </h4>
+           <div class="dax-preamble">
+            A successful request returns the HTTP
+            <code>
+             200 OK
+            </code>
+            status code and a JSON response body that shows payout item details.
+           </div>
+          </header>
+          <ul class="dax-def-list">
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               item_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The ID for the payout item request.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               processing_state
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-processing_state">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The processing state of the item.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               reference_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The original reference ID, based on
+              <code>
+               reference_type
+              </code>
+              , based on the type payout.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               reference_type
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              enum
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The type of the passed reference. For example,
+              <code>
+               transaction_id
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Possible values:
+               <code>
+                TRANSACTION_ID
+               </code>
+               ,
+               <code>
+                OTHERS
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               payout_transaction_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The encrypted PayPal transaction ID for the payout when the
+              <code>
+               item_status
+              </code>
+              is
+              <code>
+               success
+              </code>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_merchant_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The unique ID for the merchant on the partner side. Can be used to retrieve the PayPal account linked to this ID for the payout.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               external_reference_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The unique ID for the request on the partner side to enable idempotency. If this parameter is not available, idempotency is enabled for this item.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               payee_email
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-email_address">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The PayPal merchant account email that receives the payout. Can be used to override the default behavior where the payout receiver is derived from the reference that is passed.
+             </div>
+             <div class="dax-def-meta">
+              <p>
+               Minimum length: 3.
+              </p>
+              <p>
+               Maximum length: 254.
+              </p>
+              <p>
+               Pattern:
+               <code>
+                ^.+@[^"\-].+$
+               </code>
+               .
+              </p>
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="object">
+             <h5 class="dax-def-term">
+              <code>
+               payout_amount
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              <a href="#definition-money">
+               object
+              </a>
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The amount to be paid to merchant.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               payout_destination
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The encrypted PayPal account number that received the payout. Can be different than the account related to
+              <code>
+               payee_email
+              </code>
+              , based on partner and merchant grants and permissions.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               invoice_id
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The partner invoice ID for this referenced-payouts item. Used for reporting purposes only.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="string">
+             <h5 class="dax-def-term">
+              <code>
+               custom
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              string
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              The partner custom data for this referenced-payouts item. Used for reporting purposes only.
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+           <li class="dax-def-item">
+            <div class="dax-def-label" data-type="array">
+             <h5 class="dax-def-term">
+              <code>
+               links
+              </code>
+             </h5>
+             <p class="dax-def-type">
+              array
+
+                
+                    (contains the
+              <a href="#definition-link_description">
+               link_description
+              </a>
+              object)
+             </p>
+            </div>
+            <div class="dax-def-value">
+             <div class="dax-def-detail">
+              An array of request-related
+              <a href="/docs/api/overview/#hateoas-links">
+               HATEOAS links
+              </a>
+              .
+             </div>
+             <div class="dax-def-meta">
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="dax-sample">
+          <h4 class="dax-sample-heading">
+           Sample Response
+          </h4>
+          <pre class="language-json"><code>{
+  "item_id": "SOMEITEMID",
+  "processing_state": {
+    "status": "PROCESSING"
+  },
+  "reference_id": "CAPTURETXNID",
+  "reference_type": "TRANSACTION_ID",
+  "payout_amount": {
+    "currency_code": "USD",
+    "value": "2.0"
+  },
+  "payout_destination": "PAYERED",
+  "payout_transaction_id": "PAYOUTTXNID",
+  "links": [
+    {
+      "href": "https://api.paypal.com/v1/payments/referenced-payouts-items/SOMEITEMID",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}</code></pre>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="dax-definitions" id="definitions">
+       <header class="dax-topic-definition">
+        <h2 class="dx-anchor">
+         <a aria-hidden="true" href="#definitions">
+         </a>
+         Common object definitions
+        </h2>
+       </header>
+       <div class="dax-reference-set dx-flex" id="definition-batch_header">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-batch_header">
+           </a>
+           batch_header
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              sender_batch_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID of the batch from the request file.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              partner_account_email
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The partner account email.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-batch_item_collections">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-batch_item_collections">
+           </a>
+           batch_item_collections
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              batch_header
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-batch_response_header">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The status of the requested batch.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              batch_items
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-referenced_payouts_item">
+              referenced_payouts_item
+             </a>
+             object)
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of batch items.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-batch_request">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-batch_request">
+           </a>
+           batch_request
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              sender_batch_header
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-batch_header">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The batch header as sent in the batch creation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              batch_items
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-referenced_payouts_item">
+              referenced_payouts_item
+             </a>
+             object)
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of batch items.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-batch_response">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-batch_response">
+           </a>
+           batch_response
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              batch_status_details
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-batch_item_collections">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The status of the requested batch payout with item details.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              links
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-link_description">
+              link_description
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of request-related
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS links
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-batch_response_header">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-batch_response_header">
+           </a>
+           batch_response_header
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              batch_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID for the batch.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              batch_status
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The generated batch status. If the batch passes the elementary checks, the status is
+             <code>
+              PENDING
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               DENIED
+              </code>
+              ,
+              <code>
+               PENDING
+              </code>
+              ,
+              <code>
+               PROCESSING
+              </code>
+              ,
+              <code>
+               FAILED
+              </code>
+              ,
+              <code>
+               SUCCESS
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              sender_batch_header
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-batch_header">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The original batch header as provided by the payment sender.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-batch_status_enum">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-batch_status_enum">
+           </a>
+           batch_status_enum
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              batch_status_enum
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The batch status.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               DENIED
+              </code>
+              ,
+              <code>
+               PENDING
+              </code>
+              ,
+              <code>
+               PROCESSING
+              </code>
+              ,
+              <code>
+               FAILED
+              </code>
+              ,
+              <code>
+               SUCCESS
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-currency_code">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-currency_code">
+           </a>
+           currency_code
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              currency_code
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The
+             <a href="https://developer.paypal.com/docs/integration/direct/rest/currency-codes/">
+              three-character ISO-4217 currency code
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum length: 3.
+             </p>
+             <p>
+              Maximum length: 3.
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-email_address">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-email_address">
+           </a>
+           email_address
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              email_address
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A valid internationalized email address.
+             <blockquote>
+              <strong>
+               Note:
+              </strong>
+              Up to 64 characters are allowed before and 255 characters are allowed after the
+              <code>
+               @
+              </code>
+              sign. However, the generally accepted maximum length for an email address is 254 characters. The pattern verifies that an unquoted
+              <code>
+               @
+              </code>
+              sign exists.
+             </blockquote>
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum length: 3.
+             </p>
+             <p>
+              Maximum length: 254.
+             </p>
+             <p>
+              Pattern:
+              <code>
+               ^.+@[^"\-].+$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-error">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error">
+           </a>
+           error
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              name
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A human-readable, unique name of the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              message
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A message that describes the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              debug_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The PayPal internal ID that is used for correlation purposes.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              information_link
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An information link, or URI, that shows detailed information about this error for the developer.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              details
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-error_details">
+              error_details
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of additional details about the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              links
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-link_description">
+              link_description
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of request-related
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS links
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-error_details">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-error_details">
+           </a>
+           error_details
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              field
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The field that caused the error. If the field is in the body, set this value to the JSON pointer to that field. Required for client-side errors.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              value
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The value of the field that caused the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              location
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The location of the field that caused the error. A valid value is
+             <code>
+              body
+             </code>
+             ,
+             <code>
+              path
+             </code>
+             , or
+             <code>
+              query
+             </code>
+             . Default is
+             <code>
+              body
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              issue
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The reason for the error.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-item_status_enum">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-item_status_enum">
+           </a>
+           item_status_enum
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              item_status_enum
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The item status.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               PENDING
+              </code>
+              ,
+              <code>
+               PROCESSING
+              </code>
+              ,
+              <code>
+               SUCCESS
+              </code>
+              ,
+              <code>
+               FAILED
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-link_description">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-link_description">
+           </a>
+           link_description
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              href
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The complete target URL. To make the related call, combine the method with this link, in
+             <a href="https://tools.ietf.org/html/rfc6570">
+              URI template format
+             </a>
+             . Include the
+             <code>
+              $
+             </code>
+             ,
+             <code>
+              (
+             </code>
+             , and
+             <code>
+              )
+             </code>
+             characters for pre-processing. The
+             <code>
+              href
+             </code>
+             is the key HATEOAS component that links a completed call with a subsequent call.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              rel
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The
+             <a href="https://tools.ietf.org/html/rfc5988#section-4">
+              link relation type
+             </a>
+             , which serves as an ID for a link that unambiguously describes the semantics of the link. See
+             <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">
+              Link Relations
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              method
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The HTTP method required to make the related call.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               GET
+              </code>
+              ,
+              <code>
+               POST
+              </code>
+              ,
+              <code>
+               PUT
+              </code>
+              ,
+              <code>
+               DELETE
+              </code>
+              ,
+              <code>
+               HEAD
+              </code>
+              ,
+              <code>
+               CONNECT
+              </code>
+              ,
+              <code>
+               OPTIONS
+              </code>
+              ,
+              <code>
+               PATCH
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-money">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-money">
+           </a>
+           money
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              currency_code
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-currency_code">
+              string
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The
+             <a href="https://developer.paypal.com/docs/integration/direct/rest/currency-codes/">
+              three-character ISO-4217 currency code
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum length: 3.
+             </p>
+             <p>
+              Maximum length: 3.
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              value
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The currency value. For currencies like
+             <code>
+              JPY
+             </code>
+             that are not typically fractional, might be an integer. For currencies like
+             <code>
+              TND
+             </code>
+             that are subdivided into thousandths, might be a decimal fraction. For the required number of decimal places for a currency code, see
+             <a href="https://www.iso.org/iso/home/standards/currency_codes.htm">
+              ISO 4217
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Maximum length: 32.
+             </p>
+             <p>
+              Pattern:
+              <code>
+               ^((-?[0-9]+)|(-?([0-9]+)?[.][0-9]+))$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch">
+           </a>
+           patch
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              op
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The operation to complete.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               add
+              </code>
+              ,
+              <code>
+               remove
+              </code>
+              ,
+              <code>
+               replace
+              </code>
+              ,
+              <code>
+               move
+              </code>
+              ,
+              <code>
+               copy
+              </code>
+              ,
+              <code>
+               test
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              path
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A JSON pointer. References a location in the target document where the operation is completed.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="number,integer,string,boolean,null,array,object">
+            <h5 class="dax-def-term">
+             <code>
+              value
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             number,integer,string,boolean,null,array,object
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The value to apply. The
+             <code>
+              remove
+             </code>
+             operation does not require a value.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              from
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             A JSON pointer. References the location in the target document from which to move the value. Required for the
+             <code>
+              move
+             </code>
+             operation.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-patch_request">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-patch_request">
+           </a>
+           patch_request
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              patch_request
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-patch">
+              patch
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of JSON patch objects to apply partial updates to resources.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-processing_state">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-processing_state">
+           </a>
+           processing_state
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              status
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The status of the item.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               PENDING
+              </code>
+              ,
+              <code>
+               PROCESSING
+              </code>
+              ,
+              <code>
+               SUCCESS
+              </code>
+              ,
+              <code>
+               FAILED
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              reason
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The qualifying reason for the current status. Provides more information for failures.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               INTERNAL_ERROR
+              </code>
+              ,
+              <code>
+               NOT_ENOUGH_BALANCE
+              </code>
+              ,
+              <code>
+               AMOUNT_CHECK_FAILED
+              </code>
+              ,
+              <code>
+               MERCHANT_PARTNER_PERMISSIONS_ISSUE
+              </code>
+              ,
+              <code>
+               MERCHANT_RESTRICTIONS
+              </code>
+              ,
+              <code>
+               TRANSACTION_UNDER_DISPUTE
+              </code>
+              ,
+              <code>
+               TRANSACTION_NOT_VALID
+              </code>
+              ,
+              <code>
+               UNSUPPORTED_CURRENCY
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-reason_code">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-reason_code">
+           </a>
+           reason_code
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              reason_code
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The reason code.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               INTERNAL_ERROR
+              </code>
+              ,
+              <code>
+               NOT_ENOUGH_BALANCE
+              </code>
+              ,
+              <code>
+               AMOUNT_CHECK_FAILED
+              </code>
+              ,
+              <code>
+               MERCHANT_PARTNER_PERMISSIONS_ISSUE
+              </code>
+              ,
+              <code>
+               MERCHANT_RESTRICTIONS
+              </code>
+              ,
+              <code>
+               TRANSACTION_UNDER_DISPUTE
+              </code>
+              ,
+              <code>
+               TRANSACTION_NOT_VALID
+              </code>
+              ,
+              <code>
+               UNSUPPORTED_CURRENCY
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-reference_type">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-reference_type">
+           </a>
+           reference_type
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              reference_type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The reference type.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               TRANSACTION_ID
+              </code>
+              ,
+              <code>
+               OTHERS
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-referenced_payouts_item">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-referenced_payouts_item">
+           </a>
+           referenced_payouts_item
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              item_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The ID for the payout item request.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              processing_state
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-processing_state">
+              object
+             </a>
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The processing state of the item.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              reference_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The original reference ID, based on
+             <code>
+              reference_type
+             </code>
+             , based on the type payout.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              reference_type
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             enum
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The type of the passed reference. For example,
+             <code>
+              transaction_id
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Possible values:
+              <code>
+               TRANSACTION_ID
+              </code>
+              ,
+              <code>
+               OTHERS
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              payout_transaction_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The encrypted PayPal transaction ID for the payout when the
+             <code>
+              item_status
+             </code>
+             is
+             <code>
+              success
+             </code>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              external_merchant_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The unique ID for the merchant on the partner side. Can be used to retrieve the PayPal account linked to this ID for the payout.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              external_reference_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The unique ID for the request on the partner side to enable idempotency. If this parameter is not available, idempotency is enabled for this item.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              payee_email
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-email_address">
+              object
+             </a>
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The PayPal merchant account email that receives the payout. Can be used to override the default behavior where the payout receiver is derived from the reference that is passed.
+            </div>
+            <div class="dax-def-meta">
+             <p>
+              Minimum length: 3.
+             </p>
+             <p>
+              Maximum length: 254.
+             </p>
+             <p>
+              Pattern:
+              <code>
+               ^.+@[^"\-].+$
+              </code>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="object">
+            <h5 class="dax-def-term">
+             <code>
+              payout_amount
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             <a href="#definition-money">
+              object
+             </a>
+            </p>
+            <p class="dax-def-note">
+             required
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The amount to be paid to merchant.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              payout_destination
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The encrypted PayPal account number that received the payout. Can be different than the account related to
+             <code>
+              payee_email
+             </code>
+             , based on partner and merchant grants and permissions.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              invoice_id
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The partner invoice ID for this referenced-payouts item. Used for reporting purposes only.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="string">
+            <h5 class="dax-def-term">
+             <code>
+              custom
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             string
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             The partner custom data for this referenced-payouts item. Used for reporting purposes only.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              links
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-link_description">
+              link_description
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of request-related
+             <a href="/docs/api/overview/#hateoas-links">
+              HATEOAS links
+             </a>
+             .
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="dax-reference-set dx-flex" id="definition-referenced_payouts_items">
+        <div class="dax-reference">
+         <header class="dax-topic-reference">
+          <h4 class="dx-anchor">
+           <a aria-hidden="true" href="#definition-referenced_payouts_items">
+           </a>
+           referenced_payouts_items
+          </h4>
+         </header>
+         <ul class="dax-def-list">
+          <li class="dax-def-item">
+           <div class="dax-def-label" data-type="array">
+            <h5 class="dax-def-term">
+             <code>
+              items
+             </code>
+            </h5>
+            <p class="dax-def-type">
+             array
+
+                
+                    (contains the
+             <a href="#definition-referenced_payouts_item">
+              referenced_payouts_item
+             </a>
+             object)
+            </p>
+           </div>
+           <div class="dax-def-value">
+            <div class="dax-def-detail">
+             An array of referenced payouts items.
+            </div>
+            <div class="dax-def-meta">
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="dax-more">
+       <h2 class="sr-only">
+        Additional API information
+       </h2>
+       <div class="dax-more-error" id="errors">
+        <h3 class="dx-anchor">
+         <a aria-hidden="true" href="#errors">
+         </a>
+         Error messages
+        </h3>
+        <p>
+         In addition to
+         <a href="/docs/api/overview/#error-status-codes">
+          common HTTP status codes
+         </a>
+         that the REST APIs return, the Referenced Payouts API can return the following errors.
+        </p>
+        <ul class="dax-messages">
+         <li>
+          <h4>
+           <code>
+            AUTHENTICATION_FAILURE
+           </code>
+          </h4>
+          <p>
+           Authentication failed due to invalid authentication credentials. See
+           <a href="/docs/api/overview/#authentication-errors">
+            Authentication errors
+           </a>
+           . The request requires authentication and none was provided. Note the difference between this error and the
+           <code>
+            403 Forbidden
+           </code>
+           error.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            INTERNAL_SERVER_ERROR
+           </code>
+          </h4>
+          <p>
+           An internal server error has occurred. A system or application error occurred. Although the client appears to provide a correct request, something unexpected occurred on the server. This error indicates a server-side software defect or site outage.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            INVALID_REQUEST
+           </code>
+          </h4>
+          <p>
+           Request is not well-formed, syntactically incorrect, or violates schema. See
+           <a href="/docs/api/overview/#validation-errors">
+            Validation errors
+           </a>
+           . The server could not understand the request. This status code indicates one of these conditions:
+          </p>
+          <ul>
+           <li>
+            The data as part of the payload cannot be converted to the underlying data type.
+           </li>
+           <li>
+            The data is not in the expected data format.
+           </li>
+           <li>
+            Required field is not available.
+           </li>
+           <li>
+            A simple data validation error occurred.
+           </li>
+          </ul>
+          <p>
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            NOT_AUTHORIZED
+           </code>
+          </h4>
+          <p>
+           Authorization failed due to insufficient permissions. The client is not authorized to access this resource although it might have valid credentials. For example, the client does not have the correct OAuth2 scope. Additionally, a business-level authorization error might have occurred. For example, the account holder does not have sufficient funds.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            RESOURCE_NOT_FOUND
+           </code>
+          </h4>
+          <p>
+           The specified resource does not exist. The server did not find anything that matches the request URI. Either the URI is incorrect or the resource is not available. For example, no data exists in the database at that key.
+          </p>
+         </li>
+         <li>
+          <h4>
+           <code>
+            SERVICE_UNAVAILABLE
+           </code>
+          </h4>
+          <p>
+           Service Unavailable. The server cannot handle the request for a service due to temporary maintenance.
+          </p>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <span class="dxf-insert-rating">
+     </span>
+    </article>
+   </div>
+   <footer class="footer">
+    <section class="section">
+     <div class="section__content">
+      <div class="grid">
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Docs
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/integration/direct/express-checkout/integration-jsv4/" rel="nofollow">
+           Express Checkout
+          </a>
+         </li>
+         <li>
+          <a href="/docs/integration/web" rel="nofollow">
+           Payment Buttons
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.braintreepayments.com/start/overview/" rel="nofollow">
+           Braintree SDK
+          </a>
+         </li>
+         <li>
+          <a href="/docs/directory/" rel="nofollow">
+           All Docs
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Support
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="/docs/faq/" rel="nofollow">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-techsupport.com/" rel="nofollow">
+           Merchant Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">
+           Account Support
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Resources
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://github.com/paypal/" rel="nofollow">
+           GitHub
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/partnerprogram" rel="nofollow">
+           Partners
+          </a>
+         </li>
+         <li>
+          <a href="https://demo.paypal.com" rel="nofollow">
+           PayPal Demo
+          </a>
+         </li>
+         <li>
+          <a href="https://devblog.paypal.com/" rel="nofollow">
+           Blog
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--3">
+        <h3 class="footer__head">
+         Family
+        </h3>
+        <ul class="footer__nav">
+         <li>
+          <a href="https://paypal.com/" rel="nofollow">
+           PayPal
+          </a>
+         </li>
+         <li>
+          <a href="https://braintreepayments.com/" rel="nofollow">
+           Braintree
+          </a>
+         </li>
+         <li>
+          <a href="https://venmo.com/" rel="nofollow">
+           Venmo
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paydiant.com/" rel="nofollow">
+           Paydiant
+          </a>
+         </li>
+         <li>
+          <a href="https://xoom.com/" rel="nofollow">
+           Xoom
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="grid">
+       <div class="grid__item grid__item--6">
+        <ul class="footer__legal">
+         <li>
+          <a class="scTrack:privacy-policy" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">
+           Privacy
+          </a>
+         </li>
+         <li>
+          <a class="scTrack:legal-agreements" href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">
+           Legal
+          </a>
+         </li>
+         <li>
+          <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="grid__item grid__item--6">
+        <p class="footer__copyright">
+         ©2018 PayPal
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+  </main>
+ </body>
+</html>
