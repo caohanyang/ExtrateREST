@@ -1,4 +1,4 @@
-Auto-openapi Docker_compose
+ExtrateREST Docker_compose
 ==================
 
 docker-compose file to run all WAT components

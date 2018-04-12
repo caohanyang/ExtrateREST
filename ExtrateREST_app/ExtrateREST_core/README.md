@@ -1,4 +1,4 @@
-# API_generator
+# ExtrateREST
 Convert existing REST html documentations into standard ones (OAI)
 ## List of API
 Here we list REST APIs that have been crawled from their official websites.
