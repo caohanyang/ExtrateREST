@@ -1,0 +1,101 @@
+{
+  "paths": {
+    "/countryInfo": {
+      "GET": {}
+    },
+    "/countryCode": {
+      "GET": {}
+    },
+    "/neighbourhood": {
+      "GET": {}
+    },
+    "/findNearByWeatherJSON": {
+      "GET": {}
+    },
+    "/astergdem": {
+      "GET": {}
+    },
+    "/get": {
+      "GET": {}
+    },
+    "/ocean": {
+      "GET": {}
+    },
+    "/gtopo30": {
+      "GET": {}
+    },
+    "/extendedFindNearby": {
+      "GET": {}
+    },
+    "/findNearbyWikipedia": {
+      "GET": {}
+    },
+    "/citiesJSON": {
+      "GET": {}
+    },
+    "/findNearby": {
+      "GET": {}
+    },
+    "/findNearbyPlaceName": {
+      "GET": {}
+    },
+    "/siblings": {
+      "GET": {}
+    },
+    "/wikipediaBoundingBox": {
+      "GET": {}
+    },
+    "/timezone": {
+      "GET": {}
+    },
+    "/countrySubdivision": {
+      "GET": {}
+    },
+    "/hierarchy": {
+      "GET": {}
+    },
+    "/wikipediaSearch": {
+      "GET": {}
+    },
+    "/postalCodeLookupJSON": {
+      "POST": {}
+    },
+    "/weatherJSON": {
+      "GET": {}
+    },
+    "/earthquakesJSON": {
+      "GET": {}
+    },
+    "/postalCodeCountryInfo": {
+      "POST": {}
+    },
+    "/srtm3": {
+      "GET": {}
+    },
+    "/postalCodeSearch": {
+      "POST": {}
+    },
+    "/contains": {
+      "GET": {}
+    },
+    "/srtm1": {
+      "GET": {}
+    },
+    "/neighbours": {
+      "GET": {}
+    },
+    "/findNearbyPostalCodes": {
+      "GET": {}
+    },
+    "/weatherIcaoJSON": {
+      "GET": {}
+    }
+  },
+  "produces": "application/json",
+  "host": "api.geonames.org",
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": "This is the information of the API"
+}
