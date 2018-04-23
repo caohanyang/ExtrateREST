@@ -1,5 +1,5 @@
              precision    recall  f1-score   support
 
-         no       1.00      1.00      1.00         9
+         no       1.00      1.00      1.00        20
 
-avg / total       1.00      1.00      1.00         9
+avg / total       1.00      1.00      1.00        20

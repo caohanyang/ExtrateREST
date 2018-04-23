@@ -145,7 +145,8 @@ export class StepComponent implements OnInit {
     // four form  
     this.newConfig.existPara= (this.existpara==="yes")? true: false;
     this.newConfig.paraKey= this.fourFormGroup.value.paraKey;
-    this.newConfig.url1para2= (this.fourFormGroup.value.url1para2==="yes")? true: false;
+    this.newConfig.url1para2= true;
+    // this.newConfig.url1para2= (this.fourFormGroup.value.url1para2==="yes")? true: false;    
     // this.newConfig.paraMiddle= this.fourFormGroup.value.paraMiddle;
     this.newConfig.template= this.fourFormGroup.value.template;
 

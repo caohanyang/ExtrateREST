@@ -203,11 +203,12 @@ public class Settings {
             setRESMIDDLE(properties.getProperty("RESMIDDLE"));
             
             setEXISTPARA(Boolean.valueOf(properties.getProperty("EXISTPARA")));
+            setPARAKEY(properties.getProperty("PARAKEY"));
             setPARAMIDDLE(properties.getProperty("PARAMIDDLE"));
             setPARAIN(properties.getProperty("PARAIN"));
             setTEMPLATE(properties.getProperty("TEMPLATE"));
             setNUMBER(properties.getProperty("NUMBER"));
- 
+          
         } catch (IOException e) {
             e.printStackTrace();
         }

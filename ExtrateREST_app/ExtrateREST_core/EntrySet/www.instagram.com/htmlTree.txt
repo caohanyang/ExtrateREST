@@ -3,15 +3,11 @@
                              |
                              |--/endpoints
                              |
-                             |          /-/comments
--- /www.instagram.com/developer        |
-                             |         |--/likes
+-- /www.instagram.com/developer         /-/comments
                              |         |
                              |         |--/locations
                              |         |
                               \/endpoints-/media
-                                       |
-                                       |--/relationships
                                        |
                                        |--/tags
                                        |

@@ -202,7 +202,7 @@
           <mat-form-field>
             <mat-select placeholder="urlMiddle" formControlName="urlMiddle" required>
               <mat-option>None</mat-option>
-              <mat-option value=" ">Yes</mat-option>
+              <mat-option value="\ ">Yes</mat-option>
               <mat-option value="">No</mat-option>
             </mat-select>
           </mat-form-field>
@@ -211,7 +211,7 @@
           <mat-form-field>
             <mat-select placeholder="urlAfter" [(value)]="urlAfter" formControlName="urlAfter" required>
               <mat-option>None</mat-option>
-              <mat-option value=" ">Space Bar</mat-option>
+              <mat-option value="\ ">Space Bar</mat-option>
               <mat-option value="\n">New Line</mat-option>
             </mat-select>
           </mat-form-field> -->
@@ -423,7 +423,8 @@
               <mat-option value="\\s">Whitespace</mat-option>
               <mat-option value=".{0,10}">1 or 2 words</mat-option>
               <mat-option value="\\s.{0,60}">3 or 10 words</mat-option>
-              <mat-option value="(.*?)">more than 10 words</mat-option>
+              <mat-option value="\\s.{0,120}">10 or 20 words</mat-option>
+              <mat-option value="(.*?)">more than 20 words</mat-option>
             </mat-select>
           </mat-form-field>
 

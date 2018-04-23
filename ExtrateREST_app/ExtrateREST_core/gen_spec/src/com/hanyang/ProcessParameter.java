@@ -383,8 +383,6 @@ public class ProcessParameter {
 			List<JSONObject> infoJson, AnnotationSet annoTemplate) throws JSONException {
 		// 5.3 for each page, set findParaTable = False
 		boolean findParaTemplate = false;
-		// 5.3.1 Test if the page contains multiple parameter table or not
-		Iterator<Annotation> testIter = annoTemplate.iterator();
 		String templateNumber = Settings.NUMBER;
 		// int numTemplate = 0;
 
@@ -409,7 +407,7 @@ public class ProcessParameter {
 			Document doc, String source) throws JSONException {
 		JSONObject sectionObject = new JSONObject();
 		int minimumDistance = Integer.MAX_VALUE;
-		Out.prln("---------para location-------");
+		Out.prln("--------- location-------");
 		Out.prln(paraLocation);
 		for (JSONObject it : infoJson) {
 
