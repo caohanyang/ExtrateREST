@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.9",
+    "ang-jsoneditor": "^1.5.12",
     "angular-bootstrap-md": "^5.0.5",
     "angular4-jsoneditor": "^1.0.7",
     "bootstrap": "4.0.0-beta.2",

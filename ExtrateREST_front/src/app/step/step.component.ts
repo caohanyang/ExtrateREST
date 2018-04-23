@@ -17,11 +17,11 @@ export class StepComponent implements OnInit {
   secondFormGroup: FormGroup;
   threeFormGroup: FormGroup;
   fourFormGroup: FormGroup;
-  myValue = false;
-  stuffing = 'Whitespace';
+  // stuffing = 'Whitespace';
   request = 'no';
   response = 'no';
   existpara = 'no';
+  modeType;
   public modalRef: BsModalRef; // {1}
 
   constructor(

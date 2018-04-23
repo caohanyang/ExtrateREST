@@ -1,610 +1,610 @@
 <!-- <button mat-raised-button (click)="isLinear = true" id="toggle-linear">Enable linear mode</button> -->
 
 <mat-horizontal-stepper [linear]="isLinear">
-
-  <!-- First form -->
-  <mat-step [stepControl]="firstFormGroup">
-    <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel>General Information</ng-template>
-
-
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>General Information</mat-card-title>
-          <mat-card-subtitle>This is the global information about the API</mat-card-subtitle>
-        </mat-card-header>
-
-        <!-- <h5 align="left">
-          <strong>Input the name of the target API</strong>
-        </h5>
-        <div class="example-container">
-          <mat-form-field>
-            <mat-label>API Name</mat-label>
-            <input matInput placeholder="Instragram, Twitter, ..." formControlName="apiName" required>
-          </mat-form-field>
-        </div>
-        <br> -->
-
-
-        <h5 align="left">
-          <strong>Find the Root URL of the API documentation</strong>
-        </h5>
-        <div class="example-container">
-          <mat-form-field>
-            <mat-label>Documentation Main Entry</mat-label>
-            <input matInput placeholder="https://www.instagram.com/developer/" formControlName="docUrl" required>
-          </mat-form-field>
-          <p align="left">
-            A REST API HTML Documentation is composed of a set of web pages. Among the set of pages, one page is called the Root Page,
-            and is linked directly or indirectly to all the pages of the set.
-            <br> As an example, the Root Page of the Instagram API HTML Documentation is <i>https://www.instagram.com/developer/</i>.
-          </p>
-        </div>
-        <img src="../assets/img/mainUrl.png" alt="documentation details" align="center" width=100%>
-        <br>
-        <br>
-
-        <h5 align="left">
-          <strong>Find the Filter URL of the API documentation (optional)</strong>
-        </h5>
-        <div class="example-container">
-          <mat-form-field>
-            <mat-label>Documentation Filter Url</mat-label>
-            <input matInput placeholder="https://www.instagram.com/developer/endpoints" formControlName="filterUrl">
-          </mat-form-field>
-          <p align="left">
-            This is an optional parameter.
-            <br> If the developer can conclude the common URL for pages that describe the endpoints.
-            <br> As an example, if the Instagram endpoints Urls are:
-            <br>
-            <i>https://www.instagram.com/developer/endpoints/users/</i>
-            <br>
-            <i>https://www.instagram.com/developer/endpoints/comments/</i>
-            <br>
-            <i>https://www.instagram.com/developer/endpoints/likes/</i>
-            <br> The Filter Url could be <i>https://www.instagram.com/developer/endpoints</i>.
-          </p>
-        </div>
-        <br>
-
-      </mat-card>
-
-      <div style="text-align:center">
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </form>
-  </mat-step>
-
-  <!--Second form -->
-  <ng-template #httpsMode><img src="../assets/img/https.png" alt="https mode" align="center"></ng-template>
-  <ng-template #httpMode><img src="../assets/img/http.png" alt="http mode" align="center"></ng-template>
-  <ng-template #relativeMode><img src="../assets/img/relative.png" alt="relative mode" align="center"></ng-template>
-  <ng-template #noverbkeyMode><img src="../assets/img/noverbkey.png" alt="noverbkey mode" align="center"></ng-template>
-  <ng-template #nullMode><img src="../assets/img/noverbnull.png" alt="null mode" align="center"></ng-template>
-  <ng-template #multiplywords><img src="../assets/img/multiplywords.png" alt="multiply words" align="center"></ng-template>
-  <ng-template #urlMiddle><img src="../assets/img/urlmiddle.png" alt="url middle" align="center"></ng-template>
-  <ng-template #pathTemplate><img src="../assets/img/pathtemplate.png" alt="paht template" align="center"></ng-template>
-
-
-  <mat-step [stepControl]="secondFormGroup">
-    <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>URL & Verb</ng-template>
-
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Url & Verb</mat-card-title>
-          <mat-card-subtitle>This is the Url and Verb information about API endpoints</mat-card-subtitle>
-        </mat-card-header>
-
-
-        <h5 align="left">
-          <strong>Choose the endpoint Url and Http Verb pattern</strong>
-        </h5>
-        <p align="left">
-          Take 2 minutes to look at the endpoint pages which describe the Url and Http Verb information.
-          <br>
-          <br> Choose the one of following patterns that match the target documentation:
-          <br>
-        </p>
-
-        <mat-radio-group formControlName="mode" [(ngModel)]="modeType">
-
-          <div class="example-margin" align="left">
-            <mat-radio-button class="example-radio" value="https://" [ngbTooltip]="httpsMode">Both URL and Verb exist, Url begins with https</mat-radio-button>
-          </div>
-          <br>
-
-          <div class="example-margin">
-            <mat-radio-button class="example-radio" value="http://" [ngbTooltip]="httpMode">Both URL and Verb exist, Url begins with http</mat-radio-button>
-          </div>
-          <br>
-
-          <div class="example-margin">
-            <mat-radio-button class="example-radio" value="/" [ngbTooltip]="relativeMode">Both URL and Verb exist, Url begins with /</mat-radio-button>
-          </div>
-          <br>
-
-          <div class="example-margin">
-            <mat-radio-button class="example-radio" value="key" [ngbTooltip]="noverbkeyMode">Verb doesn't exist, common keyword exists before Url</mat-radio-button>
-          </div>
-          <br>
-
-          <div class="example-margin">
-            <mat-radio-button class="example-radio" value="null" [ngbTooltip]="nullMode">Verb doesn't exist, can't find common keyword before Url</mat-radio-button>
-          </div>
-          <br>
-
-        </mat-radio-group>
-        <br>
-
-
-        <h5 align="left">
-          <strong>URL details</strong>
-        </h5>
-        <div class="example-container" *ngIf="!(modeType=='key' || modeType=='null')">
-          <strong>Check order of appearance: 
-          <i align="left" [ngbTooltip]="httpsMode">Verb first</i> or 
-          <i align="left" [ngbTooltip]="httpMode">Url first</i>
-        </strong>
-          <mat-form-field>
-            <mat-select placeholder="order of url and verb" [(value)]="reverse" formControlName="reverse" required>
-              <mat-option value="yes">Verb first</mat-option>
-              <mat-option value="no">Url first</mat-option>
-            </mat-select>
-          </mat-form-field>
-
-          <br>
-          <strong>Check stuffing between Verb and Url: 
-            <i align="left" [ngbTooltip]="relativeMode">Whitespace</i> or 
-            <i align="left" [ngbTooltip]="multiplywords">Multiply words</i>
-          </strong>
-          <mat-form-field hintLabel="The stuffing can be whitespace or multiply words">
-            <mat-select placeholder="stuffing" formControlName="stuffing" required>
-              <mat-option>None</mat-option>
-              <mat-option value="\\s">Whitespace</mat-option>
-              <mat-option value=".{0,10}">1 or 2 words</mat-option>
-              <mat-option value="\\s.{0,60}">3 or 10 words</mat-option>
-              <mat-option value="(.*?)">more than 10 words</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <br>
-        <div class="example-container" *ngIf="modeType=='key'">
-          <strong>The common keyword before Url:</strong>
-          <p align="left">
-            Look at each endpoint, and summarize the common keyword before url.
-            <br> As an example, if the endpoints Urls are presented:
-            <br>
-            <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
-            <br>
-            <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
-            <br>
-            <i>Url : api.geonames.org/findNearbyPlaceName?</i>
-            <br> The common keyword could be: <i>Url :</i>
-          </p>
-          <mat-form-field>
-            <mat-label>Keyword before Url</mat-label>
-            <input matInput placeholder="Url :" formControlName="urlKey">
-          </mat-form-field>
-        </div>
-
-        <br>
-        <div class="example-container">
-          <strong>Check if the Url wrapped in different tags: 
-          <i align="left" [ngbTooltip]="httpsMode">No</i> or
-          <i align="left" [ngbTooltip]="urlMiddle">Yes</i>
-        </strong> Normally, if the Url itself (ignores query parameters) wrapped in different tags, it shows in
-          different color or it may contian whitespace.
-          <br> Inspect the HTML sources to check this property.
-          <mat-form-field>
-            <mat-select placeholder="urlMiddle" formControlName="urlMiddle" required>
-              <mat-option>None</mat-option>
-              <mat-option value="\ ">Yes</mat-option>
-              <mat-option value="">No</mat-option>
-            </mat-select>
-          </mat-form-field>
-
-          <!-- <strong> Character after the Url: {{urlAfter}} </strong>
-          <mat-form-field>
-            <mat-select placeholder="urlAfter" [(value)]="urlAfter" formControlName="urlAfter" required>
-              <mat-option>None</mat-option>
-              <mat-option value="\ ">Space Bar</mat-option>
-              <mat-option value="\n">New Line</mat-option>
-            </mat-select>
-          </mat-form-field> -->
-
-          <strong>Check if the Url support Path templating: 
-              <i align="left" [ngbTooltip]="pathTemplate">Example</i>
-          </strong>
-          <p> Path templating refers to the usage of curly braces (&#123;&#125;) to mark a section of a URL path as replaceable
-            using path parameters</p>
-          <mat-form-field>
-            <mat-select placeholder="urlTemplate" [(value)]="urlTemplate" formControlName="urlTemplate" required>
-              <mat-option value="no">No</mat-option>
-              <mat-option value=":id">:id</mat-option>
-              <mat-option value="{id}">&#123;id&#125;</mat-option>
-              <mat-option value="<id>">&lt;id&gt;</mat-option>
-            </mat-select>
-          </mat-form-field>
-
-        </div>
-        <br>
-
-
-        <h5 align="left">
-          <strong>Http Verb details</strong>
-        </h5>
-        <div class="example-container">
-          <strong>The abbreviation for the Http Verb Delete: 
-            <i >Del</i> or <i >Delete</i> 
-          </strong>
-          <mat-form-field>
-            <mat-select placeholder="abbreviation for delete" [(value)]="delete" formControlName="abbrevDelete" required>
-              <mat-option value="del">Del</mat-option>
-              <mat-option value="delete">Delete</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-
-      </mat-card>
-
-      <div style="text-align:center">
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </form>
-  </mat-step>
-
-  <!-- Three form -->
-  <ng-template #reqHttp><img src="../assets/img/reqhttp.png" alt="reqHttp mode" align="center"></ng-template>
-  <ng-template #reqCurl><img src="../assets/img/reqcurl.png" alt="reqCurl mode" align="center"></ng-template>
-  <ng-template #reqJson><img src="../assets/img/reqjson.png" alt="reqJson mode" align="center"></ng-template>
-  <ng-template #reqExample><img src="../assets/img/reqexample.png" alt="reqJson mode" align="center"></ng-template>
-
-  <mat-step [stepControl]="threeFormGroup">
-    <form [formGroup]="threeFormGroup">
-      <ng-template matStepLabel>Request & Response Example</ng-template>
-
-
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Request & Response Example</mat-card-title>
-          <mat-card-subtitle>This is the Request and Response information about API endpoints</mat-card-subtitle>
-        </mat-card-header>
-
-        <!-- request details-->
-        <h5 align="left">
-          <strong>Request details</strong>
-        </h5>
-
-        <div class="example-container">
-          <strong>Check if the API contain request examples</strong>
-          <p>Request example could be </p>
-          <p>
-            <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
-            <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
-            <i align="left" [ngbTooltip]="reqJson">POST body </i>
-          </p>
-
-          <mat-form-field>
-            <mat-select placeholder="exist request example?" [(value)]="request" required>
-              <mat-option value="yes">Yes</mat-option>
-              <mat-option value="no">No</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="example-container" *ngIf="request=='yes'">
-
-          <strong>Type of request example</strong>
-          <p>3 types of request example: </p>
-          <p>
-            <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
-            <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
-            <i align="left" [ngbTooltip]="reqJson">POST body </i>
-          </p>
-          <mat-form-field>
-            <mat-select placeholder="the type of the request example" formControlName="reqExample" required>
-              <mat-option value="http">HTTP</mat-option>
-              <mat-option value="curl">CURL</mat-option>
-              <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">POST body</mat-option>
-              <!-- <mat-option value="xml">XML</mat-option> -->
-            </mat-select>
-          </mat-form-field>
-
-          <br>
-          <strong>Common Keyword before the request</strong>
-          <p align="left">
-            Look at each endpoint, and summarize the common keyword before request example.
-            <br> The common keyword could be:
-            <i [ngbTooltip]="reqExample">example request</i>, <i [ngbTooltip]="reqHttp">sample request</i>
-          </p>
-          <mat-form-field>
-            <mat-label>keyword before request example</mat-label>
-            <input matInput placeholder="example request, sample request" formControlName="reqKey" required>
-          </mat-form-field>
-
-          <br>
-          <strong>Filling between keyword and request example: 
-            <i align="left" [ngbTooltip]="reqExample">Whitespace</i> or 
-            <i align="left" [ngbTooltip]="reqHttp">Multiply words</i>
-          </strong>
-          <mat-form-field>
-            <mat-select placeholder="filling between keyword and example" formControlName="reqMiddle" required>
-              <mat-option>None</mat-option>
-              <mat-option value="\\s">Whitespace</mat-option>
-              <mat-option value=".{0,10}">1 or 2 words</mat-option>
-              <mat-option value="\\s.{0,60}">3 or 10 words</mat-option>
-              <mat-option value="(.*?)">more than 10 words</mat-option>
-            </mat-select>
-          </mat-form-field>
-
-          <br>
-          <strong>HTML tags for the request example: </strong>
-          <p>Inspect the HTML sources to check this property. </p>
-          <mat-form-field>
-            <mat-select placeholder="html tag for the request example" formControlName="reqTemplate" required>
-              <mat-option>None</mat-option>
-              <mat-option value="pre">pre</mat-option>
-              <mat-option value="code">code</mat-option>
-              <mat-option value="a">a</mat-option>
-            </mat-select>
-          </mat-form-field>
-
-          <!-- <br>
-          <strong>Check the location order of Url and request example: </strong>
-          <mat-form-field>
-            <mat-select placeholder="order of url and request example" formControlName="url1req2" required>
-              <mat-option value="yes">Url first</mat-option>
-              <mat-option value="no">Request example first</mat-option>
-            </mat-select>
-          </mat-form-field> -->
-
-        </div>
-        <br>
-
-        <!-- response details-->
-        <ng-template #resExample><img src="../assets/img/resexample.png" alt="reqJson mode" align="center"></ng-template>
-        <ng-template #resMultiply><img src="../assets/img/resmultiply.png" alt="reqJson mode" align="center"></ng-template>
-
-
-        <h5 align="left">
-          <strong>Response details</strong>
-        </h5>
-        <div class="example-container">
-          <strong>Check if the API contain response examples</strong>
-          <p>Response example could be </p>
-          <p>
-            <i align="left" [ngbTooltip]="resExample">Twitter Response example</i>
-          </p>
-          <mat-form-field>
-            <mat-select placeholder="exist response example?" [(value)]="response" required>
-              <mat-option value="yes">Yes</mat-option>
-              <mat-option value="no">No</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="example-container" *ngIf="response=='yes'">
-          <br>
-          <strong>Common Keyword before the response</strong>
-          <p align="left">
-            Look at each endpoint, and summarize the common keyword before response example.
-            <br> The common keyword could be:
-            <i [ngbTooltip]="resExample">Example Response</i>, <i [ngbTooltip]="resMultiply">Response Body</i>
-          </p>
-          <mat-form-field>
-            <mat-label>keyword before response example</mat-label>
-            <input matInput placeholder="example, response, JSON representation..." formControlName="resKey" required>
-          </mat-form-field>
-
-          <!-- <br>
-          <strong>Type of response example</strong>
-          <mat-form-field>
-            <mat-select placeholder="the type of the response example" formControlName="resExample" required>
-              <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">JSON</mat-option> -->
-          <!-- <mat-option value="xml">XML</mat-option> -->
-          <!-- </mat-select>
-          </mat-form-field> -->
-
-          <br>
-          <strong> Filling between keyword and response example: 
-              <i align="left" [ngbTooltip]="resExample">Whitespace</i> or 
-              <i align="left" [ngbTooltip]="resMultiply">Multiply words</i>
-          </strong>
-          <mat-form-field>
-            <mat-select placeholder="stuffing between keyword and example" formControlName="resMiddle" required>
-              <mat-option>None</mat-option>
-              <mat-option value="\\s">Whitespace</mat-option>
-              <mat-option value=".{0,10}">1 or 2 words</mat-option>
-              <mat-option value="\\s.{0,60}">3 or 10 words</mat-option>
-              <mat-option value="\\s.{0,120}">10 or 20 words</mat-option>
-              <mat-option value="(.*?)">more than 20 words</mat-option>
-            </mat-select>
-          </mat-form-field>
-
-          <br>
-          <strong>HTML tags for the response example: </strong>
-          <p>Inspect the HTML sources to check this property. </p>
-          <mat-form-field>
-            <mat-select placeholder="html tag for the response example" formControlName="resTemplate" required>
-              <mat-option>None</mat-option>
-              <mat-option value="pre">pre</mat-option>
-              <mat-option value="code">code</mat-option>
-              <mat-option value="span">span</mat-option>
-            </mat-select>
-          </mat-form-field>
-
-          <!-- <p>Check the location order of Url and response example: </p>
-          <mat-form-field>
-            <mat-select placeholder="order of url and response example" formControlName="url1res2" required>
-              <mat-option value="yes">Url first</mat-option>
-              <mat-option value="no">Response example first</mat-option>
-            </mat-select>
-          </mat-form-field> -->
-
-        </div>
-
-      </mat-card>
-
-      <div style="text-align:center">
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </form>
-  </mat-step>
-
-
-  <!-- Four form -->
-  <ng-template #table><img src="../assets/img/table.png" alt="table" align="center"></ng-template>
-  <ng-template #list><img src="../assets/img/list.png" alt="list" align="center"></ng-template>
   
-  <mat-step [stepControl]="fourFormGroup">
-    <form [formGroup]="fourFormGroup">
-      <ng-template matStepLabel>Parameter</ng-template>
-
-
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Parameter</mat-card-title>
-          <mat-card-subtitle>This is the Parameter information about API endpoints</mat-card-subtitle>
-        </mat-card-header>
-
-
-        <!-- Parameter details-->
-        <h5 align="left">
-          <strong>Parameter details</strong>
-        </h5>
-
-        <div class="example-container">
-          <strong>Check if the API contain parameter details</strong>
-          <p>parameter could be presented in a </p>
-          <p>
-            <i align="left" [ngbTooltip]="table">HTML Table</i> or
-            <i align="left" [ngbTooltip]="list">HTML List</i>
-          </p>
-          <mat-form-field>
-            <mat-select placeholder="exist parameter information?" [(value)]="existpara" required>
-              <mat-option value="yes">Yes</mat-option>
-              <mat-option value="no">No</mat-option>
-            </mat-select>
-          </mat-form-field>
+    <!-- First form -->
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>General Information</ng-template>
+  
+  
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>General Information</mat-card-title>
+            <mat-card-subtitle>This is the global information about the API</mat-card-subtitle>
+          </mat-card-header>
+  
+          <!-- <h5 align="left">
+            <strong>Input the name of the target API</strong>
+          </h5>
+          <div class="example-container">
+            <mat-form-field>
+              <mat-label>API Name</mat-label>
+              <input matInput placeholder="Instragram, Twitter, ..." formControlName="apiName" required>
+            </mat-form-field>
+          </div>
+          <br> -->
+  
+  
+          <h5 align="left">
+            <strong>Find the Root URL of the API documentation</strong>
+          </h5>
+          <div class="example-container">
+            <mat-form-field>
+              <mat-label>Documentation Main Entry</mat-label>
+              <input matInput placeholder="https://www.instagram.com/developer/" formControlName="docUrl" required>
+            </mat-form-field>
+            <p align="left">
+              A REST API HTML Documentation is composed of a set of web pages. Among the set of pages, one page is called the Root Page,
+              and is linked directly or indirectly to all the pages of the set.
+              <br> As an example, the Root Page of the Instagram API HTML Documentation is <i>https://www.instagram.com/developer/</i>.
+            </p>
+          </div>
+          <img src="../assets/img/mainUrl.png" alt="documentation details" align="center" width=100%>
+          <br>
+          <br>
+  
+          <h5 align="left">
+            <strong>Find the Filter URL of the API documentation (optional)</strong>
+          </h5>
+          <div class="example-container">
+            <mat-form-field>
+              <mat-label>Documentation Filter Url</mat-label>
+              <input matInput placeholder="https://www.instagram.com/developer/endpoints" formControlName="filterUrl">
+            </mat-form-field>
+            <p align="left">
+              This is an optional parameter.
+              <br> If the developer can conclude the common URL for pages that describe the endpoints.
+              <br> As an example, if the Instagram endpoints Urls are:
+              <br>
+              <i>https://www.instagram.com/developer/endpoints/users/</i>
+              <br>
+              <i>https://www.instagram.com/developer/endpoints/comments/</i>
+              <br>
+              <i>https://www.instagram.com/developer/endpoints/likes/</i>
+              <br> The Filter Url could be <i>https://www.instagram.com/developer/endpoints</i>.
+            </p>
+          </div>
+          <br>
+  
+        </mat-card>
+  
+        <div style="text-align:center">
+          <button mat-button matStepperNext>Next</button>
         </div>
-
-        <br>
-        <div class="example-container" *ngIf="existpara=='yes'">
-          <strong>Type of HTML template: </strong>
-          <p>
+      </form>
+    </mat-step>
+  
+    <!--Second form -->
+    <ng-template #httpsMode><img src="../assets/img/https.png" alt="https mode" align="center"></ng-template>
+    <ng-template #httpMode><img src="../assets/img/http.png" alt="http mode" align="center"></ng-template>
+    <ng-template #relativeMode><img src="../assets/img/relative.png" alt="relative mode" align="center"></ng-template>
+    <ng-template #noverbkeyMode><img src="../assets/img/noverbkey.png" alt="noverbkey mode" align="center"></ng-template>
+    <ng-template #nullMode><img src="../assets/img/noverbnull.png" alt="null mode" align="center"></ng-template>
+    <ng-template #multiplywords><img src="../assets/img/multiplywords.png" alt="multiply words" align="center"></ng-template>
+    <ng-template #urlMiddle><img src="../assets/img/urlmiddle.png" alt="url middle" align="center"></ng-template>
+    <ng-template #pathTemplate><img src="../assets/img/pathtemplate.png" alt="paht template" align="center"></ng-template>
+  
+  
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>URL & Verb</ng-template>
+  
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Url & Verb</mat-card-title>
+            <mat-card-subtitle>This is the Url and Verb information about API endpoints</mat-card-subtitle>
+          </mat-card-header>
+  
+  
+          <h5 align="left">
+            <strong>Choose the endpoint Url and Http Verb pattern</strong>
+          </h5>
+          <p align="left">
+            Take 2 minutes to look at the endpoint pages which describe the Url and Http Verb information.
+            <br>
+            <br> Choose the one of following patterns that match the target documentation:
+            <br>
+          </p>
+  
+          <mat-radio-group formControlName="mode" [(ngModel)]="modeType">
+  
+            <div class="example-margin" align="left">
+              <mat-radio-button class="example-radio" value="https://" [ngbTooltip]="httpsMode">Both URL and Verb exist, Url begins with https</mat-radio-button>
+            </div>
+            <br>
+  
+            <div class="example-margin">
+              <mat-radio-button class="example-radio" value="http://" [ngbTooltip]="httpMode">Both URL and Verb exist, Url begins with http</mat-radio-button>
+            </div>
+            <br>
+  
+            <div class="example-margin">
+              <mat-radio-button class="example-radio" value="/" [ngbTooltip]="relativeMode">Both URL and Verb exist, Url begins with /</mat-radio-button>
+            </div>
+            <br>
+  
+            <div class="example-margin">
+              <mat-radio-button class="example-radio" value="key" [ngbTooltip]="noverbkeyMode">Verb doesn't exist, common keyword exists before Url</mat-radio-button>
+            </div>
+            <br>
+  
+            <div class="example-margin">
+              <mat-radio-button class="example-radio" value="null" [ngbTooltip]="nullMode">Verb doesn't exist, can't find common keyword before Url</mat-radio-button>
+            </div>
+            <br>
+  
+          </mat-radio-group>
+          <br>
+  
+  
+          <h5 align="left">
+            <strong>URL details</strong>
+          </h5>
+          <div class="example-container" *ngIf="!(modeType=='key' || modeType=='null')">
+            <strong>Check order of appearance: 
+            <i align="left" [ngbTooltip]="httpsMode">Verb first</i> or 
+            <i align="left" [ngbTooltip]="httpMode">Url first</i>
+          </strong>
+            <mat-form-field>
+              <mat-select placeholder="order of url and verb" [(value)]="reverse" formControlName="reverse" required>
+                <mat-option value="yes">Verb first</mat-option>
+                <mat-option value="no">Url first</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <br>
+            <strong>Check stuffing between Verb and Url: 
+              <i align="left" [ngbTooltip]="relativeMode">Whitespace</i> or 
+              <i align="left" [ngbTooltip]="multiplywords">Multiply words</i>
+            </strong>
+            <mat-form-field hintLabel="The stuffing can be whitespace or multiply words">
+              <mat-select placeholder="stuffing" formControlName="stuffing" required>
+                <mat-option>None</mat-option>
+                <mat-option value="\\s">Whitespace</mat-option>
+                <mat-option value=".{0,10}">1 or 2 words</mat-option>
+                <mat-option value="\\s.{0,60}">3 or 10 words</mat-option>
+                <mat-option value="(.*?)">more than 10 words</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+  
+          <br>
+          <div class="example-container" *ngIf="modeType=='key'">
+            <strong>The common keyword before Url:</strong>
+            <p align="left">
+              Look at each endpoint, and summarize the common keyword before url.
+              <br> As an example, if the endpoints Urls are presented:
+              <br>
+              <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
+              <br>
+              <i>Url : api.geonames.org/postalCodeLookupJSON?</i>
+              <br>
+              <i>Url : api.geonames.org/findNearbyPlaceName?</i>
+              <br> The common keyword could be: <i>Url :</i>
+            </p>
+            <mat-form-field>
+              <mat-label>Keyword before Url</mat-label>
+              <input matInput placeholder="Url :" formControlName="urlKey">
+            </mat-form-field>
+          </div>
+  
+          <br>
+          <div class="example-container">
+            <strong>Check if the Url wrapped in different tags: 
+            <i align="left" [ngbTooltip]="httpsMode">No</i> or
+            <i align="left" [ngbTooltip]="urlMiddle">Yes</i>
+          </strong> Normally, if the Url itself (ignores query parameters) wrapped in different tags, it shows in
+            different color or it may contian whitespace.
+            <br> Inspect the HTML sources to check this property.
+            <mat-form-field>
+              <mat-select placeholder="urlMiddle" formControlName="urlMiddle" required>
+                <mat-option>None</mat-option>
+                <mat-option value="\ ">Yes</mat-option>
+                <mat-option value="">No</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <!-- <strong> Character after the Url: {{urlAfter}} </strong>
+            <mat-form-field>
+              <mat-select placeholder="urlAfter" [(value)]="urlAfter" formControlName="urlAfter" required>
+                <mat-option>None</mat-option>
+                <mat-option value="\ ">Space Bar</mat-option>
+                <mat-option value="\n">New Line</mat-option>
+              </mat-select>
+            </mat-form-field> -->
+  
+            <strong>Check if the Url support Path templating: 
+                <i align="left" [ngbTooltip]="pathTemplate">Example</i>
+            </strong>
+            <p> Path templating refers to the usage of curly braces (&#123;&#125;) to mark a section of a URL path as replaceable
+              using path parameters</p>
+            <mat-form-field>
+              <mat-select placeholder="urlTemplate" formControlName="urlTemplate" required>
+                <mat-option value="no">No</mat-option>
+                <mat-option value=":id">:id</mat-option>
+                <mat-option value="{id}">&#123;id&#125;</mat-option>
+                <mat-option value="<id>">&lt;id&gt;</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+          </div>
+          <br>
+  
+  
+          <h5 align="left">
+            <strong>Http Verb details</strong>
+          </h5>
+          <div class="example-container">
+            <strong>The abbreviation for the Http Verb Delete: 
+              <i >Del</i> or <i >Delete</i> 
+            </strong>
+            <mat-form-field>
+              <mat-select placeholder="abbreviation for delete"  formControlName="abbrevDelete" required>
+                <mat-option value="del">Del</mat-option>
+                <mat-option value="delete">Delete</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+  
+  
+        </mat-card>
+  
+        <div style="text-align:center">
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+  
+    <!-- Three form -->
+    <ng-template #reqHttp><img src="../assets/img/reqhttp.png" alt="reqHttp mode" align="center"></ng-template>
+    <ng-template #reqCurl><img src="../assets/img/reqcurl.png" alt="reqCurl mode" align="center"></ng-template>
+    <ng-template #reqJson><img src="../assets/img/reqjson.png" alt="reqJson mode" align="center"></ng-template>
+    <ng-template #reqExample><img src="../assets/img/reqexample.png" alt="reqJson mode" align="center"></ng-template>
+  
+    <mat-step [stepControl]="threeFormGroup">
+      <form [formGroup]="threeFormGroup">
+        <ng-template matStepLabel>Request & Response Example</ng-template>
+  
+  
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Request & Response Example</mat-card-title>
+            <mat-card-subtitle>This is the Request and Response information about API endpoints</mat-card-subtitle>
+          </mat-card-header>
+  
+          <!-- request details-->
+          <h5 align="left">
+            <strong>Request details</strong>
+          </h5>
+  
+          <div class="example-container">
+            <strong>Check if the API contain request examples</strong>
+            <p>Request example could be </p>
+            <p>
+              <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
+              <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
+              <i align="left" [ngbTooltip]="reqJson">POST body </i>
+            </p>
+  
+            <mat-form-field>
+              <mat-select placeholder="exist request example?" [(value)]="request" required>
+                <mat-option value="yes">Yes</mat-option>
+                <mat-option value="no">No</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+  
+          <div class="example-container" *ngIf="request=='yes'">
+  
+            <strong>Type of request example</strong>
+            <p>3 types of request example: </p>
+            <p>
+              <i align="left" [ngbTooltip]="reqHttp">Standard Http request</i> or
+              <i align="left" [ngbTooltip]="reqCurl">Curl request</i> or
+              <i align="left" [ngbTooltip]="reqJson">POST body </i>
+            </p>
+            <mat-form-field>
+              <mat-select placeholder="the type of the request example" formControlName="reqExample" required>
+                <mat-option value="http">HTTP</mat-option>
+                <mat-option value="curl">CURL</mat-option>
+                <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">POST body</mat-option>
+                <!-- <mat-option value="xml">XML</mat-option> -->
+              </mat-select>
+            </mat-form-field>
+  
+            <br>
+            <strong>Common Keyword before the request</strong>
+            <p align="left">
+              Look at each endpoint, and summarize the common keyword before request example.
+              <br> The common keyword could be:
+              <i [ngbTooltip]="reqExample">example request</i>, <i [ngbTooltip]="reqHttp">sample request</i>
+            </p>
+            <mat-form-field>
+              <mat-label>keyword before request example</mat-label>
+              <input matInput placeholder="example request, sample request" formControlName="reqKey" required>
+            </mat-form-field>
+  
+            <br>
+            <strong>Filling between keyword and request example: 
+              <i align="left" [ngbTooltip]="reqExample">Whitespace</i> or 
+              <i align="left" [ngbTooltip]="reqHttp">Multiply words</i>
+            </strong>
+            <mat-form-field>
+              <mat-select placeholder="filling between keyword and example" formControlName="reqMiddle" required>
+                <mat-option>None</mat-option>
+                <mat-option value="\\s">Whitespace</mat-option>
+                <mat-option value=".{0,10}">1 or 2 words</mat-option>
+                <mat-option value="\\s.{0,60}">3 or 10 words</mat-option>
+                <mat-option value="(.*?)">more than 10 words</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <br>
+            <strong>HTML tags for the request example: </strong>
+            <p>Inspect the HTML sources to check this property. </p>
+            <mat-form-field>
+              <mat-select placeholder="html tag for the request example" formControlName="reqTemplate" required>
+                <mat-option>None</mat-option>
+                <mat-option value="pre">pre</mat-option>
+                <mat-option value="code">code</mat-option>
+                <mat-option value="a">a</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <!-- <br>
+            <strong>Check the location order of Url and request example: </strong>
+            <mat-form-field>
+              <mat-select placeholder="order of url and request example" formControlName="url1req2" required>
+                <mat-option value="yes">Url first</mat-option>
+                <mat-option value="no">Request example first</mat-option>
+              </mat-select>
+            </mat-form-field> -->
+  
+          </div>
+          <br>
+  
+          <!-- response details-->
+          <ng-template #resExample><img src="../assets/img/resexample.png" alt="reqJson mode" align="center"></ng-template>
+          <ng-template #resMultiply><img src="../assets/img/resmultiply.png" alt="reqJson mode" align="center"></ng-template>
+  
+  
+          <h5 align="left">
+            <strong>Response details</strong>
+          </h5>
+          <div class="example-container">
+            <strong>Check if the API contain response examples</strong>
+            <p>Response example could be </p>
+            <p>
+              <i align="left" [ngbTooltip]="resExample">Twitter Response example</i>
+            </p>
+            <mat-form-field>
+              <mat-select placeholder="exist response example?" [(value)]="response" required>
+                <mat-option value="yes">Yes</mat-option>
+                <mat-option value="no">No</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+  
+          <div class="example-container" *ngIf="response=='yes'">
+            <br>
+            <strong>Common Keyword before the response</strong>
+            <p align="left">
+              Look at each endpoint, and summarize the common keyword before response example.
+              <br> The common keyword could be:
+              <i [ngbTooltip]="resExample">Example Response</i>, <i [ngbTooltip]="resMultiply">Response Body</i>
+            </p>
+            <mat-form-field>
+              <mat-label>keyword before response example</mat-label>
+              <input matInput placeholder="example, response, JSON representation..." formControlName="resKey" required>
+            </mat-form-field>
+  
+            <!-- <br>
+            <strong>Type of response example</strong>
+            <mat-form-field>
+              <mat-select placeholder="the type of the response example" formControlName="resExample" required>
+                <mat-option value="((\\{)|(\\[)){1}(.*?)((\\})|(\\])){1}">JSON</mat-option> -->
+            <!-- <mat-option value="xml">XML</mat-option> -->
+            <!-- </mat-select>
+            </mat-form-field> -->
+  
+            <br>
+            <strong> Filling between keyword and response example: 
+                <i align="left" [ngbTooltip]="resExample">Whitespace</i> or 
+                <i align="left" [ngbTooltip]="resMultiply">Multiply words</i>
+            </strong>
+            <mat-form-field>
+              <mat-select placeholder="stuffing between keyword and example" formControlName="resMiddle" required>
+                <mat-option>None</mat-option>
+                <mat-option value="\\s">Whitespace</mat-option>
+                <mat-option value=".{0,10}">1 or 2 words</mat-option>
+                <mat-option value="\\s.{0,60}">3 or 10 words</mat-option>
+                <mat-option value="\\s.{0,120}">10 or 20 words</mat-option>
+                <mat-option value="(.*?)">more than 20 words</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <br>
+            <strong>HTML tags for the response example: </strong>
+            <p>Inspect the HTML sources to check this property. </p>
+            <mat-form-field>
+              <mat-select placeholder="html tag for the response example" formControlName="resTemplate" required>
+                <mat-option>None</mat-option>
+                <mat-option value="pre">pre</mat-option>
+                <mat-option value="code">code</mat-option>
+                <mat-option value="span">span</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <!-- <p>Check the location order of Url and response example: </p>
+            <mat-form-field>
+              <mat-select placeholder="order of url and response example" formControlName="url1res2" required>
+                <mat-option value="yes">Url first</mat-option>
+                <mat-option value="no">Response example first</mat-option>
+              </mat-select>
+            </mat-form-field> -->
+  
+          </div>
+  
+        </mat-card>
+  
+        <div style="text-align:center">
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+  
+  
+    <!-- Four form -->
+    <ng-template #table><img src="../assets/img/table.png" alt="table" align="center"></ng-template>
+    <ng-template #list><img src="../assets/img/list.png" alt="list" align="center"></ng-template>
+    
+    <mat-step [stepControl]="fourFormGroup">
+      <form [formGroup]="fourFormGroup">
+        <ng-template matStepLabel>Parameter</ng-template>
+  
+  
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Parameter</mat-card-title>
+            <mat-card-subtitle>This is the Parameter information about API endpoints</mat-card-subtitle>
+          </mat-card-header>
+  
+  
+          <!-- Parameter details-->
+          <h5 align="left">
+            <strong>Parameter details</strong>
+          </h5>
+  
+          <div class="example-container">
+            <strong>Check if the API contain parameter details</strong>
+            <p>parameter could be presented in a </p>
+            <p>
               <i align="left" [ngbTooltip]="table">HTML Table</i> or
               <i align="left" [ngbTooltip]="list">HTML List</i>
-          </p>
-          <mat-form-field>
-            <mat-select placeholder="the type of the parameter template" formControlName="template" required>
-              <mat-option value="table">Table</mat-option>
-              <mat-option value="list">List</mat-option>
-            </mat-select>
-          </mat-form-field>
-
+            </p>
+            <mat-form-field>
+              <mat-select placeholder="exist parameter information?" [(value)]="existpara" required>
+                <mat-option value="yes">Yes</mat-option>
+                <mat-option value="no">No</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+  
           <br>
-          <strong>The key word before the parameter template</strong>
-          <p align="left">
-              Look at each endpoint, and summarize the common keyword before parameter information.
-              <br> The common keyword could be:
-              <i [ngbTooltip]="table">Parameters</i>, <i [ngbTooltip]="list">Arguments</i>
-          </p>
-          <mat-form-field>
-            <mat-label>keyword before parameter template</mat-label>
-            <input matInput placeholder="parameter, argument, field, parameters..." formControlName="paraKey" required>
-          </mat-form-field>
-
-          <!-- <br>
-          <strong> Stuffing between keyword and parameter template: 
-              <i align="left" [ngbTooltip]="list">Whitespace</i> or 
-              <i align="left" >Multiply words</i>
-          </strong>
-          <mat-form-field>
-            <mat-select placeholder="stuffing between keyword and parameter template" formControlName="paraMiddle" required>
-              <mat-option value="whitespace">Whitespace</mat-option>
-              <mat-option value="10">1 or 2 words</mat-option>
-              <mat-option value="100">3 or 10 words</mat-option>
-            </mat-select>
-          </mat-form-field> -->
-
-          <!-- <p>Check the location order of Url and parameter template: </p>
-          <mat-form-field>
-            <mat-select placeholder="order of url and parameter template" formControlName="url1para2" required>
-              <mat-option value="yes">Url first</mat-option>
-              <mat-option value="no">Parameter template first</mat-option>
-            </mat-select>
-          </mat-form-field> -->
-
+          <div class="example-container" *ngIf="existpara=='yes'">
+            <strong>Type of HTML template: </strong>
+            <p>
+                <i align="left" [ngbTooltip]="table">HTML Table</i> or
+                <i align="left" [ngbTooltip]="list">HTML List</i>
+            </p>
+            <mat-form-field>
+              <mat-select placeholder="the type of the parameter template" formControlName="template" required>
+                <mat-option value="table">Table</mat-option>
+                <mat-option value="list">List</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <br>
+            <strong>The key word before the parameter template</strong>
+            <p align="left">
+                Look at each endpoint, and summarize the common keyword before parameter information.
+                <br> The common keyword could be:
+                <i [ngbTooltip]="table">Parameters</i>, <i [ngbTooltip]="list">Arguments</i>
+            </p>
+            <mat-form-field>
+              <mat-label>keyword before parameter template</mat-label>
+              <input matInput placeholder="parameter, argument, field, parameters..." formControlName="paraKey" required>
+            </mat-form-field>
+  
+            <!-- <br>
+            <strong> Stuffing between keyword and parameter template: 
+                <i align="left" [ngbTooltip]="list">Whitespace</i> or 
+                <i align="left" >Multiply words</i>
+            </strong>
+            <mat-form-field>
+              <mat-select placeholder="stuffing between keyword and parameter template" formControlName="paraMiddle" required>
+                <mat-option value="whitespace">Whitespace</mat-option>
+                <mat-option value="10">1 or 2 words</mat-option>
+                <mat-option value="100">3 or 10 words</mat-option>
+              </mat-select>
+            </mat-form-field> -->
+  
+            <!-- <p>Check the location order of Url and parameter template: </p>
+            <mat-form-field>
+              <mat-select placeholder="order of url and parameter template" formControlName="url1para2" required>
+                <mat-option value="yes">Url first</mat-option>
+                <mat-option value="no">Parameter template first</mat-option>
+              </mat-select>
+            </mat-form-field> -->
+  
+          </div>
+  
+  
+        </mat-card>
+  
+  
+        <div style="text-align:center">
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
         </div>
-
-
+      </form>
+    </mat-step>
+  
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+  
+  
+  
+  
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Generation</mat-card-title>
+          <mat-card-subtitle>You are now done. Ready to have the OpenAPI? </mat-card-subtitle>
+        </mat-card-header>
+  
       </mat-card>
-
-
+  
       <div style="text-align:center">
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button type="submit" mat-button (click)="openModal(template)">Done</button>
+        <!-- <button type="submit" mat-raised-button color="primary" class="btn btn-primary" (click)="openModal(template)">Done</button> -->
       </div>
-    </form>
-  </mat-step>
-
-  <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-
-
-
-
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Generation</mat-card-title>
-        <mat-card-subtitle>You are now done. Ready to have the OpenAPI? </mat-card-subtitle>
-      </mat-card-header>
-
-    </mat-card>
-
-    <div style="text-align:center">
-      <button mat-button matStepperPrevious>Back</button>
-      <button type="submit" mat-button (click)="openModal(template)">Done</button>
-      <!-- <button type="submit" mat-raised-button color="primary" class="btn btn-primary" (click)="openModal(template)">Done</button> -->
-    </div>
-
-    <!-- Modal -->
-    <ng-template #template>
-
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">OpenAPI Will Be Generated</h5>
-          <button type="button" class="close" (click)="modalRef.hide()" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+  
+      <!-- Modal -->
+      <ng-template #template>
+  
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">OpenAPI Will Be Generated</h5>
+            <button type="button" class="close" (click)="modalRef.hide()" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+          </div>
+          <div class="modal-body">
+            <p>The OpenAPI has been requested to be generated.</p>
+            <p> Wait several minutes and then, look at your OpenAPI page.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="modalRef.hide()">Close</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/openapi'">Go</button>
+          </div>
         </div>
-        <div class="modal-body">
-          <p>The OpenAPI has been requested to be generated.</p>
-          <p> Wait several minutes and then, look at your OpenAPI page.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" (click)="modalRef.hide()">Close</button>
-          <button type="button" class="btn btn-primary" onclick="window.location.href='/openapi'">Go</button>
-        </div>
-      </div>
-
-
-    </ng-template>
-
-  </mat-step>
-</mat-horizontal-stepper>
-
-
-<!-- Copyright 2017 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license -->
+  
+  
+      </ng-template>
+  
+    </mat-step>
+  </mat-horizontal-stepper>
+  
+  
+  <!-- Copyright 2017 Google Inc. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->

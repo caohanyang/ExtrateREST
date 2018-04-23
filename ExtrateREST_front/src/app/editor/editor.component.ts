@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ConfigService } from '../services/config.service';
-import { JsonEditorComponent, JsonEditorOptions } from '../component/jsoneditor/jsoneditor.component';
+// import { JsonEditorComponent, JsonEditorOptions } from '../component/jsoneditor/jsoneditor.component';
+// import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor/jsoneditor/jsoneditor.component';
+import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
 
 @Component({
   selector: 'app-editor',
