@@ -4,6 +4,8 @@ import { ConfigService } from '../services/config.service';
 // import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor/jsoneditor/jsoneditor.component';
 import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
 
+import * as FileSaver from 'file-saver';
+
 @Component({
   selector: 'app-editor',
   templateUrl: './editor.component.html',
@@ -15,6 +17,7 @@ export class EditorComponent implements OnInit {
   prop = false;
   public editorOptions: JsonEditorOptions;
   public data: any;
+
   @ViewChild(JsonEditorComponent) editor: JsonEditorComponent;
 
   constructor(
@@ -37,10 +40,17 @@ export class EditorComponent implements OnInit {
 
 
   download(): void {
-    console.log(this.openapi);
-    this.openapi = JSON.stringify(this.editor.get(), null, 2);
-    console.log(this.openapi);
+    // console.log(this.openapi);
+    // this.openapi = JSON.stringify(this.editor.get(), null, 2);
 
+    
+    // Create a blob of the data
+    var fileToSave = new Blob([JSON.stringify(this.editor.get(), null, 2)], {
+      type: 'application/json'
+    });
+
+    // Save the file
+    FileSaver.saveAs(fileToSave, 'OpenAPI');
   }
 
 

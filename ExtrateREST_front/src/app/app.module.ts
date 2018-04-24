@@ -16,7 +16,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { ModalModule } from 'ngx-bootstrap/modal';
 
-import {RouterRoutingModule} from './router/router-routing.module'
+import {RouterRoutingModule} from './router/router-routing.module';
 
 
 import {
@@ -64,10 +64,10 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { EditorComponent } from './editor/editor.component';
 
-// import { Ng4JsonEditorModule } from './component/ng4-jsoneditor/ng4-jsoneditor.module';
 import { HomeComponent } from './home/home.component';
 
 import { NgJsonEditorModule } from 'ang-jsoneditor' 
+
 
 @NgModule({
   declarations: [

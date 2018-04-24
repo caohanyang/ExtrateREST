@@ -1,8 +1,10 @@
-<!-- <button type="button" class="btn btn-secondary" (click)="updateEditor()">Update</button>
-
-<button type="button" class="btn btn-secondary" (click)="download()">Download</button> -->
-
 
 <div style="height:600px;" *ngIf="openapi!==''"> 
   <json-editor [options]="editorOptions" [data]="openapi" ></json-editor>
+  <div align="center"> 
+    <button type="button" class="btn btn-secondary" (click)="updateEditor()">Update</button>
+    
+    <button type="button" class="btn btn-secondary" (click)="download()">Download</button>
+  </div>
 </div>
+
